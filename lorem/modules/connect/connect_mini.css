@@ -1,0 +1,69 @@
+.connect_form {
+	background:url('images/form.png') no-repeat right bottom;
+	border:none;
+	padding-left:4px;
+	padding-top:3px;
+	height:19px;
+	width:115px;
+	font-size:12px;
+	color: #E9ECEF;
+}
+.connect_form:hover {
+	background:url('images/form.png') no-repeat right bottom;
+	border:none;
+}
+.connect_form:focus {
+	background:url('images/form.png') no-repeat right bottom;
+	border:none;
+}
+ 
+div.connect_align {
+	float:right;
+	margin-left:120px;
+	border:1px solid #999;
+	border-left:1px solid #555;
+	border-right:1px solid #555;
+	border-top:1px solid #111;
+	padding: 5px 10px;
+	border-radius:4px;
+	background:url('../../theme/images/bg_tblack.png') repeat right bottom;
+}
+
+div.connect_align a {
+	color:#beb3ad;
+}
+
+div.connect_align a:hover {
+	color#4C6500;
+}
+ 
+.connect_align form {
+	text-align:right;
+	display:inline;
+}
+ 
+.connect_inline {
+	display:inline;
+}
+ 
+.connect_content {
+	text-align:left;
+}
+ 
+.connect_content ul{
+	margin:0;
+	padding:0;
+	padding-left:4px;
+	list-style-type:none;
+	line-height:18px;
+}
+ 
+.connect_register {
+	margin:0;
+	margin-top:5px;
+}
+ 
+.connect_vertical input#login, .connect_vertical input#password {
+	width:120px;
+}
+
