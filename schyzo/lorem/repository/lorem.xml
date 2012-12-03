@@ -6,17 +6,17 @@
 		<version num="2.0" language="french" localized_language="Francais"
 			name="Lorem" priority="low" security-update="false" pubdate="2012/12/03">
 			<compatibility min="4.0" />
-			<download url="www.test.com">Thème Lorem</download>
+			<download url="www.test.com">Theme Lorem</download>
 			<authors>
 				<author name="Choucroute partie" email="choucroute@phpboost.com" />
             		</authors>
             		<description>
-				Le thème Choucroute intègre des nouveautés ! Du lard, des saucisses, des pommes de terre, ... 
+				Le theme Choucroute integre des nouveautés ! Du lard, des saucisses, des pommes de terre, ... 
 			</description>
 			<whatsnew>
 				<new type="bug">Correction de bugs</new>
-				<new type="security">Point sur la sécurité du thème</new>
-				<new type="improvment">Nouveautées</new>
+				<new type="security">Point sur la sécurité du theme</new>
+				<new type="improvment">Nouveautees</new>
 			</whatsnew>
 		</version>	
 	</app>
