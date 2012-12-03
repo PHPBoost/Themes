@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE repository SYSTEM "http://www.phpboost.com/repository/repository.dtd">
+<repository>
+	<header />
+	<app id="lorem" type="template">
+		<version num="2.0" language="french" localized_language="Francais"
+			name="Lorem" priority="low" security-update="false" pubdate="2012/12/03">
+			<compatibility min="4.0" />
+			<download url="www.test.com">Thème Lorem</download>
+			<authors>
+				<author name="Choucroute partie" email="choucroute@phpboost.com" />
+            		</authors>
+            		<description>
+				Le thème Choucroute intègre des nouveautés ! Du lard, des saucisses, des pommes de terre, ... 
+			</description>
+			<whatsnew>
+				<new type="bug">Correction de bugs</new>
+				<new type="security">Point sur la sécurité du thème</new>
+				<new type="improvment">Nouveautées</new>
+			</whatsnew>
+		</version>	
+	</app>
+</repository>
