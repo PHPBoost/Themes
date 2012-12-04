@@ -15,7 +15,7 @@
 				<div class="module_top_l"></div>		
 				<div class="module_top_r"></div>
 				<div class="module_top">
-					<span style="float:left;">
+					<span>
 						&bull; {U_FORUM_CAT}
 					</span>
 					<span style="float:right;">{PAGINATION}</span>
@@ -53,7 +53,7 @@
 								# IF NOT topics.C_HOT_TOPIC # 
 								<img src="{PICTURES_DATA_PATH}/images/{topics.IMG_ANNOUNCE}.png" alt="" />
 								# ELSE #
-								<img src="{PICTURES_DATA_PATH}/images/{topics.IMG_ANNOUNCE}_hot.gif" alt="" /> 
+								<img src="{PICTURES_DATA_PATH}/images/{topics.IMG_ANNOUNCE}_hot.png" alt="" /> 
 								# ENDIF #
 							</td>
 							<td class="forum_sous_cat" style="width:35px;text-align:center;">

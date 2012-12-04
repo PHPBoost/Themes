@@ -474,7 +474,7 @@ a.msg_link_pseudo:hover {
 
 .msg_contents_container {
     /* Case contenant l'ensemble du message, infos membre + contenu */
-    background:#27211E url(images/fond.png) repeat;;
+    background:#27211E url(images/fond.png) repeat;
 }
 
 .msg_contents,.msg_contents2 { /* Case du message */
@@ -502,7 +502,7 @@ a.msg_link_pseudo:hover {
    	background: transparent;
     padding:4px;
     font-size:11px;
-	padding-left:10px;
+	padding-left:135px;
 	color:#FFF;
 }
 

@@ -3,7 +3,7 @@
 .bbcode, .bbcode2{
 	text-align: center;
     width: 486px !important;
-	background:#5C7C02;
+	background:transparent url('images/bg_title.png') repeat-x left;
 
 	border-collapse:collapse;
 	border-spacing:0px;
@@ -21,6 +21,8 @@
 
 .bbcode2{
 	width:485px;
+	border-top:1px solid #666;
+	background-position:right;
 }
 /* Curseur de la souris au passage sur les icônes */
 .bbcode_hover{
