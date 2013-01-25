@@ -203,15 +203,7 @@ div#links { /*width:96%;*/
 }
 
 /* ##### Emplacement au dessus de contenu de la page ###### */
-div#top_contents {
-    margin-top:15px;
-	margin :0;
-	margin-left: 20px;
-    margin-bottom:15px;
-    background: none;
-	height:29px;
-	width:auto px;
-}
+div#top_contents { margin: 10px auto; }
 
 /* ##### Emplacement en dessous de contenu de la page ###### */
 div#bottom_contents {

@@ -8,6 +8,8 @@
 		<meta http-equiv="Content-Language" content="{L_XML_LANGUAGE}" />
 		<!-- Default CSS -->
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/default/theme/default.css" type="text/css" media="screen, print, handheld" />
+		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/default/framework/content/syndication/syndication.css" type="text/css" media="screen, print, handheld" />
+		
         <!-- Theme CSS -->
 		# IF C_CSS_CACHE_ENABLED #
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/kernel/css_cache.php?name=theme-{THEME}&files=
@@ -95,6 +97,13 @@
 	# ENDIF #
 	
 	<div id="main">
+	
+		# IF C_MENUS_TOPCENTRAL_CONTENT #
+		<div id="top_contents">
+			{MENUS_TOPCENTRAL_CONTENT}
+		</div>
+		# ENDIF #
+	
 	<div id="main_content">
 			<div class="main_top_l"></div>			
 			<div class="main_top_r"></div>
@@ -103,11 +112,7 @@
 			<div class="main_content_borderr">
 			<div class="contenu">
 
-		# IF C_MENUS_TOPCENTRAL_CONTENT #
-		<div id="top_contents">
-			{MENUS_TOPCENTRAL_CONTENT}
-		</div>
-		# ENDIF #
+
 		
 			<div id="links">
 				<br/>&nbsp;&nbsp;<a class="small_link" href="{START_PAGE}" title="{L_INDEX}">{L_INDEX}</a>
