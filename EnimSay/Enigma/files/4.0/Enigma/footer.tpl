@@ -1,4 +1,4 @@
-				</div>
+				</div></div></div>
 					<div class="main_bottom_l"></div>		
 				<div class="main_bottom_r"></div>
 			<div class="main_bottom"></div>

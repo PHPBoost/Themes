@@ -148,13 +148,8 @@ div#links { /*width:96%;*/
 
 /* ##### Emplacement au dessus de contenu de la page ###### */
 div#top_contents {
-    margin-top:15px;
-	margin :0;
-	margin-left: 20px;
-    margin-bottom:15px;
-    background: url(images/sub_header.png) no-repeat;
-	height:29px;
-	width:622px;
+	width: 98%;
+	margin: auto;
 }
 
 /* ##### Emplacement en dessous de contenu de la page ###### */
@@ -257,15 +252,12 @@ div#links_vertical_bottom {
 }
 /* ##### Contenu central ###### */
 div#main_content {
-	width:96%;
-	margin:auto;
-	background:#f5e6c7 url(images/right_right.png) repeat-y right;
-
+	width: 98%;
+	margin: auto auto auto 8px;	
 }
 .main_content_border{
-	background:url(images/left_left.png) repeat-y left;
-	padding-left:8px;
-	padding-right:8px;
+	padding-left: 0px;
+	padding-right: 5px;
 	overflow:hidden !important;
 	height:auto !important;
 	overflow:visible;
@@ -317,3 +309,23 @@ div#main_content {
 
 }
 
+.main_content_borderl{
+	background:#f5e6c7 url(images/left_left.png) repeat-y left;
+	padding-left:8px;
+	overflow:hidden !important;
+	height:auto !important;
+	overflow:visible;
+	height:1%;
+	clear:both;	
+}
+.main_content_borderr{
+	background:#f5e6c7 url(images/right_right.png) repeat-y right;
+	padding-left:0px;
+	padding-right:0px;
+	overflow:hidden !important;
+	height:auto !important;
+	overflow:visible;
+	height:1%;
+	clear:both;	
+	
+}

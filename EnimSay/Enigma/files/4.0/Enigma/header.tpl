@@ -102,11 +102,14 @@
 		<div id="top_contents">
 			{MENUS_TOPCENTRAL_CONTENT}
 		</div>
+		<div class="spacer"></div>
 		# ENDIF #
 		<div id="main_content">
 			<div class="main_top_l"></div>			
 			<div class="main_top_r"></div>
 			<div class="main_top"></div>
+			<div class="main_content_borderl">
+			<div class="main_content_borderr">
 			<div class="main_content_border">
 			<div id="links">
 				&nbsp;&nbsp;<a class="small_link" href="{START_PAGE}" title="{L_INDEX}">{L_INDEX}</a>
