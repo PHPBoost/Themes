@@ -98,3 +98,9 @@ div#links_vertical_bottom
 .bglinks 
 {background:url(images/bgmenu_links.jpg) no-repeat bottom right;margin:0px;padding:0px;list-style-type:none;padding-bottom:7px;margin-bottom:5px;}
 
+/* Gestion des couleurs */
+.bbcode, .bbcode2{
+	background-color:#121212;
+	border-color:#191919;
+	color:#FFFFFF;
+}

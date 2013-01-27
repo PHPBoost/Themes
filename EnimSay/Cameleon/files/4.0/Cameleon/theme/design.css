@@ -392,3 +392,10 @@ div#main_content {
 	margin-left:10px;
 	margin-right:10px;
 }
+
+/* Gestion des couleurs */
+.bbcode, .bbcode2{
+	background-color:#f6f6f6;
+	border-color:#dbedff;
+	color:#FFFFFF;
+}

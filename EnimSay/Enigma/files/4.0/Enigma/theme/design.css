@@ -329,3 +329,10 @@ div#main_content {
 	clear:both;	
 	
 }
+
+/* Gestion des couleurs */
+.bbcode, .bbcode2{
+	background-color:#c3dde5;
+	border-color:#f3f8fc;
+	color:#FFFFFF;
+}
