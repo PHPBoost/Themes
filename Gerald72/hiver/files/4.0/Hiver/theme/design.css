@@ -236,11 +236,3 @@ div#links_vertical_bottom {
     padding-bottom:7px;
     margin-bottom:5px;
 }
-
-/* Gestion des couleurs */
-.bbcode, .bbcode2{
-	background-color:#2d72b9;
-	border-color:#2b53b2;
-	color:#FFFFFF;
-}
- 
