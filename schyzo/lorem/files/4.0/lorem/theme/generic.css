@@ -120,3 +120,25 @@ html>body .question, html>body .notice, html>body .warning, html>body .error, ht
 	margin-top:5px;
 	margin-bottom:15px;
 }
+
+/* Tableaux */
+.bb_table{
+	border:1px solid #2a2321;
+	border-spacing:0px;
+	border-collapse:collapse;
+	margin:2px;
+}
+.bb_table_col{
+	border:1px solid #2a2321;
+	padding:6px;
+}
+/* Listes */
+.bb_ul{
+	margin-left:20px;
+}
+.bb_ol{
+	margin-left:35px;
+}
+.bb_li{
+	text-align:left;
+}
