@@ -576,10 +576,9 @@ font-size: 14px;
 
 .module_top_com {
 	float:right;
-	padding:18px;
-
-
+	padding:2px;
 }
+
 .module_top_com a {
 	font-size: 11px;
 	color:#336699;
