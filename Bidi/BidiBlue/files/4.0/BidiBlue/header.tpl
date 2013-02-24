@@ -46,17 +46,6 @@
 		<script type="text/javascript" src="{PATH_TO_ROOT}/kernel/lib/js/scriptaculous/scriptaculous.js"></script>
 		<script type="text/javascript" src="{PATH_TO_ROOT}/kernel/lib/js/phpboost/global.js"></script>
 		<script type="text/javascript" src="{PATH_TO_ROOT}/kernel/lib/js/lightbox/lightbox.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<script type="text/javascript">
-jQuery(document).ready(function($){
-$('.mobilenav').hide();
-$('div.menumobile').css('cursor','pointer').click(function(e){
-$(this).find('.mobilenav').slideToggle();
-});
-});
-</script>
-
 		
 		# IF C_HEADER_LOGO #
 			<style type="text/css">
@@ -70,75 +59,66 @@ $(this).find('.mobilenav').slideToggle();
 	
 	# INCLUDE MAINTAIN #
 
-<div id="global">
-	<div id="header_container">
-		<div id="header">
-			<div id="logo"></div>
-			<div id="site_name"><a href='/'>{SITE_NAME}</a></div>
-			# IF C_MENUS_HEADER_CONTENT #
-			{MENUS_HEADER_CONTENT}
-			# ENDIF #
-		</div>
-
-
-		<div id="sub_header">
-
-			# IF C_MENUS_SUB_HEADER_CONTENT #
-			{MENUS_SUB_HEADER_CONTENT}
-			# ENDIF #
-
-		</div>
-		<div class="spacer"></div>
-	</div>
-<div class="menumobile"><div id="mobile"> navigation menu</div>
-<span class="mobilenav"><ul id="nav">
-				<li><a href="/">accueil</a></li>
-			# IF ModulesManager::is_module_installed('news') #
-			<li><a href="/news">news</a></li>
-			# ENDIF #
-			# IF ModulesManager::is_module_installed('articles') #
-			<li><a href="/articles">articles</a></li>
-			# ENDIF #
-			# IF ModulesManager::is_module_installed('download') #
-			<li><a href="/download">fichiers</a></li>
-			# ENDIF #
-			# IF ModulesManager::is_module_installed('forum') #
-			<li><a href="/forum">forum</a></li>
-			# ENDIF #
-			<li><a href="/contact">contact</a></li>
-			</ul></span>
-</div>
-	# IF C_COMPTEUR #
-	<div id="compteur">
-		<span class="text_strong">{L_VISIT}:</span> {COMPTEUR_TOTAL}
-		<br />
-		<span class="text_strong">{L_TODAY}:</span> {COMPTEUR_DAY}
-	</div>
-	# ENDIF #
-	
-	# IF C_MENUS_LEFT_CONTENT #
-	<div id="left_menu">
-		{MENUS_LEFT_CONTENT}
-	</div>
-	# ENDIF #
-	
-	# IF C_MENUS_RIGHT_CONTENT #
-	<div id="right_menu">
-		{MENUS_RIGHT_CONTENT}
-	</div>
-	# ENDIF #
-	
-	<div id="main">
-		# IF C_MENUS_TOPCENTRAL_CONTENT #
-		<div id="top_contents">
-			{MENUS_TOPCENTRAL_CONTENT}
-		</div>
-		<div class="spacer"></div>
-		# ENDIF #
-		<div id="main_content">&nbsp;
-			<div id="links">
-				&nbsp;&nbsp;<a class="small_link" href="{START_PAGE}" title="{L_INDEX}">{L_INDEX}</a>
-				# START link_bread_crumb #
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/images/breadcrumb.png" alt="" class="valign_middle" /> <a class="small_link" href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}">{link_bread_crumb.TITLE}</a>
-				# END link_bread_crumb #
+	<div id="global">
+		<div id="header_container">
+			<div id="header">
+				<div id="logo"></div>
+				<div id="site_name"><a href="/"{SITE_NAME}</a></div>
+				# IF C_MENUS_HEADER_CONTENT #
+				{MENUS_HEADER_CONTENT}
+				# ENDIF #
 			</div>
+			<div id="sub_header">
+				# IF C_MENUS_SUB_HEADER_CONTENT #
+				{MENUS_SUB_HEADER_CONTENT}
+				# ENDIF #
+			</div>
+			<div class="spacer"></div>
+		</div>
+		<div class="menumobile">
+			<div id="mobile" onclick="Effect.toggle('mobilenav', 'slide', { delay: 0.5 }); return false;"> navigation menu</div>
+			<div id="mobilenav" style="display:none;">
+				<ul id="nav">
+					<li><a href="{PATH_TO_ROOT}/">accueil</a></li>
+					# IF ModulesManager::is_module_installed('news') #<li><a href="{PATH_TO_ROOT}/news">news</a></li># ENDIF #
+					# IF ModulesManager::is_module_installed('articles') #<li><a href="{PATH_TO_ROOT}/articles">articles</a></li># ENDIF #
+					# IF ModulesManager::is_module_installed('download') #<li><a href="{PATH_TO_ROOT}/download">fichiers</a></li># ENDIF #
+					# IF ModulesManager::is_module_installed('forum') #<li><a href="{PATH_TO_ROOT}/forum">forum</a></li># ENDIF #
+					# IF ModulesManager::is_module_installed('contact') #<li><a href="{PATH_TO_ROOT}/contact">contact</a></li># ENDIF #
+				</ul>
+			</div>
+		</div>
+		# IF C_COMPTEUR #
+		<div id="compteur">
+			<span class="text_strong">{L_VISIT}:</span> {COMPTEUR_TOTAL}
+			<br />
+			<span class="text_strong">{L_TODAY}:</span> {COMPTEUR_DAY}
+		</div>
+		# ENDIF #
+		
+		# IF C_MENUS_LEFT_CONTENT #
+		<div id="left_menu">
+			{MENUS_LEFT_CONTENT}
+		</div>
+		# ENDIF #
+		
+		# IF C_MENUS_RIGHT_CONTENT #
+		<div id="right_menu">
+			{MENUS_RIGHT_CONTENT}
+		</div>
+		# ENDIF #
+		
+		<div id="main">
+			# IF C_MENUS_TOPCENTRAL_CONTENT #
+			<div id="top_contents">
+				{MENUS_TOPCENTRAL_CONTENT}
+			</div>
+			<div class="spacer"></div>
+			# ENDIF #
+			<div id="main_content">&nbsp;
+				<div id="links">
+					&nbsp;&nbsp;<a class="small_link" href="{START_PAGE}" title="{L_INDEX}">{L_INDEX}</a>
+					# START link_bread_crumb #
+					<img src="{PATH_TO_ROOT}/templates/{THEME}/images/breadcrumb.png" alt="" class="valign_middle" /> <a class="small_link" href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}">{link_bread_crumb.TITLE}</a>
+					# END link_bread_crumb #
+				</div>
