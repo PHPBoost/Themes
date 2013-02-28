@@ -6,12 +6,13 @@
 		<version num="1.1" language="french" localized_language="Francais"
 			name="underline" priority="low" security-update="false" pubdate="2013/02/28">
 			<compatibility min="4.0" />
-			<download url="https://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Thème underline</download>
+			<download url="https://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
-            		</authors>
-            		<description>Version 1.1 du thème Underline</description>
+            </authors>
+            <description>Version 1.1 du thème Underline</description>
 			<whatsnew>
+			
 			</whatsnew>
 		</version>	
 	</app>
