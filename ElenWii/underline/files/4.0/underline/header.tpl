@@ -65,21 +65,7 @@
 			{MENUS_HEADER_CONTENT}
 			# ENDIF #
 		</div>
-		
-		<div id="cssmenu">
-			<ul>
-			   <li class="active"><a href="{PATH_TO_ROOT}/"><span>Accueil</span></a></li>
-			   <li class="has-sub"><a href="{PATH_TO_ROOT}/forum"><span>Forum</span></a>
-			      <ul>
-			         <li><a href="{PATH_TO_ROOT}/forum"><span>Sous Forum 1</span></a></li>
-			         <li class="last"><a href="{PATH_TO_ROOT}/forum"><span>Sous Forum 2</span></a></li>
-			      </ul>
-			   </li>
-			   <li><a href="{PATH_TO_ROOT}/NEWS"><span>Actualités</span></a></li>
-			   <li class="last"><a href="{PATH_TO_ROOT}/contact"><span>Contact</span></a></li>
-			</ul>
-		</div>
-		
+	
 		<div id="sub_header">
 			# IF C_MENUS_SUB_HEADER_CONTENT #
 			{MENUS_SUB_HEADER_CONTENT}
