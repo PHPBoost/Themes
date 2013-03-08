@@ -123,3 +123,48 @@ p {
     background-position:4px 4px;
     border-radius:6px;
 }
+
+/* Affichage balise quote, code, hide */
+.text_blockquote, .text_code, .text_hide{
+	display:block;
+	width:93%;
+	padding-bottom:2px;
+	font-weight:bold;
+	margin:auto;
+}
+.blockquote, .code, .hide {
+	overflow:auto;
+	max-height:500px;
+	background:#FFFFFF;
+	border:1px solid #888888;
+	border-left:2px solid #888888;
+	border-right:2px solid #888888;
+	border-radius:4px;
+	color:#000000;
+	padding:8px;
+	margin:0px 25px;
+}
+.hide{
+	cursor:pointer;
+	height:10px;
+	overflow:hidden;
+}
+.hide2{
+	visibility:hidden;
+}
+.indent{
+	margin-left:30px;
+}
+.bb_acronym{
+	cursor:help;
+}
+ 
+.bb_block{
+	margin:5px 20px;
+	padding:5px;
+	border:1px solid #888888;
+}
+ 
+.bb_fieldset{
+	margin:10px;
+}
