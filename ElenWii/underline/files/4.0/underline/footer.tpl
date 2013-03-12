@@ -13,6 +13,7 @@
 			# ENDIF #
 		</div>
 	</div>
+		
 	<div id="footer">
 		# IF C_MENUS_FOOTER_CONTENT #
 		{MENUS_FOOTER_CONTENT}
