@@ -44,7 +44,7 @@
 }
  
 input.mini_search_vert {
-	background:url('../search_mini.png') no-repeat;
+	background:url('images/search_mini.png') no-repeat;
 	background-color:#FFFFFF;
 	background-position:2px 1px;
 	padding-left:22px;
