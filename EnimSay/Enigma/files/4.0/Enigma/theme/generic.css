@@ -165,6 +165,16 @@ html>body .error_unknow,html>body .error_success,html>body .error_notice,html>bo
     background-position:4px 4px;
     border-radius:6px;
 }
+html>body .question, html>body .notice, html>body .warning, html>body .error, html>body .success
+{
+    height:auto;
+    min-height:25px;
+}
+
+.error_handler_position {
+	margin-top:5px;
+	margin-bottom:15px;
+}
 
 /* Affichage balise quote, code, hide */
 .text_blockquote, .text_code, .text_hide{

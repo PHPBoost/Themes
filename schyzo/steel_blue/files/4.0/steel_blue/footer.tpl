@@ -11,6 +11,7 @@
 			<div class="spacer"></div>
 		</div>
 		# ENDIF #
+		<div class="spacer"></div>
 	</div>
 </div>
 </div>
