@@ -3,7 +3,7 @@
 	/*
 	 * Slider object.
 	 */
-	$.Slider 				= function( options, element ) {
+	$jQ.Slider 				= function( options, element ) {
 	
 		this.$el	= $( element );
 		
@@ -11,17 +11,17 @@
 		
 	};
 	
-	$.Slider.defaults 		= {
+	$jQ.Slider.defaults 		= {
 		current		: 0, 	// index of current slide
 		bgincrement	: 50,	// increment the bg position (parallax effect) when sliding
 		autoplay	: false,// slideshow on / off
 		interval	: 4000  // time between transitions
     };
 	
-	$.Slider.prototype 	= {
+	$jQ.Slider.prototype 	= {
 		_init 				: function( options ) {
 			
-			this.options 		= $.extend( true, {}, $.Slider.defaults, options );
+			this.options 		= $jQ.extend( true, {}, $jQ.Slider.defaults, options );
 			
 			this.$slides		= this.$el.children('div.da-slide');
 			this.slidesCount	= this.$slides.length;
@@ -275,7 +275,7 @@
 		}
 	};
 	
-	$.fn.cslider			= function( options ) {
+	$jQ.fn.cslider			= function( options ) {
 	
 		if ( typeof options === 'string' ) {
 			
@@ -283,7 +283,7 @@
 			
 			this.each(function() {
 			
-				var instance = $.data( this, 'cslider' );
+				var instance = $jQ.data( this, 'cslider' );
 				
 				if ( !instance ) {
 					logError( "cannot call methods on cslider prior to initialization; " +
@@ -291,7 +291,7 @@
 					return;
 				}
 				
-				if ( !$.isFunction( instance[options] ) || options.charAt(0) === "_" ) {
+				if ( !$jQ.isFunction( instance[options] ) || options.charAt(0) === "_" ) {
 					logError( "no such method '" + options + "' for cslider instance" );
 					return;
 				}
@@ -305,9 +305,9 @@
 		
 			this.each(function() {
 			
-				var instance = $.data( this, 'cslider' );
+				var instance = $jQ.data( this, 'cslider' );
 				if ( !instance ) {
-					$.data( this, 'cslider', new $.Slider( options, this ) );
+					$jQ.data( this, 'cslider', new $jQ.Slider( options, this ) );
 				}
 			});
 		
