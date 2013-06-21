@@ -3,21 +3,20 @@
  
 <!-- DC Javascript Library -->
 <script type="text/javascript" src="{PATH_TO_ROOT}/templates/{THEME}/modules/HomeCustom/js/jquery.min.js"></script> <!-- jQuery Library (do not call twice on same page) -->
- 
+<script> var $jQ = jQuery.noConflict();	</script>
+
 <!-- DC Parallax Slider JS -->
 <script type="text/javascript" src="{PATH_TO_ROOT}/templates/{THEME}/modules/HomeCustom/js/modernizr.custom.js"></script>
 <script type="text/javascript" src="{PATH_TO_ROOT}/templates/{THEME}/modules/HomeCustom/js/jquery.cslider.js"></script>
  
 <!-- DC Parallax Slider Settings -->
 <script type="text/javascript">
-            $(function() {
-             
-                $('#da-slider').cslider({
-                    autoplay    : true, // auto play slider on load
-                    bgincrement : 450
-                });
-             
-            });
+	$jQ(function(){  
+			$jQ('#da-slider').cslider({
+				autoplay    : true, // auto play slider on load
+				bgincrement : 450
+			})
+		});
 </script>
  
 <!-- DC Parallax Slider Start -->

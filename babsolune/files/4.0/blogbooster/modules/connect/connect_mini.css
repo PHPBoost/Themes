@@ -1,0 +1,63 @@
+.connect_form {
+	border:1px solid #366393;
+	padding-left:4px;
+	padding-top:3px;
+	height:18px;
+	width:115px;
+	font-size:12px;
+	color: #366393;
+}
+
+.connect_form:hover {
+	background:#366393;
+	border:1px solid #efefef;
+}
+
+.connect_form:focus {
+	border:1px solid #efefef;
+}
+ 
+div.connect_align {
+	text-align:right;
+	margin:3px 8px 2px 0px;
+	float:right;
+}
+
+div.connect_align img{
+	padding-top:4px;
+}
+
+div.connect_align a {
+	color:#FFF;
+}
+ 
+.connect_align form {
+	text-align:right;
+	display:inline;
+}
+ 
+.connect_inline {
+	display:inline;
+}
+ 
+.connect_content {
+	text-align:left;
+}
+ 
+.connect_content ul{
+	margin:0;
+	padding:0;
+	padding-left:4px;
+	list-style-type:none;
+	line-height:18px;
+}
+ 
+.connect_register {
+	margin:0;
+	margin-top:5px;
+}
+ 
+.connect_vertical input#login, .connect_vertical input#password {
+	width:120px;
+}
+

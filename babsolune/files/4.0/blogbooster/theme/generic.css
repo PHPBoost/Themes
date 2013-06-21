@@ -1,0 +1,123 @@
+/* --------------------------------------
+		generic.css
+ Contient les classes génériques, ne devant pas être modifiée pour chaque thême.
+--------------------------------------*/ /* Balises */
+img {
+    border:none;
+	max-width:100%;
+	height:auto;
+	width:auto;
+	box-sizing:border-box;
+
+}
+
+hr {
+    color:#e2001a;
+    height:1px;
+}
+
+ul {
+    margin:0;
+    line-height:normal;
+}
+
+p {
+    margin-bottom:0.2em;
+    line-height:1.3em;
+    font-size:1em;
+}
+
+/* Classes textes */
+.text_center {
+    text-align:center;
+}
+
+.text_small {
+    font-size:0.8em;
+    color:#626262;
+}
+.text_xsmall {
+    font-size:0.6em;
+    color:#7f7f7f;
+}
+
+.text_strong {
+    font-weight:bold;
+}
+
+.text_justify {
+    text-align:justify;
+}
+
+.img_right {
+    float:right;
+    margin:6px;
+}
+
+.img_left {
+    float:left;
+    margin:6px;
+}
+
+.valign_top {
+    vertical-align:top;
+}
+
+.valign_middle {
+    vertical-align:middle;
+}
+
+.valign_bottom {
+    vertical-align:bottom;
+}
+
+.spacer {
+    clear:both;
+}
+
+/* Erreurs
+--------------------------------------*/
+#error_handler {
+    margin:auto;
+}
+
+.error_unknow {
+    background:#1f1f1f;
+}
+
+.error_success {
+    background:#00ff00;
+}
+
+.error_notice {
+    background:#626262;
+}
+
+.error_warning {
+    background:#ff6600;
+}
+
+.error_fatal {
+    background:#e2001a;
+}
+
+.error_unknow,.error_success,.error_notice,.error_warning,.error_fatal {
+    height:35px;
+    width:440px;
+    color:#ffffff;
+    border:1px solid #e2001a;
+    margin:auto;
+    padding:0.75em;
+    text-align:left;
+}
+
+html>body .error_unknow,html>body .error_success,html>body .error_notice,html>body .error_warning,html>body .error_fatal
+    {
+    height:auto;
+    min-height:35px;
+}
+
+.error_handler_position {
+	margin-top:5px;
+	margin-bottom:5px;
+}
