@@ -586,7 +586,7 @@ a.msg_link_pseudo:hover {
     margin-bottom:10px;
     border-spacing:1px;
 	clear:both;
-	background:url(images/mini_container_top.png) no-repeat;
+	background:url(images/mini_container_top.png) no-repeat center top;
 }
 
 .module_mini_top {
