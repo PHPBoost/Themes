@@ -1,0 +1,50 @@
+.newsletter_form{
+    width: 250px;
+    height: 24px;
+    color: #efefef;
+    background:#1f1f1f;
+	border:1px solid #e2001a;
+	float:right;
+}
+.newsletter_title{
+    font-weight:bold;
+    text-indent:10px;
+    font-size:11px;
+    margin:0;
+    margin-right:5px;
+    margin-top:3px;
+    float:left;
+}
+.newsletter_text, .newsletter_text:hover{
+	font-size: 11px;
+	background: #efefef;
+	margin:2px 0;
+}
+
+.newsletter_text:hover{
+	background: #DDDDDD;
+}
+
+.newsletter_img, .newsletter_img:hover{
+    padding:0;
+    margin-left:-3px;
+    border:none;
+	width:35px;
+	height:22px;
+	background:#1f1f1f;
+	cursor:  pointer;
+	vertical-align: top;
+}
+
+input.newsletter_img {
+	color:#e2001a
+}
+ 
+div#newsletter {
+	margin:10px;
+}
+ 
+.newsletter_link {
+	margin:0;
+	margin-top:10px;
+}
