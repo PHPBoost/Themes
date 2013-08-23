@@ -3,6 +3,17 @@
 <repository>
 	<header />
 	<app id="blogbooster" type="template">
+		<version num="2.2" language="english" localized_language="English"
+			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/24">
+			<compatibility min="4.0" />
+			<download url="https://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" /></authors>
+            	<description>Version 2.2 du theme blogbooster</description>
+			<whatsnew>
+				Ajout de la fonction "recherche mise à jour"
+			</whatsnew>
+		</version>
 		<version num="2.2" language="french" localized_language="Francais"
 			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/24">
 			<compatibility min="4.0" />
