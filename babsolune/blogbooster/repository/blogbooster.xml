@@ -28,7 +28,7 @@
 		<version num="2.1" language="english" localized_language="English"
 			name="blogbooster" priority="low" security-update="false" pubdate="2013/02/28">
 			<compatibility min="4.0" />
-			<download url="https://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
             	<description>Version 2.1 blogbooster theme</description>
@@ -39,7 +39,7 @@
 		<version num="2.1" language="french" localized_language="Francais"
 			name="blogbooster" priority="low" security-update="false" pubdate="2013/02/28">
 			<compatibility min="4.0" />
-			<download url="https://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
             	<description>Version 2.1 du theme blogbooster</description>
