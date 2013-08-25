@@ -4,27 +4,38 @@
 	<header />
 	<app id="blogbooster" type="template">
 		<version num="2.2" language="english" localized_language="English"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/24">
+			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/25">
 			<compatibility min="4.0" />
-			<download url="https://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.2 du theme blogbooster</description>
+            	<description>Version 2.2 blogbooster theme</description>
 			<whatsnew>
-				Ajout de la fonction "recherche mise à jour"
+				Add update fonction
 			</whatsnew>
 		</version>
 		<version num="2.2" language="french" localized_language="Francais"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/24">
+			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/25">
 			<compatibility min="4.0" />
-			<download url="https://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.2 du theme blogbooster</description>
+            	<description>Version 2.2 du thème blogbooster</description>
 			<whatsnew>
-				Ajout de la fonction "recherche mise à jour"
+				Ajout de la fonction "mise à jour"
 			</whatsnew>
 		</version>		
+		<version num="2.1" language="english" localized_language="English"
+			name="blogbooster" priority="low" security-update="false" pubdate="2013/02/28">
+			<compatibility min="4.0" />
+			<download url="https://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" /></authors>
+            	<description>Version 2.1 blogbooster theme</description>
+			<whatsnew>
+				Correct a.member class in global.css
+			</whatsnew>
+		</version>
 		<version num="2.1" language="french" localized_language="Francais"
 			name="blogbooster" priority="low" security-update="false" pubdate="2013/02/28">
 			<compatibility min="4.0" />
