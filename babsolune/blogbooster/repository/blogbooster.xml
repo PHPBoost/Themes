@@ -3,6 +3,28 @@
 <repository>
 	<header />
 	<app id="blogbooster" type="template">
+		<version num="2.3" language="english" localized_language="English"
+			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" /></authors>
+            	<description>Version 2.3 blogbooster theme</description>
+			<whatsnew>
+				Correct XML file for update fonction
+			</whatsnew>
+		</version>
+		<version num="2.3" language="french" localized_language="Francais"
+			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" /></authors>
+            	<description>Version 2.3 du thème blogbooster</description>
+			<whatsnew>
+				Correction du fichier XML de la fonction "mise à jour"
+			</whatsnew>
+		</version>		
 		<version num="2.2" language="english" localized_language="English"
 			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/25">
 			<compatibility min="4.0" />
