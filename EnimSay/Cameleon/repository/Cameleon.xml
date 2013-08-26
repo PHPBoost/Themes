@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE repository SYSTEM "http://www.phpboost.com/repository/repository.dtd">
+<repository>
+	<header />
+	<app id="Cameleon" type="template">
+		<version num="1.7" language="english" localized_language="English"
+			name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Cameleon Theme</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
+            	<description>Version 1.7 Cameleon theme</description>
+			<whatsnew>
+				Add update fonction
+			</whatsnew>
+		</version>
+		<version num="1.7" language="french" localized_language="Francais"
+			name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Theme Cameleon</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
+            	<description>Version 1.7 du thème Cameleon</description>
+			<whatsnew>
+				Ajout de la fonction "recherche mise à jour"
+			</whatsnew>
+		</version>		
+		<version num="1.6" language="english" localized_language="English"
+			name="Cameleon" priority="low" security-update="false" pubdate="2013/02/28">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Cameleon theme</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
+            	<description>Version 1.6 Cameleon theme</description>
+			<whatsnew>
+				Correct a.member class from global.css
+			</whatsnew>
+		</version>		
+		<version num="1.6" language="french" localized_language="Francais"
+			name="Cameleon" priority="low" security-update="false" pubdate="2013/02/28">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Theme Cameleon</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
+            	<description>Version 1.6 du theme Cameleon</description>
+			<whatsnew>
+				Correction de la classe a.member dans le fichier global.css
+			</whatsnew>
+		</version>
+	</app>		
+</repository>
