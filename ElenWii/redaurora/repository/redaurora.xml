@@ -3,6 +3,28 @@
 <repository>
 	<header />
 	<app id="redaurora" type="template">
+		<version num="1.2" language="english" localized_language="English"
+			name="redaurora" priority="low" security-update="false" pubdate="2013/08/25">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">redaurora Theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
+            	<description>Version 1.2 redaurora theme</description>
+			<whatsnew>
+				Correct XML file for update fonction
+			</whatsnew>
+		</version>
+		<version num="1.2" language="french" localized_language="Francais"
+			name="redaurora" priority="low" security-update="false" pubdate="2013/08/25">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">Theme redaurora</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
+            	<description>Version 1.2 du thème redaurora</description>
+			<whatsnew>
+				Correction du fichier XML de la fonction "mise à jour"
+			</whatsnew>
+		</version>		
 		<version num="1.1" language="english" localized_language="English"
 			name="redaurora" priority="low" security-update="false" pubdate="2013/08/25">
 			<compatibility min="4.0" />
@@ -47,5 +69,5 @@
 				Correction de la classe a.member dans le fichier global.css
 			</whatsnew>
 		</version>
-	</app>		
+	</app>
 </repository>

@@ -3,6 +3,28 @@
 <repository>
 	<header />
 	<app id="underline" type="template">
+		<version num="1.7" language="english" localized_language="English"
+			name="underline" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
+            	<description>Version 1.7 Underline theme</description>
+			<whatsnew>
+				Correct XML file for update fonction
+			</whatsnew>
+		</version>
+		<version num="1.7" language="french" localized_language="Francais"
+			name="underline" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
+            	<description>Version 1.7 du theme Underline</description>
+			<whatsnew>
+				Correction du fichier XML de la fonction "mise à jour"
+			</whatsnew>
+		</version>		
 		<version num="1.6" language="english" localized_language="English"
 			name="underline" priority="low" security-update="false" pubdate="2013/08/25">
 			<compatibility min="4.0" />
@@ -47,5 +69,5 @@
 				Correction de la classe a.member dans le fichier global.css
 			</whatsnew>
 		</version>
-	</app>		
+	</app>	
 </repository>
