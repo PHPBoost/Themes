@@ -21,53 +21,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.3 du th√®me blogbooster</description>
+            	<description>Version 2.3 du thËme blogbooster</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="2.2" language="english" localized_language="English"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.2 blogbooster theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="2.2" language="french" localized_language="Francais"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.2 du th√®me blogbooster</description>
-			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="2.1" language="english" localized_language="English"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.1 blogbooster theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="2.1" language="french" localized_language="Francais"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.1 du theme blogbooster</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -89,53 +45,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">Theme dojo</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.2 du th√®me dojo</description>
+            	<description>Version 1.2 du thËme dojo</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>
-		<version num="1.1" language="english" localized_language="English"
-			name="dojo" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">dojo theme</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.1 dojo theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="1.1" language="french" localized_language="Francais"
-			name="dojo" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">Theme dojo</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.1 du th√®me dojo</description>
-			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.0" language="english" localized_language="English"
-			name="dojo" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">dojo theme</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.0 dojo theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.0" language="french" localized_language="Francais"
-			name="dojo" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">Theme dojo</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.0 du theme dojo</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -158,53 +70,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">Theme BidiBlue</download>
 			<authors>
 				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.2 du th√®me BidiBlue</description>
+            	<description>Version 1.2 du thËme BidiBlue</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.1" language="english" localized_language="English"
-			name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">BidiBlue theme</download>
-			<authors>
-				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.1 BidiBlue theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="1.1" language="french" localized_language="Francais"
-			name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">Theme BidiBlue</download>
-			<authors>
-				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.1 du th√®me BidiBlue</description>
-			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.0" language="english" localized_language="English"
-			name="BidiBlue" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">BidiBlue theme</download>
-			<authors>
-				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.0.3 BidiBlue theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.0" language="french" localized_language="Francais"
-			name="BidiBlue" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">Theme BidiBlue</download>
-			<authors>
-				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.0.3 du theme BidiBlue</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -227,53 +95,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">Theme redaurora</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.2 du th√®me redaurora</description>
+            	<description>Version 1.2 du thËme redaurora</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.1" language="english" localized_language="English"
-			name="redaurora" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">redaurora Theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.1 redaurora theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="1.1" language="french" localized_language="Francais"
-			name="redaurora" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">Theme redaurora</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.1 du th√®me redaurora</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.0" language="english" localized_language="English"
-			name="redaurora" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">redaurora theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.5 redaurora theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="1.0" language="french" localized_language="Francais"
-			name="redaurora" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">Theme redaurora</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.5 du theme redaurora</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -297,51 +121,7 @@
 				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
             	<description>Version 1.7 du theme Underline</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.6" language="english" localized_language="English"
-			name="underline" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.6 Underline theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="1.6" language="french" localized_language="Francais"
-			name="underline" priority="low" security-update="false" pubdate="2013/08/25">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.6 du theme Underline</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.5" language="english" localized_language="English"
-			name="underline" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.5 Underline theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="1.5" language="french" localized_language="Francais"
-			name="underline" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.5 du th√®me Underline</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -364,53 +144,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Theme Cameleon</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.8 du th√®me Cameleon</description>
+            	<description>Version 1.8 du thËme Cameleon</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.7" language="english" localized_language="English"
-			name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Cameleon Theme</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.7 Cameleon theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="1.7" language="french" localized_language="Francais"
-			name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Theme Cameleon</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.7 du th√®me Cameleon</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.6" language="english" localized_language="English"
-			name="Cameleon" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Cameleon theme</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.6 Cameleon theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="1.6" language="french" localized_language="Francais"
-			name="Cameleon" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Theme Cameleon</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.6 du theme Cameleon</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>		
@@ -432,53 +168,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Theme Enigma</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.8 du th√®me Enigma</description>
+            	<description>Version 1.8 du thËme Enigma</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.7" language="english" localized_language="English"
-			name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Enigma Theme</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.7 Enigma theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
-		</version>
-		<version num="1.7" language="french" localized_language="Francais"
-			name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Theme Enigma</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.7 du th√®me Enigma</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.6" language="english" localized_language="English"
-			name="Enigma" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Enigma theme</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.6 Enigma theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="1.6" language="french" localized_language="Francais"
-			name="Enigma" priority="low" security-update="false" pubdate="2013/02/28">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Theme Enigma</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.6 du theme Enigma</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Correction du fichier XML de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -501,31 +193,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">Theme hiver</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.7 du th√®me hiver</description>
+            	<description>Version 2.7 du thËme hiver</description>
 			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="2.6" language="english" localized_language="English"
-			name="Hiver" priority="low" security-update="false" pubdate="2013/04/27">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">hiver theme</download>
-			<authors>
-				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.6 hiver theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="2.6" language="french" localized_language="Francais"
-			name="Hiver" priority="low" security-update="false" pubdate="2013/04/27">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">Theme hiver</download>
-			<authors>
-				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.6 du theme hiver</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "recherche mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -548,31 +218,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/Grenouille/around_the_world/download/4.0/around_the_world.zip">Theme Around_the_world</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" /></authors>
-            	<description>Version 2.6 du th√®me Around_the_world</description>
+            	<description>Version 2.6 du thËme Around_the_world</description>
 			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="2.5" language="english" localized_language="English"
-			name="Around_the_world" priority="low" security-update="false" pubdate="2013/01/27">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Grenouille/around_the_world/download/4.0/around_the_world.zip">Around_the_world theme</download>
-			<authors>
-				<author name="Grenouille" email="mariedozol@gmail.com" /></authors>
-            	<description>Version 2.5 Around_the_world theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="2.5" language="french" localized_language="Francais"
-			name="Around_the_world" priority="low" security-update="false" pubdate="2013/01/27">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Grenouille/around_the_world/download/4.0/around_the_world.zip">Theme Around_the_world</download>
-			<authors>
-				<author name="Grenouille" email="mariedozol@gmail.com" /></authors>
-            	<description>Version 2.5 du theme Around_the_world</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "recherche mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -595,31 +243,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/Kits_Graphiques/Summerday/download/4.0/Summerday.zip">Theme Summerday</download>
 			<authors>
 				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" /></authors>
-            	<description>Version 2.6 du th√®me Summerday</description>
+            	<description>Version 2.6 du thËme Summerday</description>
 			<whatsnew>
-				Ajout de la fonction "recherche mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="2.5" language="english" localized_language="English"
-			name="Summerday" priority="low" security-update="false" pubdate="2013/04/03">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Kits_Graphiques/Summerday/download/4.0/Summerday.zip">Summerday theme</download>
-			<authors>
-				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" /></authors>
-            	<description>Version 2.5 Summerday theme</description>
-			<whatsnew>
-				Correct a.member class from global.css
-			</whatsnew>
-		</version>		
-		<version num="2.5" language="french" localized_language="Francais"
-			name="Summerday" priority="low" security-update="false" pubdate="2013/04/03">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Kits_Graphiques/Summerday/download/4.0/Summerday.zip">Theme Summerday</download>
-			<authors>
-				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" /></authors>
-            	<description>Version 2.5 du theme Summerday</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "recherche mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -642,31 +268,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/MarcelD/Japanese_Traditions/download/4.0/Japanese_Traditions.zip">Theme Japanese_Traditions</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" /></authors>
-            	<description>Version 2.2 du th√®me Japanese_Traditions</description>
+            	<description>Version 2.2 du thËme Japanese_Traditions</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="2.1" language="english" localized_language="English"
-			name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/06/20">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/MarcelD/Japanese_Traditions/download/4.0/Japanese_Traditions.zip">Japanese_Traditions theme</download>
-			<authors>
-				<author name="MarcelD" email="dehousse.marcel@gmail.com" /></authors>
-            	<description>Version 2.1 Japanese_Traditions theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="2.1" language="french" localized_language="Francais"
-			name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/06/20">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/MarcelD/Japanese_Traditions/download/4.0/Japanese_Traditions.zip">Theme Japanese_Traditions</download>
-			<authors>
-				<author name="MarcelD" email="dehousse.marcel@gmail.com" /></authors>
-            	<description>Version 2.1 du theme Japanese_Traditions</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -689,31 +293,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb2.0/download/4.0/actiweb2.zip">Theme ActiWeb2.0</download>
 			<authors>
 				<author name="Myster" email="" /></authors>
-            	<description>Version 1.3 du th√®me ActiWeb2.0</description>
+            	<description>Version 1.3 du thËme ActiWeb2.0</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.2" language="english" localized_language="English"
-			name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/05/11">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb2.0/download/4.0/actiweb2.zip">ActiWeb2.0 theme</download>
-			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 ActiWeb2.0 theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.2" language="french" localized_language="Francais"
-			name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/05/11">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb2.0/download/4.0/actiweb2.zip">Theme ActiWeb2.0</download>
-			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 du theme ActiWeb2.0</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -735,31 +317,9 @@
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.0/actiweb3.zip">Theme ActiWeb3.0</download>
 			<authors>
 				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 du th√®me ActiWeb3.0</description>
+            	<description>Version 1.2 du thËme ActiWeb3.0</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.1" language="english" localized_language="English"
-			name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/06/20">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.0/actiweb3.zip">ActiWeb3.0 theme</download>
-			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.1 ActiWeb3.0 theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.1" language="french" localized_language="Francais"
-			name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/06/20">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.0/actiweb3.zip">Theme ActiWeb3.0</download>
-			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.1 du theme ActiWeb3.0</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -778,34 +338,12 @@
 		<version num="1.3" language="french" localized_language="Francais"
 			name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/WhiteWeb2.0/download/4.0/whiteweb20.zip">Th√®me WhiteWeb 2.0</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/Myster/WhiteWeb2.0/download/4.0/whiteweb20.zip">thËme WhiteWeb 2.0</download>
 			<authors>
 				<author name="Myster" email="" /></authors>
-            	<description>Version 1.3 du th√®me WhiteWeb 2.0</description>
+            	<description>Version 1.3 du thËme WhiteWeb 2.0</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.2" language="english" localized_language="English"
-			name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/06/20">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/WhiteWeb2.0/download/4.0/whiteweb20.zip">WhiteWeb 2.0 theme</download>
-			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 WhiteWeb 2.0 theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.2" language="french" localized_language="Francais"
-			name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/06/20">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/Myster/WhiteWeb2.0/download/4.0/whiteweb20.zip">Th√®me WhiteWeb 2.0</download>
-			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 du th√®me WhiteWeb 2.0</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -825,34 +363,12 @@
 		<version num="1.5" language="french" localized_language="Francais"
 			name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/lorem/download/4.0/lorem.zip">Th√®me lorem</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/lorem/download/4.0/lorem.zip">thËme lorem</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
-            	<description>Version 1.5 du th√®me lorem</description>
+            	<description>Version 1.5 du thËme lorem</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.4" language="english" localized_language="English"
-			name="lorem" priority="low" security-update="false" pubdate="2013/01/27">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/lorem/download/4.0/lorem.zip">lorem theme</download>
-			<authors>
-				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
-            	<description>Version 1.4 lorem theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.4" language="french" localized_language="Francais"
-			name="lorem" priority="low" security-update="false" pubdate="2013/01/27">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/lorem/download/4.0/lorem.zip">Th√®me lorem</download>
-			<authors>
-				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
-            	<description>Version 1.4 du th√®me lorem</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -873,40 +389,14 @@
 		<version num="1.6" language="french" localized_language="Francais"
 			name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/steel_blue/download/4.0/steel_blue.zip">Th√®me steel_blue</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/steel_blue/download/4.0/steel_blue.zip">thËme steel_blue</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
 			</authors>
-            	<description>Version 1.6 du th√®me steel_blue</description>
+            	<description>Version 1.6 du thËme steel_blue</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="1.5" language="english" localized_language="English"
-			name="Steel Blue" priority="low" security-update="false" pubdate="2013/04/03">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/steel_blue/download/4.0/steel_blue.zip">steel_blue theme</download>
-			<authors>
-				<author name="schyzo" email="mx.koder@gmail.com" />
-				<author name="ReidLos" email="reidlos@phpboost.com" />
-			</authors>
-            	<description>Version 1.5 steel_blue theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="1.5" language="french" localized_language="Francais"
-			name="Steel Blue" priority="low" security-update="false" pubdate="2013/04/03">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/steel_blue/download/4.0/steel_blue.zip">Th√®me steel_blue</download>
-			<authors>
-				<author name="schyzo" email="mx.koder@gmail.com" />
-				<author name="ReidLos" email="reidlos@phpboost.com" />
-			</authors>
-            	<description>Version 1.5 du th√®me steel_blue</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
@@ -926,34 +416,12 @@
 		<version num="4.2" language="french" localized_language="Francais"
 			name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">Th√®me metro</download>
+			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">thËme metro</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.2 du th√®me metro</description>
+            	<description>Version 4.2 du thËme metro</description>
 			<whatsnew>
-				Ajout de la fonction "mise √† jour"
-			</whatsnew>
-		</version>		
-		<version num="4.1" language="english" localized_language="English"
-			name="Metro" priority="low" security-update="false" pubdate="2013/08/05">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">metro theme</download>
-			<authors>
-				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.1 metro theme</description>
-			<whatsnew>
-				Correct a.member class in global.css
-			</whatsnew>
-		</version>
-		<version num="4.1" language="french" localized_language="Francais"
-			name="Metro" priority="low" security-update="false" pubdate="2013/08/05">
-			<compatibility min="4.0" />
-			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">Th√®me metro</download>
-			<authors>
-				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.1 du th√®me metro</description>
-			<whatsnew>
-				Correction de la classe a.member dans le fichier global.css
+				Ajout de la fonction "mise ‡ jour"
 			</whatsnew>
 		</version>
 	</app>
