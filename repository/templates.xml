@@ -483,9 +483,9 @@
 		</version>
 	</app>
 	<!-- Gerald72 -->
-	<app id="hiver" type="template">
+	<app id="Hiver" type="template">
 		<version num="2.7" language="english" localized_language="English"
-			name="hiver" priority="low" security-update="false" pubdate="2013/08/26">
+			name="Hiver" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">hiver Theme</download>
 			<authors>
@@ -496,7 +496,7 @@
 			</whatsnew>
 		</version>
 		<version num="2.7" language="french" localized_language="Francais"
-			name="hiver" priority="low" security-update="false" pubdate="2013/08/26">
+			name="Hiver" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">Theme hiver</download>
 			<authors>
@@ -507,7 +507,7 @@
 			</whatsnew>
 		</version>		
 		<version num="2.6" language="english" localized_language="English"
-			name="hiver" priority="low" security-update="false" pubdate="2013/04/27">
+			name="Hiver" priority="low" security-update="false" pubdate="2013/04/27">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">hiver theme</download>
 			<authors>
@@ -518,7 +518,7 @@
 			</whatsnew>
 		</version>		
 		<version num="2.6" language="french" localized_language="Francais"
-			name="hiver" priority="low" security-update="false" pubdate="2013/04/27">
+			name="Hiver" priority="low" security-update="false" pubdate="2013/04/27">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">Theme hiver</download>
 			<authors>
