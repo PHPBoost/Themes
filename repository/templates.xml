@@ -400,6 +400,31 @@
 			</whatsnew>
 		</version>
 	</app>
+	<!-- Teki-Latex -->
+	<app id="oxygen" type="template">
+		<version num="1.0" language="english" localized_language="English"
+			name="Oxygen" priority="low" security-update="false" pubdate="2013/08/27">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
+            	<description>Version 1.0 oxygen theme</description>
+			<whatsnew>
+				1ère version
+			</whatsnew>
+		</version>
+		<version num="1.0" language="french" localized_language="Francais"
+			name="Oxygen" priority="low" security-update="false" pubdate="2013/08/27">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
+            	<description>Version 1.0 oxygen theme</description>
+			<whatsnew>
+				1ère version
+			</whatsnew>
+		</version>
+	</app>
 	<!-- Tijim -->
 	<app id="metro" type="template">
 		<version num="4.2" language="english" localized_language="English"
