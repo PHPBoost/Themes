@@ -1,0 +1,130 @@
+.connect_form {
+	background-position:8px center;
+	background-repeat: no-repeat;
+	background-color:#FFF;
+	border:1px solid #888;
+	padding:3px 0 3px 25px;
+	height:22px;
+	width:115px;
+	font-size:12px;
+	color: #555;
+	-moz-border-radius:100em;
+	-webkit-border-radius:100em;
+	border-radius:100em;
+}
+.connect_form:hover {
+	background-position:8px center;
+	background-repeat: no-repeat;
+	border:1px solid #888;
+	background-color:#FFF;
+}
+.connect_form:focus {
+	background-repeat: no-repeat;
+	background-position:8px center;
+	border:1px solid #888;
+	background-color:#FFF;
+}
+ 
+div.connect_align {
+	padding:7px 8px 0px 0px;
+}
+
+div.connect_align a {
+	color:#FFF;
+}
+ 
+.connect_align form {
+
+	display:inline;
+}
+ 
+.connect_inline {
+	display:inline;
+}
+ 
+.connect_content {
+	text-align:left;
+}
+ 
+.connect_content ul{
+	margin:0;
+	padding:0;
+	padding-left:4px;
+	list-style-type:none;
+	line-height:18px;
+}
+ 
+.connect_register {
+	margin:0;
+	margin-top:5px;
+}
+ 
+.connect_vertical input#login, .connect_vertical input#password {
+	width:120px;
+}
+
+.connect_round {
+	padding:15px;
+	-moz-border-radius:100em;
+	-webkit-border-radius:100em;
+	border-radius:100em;
+	border:1px solid #999;
+	display:block;
+	-webkit-box-sizing: content-box-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box-box;
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	float:left;
+	margin:0 15px 0 0;
+	-webkit-transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s;
+	transition: background-color 0.4s;
+	background:transparent;
+	outline: none;
+	background-color:#ddd;
+}
+
+.connect_round.cyan {
+	background-color:#7bc2b8;
+}
+
+.connect_round:hover,.connect_round:focus {
+	background-color:#F1F1F1;
+	border:1px solid #999;
+}
+
+form.connect_align .connect_round{
+	background-image:url(images/register.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+form.connect_align {
+	float:left;
+}
+
+#connect_fix {
+	position:relative;
+	height:74px;
+	width:auto;
+}
+
+#connect_blind {
+	position:absolute;
+	top:100%;
+	color:#FFF;
+	width:400px;
+	padding:14px 15px;
+	-webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.4);
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.4);
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:100em;
+}
+
+#connect_blind form.connect_align {
+	float:none;
+}
