@@ -429,26 +429,26 @@
 	</app>
 	<!-- Tijim -->
 	<app id="metro" type="template">
-		<version num="4.2" language="english" localized_language="English"
+		<version num="4.3" language="english" localized_language="English"
 			name="metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">metro theme</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.2 metro theme</description>
+            	<description>Version 4.3 metro theme</description>
 			<whatsnew>
-				Add update fonction
+				Correction header.tpl and default.css
 			</whatsnew>
 		</version>
-		<version num="4.2" language="french" localized_language="Francais"
+		<version num="4.3" language="french" localized_language="Francais"
 			name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">thème metro</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.2 du thème metro</description>
+            	<description>Version 4.3 du thème metro</description>
 			<whatsnew>
-				Ajout de la fonction "mise à jour"
+				Correction des fichiers header.tpl et de l'appel du default.css
 			</whatsnew>
 		</version>
 	</app>
