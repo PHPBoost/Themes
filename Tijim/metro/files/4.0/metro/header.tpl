@@ -7,18 +7,17 @@
 		<meta name="keywords" content="{SITE_KEYWORD}" />
 		<meta http-equiv="Content-Language" content="{L_XML_LANGUAGE}" />
 		<!-- Default CSS -->
+		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/default/theme/default.css" type="text/css" media="screen, print, handheld" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/default/framework/content/syndication/syndication.css" type="text/css" media="screen, print, handheld" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<!-- Theme CSS -->
 		# IF C_CSS_CACHE_ENABLED #
-		<link rel="stylesheet" href="{PATH_TO_ROOT}/kernel/css_cache.php?name=theme-{THEME}&files=
-		/templates/{THEME}/theme/default.css;
+		<link rel="stylesheet" href="{PATH_TO_ROOT}/kernel/css_cache.php?name=theme-{THEME}&files=s
 		/templates/{THEME}/theme/design.css;
 		/templates/{THEME}/theme/global.css;
 		/templates/{THEME}/theme/generic.css;
 		/templates/{THEME}/theme/content.css" type="text/css" media="screen, print, handheld" />
 		# ELSE #
-		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/theme/default.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/theme/design.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/theme/global.css" type="text/css" media="screen, print, handheld" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/theme/generic.css" type="text/css" media="screen, print, handheld" />
@@ -65,20 +64,19 @@
 	
 	# IF C_MENUS_LEFT_CONTENT #
 	<div id="left_menu">
-	
-					<div id="logo"></div>	
+		<div id="logo"></div>	
 					
-			# IF C_MENUS_HEADER_CONTENT #
-			{MENUS_HEADER_CONTENT}
-			# ENDIF #
+		# IF C_MENUS_HEADER_CONTENT #
+		{MENUS_HEADER_CONTENT}
+		# ENDIF #
 			
-	# IF C_COMPTEUR #
-	<div id="compteur">
-		<span class="text_strong">{L_VISIT}:</span> {COMPTEUR_TOTAL}
-		<br />
-		<span class="text_strong">{L_TODAY}:</span> {COMPTEUR_DAY}
-	</div>
-	# ENDIF #
+		# IF C_COMPTEUR #
+		<div id="compteur">
+			<span class="text_strong">{L_VISIT}:</span> {COMPTEUR_TOTAL}
+			<br />
+			<span class="text_strong">{L_TODAY}:</span> {COMPTEUR_DAY}
+		</div>
+		# ENDIF #
 	
 		{MENUS_LEFT_CONTENT}
 	</div>
@@ -92,17 +90,14 @@
 	
 	<div id="main">
 	
-	
-			# IF C_MENUS_SUB_HEADER_CONTENT #
-<div id="toggle_appear"  style="display:none;">
-  <div>
-		<div id="sub_header">
-			{MENUS_SUB_HEADER_CONTENT}
+		# IF C_MENUS_SUB_HEADER_CONTENT #
+		<div id="toggle_appear"  style="display:none;">
+			<div id="sub_header">
+				{MENUS_SUB_HEADER_CONTENT}
+			</div>
 		</div>
-  </div>
-</div>
-<p class="slide"><a href="#" onclick="Effect.toggle('toggle_appear', 'slide', { delay: 0.5 }); return false;" class="btn-slide">Connexion/D&eacute;connexion</a></p>
-			# ENDIF #
+		<p class="slide"><a href="#" onclick="Effect.toggle('toggle_appear', 'slide', { delay: 0.5 }); return false;" class="btn-slide">Connexion/D&eacute;connexion</a></p>
+		# ENDIF #
 				
 		# IF C_MENUS_TOPCENTRAL_CONTENT #
 		<div id="top_contents">
