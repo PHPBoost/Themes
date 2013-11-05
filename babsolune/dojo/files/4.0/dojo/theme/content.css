@@ -364,13 +364,10 @@ a.msg_link_pseudo:hover {
 .msg_position { /* Conteneur des messages */
     width:98%;
     margin:5px auto;
-    background:#f0f3ff;
-    border: 1px solid #D1D4DF;
 }
 
 .msg_container,.msg_container2 {
     /* Case contenant l'ensemble du message */
-    background: #FCFCFD;
     overflow:hidden !important;
     height:auto !important;
     overflow:visible;
@@ -380,7 +377,7 @@ a.msg_link_pseudo:hover {
 
 .msg_container2 {
     /*  Case contenant l'ensemble du message => Couleur alternative */
-    background: #FCFCFD;
+    background: #1f1f1f;
 }
 
 /* Barre superieur des messages */
@@ -417,7 +414,6 @@ a.msg_link_pseudo:hover {
 
 .msg_pseudo_mbr { /* Pseudo du membre */
     width:127px;
-    background:#366393;
     padding:2px 4px;
     float:left;
     margin-right:0px !important;
@@ -430,11 +426,8 @@ a.msg_link_pseudo:hover {
 .msg_top_row {
     /* Case au dessus du message, indique la date et les boutons d'administration */
     height:16px;
-    background:#366393;
     font-size:11px;
-    color:#e8eaeb;
-    border-top:1px solid #325889;
-    border-bottom:1px solid #325889;
+    color:#efefef;
     padding-top:4px;
     padding-left:127px;
     overflow:hidden !important;
@@ -444,12 +437,11 @@ a.msg_link_pseudo:hover {
 }
 
 .msg_info_mbr { /* Case des informations du membre */
-    background:#f0f3ff;
     width:127px;
     padding:4px;
     float:left;
     font-size:10px;
-    border-right:1px dotted #C4CED6;
+    border-right:1px dotted #efefef;
 }
 
 .msg_info_mbr img {
@@ -458,18 +450,16 @@ a.msg_link_pseudo:hover {
 
 .msg_contents_container {
     /* Case contenant l'ensemble du message, infos membre + contenu */
-    background:#f0f3ff;
 }
 
 .msg_contents,.msg_contents2 { /* Case du message */
     margin-left:135px;
-    background: #FCFCFD;
     padding:0px 5px;
     border-left:1px dotted #C4CED6;
 }
 
 .msg_contents2 { /* Case du message => Couleur alternative */
-    background: #FCFCFD;
+    background: #1f1f1f;
 }
 
 .msg_contents_overflow {
@@ -483,15 +473,14 @@ a.msg_link_pseudo:hover {
 }
 
 .msg_sign,.msg_sign2 { /* Signature du membre */
-   	background: #FCFCFD;
     padding:4px;
     font-size:11px;
     margin-left:135px;
-    border-left:1px dotted #C4CED6;
+    border-left:1px dotted #efefef;
 }
 
 .msg_sign2 { /* Signature du membre => Couleur alternative */
-    background: #FCFCFD;
+    background: #1f1f1f;
 }
 
 .msg_sign_overflow { /* Signature du membre, fixe la hauteur maximale */

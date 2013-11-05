@@ -28,26 +28,26 @@
 		</version>
 	</app>
 	<app id="dojo" type="template">
-		<version num="1.2" language="english" localized_language="English"
+		<version num="1.3" language="english" localized_language="English"
 			name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">dojo theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.2 dojo theme</description>
+            	<description>Version 1.3 dojo theme</description>
 			<whatsnew>
-				Correct XML file for update fonction
+				changing no_avatar.png , theme.jpg and new design for forum 
 			</whatsnew>
 		</version>
-		<version num="1.2" language="french" localized_language="Francais"
+		<version num="1.3" language="french" localized_language="Francais"
 			name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">Theme dojo</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.2 du thème dojo</description>
+            	<description>Version 1.3 du thème dojo</description>
 			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
+				Modification des images no_avatar.png ,theme.jpg and nouveau design pour le forum 
 			</whatsnew>
 		</version>
 	</app>
