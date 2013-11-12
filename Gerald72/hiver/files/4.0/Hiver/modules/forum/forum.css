@@ -13,6 +13,11 @@ a.forum_link_pseudo:hover {
 	color:#f2fbff; 
 	font-weight:bold;
 }
+
+.forum_sous_cat_compteur a.small_link{
+	color:#FFFFFF; 
+}
+
 /* Barre du titre du forum */
 .forum_title_l{
 	height:60px;
