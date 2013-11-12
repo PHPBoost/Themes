@@ -176,27 +176,23 @@
 	</app>
 	<!-- Gerald72 -->
 	<app id="Hiver" type="template">
-		<version num="2.7" language="english" localized_language="English"
-			name="Hiver" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.8" language="english" localized_language="English"
+			name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">hiver Theme</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.7 hiver theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+            	<description>Version 2.8 hiver theme</description>
+			<whatsnew>Correct link in forum, correct flowplayer</whatsnew>
 		</version>
-		<version num="2.7" language="french" localized_language="Francais"
-			name="Hiver" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.8" language="french" localized_language="Francais"
+			name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">Theme hiver</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.7 du thème hiver</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise à jour"
-			</whatsnew>
+            	<description>Version 2.8 du thème hiver</description>
+			<whatsnew>Correction de la couleur du lien dans le forum et suppression du code java qui bloque le flowplayer</whatsnew>
 		</version>
 	</app>
 	<!-- Grenouille -->
