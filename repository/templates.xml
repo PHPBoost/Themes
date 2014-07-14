@@ -102,6 +102,17 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
+		<version num="2.0" language="english" localized_language="English"
+			name="underline" priority="low" security-update="false" pubdate="2014/07/14">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
+            	<description>Version 2.0 Underline theme for PBT 4.1</description>
+			<whatsnew>
+				Compatibility for PBT 4.1
+			</whatsnew>
+		</version>
 		<version num="1.7" language="english" localized_language="English"
 			name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -111,6 +122,17 @@
             	<description>Version 1.7 Underline theme</description>
 			<whatsnew>
 				Correct XML file for update fonction
+			</whatsnew>
+		</version>
+		<version num="2.0" language="french" localized_language="Francais"
+			name="underline" priority="low" security-update="false" pubdate="2014/07/14">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
+            	<description>Version 2.0 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
+			<whatsnew>
+				Compatibilité avec la version 4.1 de PHPBoost
 			</whatsnew>
 		</version>
 		<version num="1.7" language="french" localized_language="Francais"
@@ -398,28 +420,26 @@
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
-		<version num="1.1" language="english" localized_language="English"
-			name="Oxygen" priority="low" security-update="false" pubdate="2013/09/02">
+		<version num="1.2" language="english" localized_language="English"
+			name="Oxygen" priority="low" security-update="false" pubdate="2014/04/24">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
-            	<description>Version 1.1 oxygen theme</description>
+            	<description>Version 1.2 oxygen theme</description>
 			<whatsnew>
-				Correction CSS files : global.css (.user_round), design.css (div#logo, div#compteur), connect_mini.css (.connect_round)
-				Add missing pictures : images/bg.png, theme/images/admin.jpg
+				Correction CSS files : content.css (.module_mini_container)
 			</whatsnew>
 		</version>
-		<version num="1.1" language="french" localized_language="Francais"
-			name="Oxygen" priority="low" security-update="false" pubdate="2013/09/02">
+		<version num="1.2" language="french" localized_language="Francais"
+			name="Oxygen" priority="low" security-update="false" pubdate="2014/04/24">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
-            	<description>Version 1.1 oxygen theme</description>
+            	<description>Version 1.2 oxygen theme</description>
 			<whatsnew>
-				Correction des fichiers CSS : global.css (.user_round), design.css (div#logo, div#compteur), connect_mini.css (.connect_round)
-				Ajout des fichiers images manquants : images/bg.png, theme/images/admin.jpg
+				Correction des fichiers CSS : content.css (.module_mini_container)
 			</whatsnew>
 		</version>
 	</app>
