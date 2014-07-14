@@ -677,7 +677,6 @@ a.msg_link_pseudo:hover {
 /* Modules minis
 --------------------------------------*/
 .module_mini_container { /*Placement des mini modules */
-    width:180px;
     margin:0px;
     margin-bottom:10px;
     padding:5px;
