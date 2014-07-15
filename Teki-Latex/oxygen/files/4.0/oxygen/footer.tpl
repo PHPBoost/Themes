@@ -11,6 +11,7 @@
 		<div class="spacer"></div>
 	</div>
 	# ENDIF #
+	<div class="spacer"></div>
 </div>
 	<div id="footer">
 		# IF C_MENUS_FOOTER_CONTENT #
