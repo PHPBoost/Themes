@@ -420,26 +420,26 @@
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
-		<version num="1.2" language="english" localized_language="English"
-			name="Oxygen" priority="low" security-update="false" pubdate="2014/04/24">
+		<version num="1.3" language="english" localized_language="English"
+			name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
-            	<description>Version 1.2 oxygen theme</description>
+            	<description>Version 1.3 oxygen theme</description>
 			<whatsnew>
-				Correction CSS files : content.css (.module_mini_container)
+				Correction CSS files : footer.tpl (add clear:both)
 			</whatsnew>
 		</version>
-		<version num="1.2" language="french" localized_language="Francais"
-			name="Oxygen" priority="low" security-update="false" pubdate="2014/04/24">
+		<version num="1.3" language="french" localized_language="Francais"
+			name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
-            	<description>Version 1.2 oxygen theme</description>
+            	<description>Version 1.3 du thème oxygen</description>
 			<whatsnew>
-				Correction des fichiers CSS : content.css (.module_mini_container)
+				Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)
 			</whatsnew>
 		</version>
 	</app>
