@@ -102,15 +102,15 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
-		<version num="2.0" language="english" localized_language="English"
-			name="underline" priority="low" security-update="false" pubdate="2014/07/14">
+		<version num="2.1" language="english" localized_language="English"
+			name="underline" priority="low" security-update="false" pubdate="2014/08/03">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 2.0 Underline theme for PBT 4.1</description>
+            	<description>Version 2.1 Underline theme for PBT 4.1</description>
 			<whatsnew>
-				Compatibility for PBT 4.1
+				Add Menu on right column, and patch for 4.1.1
 			</whatsnew>
 		</version>
 		<version num="1.7" language="english" localized_language="English"
@@ -124,15 +124,15 @@
 				Correct XML file for update fonction
 			</whatsnew>
 		</version>
-		<version num="2.0" language="french" localized_language="Francais"
-			name="underline" priority="low" security-update="false" pubdate="2014/07/14">
+		<version num="2.1" language="french" localized_language="Francais"
+			name="underline" priority="low" security-update="false" pubdate="2014/08/03">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 2.0 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
+            	<description>Version 2.1 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
 			<whatsnew>
-				Compatibilité avec la version 4.1 de PHPBoost
+				Ajout du menu déroulante dans la colonne de gauche et mise à jour en 4.1.1
 			</whatsnew>
 		</version>
 		<version num="1.7" language="french" localized_language="Francais"
