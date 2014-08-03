@@ -407,7 +407,7 @@ li.small-block .fa-stack { height: 2.34em; }
 	display: block;
 	right: 7px;
 	top: 50%;
-	margin-top: -5px;
+	margin-top: -2px;
 	font-family: FontAwesome;
 	content: "\F0DA";
 	color: #CCCCCC;
@@ -581,10 +581,20 @@ nav.menu-horizontal ul img { margin-right: 5px; }
 /* --- Menu Vertical --- */
 h3.menu-vertical-0 {
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
 	margin-top: -2px;
 	padding-bottom: 2px;
+}
+
+h3.menu-vertical-0 a {
+	color: #EFEFEF;
+	padding-top: 2px;
+}
+h3.menu-vertical-0 img {
+	height: 20px;
+	margin-right:10px;
+	vertical-align: bottom;
 }
 
 ul.menu-vertical a,
