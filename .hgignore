@@ -1,0 +1,8 @@
+syntax: regexp
+^\.*$
+
+syntax: regexp
+^\.project$
+
+syntax: regexp
+^\.settings$
