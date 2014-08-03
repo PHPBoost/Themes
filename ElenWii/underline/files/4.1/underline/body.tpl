@@ -19,7 +19,7 @@
 		</div>
 		<div class="spacer"></div>
 	</header>
-	
+
 	<div id="global">
 		# IF C_COMPTEUR #
 		<div id="compteur">
