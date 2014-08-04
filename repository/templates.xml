@@ -4,306 +4,260 @@
 	<header />
 	<!-- Babsolune -->
 	<app id="blogbooster" type="template">
-		<version num="2.3" language="english" localized_language="English"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.3" language="english" localized_language="English" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Blogbooster theme</download>
 			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.3 blogbooster theme</description>
-			<whatsnew>
-				Correct XML file for update fonction
-			</whatsnew>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 2.3 blogbooster theme</description>
+			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="2.3" language="french" localized_language="Francais"
-			name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.3" language="french" localized_language="Francais" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/blogbooster/download/4.0/blogbooster.zip">Theme blogbooster</download>
 			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 2.3 du thème blogbooster</description>
-			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
-			</whatsnew>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 2.3 du thème blogbooster</description>
+			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<app id="dojo" type="template">
-		<version num="1.3" language="english" localized_language="English"
-			name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.3" language="english" localized_language="English" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">dojo theme</download>
 			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.3 dojo theme</description>
-			<whatsnew>
-				changing no_avatar.png , theme.jpg and new design for forum 
-			</whatsnew>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.3 dojo theme</description>
+			<whatsnew>changing no_avatar.png , theme.jpg and new design for forum</whatsnew>
 		</version>
-		<version num="1.3" language="french" localized_language="Francais"
-			name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.3" language="french" localized_language="Francais" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/dojo/download/4.0/dojo.zip">Theme dojo</download>
 			<authors>
-				<author name="babsolune" email="babso@web33.fr" /></authors>
-            	<description>Version 1.3 du thème dojo</description>
-			<whatsnew>
-				Modification des images no_avatar.png ,theme.jpg and nouveau design pour le forum 
-			</whatsnew>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.3 du thème dojo</description>
+			<whatsnew>Modification des images no_avatar.png ,theme.jpg and nouveau design pour le forum</whatsnew>
 		</version>
 	</app>
 	<!-- Bidi -->
 	<app id="BidiBlue" type="template">
-		<version num="1.2" language="english" localized_language="English"
-			name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.2" language="english" localized_language="English" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">BidiBlue theme</download>
 			<authors>
-				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.2 BidiBlue theme</description>
-			<whatsnew>
-				Correct XML file for update fonction
-			</whatsnew>
+				<author name="Bidi" email="bidi@outlook.com" />
+			</authors>
+            <description>Version 1.2 BidiBlue theme</description>
+			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="1.2" language="french" localized_language="Francais"
-			name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.2" language="french" localized_language="Francais" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Bidi/BidiBlue/download/4.0/BidiBlue.zip">Theme BidiBlue</download>
 			<authors>
-				<author name="Bidi" email="bidi@outlook.com" /></authors>
-            	<description>Version 1.2 du thème BidiBlue</description>
-			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
-			</whatsnew>
+				<author name="Bidi" email="bidi@outlook.com" />
+			</authors>
+            <description>Version 1.2 du thème BidiBlue</description>
+			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- ElenWii -->
 	<app id="redaurora" type="template">
-		<version num="1.2" language="english" localized_language="English"
-			name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.2" language="english" localized_language="English" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">redaurora Theme</download>
 			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.2 redaurora theme</description>
-			<whatsnew>
-				Correct XML file for update fonction
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+            <description>Version 1.2 redaurora theme</description>
+			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="1.2" language="french" localized_language="Francais"
-			name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.2" language="french" localized_language="Francais" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/redaurora/download/4.0/redaurora.zip">Theme redaurora</download>
 			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.2 du thème redaurora</description>
-			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+            <description>Version 1.2 du thème redaurora</description>
+			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<app id="underline" type="template">
-		<version num="2.1" language="english" localized_language="English"
-			name="underline" priority="low" security-update="false" pubdate="2014/08/03">
+		<version num="2.1" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2014/08/03">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
 			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 2.1 Underline theme for PBT 4.1</description>
-			<whatsnew>
-				Add Menu on right column, and patch for 4.1.1
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+            <description>Version 2.1 Underline theme for PBT 4.1</description>
+			<whatsnew>Add Menu on right column, and patch for 4.1.1</whatsnew>
 		</version>
-		<version num="1.7" language="english" localized_language="English"
-			name="underline" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.7" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
 			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.7 Underline theme</description>
-			<whatsnew>
-				Correct XML file for update fonction
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+            <description>Version 1.7 Underline theme</description>
+			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="2.1" language="french" localized_language="Francais"
-			name="underline" priority="low" security-update="false" pubdate="2014/08/03">
+		<version num="2.1" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2014/08/03">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
 			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 2.1 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
-			<whatsnew>
-				Ajout du menu déroulante dans la colonne de gauche et mise à jour en 4.1.1
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+            <description>Version 2.1 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
+			<whatsnew>Ajout du menu déroulante dans la colonne de gauche et mise à jour en 4.1.1</whatsnew>
 		</version>
-		<version num="1.7" language="french" localized_language="Francais"
-			name="underline" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.7" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.0/underline.zip">Theme underline</download>
 			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" /></authors>
-            	<description>Version 1.7 du theme Underline</description>
-			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+            <description>Version 1.7 du theme Underline</description>
+			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- EnimSay -->
 	<app id="Cameleon" type="template">
-		<version num="1.8" language="english" localized_language="English"
-			name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Cameleon Theme</download>
 			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.8 Cameleon theme</description>
-			<whatsnew>
-				Correct XML file for update fonction
-			</whatsnew>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+            <description>Version 1.8 Cameleon theme</description>
+			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="1.8" language="french" localized_language="Francais"
-			name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.8" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Theme Cameleon</download>
 			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.8 du thème Cameleon</description>
-			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
-			</whatsnew>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+            <description>Version 1.8 du thème Cameleon</description>
+			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>		
 	<app id="Enigma" type="template">
-		<version num="1.8" language="english" localized_language="English"
-			name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.8" language="english" localized_language="English" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Enigma Theme</download>
 			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.8 Enigma theme</description>
-			<whatsnew>
-				Correct XML file for update fonction
-			</whatsnew>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+            <description>Version 1.8 Enigma theme</description>
+			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="1.8" language="french" localized_language="Francais"
-			name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.8" language="french" localized_language="Francais" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Enigma/download/4.0/Enigma.zip">Theme Enigma</download>
 			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" /></authors>
-            	<description>Version 1.8 du thème Enigma</description>
-			<whatsnew>
-				Correction du fichier XML de la fonction "mise à jour"
-			</whatsnew>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+            <description>Version 1.8 du thème Enigma</description>
+			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- Gerald72 -->
 	<app id="Hiver" type="template">
-		<version num="2.8" language="english" localized_language="English"
-			name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
+		<version num="2.8" language="english" localized_language="English" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">hiver Theme</download>
 			<authors>
-				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.8 hiver theme</description>
+				<author name="Gerald72" email="gerald72@gmail.com" />
+			</authors>
+            <description>Version 2.8 hiver theme</description>
 			<whatsnew>Correct link in forum, correct flowplayer</whatsnew>
 		</version>
-		<version num="2.8" language="french" localized_language="Francais"
-			name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
+		<version num="2.8" language="french" localized_language="Francais" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Gerald72/hiver/download/4.0/hiver.zip">Theme hiver</download>
 			<authors>
-				<author name="Gerald72" email="gerald72@gmail.com" /></authors>
-            	<description>Version 2.8 du thème hiver</description>
+				<author name="Gerald72" email="gerald72@gmail.com" />
+			</authors>
+            <description>Version 2.8 du thème hiver</description>
 			<whatsnew>Correction de la couleur du lien dans le forum et suppression du code java qui bloque le flowplayer</whatsnew>
 		</version>
 	</app>
 	<!-- Grenouille -->
 	<app id="around_the_world" type="template">
-		<version num="2.6" language="english" localized_language="English"
-			name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.6" language="english" localized_language="English" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Grenouille/around_the_world/download/4.0/around_the_world.zip">Around_the_world Theme</download>
 			<authors>
-				<author name="Grenouille" email="mariedozol@gmail.com" /></authors>
-            	<description>Version 2.6 Around_the_world theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+				<author name="Grenouille" email="mariedozol@gmail.com" />
+			</authors>
+            <description>Version 2.6 Around_the_world theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="2.6" language="french" localized_language="Francais"
-			name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.6" language="french" localized_language="Francais" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Grenouille/around_the_world/download/4.0/around_the_world.zip">Theme Around_the_world</download>
 			<authors>
-				<author name="Grenouille" email="mariedozol@gmail.com" /></authors>
-            	<description>Version 2.6 du thème Around_the_world</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise à jour"
-			</whatsnew>
+				<author name="Grenouille" email="mariedozol@gmail.com" />
+			</authors>
+            <description>Version 2.6 du thème Around_the_world</description>
+			<whatsnew>Ajout de la fonction "recherche mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- Kits_Graphiques -->
 	<app id="Summerday" type="template">
-		<version num="2.6" language="english" localized_language="English"
-			name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.6" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Kits_Graphiques/Summerday/download/4.0/Summerday.zip">Summerday Theme</download>
 			<authors>
-				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" /></authors>
-            	<description>Version 2.6 Summerday theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
+			</authors>
+            <description>Version 2.6 Summerday theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="2.6" language="french" localized_language="Francais"
-			name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.6" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Kits_Graphiques/Summerday/download/4.0/Summerday.zip">Theme Summerday</download>
 			<authors>
-				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" /></authors>
-            	<description>Version 2.6 du thème Summerday</description>
-			<whatsnew>
-				Ajout de la fonction "recherche mise à jour"
-			</whatsnew>
+				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
+			</authors>
+            <description>Version 2.6 du thème Summerday</description>
+			<whatsnew>Ajout de la fonction "recherche mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- MarcelD -->
 	<app id="Japanese_Traditions" type="template">
-		<version num="2.2" language="english" localized_language="English"
-			name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/MarcelD/Japanese_Traditions/download/4.0/Japanese_Traditions.zip">Japanese_Traditions theme</download>
 			<authors>
-				<author name="MarcelD" email="dehousse.marcel@gmail.com" /></authors>
-            	<description>Version 2.2 Japanese_Traditions theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
+			</authors>
+            <description>Version 2.2 Japanese_Traditions theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="2.2" language="french" localized_language="Francais"
-			name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="2.2" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/MarcelD/Japanese_Traditions/download/4.0/Japanese_Traditions.zip">Theme Japanese_Traditions</download>
 			<authors>
-				<author name="MarcelD" email="dehousse.marcel@gmail.com" /></authors>
-            	<description>Version 2.2 du thème Japanese_Traditions</description>
-			<whatsnew>
-				Ajout de la fonction "mise à jour"
-			</whatsnew>
+				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
+			</authors>
+            <description>Version 2.2 du thème Japanese_Traditions</description>
+			<whatsnew>Ajout de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- Myster -->
 	<app id="actiweb2" type="template">
-		<version num="1.3" language="english" localized_language="English"
-			name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.3" language="english" localized_language="English" name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb2.0/download/4.0/actiweb2.zip">ActiWeb2.0 theme</download>
 			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.3 ActiWeb2.0 theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.3 ActiWeb2.0 theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais"
 			name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
@@ -318,154 +272,147 @@
 		</version>
 	</app>
 	<app id="actiweb3" type="template">
-		<version num="1.2" language="english" localized_language="English"
-			name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.2" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.0/actiweb3.zip">ActiWeb3.0 theme</download>
 			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 ActiWeb3.0 theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.2 ActiWeb3.0 theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="1.2" language="french" localized_language="Francais"
-			name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.2" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.0/actiweb3.zip">Theme ActiWeb3.0</download>
 			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.2 du thème ActiWeb3.0</description>
-			<whatsnew>
-				Ajout de la fonction "mise à jour"
-			</whatsnew>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.2 du thème ActiWeb3.0</description>
+			<whatsnew>Ajout de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<app id="whiteweb20" type="template">
-		<version num="1.3" language="english" localized_language="English"
-			name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.3" language="english" localized_language="English" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/WhiteWeb2.0/download/4.0/whiteweb20.zip">WhiteWeb 2.0 theme</download>
 			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.3 WhiteWeb 2.0 theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.3 WhiteWeb 2.0 theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="1.3" language="french" localized_language="Francais"
-			name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.3" language="french" localized_language="Francais" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/WhiteWeb2.0/download/4.0/whiteweb20.zip">thème WhiteWeb 2.0</download>
 			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.3 du thème WhiteWeb 2.0</description>
-			<whatsnew>
-				Ajout de la fonction "mise à jour"
-			</whatsnew>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.3 du thème WhiteWeb 2.0</description>
+			<whatsnew>Ajout de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- schyzo -->
 	<app id="lorem" type="template">
-		<version num="1.5" language="english" localized_language="English"
-			name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.5" language="english" localized_language="English" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/lorem/download/4.0/lorem.zip">lorem theme</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
-            	<description>Version 1.5 lorem theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+            <description>Version 1.5 lorem theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="1.5" language="french" localized_language="Francais"
-			name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.5" language="french" localized_language="Francais" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/lorem/download/4.0/lorem.zip">thème lorem</download>
 			<authors>
-				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
-            	<description>Version 1.5 du thème lorem</description>
-			<whatsnew>
-				Ajout de la fonction "mise à jour"
-			</whatsnew>
+				<author name="schyzo" email="mx.koder@gmail.com" />
+			</authors>
+            <description>Version 1.5 du thème lorem</description>
+			<whatsnew>Ajout de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<app id="steel_blue" type="template">
-		<version num="1.6" language="english" localized_language="English"
-			name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.6" language="english" localized_language="English" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/steel_blue/download/4.0/steel_blue.zip">steel_blue theme</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
 			</authors>
-            	<description>Version 1.6 steel_blue theme</description>
-			<whatsnew>
-				Add update fonction
-			</whatsnew>
+            <description>Version 1.6 steel_blue theme</description>
+			<whatsnew>Add update fonction</whatsnew>
 		</version>
-		<version num="1.6" language="french" localized_language="Francais"
-			name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="1.6" language="french" localized_language="Francais" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/schyzo/steel_blue/download/4.0/steel_blue.zip">thème steel_blue</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
 			</authors>
-            	<description>Version 1.6 du thème steel_blue</description>
-			<whatsnew>
-				Ajout de la fonction "mise à jour"
-			</whatsnew>
+            <description>Version 1.6 du thème steel_blue</description>
+			<whatsnew>Ajout de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
-		<version num="1.3" language="english" localized_language="English"
-			name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
-			<compatibility min="4.0" />
+		<version num="2.0" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/08/04">
+			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
 			<authors>
-				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
-            	<description>Version 1.3 oxygen theme</description>
-			<whatsnew>
-				Correction CSS files : footer.tpl (add clear:both)
-			</whatsnew>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+            <description>Version 2.0 oxygen theme</description>
+			<whatsnew>Compatibility with PHPBoost 4.1</whatsnew>
 		</version>
-		<version num="1.3" language="french" localized_language="Francais"
-			name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
+		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
 			<authors>
-				<author name="Teki-Latex" email="teklatex@gmail.com" /></authors>
-            	<description>Version 1.3 du thème oxygen</description>
-			<whatsnew>
-				Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)
-			</whatsnew>
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+            <description>Version 1.3 oxygen theme</description>
+			<whatsnew>Correction CSS files : footer.tpl (add clear:both)</whatsnew>
+		</version>
+		<version num="2.0" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2014/08/04">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+            <description>Version 2.0 oxygen theme</description>
+			<whatsnew>Compatibilité avec PHPBoost V4.1</whatsnew>
+		</version>
+		<version num="1.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
+			<compatibility min="4.0" />
+			<download url="http://phpboost-themes.googlecode.com/hg/Teki-Latex/oxygen/download/4.0/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+            <description>Version 1.3 du thème oxygen</description>
+			<whatsnew>Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)</whatsnew>
 		</version>
 	</app>
 	<!-- Tijim -->
 	<app id="metro" type="template">
-		<version num="4.3" language="english" localized_language="English"
-			name="metro" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="4.3" language="english" localized_language="English" name="metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">metro theme</download>
 			<authors>
-				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.3 metro theme</description>
-			<whatsnew>
-				Correction header.tpl and default.css
-			</whatsnew>
+				<author name="PcAndCom" email="info@pcandcom.net" />
+			</authors>
+            <description>Version 4.3 metro theme</description>
+			<whatsnew>Correction header.tpl and default.css</whatsnew>
 		</version>
-		<version num="4.3" language="french" localized_language="Francais"
-			name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
+		<version num="4.3" language="french" localized_language="Francais" name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/PcAndCom/metro/download/4.0/metro.zip">thème metro</download>
 			<authors>
-				<author name="PcAndCom" email="info@pcandcom.net" /></authors>
-            	<description>Version 4.3 du thème metro</description>
-			<whatsnew>
-				Correction des fichiers header.tpl et de l'appel du default.css
-			</whatsnew>
+				<author name="PcAndCom" email="info@pcandcom.net" />
+			</authors>
+            <description>Version 4.3 du thème metro</description>
+			<whatsnew>Correction des fichiers header.tpl et de l'appel du default.css</whatsnew>
 		</version>
 	</app>
 </repository>
