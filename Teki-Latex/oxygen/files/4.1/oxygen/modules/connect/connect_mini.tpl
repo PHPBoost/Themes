@@ -18,7 +18,7 @@
 	</script>
 # ENDIF #
 # IF C_VERTICAL #
-	# IF C_USER_NOTCONNECTED #
+	# IF C_USER_NOTCONNECTED #		
 		<div id="connect-menu" class="module-mini-container">
 			<div class="module-mini-top">
 				<h5 class="sub-title">{L_CONNECT}</h5>
@@ -88,18 +88,24 @@
 	# IF C_USER_NOTCONNECTED #
 	<div id="connect-menu">
 		<div class="horizontal-fieldset">
-			<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
-				<input type="text" id="login" name="login" value="{L_PSEUDO}" class="connect_form" onfocus="if( this.value == '{L_PSEUDO}' ) this.value = '';" maxlength="25">
-				<input type="password" id="password" name="password" class="connect_form" value="******" onfocus="if( this.value == '******' ) this.value = '';" maxlength="30">
-				<input checked="checked" type="checkbox" name="auto">
-				<input type="hidden" name="redirect" value="{REWRITED_SCRIPT}">
-				<button type="submit" name="connect" value="true" class="submit">{L_CONNECT}</button>
-			</form>
+			<a href="#" class="block-round" title="{L_CONNECT}" onclick="Effect.toggle('connect-blind', 'appear', { duration: 0.6 }); return false;">
+				<i class="fa fa-sign-in fa-2x"></i>
+			</a>
 			# IF C_USER_REGISTER #
 			<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
-				<button type="submit" name="register" value="true" class="submit">{L_REGISTER}</button>
+				<button type="submit" name="register" value="true" class="block-round" title="{L_REGISTER}"><i class="fa fa-user fa-2x"></i></button>
 			</form>
 			# ENDIF #
+			<br />
+			<div class="connect-align" id="connect-blind" style="display: none;">
+				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
+					<input type="text" id="login" name="login" value="{L_PSEUDO}" class="connect-form" onfocus="if( this.value == '{L_PSEUDO}' ) this.value = '';" maxlength="25">
+					<input type="password" id="password" name="password" class="connect-form" value="******" onfocus="if( this.value == '******' ) this.value = '';" maxlength="30">
+					<input checked="checked" type="checkbox" name="auto">
+					<input type="hidden" name="redirect" value="{REWRITED_SCRIPT}">
+					<button type="submit" name="connect" value="true" class="submit">{L_CONNECT}</button>
+				</form>
+			</div>
 		</div>
 	</div>
 	# ELSE #

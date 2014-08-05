@@ -3,17 +3,20 @@
 
 #connect-menu div.horizontal-fieldset {
 	text-align: right;
-	padding: 55px 0px 0px 20px;
+	padding: 40px 0px 0px 20px;
 }
 
 #connect-menu div.vertical-fieldset,
 #connect-menu div.horizontal-fieldset {
 	margin: 0px;
+	position: relative;
 }
 
 #connect-menu div.vertical-fieldset form {
 	margin-bottom: 10px;
 }
+
+#connect-menu div.horizontal-fieldset a,
 #connect-menu div.horizontal-fieldset form {
 	display: inline-block;
 }
@@ -64,5 +67,18 @@ div.connect-register i {
 }
 
 #connect-menu div.vertical-fieldset input#login, 
-#connect-menu div.vertical-fieldset input#password { width: 120px; }
-#connect-menu div.vertical-fieldset button { margin: 5px 0px; }
+#connect-menu div.vertical-fieldset input#password { 
+	width: 120px;
+}
+
+#connect-menu div.vertical-fieldset form button {
+	margin: 5px 0px;
+}
+
+#connect-blind {
+	position: absolute;
+	width: 450px;
+	top: 114px;
+	color: #FFFFFF;
+}
+
