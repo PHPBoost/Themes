@@ -1,4 +1,4 @@
-.input-element-button input {
+#mini-search-form.input-element-button input {
 	width: 120px;
 	font-size: 12px;
 	border-radius: 4px 0px 0px 4px;
@@ -24,12 +24,11 @@
 #mini-search-form :before {
 	position: absolute;
 	display: block;
-	left: 3px;
-	top: 6px;
-	margin-top: -5px;
+	left: 5px;
+	top: 5px;
 	font-family: FontAwesome;
 	content: "\F002";
-	font-size: 25px;
+	font-size: 1.5em;
 	font-weight: 300;
 	color: #353535;
 }
