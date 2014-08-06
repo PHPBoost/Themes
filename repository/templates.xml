@@ -143,6 +143,16 @@
 	</app>
 	<!-- EnimSay -->
 	<app id="Cameleon" type="template">
+		<version num="2.0" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2014/08/06">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/cameleon/download/4.1/cameleon.zip">Cameleon Theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+            <description>Version 2.0 Cameleon theme</description>
+			<whatsnew>Compatibility with PHPBoost 4.1</whatsnew>
+		</version>
 		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/EnimSay/Cameleon/download/4.0/Cameleon.zip">Cameleon Theme</download>
@@ -151,6 +161,16 @@
 			</authors>
             <description>Version 1.8 Cameleon theme</description>
 			<whatsnew>Correct XML file for update fonction</whatsnew>
+		</version>
+		<version num="2.0" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2014/08/06">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/cameleon/download/4.1/cameleon.zip">Theme Cameleon</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+            <description>Version 2.0 du thème Cameleon</description>
+			<whatsnew>Compatibilité avec PHPBoost 4.1</whatsnew>
 		</version>
 		<version num="1.8" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
