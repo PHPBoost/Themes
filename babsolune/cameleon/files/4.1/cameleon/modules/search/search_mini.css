@@ -1,0 +1,35 @@
+.input-element-button input {
+	width: 120px;
+	font-size: 12px;
+	border-radius: 4px 0px 0px 4px;
+	text-indent: 20px;
+}
+
+.input-element-button button {
+	font-size: 12px;
+	border-radius: 0px 4px 4px 0px;
+	margin-left: -1px;
+}
+
+#mini-search-form {
+	position: relative;
+	margin: 10px 20px;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+#mini-search-form :before {
+	position: absolute;
+	display: block;
+	left: 3px;
+	top: 6px;
+	margin-top: -5px;
+	font-family: FontAwesome;
+	content: "\F002";
+	font-size: 25px;
+	font-weight: 300;
+	color: #353535;
+}
