@@ -163,7 +163,6 @@ footer#footer .footer-infos {
 	padding-top: 10px;
 }
 
-footer#footer .footer-infos a { color: #AAAAAA; font-size: 10px; }
 footer#footer .footer-infos span { color: #FFFFFF; font-size: 10px; }
 
 @media all and (max-width:1024px) {
