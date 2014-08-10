@@ -91,7 +91,7 @@
 		<ul class="connect-content">
 				<li>
 					
-					<a href="{PATH_TO_ROOT}/user/connect" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> </a>&nbsp;
+					<a href="${relative_url(UserUrlBuilder::connect())}" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> </a>&nbsp;
 				</li>
 				<li>
 					
@@ -99,7 +99,7 @@
 				</li>
 			# IF C_USER_REGISTER #
 			<li>					 
-					<a href="{PATH_TO_ROOT}/user/registration" title="{L_REGISTER}"><i class="fa fa-plus"></i> </a>&nbsp;
+					<a href="${relative_url(UserUrlBuilder::registration())}" title="{L_REGISTER}"><i class="fa fa-plus"></i> </a>&nbsp;
 				</li>
 			# ENDIF #
             </ul>
