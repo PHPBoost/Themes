@@ -104,14 +104,14 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
-		<version num="2.2" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2014/08/07">
+		<version num="2.3" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2014/08/16">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 2.2 Underline theme for PBT 4.1</description>
-			<whatsnew>Correct display with 3 columns or only left column</whatsnew>
+            <description>Version 2.3 Underline theme for PBT 4.1</description>
+			<whatsnew>Correct sitename with IE</whatsnew>
 		</version>
 		<version num="1.7" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -122,14 +122,14 @@
             <description>Version 1.7 Underline theme</description>
 			<whatsnew>Correct XML file for update fonction</whatsnew>
 		</version>
-		<version num="2.2" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2014/08/07">
+		<version num="2.3" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2014/08/16">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/underline/download/4.1/underline.zip">Theme underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 2.2 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
-			<whatsnew>Correction de l'affichage avec 3 colonnes ou la colonnes de gauche uniquement</whatsnew>
+            <description>Version 2.3 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
+			<whatsnew>Correction de l'affichage du sitename avec IE</whatsnew>
 		</version>
 		<version num="1.7" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
