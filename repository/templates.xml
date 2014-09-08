@@ -181,7 +181,7 @@
             <description>Version 1.8 du thème Cameleon</description>
 			<whatsnew>Correction du fichier XML de la fonction "mise à jour"</whatsnew>
 		</version>
-	</app>		
+	</app>
 	<app id="Enigma" type="template">
 		<version num="1.8" language="english" localized_language="English" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -328,6 +328,16 @@
 		</version>
 	</app>
 	<app id="actiweb3" type="template">
+		<version num="2.0" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2014/09/08">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.1/actiweb3.zip">ActiWeb3.0 theme</download>
+			<authors>
+				<author name="Myster" email="" />
+				<author name="PHPBoost" email="contact@phpboost.com" />
+			</authors>
+            <description>Version 2.0 ActiWeb3.0 theme</description>
+			<whatsnew>Compatibility with PHPBoost V4.1</whatsnew>
+		</version>
 		<version num="1.2" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.0/actiweb3.zip">ActiWeb3.0 theme</download>
@@ -336,6 +346,16 @@
 			</authors>
             <description>Version 1.2 ActiWeb3.0 theme</description>
 			<whatsnew>Add update fonction</whatsnew>
+		</version>
+		<version num="2.0" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2014/09/08">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/Myster/ActiWeb3.0/download/4.1/actiweb3.zip">Theme ActiWeb3.0</download>
+			<authors>
+				<author name="Myster" email="" />
+				<author name="PHPBoost" email="contact@phpboost.com" />
+			</authors>
+            <description>Version 2.0 du thème ActiWeb3.0</description>
+			<whatsnew>Compatibilité avec PHPBoost V4.1</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
