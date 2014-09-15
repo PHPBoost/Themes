@@ -387,6 +387,27 @@
 			<whatsnew>Ajout de la fonction "mise à jour"</whatsnew>
 		</version>
 	</app>
+	<!-- riptide -->
+	<app id="vertigo" type="template">
+		<version num="1.0" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2014/09/15">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/riptide/vertigo/download/4.0/vertigo.zip">Vertigo theme</download>
+			<authors>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.0 Vertigo theme</description>
+			<whatsnew>-</whatsnew>
+		</version>
+		<version num="1.0" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2014/09/15">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/riptide/vertigo/download/4.0/vertigo.zip">thème Vertigo</download>
+			<authors>
+				<author name="Myster" email="" />
+			</authors>
+            <description>Version 1.0 du thème Vertigo</description>
+			<whatsnew>-</whatsnew>
+		</version>
+	</app>
 	<!-- schyzo -->
 	<app id="lorem" type="template">
 		<version num="1.5" language="english" localized_language="English" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
