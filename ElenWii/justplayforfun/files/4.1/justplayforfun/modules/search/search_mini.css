@@ -1,0 +1,34 @@
+#mini-search-form.input-element-button input {
+	width: 130px;
+	font-size: 12px;
+	padding-right: 25px;
+	border-radius: 4px 4px 4px 4px;
+	background: transparent;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #444444 #666666 #555555 #444444;
+}
+#mini-search-form.input-element-button input:hover {
+	background: rgba(0,0,0,0.05);
+	border-color: #333333 #666666 #666666 #555555;
+}
+
+#mini-search-form.input-element-button button {
+	margin-left: -30px;
+	background: transparent;
+	padding: 0px 9px 0px 9px;
+	border: none;
+}
+
+#mini-search-form.input-element-button button i {
+	color: #999999;
+}
+
+#mini-search-form {
+	margin: 14px 25px 10px 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	white-space: nowrap;
+	vertical-align: middle;
+}
