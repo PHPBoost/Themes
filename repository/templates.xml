@@ -83,8 +83,8 @@
 		</version>
 	</app>
 	<!-- ElenWii -->
-	<app id="JustPlayForFuN" type="template">
-		<version num="1.0" language="english" localized_language="English" name="justplayforfun" priority="low" security-update="false" pubdate="2014/09/21">
+	<app id="JustPlayforFuN" type="template">
+		<version num="1.0" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2014/09/21">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/justplayforfun/download/4.1/justplayforfun.zip">Just Play for FuN Theme</download>
 			<authors>
@@ -93,7 +93,7 @@
             <description>Version 1.0 Just Play for FuN theme</description>
 			<whatsnew>First Revision</whatsnew>
 		</version>
-		<version num="1.0" language="french" localized_language="Francais" name="justplayforfun" priority="low" security-update="false" pubdate="2014/09/21">
+		<version num="1.0" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2014/09/21">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/justplayforfun/download/4.1/justplayforfun.zip">Thème Just Play for FuN</download>
 			<authors>
