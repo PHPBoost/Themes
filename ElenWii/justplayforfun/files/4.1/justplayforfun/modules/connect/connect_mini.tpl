@@ -21,6 +21,22 @@
 	-->
 	</script>
 
+	<li class="connect-login txt">
+		<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
+			<input type="text" id="login" name="login" value="{L_PSEUDO}" class="connect_form" onfocus="if( this.value == '{L_PSEUDO}' ) this.value = '';" maxlength="25">
+			<input type="password" id="password" name="password" class="connect_form" value="******" onfocus="if( this.value == '******' ) this.value = '';" maxlength="30">
+			<input checked="checked" type="checkbox" name="auto">
+			<input type="hidden" name="redirect" value="{REWRITED_SCRIPT}">
+			<button type="submit" name="connect" value="true" class="small submit">{L_CONNECT}</button>
+		</form>
+	</li>
+	<li class="connect-register txt">
+		# IF C_USER_REGISTER #
+		<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
+			<button type="submit" name="register" value="true" class="small submit">{L_REGISTER}</button>
+		</form>
+		# ENDIF #
+	</li>
 # ELSE #
 
 	<script>

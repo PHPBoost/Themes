@@ -594,47 +594,57 @@ nav.menu-horizontal ul img { margin-right: 5px; }
 
 /* --- Menu Vertical --- */
 h3.menu-vertical-0 {
-	text-align: center;
-	font-size: 12px;
-	font-weight: bold;
-	margin-top: -2px;
-	padding-bottom: 2px;
+	font-size: 16px;
+	padding-top: 35px;
+	color: #515C68;
+}
+
+ul.menu-vertical h3 {
+	font-size: 13px;
+}
+
+.menu-vertical img {
+	max-width: 20px;
+	margin-right: 5px;
 }
 
 ul.menu-vertical a,
-ul.menu-vertical span { color: #445766; }
+ul.menu-vertical span {
+	color: #445766;
+}
 
 ul.menu-vertical {
 	text-align: left;
-	margin: 0 !important;
+	margin: 0px 0px 0px 8px !important;
 }
 
-ul.menu-vertical li { list-style-type: none; }
-
-ul.menu-vertical img { margin-right: 5px; }
-
-ul.menu-vertical li a,
-ul.menu-vertical li span {
-	margin-top: 3px;
-	margin-left: 10px;
+ul.menu-vertical li {
 	list-style-type: none;
-	margin-left: 10px;
+	padding: 2px 0px;
 }
 
-ul.menu-vertical-0 li a,ul.menu-vertical-0 li span { color: #334455; }
+ul.menu-vertical-0 li a,
+ul.menu-vertical-0 li span {
+	color: #334455;
+}
 
-ul.menu-vertical-1 li a,ul.menu-vertical-1 li span { color: #445566; }
+ul.menu-vertical-1 li a,
+ul.menu-vertical-1 li span {
+	color: #445566;
+	padding: 0px 0px 0px 5px;
+}
 
-ul.menu-vertical-2 li a,ul.menu-vertical-2 li span {
+ul.menu-vertical-2 li a,
+ul.menu-vertical-2 li span {
 	color: #556677;
-	font-style: italic;
+	padding: 0px 0px 0px 5px;
 }
 
 ul.menu-vertical-3 li { font-style: normal; }
 
-ul.menu-vertical-3 li a,ul.menu-vertical-3 li span {
+ul.menu-vertical-3 li a,
+ul.menu-vertical-3 li span {
 	color: #778899;
-	font-size: 80%;
 }
 
 /* --- menu de flux --- */

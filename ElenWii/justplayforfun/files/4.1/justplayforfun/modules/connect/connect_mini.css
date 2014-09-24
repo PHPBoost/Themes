@@ -23,7 +23,7 @@ ul.connect-content {
 }
 #connect-menu div.horizontal-fieldset ul.connect-content li::last-child { margin-right: 0px; }
 
-#connect-menu div.vertical-fieldset ul.connect-content li > i{ 
+#connect-menu div.vertical-fieldset ul.connect-content li > i{
 	width: 18px;
 	text-align: center;
 }
@@ -32,15 +32,42 @@ ul.connect-content {
 #connect-menu div.horizontal-fieldset ul li a { color: #FFFFFF; }
 #connect-menu div.horizontal-fieldset ul li > i{ vertical-align: 0px; }
 
-#connect-menu div.vertical-fieldset label { 
+#connect-menu div.vertical-fieldset label {
 	text-align: center;
 	padding-right: 0px;
 }
 #connect-menu div.vertical-fieldset ul.connect-content { text-align: left; }
 #connect-menu div.horizontal-fieldset ul.connect-content { text-align: center; }
- 
+
 div.connect-register i { vertical-align: -1px; }
 
-#connect-menu div.vertical-fieldset input#login, 
-#connect-menu div.vertical-fieldset input#password { width: 120px; }
-#connect-menu div.vertical-fieldset button { margin: 5px 0px; }
+li.connect-login,
+li.connect-register {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+li.connect-login input#login,
+li.connect-login input#password {
+	width: 120px;
+	padding: 2px 5px;
+	margin: 5px 0px 0px 5px;
+	vertical-align: top;
+	background-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999 #BBBBBB #AAAAAA #888888;
+}
+
+li.connect-login button,
+li.connect-register button {
+	margin: 5px 0px;
+	background: none;
+	border: none;
+}
+
+li.connect-login button:hover,
+li.connect-register button:hover {
+	background-color: #555555;
+}
+
