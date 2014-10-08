@@ -1,0 +1,68 @@
+.cat .subcat { margin-bottom: 36px; padding:0 10px; }
+
+.cat ul { list-style: none; }
+
+.cat ul li {
+    float: left;
+    margin: 0 5px 0 5px;
+}
+
+.button_cat {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.2);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.button_cat:hover {
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.button_cat:active {
+    position: relative;
+    top: 1px;
+}
+
+.tags a {
+    background-color: #376294;
+    border-radius: 3px;
+    background-image: linear-gradient(#5179a5, #376294 45%, #376294);
+    background-repeat: no-repeat no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px inset;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 3px;
+    line-height: 12px;
+    text-decoration: none;
+}
+
+.tags a:hover {
+    background-color: #383435;
+    color: #FFFFFF;
+    background-image: linear-gradient(#454042, #383435 45%, #383435);
+    background-repeat: no-repeat no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 4px 10px inset;
+    text-decoration: none;
+}
+
+.pages-pagination {
+    float: right;
+    width: 33%;
+}
+
+@media all and (max-width:980px){
+    .small-block{
+        width: 49.7%;
+    }
+}
+
+@media all and (max-width:640px){
+    .small-block{
+        width: 99.7%;
+    }
+}

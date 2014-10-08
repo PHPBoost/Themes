@@ -1,0 +1,20 @@
+.options.infos {
+	width: 100%;
+	font-size: 11px;
+	margin-top: 15px;
+}
+
+.media-desc { 
+	text-align: justify;
+	margin-top: 15px;		
+}
+
+.media-content {
+	margin: 25px auto;
+	text-align: center;
+	
+}
+
+.media-content a { max-width: 100%; }
+
+.content { margin-top: 10px; }

@@ -1,0 +1,224 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/ 
+html {
+	min-height: 100%;
+	height: auto;
+}
+
+body {
+	min-height: 100%;
+	height: auto;
+	background: #E8EDF3 url(images/bg.jpg) no-repeat fixed center 20%;
+	background-size:cover;
+	color: #516171/*#333333*/;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+/* -------------------------------------- */
+/* Conteneur global */
+
+div#wrapper {
+	min-height: 100%;
+	height: auto;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	margin:auto;
+	/*background: rgba(0,0,0,0.4);*/
+	background: #516171;
+}
+
+div#global {
+	order:2;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	width:75%;
+	/*background:rgba(255,255,255,0.4);
+	background: rgba(0,0,0,0.2);*/
+}
+
+/* Entête */
+header#header {
+	margin: auto;
+}
+
+div#top-header { 
+}
+
+div#top-header form { margin-left: auto; }
+
+div#sub-header { min-height: 35px;}
+
+div#site-infos {
+	width:100%;
+}
+
+div#site-logo {
+	background: url('images/logo.png') no-repeat center top;
+	width:100%;
+	height:120px;
+}
+
+div#site-name-container {
+	text-align:center;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 1.1pt;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+span#site-slogan {
+	display: block;
+	color: #ffffff;
+	font-size: 12px;
+	padding-left: 4px;
+	letter-spacing: 3pt;
+}
+
+/* Compteur de visites */
+div#compteur {
+	color: #E9ECD9;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	font-size: 11px;
+	right: 8.4%;
+	text-align: right;
+}
+
+/* Menu gauche */
+aside#menu-left {
+	order:1;
+	height:auto;
+	min-height:100%;
+	width: 25%;
+	min-width:200px;
+	border-right:5px solid #ffffff;
+	color: #f5f5f5;
+}
+aside#menu-left .module-mini-contents a{color: #02DCB9;}
+aside#menu-left .module-mini-contents a:hover: {color: #A769BC;}
+
+/* Menu droit */
+aside#menu-right {
+	order:2;
+	width: 30%;
+	min-width:180px;
+	padding:180px 20px 20px 0;
+	background: url(images/blason.png) no-repeat center top;
+}
+
+/* Taille du conteneur de page en fonction des menus droite et gauche 
+aside#menu-left + div#main { float:left; width:775px; }
+aside#menu-left + aside#menu-right + div#main { float:left; width:570px; }*/
+aside#menu-right + div#main {  width:70%; }
+
+/* Contenu de la page */
+div#main {
+	order:1;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction:column;
+	float:left;
+	width:100%;
+	background:rgba(255,255,255,0.4);
+	margin:0 0 0 20px;
+}
+div#main-content form{
+	order:3;
+	background:rgba(255,255,255,0.4);
+	margin: 20px auto;
+	padding: 10px;
+}
+/* Contenu central */
+div#main-content {
+	order:1;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction:column;
+}
+
+/* Barre d'outils */
+#actions-links-menu { /*float:right; margin: 5px;*/ }
+
+/* Barre de lien rapide */
+nav#breadcrumb {
+	text-indent: 10px;
+	margin: 0;
+	padding:10px;
+	background:rgba(255,255,255,0.2);
+	order:1;
+}
+nav#breadcrumb ol { list-style: none; }
+nav#breadcrumb ol li { display: inline; color:#ffffff;}
+nav#breadcrumb ol li:not(.current):after { content: '/'; color: #616161; } /* Séparateur de lien */
+
+/* Emplacement au dessus et en dessous du contenu de la page */
+div#top-content, div#bottom-content{
+	background:rgba(255,255,255,0.2);
+	margin: 0;
+}
+div#top-content{
+	order:2;
+	background:rgba(255,255,255,0.6);
+}
+div#bottom-content{
+	order:4;
+}
+/* Bloc au dessus du pied de page */
+div#top-footer {
+	clear: both;
+	padding: 5px 0px;
+	background:rgba(255,255,255,0.2);
+	order:5;
+}
+
+/* Pied de page */
+
+footer#footer {
+	clear: both;
+	width: 100%;
+	bottom: 0px;
+	background: #213141;
+	border-top: 5px solid #ffffff;
+}
+
+footer#footer .footer-content {
+	margin: 20px auto 0 auto;
+	padding-bottom: 20px;
+}
+
+footer#footer .footer-infos {
+	min-height: 40px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer#footer .footer-infos span { color: #FFFFFF; font-size: 12px; }
+
+@media all and (max-width:980px){
+	div#global {flex-direction:column;}
+	div#main {margin: 0}
+	aside#menu-right {width: 100%}
+	aside#menu-right + div#main {  width:100%; }
+}
+
+@media all and (max-width:640px){
+	div#wrapper {flex-direction:column;}
+	div#global {width: 100%}
+	aside#menu-left {border:none; width:100%;}
+	.menu-left-content {display: none;}
+}

@@ -1,0 +1,14 @@
+/* Surcharge de la classe notes pour passer à la ligne et ne pas deformer les tableaux */
+.notes{ white-space: nowrap; }
+
+.gallery-cat {display: flex; flex-wrap:wrap; align-items:flex-end;}
+
+.gallery-cat-list {
+    margin-bottom: 20px;
+}
+
+.gallery-cat-info {
+    padding:5px 10px;
+}
+
+

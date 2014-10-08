@@ -1,0 +1,213 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/ 
+body {
+	min-height: 100%;
+	height: auto;
+	background: #f5f5f5;
+	color: #555555;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+/* -------------------------------------- */
+/* Conteneur global */
+div#global {
+	width: 1024px;
+	margin: auto;
+	min-height:95%;
+}
+
+/* Entête */
+header#header {
+	width: 100%;	
+}
+
+div#top-header { 
+    min-height:50px;
+	background:#366393;
+}
+
+div#sub-header {
+    min-height: 50px;
+	background:#313131;
+}
+
+div#site-infos {
+	max-width:1024px;
+	margin:auto;
+}
+
+.mascot {
+	background:#f5f5f5 url('images/icon.png') no-repeat center;
+	width:60px;
+	height:50px;
+	margin-left:150px;
+	padding:0;
+	float:left;
+}
+
+.mascot:after {
+	content: "";
+	top: 18px;
+	bottom: auto;
+	left: 100%;
+	position: relative;
+	border-width: 8px 0 8px 8px;
+	border-color: transparent #f5f5f5;	
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+div#site-logo {
+	position:absolute;
+	float: left;
+	margin:0;
+	background: url('images/logo.png') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 128px;
+	width: 128px;
+}
+
+div#site-name-container a {
+	float:left;
+	max-width: 600px;
+	font-size: 32px;
+    margin:5px;
+	padding-left:10px;
+    text-shadow: rgba(0,0,0,0.5) 1px 1px 2px;
+    font-family:  Verdana;
+    text-decoration:none;
+	color:#f5f5f5;
+}
+
+div#site-name-container a:hover {
+	color:#afafaf;
+}
+/*
+a#site-name {
+	color: #F9FCFF;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1em;
+	text-shadow: 0px 0px 0 rgb(0,0,0), 1px 0px 0 rgb(-255,-255,-255), 2px 0px 1px rgba(0,0,0,0.1), 2px 0px 1px rgba(0,0,0,0.2), 0px 0px 1px rgba(0,0,0,.1);
+	letter-spacing: 1.1pt;
+	text-decoration: none;
+}*/
+
+span#site-slogan {
+	display: block;
+	color: #f5f5f5;
+	font-size: 10px;
+	padding-left: 10px;
+	letter-spacing: 1.5pt;
+	margin-top:15px;
+	margin-left:10px;
+	max-width:160px;
+	float:left;
+	border-left:2px solid #f5f5f5;
+	-moz-hyphens: none;
+}
+
+/* Compteur de visites */
+div#compteur {
+	color: #E9ECD9;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size: 11px;
+	margin-right: 15px;
+	text-align: right;
+}
+
+/* Menu gauche */
+aside#menu-left {
+	float: left;
+	width: 25%;
+	margin-right: 5px;
+}
+
+/* Menu droit */
+aside#menu-right {
+    float:right;
+    width:25%;
+    margin:10px 0px 0px 20px;
+}
+
+/* Taille du conteneur de page en fonction des menus droite et gauche 
+aside#menu-left + div#main { float:left; width:775px; }
+aside#menu-right + div#main { float:left; width:775px; }
+aside#menu-left + aside#menu-right + div#main { float:left; width:570px; }*/
+
+/* Contenu de la page */
+div#main { 
+    width:auto;
+    min-width:450px;
+    overflow:hidden !important;
+    height:auto !important;
+    float:none;}
+
+/* Contenu central */
+div#main-content {
+	padding: 0 10px 20px;
+}
+
+/* Barre d'outils */
+#actions-links-menu { float:right; margin: 0 5px 5px 5px; }
+
+/* Barre de lien rapide */
+nav#breadcrumb {
+	margin: 0px 0px 20px 10px;
+	background:#fff;
+	display:table;
+	padding:3px 5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+nav#breadcrumb ol { list-style: none; margin: 0; }
+nav#breadcrumb ol li { display: inline; }
+nav#breadcrumb ol li:not(.current):after { content: '/'; color: #616161; } /* Séparateur de lien */
+
+/* Emplacement au dessus et en dessous du contenu de la page */
+div#top-content { margin: 0px auto; }
+div#bottom-content { margin: 8px 0; }
+
+/* Bloc au dessus du pied de page */
+div#top-footer { clear: both; padding: 5px 0px; }
+
+/* Pied de page */
+
+footer#footer {
+	clear: both;
+	width: 100%;
+	background: #212121;
+	border-top: #336397 2px solid;
+}
+
+footer#footer .footer-content {
+	margin: 20px auto 0 auto;
+	width: 980px;
+	padding-bottom: 20px;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+	min-height: 40px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer#footer .footer-infos span { color: #FFFFFF; font-size: 10px; }
+
+@media all and (max-width:1024px) {
+	div#global {width:100%}
+}
+@media all and (max-width:980px) {
+	span#site-slogan{margin-top:-5000px}
+}
