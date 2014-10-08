@@ -1,0 +1,41 @@
+.module-mini-contents .input-element-button input {
+	width: 120px;
+	font-size: 12px;
+	border-radius: 4px 0px 0px 4px;
+	color:#ffffff;
+	padding: 15px 10px;
+	border-color: #454545;
+	background: #303030;
+}
+
+.module-mini-contents .input-element-button input:focus {
+	background: #ffffff;
+	color: #353535;
+}
+
+.module-mini-contents .input-element-button button {
+	font-size: 12px;
+	border-radius: 0px 4px 4px 0px;
+	margin-left: -5px;
+	padding: 10px 10px 9px;
+	border-color: #454545;
+	background: #303030;
+}
+
+.module-mini-contents .input-element-button button i {
+	color: #ffffff;
+}
+
+.module-mini-contents .input-element-button button:hover i {
+	color: #b0b0b0;
+}
+
+#mini-search-form {
+	margin: 20px auto;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.advanced {
+	padding: 5px;
+}
