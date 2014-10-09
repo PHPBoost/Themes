@@ -61,6 +61,86 @@
 			<whatsnew>Modification des images no_avatar.png ,theme.jpg and nouveau design pour le forum</whatsnew>
 		</version>
 	</app>
+	<app id="valley" type="template">
+		<version num="1.0" language="english" localized_language="English" name="Valley" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/valley/download/4.1/valley.zip">Valley theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 Valley theme</description>
+			<whatsnew>First revision</whatsnew>
+		</version>
+		<version num="1.0" language="french" localized_language="Francais" name="Valley" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/valley/download/4.1/valley.zip">Theme Valley</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 du thème Valley</description>
+			<whatsnew>Première version</whatsnew>
+		</version>
+	</app>
+	<app id="lanzarote" type="template">
+		<version num="1.0" language="english" localized_language="English" name="Lanzarote" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/lanzarote/download/4.1/lanzarote.zip">Lanzarote theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 Lanzarote theme</description>
+			<whatsnew>First revision</whatsnew>
+		</version>
+		<version num="1.0" language="french" localized_language="Francais" name="Lanzarote" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/lanzarote/download/4.1/lanzarote.zip">Theme Lanzarote</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 du thème Lanzarote</description>
+			<whatsnew>Première version</whatsnew>
+		</version>
+	</app>
+	<app id="unitedcolors" type="template">
+		<version num="1.0" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/unitedcolors/download/4.1/unitedcolors.zip">United Colors theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 United Colors theme</description>
+			<whatsnew>First revision</whatsnew>
+		</version>
+		<version num="1.0" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/unitedcolors/download/4.1/unitedcolors.zip">Theme United Colors</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 du thème United Colors</description>
+			<whatsnew>Première version</whatsnew>
+		</version>
+	</app>
+	<app id="iceland" type="template">
+		<version num="1.0" language="english" localized_language="English" name="Iceland" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/iceland/download/4.1/iceland.zip">Iceland theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 Iceland theme</description>
+			<whatsnew>First revision</whatsnew>
+		</version>
+		<version num="1.0" language="french" localized_language="Francais" name="Iceland" priority="low" security-update="false" pubdate="2014/10/10">
+			<compatibility min="4.1" />
+			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/iceland/download/4.1/iceland.zip">Theme Iceland</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+            <description>Version 1.0 du thème Iceland</description>
+			<whatsnew>Première version</whatsnew>
+		</version>
+	</app>
 	<!-- Bidi -->
 	<app id="BidiBlue" type="template">
 		<version num="1.2" language="english" localized_language="English" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
