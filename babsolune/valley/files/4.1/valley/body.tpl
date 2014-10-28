@@ -1,8 +1,8 @@
 	# INCLUDE MAINTAIN #
     
-    <div id="wrapper">    
+	<div id="wrapper"> 
 	    
-	    <div id="global">
+		<div id="global">
             
 			# IF C_COMPTEUR #
 			<div id="compteur">
@@ -67,9 +67,9 @@
 			    
 			    
 			    <div class="spacer"></div>
-	    </div>  <!-- end global -->
+		</div>  <!-- end global -->   
     
-	    <aside id="menu-left">
+		<aside id="menu-left">
         
 			<header id="header">
 				    <div id="top-header">
@@ -96,10 +96,10 @@
 			    # ENDIF #
 			</div>
 	    
-	    </aside>  <!-- end menu-left -->
-    </div> <!-- end wrapper -->
+		</aside>  <!-- end menu-left -->
+	</div> <!-- end wrapper -->
 	
-    <footer id="footer">
+	<footer id="footer">
 		# IF C_MENUS_FOOTER_CONTENT #
 		<div class="footer-content">
 			{MENUS_FOOTER_CONTENT}
