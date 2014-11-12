@@ -57,12 +57,8 @@
 					<p> Le coin des discusions </p>
 				</li>
 				<li class="bandeau-element-menu">
-					<a href="{PATH_TO_ROOT}/shoutbox" title="Live : Pour nous contacter"> Live </a>
-					<p> Pour nous contacter </p>
-				</li>
-				<li class="bandeau-element-menu">
-					<a href="{PATH_TO_ROOT}/pages" title="L'histoire de notre communauté"> Play For FuN </a>
-					<p> L'histoire de notre communauté </p>
+					<a href="{PATH_TO_ROOT}/shoutbox" title="Votre Menu via l'administration"> Votre Menu</a>
+					<p> Vous pouvez utiliser un menu de contenu </p>
 				</li>
 				# IF C_MENUS_SUB_HEADER_CONTENT #
 				{MENUS_SUB_HEADER_CONTENT}

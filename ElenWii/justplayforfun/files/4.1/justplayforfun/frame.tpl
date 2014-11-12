@@ -36,6 +36,23 @@
 		# INCLUDE JS_BOTTOM #
 		<script>
 		<!--
+			function open_gnav_submenu( classtoopen, classtoclose )
+			{
+				if (document.getElementById(classtoclose) != null) {
+					if ($(classtoclose).hasClassName("open")) {
+						$(classtoclose).removeClassName ("open");
+					}
+				}
+
+				if ($(classtoopen).hasClassName("open")) {
+					$(classtoopen).removeClassName ("open");
+				}
+				else {
+					$(classtoopen).addClassName ("open");
+				}
+			}
+		-->
+		<!--
 			Event.observe(window, 'load', function() {
 				$$(".bandeau-element-menu").invoke('observe', 'mouseover', function(event) {
 				var choix=document.getElementsByClassName("bandeau-element-menu");
