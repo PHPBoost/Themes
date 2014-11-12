@@ -164,23 +164,23 @@
 	</app>
 	<!-- ElenWii -->
 	<app id="justplayforfun" type="template">
-		<version num="1.1" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2014/09/25">
+		<version num="1.2" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2014/11/12">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/justplayforfun/download/4.1/justplayforfun.zip">Just Play for FuN Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.1 Just Play for FuN theme</description>
-			<whatsnew>Add missing login/register and vertical menu</whatsnew>
+            <description>Version 1.2 Just Play for FuN theme</description>
+			<whatsnew>Correctif of gnav menu</whatsnew>
 		</version>
-		<version num="1.1" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2014/09/25">
+		<version num="1.2" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2014/11/12">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/ElenWii/justplayforfun/download/4.1/justplayforfun.zip">Thème Just Play for FuN</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.1 du thème Just Play for FuN</description>
-			<whatsnew>Ajout du système de connexion et d'enregistrement. Ajout du menu vertical</whatsnew>
+            <description>Version 1.2 du thème Just Play for FuN</description>
+			<whatsnew>Correction de bug dans le menu de tête</whatsnew>
 		</version>
 	</app>
 	<app id="redaurora" type="template">
