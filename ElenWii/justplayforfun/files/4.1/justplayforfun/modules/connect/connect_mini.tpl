@@ -38,25 +38,6 @@
 		# ENDIF #
 	</li>
 # ELSE #
-
-	<script>
-	<!--
-	function open_gnav_submenu( classtoopen, classtoclose )
-	{
-		if ($(classtoclose).hasClassName("open")) {
-			$(classtoclose).removeClassName ("open");
-		}
-
-		if ($(classtoopen).hasClassName("open")) {
-			$(classtoopen).removeClassName ("open");
-		}
-		else {
-			$(classtoopen).addClassName ("open");
-		}
-	}
-	-->
-	</script>
-
 	<li class="txt"> Bienvenue, </li>
 	<li style="padding-right:10px;">
 		<a href="{U_USER_PROFILE}" class="{USER_LEVEL_CLASS}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a>
