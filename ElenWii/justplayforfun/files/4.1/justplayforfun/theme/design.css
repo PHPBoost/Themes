@@ -5,7 +5,7 @@ Le design.css permet de mettre en forme votre site web avec le design de votre c
 --------------------------------------*/
 body {
 	position: relative;
-	min-height: 100%; 
+	min-height: 100%;
 	height: auto;
 	background: #FFFFFF url(images/body.png) repeat-x scroll center 335px;
 	color: #555555;
@@ -112,7 +112,7 @@ span#site-slogan {
 .bandeau-menu {
     margin: auto;
     list-style: none;
-    margin-left: 25px;
+    margin-left: 170px;
     float: left;
 }
 
