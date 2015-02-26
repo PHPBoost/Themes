@@ -102,23 +102,23 @@
 		</version>
 	</app>
 	<app id="unitedcolors" type="template">
-		<version num="1.1" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2014/10/28">
+		<version num="1.2" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/02/26">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/unitedcolors/download/4.1/unitedcolors.zip">United Colors theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.1 United Colors theme</description>
-			<whatsnew>Compatibility with safari</whatsnew>
+            <description>Version 1.2 United Colors theme</description>
+			<whatsnew>Fix link for connexion and subscribe page with url-rewrit actived</whatsnew>
 		</version>
-		<version num="1.1" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2014/10/28">
+		<version num="1.2" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2015/02/26">
 			<compatibility min="4.1" />
 			<download url="http://phpboost-themes.googlecode.com/hg/babsolune/unitedcolors/download/4.1/unitedcolors.zip">Theme United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.1 du thème United Colors</description>
-			<whatsnew>Ajout de la compatibilité avec safari</whatsnew>
+            <description>Version 1.2 du thème United Colors</description>
+			<whatsnew>Correctif du lien vers page de connexion et d'inscription en mode url-rewritting désactivé</whatsnew>
 		</version>
 	</app>
 	<app id="iceland" type="template">
