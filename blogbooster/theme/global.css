@@ -1,0 +1,378 @@
+/* --------------------------------------
+		global.css
+ Contient les classes globales au site, peuvent être utilisées partout.
+--------------------------------------*/ /* Classes générales
+--------------------------------------*/
+/* Case générale des tableaux du site*/
+.row1,.block_contents1 {
+    background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 47%, #dddddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#efefef), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 47%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#efefef 47%,#dddddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 47%,#dddddd 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#efefef 47%,#dddddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+	padding:8px 6px;
+}
+
+.block_contents1 {
+    padding:20px 6px;	
+}
+
+.row2,.block_contents2 {
+	padding:8px 6px;
+	border:1px solid #efefef;
+	background:#efefef;
+}
+
+.block_contents2 {
+    padding:8px 6px;
+	border:1px solid #efefef;
+	background:#efefef;	
+}
+
+.row3,.block_contents3 {
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efefef 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efefef 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efefef 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efefef 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #efefef 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	border-top:#ffffff;
+	padding:8px 6px;
+}
+
+.block_contents3 {
+    padding:20px 6px;	
+}
+
+/* Case résultat recherche membre AJAX */
+.xmlhttprequest_result_search {
+    overflow:auto;
+    height:100px;
+    width:100px;
+    overflow:auto;
+    font-size:11px;
+    background:#313131;
+    border:1px solid #e2001a;
+    color:#ffffff;
+    padding:2px;
+}
+
+/*Affichage du mini calendrier */
+.calendar_block {
+    position:absolute;
+    text-align:center;
+    padding:6px 4px;
+    background:#313131;
+    border:1px solid #ffffff;
+    bottom:28px;
+    width:204px;
+    z-index:100;
+}
+
+.calendar_block .row3{
+	border:none;	
+}
+
+/* Déplacement des fichiers*/
+.upload_selected_cat {
+    background:#313131;
+    border:1px solid #e2001a;
+}
+
+/* Lien du site
+--------------------------------------*/
+a {
+	color:#1f1f1f;
+    text-decoration:none;
+    font-size:1em;
+    font-weight:bold;
+}
+
+a:hover {
+    color:#366393;
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+.img_link, .img_link:hover{
+	text-decoration:none;
+}
+
+
+/* Liens petite taille */
+a.small_link {
+    font-size:0.9em;
+	color:#1f1f1f;
+}
+
+a.small_link:hover {
+    font-size:0.9;
+	color: #ffffff;
+}
+
+/* Liens grande taille */
+a.big_link {
+    font-size:1.5em;
+	color:#1f1f1f;
+}
+
+a.big_link:hover {
+    font-size:1.5em;
+	color:#7f7f7f;
+}
+
+/* Liens des commentaires. */
+a.com {
+    color:#e2001a;
+    font-size:10px;
+    font-weight:bold;
+}
+
+a.com:hover {
+    color:#ffffff;
+    font-size:10px;
+    font-weight:bold;
+}
+
+/* Lien des utilisateurs => ne pas changer le nom de ces classes! */
+a.admin {
+    color:#0055ff;
+    font-weight:bold;
+}
+
+a.modo {
+    color:#880000;
+    font-weight:bold;
+}
+
+a.member {
+    color:#7f7f7f;
+    font-weight:bold;
+}
+
+/* Liens pagination
+--------------------------------------*/
+.pagination {
+    font-size:11px;
+}
+
+.pagination_current_page {
+    text-decoration:underline;
+}
+
+/***********************************************************************************/
+/*                                           BBcode                                */
+/***********************************************************************************/
+
+/* Affichage des smiley */
+.smiley{
+	vertical-align:middle;
+}
+/** Titres **/
+
+/* Titre 1 */
+h3.title1{
+	color:#366393;
+	border-bottom:2px solid #366393;
+	font-size:2em;
+	font-weight:bold;
+	padding:0px 5px;
+}
+/* Titre 2 */
+h3.title2{
+	display:inline-block;
+	font-size:1.5em;
+	border-bottom:2px solid #366393;
+	border-right:2px solid #366393;
+	font-weight:bold;
+	color:#366393;
+	padding:0px 5px;
+}
+
+/* Sous titre 1 */
+h4.stitle1, h4.stitle2{
+	display:inline-block;
+	color:#366393;
+	font-size:1.2em;
+	font-weight:bold;
+	margin-left:35px;
+	padding:4px 5px;
+	font-weight:bold;
+}
+
+/* Sous titre 1 */
+h4.stitle1{
+	border:1px solid #366393;
+}
+
+/* Sous titre 2 */
+h4.stitle2{
+	margin-left:50px;
+	background:none;
+	border-bottom:2px solid #336397;
+}
+
+.float_left
+{
+	float:left;
+	margin:5px;
+}
+
+.float_right
+{
+	float:right;
+	margin:5px;
+}
+
+/* Tableaux */
+.bb_table{
+	border:1px solid #2C5169;
+	border-spacing:0px;
+	border-collapse:collapse;
+	margin:2px;
+}
+
+.bb_table_col{
+	border:1px solid #2C5169;
+	padding:6px;
+}
+
+/* Listes */
+.bb_ul{
+	margin-left:20px;
+}
+
+.bb_ol{
+	margin-left:35px;
+}
+
+/** Styles **/
+.question{
+    color:#FFFFFF;
+    background:#98c0ea url(../images/question.png) no-repeat;
+    border:1px solid #7796b8;
+}
+.notice{
+    color:#334455;
+    background:#dadfe5 url(../images/notice.png) no-repeat;
+    border:1px solid #aaaeb3;
+}
+.warning{
+    color:#FFFFFF;
+    background:#e5ad54 url(../images/important.png) no-repeat;
+    border:1px solid #b38742;
+}
+.error{
+    color:#FFFFFF;
+    background:#C43C35 url(../images/stop.png) no-repeat;
+    border:1px solid #802722;
+}
+.success{
+    color:#FFFFFF;
+    background:#57A957 url(../images/success.png) no-repeat;
+  	border:1px solid #418041;
+}
+.question, .notice, .warning, .error, .success{
+    display:block;
+    height:35px;
+    padding-top:4px;
+    padding-bottom:10px;
+    padding-left:40px;
+    padding-right:5px;
+    margin:4px 25px;  
+    background-position:4px 4px;
+    border-radius:6px;
+}
+html>body .question, html>body .notice, html>body .warning, html>body .error, html>body .success
+{
+    height:auto;
+    min-height:25px;
+}
+.notice a{
+	color:#FFF;
+}
+
+/* Affichage balise quote, code, hide */
+.text_blockquote, .text_code, .text_hide{
+	display:block;
+	width:93%;
+	padding-bottom:2px;
+	font-weight:bold;
+	margin:auto;
+}
+.blockquote, .code, .hide {
+	overflow:auto;
+	max-height:500px;
+	background:#f8f8f8;
+	border:1px solid #366393;
+	border-left:2px solid #366393;
+	border-right:2px solid #366393;
+	border-radius:4px;
+	color:#000000;
+	padding:8px;
+	margin:0px 25px;
+	font-size:1.1em;
+}
+.hide{
+	cursor:pointer;
+	height:10px;
+	overflow:auto;
+}
+.hide2{
+	visibility:hidden;
+}
+.indent{
+	margin-left:30px;
+}
+.bb_acronym{
+	cursor:help;
+}
+
+.bb_block{
+	margin:5px 20px;
+	padding:5px;
+	border:1px solid #C4CED6;
+}
+
+.bb_fieldset{
+	margin:10px;
+}
+
+/* Prévisualisation AJAX. */
+.xmlhttprequest_preview{
+	overflow:auto;
+	height:220px;
+	width:94%;
+	font-size:11px;
+	margin:auto;
+	margin-top:4px;
+	margin-bottom:3px;			
+	padding:1px 2px;
+    -moz-border-radius:4px;
+    -khtml-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+
+/* Code avec numérotation des listes */
+.code ol{
+	margin-left:3em;
+}
+
+/*Lien vers Wikipédia*/
+a.wikipedia_link:before{
+   content:url(../images/wikipedia_icon.png);
+   vertical-align:middle;
+   padding-right:2px;
+}
+
+a.wikipedia_link{
+	border-bottom:1px dotted;
+}
+
+

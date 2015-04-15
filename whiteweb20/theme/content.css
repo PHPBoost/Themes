@@ -1,0 +1,759 @@
+/*---------------------------------------------------------
+ * Theme          : WhiteWeb2.0
+ * Auteur         : Myster.
+ * Site web       : http://noridia.fr/
+ *
+ * Commentaire ou autre de l'auteur 
+ * Contient les formulaires, les modules (et modules minis), et messages.
+ * Merci de ne pas toucher au entête des fichiers CSS.
+ *
+ * Correction CSS : Swan @  http://chez-swan.net/
+ *---------------------------------------------------------*/
+
+/*-------------------------------------
+				content.css
+Contient les formulaires, les modules (et modules minis), et messages.
+--------------------------------------*/ 
+
+table {
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+/* Conteneur */
+div.block_container {
+	width:auto;
+	margin:10px auto;
+	border: 1px solid #CCCCCC;
+	border-top:2px solid #BBBBBB;
+	border-bottom: 1px solid #BBBBBB;
+	background:#F2F8FF;
+}
+div.block_contents {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: medium none;
+    padding: 10px;
+    text-align: justify;
+    width: auto;
+}
+
+/* Entete de conteneur et des tableaux */
+div.block_top, table tr:first-child th {
+    padding:5px 6px;
+    color:#FFFFFF;
+    background:#ADCF4F;
+    text-align:left;
+    font-size:11px;
+    font-weight:normal;
+    text-transform:uppercase;
+}
+.block_top {
+	margin-top:-1px;
+}
+
+table caption {
+	font-size: 14px;
+	margin-bottom: 10px;	
+}
+
+table caption a {
+	font-size: inherit;	
+}
+
+table th:first-child{ }
+
+table th:last-child{ }
+
+table th.row1 a {
+	vertical-align: middle;
+}
+
+hr {
+    background:#C4CED6;
+    border:none;
+    margin:1px auto;
+    height:1px;
+    width:99%;
+}
+
+ul.list {
+	text-align:left;
+	margin-left:20px;
+	list-style-image: url(images/li.png)
+}
+
+/* Titres */
+h1 {
+    color:#5C5C5C;
+    font-size:18px;
+}
+
+h2.title {
+    font-size:16px;
+    font-weight:bold;
+}
+
+/* Titres */
+h3.title {
+    font-size:12px;
+    font-weight:bold;
+    display:inline;
+}
+
+/* Sous-Titres */
+h5.sub_title { /* Titre des menu */
+    font-size:13px;
+    color:#515C68;
+}
+
+h6.sub_title2 { /* Sous titre dans les menu */
+    font-size:12px;
+    font-weight:bold;
+    padding-top:4px;
+    text-indent:10px;
+    width:155px;
+    height:32px;
+    color:#515C68;
+}
+
+/* Formulaires 
+--------------------------------------*/
+.fieldset_mini {
+    width:540px;
+    margin:auto;
+    margin-top:20px;
+}
+
+input, textarea, optgroup, select, .xmlhttprequest_preview{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	color: #999999;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 2px 10px 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+	background-color: #FFFFFF;
+	border-color: #CCCCCC;
+}
+
+textarea {
+	display:block;
+	width:94%;
+	margin:5px auto;
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+fieldset textarea.post {
+	width:90%;
+	display:inline;		
+}
+
+select {
+	padding: 2px 0;
+}
+
+input.submit, button.submit{
+    background: none repeat scroll 0 0 #77AF12;
+    border: 1px solid #77AF12;
+    box-shadow: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding: 3px 14px;
+    text-shadow: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.submit:hover, button.submit:hover{
+	background: #679710;
+	color: #FFFFFF;
+}
+
+input[type=checkbox] { 
+	background: transparent;
+	border: 0;
+}
+
+input.file{
+	border:1px solid #516851;	
+	border-top:1px solid #85AE84;	
+	color:#2E3B5F;	
+	padding:1px;
+	font-weight:bold;
+	font-size:10px;
+}
+
+input.reset, button.reset{
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid #CCCCCC;
+    color: #AA0000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 14px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+}
+
+input.reset:hover, button.reset:hover{
+	cursor:pointer;
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #BBBBBB;
+    color: #FFFFFF;
+}
+
+optgroup, select{
+	cursor:pointer;
+	vertical-align:middle;
+	width:auto;		
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+optgroup {
+    font-weight:bold;
+    border:none;
+    border-bottom:1px solid #5B5A5A;
+}
+
+option {
+    padding:0px 3px;
+}
+
+legend {
+	padding:1px 0;
+	font-size:0.85em;
+	font-weight:bold;
+	background:none repeat scroll 0 0 #ADCF4F;
+	border:1px solid #DDDDDD;
+	padding:2px 10px;
+	margin-top:-0.4em;
+	margin-left:0.5em;
+	position:relative;
+	top: 0;
+	text-transform:none;
+	line-height:1.5em;
+	color:#333333;
+	vertical-align:middle;
+	text-transform:uppercase;
+}
+
+
+fieldset {
+    background: none repeat scroll 0 0 #E4EFC5;
+    border: 1px solid #F0F0ED;
+    color: #444444;
+    margin: 0;
+    padding: 20px 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+* html legend {
+    margin:0 0 -10px -7px;
+    line-height:1em;
+    font-size:.85em;
+}
+
+fieldset textarea.post {
+	width:90%;
+	display:inline;		
+}
+
+fieldset.fieldset_submit{
+	margin-top:-10px;
+	padding-bottom:15px;
+	width:99%;
+	text-align:center;
+	background:none;
+	border:none;
+}
+
+fieldset.fieldset_submit legend {
+    display:none;
+}
+
+fieldset dl {
+    height:1%;
+    overflow:hidden;
+    margin-bottom:16px;
+    font-size:11px;
+}
+
+fieldset dl.overflow_visible {
+    overflow:visible;
+}
+
+html>body fieldset dl {
+    height:auto;
+    min-height:20px;
+}
+
+fieldset dt {
+    width:45%;
+    text-align:left;
+    padding-top:3px;
+}
+
+fieldset dd {
+    margin:0 0 0 45%;
+    padding:0 0 0 5px;
+    border:none;
+    vertical-align:top;
+    font-size:11px;
+}
+
+dt {
+    float:left;
+    width:auto;
+}
+
+dt span {
+    padding:0 5px 0 0;
+}
+
+.label {
+    font-weight:bold;
+    font-size:11px;
+    color:#476a7f;
+}
+
+label {
+    cursor:pointer;
+}
+
+set label {
+    font-size:11px;
+    text-align:left;
+    font-weight:bold;
+    color:#444444;
+}
+
+dd label {
+    white-space:nowrap;
+    margin:0 10px 0 0;
+    font-weight:normal;
+    color:#444444;
+}
+
+dt span {
+    font-size:10px;
+    color:#444444;
+}
+
+label img {
+    vertical-align:middle;
+}
+
+fieldset dl dd label:hover {
+    color:#444444;
+}
+
+/* Messages postés par les membres (messages privés, etc...) 
+--------------------------------------*/
+/* Classe du lien du pseudo des messages */
+a.msg_link_pseudo {
+	font-size:11px;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+a.msg_link_pseudo:hover {
+    color:#EEEEEE;
+    font-weight:bold;
+}
+
+.msg_position { /* Conteneur des messages */
+    background: none repeat scroll 0 0 #E4EFC5;
+    border: 1px solid #DDDDDD;
+    margin: 5px auto;
+    width:98%;
+}
+
+.msg_container,.msg_container2 {
+    /* Case contenant l'ensemble du message */
+    background: #FCFCFD;
+    overflow:hidden !important;
+    height:auto !important;
+    overflow:visible;
+    height:1%;
+    clear:both;
+}
+
+.msg_container2 {
+    /*  Case contenant l'ensemble du message => Couleur alternative */
+    background: #FCFCFD;
+}
+
+/* Barre superieur des messages */
+.msg_top_l{
+	margin-right:0px !important;
+	margin-right:-3px;
+	height:34px;
+	width:29px;
+	background:#EBFAEC;
+	float:left;
+}
+
+.msg_top_r{
+	margin-left:0px !important;
+	margin-left:-3px;
+	height:34px;
+	width:21px;
+	background:#EBFAEC;
+	float:right;
+}
+
+.msg_top {
+	height:25px;
+	background:#EBFAEC;
+	padding-left:6px;
+	margin-left:20px;
+	margin-right:15px;
+	padding-top:9px;
+}
+
+.msg_top a {
+    color:#3F5164;
+}
+
+.msg_pseudo_mbr { /* Pseudo du membre */
+    width:127px;
+    background:none repeat scroll 0 0 #ADCF4F;
+    padding:2px 4px;
+    float:left;
+    margin-right:0px !important;
+    margin-right:-3px;
+    margin-left:-127px !important;
+    margin-left:-64px;
+    margin-top:-4px;
+}
+
+.msg_top_row {
+    /* Case au dessus du message, indique la date et les boutons d'administration */
+     background: none repeat scroll 0 0 #ADCF4F;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    color: #E8EAEB;
+    font-size: 11px;
+    height: auto !important;
+    overflow: hidden !important;
+    padding-left: 127px;
+    padding-top: 4px;
+}
+
+.msg_info_mbr { /* Case des informations du membre */
+    background:none repeat scroll 0 0 #E4EFC5;
+    width:127px;
+    padding:4px;
+    float:left;
+    font-size:10px;
+    border-right:1px dotted #96CA2D;
+}
+
+.msg_info_mbr img {
+	max-width: 120px;
+}
+
+.msg_contents_container {
+    /* Case contenant l'ensemble du message, infos membre + contenu */
+    background:none repeat scroll 0 0 #E4EFC5;
+}
+
+.msg_contents,.msg_contents2 { /* Case du message */
+    margin-left:135px;
+    background: #FCFCFD;
+    padding:0px 5px;
+    border-left:1px dotted #C4CED6;
+}
+
+.msg_contents2 { /* Case du message => Couleur alternative */
+    background: #FCFCFD;
+}
+
+.msg_contents_overflow {
+    /* Case du contents du message, évite que les images trop grandes dï¿½forme */
+    width:99%;
+    height:auto;
+    min-height:80px;
+    overflow:auto;
+    padding:10px 0px;
+    word-wrap:break-word;
+}
+
+.msg_sign,.msg_sign2 { /* Signature du membre */
+   	background: #FCFCFD;
+    padding:4px;
+    font-size:11px;
+    margin-left:135px;
+    border-left:1px dotted #C4CED6;
+}
+
+.msg_sign2 { /* Signature du membre => Couleur alternative */
+    background: #FCFCFD;
+}
+
+.msg_sign_overflow { /* Signature du membre, fixe la hauteur maximale */
+    height:auto !important;
+    height:80px;
+    width:99%;
+    max-height:80px;
+    max-width:99%;
+    overflow:hidden;
+}
+
+.msg_bottom_l { /* Barre inférieure des messages */
+    
+}
+
+.msg_bottom_r {
+    
+}
+
+.msg_bottom {
+    height:23px;
+    padding:6px 6px 0px 6px;
+    border:none;
+    background:none;
+}
+
+/* Modules
+--------------------------------------*/ /* Conteneur des modules */
+.module_position {
+    width:96%;
+    margin:auto;
+}
+
+.module_top_l { /* Barre supérieure des modules */}
+.module_top_r {}
+
+.module_top {
+    height:18px;
+    text-indent:10px;
+    font-size:12px;
+    font-weight:bold;
+    color:#515C68;
+    border-bottom:2px solid #DDDDDD;
+}
+
+.module_top a {}
+
+.module_top_title {
+	color: #2C6F35;
+	float:left;
+    font-size:12px;
+	margin-left:3px;
+	font-weight:bold;
+}
+
+.module_top_title img {
+	margin-top:-2px;
+}
+
+.module_top_com {
+	float:right;
+}
+
+.module_actions {
+	float:right;
+	margin:0 10px 15px;
+	margin-top:-25px;
+}
+
+.module_contents { /* Contenu des modules */
+    padding:20px 15px;
+    padding-bottom:15px;
+    clear:both;
+    text-align:justify;
+	word-wrap:break-word;
+	overflow:auto;
+}
+
+.module_bottom_l { /* Barre inférieure des modules */}
+.module_bottom_r {}
+
+.module_bottom {
+    height:22px;
+    padding:2px 0 15px 6px;
+    font-size:10px;
+}
+
+
+/* Tableau global, utilisé dans les différents modules */
+.module_table {
+    background: none repeat scroll 0 0 #E4EFC5;
+    border: 1px solid #DDDDDD;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: auto;
+    padding: 0;
+    width: 98%;
+}
+*+html .module_table { /* Hack ie7 */
+	border-collapse:collapse;
+}
+
+/* Modules minis 
+--------------------------------------*/
+.module_mini_container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;    
+	border-spacing:1px;      
+	margin:0px;
+    margin-bottom:10px;
+    padding: 5px;
+    position: relative;
+    width: 180px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	clear:both;
+}
+
+.module_mini_container ul li {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.module_mini_top {
+    border-bottom: 1px solid #DDDDDD;
+    color: #33363C;
+    font-size: 12px;
+    font-weight: bold;
+    height: 33px;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.module_mini_contents {
+    border-top:none;
+    border-bottom:none;
+    text-align:center;
+    padding:4px;
+    padding-top:5px;
+    padding-bottom:0px;
+}
+
+.module_mini_bottom { /* Bordure inférieure des modules minis */
+    height:15px;
+}
+
+.label {
+    font-weight:bold;
+    font-size:11px;
+    color:#476a7f;
+}
+
+.comment {
+	width:98%;
+	margin-bottom:20px;
+	overflow:auto;
+}
+
+.comment-date {
+	margin-left: 10px;
+}
+
+.comment-user_infos {
+	text-align:center;
+	width:150px;
+	float:left;
+}
+
+.comment-content {
+	margin-left:180px;
+}
+
+.view-topic {
+	margin-top: 10px;
+}
+
+.comment-message {
+	position: relative;
+	padding: 15px;
+	margin-top: 5px;
+	border: 1px solid #D6DEE7;
+	color: #333;
+	background:#EBFAEC;
+	min-height: 80px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;	
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+.comment-message::before {
+	content: "";
+	top: 15px;
+	bottom: auto;
+	left: -25px;
+	position: absolute;
+	border-width: 15px 25px 15px 0;
+	border-color: transparent #D6DEE7;
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+.comment-message::after {
+	content: "";
+	top: 16px;
+	bottom: auto;
+	left: -24px;
+	position: absolute;
+	border-width: 14px 24px 14px 0;
+	border-color: transparent #EBFAEC;	
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+.comment-avatar{
+	width:80px;
+}
+
+.message-containt{
+	overflow:auto;	
+}
+
+div#comment-pseudo a {}
+
+.comment-user_infos img{
+	padding:10px 0px;	
+}
+
+.comment-moderate{
+    background: none repeat scroll 0 0 #E4EFC5;
+    border: 1px solid #F0F0ED;
+	padding-top:4px;
+	width: 98%;
+	text-align:center;
+	vertical-align:middle;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;	
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+.comment-moderate a{
+	vertical-align:top;
+}

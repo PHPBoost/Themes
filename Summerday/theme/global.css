@@ -1,0 +1,102 @@
+.row1,.block_contents1 /*cadre sondage:Super site! / Arborescence du wiki / DL Info sur le fichier : Taille */
+{background:#292929;padding:8px 6px;border:1px solid #f8a230;}
+
+.block_contents1 
+{padding:20px 6px;}
+
+.row2,.block_contents2 /*Fond articles:Débuter / lien web:PHPBoost18/02/09 / Sondage:fond / DL Info sur le fichier : 14.9 Mo / fond : wiki */
+{background:#545454;padding:8px 6px;border:1px solid #f8a230;}
+
+.block_contents2 
+{padding:20px 6px;}
+
+.row3,.block_contents3 /* articles : bas / calendrier : tout / multimedia : Ordonner / téléchargement : Trier / Explorateur du wiki */
+{background:#f8a230;border-color:#C4CED6;padding:8px 6px;border-top:1px solid #CCCCCC;color:#FFF;}
+.row3 a{color:#FFF !important;}
+
+.block_contents3 
+{padding:20px 6px;}
+
+.xmlhttprequest_result_search /* Case résultat recherche membre AJAX */
+{overflow:auto;height:100px;width:100px;overflow:auto;font-size:11px;background:#f5fbff;border:1px solid #f8a230;color:#061729;padding:2px;}
+
+.calendar_block /*Affichage du mini calendrier */
+{position:absolute;text-align:center;padding:6px 4px;background:#f5fbff;border:1px solid #f8a230;bottom:28px;width:204px;z-index:100;}
+
+.upload_selected_cat /* Déplacement des fichiers*/
+{background:#f5fbff;border:1px solid #f8a230;}
+
+/* Lien du site
+--------------------------------------*/
+a 
+{color:#f8a230;text-decoration:none;font-size:11px;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;outline:none}
+
+a:hover 
+{color:#FFF;text-decoration:none;font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+a.small_link /* Liens petite taille */
+{font-size:10px;}
+
+a.small_link:hover 
+{font-size:10px;}
+
+a.big_link /* Liens grande taille */
+{font-size:15px;}
+
+a.big_link:hover 
+{font-size:15px;}
+
+a.com /* Liens des commentaires. */
+{color:#f8a230;font-size:10px;font-weight:bold;}
+
+a.com:hover 
+{color:#01528D;font-size:10px;font-weight:bold;}
+
+/* Lien des utilisateurs => ne pas changer le nom de ces classes!
+--------------------------------------*/
+a.admin 
+{color:#4dab1a;font-size:11px;font-weight:bold;}
+
+a.modo 
+{color:#006699;font-size:11px;font-weight:bold;}
+
+a.member 
+{color:#000000;font-size:11px;font-weight:bold;}
+
+/* Liens pagination
+--------------------------------------*/
+.pagination 
+{font-size:11px;}
+
+.pagination_current_page 
+{text-decoration:underline;} 
+
+/* Menu outils 
+--------------------------------------*/
+.dynamic_menu h5 /*bouton administration outils*/ 
+{color:#f8a230;background:url(images/block_top.png);border:1px solid #626262;margin-right:2px;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;}
+
+.dynamic_menu h5:hover /*bouton administration outils hover*/
+{color:#FFF;background:#626262;}
+
+.dynamic_menu ul li.separator /* Séparateur */
+{background:#f8a230;}
+
+.dynamic_menu ul li.extend 
+{background:url(images/bgmenu_extend.png);}
+
+/* Case du menu */
+.dynamic_menu li ul 
+{}
+
+.dynamic_menu li li 
+{color:#FFF;background:#626262;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:1px solid #3b3b3b;}
+
+.dynamic_menu li li a 
+{color:#FFF;}
+
+.dynamic_menu li li a:hover 
+{border:1px solid #626262;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;}
+
+
+

@@ -1,0 +1,71 @@
+
+
+################################################################################
+##                                   BIENVENUE                                ##
+################################################################################
+
+-------------------------------- Infos du template ------------------------
+
+
+Vous allez installer le thème =HUNS= Hiver
+
+Auteur: gerald72
+Mél : gerald72@gmail.com
+site : http://chez-swan.net
+Description: thème hiver 2009
+Compatibilité: PHPBoost 3.0
+Version Html: 1.0 Strict
+Version Css: 2.1
+Couleurs dominantes: bleu, blanc, neige
+Extensible: oui
+Largeur: extensible 
+
+----------------------------- Spécificités des modules ----------------------
+
+Placer:
+
+- le module "connect/mini-connect" est en tête de page,
+
+- le module "search/mini-search" (recherche rapide) est dans la sous-entête,
+
+- le menu "horizontal" est dans la sous-entête.
+
+
+
+
+----------------------------- Spécificités des Liens ----------------------
+
+Créé le menu par l'"Administration/Contenu/Ajout menu de liens".
+
+Type : menu horizontal
+Emplacement : Sous entête 
+
+- Accueil : Lien url : /news/news.php
+- Forum : Lien url : /forum/index.php
+- Wiki : Lien url : /wiki/wiki.php
+- Membres : lien url : /member/member.php
+- Faq : Lien url : /faq/faq.php
+- Liens : Lien url : /web/web.php
+- Admin : Lien url : /admin/admin_index.php
+
+-------------------------- Autres informations----------------------------
+
+
+Vous trouverez dans le dossier EXTRAS, un header_vierge.png, vous pourrez ajouter
+
+votre titre personnalisé.
+
+
+
+Plus d'info ? >> http://chez-swan.net
+
+
+
+################################################################################
+##                                Gerald72                                    ##
+################################################################################
+
+
+
+
+
