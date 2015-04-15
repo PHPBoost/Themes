@@ -1,0 +1,166 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/ 
+body {
+	position: relative;
+	min-height: 100%;
+	height: auto;
+	background: #4e4e4e url(images/body.jpg) center top no-repeat fixed;
+	background-size: cover;
+	color: #4e4e4e;
+	font-size: 13px;
+	font-family: "Oxygen", Arial, Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+.wrap {
+	width: 980px;
+	margin: 0px auto;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -ms-flexbox; /* IE10 */
+	
+}
+.wrap-left{
+	order:1;
+	width: 668px;
+	background: #f5f5f5;
+}
+
+.wrap-right{
+	order:2;
+	background: #353535;
+}
+
+/* -------------------------------------- */
+/* Conteneur global */
+div#global {
+	padding-bottom: 42px; /* Taille du footer */
+}
+
+/* Entête */
+header#header {
+	height: 312px;
+}
+
+div#top-header { 
+	height: 213px;
+	margin-right: 156px;
+}
+
+div#top-header form { margin-left: auto; }
+
+div#sub-header {
+	min-height: 99px;
+	margin-right: 156px;
+}
+
+div#site-infos {
+	min-height: : 312px;
+}
+
+div#site-logo {
+	height: 312px;
+	background: rgba(54,99,147,.8)url('images/logo.png') no-repeat;
+	width: 312px;
+	float: right;
+	margin-right: 156px;
+	margin-bottom: 58px;
+}
+
+div#site-name-container {
+	padding-top: 10px;
+	height: 145px;
+	overflow: hidden;
+	text-align: center;
+}
+
+a#site-name {
+	color: #353535;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 99px;
+	/*text-shadow: 0px 0px 0 rgb(0,0,0), 1px 0px 0 rgb(-255,-255,-255), 2px 0px 1px rgba(0,0,0,0.1), 2px 0px 1px rgba(0,0,0,0.2), 0px 0px 1px rgba(0,0,0,.1);*/
+	letter-spacing: 10pt;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+span#site-slogan {
+	display: block;
+	color: #353535;
+	font-size: 12px;
+	padding-left: 4px;
+	letter-spacing: 1.5pt;
+}
+
+/* Compteur de visites */
+div#compteur {
+	color: #E9ECD9;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size: 11px;
+	margin-right: 15px;
+	text-align: right;
+}
+/* Menu droit */
+aside#menu-right {
+	width: 312px;
+	color: #f5f5f5
+}
+
+/* Contenu de la page */
+div#main {
+	float:left;
+	width:668px;
+	margin-top: 20px;
+}
+
+/* Contenu central */
+div#main-content {
+	padding:0;
+}
+
+/* Barre d'outils */
+#actions-links-menu { float:right; margin: 0 5px 5px 5px; }
+
+/* Barre de lien rapide */
+nav#breadcrumb { text-indent: 10px; margin: 0px 0px 20px 10px; }
+nav#breadcrumb ol { list-style: none; margin: 0; }
+nav#breadcrumb ol li { display: inline; }
+nav#breadcrumb ol li:not(.current):after { content: '/'; color: #616161; } /* Séparateur de lien */
+
+/* Emplacement au dessus et en dessous du contenu de la page */
+div#top-content { margin: 0px auto; }
+div#bottom-content { margin: 8px 0; }
+
+/* Bloc au dessus du pied de page */
+div#top-footer { clear: both; padding: 5px 0px; }
+
+/* Pied de page */
+
+footer#footer {
+	clear: both;
+	margin: auto;
+	bottom: 0px;
+	background: #212121;
+	border-top: #336397 2px solid;
+	width: 980px;
+}
+
+footer#footer .footer-content {
+	margin: 20px auto 0 auto;
+	padding-bottom: 20px;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+	min-height: 40px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer#footer .footer-infos span { color: #FFFFFF; font-size: 10px; }
