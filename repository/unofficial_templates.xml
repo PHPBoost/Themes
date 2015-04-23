@@ -406,23 +406,23 @@
 	</app>
 	<!-- MrToine -->
 	<app id="fantasy" type="template">
-		<version num="1.0" language="english" localized_language="English" name="Fantasy" priority="low" security-update="false" pubdate="2014/10/29">
-			<compatibility min="4.0" />
+		<version num="1.1" language="english" localized_language="English" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
+			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/fr/4.0/themes/MrToine/fantasy/fantasy.zip">Fantasy theme</download>
 			<authors>
 				<author name="Toine" email="anthony.violet@outlook.fr" />
 			</authors>
-            <description>Version 1.0 fantasy theme</description>
-			<whatsnew>First Revision</whatsnew>
+            <description>Version 1.1 fantasy theme</description>
+			<whatsnew>Change repository link</whatsnew>
 		</version>
-		<version num="1.0" language="french" localized_language="Francais" name="Fantasy" priority="low" security-update="false" pubdate="2014/10/29">
-			<compatibility min="4.0" />
+		<version num="1.1" language="french" localized_language="Francais" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
+			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/fr/4.0/themes/MrToine/fantasy/fantasy.zip">Theme Fantasy</download>
 			<authors>
 				<author name="Toine" email="anthony.violet@outlook.fr" />
 			</authors>
-            <description>Version 1.0 du theme Fantasy</description>
-			<whatsnew>Premiere revision</whatsnew>
+            <description>Version 1.1 du theme Fantasy</description>
+			<whatsnew>Changement du lien de repository</whatsnew>
 		</version>
 	</app>
 	<!-- Myster -->
