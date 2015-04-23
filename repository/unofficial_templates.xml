@@ -451,7 +451,7 @@
 	<app id="actiweb3" type="template">
 		<version num="2.1" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/actiweb3.0/actiweb3.zip">ActiWeb3.0 theme</download>
+			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">ActiWeb3.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 				<author name="PHPBoost" email="contact@phpboost.com" />
@@ -470,7 +470,7 @@
 		</version>
 		<version num="2.1" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/actiweb3.0/actiweb3.zip">Theme ActiWeb3.0</download>
+			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">Theme ActiWeb3.0</download>
 			<authors>
 				<author name="Myster" email="" />
 				<author name="PHPBoost" email="contact@phpboost.com" />
