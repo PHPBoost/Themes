@@ -71,7 +71,7 @@
 					</li>
 					# ENDIF #	
 					<li>
-						<i class="fa fa-file-text# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # blink# ENDIF #"></i>
+						<i class="fa fa-file-text# IF C_UNREAD_CONTRIBUTION # blink# ENDIF #"></i>
 						<a href="${relative_url(UserUrlBuilder::contribution_panel())}" class="small"> {L_CONTRIBUTION_PANEL}</a>
 					</li>
 					<li>
@@ -115,7 +115,7 @@
 				# IF C_MODERATOR_AUTH #
 				<li><a href="${relative_url(UserUrlBuilder::moderation_panel())}" class="small"> <i class="fa fa-legal"></i><span>{L_MODO_PANEL}</span></a></li>
 				# ENDIF #	
-				<li><a href="${relative_url(UserUrlBuilder::contribution_panel())}" class="small"> <i class="fa fa-file-text# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # blink# ENDIF #"></i><span>{L_CONTRIBUTION_PANEL}# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # ({NUMBER_UNREAD_CONTRIBUTIONS})# ENDIF #</span></a></li>
+				<li><a href="${relative_url(UserUrlBuilder::contribution_panel())}" class="small"> <i class="fa fa-file-text# IF C_UNREAD_CONTRIBUTION # blink# ENDIF #"></i><span>{L_CONTRIBUTION_PANEL}# IF C_UNREAD_CONTRIBUTION # ({NUMBER_UNREAD_CONTRIBUTIONS})# ENDIF #</span></a></li>
 				<li><a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> <i class="fa fa-sign-out"></i><span>{L_DISCONNECT}</span></a></li>
 			</ul>
 		</div>

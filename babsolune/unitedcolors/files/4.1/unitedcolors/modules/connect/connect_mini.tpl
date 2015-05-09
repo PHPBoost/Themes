@@ -75,7 +75,7 @@
 					</li>
 					# ENDIF #	
 					<li>
-						<i class="fa fa-file-text# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # blink# ENDIF #"></i>
+						<i class="fa fa-file-text# IF C_UNREAD_CONTRIBUTION # blink# ENDIF #"></i>
 						<a href="${relative_url(UserUrlBuilder::contribution_panel())}" class="small"> {L_CONTRIBUTION_PANEL}</a>
 					</li>
 					<li>
@@ -132,14 +132,14 @@
 				</li>
 				# ENDIF #	
 				<li>					
-					<a href="${relative_url(UserUrlBuilder::contribution_panel())}" title="{L_CONTRIBUTION_PANEL}"><i class="fa fa-file-text# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # blink color-contrib# ENDIF #"></i> # IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # ({NUMBER_UNREAD_CONTRIBUTIONS})# ENDIF #</a>&nbsp;
+					<a href="${relative_url(UserUrlBuilder::contribution_panel())}" title="{L_CONTRIBUTION_PANEL}"><i class="fa fa-file-text# IF C_UNREAD_CONTRIBUTION # blink color-contrib# ENDIF #"></i> # IF C_UNREAD_CONTRIBUTION # ({NUMBER_UNREAD_CONTRIBUTIONS})# ENDIF #</a>&nbsp;
 				</li>
 				<li>					
 					<a href="${relative_url(UserUrlBuilder::disconnect())}" title="{L_DISCONNECT}"><i class="fa fa-sign-out"></i> </a>&nbsp;
 				</li>
 			</ul>
 		</div>        
-    	<div class="dropdown-title color-none"><img src="{U_AVATAR_IMG}" style="max-height: 30px;" alt="" /><span class="# IF C_UNREAD_ALERT # blink# ENDIF ## IF C_HAS_PM # blink color-mp# ENDIF ## IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # blink color-contrib# ENDIF #">{PSEUDO}</span></div>
+    	<div class="dropdown-title color-none"><img src="{U_AVATAR_IMG}" style="max-height: 30px;" alt="" /><span class="# IF C_UNREAD_ALERT # blink# ENDIF ## IF C_HAS_PM # blink color-mp# ENDIF ## IF C_UNREAD_CONTRIBUTION # blink color-contrib# ENDIF #">{PSEUDO}</span></div>
 	</div>
 	# ENDIF #
 # ENDIF #
