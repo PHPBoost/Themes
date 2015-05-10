@@ -16,7 +16,7 @@
 		</h1>
 		
 		<meta itemprop="url" content="{U_ARTICLE}">
-		<meta itemprop="description" content="{DESCRIPTION}">
+		<meta itemprop="description" content="${escape(DESCRIPTION)}">
 		<meta itemprop="datePublished" content="{DATE_ISO8601}">
 		<meta itemprop="discussionUrl" content="{U_COMMENTS}">
 		# IF C_HAS_PICTURE #<meta itemprop="thumbnailUrl" content="{PICTURE}"># ENDIF #
