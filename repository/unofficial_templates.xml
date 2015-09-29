@@ -3,15 +3,18 @@
 <repository>
 	<header />
 	<!-- Babsolune -->
-	<app id="blogbooster" type="template">
+	<app id="blogbooster" type="theme">
 		<version num="3.3" language="english" localized_language="English" name="blogbooster" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Blogbooster theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 3.3 blogbooster theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 3.3 blogbooster theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="2.3" language="english" localized_language="English" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -19,57 +22,70 @@
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 2.3 blogbooster theme</description>
-			<whatsnew>Correct XML file for update fonction</whatsnew>
+			<description>Version 2.3 blogbooster theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="3.3" language="french" localized_language="Francais" name="blogbooster" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Theme blogbooster</download>
+			<download url="http://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Thème blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 3.3 du thÃ¨me blogbooster</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 3.3 du thème blogbooster</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 		<version num="2.3" language="french" localized_language="Francais" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/babsolune/blogbooster/blogbooster.zip">Theme blogbooster</download>
+			<download url="http://dl.phpboost.com/4.0/templates/babsolune/blogbooster/blogbooster.zip">Thème blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 2.3 du thÃ¨me blogbooster</description>
-			<whatsnew>Correction du fichier XML de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 2.3 du thème blogbooster</description>
+			<whatsnew>
+				<new type="bug">Correction du fichier XML de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="dojo" type="template">
+	<app id="dojo" type="theme">
 		<version num="1.3" language="english" localized_language="English" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">dojo theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.3 dojo theme</description>
-			<whatsnew>changing no_avatar.png , theme.jpg and new design for forum</whatsnew>
+			<description>Version 1.3 dojo theme</description>
+			<whatsnew>
+				<new type="improvment">Changing no_avatar.png, theme.jpg and new design for forum</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">Theme dojo</download>
+			<download url="http://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">Thème dojo</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.3 du thÃ¨me dojo</description>
-			<whatsnew>Modification des images no_avatar.png ,theme.jpg and nouveau design pour le forum</whatsnew>
+			<description>Version 1.3 du thème dojo</description>
+			<whatsnew>
+				<new type="improvment">Modification des images no_avatar.png, theme.jpg and nouveau design pour le forum</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="valley" type="template">
+	<app id="valley" type="theme">
 		<version num="1.3" language="english" localized_language="English" name="Valley" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Valley theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.3 Valley theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 1.3 Valley theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="english" localized_language="English" name="Valley" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -77,37 +93,47 @@
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.2 Valley theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 1.2 Valley theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="Valley" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Theme Valley</download>
+			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Thème Valley</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.3 du thÃ¨me Valley</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 1.3 du thème Valley</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Valley" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Theme Valley</download>
+			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Thème Valley</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.2 du thÃ¨me Valley</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 1.2 du thème Valley</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="lanzarote" type="template">
+	<app id="lanzarote" type="theme">
 		<version num="1.2" language="english" localized_language="English" name="Lanzarote" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Lanzarote theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.2 Lanzarote theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 1.2 Lanzarote theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Lanzarote" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -115,37 +141,47 @@
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.1 Lanzarote theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 1.1 Lanzarote theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Lanzarote" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Theme Lanzarote</download>
+			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Thème Lanzarote</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.2 du thÃ¨me Lanzarote</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 1.2 du thème Lanzarote</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Lanzarote" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Theme Lanzarote</download>
+			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Thème Lanzarote</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.1 du thÃ¨me Lanzarote</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 1.1 du thème Lanzarote</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="unitedcolors" type="template">
+	<app id="unitedcolors" type="theme">
 		<version num="1.4" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.4 United Colors theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 1.4 United Colors theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -153,37 +189,47 @@
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.3 United Colors theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 1.3 United Colors theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Theme United Colors</download>
+			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.4 du thÃ¨me United Colors</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 1.4 du thème United Colors</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Theme United Colors</download>
+			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.3 du thÃ¨me United Colors</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 1.3 du thème United Colors</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="iceland" type="template">
+	<app id="iceland" type="theme">
 		<version num="1.2" language="english" localized_language="English" name="Iceland" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Iceland theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.2 Iceland theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 1.2 Iceland theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Iceland" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -191,59 +237,73 @@
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.1 Iceland theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 1.1 Iceland theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Iceland" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Theme Iceland</download>
+			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Thème Iceland</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.2 du thÃ¨me Iceland</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 1.2 du thème Iceland</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Iceland" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Theme Iceland</download>
+			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Thème Iceland</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 1.1 du thÃ¨me Iceland</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 1.1 du thème Iceland</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Bidi -->
-	<app id="BidiBlue" type="template">
+	<app id="BidiBlue" type="theme">
 		<version num="1.2" language="english" localized_language="English" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">BidiBlue theme</download>
 			<authors>
 				<author name="Bidi" email="bidi@outlook.com" />
 			</authors>
-            <description>Version 1.2 BidiBlue theme</description>
-			<whatsnew>Correct XML file for update fonction</whatsnew>
+			<description>Version 1.2 BidiBlue theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">Theme BidiBlue</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">Thème BidiBlue</download>
 			<authors>
 				<author name="Bidi" email="bidi@outlook.com" />
 			</authors>
-            <description>Version 1.2 du thÃ¨me BidiBlue</description>
-			<whatsnew>Correction du fichier XML de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.2 du thème BidiBlue</description>
+			<whatsnew>
+				<new type="bug">Correction du fichier XML de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- ElenWii -->
-	<app id="justplayforfun" type="template">
+	<app id="justplayforfun" type="theme">
 		<version num="1.4" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.4 Just Play for FuN theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 1.4 Just Play for FuN theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -251,88 +311,108 @@
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.3 Just Play for FuN theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 1.3 Just Play for FuN theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">ThÃ¨me Just Play for FuN</download>
+			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Thème Just Play for FuN</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.4 du thÃ¨me Just Play for FuN</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 1.4 du thème Just Play for FuN</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">ThÃ¨me Just Play for FuN</download>
+			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Thème Just Play for FuN</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.3 du thÃ¨me Just Play for FuN</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 1.3 du thème Just Play for FuN</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="redaurora" type="template">
+	<app id="redaurora" type="theme">
 		<version num="1.2" language="english" localized_language="English" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">redaurora Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.2 redaurora theme</description>
-			<whatsnew>Correct XML file for update fonction</whatsnew>
+			<description>Version 1.2 redaurora theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">Theme redaurora</download>
+			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">Thème redaurora</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.2 du thÃ¨me redaurora</description>
-			<whatsnew>Correction du fichier XML de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.2 du thème redaurora</description>
+			<whatsnew>
+				<new type="bug">Correction du fichier XML de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="underline" type="template">
+	<app id="underline" type="theme">
 		<version num="2.6" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/underline/underline.zip">Theme underline</download>
+			<download url="http://dl.phpboost.com/4.1/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 2.6 Underline theme for PBT 4.1</description>
-			<whatsnew>Change repository link</whatsnew>
+			<description>Version 2.6 Underline theme for PBT 4.1</description>
+			<whatsnew>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.7" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Theme underline</download>
+			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.7 Underline theme</description>
-			<whatsnew>Correct XML file for update fonction</whatsnew>
+			<description>Version 1.7 Underline theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/underline/underline.zip">Theme underline</download>
+			<download url="http://dl.phpboost.com/4.1/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 2.6 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
-			<whatsnew>Changement du lien de repository</whatsnew>
+			<description>Version 2.6 du thème Underline compatible avec la version 4.1 de PHPBoost</description>
+			<whatsnew>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 		<version num="1.7" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Theme underline</download>
+			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-            <description>Version 1.7 du theme Underline</description>
-			<whatsnew>Correction du fichier XML de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.7 du thème Underline</description>
+			<whatsnew>
+				<new type="bug">Correction du fichier XML de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- EnimSay -->
-	<app id="Cameleon" type="template">
+	<app id="Cameleon" type="theme">
 		<version num="2.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Cameleon Theme</download>
@@ -340,110 +420,133 @@
 				<author name="babsolune" email="babso@web33.fr" />
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
-            <description>Version 2.2 Cameleon theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
-		</version>
+			<description>Version 2.2 Cameleon theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>		</version>
 		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon Theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
-            <description>Version 1.8 Cameleon theme</description>
-			<whatsnew>Correct XML file for update fonction</whatsnew>
+			<description>Version 1.8 Cameleon theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Theme Cameleon</download>
+			<download url="http://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Thème Cameleon</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
-            <description>Version 2.2 du thÃ¨me Cameleon</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 2.2 du thème Cameleon</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 		<version num="1.8" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Theme Cameleon</download>
+			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Thème Cameleon</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
-            <description>Version 1.8 du thÃ¨me Cameleon</description>
-			<whatsnew>Correction du fichier XML de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.8 du thème Cameleon</description>
+			<whatsnew>
+				<new type="bug">Correction du fichier XML de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="Enigma" type="template">
+	<app id="Enigma" type="theme">
 		<version num="1.8" language="english" localized_language="English" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Enigma Theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
-            <description>Version 1.8 Enigma theme</description>
-			<whatsnew>Correct XML file for update fonction</whatsnew>
+			<description>Version 1.8 Enigma theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="1.8" language="french" localized_language="Francais" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Theme Enigma</download>
+			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Thème Enigma</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
-            <description>Version 1.8 du thÃ¨me Enigma</description>
-			<whatsnew>Correction du fichier XML de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.8 du thème Enigma</description>
+			<whatsnew>
+				<new type="bug">Correction du fichier XML de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Gerald72 -->
-	<app id="Hiver" type="template">
+	<app id="Hiver" type="theme">
 		<version num="2.8" language="english" localized_language="English" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">hiver Theme</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" />
 			</authors>
-            <description>Version 2.8 hiver theme</description>
-			<whatsnew>Correct link in forum, correct flowplayer</whatsnew>
+			<description>Version 2.8 hiver theme</description>
+			<whatsnew>
+				<new type="bug">Correct link in forum, correct flowplayer</new>
+			</whatsnew>
 		</version>
 		<version num="2.8" language="french" localized_language="Francais" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">Theme hiver</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">Thème hiver</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" />
 			</authors>
-            <description>Version 2.8 du thÃ¨me hiver</description>
-			<whatsnew>Correction de la couleur du lien dans le forum et suppression du code java qui bloque le flowplayer</whatsnew>
+			<description>Version 2.8 du thème hiver</description>
+			<whatsnew>
+				<new type="bug">Correction de la couleur du lien dans le forum et suppression du code java qui bloque le flowplayer</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Grenouille -->
-	<app id="around_the_world" type="template">
+	<app id="around_the_world" type="theme">
 		<version num="2.6" language="english" localized_language="English" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Around_the_world Theme</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" />
 			</authors>
-            <description>Version 2.6 Around_the_world theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 2.6 Around_the_world theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Theme Around_the_world</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Thème Around_the_world</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" />
 			</authors>
-            <description>Version 2.6 du thÃ¨me Around_the_world</description>
-			<whatsnew>Ajout de la fonction "recherche mise Ã  jour"</whatsnew>
+			<description>Version 2.6 du thème Around_the_world</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "recherche mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Kits_Graphiques -->
-	<app id="Summerday" type="template">
+	<app id="Summerday" type="theme">
 		<version num="3.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 3.3 Summerday theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 3.3 Summerday theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="3.2" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -451,8 +554,11 @@
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 3.2 Summerday theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 3.2 Summerday theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="2.6" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -460,103 +566,123 @@
 			<authors>
 				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
 			</authors>
-            <description>Version 2.6 Summerday theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 2.6 Summerday theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="3.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Theme Summerday</download>
+			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 3.3 du thÃ¨me Summerday</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 3.3 du thème Summerday</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="3.2" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Theme Summerday</download>
+			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-            <description>Version 3.2 du thÃ¨me Summerday</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 3.2 du thème Summerday</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Theme Summerday</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
 			</authors>
-            <description>Version 2.6 du thÃ¨me Summerday</description>
-			<whatsnew>Ajout de la fonction "recherche mise Ã  jour"</whatsnew>
+			<description>Version 2.6 du thème Summerday</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "recherche mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- MarcelD -->
-	<app id="Japanese_Traditions" type="template">
+	<app id="Japanese_Traditions" type="theme">
 		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Japanese_Traditions theme</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
 			</authors>
-            <description>Version 2.2 Japanese_Traditions theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 2.2 Japanese_Traditions theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Theme Japanese_Traditions</download>
+			<download url="http://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Thème Japanese_Traditions</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
 			</authors>
-            <description>Version 2.2 du thÃ¨me Japanese_Traditions</description>
-			<whatsnew>Ajout de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 2.2 du thème Japanese_Traditions</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- MrToine -->
-	<app id="fantasy" type="template">
+	<app id="fantasy" type="theme">
 		<version num="1.1" language="english" localized_language="English" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Fantasy theme</download>
 			<authors>
 				<author name="Toine" email="anthony.violet@outlook.fr" />
 			</authors>
-            <description>Version 1.1 fantasy theme</description>
-			<whatsnew>Change repository link</whatsnew>
+			<description>Version 1.1 fantasy theme</description>
+			<whatsnew>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Theme Fantasy</download>
+			<download url="http://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Thème Fantasy</download>
 			<authors>
 				<author name="Toine" email="anthony.violet@outlook.fr" />
 			</authors>
-            <description>Version 1.1 du theme Fantasy</description>
-			<whatsnew>Changement du lien de repository</whatsnew>
+			<description>Version 1.1 du thème Fantasy</description>
+			<whatsnew>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Myster -->
-	<app id="actiweb2" type="template">
+	<app id="actiweb2" type="theme">
 		<version num="1.3" language="english" localized_language="English" name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">ActiWeb2.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.3 ActiWeb2.0 theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 1.3 ActiWeb2.0 theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais"
 			name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">Theme ActiWeb2.0</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">Thème ActiWeb2.0</download>
 			<authors>
-				<author name="Myster" email="" /></authors>
-            	<description>Version 1.3 du thÃ¨me ActiWeb2.0</description>
+				<author name="Myster" email="" />
+			</authors>
+			<description>Version 1.3 du thème ActiWeb2.0</description>
 			<whatsnew>
-				Ajout de la fonction "mise Ã  jour"
+				<new type="improvment">Ajout de la fonction "mise à jour"</new>
 			</whatsnew>
 		</version>
 	</app>
-	<app id="actiweb3" type="template">
+	<app id="actiweb3" type="theme">
 		<version num="2.1" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">ActiWeb3.0 theme</download>
@@ -564,8 +690,10 @@
 				<author name="Myster" email="" />
 				<author name="PHPBoost" email="contact@phpboost.com" />
 			</authors>
-            <description>Version 2.1 ActiWeb3.0 theme</description>
-			<whatsnew>Change repository link</whatsnew>
+			<description>Version 2.1 ActiWeb3.0 theme</description>
+			<whatsnew>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -573,91 +701,108 @@
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.2 ActiWeb3.0 theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 1.2 ActiWeb3.0 theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="2.1" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">Theme ActiWeb3.0</download>
+			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">Thème ActiWeb3.0</download>
 			<authors>
 				<author name="Myster" email="" />
 				<author name="PHPBoost" email="contact@phpboost.com" />
 			</authors>
-            <description>Version 2.1 du thÃ¨me ActiWeb3.0</description>
-			<whatsnew>Changement du lien de repository</whatsnew>
+			<description>Version 2.1 du thème ActiWeb3.0</description>
+			<whatsnew>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb3.0/actiweb3.zip">Theme ActiWeb3.0</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb3.0/actiweb3.zip">Thème ActiWeb3.0</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.2 du thÃ¨me ActiWeb3.0</description>
-			<whatsnew>Ajout de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.2 du thème ActiWeb3.0</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="whiteweb20" type="template">
+	<app id="whiteweb20" type="theme">
 		<version num="1.3" language="english" localized_language="English" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">WhiteWeb 2.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.3 WhiteWeb 2.0 theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 1.3 WhiteWeb 2.0 theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">thÃ¨me WhiteWeb 2.0</download>
+			<download url="http://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">Thème WhiteWeb 2.0</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.3 du thÃ¨me WhiteWeb 2.0</description>
-			<whatsnew>Ajout de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.3 du thème WhiteWeb 2.0</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- riptide -->
-	<app id="vertigo" type="template">
+	<app id="vertigo" type="theme">
 		<version num="1.1" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">Vertigo theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.1 of Vertigo template</description>
-			<whatsnew>Change repository link</whatsnew>
+			<description>Version 1.1 of Vertigo template</description>
+			<whatsnew>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">thÃ¨me Vertigo</download>
+			<download url="http://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">Thème Vertigo</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
-            <description>Version 1.1 du thÃ¨me Vertigo</description>
-			<whatsnew>Changement du lien de repository</whatsnew>
+			<description>Version 1.1 du thème Vertigo</description>
+			<whatsnew>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- schyzo -->
-	<app id="lorem" type="template">
+	<app id="lorem" type="theme">
 		<version num="1.5" language="english" localized_language="English" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">lorem theme</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
-            <description>Version 1.5 lorem theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 1.5 lorem theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new></whatsnew>
 		</version>
 		<version num="1.5" language="french" localized_language="Francais" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">thÃ¨me lorem</download>
+			<download url="http://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">Thème lorem</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 			</authors>
-            <description>Version 1.5 du thÃ¨me lorem</description>
-			<whatsnew>Ajout de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.5 du thème lorem</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
-	<app id="steel_blue" type="template">
+	<app id="steel_blue" type="theme">
 		<version num="1.6" language="english" localized_language="English" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">steel_blue theme</download>
@@ -665,22 +810,26 @@
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
 			</authors>
-            <description>Version 1.6 steel_blue theme</description>
-			<whatsnew>Add update fonction</whatsnew>
+			<description>Version 1.6 steel_blue theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
 		</version>
 		<version num="1.6" language="french" localized_language="Francais" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">thÃ¨me steel_blue</download>
+			<download url="http://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">Thème steel_blue</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
 			</authors>
-            <description>Version 1.6 du thÃ¨me steel_blue</description>
-			<whatsnew>Ajout de la fonction "mise Ã  jour"</whatsnew>
+			<description>Version 1.6 du thème steel_blue</description>
+			<whatsnew>
+				<new type="improvment">Ajout de la fonction "mise à jour"</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Teki-Latex -->
-	<app id="oxygen" type="template">
+	<app id="oxygen" type="theme">
 		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
 			<download url="http://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
@@ -688,8 +837,10 @@
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-            <description>Version 2.4 oxygen theme</description>
-			<whatsnew>Modules templates fix</whatsnew>
+			<description>Version 2.4 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
 		</version>
 		<version num="2.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -698,8 +849,11 @@
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-            <description>Version 2.3 oxygen theme</description>
-			<whatsnew>Change repository link, fix tpl module connect</whatsnew>
+			<description>Version 2.3 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvment">Change repository link</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
 			<compatibility min="4.0" />
@@ -707,8 +861,10 @@
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-            <description>Version 1.3 oxygen theme</description>
-			<whatsnew>Correction CSS files : footer.tpl (add clear:both)</whatsnew>
+			<description>Version 1.3 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Correction CSS files : footer.tpl (add clear:both)</new>
+			</whatsnew>
 		</version>
 		<version num="2.4" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
@@ -717,8 +873,10 @@
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-            <description>Version 2.4 oxygen theme</description>
-			<whatsnew>Correction des templates des modules</whatsnew>
+			<description>Version 2.4 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
 		</version>
 		<version num="2.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
@@ -727,8 +885,11 @@
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-            <description>Version 2.3 oxygen theme</description>
-			<whatsnew>Changement du lien de repository, correction du tpl du module connect</whatsnew>
+			<description>Version 2.3 du thème oxygen</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
 			<compatibility min="4.0" />
@@ -736,29 +897,35 @@
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-            <description>Version 1.3 du thÃ¨me oxygen</description>
-			<whatsnew>Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)</whatsnew>
+			<description>Version 1.3 du thème oxygen</description>
+			<whatsnew>
+				<new type="bug">Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)</new>
+			</whatsnew>
 		</version>
 	</app>
 	<!-- Tijim -->
-	<app id="metro" type="template">
+	<app id="metro" type="theme">
 		<version num="4.3" language="english" localized_language="English" name="metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="http://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">metro theme</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" />
 			</authors>
-            <description>Version 4.3 metro theme</description>
-			<whatsnew>Correction header.tpl and default.css</whatsnew>
+			<description>Version 4.3 metro theme</description>
+			<whatsnew>
+				<new type="bug">Correction header.tpl and default.css</new>
+			</whatsnew>
 		</version>
 		<version num="4.3" language="french" localized_language="Francais" name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">thÃ¨me metro</download>
+			<download url="http://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">thème metro</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" />
 			</authors>
-            <description>Version 4.3 du thÃ¨me metro</description>
-			<whatsnew>Correction des fichiers header.tpl et de l'appel du default.css</whatsnew>
+			<description>Version 4.3 du thème metro</description>
+			<whatsnew>
+				<new type="bug">Correction des fichiers header.tpl et de l'appel du default.css</new>
+			</whatsnew>
 		</version>
 	</app>
 </repository>
