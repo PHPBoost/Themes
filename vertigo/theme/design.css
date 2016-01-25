@@ -258,7 +258,7 @@ div#bottom-content {
 footer#footer {
 	clear: both;
 	width: 100%;
-	min-width: 1200px;
+	padding: 5px 10px;
 	background-color: #4D4C50;
 	border-top: #F47321 3px solid;
 }
@@ -266,7 +266,7 @@ footer#footer {
 footer#footer .footer-content {
 	margin: 0 auto 0 auto;
 	padding: 1.5em 0;
-	max-width: 1080px;
+	max-width: 1200px;
 	border-bottom: 2px groove #444444;
 }
 
