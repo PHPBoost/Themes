@@ -30,6 +30,7 @@
 	</header>
 
 	<div id="global">
+		# INCLUDE ACTIONS_MENU #
 		# IF C_COMPTEUR #
 		<div id="compteur">
 			<span class="text-strong">{L_VISIT} : </span>{COMPTEUR_TOTAL}
@@ -47,7 +48,7 @@
 		# ENDIF #
 
 		<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT # main-with-right# ENDIF #" role="main">
-			# INCLUDE ACTIONS_MENU #
+			
 			<div class="spacer"></div>
 			# IF C_MENUS_TOPCENTRAL_CONTENT #
 			<div id="top-content">

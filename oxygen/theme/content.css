@@ -54,8 +54,8 @@ article header h1 {
 	color: #FFFFFF;
 }
 
-section header a,
-article header a {
+section header h1 a,
+article header h1 a {
 	color: #DEDEDE;
 }
 
@@ -915,7 +915,7 @@ i.message-announce {
 }
 
 i.message-announce-new {
-	color: #4372AA;
+	color: #4BA9A1;
 }
 
 

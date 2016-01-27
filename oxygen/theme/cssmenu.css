@@ -85,8 +85,10 @@ Contient les elements associes aux menus
 
 /* --- Variante cssmenu-horizontal --- */
 #main .cssmenu-horizontal {
+	margin-bottom: 10px;
 	background-color: #FFFFFF;
-	border: 1px #BEBEBE solid;
+	border: 1px #DDDDDD solid;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.28);
 }
 
 /* --- Variante cssmenu-group --- */
@@ -120,8 +122,15 @@ div.cssmenu-group .cssmenu-title {
 }
 
 .cssmenu-actionslinks {
-	float: right;
     margin: 0 -21px 5px 5px;
+}
+
+@media (min-width: 769px) {
+	.cssmenu-actionslinks {
+		position: absolute;
+		top: 0;
+		right: 21px;
+	}
 }
 
 .cssmenu-actionslinks.small-screen {
@@ -627,7 +636,7 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 
 .cssmenu.small-screen #menu-button {
 	display: block;
-	padding: 17px 40px 17px 17px;
+	padding: 17px 50px 17px 17px;
 	text-transform: uppercase;
 	font-weight: 700;
 	cursor: pointer;
@@ -680,16 +689,11 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 }
 
 .cssmenu-actionslinks #menu-button {
-	float: right;
 	position: relative;
+	float: right;
 	display: inline-block;
-	padding: 4px 12px 4px 12px;	
+	padding: 4px 15px 4px 12px;	
 	background: none;
-	border: 1px solid #EEEEEE;
-	border-right: none;
-	border-top: none;
-	border-radius: 0px 0px 0px 5px;
-	font-size: 0;
 	font-family: FontAwesome;
 	font-style: normal;
 	font-weight: normal;
@@ -704,6 +708,16 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	border-color: #CCCCCC;
 	color: #999999;
 	transition: 0.3s ease;
+}
+
+@media (min-width: 769px) {
+	.cssmenu-actionslinks #menu-button {
+		border: 1px solid #EEEEEE;
+		border-right: none;
+		border-top: none;
+		border-radius: 0px 0px 0px 5px;
+		font-size: 0;
+	}
 }
 
 #main .cssmenu-actionslinks.small-screen #menu-button {
