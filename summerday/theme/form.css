@@ -50,12 +50,14 @@ button.small,
 
 /* --- Bouton de formulaire --- */
 button.submit {
-	color: #FEFEFE;
-	background-color: #4BA9A1;
-	border-color: #3D8C85;
+	background-color: #F8A230;
+	border-color: rgba(0, 0, 0, 0);
+	color: #121212;
 }
+
 button.submit:hover {
-	background-color: #3D8C85;
+	background-color: #FF8800;
+	border-color: rgba(0, 0, 0, 0);
 }
 
 /* --- Bouton basic --- */
@@ -63,16 +65,17 @@ button.submit:hover {
 	display: inline-block;
 	margin: 1px;
 	padding: 1px 6px;
-	background-color: #4BA9A1;
+	background-color: #F8A230;
+	border: none;
 	border-radius: 2px;
-	font-weight: normal;
+	font-weight: bold;
 	text-align: center;	
 	color: #FFFFFF;
 	
 }
 
 .basic-button:hover {
-	background-color: #3D8C85;
+	background-color: #FF8800;
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -80,6 +83,9 @@ button.submit:hover {
 /* --- Bouton basic avec couleur alternative --- */
 .basic-button.alt 		{ background-color: #AAAAAA; }
 .basic-button.alt:hover { background-color: #BBBBBB; }
+
+.options .basic-button.alt 			{ background-color: transparent; }
+.options .basic-button.alt:hover 	{ background-color: #BBBBBB; }
 
 /* --- field button --- */
 .field-button {
@@ -158,9 +164,8 @@ legend {
 	display: block;
 	margin: 0 0 0.6em 0;
 	width: 100%;
-	border-bottom: 1px solid #403F3D;
 	text-transform: none;
-	color: #474747;
+	color: #F8A230;
 	font-size: 1.5em;
 }
 
@@ -189,16 +194,11 @@ input[type=file],
 textarea,
 select {
 	padding: 4px 18px 4px 6px;
-	background-color: #FFFFFF;
-	border: 1px solid #CCCCCC;
-	border-radius: 50px;
+    background-color: #353535;
+    border: 1px solid #232323;
+	border-radius: 4px;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01);
-	color: #555555;
-}
-
-textarea,
-select {
-	border-radius: 5px;
+	color: #FFFFFF;
 }
 
 input[type=text]:hover,
@@ -212,9 +212,9 @@ input[type=password]:hover,
 input[type=file]:hover,
 textarea:hover,
 select:hover {
-	background-color: #FFFFFF;
-	border: 1px solid #BBBBBB;
-	color: #333333;
+	background-color: #232323;
+	border: 1px solid #353535;
+	color: #FFFFFF;
 }
 
 input[type=text]:focus,
@@ -228,10 +228,10 @@ input[type=password]:focus,
 input[type=file]:focus,
 textarea:focus,
 select:focus {
-	border-color: #BBBBBB;
+	border-color: #232323;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01), 0 0 6px rgba(0, 0, 0, 0.2);
 	outline: 0;
-	color: #222222;
+	color: #F8A230;
 }
 
 input[type=color] {
@@ -243,7 +243,7 @@ form input:focus:invalid,
 form textarea:focus:invalid,
 form .constraint-status-right input,
 form .constraint-status-right textarea {
-	border-color: rgba(196, 60, 43, 0.3);
+	color: rgba(196, 60, 43, 0.9);
 	box-shadow: 0 0 3px rgba(196, 60, 43, 0.1);
 }
 
@@ -251,7 +251,7 @@ form input:focus:valid,
 form textarea:focus:valid,
 form .constraint-status-right input,
 form .constraint-status-right textarea {
-	border-color: rgba(71, 137, 72, 0.3);
+	color: rgba(71, 137, 72, 0.9);
 	box-shadow: 0 0 5px rgba(71, 137, 72, 0.1);
 }
 
@@ -491,11 +491,10 @@ textarea {
 }
 
 .advanced-auth-input button {
-	margin: 0 0 0 -29px;
+	margin-left: -29px;
 	padding: 5px 5px 6px 5px;
 	border-width: 0 0 0 1px;
-	border-radius: 0 50px 50px 0;
-		
+	border-radius: 0 4px 4px 0;
 }
 
 .advanced-auth-input-result {
@@ -553,6 +552,7 @@ textarea {
 	font-size: 0.8em;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+	color: #666666;
 }
 
 input + .text-status-constraint {
