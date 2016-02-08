@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<!DOCTYPE repository SYSTEM "http://www.phpboost.com/repository/repository.dtd">
+<!DOCTYPE repository SYSTEM "https://www.phpboost.com/repository/repository.dtd">
 <repository>
 	<header />
 	<!-- Babsolune -->
 	<app id="blogbooster" type="template">
 		<version num="3.3" language="english" localized_language="English" name="blogbooster" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Blogbooster theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Blogbooster theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -18,7 +18,7 @@
 		</version>
 		<version num="2.3" language="english" localized_language="English" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/babsolune/blogbooster/blogbooster.zip">Blogbooster theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/babsolune/blogbooster/blogbooster.zip">Blogbooster theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -29,7 +29,7 @@
 		</version>
 		<version num="3.3" language="french" localized_language="Francais" name="blogbooster" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Thème blogbooster</download>
+			<download url="https://dl.phpboost.com/4.1/templates/blogbooster/blogbooster.zip">Thème blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -41,7 +41,7 @@
 		</version>
 		<version num="2.3" language="french" localized_language="Francais" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/babsolune/blogbooster/blogbooster.zip">Thème blogbooster</download>
+			<download url="https://dl.phpboost.com/4.0/templates/babsolune/blogbooster/blogbooster.zip">Thème blogbooster</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -54,7 +54,7 @@
 	<app id="dojo" type="template">
 		<version num="1.3" language="english" localized_language="English" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">dojo theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">dojo theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -65,7 +65,7 @@
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">Thème dojo</download>
+			<download url="https://dl.phpboost.com/4.0/templates/babsolune/dojo/dojo.zip">Thème dojo</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -78,7 +78,7 @@
 	<app id="valley" type="template">
 		<version num="1.3" language="english" localized_language="English" name="Valley" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Valley theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/valley/valley.zip">Valley theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -89,7 +89,7 @@
 		</version>
 		<version num="1.2" language="english" localized_language="English" name="Valley" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Valley theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/valley/valley.zip">Valley theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -101,7 +101,7 @@
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="Valley" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Thème Valley</download>
+			<download url="https://dl.phpboost.com/4.1/templates/valley/valley.zip">Thème Valley</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -112,7 +112,7 @@
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Valley" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/valley/valley.zip">Thème Valley</download>
+			<download url="https://dl.phpboost.com/4.1/templates/valley/valley.zip">Thème Valley</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -126,7 +126,7 @@
 	<app id="lanzarote" type="template">
 		<version num="1.2" language="english" localized_language="English" name="Lanzarote" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Lanzarote theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Lanzarote theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -137,7 +137,7 @@
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Lanzarote" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Lanzarote theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Lanzarote theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -149,7 +149,7 @@
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Lanzarote" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Thème Lanzarote</download>
+			<download url="https://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Thème Lanzarote</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -160,7 +160,7 @@
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Lanzarote" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Thème Lanzarote</download>
+			<download url="https://dl.phpboost.com/4.1/templates/lanzarote/lanzarote.zip">Thème Lanzarote</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -172,9 +172,31 @@
 		</version>
 	</app>
 	<app id="unitedcolors" type="template">
+		<version num="2.0" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+			<description>Version 2.0 United Colors theme</description>
+			<whatsnew>
+				<new type="improvment">Compatibility for PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
+		<version num="2.0" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+			<description>Version 2.0 du thème United Colors</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
 		<version num="1.4" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -185,7 +207,7 @@
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -197,7 +219,7 @@
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
+			<download url="https://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -208,7 +230,7 @@
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
+			<download url="https://dl.phpboost.com/4.1/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -222,7 +244,7 @@
 	<app id="iceland" type="template">
 		<version num="1.2" language="english" localized_language="English" name="Iceland" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Iceland theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Iceland theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -233,7 +255,7 @@
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Iceland" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Iceland theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Iceland theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -245,7 +267,7 @@
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Iceland" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Thème Iceland</download>
+			<download url="https://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Thème Iceland</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -256,7 +278,7 @@
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Iceland" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Thème Iceland</download>
+			<download url="https://dl.phpboost.com/4.1/templates/iceland/iceland.zip">Thème Iceland</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -271,7 +293,7 @@
 	<app id="BidiBlue" type="template">
 		<version num="1.2" language="english" localized_language="English" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">BidiBlue theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">BidiBlue theme</download>
 			<authors>
 				<author name="Bidi" email="bidi@outlook.com" />
 			</authors>
@@ -282,7 +304,7 @@
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">Thème BidiBlue</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Bidi/BidiBlue/BidiBlue.zip">Thème BidiBlue</download>
 			<authors>
 				<author name="Bidi" email="bidi@outlook.com" />
 			</authors>
@@ -296,7 +318,7 @@
 	<app id="justplayforfun" type="template">
 		<version num="1.4" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -307,7 +329,7 @@
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -319,7 +341,7 @@
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Thème Just Play for FuN</download>
+			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Thème Just Play for FuN</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -330,7 +352,7 @@
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Thème Just Play for FuN</download>
+			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Thème Just Play for FuN</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -344,7 +366,7 @@
 	<app id="redaurora" type="template">
 		<version num="1.2" language="english" localized_language="English" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">redaurora Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">redaurora Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -355,7 +377,7 @@
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">Thème redaurora</download>
+			<download url="https://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">Thème redaurora</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -366,9 +388,31 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
+		<version num="3.0" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+			<description>Version 3.0 Underline theme for PBT 5.0</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
+		<version num="3.0" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+			<description>Version 3.0 du thème Underline compatible avec la version 5.0 de PHPBoost</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
 		<version num="2.6" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/underline/underline.zip">Thème underline</download>
+			<download url="https://dl.phpboost.com/4.1/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -377,20 +421,9 @@
 				<new type="improvment">Change repository link</new>
 			</whatsnew>
 		</version>
-		<version num="1.7" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Thème underline</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" />
-			</authors>
-			<description>Version 1.7 Underline theme</description>
-			<whatsnew>
-				<new type="bug">Correct XML file for update fonction</new>
-			</whatsnew>
-		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/underline/underline.zip">Thème underline</download>
+			<download url="https://dl.phpboost.com/4.1/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -399,9 +432,20 @@
 				<new type="improvment">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
+		<version num="1.7" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Thème underline</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+			</authors>
+			<description>Version 1.7 Underline theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
+			</whatsnew>
+		</version>
 		<version num="1.7" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Thème underline</download>
+			<download url="https://dl.phpboost.com/4.0/templates/ElenWii/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
@@ -415,7 +459,7 @@
 	<app id="Cameleon" type="template">
 		<version num="2.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Cameleon Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Cameleon Theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
@@ -427,7 +471,7 @@
 			</whatsnew>		</version>
 		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon Theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
@@ -438,7 +482,7 @@
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Thème Cameleon</download>
+			<download url="https://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Thème Cameleon</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
@@ -451,7 +495,7 @@
 		</version>
 		<version num="1.8" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Thème Cameleon</download>
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Thème Cameleon</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
@@ -464,7 +508,7 @@
 	<app id="Enigma" type="template">
 		<version num="1.8" language="english" localized_language="English" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Enigma Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Enigma Theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
@@ -475,7 +519,7 @@
 		</version>
 		<version num="1.8" language="french" localized_language="Francais" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Thème Enigma</download>
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Thème Enigma</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
@@ -489,7 +533,7 @@
 	<app id="Hiver" type="template">
 		<version num="2.8" language="english" localized_language="English" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">hiver Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">hiver Theme</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" />
 			</authors>
@@ -500,7 +544,7 @@
 		</version>
 		<version num="2.8" language="french" localized_language="Francais" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">Thème hiver</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">Thème hiver</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" />
 			</authors>
@@ -514,7 +558,7 @@
 	<app id="around_the_world" type="template">
 		<version num="2.6" language="english" localized_language="English" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Around_the_world Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Around_the_world Theme</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" />
 			</authors>
@@ -525,7 +569,7 @@
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Thème Around_the_world</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Thème Around_the_world</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" />
 			</authors>
@@ -537,9 +581,33 @@
 	</app>
 	<!-- Kits_Graphiques -->
 	<app id="Summerday" type="template">
+		<version num="4.0" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Summerday/Summerday.zip">Summerday Theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+			<description>Version 4.0 Summerday theme</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
+		<version num="4.0" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Summerday/Summerday.zip">Thème Summerday</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+			<description>Version 4.0 du thème Summerday</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
 		<version num="3.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -548,9 +616,20 @@
 				<new type="bug">Modules templates fix</new>
 			</whatsnew>
 		</version>
+		<version num="3.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
+			<compatibility min="4.1" />
+			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Thème Summerday</download>
+			<authors>
+				<author name="babsolune" email="babso@web33.fr" />
+			</authors>
+			<description>Version 3.3 du thème Summerday</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
+		</version>
 		<version num="3.2" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -560,31 +639,9 @@
 				<new type="improvment">Change repository link</new>
 			</whatsnew>
 		</version>
-		<version num="2.6" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Summerday Theme</download>
-			<authors>
-				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
-			</authors>
-			<description>Version 2.6 Summerday theme</description>
-			<whatsnew>
-				<new type="improvment">Add update fonction</new>
-			</whatsnew>
-		</version>
-		<version num="3.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
-			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Thème Summerday</download>
-			<authors>
-				<author name="babsolune" email="babso@web33.fr" />
-			</authors>
-			<description>Version 3.3 du thème Summerday</description>
-			<whatsnew>
-				<new type="bug">Correction des templates des modules</new>
-			</whatsnew>
-		</version>
 		<version num="3.2" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Thème Summerday</download>
+			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
@@ -594,9 +651,20 @@
 				<new type="improvment">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
+		<version num="2.6" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Summerday Theme</download>
+			<authors>
+				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
+			</authors>
+			<description>Version 2.6 Summerday theme</description>
+			<whatsnew>
+				<new type="improvment">Add update fonction</new>
+			</whatsnew>
+		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Thème Summerday</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
 			</authors>
@@ -610,7 +678,7 @@
 	<app id="Japanese_Traditions" type="template">
 		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Japanese_Traditions theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Japanese_Traditions theme</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
 			</authors>
@@ -621,7 +689,7 @@
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Thème Japanese_Traditions</download>
+			<download url="https://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Thème Japanese_Traditions</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
 			</authors>
@@ -635,7 +703,7 @@
 	<app id="fantasy" type="template">
 		<version num="1.1" language="english" localized_language="English" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Fantasy theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Fantasy theme</download>
 			<authors>
 				<author name="Toine" email="anthony.violet@outlook.fr" />
 			</authors>
@@ -646,7 +714,7 @@
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Thème Fantasy</download>
+			<download url="https://dl.phpboost.com/4.1/templates/fantasy/fantasy.zip">Thème Fantasy</download>
 			<authors>
 				<author name="Toine" email="anthony.violet@outlook.fr" />
 			</authors>
@@ -660,7 +728,7 @@
 	<app id="actiweb2" type="template">
 		<version num="1.3" language="english" localized_language="English" name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">ActiWeb2.0 theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">ActiWeb2.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -672,7 +740,7 @@
 		<version num="1.3" language="french" localized_language="Francais"
 			name="ActiWeb2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">Thème ActiWeb2.0</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Myster/ActiWeb2.0/actiweb2.zip">Thème ActiWeb2.0</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -685,7 +753,7 @@
 	<app id="actiweb3" type="template">
 		<version num="2.1" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">ActiWeb3.0 theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">ActiWeb3.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 				<author name="PHPBoost" email="contact@phpboost.com" />
@@ -697,7 +765,7 @@
 		</version>
 		<version num="1.2" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb3.0/actiweb3.zip">ActiWeb3.0 theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Myster/ActiWeb3.0/actiweb3.zip">ActiWeb3.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -708,7 +776,7 @@
 		</version>
 		<version num="2.1" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">Thème ActiWeb3.0</download>
+			<download url="https://dl.phpboost.com/4.1/templates/actiweb3/actiweb3.zip">Thème ActiWeb3.0</download>
 			<authors>
 				<author name="Myster" email="" />
 				<author name="PHPBoost" email="contact@phpboost.com" />
@@ -720,7 +788,7 @@
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/ActiWeb3.0/actiweb3.zip">Thème ActiWeb3.0</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Myster/ActiWeb3.0/actiweb3.zip">Thème ActiWeb3.0</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -733,7 +801,7 @@
 	<app id="whiteweb20" type="template">
 		<version num="1.3" language="english" localized_language="English" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">WhiteWeb 2.0 theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">WhiteWeb 2.0 theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -744,7 +812,7 @@
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">Thème WhiteWeb 2.0</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Myster/WhiteWeb2.0/whiteweb20.zip">Thème WhiteWeb 2.0</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -756,9 +824,33 @@
 	</app>
 	<!-- riptide -->
 	<app id="vertigo" type="template">
+		<version num="2.0" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Vertigo theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Myster" email="" />
+			</authors>
+			<description>Version 2.0 of Vertigo template</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
+		<version num="2.0" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Thème Vertigo</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Myster" email="" />
+			</authors>
+			<description>Version 2.0 du thème Vertigo</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
 		<version num="1.1" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">Vertigo theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">Vertigo theme</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -769,7 +861,7 @@
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">Thème Vertigo</download>
+			<download url="https://dl.phpboost.com/4.1/templates/vertigo/vertigo.zip">Thème Vertigo</download>
 			<authors>
 				<author name="Myster" email="" />
 			</authors>
@@ -783,7 +875,7 @@
 	<app id="lorem" type="template">
 		<version num="1.5" language="english" localized_language="English" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">lorem theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">lorem theme</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
 			<description>Version 1.5 lorem theme</description>
@@ -792,7 +884,7 @@
 		</version>
 		<version num="1.5" language="french" localized_language="Francais" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">Thème lorem</download>
+			<download url="https://dl.phpboost.com/4.0/templates/schyzo/lorem/lorem.zip">Thème lorem</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 			</authors>
@@ -805,7 +897,7 @@
 	<app id="steel_blue" type="template">
 		<version num="1.6" language="english" localized_language="English" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">steel_blue theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">steel_blue theme</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
@@ -817,7 +909,7 @@
 		</version>
 		<version num="1.6" language="french" localized_language="Francais" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">Thème steel_blue</download>
+			<download url="https://dl.phpboost.com/4.0/templates/schyzo/steel_blue/steel_blue.zip">Thème steel_blue</download>
 			<authors>
 				<author name="schyzo" email="mx.koder@gmail.com" />
 				<author name="ReidLos" email="reidlos@phpboost.com" />
@@ -830,9 +922,33 @@
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
+		<version num="3.0" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 3.0 oxygen theme</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
+		<version num="3.0" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/02/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 3.0 oxygen theme</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
 		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
@@ -842,9 +958,21 @@
 				<new type="bug">Modules templates fix</new>
 			</whatsnew>
 		</version>
+		<version num="2.4" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
+			<compatibility min="4.1" />
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwe@gmail.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 2.4 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
+		</version>
 		<version num="2.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
@@ -855,32 +983,9 @@
 				<new type="improvment">Change repository link</new>
 			</whatsnew>
 		</version>
-		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
-			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 1.3 oxygen theme</description>
-			<whatsnew>
-				<new type="bug">Correction CSS files : footer.tpl (add clear:both)</new>
-			</whatsnew>
-		</version>
-		<version num="2.4" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
-			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwe@gmail.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 2.4 oxygen theme</description>
-			<whatsnew>
-				<new type="bug">Correction des templates des modules</new>
-			</whatsnew>
-		</version>
 		<version num="2.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="http://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
@@ -891,9 +996,20 @@
 				<new type="improvment">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
+		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 1.3 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Correction CSS files : footer.tpl (add clear:both)</new>
+			</whatsnew>
+		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
@@ -907,7 +1023,7 @@
 	<app id="metro" type="template">
 		<version num="4.3" language="english" localized_language="English" name="metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">metro theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">metro theme</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" />
 			</authors>
@@ -918,7 +1034,7 @@
 		</version>
 		<version num="4.3" language="french" localized_language="Francais" name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="http://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">thème metro</download>
+			<download url="https://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">thème metro</download>
 			<authors>
 				<author name="PcAndCom" email="info@pcandcom.net" />
 			</authors>
