@@ -31,7 +31,6 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-	background: url(images/header.png) no-repeat;
 }
 
 /* --- Partie superieure du header --- */
@@ -45,6 +44,8 @@ div#top-header {
 	margin: auto;
 	height: 206px;
 	max-width: 1024px;
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
 }
 
 div#top-header-content {
