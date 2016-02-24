@@ -172,26 +172,26 @@
 		</version>
 	</app>
 	<app id="unitedcolors" type="template">
-		<version num="2.0" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="2.0.1" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 2.0 United Colors theme</description>
+			<description>Version 2.0.1 United Colors theme</description>
 			<whatsnew>
-				<new type="improvment">Compatibility for PHPBoost v5.0</new>
+				<new type="improvment">Fix CSS with PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
-		<version num="2.0" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="2.0.1" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 2.0 du thème United Colors</description>
+			<description>Version 2.0.1 du thème United Colors</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Fix CSS with PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
@@ -388,26 +388,26 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
-		<version num="3.0" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="3.0.1" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-			<description>Version 3.0 Underline theme for PBT 5.0</description>
+			<description>Version 3.0.1 Underline theme for PBT 5.0</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">FIX CSS for PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
-		<version num="3.0" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="3.0.1" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-			<description>Version 3.0 du thème Underline compatible avec la version 5.0 de PHPBoost</description>
+			<description>Version 3.0.1 du thème Underline compatible avec la version 5.0 de PHPBoost</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Correction CSS de PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
@@ -457,6 +457,32 @@
 	</app>
 	<!-- EnimSay -->
 	<app id="Cameleon" type="template">
+		<version num="4.0.1" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2016/02/24">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Cameleon Theme</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+				<author name="babsolune" email="babso@web33.fr" />
+				<author name="ElenWii" email="contact@phpboost.com" />
+			</authors>
+			<description>Version 4.0.1 Cameleon theme</description>
+			<whatsnew>
+				<new type="improvement">FIX CSS for PHPBoost 5.0.1</new>
+			</whatsnew>
+		</version>
+		<version num="4.0.1" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2016/02/24">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Thème Cameleon</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+				<author name="babsolune" email="babso@web33.fr" />
+				<author name="ElenWii" email="contact@phpboost.com" />
+			</authors>
+			<description>Version 4.0.1 du thème Cameleon</description>
+			<whatsnew>
+				<new type="improvment">Correctif CSS de PHPBoost 5.0.1</new>
+			</whatsnew>
+		</version>
 		<version num="2.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
 			<download url="https://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Cameleon Theme</download>
@@ -581,28 +607,28 @@
 	</app>
 	<!-- Kits_Graphiques -->
 	<app id="Summerday" type="template">
-		<version num="4.0" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="4.0.1" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Summerday/Summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Summerday Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 4.0 Summerday theme</description>
+			<description>Version 4.0.1 Summerday theme</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Fix CSS for PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
-		<version num="4.0" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="4.0.1" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Summerday/Summerday.zip">Thème Summerday</download>
+			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 4.0 du thème Summerday</description>
+			<description>Version 4.0.1 du thème Summerday</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Correctif CSS de PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
 		<version num="3.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
@@ -824,28 +850,28 @@
 	</app>
 	<!-- riptide -->
 	<app id="vertigo" type="template">
-		<version num="2.0" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="2.0.1" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Vertigo theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Myster" email="" />
 			</authors>
-			<description>Version 2.0 of Vertigo template</description>
+			<description>Version 2.0.1 of Vertigo template</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Fix CSS for PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
-		<version num="2.0" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="2.0.1" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Thème Vertigo</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Myster" email="" />
 			</authors>
-			<description>Version 2.0 du thème Vertigo</description>
+			<description>Version 2.0.1 du thème Vertigo</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Correctif CSS de PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
@@ -922,28 +948,28 @@
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
-		<version num="3.0" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="3.0.1" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-			<description>Version 3.0 oxygen theme</description>
+			<description>Version 3.0.1 oxygen theme</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Fix CSS for PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
-		<version num="3.0" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/02/01">
+		<version num="3.0.1" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/02/24">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-			<description>Version 3.0 oxygen theme</description>
+			<description>Version 3.0.1 oxygen theme</description>
 			<whatsnew>
-				<new type="improvment">Compatibilité avec PHPBoost v5.0</new>
+				<new type="improvment">Correctif CSS de PHPBoost v5.0.1</new>
 			</whatsnew>
 		</version>
 		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
