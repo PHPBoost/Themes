@@ -17,6 +17,7 @@ Contient les elements associes aux menus
 	margin: 0;
 	list-style: none;
 	line-height: 1;
+	left: auto;
 }
 
 .cssmenu:after,
@@ -27,6 +28,12 @@ Contient les elements associes aux menus
 	content: "";
 	line-height: 0;
 	clear: both;
+}
+
+.close {
+	left: -9999px !important;
+	height: 0;
+	overflow: hidden;
 }
 
 #menu-left .cssmenu   { margin-right: -9px; }
@@ -46,16 +53,27 @@ Contient les elements associes aux menus
 
 #top-header .cssmenu ul > li:first-child > .cssmenu-title 				{ border-radius: 0 5px 0 0;   }
 #top-header .cssmenu ul > li:last-child > .cssmenu-title  				{ border-radius: 0 0 5px 5px; }
-#top-header .cssmenu ul > li.has-sub:first-child:hover > .cssmenu-title { border-radius: 0 0 0 0;     }
-#top-header .cssmenu ul > li.has-sub:last-child:hover > .cssmenu-title  { border-radius: 0 0 0;       }
+#top-header .cssmenu ul > li.has-sub:first-child:hover > .cssmenu-title { border-radius: 0 0 0 0;	 }
+#top-header .cssmenu ul > li.has-sub:last-child:hover > .cssmenu-title  { border-radius: 0 0 0;	   }
 	
 .cssmenu.small-screen {
 	width: 100%;
 }
 
 .cssmenu.small-screen ul {
-	display: none;
+	display: block;
 	width: 100%;
+}
+
+@media (max-width: 768px) {
+	#sub-header .cssmenu.small-screen ul {
+		position: absolute;
+		z-index: 10;
+	}
+
+	#sub-header  .cssmenu.small-screen ul li {
+		border: 0;
+	}
 }
 
 .cssmenu.small-screen ul li {
@@ -167,19 +185,28 @@ div.cssmenu-group .cssmenu-title {
 	float: left;
 }
 
-#sub-header .cssmenu-horizontal > ul > li {
-	position: relative;
-	border-right: 1px solid #444444;
+@media (min-width: 769px) {
+	#sub-header .cssmenu-horizontal > ul {
+		margin: 0 0 0 70px;
+	}
+
+	#sub-header .cssmenu-horizontal > ul > li {
+		position: relative;
+		padding: 10px 10px 0 10px;
+		margin: 0 5px;
+		background-color: rgba(255, 255, 255, 0.6);
+		border: 1px #BEBEBE solid;
+		border-radius: 10px;
+		box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+	}
 }
 
-#sub-header .cssmenu-horizontal > ul > li:after {
-	position:absolute;
-	right: 1%;
-	top: 50px;
-	height: 100%;
-	width: 1px;
-	border-right: 1px solid #333333;
+@media (max-width: 768px) {
+	#sub-header .cssmenu-horizontal > ul > li {
+		border-radius: 0;
+	}
 }
+
 
 
 #main .cssmenu-horizontal > ul > li:last-child,
@@ -304,8 +331,8 @@ aside .cssmenu-right.cssmenu-static li:hover > ul 	{ right: 0;		top: 0;		}
 
 .cssmenu.cssmenu-group > ul > li:hover {
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 40%,rgba(56, 56, 56, 0.18) 100%);
-    background-color: #F0F0F0;
-    border-bottom-color: #B3B3B3;
+	background-color: #F0F0F0;
+	border-bottom-color: #B3B3B3;
 }
 
 .cssmenu-group > ul > li:first-child {
@@ -314,14 +341,14 @@ aside .cssmenu-right.cssmenu-static li:hover > ul 	{ right: 0;		top: 0;		}
 }
 
 .cssmenu-group > ul > li:last-child {
-    border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .cssmenu-group > ul > li.current {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.18) 0%,rgba(56, 56, 56, 0.18) 100%);
-    background-color: #F0F0F0;
-    border-top-color: #B3B3B3;
+	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.18) 0%,rgba(56, 56, 56, 0.18) 100%);
+	background-color: #F0F0F0;
+	border-top-color: #B3B3B3;
 }
 
 .cssmenu.cssmenu-group > ul > li > .cssmenu-title {
@@ -472,7 +499,7 @@ footer .cssmenu.cssmenu-static > ul > li:last-child,
 
 .cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:after,  
 .cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:before {
-	display: none
+	display: none;
 }
 
 .cssmenu.small-screen ul.level-1 li .cssmenu-title  {
@@ -558,7 +585,6 @@ header .cssmenu-vertical ul ul li .cssmenu-title,
 /* -------------------------------- */
 
 /* --- Niveau 1 --- */
-header .cssmenu > ul > li > .cssmenu-title 					{ color: #DDDDDD; }
 .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title		{ color: #444444; }
 #main .cssmenu > ul > li > .cssmenu-title 					{ color: #444444; }
 .cssmenu-actionslinks > ul > li > .cssmenu-title 			{ color: #666666; }
@@ -569,16 +595,34 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 .cssmenu.cssmenu-vertical li:hover > .cssmenu-title 		{ color: #666666; }
 #main .cssmenu li:hover > .cssmenu-title 					{ color: #666666; }
 
+@media (max-width: 768px) {
+	#sub-header .cssmenu li > .cssmenu-title 	{
+		color: #555555;
+		background-color: #B4DBFF;
+	}
+	
+	#sub-header .cssmenu li:first-child > .cssmenu-title 	{
+		border-top: 1px solid #8BC5FB;
+	}
+}
 @media (min-width: 769px) {
 	header .cssmenu-horizontal > ul > li:hover				{ background-color: #333333; }
 	#main .cssmenu-horizontal > ul > li:hover  				{ background-color: #F9F9F9; }
+	
+	#sub-header .cssmenu > ul > li > .cssmenu-title {
+		background-color: #ECECEC;
+		border: 1px #FFFFFF solid;
+		border-radius: 10px;
+		color: #555555;
+		padding: 15px 20px;
+	}
 }
 
 /* --- Niveau 2 --- */
 .cssmenu ul ul li .cssmenu-title 							{ color: #DDDDDD; }
 #main .cssmenu ul ul li .cssmenu-title 						{ color: #333333; }
 .cssmenu.cssmenu-vertical ul ul li .cssmenu-title  			{ color: #333333; }
-.cssmenu-actionslinks li ul li .cssmenu-title    			{ color: #666666; }
+.cssmenu-actionslinks li ul li .cssmenu-title				{ color: #666666; }
 aside .cssmenu-static li ul li .cssmenu-title, 
 #top-footer .cssmenu-static li ul li .cssmenu-title 		{ color: #666666; }
 
@@ -711,22 +755,22 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 }
 
 .cssmenu-actionslinks #menu-button + ul {
-	display: none !important;
+	left: -9999px;
 }
 
 .cssmenu-actionslinks #menu-button:hover + ul,
 .cssmenu-actionslinks #menu-button + ul:hover{
-	display: block !important;
+	left: auto;
 }
 
 .cssmenu-actionslinks.small-screen #menu-button:hover + ul,
 .cssmenu-actionslinks.small-screen #menu-button + ul:hover {
-	display: none !important;
+	left: -9999px;
 }
 
 .cssmenu-actionslinks.small-screen #menu-button + ul.open,
 .cssmenu-actionslinks.small-screen #menu-button + ul:hover.open {
-	display: block !important;
+	left: auto;
 }
 
 .cssmenu-actionslinks #menu-button:before {
