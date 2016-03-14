@@ -7,7 +7,7 @@
 
 @media (max-width: 768px) {
 	#mini-search-form {
-		margin: 10px 0 0 0;
+		display: none;
 	}
 }
 

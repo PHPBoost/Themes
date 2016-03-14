@@ -39,6 +39,10 @@ Contient les elements associes aux menus
 #menu-left .cssmenu   { margin-right: -9px; }
 #menu-right .cssmenu  { margin-left: -9px;  }
 
+#top-header .cssmenu {
+	display: inline-block;
+}
+
 #menu-left .cssmenu.small-screen  { margin-right: 0; }
 #menu-right .cssmenu.small-screen  { margin-left: 0; }
 
@@ -63,6 +67,7 @@ Contient les elements associes aux menus
 .cssmenu.small-screen ul {
 	display: block;
 	width: 100%;
+	z-index: 1;
 }
 
 .cssmenu.small-screen ul li {
@@ -793,12 +798,18 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 
 .cssmenu-actionslinks.small-screen li.has-sub > a,
 .cssmenu-actionslinks.small-screen li.has-sub > .submenu-button {
-	display:none;
+	display: none;
 }
 
 .cssmenu-actionslinks.small-screen li.has-sub > ul {
 	display: block !important;
 	padding: 0;
+}
+
+/* --- Variante tools --- */
+.cssmenu-tools.small-screen li.has-sub > a,
+.cssmenu-tools.small-screen li.has-sub > .submenu-button {
+	display: block;
 }
 
 /* --- Variante Static --- */
@@ -838,6 +849,9 @@ header .cssmenu.small-screen #menu-button.menu-opened:before 			{ background-col
 
 header .cssmenu-vertical.small-screen #menu-button.menu-opened:after,
 header .cssmenu-vertical.small-screen #menu-button.menu-opened:before 	{ background-color: #DDDDDD; }
+
+header .cssmenu-tools.small-screen #menu-button.menu-opened:after,
+header .cssmenu-tools.small-screen #menu-button.menu-opened:before 		{ background-color: #DDDDDD; }
 
 
 /* -- Bouton submenu -- */
