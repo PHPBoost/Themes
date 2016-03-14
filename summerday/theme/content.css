@@ -957,7 +957,7 @@ div.delay {
 
 div#message-maintain {
 	position: absolute;
-	top: 5px;
+	top: 50px;
 	width: 100%;
 	opacity: 0.98;
 	text-align: center;
@@ -965,6 +965,8 @@ div#message-maintain {
 
 div#message-maintain > div {
 	margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #EFEFEF;
 }
 
 div#release {

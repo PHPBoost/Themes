@@ -783,7 +783,7 @@ footer .cssmenu-static ul ul li:hover > .cssmenu-title,
 
 .cssmenu-actionslinks.small-screen li.has-sub > a,
 .cssmenu-actionslinks.small-screen li.has-sub > .submenu-button {
-	display:none;
+	display: none;
 }
 
 .cssmenu-actionslinks.small-screen li.has-sub > ul {
@@ -791,9 +791,13 @@ footer .cssmenu-static ul ul li:hover > .cssmenu-title,
 	padding: 0;
 }
 
+/* --- Variante tools --- */
+.cssmenu-tools.small-screen li.has-sub > a,
+.cssmenu-tools.small-screen li.has-sub > .submenu-button {
+	display: block;
+}
 
 /* --- Variante Static --- */
-
 .cssmenu-static.small-screen #menu-button {
 	cursor: default;
 }
@@ -837,6 +841,9 @@ header .cssmenu.small-screen #menu-button.menu-opened:before 			{ background-col
 
 header .cssmenu-vertical.small-screen #menu-button.menu-opened:after,
 header .cssmenu-vertical.small-screen #menu-button.menu-opened:before 	{ background-color: #DDDDDD; }
+
+header .cssmenu-tools.small-screen #menu-button.menu-opened:after,
+header .cssmenu-tools.small-screen #menu-button.menu-opened:before 		{ background-color: #DDDDDD; }
 
 
 /* -- Bouton submenu -- */
