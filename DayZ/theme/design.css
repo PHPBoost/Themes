@@ -1,0 +1,745 @@
+/*---------------------------------------------------------
+ * Theme    : FanSubAniM
+ * Par      : Striker,Jiraya & EDN | Swan
+ * Date     : 31/03/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme --
+--------------------------------------*/
+/* afficher le texte sélectionné en jaune sur fond rouge */
+::-moz-selection { color:#efefef;  background: #6D0000; }
+::selection     { color:#efefef;  background: #6D0000; }
+
+/* afficher le texte sélectionné dans un paragraphe en blanc sur fond noir */
+p::-moz-selection { color:#efefef;  background: #6D0000; }
+p::selection      { color:#efefef;  background: #6D0000; }
+
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+    background: url('images/bgr.jpg') no-repeat top center #000000;
+    color: #c9c9c9;
+    font-family: "verdana","Lucida Sans Unicode",Verdana,"Bitstream Vera Sans",Times,serif;
+    font-size: 12px;
+	position: relative;
+	height: auto;
+	min-height: 100%;
+}
+
+
+/* -- En-tete de page - Header --
+--------------------------------------*/
+header#header {
+max-width: 1100px;
+margin:auto;
+}
+
+/* --- Partie superieure du header --- */
+
+div#top-header {
+    background: transparent url("images/header.png") no-repeat scroll 0 26px;
+    margin: auto;
+    max-width: 1100px;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+div#top-header-content{
+	float: right;
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+    min-height: 35px;
+    text-align: center;
+}
+
+div#sub-header-content{
+	max-width: 1024px;
+	margin: auto;
+}
+
+
+div#sub-header-menu{
+	text-align:center;
+	font-size:16px;
+	margin-top:20px;
+}
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	max-width: 940px;
+	margin: 1.5em 1.5em 0 1.5em;
+	float: left;
+}
+
+div#site-logo {
+    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    float: left;
+    height: 200px;
+    margin: 10px 1em 0 0;
+    position: absolute;
+    width: 217px;
+    z-index: 1000;
+}
+
+div#site-name-container {
+    margin: 1em 0 0 20em;
+	overflow: hidden;
+	float: left;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 4em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0,0,0), 1px 0 0 rgb(-255,-255,-255), 2px 0 0.1px rgba(0,0,0,0.1), 2px 0 0.1px rgba(0,0,0,0.2), 0 0 1px rgba(0,0,0,.1);
+}
+@media (max-width:768px) {
+
+
+}
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width:800px) {
+	a#site-name {display:none;}
+	div#site-infos {display:none;}
+}
+
+
+/* -- Conteneur global du site --
+--------------------------------------*/
+div#global {
+    margin: auto;
+    max-width: 1100px;
+}
+div#sous-global {
+    background: rgba(0, 0, 0, 0) url("images/bg_global.png") repeat scroll 0 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.75);
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 10px;
+	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
+}
+aside#menu-left,
+aside#menu-right {
+    width: auto;
+}
+
+#main {
+   width: auto;
+}
+
+/* -- Contenu de la page --
+--------------------------------------*/
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 1em;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+}
+
+div#bottom-content {
+	margin: 2% 0 0 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#top-footer {
+	clear: both;
+	padding: 2% 0;
+}
+
+/* -- Pied de page - Footer --
+--------------------------------------*/
+footer#footer {
+    clear: both;
+    height: 71px;
+    margin: auto;
+    text-align: center;
+    width: 1100px;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	max-width: 1024px;
+	padding: 1.5em 0;
+	border-bottom: 2px groove #444444;
+}
+
+
+footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #8d8d8d;
+	font-size: 0.8em;
+}
+
+/* -- Elements specifiques PHPboost --
+--------------------------------------*/
+/* --- Compteur de visite --- */
+div#compteur {
+	color: #E9ECD9;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size: 0.9em;
+	margin-right: 15px;
+	text-align: right;
+}
+
+/* --- Barre d'outils --- */
+#actions-links-menu {
+	float:right;
+	margin: 0 5px 5px 5px;
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb{
+    height: 33px;
+    margin:10px;
+    padding: 4px;
+    text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	list-style: none;
+	margin: 0;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+
+	content: '';
+	background:url('images/breadcrumb.png') no-repeat scroll 0 0 transparent;
+	width: 13px; height: 20px;
+	color: #616161;
+}
+
+#menu-mess {
+    height: 33px;
+    padding: 5px;
+}
+/*################################
+   Barre de navigation en images
+#################################*/
+
+div#nav {
+    height: 50px;
+    margin: auto;
+    width: 935px;
+}
+div#nav-invisible {
+    width: 1000px; 
+    margin: auto;
+    z-index: 2000;
+}
+div#nav-invisible ul, div#nav ul {
+    margin: 0;
+    padding: 0;
+}
+div#nav-invisible ul li, div#nav ul li {
+    background: url("images/blank.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+div#nav-invisible ul li.last, div#nav ul li.last {
+    padding-left: 2px;
+    padding-right: 0;
+}
+a.nav_item_accueil {
+    background: url("images/sprite_bar_1.png") repeat scroll -21px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 115px;
+}
+a.nav_item_accueil_hover {
+    background-position: -22px -138px;
+}
+a.nav_item_accueil:hover {
+    background-position: -22px -138px;
+}
+li.active a.nav_item_accueil {
+    background-position: -22px -138px;
+}
+div#nav-invisible a.nav_item_actualites {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_actualites {
+    background: url("images/sprite_bar_1.png") repeat scroll -139px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 140px;
+}
+a.nav_item_actualites_hover {
+    background-position: -139px -138px;
+}
+a.nav_item_actualites:hover {
+    background-position: -139px -138px;
+}
+li.active a.nav_item_actualites {
+    background-position: -139px -138px;
+}
+div#nav-invisible a.nav_item_articles {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_articles {
+    background: url("images/sprite_bar_1.png") repeat scroll -283px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 153px;
+}
+a.nav_item_articles_hover {
+    background-position: -283px -138px;
+}
+a.nav_item_articles:hover {
+    background-position: -283px -138px;
+}
+li.active a.nav_item_articles {
+    background-position: -283px -138px;
+}
+div#nav-invisible a.nav_item_forum {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_forum {
+    background: url("images/sprite_bar_1.png") repeat scroll -439px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 90px;
+}
+a.nav_item_forum_hover {
+    background-position: -439px -138px;
+}
+a.nav_item_forum:hover {
+    background-position: -439px -138px;
+}
+li.active a.nav_item_forum{
+    background-position: -439px -138px;
+}
+
+div#nav-invisible a.nav_item_staff {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_staff {
+    background: url("images/sprite_bar_1.png") repeat scroll -534px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 97px;
+}
+a.nav_item_staff_hover {
+    background-position: -534px -138px;
+}
+a.nav_item_staff:hover {
+    background-position: -534px -138px;
+}
+li.active a.nav_item_staff {
+    background-position: -534px -138px;
+}
+div#nav-invisible a.nav_item_documentation {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_documentation {
+    background: url("images/sprite_bar_1.png") repeat scroll -636px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 186px;
+}
+a.nav_item_documentation_hover {
+    background-position: -636px -138px;
+}
+a.nav_item_documentation:hover {
+    background-position: -636px -138px;
+}
+li.active a.nav_item_documentation{
+    background-position: -636px -138px;
+}
+div#nav-invisible a.nav_item_faq {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_faq {
+    background: url("images/sprite_bar_1.png") repeat scroll -831px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 59px;
+}
+a.nav_item_faq_hover {
+    background-position: -831px -138px;
+}
+a.nav_item_faq:hover {
+    background-position: -831px -138px;
+}
+li.active a.nav_item_faq{
+    background-position: -831px -138px;
+}
+div#nav-invisible a.nav_item_events{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.nav_item_events{
+    background: url("images/sprite_bar_1.png") repeat scroll -897px -90px rgba(0, 0, 0, 0);
+    display: block;
+    height: 44px;
+    width: 80px;
+}
+a.nav_item_events_hover {
+    background-position: -897px -138px;
+}
+a.nav_item_events:hover {
+    background-position: -897px -138px;
+}
+li.active a.nav_item_events{
+    background-position: -897px -138px;
+}
+
+/*======================================
+		Todd Motto Labs -
+		Flaunt JS Navigation
+		Adapté pour phpboost 5.0
+		URL: www.toddmotto.com
+========================================*/
+
+section#Motto{
+	background: #3d3d3b;
+    margin: auto;
+    padding: 0px;
+    vertical-align: top;
+    width: 100%;
+	height:auto;
+	z-index:100;
+}
+#menu-title{
+    color: #ffffff;
+    float: left;
+    font-weight: bold;
+    padding: 18px 0 0 87px;
+    text-align: center;
+    text-transform: uppercase;
+	}
+.nav {
+	position:relative;
+	/*display:inline-block;*/
+	font-size:14px;
+	font-weight:900;
+}
+.nav-list {
+	text-align:left;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+}
+.nav-item a {
+	display:block;
+	color:#FFF;
+	padding:15px 20px;
+	background:#7D7D7D;
+	border-bottom:1px solid #8C8B8C;
+}
+.nav-item > a:hover {
+	background:#8F8C8E;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:180px;
+}
+.nav-submenu-item a {
+	background:#ADADAD;
+	border-bottom:1px solid #7d7d7d;
+	display:block;
+	padding:15px;
+}
+.nav-submenu-item a:hover {
+	background:#918E91;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    border-left: 1px solid #222222;
+    cursor: pointer;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	border-left: 1px solid #8c8b8c;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url('images/drop.svg') no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#ADADAD;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+/*======================================
+		  Navigation latérale
+		 "gadget de navigation"
+========================================*/
+div#gotop {
+    display: block;
+    position: fixed;
+    right: 57px;
+    top: 150px;
+    z-index: 150;
+}
+div#gotop a {
+    background: url('images/sprite_bigNav.png') no-repeat scroll center top transparent;
+    float: left;
+    height: 80px;
+    opacity: 0.3;
+    width: 80px;
+}
+div#gobottom {
+    display: block;
+    position: fixed;
+    right: 57px;
+    top: 238px;
+    z-index: 150;
+}
+div#gobottom a {
+    background: url('images/sprite_bigNav.png') no-repeat scroll center bottom transparent;
+    float: left;
+    height: 80px;
+    opacity: 0.3;
+    width: 80px;	
+}
+
+/*################################
+		Paramètres slideshow
+#################################*/
+
+#slideshow {
+    height: 400px;
+    margin: auto;
+    width: 1024px;
+}
+.fadein { position:relative; width:1100px; height:400px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+/*################################
+		Paramètres divers
+#################################*/
+
+aside#menu-left span.bt-content > a, aside#menu-right span.bt-content > a {
+    color: #efefef;
+}
+aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:hover {
+    color: #bb0000;
+}
+
+/*======================================
+			Alls Media Queries
+		 CSS applique aux écrans PC 
+========================================*/
+
+@media ( min-width: 769px ) {
+
+	/* --- Menu gauche --- */
+	aside#menu-left {
+		float: left;
+		width: 30%;
+		margin-right: 1%;
+	}
+
+	/* --- Menu droit --- */
+	aside#menu-right {
+		float: right;
+		width: 30%;
+		margin-left: 1%;
+	}
+
+	/* --- Menu central : main --- */
+	div#main {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	div#main.main-with-left,
+	div#main.main-with-right {
+		width: 69%;
+	}
+
+	div#main.main-with-left.main-with-right {
+		width: 60%;
+	}
+
+}
+
+@media (max-width:768px) {
+
+	body {font-size: 1.4em;}
+	header#header {margin: auto;}
+	div#top-header{display: none;}
+	div#header-gsm {background-color:#222222; height:50px; padding-top: 10px; text-align:center;}
+	div#sub-header { border: none;}
+	a#site-name {
+    color: #f9fcff;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    line-height: 1em;
+	}
+	div#global {
+		background-color: #000;
+		border-top: 1px solid #000;
+		margin: auto;
+		max-width: 1250px;
+		-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
+	}
+	div#sous-global {
+		background-color: # faf6ee;
+		margin: auto;
+		padding: 0 10px;
+	}
+	#nav, #slideshow , .fadein {display: none;}
+	
+	footer#footer {
+		background: #3b3b3b; 
+		border-top: 1px solid #222222;
+		clear: both;
+		margin: auto;
+		width: 1250px;
+   height: auto;		
+	}
+	footer#footer .footer-infos {
+		min-height: 40px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #eeeeee;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+	#blackbarnav{display: none;}
+}
+
+@media (min-width:769px) {
+	section#Motto {display: none;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		list-style: none outside none;		
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	ul{margin-left:0px;}
+	.nav-submenu{margin-bottom:0px}
+}
+@media (max-width:768px) {
+	div#menugo {display: none;}
+}
+

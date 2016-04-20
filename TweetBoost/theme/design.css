@@ -1,0 +1,691 @@
+/*---------------------------------------------------------
+ * Theme    : TweetBoost
+ * Par      : EDN | Swan
+ * Date     : 03/04/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme --
+--------------------------------------*/
+/* afficher le texte sélectionné en jaune sur fond rouge */
+::-moz-selection { color:#efefef;  background: #000000 ; }
+::selection     { color:#efefef;  background: #000000 ; }
+
+/* afficher le texte sélectionné dans un paragraphe en blanc sur fond noir */
+p::-moz-selection { color:#efefef;  background: #000000 ; }
+p::selection      { color:#efefef;  background: #000000 ; }
+
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e95ca+0,6ab3de+19,99d4f6+51,6ab3de+78,3e95ca+100 */
+	background: #3e95ca; /* Old browsers */
+	background: -moz-linear-gradient(left,  #3e95ca 0%, #6ab3de 19%, #99d4f6 51%, #6ab3de 78%, #3e95ca 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #3e95ca 0%,#6ab3de 19%,#99d4f6 51%,#6ab3de 78%,#3e95ca 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #3e95ca 0%,#6ab3de 19%,#99d4f6 51%,#6ab3de 78%,#3e95ca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e95ca', endColorstr='#3e95ca',GradientType=1 ); /* IE6-9 */
+    color: #00000;
+    font-family: "verdana","Lucida Sans Unicode",Verdana,"Bitstream Vera Sans",Times,serif;
+    font-size: 12px;
+	position: relative;
+	height: auto;
+	min-height: 100%;
+}
+
+
+/* -- En-tete de page - Header --
+--------------------------------------*/
+header#header {
+max-width: 1100px;
+margin:auto;
+}
+
+/* --- Partie superieure du header --- */
+
+div#top-header {
+    background:#000000 none repeat scroll 0 0;
+    margin: auto;
+    max-width: 1100px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+
+div#top-header-content{
+	float: right;
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	background: #000000; /* Old browsers */
+	border-bottom: 1px solid #103480;
+    min-height: 35px;
+    text-align: center;
+	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+}
+
+div#sub-header-content{
+	max-width: 1024px;
+	margin: auto;
+}
+
+
+div#sub-header-menu{
+	text-align:center;
+	font-size:16px;
+	margin-top:20px;
+}
+.sub-container {
+    float: left;
+    height: 30px;
+    margin: auto;
+    padding:5px 40px 5px 5px;
+    text-align: center;
+}
+
+.sub-container img {width:30%;}
+.sub-container a{ 
+	color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+	transition: all 0.2s ease-out 0.2s;
+}
+.sub-container a:hover{color:#55acee;}
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	max-width: 940px;
+	margin: 1.5em 1.5em 0 1.5em;
+	float: left;
+}
+
+div#site-logo {
+    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    border: 4px solid #ffffff;
+	border-radius:50%;
+    box-shadow: 1px 1px 2px 0 #656565;
+    float: left;
+    height: 160px;
+    margin: 0px 1em 0px 0px;
+    position: absolute;
+    width: 160px;
+    z-index: 1000;
+}
+
+div#site-name-container {
+    color: #ffffff;
+    margin:2em 0 0 15em;
+	overflow: hidden;
+	float: left;
+}
+
+a#site-name {
+    color: #ffffff;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #0000000;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width:769px) {
+	#header-gsm a#site-name {display:none;}
+/*	div#site-infos {display:none;}*/
+}
+
+
+/* -- Conteneur global du site --
+--------------------------------------*/
+div#global {
+    margin: auto;
+    max-width: 1100px;
+}
+div#sous-global {
+}
+aside#menu-left,
+aside#menu-right {
+    width: auto;
+}
+
+#main {
+   width: auto;
+	background-color:#ffffff;
+    border:1px solid #3e95ca;
+}   
+
+/* -- Contenu de la page --
+--------------------------------------*/
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 1em;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+}
+
+div#bottom-content {
+	margin: 2% 0 0 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#top-footer {
+	clear: both;
+	padding: 2% 0;
+}
+
+/* -- Pied de page - Footer --
+--------------------------------------*/
+footer#footer {
+    clear: both;
+    height: 71px;
+    margin: auto;
+    text-align: center;
+    width: 1100px;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	max-width: 1024px;
+	padding: 1.5em 0;
+	border-bottom: 2px groove #444444;
+}
+
+
+footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #222222;
+	font-size: 0.8em;
+}
+
+/* -- Elements specifiques PHPboost --
+--------------------------------------*/
+/* --- Compteur de visite --- */
+div#compteur {
+	color: #E9ECD9;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size: 0.9em;
+	margin-right: 15px;
+	text-align: right;
+}
+
+/* --- Barre d'outils --- */
+#actions-links-menu {
+	float:right;
+	margin: 0 5px 5px 5px;
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb{
+    color: #8899a6;
+    font-size: 11px;
+    font-weight: bold;
+    height: 33px;
+    margin: 10px;
+    padding: 4px;
+    text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	list-style: none;
+	margin: 0;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+
+	content: '';
+	background:url('images/breadcrumb.png') no-repeat scroll 0 0 transparent;
+	width: 13px; height: 20px;
+	color: #616161;
+}
+
+#menu-mess {
+    height: 16px;
+    padding: 5px;
+}
+/*################################
+		Barre de navigation
+#################################*/
+#prim-nav {
+    background:#fff;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    height: 51px;
+    margin:auto;
+    width: 1100px;
+}
+#navbook {
+    background:#fff;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    height: 51px;
+    margin:auto auto auto 274px;
+    width: 826px;
+}
+
+#navbook b {
+    background:#fff;
+    display: block;
+    float: left;
+    height: 50px;
+    width: 24px;
+}
+a.whithebar {
+    background: #fff none repeat scroll 0 0;
+    border-left: 1px solid #e9eaed;
+    color: #3b5998;
+    display: block;
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+a.whithebar:hover {
+    background:#efefef;
+    color: #000000;
+	text-decoration: none;
+} 
+/*======================================
+		Todd Motto Labs -
+		Flaunt JS Navigation
+		Adapté pour phpboost 5.0
+		URL: www.toddmotto.com
+========================================*/
+
+section#Motto{
+	background: #3d3d3b;
+    margin: auto;
+    padding: 0px;
+    vertical-align: top;
+    width: 100%;
+	height:auto;
+	z-index:100;
+}
+#menu-title{
+    color: #ffffff;
+    float: left;
+    font-weight: bold;
+    padding: 18px 0 0 87px;
+    text-align: center;
+    text-transform: uppercase;
+	}
+.nav {
+	position:relative;
+	/*display:inline-block;*/
+	font-size:14px;
+	font-weight:900;
+}
+.nav-list {
+	text-align:left;
+}
+ul.nav-list  {
+ margin-bottom:0px;
+ }
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+}
+.nav-item a {
+    background: #3e95ca none repeat scroll 0 0;
+    border-bottom: 1px solid #dddddd;
+    color: #fff;
+    display: block;
+	padding:15px 20px;
+}
+.nav-item > a:hover {
+	background:#DAE8ED;
+	color:#222222;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:180px;
+}
+.nav-submenu-item a {
+	background:#DAE8ED;
+	color:#555555;
+	border-bottom:1px solid #435a8b;
+	display:block;
+	padding:15px;
+}
+.nav-submenu-item a:hover {
+	background:#A3C9D6 ;
+	color:#000000;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    border-left: 1px solid #222222;
+    cursor: pointer;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	border-left: 1px solid #dddddd;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url('images/drop.svg') no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#DAE8ED;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+/*======================================
+		  Navigation latérale
+		 "gadget de navigation"
+========================================*/
+div#gotop {
+    position: fixed;
+    right: 120px;
+    top: 350px;
+    z-index: 150;
+}
+div#gotop a {
+    background: #000000 none repeat scroll 0 0;
+    border: 1px solid #222222;
+    border-radius: 3px;
+    color: #dddddd;
+    float: left;
+	font-size:12px;
+	padding:12px 6px;
+    opacity: 0.8;
+}
+div#gobottom {
+    display: block;
+    position: fixed;
+    right: 120px;
+    top: 400px;
+    z-index: 150;
+}
+div#gobottom a {
+    background: #000000 none repeat scroll 0 0;
+    border: 1px solid #222222;
+    border-radius: 3px;
+    color: #dddddd;
+    float: left;
+	font-size:12px;
+	padding:12px 6px;
+    opacity: 0.8;
+}
+
+/*################################
+		Paramètres divers
+#################################*/
+
+aside#menu-left span.bt-content > a, aside#menu-right span.bt-content > a {
+    color: #222222;
+}
+aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:hover {
+    color: #3b5998;
+}
+
+/*################################
+		Paramètres autres menus
+#################################*/
+
+.connect-container {
+    float: right;
+    height: 30px;
+    margin: auto;
+    padding:5px 40px 5px 5px;
+    text-align: center;
+}
+
+.dropdownWrapper {
+
+  background: #99d4f6; 
+  border: 1px solid #3e95ca;
+  display: inline-block;
+  padding: 0px;
+  position: relative;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.2s ease-out 0.2s;
+}
+
+.dropdownWrapper:hover { background-color: #04b3f4; }
+
+.dropdownLabel {
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+.dropdownPanel {
+  position: absolute;
+  min-width: 221px;
+  background-color: #fff;
+  padding: 5px;
+  left: 0;
+  top: 0;
+  margin-top: 35px;
+  display: none;
+  z-index: 2;
+  border: 1px solid #cccccc;
+}
+
+.dropdownPanel:before {
+  width: 0;
+  content: "";
+  height: 0;
+  border-style: solid;
+  border-width: 0 7px 8px 7px;
+  border-color: transparent transparent #cccccc transparent;
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin-top: -8px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+
+/*======================================
+			Alls Media Queries
+		 CSS applique aux écrans PC 
+========================================*/
+
+@media ( min-width: 769px ) {
+
+	/* --- Menu gauche --- */
+	aside#menu-left {
+		float: left;
+		width: 30%;
+		margin-right: 1%;
+	}
+
+	/* --- Menu droit --- */
+	aside#menu-right {
+		float: right;
+		width: 30%;
+		margin-left: 1%;
+	}
+
+	/* --- Menu central : main --- */
+	div#main {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	div#main.main-with-left,
+	div#main.main-with-right {
+		width: 69%;
+	}
+
+	div#main.main-with-left.main-with-right {
+		width: 69%;
+	}
+
+}
+
+@media (max-width:768px) {
+
+	body {font-size: 1.4em;}
+	header#header {margin: auto;}
+	div#top-header{display: none;}
+	div#header-gsm {background-color:#000000; height:50px; text-align:center;}
+	div#sub-header { border: none;}
+	.sub-container{display: none;}
+	a#site-name {
+    color: #f9fcff;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+	}
+	div#sous-global {
+		background-color: # faf6ee;
+		margin: auto;
+		padding: 0 10px;
+	}
+	footer#footer {
+	background: #000000;
+	border-top: 1px solid #222222;
+	clear: both;
+	margin: auto;
+	width: 1250px;
+   height: auto;		
+	}
+	footer#footer .footer-infos {
+		min-height: 40px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #eeeeee;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+	#prim-nav{display: none;}
+}
+
+@media (min-width:769px) {
+	section#Motto {display: none;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		list-style: none outside none;		
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	ul{margin-left:0px;}
+	.nav-submenu{margin-bottom:0px}
+}
+@media (max-width:768px) {
+	div#menugo {display: none;}
+}
+
