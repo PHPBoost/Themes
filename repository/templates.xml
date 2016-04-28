@@ -172,26 +172,26 @@
 		</version>
 	</app>
 	<app id="unitedcolors" type="template">
-		<version num="2.0.2" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="2.0.3" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 2.0.2 United Colors theme</description>
+			<description>Version 2.0.3 United Colors theme</description>
 			<whatsnew>
-				<new type="improvment">Fix CSSMenu tools</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="2.0.2" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="2.0.3" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 2.0.2 du thème United Colors</description>
+			<description>Version 2.0.3 du thème United Colors</description>
 			<whatsnew>
-				<new type="bug">Correctif CSSMenu tools</new>
+				<new type="improvement">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
@@ -388,26 +388,26 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
-		<version num="3.0.2" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="3.0.3" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-			<description>Version 3.0.2 Underline theme for PBT 5.0</description>
+			<description>Version 3.0.3 Underline theme for PBT 5.0</description>
 			<whatsnew>
-				<new type="bug">FIX CSSMenu tools</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="3.0.2" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="3.0.3" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 			</authors>
-			<description>Version 3.0.2 du thème Underline compatible avec la version 5.0 de PHPBoost</description>
+			<description>Version 3.0.3 du thème Underline compatible avec la version 5.0 de PHPBoost</description>
 			<whatsnew>
-				<new type="bug">Correctif CSSMenu tools</new>
+				<new type="improvement">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
@@ -457,7 +457,7 @@
 	</app>
 	<!-- EnimSay -->
 	<app id="Cameleon" type="template">
-		<version num="4.0.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="4.0.3" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Cameleon Theme</download>
 			<authors>
@@ -465,12 +465,12 @@
 				<author name="babsolune" email="babso@web33.fr" />
 				<author name="ElenWii" email="contact@phpboost.com" />
 			</authors>
-			<description>Version 4.0.2 Cameleon theme</description>
+			<description>Version 4.0.3 Cameleon theme</description>
 			<whatsnew>
-				<new type="bug">FIX CSSMenu tools</new>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="4.0.2" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="4.0.3" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Thème Cameleon</download>
 			<authors>
@@ -478,9 +478,9 @@
 				<author name="babsolune" email="babso@web33.fr" />
 				<author name="ElenWii" email="contact@phpboost.com" />
 			</authors>
-			<description>Version 4.0.2 du thème Cameleon</description>
+			<description>Version 4.0.3 du thème Cameleon</description>
 			<whatsnew>
-				<new type="bug">Correctif CSSMenu tools</new>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
@@ -494,16 +494,6 @@
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
 				<new type="improvment">Change repository link</new>
-			</whatsnew>		</version>
-		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon Theme</download>
-			<authors>
-				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
-			</authors>
-			<description>Version 1.8 Cameleon theme</description>
-			<whatsnew>
-				<new type="bug">Correct XML file for update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
@@ -517,6 +507,17 @@
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
 				<new type="improvment">Changement du lien de repository</new>
+			</whatsnew>
+		</version>
+		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon Theme</download>
+			<authors>
+				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
+			</authors>
+			<description>Version 1.8 Cameleon theme</description>
+			<whatsnew>
+				<new type="bug">Correct XML file for update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="1.8" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
@@ -607,30 +608,28 @@
 	</app>
 	<!-- Kits_Graphiques -->
 	<app id="Summerday" type="template">
-		<version num="4.0.2" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="4.0.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Summerday Theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 4.0.2 Summerday theme</description>
+			<description>Version 4.0.3 Summerday theme</description>
 			<whatsnew>
-				<new type="bug">Maintain message position</new>
-				<new type="bug">Fix CSSMenu tools</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="4.0.2" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="4.0.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Thème Summerday</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="babsolune" email="babso@web33.fr" />
 			</authors>
-			<description>Version 4.0.2 du thème Summerday</description>
+			<description>Version 4.0.3 du thème Summerday</description>
 			<whatsnew>
-				<new type="bug">Maintain message position</new>
-				<new type="bug">Correctif du CSSMenu tools</new>
+				<new type="improvement">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="3.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
@@ -852,28 +851,28 @@
 	</app>
 	<!-- riptide -->
 	<app id="vertigo" type="template">
-		<version num="2.0.2" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="2.0.3" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Vertigo theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Myster" email="" />
 			</authors>
-			<description>Version 2.0.2 of Vertigo template</description>
+			<description>Version 2.0.3 of Vertigo template</description>
 			<whatsnew>
-				<new type="bug">Fix CSSMenu tools</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="2.0.2" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="2.0.3" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Thème Vertigo</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Myster" email="" />
 			</authors>
-			<description>Version 2.0.2 du thème Vertigo</description>
+			<description>Version 2.0.3 du thème Vertigo</description>
 			<whatsnew>
-				<new type="bug">Correctif CSSMenu tools</new>
+				<new type="improvement">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
@@ -950,30 +949,28 @@
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
-		<version num="3.0.2" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="3.0.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-			<description>Version 3.0.2 oxygen theme</description>
+			<description>Version 3.0.3 oxygen theme</description>
 			<whatsnew>
-				<new type="bug">Fix CSSMenu on top-header</new>
-				<new type="improvment">Add compteur position</new>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="3.0.2" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/03/14">
+		<version num="3.0.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/28">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwe@gmail.com" />
 				<author name="Teki-Latex" email="teklatex@gmail.com" />
 			</authors>
-			<description>Version 3.0.2 oxygen theme</description>
+			<description>Version 3.0.3 oxygen theme</description>
 			<whatsnew>
-				<new type="bug">Correctif du CSSMenu dans le top-header</new>
-				<new type="improvment">Ajout du compteur de visiteur</new>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
@@ -1071,6 +1068,251 @@
 			<description>Version 4.3 du thème metro</description>
 			<whatsnew>
 				<new type="bug">Correction des fichiers header.tpl et de l'appel du default.css</new>
+			</whatsnew>
+		</version>
+	</app>
+	<!-- Swan : EasyDesign.net -->
+	<app id="DayZ" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="DayZ" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">DayZ template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 DayZ template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="DayZ" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">Thème DayZ</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème DayZ</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="FaceBoost" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="FaceBoost" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/FaceBoost/FaceBoost.zip">FaceBoost template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 FaceBoost template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="FaceBoost" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/FaceBoost/FaceBoost.zip">Thème FaceBoost</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème FaceBoost</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="FanSubAniM" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">FanSubAniM template</download>
+			<authors>
+				<author name="Striker" email="contact@easy-design.net" />
+				<author name="Jiraya" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 FanSubAniM template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">Thème FanSubAniM</download>
+			<authors>
+				<author name="Striker" email="contact@easy-design.net" />
+				<author name="Jiraya" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème FanSubAniM</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Multi_Theme" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Multi_Theme template</download>
+			<authors>
+				<author name="Sakura" email="admin@news-manga.com" />
+			</authors>
+			<description>Version 5.0.1 Multi_Theme template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Thème Multi_Theme</download>
+			<authors>
+				<author name="Sakura" email="admin@news-manga.com" />
+			</authors>
+			<description>Version 5.0.1 du thème Multi_Theme</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Rift" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="Rift" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Rift/Rift.zip">Rift template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 Rift template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="Rift" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Rift/Rift.zip">Thème Rift</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème Rift</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="RiftNightMare" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="RiftNightMare" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/RiftNightMare/RiftNightMare.zip">RiftNightMare template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 RiftNightMare template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="RiftNightMare" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/RiftNightMare/RiftNightMare.zip">Thème RiftNightMare</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème RiftNightMare</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="TSW_Dragon" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TSW_Dragon/TSW_Dragon.zip">TSW_Dragon template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 TSW_Dragon template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TSW_Dragon/TSW_Dragon.zip">Thème TSW_Dragon</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème TSW_Dragon</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="TSW_Illuminati" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TSW_Illuminati/TSW_Illuminati.zip">TSW_Illuminati template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 TSW_Illuminati template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TSW_Illuminati/TSW_Illuminati.zip">Thème TSW_Illuminati</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème TSW_Illuminati</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="TSW_Templiers" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TSW_Templiers/TSW_Templiers.zip">TSW_Templiers template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 TSW_Templiers template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TSW_Templiers/TSW_Templiers.zip">Thème TSW_Templiers</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème TSW_Templiers</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="TweetBoost" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="TweetBoost" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TweetBoost/TweetBoost.zip">TweetBoost template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 TweetBoost template</description>
+			<whatsnew>
+				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="TweetBoost" priority="low" security-update="false" pubdate="2016/04/28">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/TweetBoost/TweetBoost.zip">Thème TweetBoost</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.1 du thème TweetBoost</description>
+			<whatsnew>
+				<new type="improvment">Compatibilité avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 	</app>
