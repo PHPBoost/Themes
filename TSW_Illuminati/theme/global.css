@@ -96,29 +96,29 @@ h1 a:hover {
 	margin: 0.5rem 0;
 }
 
-h1.formatter-title {  
+h2.formatter-title {  
     border-bottom: 2px solid #74C5F2;
     color: #74C5F2;
     font-size: 18px;
     width: 98%;
 }
 	
-h2.formatter-title {
+h3.formatter-title {
 	color: #74C5F2;
     font-size: 16px;
     text-shadow: 0 0 16px #222222;
     margin-left: 1.5rem;
     padding: 2px 5px;
  }
-h3.formatter-title { margin-left: 3rem; }
-h4.formatter-title { margin-left: 5rem; }
+h4.formatter-title { margin-left: 3rem; }
+h5.formatter-title { margin-left: 5rem; }
 
-h3.formatter-title {
+h4.formatter-title {
 	color: #74C5F2;
     font-size: 14px;
 	border-bottom: 1px solid #506B45;
 }
-h4.formatter-title {
+h5.formatter-title {
     color: #74C5F2;
     font-size: 12px;
 	border-bottom: 1px solid #506B45;

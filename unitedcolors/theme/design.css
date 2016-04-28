@@ -167,7 +167,7 @@ aside#menu-right {
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 		flex: 1 0 auto;
-		-ms-flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
 		margin: 0 10px 0 0;
 	}
 

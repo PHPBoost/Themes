@@ -410,6 +410,12 @@ ul.pagination-block-bis li a.next-page:hover {
 	font-size: 14px;
 }
 
+.options > h6,
+.options > a ,
+.options > span > a.small {
+	color: #111111;
+}
+
 .infos {
 	margin-left: 20px;
 }

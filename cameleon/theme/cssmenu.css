@@ -8,16 +8,28 @@ Contient les elements associes aux menus
 /* -------------------------- */
 
 /* --- Classes generales cssmenu --- */
+.cssmenu {
+	font-size: 0;
+}
+
 .cssmenu,
 .cssmenu ul,
 .cssmenu ul li,
 .cssmenu ul li .cssmenu-title {
-	display: block;
 	position: relative;
 	margin: 0;
 	list-style: none;
 	line-height: 1;
 	left: auto;
+}
+
+.cssmenu 		{ display: block; }
+header .cssmenu { display: inline-block; }
+
+.cssmenu ul,
+.cssmenu ul li,
+.cssmenu ul li .cssmenu-title {
+	display: block;
 }
 
 .cssmenu:after,
@@ -28,6 +40,31 @@ Contient les elements associes aux menus
 	content: "";
 	line-height: 0;
 	clear: both;
+}
+
+.cssmenu-img {
+	display: inline-block;
+}
+
+@media (max-width: 768px) {
+	.cssmenu > .cssmenu-img {
+		display: none;
+	}
+
+	.cssmenu-img {
+		padding: 0px 5px 0px 0px;
+	}
+}
+
+@media (min-width: 769px) {
+	.cssmenu-img {
+		padding: 10px 0 0 5px;
+		vertical-align: top;
+	}
+}
+
+.cssmenu-img-level-0 ~ ul.level-0 {
+	display: inline-block;
 }
 
 .close {
@@ -101,10 +138,15 @@ Contient les elements associes aux menus
 	padding: 11px;
 }
 
+@media (max-width: 768px) {
+	.cssmenu.small-screen .cssmenu-img-level-0 + div  {
+		padding: 10px 40px 5px 17px;
+	}
+}
+
 /* --- Variante cssmenu-horizontal --- */
 #main .cssmenu-horizontal {
 	background-color: #FFFFFF;
-	border: 1px #BEBEBE solid;
 }
 
 /* --- Variante cssmenu-group --- */
@@ -207,8 +249,6 @@ div.cssmenu-group .cssmenu-title {
 	}
 }
 
-
-
 #main .cssmenu-horizontal > ul > li:last-child,
 #sub-header .cssmenu-horizontal > ul > li:last-child {
 	border-bottom: none;
@@ -296,6 +336,11 @@ header .cssmenu-horizontal > ul > li.has-sub:hover {
 
 .cssmenu-vertical > ul > li.has-sub > .cssmenu-title:after  { top: 11px; }
 .cssmenu-vertical > ul > li.has-sub > .cssmenu-title:before { top: 8px;  }
+
+@media (min-width: 769px) {
+	#sub-header .cssmenu > ul > li.has-sub > .cssmenu-title:after 	{ top: 20px; right: 6px; }
+	#sub-header .cssmenu > ul > li.has-sub > .cssmenu-title:before 	{ top: 17px; right: 9px; }
+}
 
 /* --- Position des sous menu --- */
 .cssmenu li:hover > ul 								{ left: auto ;				}
@@ -439,6 +484,13 @@ footer .cssmenu.cssmenu-static > ul > li:last-child,
 	left: -9999px;
 	z-index: 10;
 }
+
+@media (min-width: 769px) {
+	#sub-header .cssmenu ul.level-1 {
+		top: 55px;
+	}
+}
+
 
 .cssmenu ul ul li {
 	height: 0;
@@ -606,15 +658,31 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 	}
 }
 @media (min-width: 769px) {
-	header .cssmenu-horizontal > ul > li:hover				{ background-color: #333333; }
-	#main .cssmenu-horizontal > ul > li:hover  				{ background-color: #F9F9F9; }
+	header .cssmenu-horizontal > ul > li:hover	{ background-color: #333333; }
+	#main .cssmenu-horizontal > ul > li:hover  	{ background-color: #F9F9F9; }
 	
+	#sub-header .cssmenu > ul > li {
+		transition: 0.3s;
+	}
+	#sub-header .cssmenu > ul > li:hover {
+		margin-top: -10px;
+		transition: 0.3s;
+	}
+
 	#sub-header .cssmenu > ul > li > .cssmenu-title {
 		background-color: #ECECEC;
 		border: 1px #FFFFFF solid;
 		border-radius: 10px;
 		color: #555555;
 		padding: 15px 20px;
+		transition: 0.3s;
+	}
+
+	#sub-header .cssmenu > ul > li:hover > .cssmenu-title {
+		margin-bottom: 10px;
+		border-radius: 10px 10px 0 0;
+		border-bottom-color: #ECECEC;
+		transition: 0.3s;
 	}
 }
 
@@ -646,30 +714,42 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 #cssmenu-galleryfilter ul ul li .cssmenu-title					{ background-color: #FFFFFF;	}
 #cssmenu-galleryfilter ul ul li:hover .cssmenu-title			{ background-color: #DDDDDD;	}
 
+@media (min-width: 769px) {
+	#sub-header .cssmenu ul.level-1 li .cssmenu-title			{ background-color: #ECECEC;	}
+	#sub-header .cssmenu ul.level-1 li:hover > .cssmenu-title	{ background-color: #CCCCCC;	}
+	#sub-header .cssmenu ul.level-1 li .cssmenu-title			{ color: #555555;	}
+}
+
 /* --- Personnalisation de l'indicateur de sous-Menu --- */
 .cssmenu li.has-sub > .cssmenu-title:after,
-.cssmenu li.has-sub > .cssmenu-title:before 		 	{ background-color: #DDDDDD; }
+.cssmenu li.has-sub > .cssmenu-title:before 		 		{ background-color: #DDDDDD; }
+
+@media (min-width: 769px){
+	#sub-header .cssmenu li.has-sub > .cssmenu-title:after,
+	#sub-header .cssmenu li.has-sub > .cssmenu-title:before { background-color: #CCCCCC; }
+}
 
 .cssmenu-vertical li.has-sub > .cssmenu-title:after,
-.cssmenu-vertical li.has-sub > .cssmenu-title:before 	{ background-color: #444444; }
+.cssmenu-vertical li.has-sub > .cssmenu-title:before 		{ background-color: #444444; }
 
 
 /* -- Bouton responsive -- */
 /* ----------------------- */
 
 /* --- Classes generales cssmenu --- */
-.cssmenu #menu-button {
+.cssmenu .menu-button {
 	display: none;
 	position: relative;
 	list-style: none;
 	line-height: 1;
+	font-size: 1.2rem;
 }
 
-.cssmenu #menu-button:before {
+.cssmenu .menu-button:before {
 	font-size: 1.3rem;
 }
 
-.cssmenu.small-screen #menu-button {
+.cssmenu.small-screen .menu-button {
 	display: block;
 	padding: 17px 40px 17px 17px;
 	text-transform: uppercase;
@@ -677,53 +757,53 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	cursor: pointer;
 }
 
-#top-footer .cssmenu.small-screen #menu-button {
+#top-footer .cssmenu.small-screen .menu-button {
 	color: #444444;
 }
 
-.cssmenu.small-screen #menu-button:after, 
-.cssmenu.small-screen #menu-button:before {
+.cssmenu.small-screen .menu-button:after, 
+.cssmenu.small-screen .menu-button:before {
 	position: absolute;
 	display: block;
 	content: '';
 }
 
-.cssmenu.small-screen #menu-button:after {
+.cssmenu.small-screen .menu-button:after {
 	height: 4px;
 	width: 20px;
 	border-width: 2px 0 2px 0;
 	border-style: solid;
 }
 
-.cssmenu.small-screen #menu-button:before {
+.cssmenu.small-screen .menu-button:before {
 	height: 2px;
 	width: 20px;
 	background-color: #DDDDDD;
 	font-size: 1.3rem;
 }
 
-.cssmenu.small-screen #menu-button.menu-opened:after {
+.cssmenu.small-screen .menu-button.menu-opened:after {
 	height: 2px;
 	border: 0;
 	transform: rotate(45deg);
 }
 
-.cssmenu.small-screen #menu-button.menu-opened:before {
+.cssmenu.small-screen .menu-button.menu-opened:before {
 	transform: rotate(-45deg);
 }
 
 /* --- Position du bouton --- */
-.cssmenu.small-screen #menu-button:after 				{ top: 22px; right: 17px; }
-.cssmenu.small-screen #menu-button:before 				{ top: 16px; right: 17px; }
-.cssmenu.small-screen #menu-button.menu-opened:after,
-.cssmenu.small-screen #menu-button.menu-opened:before 	{ top: 23px; width: 15px; }
+.cssmenu.small-screen .menu-button:after 				{ top: 22px; right: 17px; }
+.cssmenu.small-screen .menu-button:before 				{ top: 16px; right: 17px; }
+.cssmenu.small-screen .menu-button.menu-opened:after,
+.cssmenu.small-screen .menu-button.menu-opened:before 	{ top: 23px; width: 15px; }
 
 /* --- Variante cssmenu-actionslinks --- */
-.cssmenu #menu-button:before {
+.cssmenu .menu-button:before {
 	font-size: 1.3rem;
 }
 
-.cssmenu-actionslinks #menu-button {
+.cssmenu-actionslinks .menu-button {
 	float: right;
 	position: relative;
 	display: inline-block;
@@ -733,7 +813,6 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	border: 1px solid #999999;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1)  #B3B3B3 rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
-	font-size: 0;
 	font-family: FontAwesome;
 	font-style: normal;
 	font-weight: normal;
@@ -744,40 +823,45 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	-webkit-font-smoothing: antialiased;
 }
 
-#main .cssmenu-actionslinks.small-screen #menu-button {
+@media (min-width: 769px) {
+	.cssmenu-actionslinks .menu-button {
+		font-size: 0;
+	}
+}
+
+#main .cssmenu-actionslinks.small-screen .menu-button {
 	float: none;
 	background-color: transparent;
 	background-image: none;
 	border: none;
-	font-size: 100%;
 	font-family: "Trebuchet MS",Verdana,"Bitstream Vera Sans",Times,serif;
 	text-align: left;
 }
 
-.cssmenu-actionslinks #menu-button + ul {
+.cssmenu-actionslinks .menu-button + ul {
 	left: -9999px;
 }
 
-.cssmenu-actionslinks #menu-button:hover + ul,
-.cssmenu-actionslinks #menu-button + ul:hover{
+.cssmenu-actionslinks .menu-button:hover + ul,
+.cssmenu-actionslinks .menu-button + ul:hover{
 	left: auto;
 }
 
-.cssmenu-actionslinks.small-screen #menu-button:hover + ul,
-.cssmenu-actionslinks.small-screen #menu-button + ul:hover {
+.cssmenu-actionslinks.small-screen .menu-button:hover + ul,
+.cssmenu-actionslinks.small-screen .menu-button + ul:hover {
 	left: -9999px;
 }
 
-.cssmenu-actionslinks.small-screen #menu-button + ul.open,
-.cssmenu-actionslinks.small-screen #menu-button + ul:hover.open {
+.cssmenu-actionslinks.small-screen .menu-button + ul.open,
+.cssmenu-actionslinks.small-screen .menu-button + ul:hover.open {
 	left: auto;
 }
 
-.cssmenu-actionslinks #menu-button:before {
+.cssmenu-actionslinks .menu-button:before {
 	content: "\f013";
 }
 
-.cssmenu-tools #menu-button:before {
+.cssmenu-tools .menu-button:before {
 	content: "\f0c9";
 }
 
@@ -818,12 +902,12 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 }
 
 /* --- Variante Static --- */
-.cssmenu-static.small-screen #menu-button {
+.cssmenu-static.small-screen .menu-button {
 	cursor: default;
 }
 
-.cssmenu-static.small-screen #menu-button:after,
-.cssmenu-static.small-screen #menu-button:before {
+.cssmenu-static.small-screen .menu-button:after,
+.cssmenu-static.small-screen .menu-button:before {
 	display: none;
 }
 
@@ -837,26 +921,26 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 }
 
 /* --- Personnalisation graphique du bouton responsive--- */
-.cssmenu.small-screen #menu-button:after {
+.cssmenu.small-screen .menu-button:after {
 	border-color: #DDDDDD;
 }
 
-#main .cssmenu.small-screen #menu-button {
+#main .cssmenu.small-screen .menu-button {
 	color: #111111;
 }
 
-.cssmenu.small-screen #menu-button:before 								{ background-color: #DDDDDD; }
-.cssmenu.small-screen #menu-button.menu-opened:after,
-.cssmenu.small-screen #menu-button.menu-opened:before 					{ background-color: #DDDDDD; }
+.cssmenu.small-screen .menu-button:before 								{ background-color: #DDDDDD; }
+.cssmenu.small-screen .menu-button.menu-opened:after,
+.cssmenu.small-screen .menu-button.menu-opened:before 					{ background-color: #DDDDDD; }
 
-header .cssmenu.small-screen #menu-button.menu-opened:after,
-header .cssmenu.small-screen #menu-button.menu-opened:before 			{ background-color: #FFFFFF; }
+header .cssmenu.small-screen .menu-button.menu-opened:after,
+header .cssmenu.small-screen .menu-button.menu-opened:before 			{ background-color: #FFFFFF; }
 
-header .cssmenu-vertical.small-screen #menu-button.menu-opened:after,
-header .cssmenu-vertical.small-screen #menu-button.menu-opened:before 	{ background-color: #DDDDDD; }
+header .cssmenu-vertical.small-screen .menu-button.menu-opened:after,
+header .cssmenu-vertical.small-screen .menu-button.menu-opened:before 	{ background-color: #DDDDDD; }
 
-header .cssmenu-tools.small-screen #menu-button.menu-opened:after,
-header .cssmenu-tools.small-screen #menu-button.menu-opened:before 		{ background-color: #DDDDDD; }
+header .cssmenu-tools.small-screen .menu-button.menu-opened:after,
+header .cssmenu-tools.small-screen .menu-button.menu-opened:before 		{ background-color: #DDDDDD; }
 
 
 /* -- Bouton submenu -- */

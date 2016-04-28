@@ -83,7 +83,7 @@ header#header .cssmenu > ul > li:nth-child(5n+5) > .cssmenu-title 	{ border-bott
 header#header .cssmenu > ul > li:nth-child(5n+5):hover > .cssmenu-title,
 header#header .cssmenu > ul > li:nth-child(5n+5) ul 				{ background-color: 	   #A769BC; }
 
-#main .cssmenu.cssmenu-actionslinks.small-screen #menu-button {
+#main .cssmenu.cssmenu-actionslinks.small-screen .menu-button {
     color: transparent;
 }
 
@@ -194,6 +194,11 @@ a.member { color: #A769BC; }
 .success  { border-color: #00BC9E; }
 .question { border-color: #29AED7; }
 
+.options > h6,
+.options > a ,
+.options > span > a.small {
+    color: #222222;
+}
 
 /* --- Modules ============================================================================ */
 

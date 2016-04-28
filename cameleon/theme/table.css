@@ -236,3 +236,7 @@ table.bt tbody td .bt-content {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 }
+
+.module-mini-contents table {
+	word-break: break-all;
+}

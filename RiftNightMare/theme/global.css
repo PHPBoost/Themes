@@ -97,12 +97,12 @@ h1 a:hover {
 	margin: 0.5rem 0;
 }
 
-h1.formatter-title {    
+h2.formatter-title {    
 	border-bottom: 2px solid #aa8dff;
     color: #aa8dff;  
 }
 	
-h2.formatter-title {
+h3.formatter-title {
     color: #2fe23c;
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 19px;
@@ -110,16 +110,16 @@ h2.formatter-title {
     margin-left: 1.5rem;
     padding: 2px 5px;
  }
-h3.formatter-title { margin-left: 3rem; }
-h4.formatter-title { margin-left: 5rem; }
+h4.formatter-title { margin-left: 3rem; }
+h5.formatter-title { margin-left: 5rem; }
 
-h3.formatter-title {
+h4.formatter-title {
     color: #17a961;
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 18px;
    border-bottom: 1px solid #366393;
 }
-h4.formatter-title {
+h5.formatter-title {
     color: #2fe2d3;
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 17px;

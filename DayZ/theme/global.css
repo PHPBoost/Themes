@@ -119,12 +119,12 @@ section header h1 a:hover {
 	margin: 0.5rem 0;
 }
 
-h1.formatter-title {    
+h2.formatter-title {    
 	border-bottom: 2px solid #aa0000;
     color: #ff0000;  
 }
 	
-h2.formatter-title {
+h3.formatter-title {
     background: #000000 none repeat scroll 0 0;
     border: 1px solid #aa0000;
     color: #ff0000;
@@ -135,10 +135,10 @@ h2.formatter-title {
     margin-left: 1.5rem;
     padding: 2px 5px;
  }
-h3.formatter-title { margin-left: 3rem; }
-h4.formatter-title { margin-left: 5rem; }
+h4.formatter-title { margin-left: 3rem; }
+h5.formatter-title { margin-left: 5rem; }
 
-h3.formatter-title {
+h4.formatter-title {
     background: #000000 none repeat scroll 0 0;
     color: #ff0000;
     display: inline;
@@ -148,7 +148,7 @@ h3.formatter-title {
     border-style: solid;
     border-width: 1px 3px;
 }
-h4.formatter-title {
+h5.formatter-title {
     background: #000000 none repeat scroll 0 0;
     color: #ff0000;
     display: inline;
