@@ -172,7 +172,7 @@
 		</version>
 	</app>
 	<app id="unitedcolors" type="template">
-		<version num="2.0.3" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="2.0.3" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">United Colors theme</download>
 			<authors>
@@ -183,7 +183,7 @@
 				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="2.0.3" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="2.0.3" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/unitedcolors/unitedcolors.zip">Thème United Colors</download>
 			<authors>
@@ -388,7 +388,7 @@
 		</version>
 	</app>
 	<app id="underline" type="template">
-		<version num="3.0.3" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="3.0.3" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
 			<authors>
@@ -399,7 +399,7 @@
 				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="3.0.3" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="3.0.3" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/underline/underline.zip">Thème underline</download>
 			<authors>
@@ -457,7 +457,7 @@
 	</app>
 	<!-- EnimSay -->
 	<app id="Cameleon" type="template">
-		<version num="4.0.3" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="4.0.3" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Cameleon Theme</download>
 			<authors>
@@ -470,7 +470,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="4.0.3" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="4.0.3" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Thème Cameleon</download>
 			<authors>
@@ -608,7 +608,7 @@
 	</app>
 	<!-- Kits_Graphiques -->
 	<app id="Summerday" type="template">
-		<version num="4.0.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="4.0.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Summerday Theme</download>
 			<authors>
@@ -620,7 +620,7 @@
 				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="4.0.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="4.0.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Thème Summerday</download>
 			<authors>
@@ -851,7 +851,7 @@
 	</app>
 	<!-- riptide -->
 	<app id="vertigo" type="template">
-		<version num="2.0.3" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="2.0.3" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Vertigo theme</download>
 			<authors>
@@ -863,7 +863,7 @@
 				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="2.0.3" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="2.0.3" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/vertigo/vertigo.zip">Thème Vertigo</download>
 			<authors>
@@ -949,7 +949,7 @@
 	</app>
 	<!-- Teki-Latex -->
 	<app id="oxygen" type="template">
-		<version num="3.0.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="3.0.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
@@ -961,7 +961,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="3.0.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="3.0.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
 			<authors>
@@ -1073,7 +1073,7 @@
 	</app>
 	<!-- Swan : EasyDesign.net -->
 	<app id="DayZ" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="DayZ" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="DayZ" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">DayZ template</download>
 			<authors>
@@ -1084,7 +1084,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="DayZ" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="DayZ" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">Thème DayZ</download>
 			<authors>
@@ -1097,7 +1097,7 @@
 		</version>
 	</app>
 	<app id="FaceBoost" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="FaceBoost" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="FaceBoost" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/FaceBoost/FaceBoost.zip">FaceBoost template</download>
 			<authors>
@@ -1108,7 +1108,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="FaceBoost" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="FaceBoost" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/FaceBoost/FaceBoost.zip">Thème FaceBoost</download>
 			<authors>
@@ -1121,7 +1121,7 @@
 		</version>
 	</app>
 	<app id="FanSubAniM" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">FanSubAniM template</download>
 			<authors>
@@ -1134,7 +1134,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">Thème FanSubAniM</download>
 			<authors>
@@ -1149,7 +1149,7 @@
 		</version>
 	</app>
 	<app id="Multi_Theme" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Multi_Theme template</download>
 			<authors>
@@ -1160,7 +1160,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Thème Multi_Theme</download>
 			<authors>
@@ -1173,7 +1173,7 @@
 		</version>
 	</app>
 	<app id="Rift" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="Rift" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="Rift" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Rift/Rift.zip">Rift template</download>
 			<authors>
@@ -1184,7 +1184,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="Rift" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="Rift" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Rift/Rift.zip">Thème Rift</download>
 			<authors>
@@ -1197,7 +1197,7 @@
 		</version>
 	</app>
 	<app id="RiftNightMare" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="RiftNightMare" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="RiftNightMare" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/RiftNightMare/RiftNightMare.zip">RiftNightMare template</download>
 			<authors>
@@ -1208,7 +1208,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="RiftNightMare" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="RiftNightMare" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/RiftNightMare/RiftNightMare.zip">Thème RiftNightMare</download>
 			<authors>
@@ -1221,7 +1221,7 @@
 		</version>
 	</app>
 	<app id="TSW_Dragon" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TSW_Dragon/TSW_Dragon.zip">TSW_Dragon template</download>
 			<authors>
@@ -1232,7 +1232,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TSW_Dragon/TSW_Dragon.zip">Thème TSW_Dragon</download>
 			<authors>
@@ -1245,7 +1245,7 @@
 		</version>
 	</app>
 	<app id="TSW_Illuminati" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TSW_Illuminati/TSW_Illuminati.zip">TSW_Illuminati template</download>
 			<authors>
@@ -1256,7 +1256,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TSW_Illuminati/TSW_Illuminati.zip">Thème TSW_Illuminati</download>
 			<authors>
@@ -1269,7 +1269,7 @@
 		</version>
 	</app>
 	<app id="TSW_Templiers" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TSW_Templiers/TSW_Templiers.zip">TSW_Templiers template</download>
 			<authors>
@@ -1280,7 +1280,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TSW_Templiers/TSW_Templiers.zip">Thème TSW_Templiers</download>
 			<authors>
@@ -1293,7 +1293,7 @@
 		</version>
 	</app>
 	<app id="TweetBoost" type="template">
-		<version num="5.0.1" language="english" localized_language="English" name="TweetBoost" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="english" localized_language="English" name="TweetBoost" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TweetBoost/TweetBoost.zip">TweetBoost template</download>
 			<authors>
@@ -1304,7 +1304,7 @@
 				<new type="improvment">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.1" language="french" localized_language="Francais" name="TweetBoost" priority="low" security-update="false" pubdate="2016/04/28">
+		<version num="5.0.1" language="french" localized_language="Francais" name="TweetBoost" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/TweetBoost/TweetBoost.zip">Thème TweetBoost</download>
 			<authors>
