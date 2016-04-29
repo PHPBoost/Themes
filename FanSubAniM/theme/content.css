@@ -51,7 +51,7 @@ article.message {
     border: none;
 }
 .explorer {
-    background: #dddddd none repeat scroll 0 0;
+    background: #ddcbb3 none repeat scroll 0 0;
     border: 2px solid #ffffff;
 }
 article#article-news, article#article-media, article#article-wiki {
@@ -115,13 +115,13 @@ section header h1 a:hover {
 
 section header h2,
 article header h2 {
-    margin-left: 15px;
+    border-bottom: 2px solid #444444;
+    color: #444444;
     margin-top: 10px;
 }
 
 section header h3,
 article header h3 {
-    margin-left: 15px;
     margin-top: 10px;
 }
 
@@ -364,7 +364,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	padding: 3px 0px;
 	display: block;
 	text-decoration: none;
-	color: #666666;
+	color: #222222;
 }
 
 .explorer .content > ul > li > a {
@@ -1523,15 +1523,14 @@ body.dragging, body.dragging * {
 .message-user-infos img {
 	padding: 10px 0px;
 }
-
 /* --- Moderation des messages --- */
 .message-moderate {
-	background: #efefef;
-	border: 1px solid #DEDEDE;
-	border-radius: 4px;
-	padding: 4px 0 4px 0;
 	margin-bottom: 10px;
+	padding: 4px 0 4px 0;
 	width: 98%;
+	background-color: #ECEFFA;
+	border: 1px solid #D6DEE7;
+	border-radius: 4px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -1555,11 +1554,11 @@ i.message-announce-new {
 }
 
 
-/* -- Profile User --
---------------------------------------*/
+/* -- Profile User -- */
+/* ------------------ */
 ul#profile-container {
-	width: 99%;
 	margin: 30px auto;
+	width: 99%;
 	list-style-type: none;
 }
 
@@ -1569,10 +1568,148 @@ ul#profile-container li {
 	text-align: center;
 }
 
+.preview-img {
+	max-height: 180px;
+	vertical-align: top;
+}
 
-/* -- Maintenance --
---------------------------------------*/
+.user-agreement {
+	width: 90%;
+	max-width: none;
+	max-height: 250px;
+	overflow-y: auto !important;
+}
 
-#maintain { margin: 10px 0px; }
 
-div.delay { margin: 20px 0px; }
+/* -- Le maintenance -- */ 
+/* -------------------- */
+#maintain {
+	margin: 10px 0;
+}
+
+div.delay {
+	margin: 20px 0;
+}
+
+#global.global-maintain {
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+div#message-maintain {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+	opacity: 0.98;
+	text-align: center;
+}
+
+div#message-maintain > div {
+	margin: 0 auto;
+}
+
+div#release {
+	margin-top: 20px;
+}
+
+
+/* -- Contribution -- */ 
+/* ------------------ */
+#module-user-contribution-list hr {
+	margin: 20px 0;
+}
+
+.module-contribution-element {
+	float: left;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.unprocessed-contribution {
+	margin: auto;
+	width: 300px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.unprocessed-contribution div {
+	float: left;
+	width: 50%;
+}
+
+#module-user-moderation-panel .content {
+	padding-bottom: 75px;
+}
+
+#module-user-moderation-panel .bt td:before {
+	display: none;
+}
+
+#module-user-moderation-panel .bt-content {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.contribution-module-container {
+	float: left;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.convers-announce {
+	padding-right: 0;
+}
+
+.convers-title {
+	width: 50%;
+	text-align: left;
+}
+
+table.announce-legend td {
+	width: 33%;
+}
+
+@media (min-width: 769px) {
+	.post-pm {
+		margin: auto;
+		width: 80%;
+	}
+}
+
+.available-modules-msg {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+
+/* -- Error 403/404 -- */ 
+/* ------------------- */
+#module-user-error-403 .content,
+#module-user-error-404 .content {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#module-user-error-403 .fa-warning:before,
+#module-user-error-404 .fa-warning:before {
+	content: "\f071"; 
+}
+
+#module-user-error-403 .fa-warning,
+#module-user-error-404 .fa-warning {
+	display: block;
+	margin: 40px auto 20px auto;
+	color: #C19954;
+}
+
+#module-user-error-403 .message-error,
+#module-user-error-404 .message-error {
+	padding: 20px 0;
+}
+
+#module-user-error-403 .type-error,
+#module-user-error-404 .type-error {
+	padding: 10px 0;
+}

@@ -50,6 +50,23 @@ a.admin  { color: #ED2326; }
 a.modo   { color: #408EC9; }
 a.member { color: #efefef; }
 
+/* --- Couleur de texte --- */
+.color-alert 		{ color: #B22222; }
+.color-notavailable { color: #B22222; }
+.color-available 	{ color: #008000; }
+.color-unknown 		{ color: #004b80; }
+
+.bkgd-color-visible 		{ background-color: #8ac77f; }
+.bkgd-color-unvisible 		{ background-color: #edb600; }
+.bkgd-color-unaprobed 		{ background-color: #ad022a; }
+
+.bkgd-color-fixed 			{ background-color: #7FFF9C; }
+tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
+.bkgd-color-processing 		{ background-color: #FFD86F; }
+tr td.bkgd-color-processing { background-color: #FFD86F; }
+.bkgd-color-unknown 		{ background-color: #FF796F; }
+tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
+
 /* --- Les differentes tailles de polices --- */
 .smaller { font-size: 10px; }
 .small   { font-size: 0.9em; }
@@ -59,21 +76,21 @@ a.member { color: #efefef; }
 .biggest { font-size: 2.0em; }
 
 /* --- Les titres (balise h) --- */
-h1 { font-size: 25px; color:#aa8dff; font-family: "Cinzel Decorative",Georgia,cursive;}
-h2 { font-size: 19px; color:#2fe23c; font-family: "Cinzel Decorative",Georgia,cursive;  text-shadow: 0 0 16px #02860b;}
-h3 { font-size: 18px; color:#17a961; font-family: "Cinzel Decorative",Georgia,cursive;}
-h4 { font-size: 17px; color:#2fe2d3; font-family: "Cinzel Decorative",Georgia,cursive;}
-h5 { font-size: 16px; font-family: "Cinzel Decorative",Georgia,cursive;}
-h6 { font-size: 15px; font-family: "Cinzel Decorative",Georgia,cursive;}
+h2{ font-size: 25px; color:#aa8dff; font-family: "Cinzel Decorative",Georgia,cursive;}
+h3 { font-size: 19px; color:#2fe23c; font-family: "Cinzel Decorative",Georgia,cursive;  text-shadow: 0 0 16px #02860b;}
+h4 { font-size: 18px; color:#17a961; font-family: "Cinzel Decorative",Georgia,cursive;}
+h5 { font-size: 17px; color:#2fe2d3; font-family: "Cinzel Decorative",Georgia,cursive;}
+h6 { font-size: 16px; font-family: "Cinzel Decorative",Georgia,cursive;}
 
-h1 a{ 
+
+h2 a{ 
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 20px;
 	color: #aa8dff;
     line-height: 24px;
     text-shadow: 1px 1px 0 #000; 
 }
-h1 a:hover {
+h2 a:hover {
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 20px;
     line-height: 24px;
@@ -105,13 +122,13 @@ h2.formatter-title {
 h3.formatter-title {
     color: #2fe23c;
     font-family: "Cinzel Decorative",Georgia,cursive;
-    font-size: 19px;
+    font-size: 20px;
     text-shadow: 0 0 16px #02860b;
     margin-left: 1.5rem;
     padding: 2px 5px;
  }
-h4.formatter-title { margin-left: 3rem; }
-h5.formatter-title { margin-left: 5rem; }
+h3.formatter-title { margin-left: 3rem; }
+h4.formatter-title { margin-left: 5rem; }
 
 h4.formatter-title {
     color: #17a961;

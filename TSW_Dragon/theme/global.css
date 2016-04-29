@@ -51,6 +51,23 @@ a.admin  { color: #ED2326; }
 a.modo   { color: #408EC9; }
 a.member { color: #efefef; }
 
+/* --- Couleur de texte --- */
+.color-alert 		{ color: #B22222; }
+.color-notavailable { color: #B22222; }
+.color-available 	{ color: #008000; }
+.color-unknown 		{ color: #004b80; }
+
+.bkgd-color-visible 		{ background-color: #8ac77f; }
+.bkgd-color-unvisible 		{ background-color: #edb600; }
+.bkgd-color-unaprobed 		{ background-color: #ad022a; }
+
+.bkgd-color-fixed 			{ background-color: #7FFF9C; }
+tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
+.bkgd-color-processing 		{ background-color: #FFD86F; }
+tr td.bkgd-color-processing { background-color: #FFD86F; }
+.bkgd-color-unknown 		{ background-color: #FF796F; }
+tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
+
 /* --- Les differentes tailles de polices --- */
 .smaller { font-size: 10px; }
 .small   { font-size: 0.9em; }
@@ -60,21 +77,20 @@ a.member { color: #efefef; }
 .biggest { font-size: 2.0em; }
 
 /* --- Les titres (balise h) --- */
-h1 { font-size: 25px; color:#aa8dff;}
-h2 { font-size: 19px; color:#45C41B;}
-h3 { font-size: 18px; color:#17a961;}
-h4 { font-size: 17px; color:#2fe2d3;}
-h5 { font-size: 16px; color:#FFFFFF;}
-h6 { font-size: 15px;}
+h2 { font-size: 25px; color:#aa8dff;}
+h3 { font-size: 19px; color:#45C41B;}
+h4 { font-size: 18px; color:#17a961;}
+h5 { font-size: 17px; color:#2fe2d3;}
+h6 { font-size: 16px; color:#FFFFFF;}
 
-h1 a{ 
+h2 a{ 
     color: #ffffff;
     text-shadow: 1px 1px 0 #000;
     font-size: 14px;
     line-height: 24px;
 	text-indent:5px;
 }
-h1 a:hover {
+h2 a:hover {
     color: #467f1c;
 }
 
@@ -84,7 +100,7 @@ h1 a:hover {
 @media (max-width:768px) {
 
 	h5 { font-size: 2rem;}
-	h1 a, h1 a:hover, section header h1 a:hover, .submenu-button a, .submenu-button a:hover{ font-size: 1.3rem; }
+	h2 a, h2 a:hover, section header h1 a:hover, .submenu-button a, .submenu-button a:hover{ font-size: 1.3rem; }
 
 }
 

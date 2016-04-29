@@ -116,10 +116,7 @@ a#site-name {
 	text-decoration: none;
 	text-shadow: 0 0 0 rgb(0,0,0), 1px 0 0 rgb(-255,-255,-255), 2px 0 0.1px rgba(0,0,0,0.1), 2px 0 0.1px rgba(0,0,0,0.2), 0 0 1px rgba(0,0,0,.1);
 }
-@media (max-width:768px) {
 
-
-}
 span#site-slogan {
 	display: block;
 	padding: 0.1em 0 0 0.1em;

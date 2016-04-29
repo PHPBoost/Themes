@@ -51,6 +51,23 @@ a.admin  { color: #ED2326; }
 a.modo   { color: #408EC9; }
 a.member { color: #efefef; }
 
+/* --- Couleur de texte --- */
+.color-alert 		{ color: #B22222; }
+.color-notavailable { color: #B22222; }
+.color-available 	{ color: #008000; }
+.color-unknown 		{ color: #004b80; }
+
+.bkgd-color-visible 		{ background-color: #CCFFCC; }
+.bkgd-color-unvisible 		{ background-color: #FFEE99; }
+.bkgd-color-unaprobed 		{ background-color: #FFCCCC; }
+
+.bkgd-color-fixed 			{ background-color: #7FFF9C; }
+tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
+.bkgd-color-processing 		{ background-color: #FFD86F; }
+tr td.bkgd-color-processing { background-color: #FFD86F; }
+.bkgd-color-unknown 		{ background-color: #FF796F; }
+tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
+
 /* --- Les differentes tailles de polices --- */
 .smaller { font-size: 10px; }
 .small   { font-size: 0.9em; }
@@ -60,20 +77,20 @@ a.member { color: #efefef; }
 .biggest { font-size: 2.0em; }
 
 /* --- Les titres (balise h) --- */
-h1 { font-size: 2.2rem; }
-h2 { font-size: 2.0rem; }
-h3 { font-size: 1.9rem; }
-h4 { font-size: 1.8rem; }
-h5 { font-size: 1.3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 2.0rem; }
+h4 { font-size: 1.9rem; }
+h5 { font-size: 1.8rem; }
 h6 { font-size: 1.4rem; }
 
-h1, h1 a{ 
+
+h2, h2 a{ 
     color: #3b5998;
     display: inline;
     font-size: 22px;
     font-weight: normal;
 }
-h1 a:hover {
+h2 a:hover {
     color: #435a8b;
     display: inline;
     font-size: 22px;
@@ -95,8 +112,9 @@ h5 { font-size: 2rem;}
 }
 
 h2.formatter-title {    
-	border-bottom: 2px solid #aa0000;
-    color: #3b5998;  
+	border-bottom: 2px solid #3b5998;
+    color: #3b5998; 
+	width:98%;
 }
 	
 h3.formatter-title {
@@ -113,21 +131,21 @@ h4.formatter-title { margin-left: 3rem; }
 h5.formatter-title { margin-left: 5rem; }
 
 h4.formatter-title {
-    background: #000000 none repeat scroll 0 0;
-    color: #ff0000;
+    background: #efefef none repeat scroll 0 0;
+    color: #3b5998;
+	font-weight: normal;
     display: inline;
-    font-family: monospace;
-    border-color: #aa0000;
+    border-color: #dddddd;
     border-image: none;
     border-style: solid;
     border-width: 1px 3px;
 }
 h5.formatter-title {
-    background: #000000 none repeat scroll 0 0;
-    color: #ff0000;
+    background: #efefef none repeat scroll 0 0;
+    color: #3b5998;
     display: inline;
-    font-family: monospace;
-    border-color: #aa0000;
+	font-weight: normal;	
+    border-color: #dddddd;
     border-image: none;
     border-style: solid;
     border-width: 3px 1px 1px;
@@ -331,8 +349,8 @@ hr { background: #222222 none repeat scroll 0 0;}
 }
 
 .formatter-block {
-    background-color: #000000;
-    border: 2px solid #3b3b3b;
+    background-color: #efefef;
+    border: 2px solid #dddddd;
     display: block;
     margin: 5px 20px;
     overflow: hidden;

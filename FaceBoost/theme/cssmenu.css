@@ -800,8 +800,7 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	width: 170px;
 	background-color: #FFFFFF;
 	border-radius: 3px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	border: 1px solid #AAAAAA;
+	border: 1px solid #BBBBBB;
 	font-size: 11px;
 }
 

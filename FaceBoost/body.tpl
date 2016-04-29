@@ -37,9 +37,9 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="spacer"></div>
 	</header>
+	
 	<div id="prim-nav">
 		<section id="navbook">
 			<div id="menu-title">Menu principal</div>		
@@ -199,9 +199,7 @@
 			# ENDIF #
 			# IF C_DISPLAY_AUTHOR_THEME #
 			<span class="author">
-			<span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY}
-				<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
-			</span>
+			<span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY} <a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 			# ENDIF #
 			# IF C_COMPTEUR #
 			<span class="footer-infos-separator"> | </span><span>{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>

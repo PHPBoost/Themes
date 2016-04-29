@@ -36,6 +36,23 @@ a.admin  { color: #FFA34F; }
 a.modo   { color: #006699; }
 a.member { color: #000000; }
 
+/* --- Couleur de texte --- */
+.color-alert 		{ color: #B22222; }
+.color-notavailable { color: #B22222; }
+.color-available 	{ color: #008000; }
+.color-unknown 		{ color: #004b80; }
+
+.bkgd-color-visible 		{ background-color: #CCFFCC; }
+.bkgd-color-unvisible 		{ background-color: #FFEE99; }
+.bkgd-color-unaprobed 		{ background-color: #FFCCCC; }
+
+.bkgd-color-fixed 			{ background-color: #7FFF9C; }
+tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
+.bkgd-color-processing 		{ background-color: #FFD86F; }
+tr td.bkgd-color-processing { background-color: #FFD86F; }
+.bkgd-color-unknown 		{ background-color: #FF796F; }
+tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
+
 /* --- Les differentes tailles de polices --- */
 .smaller { font-size: 10px; }
 .small   { font-size: 0.9em; }
@@ -45,15 +62,15 @@ a.member { color: #000000; }
 .biggest { font-size: 2.0em; }
 
 /* --- Les titres (balise h) --- */
-h1 { font-size: 2.2rem; }
-h2 { font-size: 2.0rem; }
-h3 { font-size: 1.9rem; }
-h4 { font-size: 1.8rem; }
-h5 { font-size: 1.3rem; }
-h6 { font-size: 1.4rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 2.0rem; }
+h4 { font-size: 1.9rem; }
+h5 { font-size: 1.8rem; }
+h6 { font-size: 1.3rem; }
 
-h1, h1 a{ color:#444444; }
-h1 a:hover, .message-moderate a:hover{ color:#000000; text-decoration:none;}
+
+h2, h2 a{ color:#444444; }
+h2 a:hover, .message-moderate a:hover{ color:#000000; text-decoration:none;}
 
 @media (max-width:768px) {
 h5 { font-size: 2rem;}

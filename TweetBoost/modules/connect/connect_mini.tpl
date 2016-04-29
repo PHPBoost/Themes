@@ -104,7 +104,6 @@
 	# ENDIF #
 # ELSE #
 	# IF C_USER_NOTCONNECTED #
-
 	<div id="connect-menu">
 		<div class="horizontal-fieldset">
 			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> {L_CONNECT}</a>

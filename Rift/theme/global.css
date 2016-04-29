@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Theme    : RiftNightMare 
+ * Theme    : Rift
  * Par      : EDN | Swan
  * Date     : 11/04/2016
  * Site web :  http://easy-design.net/
@@ -50,6 +50,23 @@ a.admin  { color: #ED2326; }
 a.modo   { color: #408EC9; }
 a.member { color: #efefef; }
 
+/* --- Couleur de texte --- */
+.color-alert 		{ color: #B22222; }
+.color-notavailable { color: #B22222; }
+.color-available 	{ color: #008000; }
+.color-unknown 		{ color: #004b80; }
+
+.bkgd-color-visible 		{ background-color: #8ac77f; }
+.bkgd-color-unvisible 		{ background-color: #edb600; }
+.bkgd-color-unaprobed 		{ background-color: #ad022a; }
+
+.bkgd-color-fixed 			{ background-color: #7FFF9C; }
+tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
+.bkgd-color-processing 		{ background-color: #FFD86F; }
+tr td.bkgd-color-processing { background-color: #FFD86F; }
+.bkgd-color-unknown 		{ background-color: #FF796F; }
+tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
+
 /* --- Les differentes tailles de polices --- */
 .smaller { font-size: 10px; }
 .small   { font-size: 0.9em; }
@@ -59,21 +76,21 @@ a.member { color: #efefef; }
 .biggest { font-size: 2.0em; }
 
 /* --- Les titres (balise h) --- */
-h1 { font-size: 25px; color:#aa8dff;}
-h2 { font-size: 19px; color:#4a86ff;}
-h3 { font-size: 18px; color:#17a961;}
-h4 { font-size: 17px; color:#2fe2d3;}
-h5 { font-size: 16px; color:#FFFFFF;}
-h6 { font-size: 15px;}
+h2 { font-size: 25px; color:#aa8dff;}
+h3 { font-size: 19px; color:#4a86ff;}
+h4 { font-size: 18px; color:#17a961;}
+h5 { font-size: 17px; color:#2fe2d3;}
+h6 { font-size: 16px; color:#FFFFFF;}
 
-h1 a{ 
+
+h2 a{ 
     font-family: "Josefin Sans",sans-serif;
     font-size: 25px;
 	color: #4a86ff;
     line-height: 24px;
     text-shadow: 1px 1px 0 #000; 
 }
-h1 a:hover {
+h2 a:hover {
     font-family: "Josefin Sans",sans-serif;
     font-size: 25px;
     line-height: 24px;

@@ -113,7 +113,12 @@ section header h1, article header h1 {
 }
 
 section header h2, article header h2 {
-    border-bottom: 1px solid #45C41B;
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000;
+    font-size: 14px;
+    line-height: 24px;
+	text-indent:5px;
 }
 
 section header h3,
@@ -389,7 +394,7 @@ ul.pagination-block-bis li a.next-page:hover {
 
 .explorer .content ul a:hover,
 .explorer .content ul a:hover+a {
-	background-color: #6d0000;
+	background-color: #405632;
 }
 
 .explorer .content ul .sub a.parent {
@@ -1546,17 +1551,16 @@ aside#menu-left .module-mini-container h3 a  {
 .message-user-infos img {
 	padding: 10px 0px;
 }
-
 /* --- Moderation des messages --- */
 .message-moderate {
-    background: #000000 none repeat scroll 0 0;
-    border: 1px solid #3b3b3b;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 4px 0;
-    text-align: center;
-    vertical-align: middle;
-    width: 98%;
+	margin-bottom: 10px;
+	padding: 4px 0 4px 0;
+	width: 98%;
+	background-color: #ECEFFA;
+	border: 1px solid #D6DEE7;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .message-moderate a {
@@ -1578,11 +1582,11 @@ i.message-announce-new {
 }
 
 
-/* -- Profile User --
---------------------------------------*/
+/* -- Profile User -- */
+/* ------------------ */
 ul#profile-container {
-	width: 99%;
 	margin: 30px auto;
+	width: 99%;
 	list-style-type: none;
 }
 
@@ -1592,10 +1596,148 @@ ul#profile-container li {
 	text-align: center;
 }
 
+.preview-img {
+	max-height: 180px;
+	vertical-align: top;
+}
 
-/* -- Maintenance --
---------------------------------------*/
+.user-agreement {
+	width: 90%;
+	max-width: none;
+	max-height: 250px;
+	overflow-y: auto !important;
+}
 
-#maintain { margin: 10px 0px; }
 
-div.delay { margin: 20px 0px; }
+/* -- Le maintenance -- */ 
+/* -------------------- */
+#maintain {
+	margin: 10px 0;
+}
+
+div.delay {
+	margin: 20px 0;
+}
+
+#global.global-maintain {
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+div#message-maintain {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+	opacity: 0.98;
+	text-align: center;
+}
+
+div#message-maintain > div {
+	margin: 0 auto;
+}
+
+div#release {
+	margin-top: 20px;
+}
+
+
+/* -- Contribution -- */ 
+/* ------------------ */
+#module-user-contribution-list hr {
+	margin: 20px 0;
+}
+
+.module-contribution-element {
+	float: left;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.unprocessed-contribution {
+	margin: auto;
+	width: 300px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.unprocessed-contribution div {
+	float: left;
+	width: 50%;
+}
+
+#module-user-moderation-panel .content {
+	padding-bottom: 75px;
+}
+
+#module-user-moderation-panel .bt td:before {
+	display: none;
+}
+
+#module-user-moderation-panel .bt-content {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.contribution-module-container {
+	float: left;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.convers-announce {
+	padding-right: 0;
+}
+
+.convers-title {
+	width: 50%;
+	text-align: left;
+}
+
+table.announce-legend td {
+	width: 33%;
+}
+
+@media (min-width: 769px) {
+	.post-pm {
+		margin: auto;
+		width: 80%;
+	}
+}
+
+.available-modules-msg {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+
+/* -- Error 403/404 -- */ 
+/* ------------------- */
+#module-user-error-403 .content,
+#module-user-error-404 .content {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#module-user-error-403 .fa-warning:before,
+#module-user-error-404 .fa-warning:before {
+	content: "\f071"; 
+}
+
+#module-user-error-403 .fa-warning,
+#module-user-error-404 .fa-warning {
+	display: block;
+	margin: 40px auto 20px auto;
+	color: #C19954;
+}
+
+#module-user-error-403 .message-error,
+#module-user-error-404 .message-error {
+	padding: 20px 0;
+}
+
+#module-user-error-403 .type-error,
+#module-user-error-404 .type-error {
+	padding: 10px 0;
+}
