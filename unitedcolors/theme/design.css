@@ -199,11 +199,13 @@ aside#menu-right {
 	
 	#main.main-with-left,
 	#main.main-with-right {
-		width: calc(100% - 305px);
+		width: calc(100% - 200px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 	
 	#main.main-with-left.main-with-right {
-		width: calc(100% - 410px);
+		width: calc(100% - 400px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 }
 
