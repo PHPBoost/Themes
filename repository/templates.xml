@@ -1316,4 +1316,30 @@
 			</whatsnew>
 		</version>
 	</app>
+
+	<!-- PaperToss -->
+	<app id="plus" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/04/30">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/plus/plus.zip">plus template</download>
+			<authors>
+				<author name="PaperToss" email="t0ssp4p3r@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 Plus template</description>
+			<whatsnew>
+				<new type="improvment">Add official Website and Repository</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="Plus" priority="low" security-update="false" pubdate="2016/04/30">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/plus/plus.zip">Thème Plus</download>
+			<authors>
+				<author name="PaperToss" email="t0ssp4p3r@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 du thème Plus</description>
+			<whatsnew>
+				<new type="improvment">Ajout au site officiel et gestion avec le repository</new>
+			</whatsnew>
+		</version>
+	</app>
 </repository>
