@@ -1,0 +1,31 @@
+#mini-search-form {
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 0px 20px 8px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 10px;
+}
+
+#mini-search-form.input-element-button input {
+	width: 140px;
+	height: 30px;
+	border-radius:4px;
+	margin-top: 5px;
+	border:none;
+}
+
+#mini-search-form.input-element-button button {
+	margin-left: -5px;
+	padding: 4px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0 4px 4px 0;
+	display: none;
+}
