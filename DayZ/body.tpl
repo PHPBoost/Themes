@@ -1,9 +1,9 @@
 	# INCLUDE MAINTAIN #
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/slide.js"></script>
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>	
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
-	
-	<div id="top_page" /></div>	
+
+	<div id="top_page" /></div>
 
 		<div id="sub-header">
 			<section id="Motto">
@@ -12,7 +12,7 @@
 						<ul class="nav-list">
 							<li class="nav-item">
 								<a href="?=about">Accueil</a>
-							</li>	
+							</li>
 							<li class="nav-item">
 								<a href="?=about">News</a>
 							</li>
@@ -63,7 +63,7 @@
 						</ul>
 					</nav>
 			</section>
-			
+
 			# IF C_MENUS_SUB_HEADER_CONTENT #
 				# START menus_sub_header #
 				{menus_sub_header.MENU}
@@ -71,9 +71,9 @@
 			# ENDIF #
 			</div>
 		</div>
-		
-	
-	
+
+
+
 	<header id="header">
 		<div id="header-gsm">
 		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
@@ -97,12 +97,12 @@
 
 		<div class="spacer"></div>
 	</header>
-	<br />	
+	<br />
 	<div id="global">
 	<div id="nav">
 		<ul>
 			<li id="nav_item_accueil"><a class="nav_item_accueil" href="{START_PAGE}"  title="Accueil"></a></li>
-			<li id="nav_item_actualites"><a class="nav_item_actualites" href="http://www.DayZcom/french/gameplay" title="Actualités"></a></li>
+			<li id="nav_item_actualites"><a class="nav_item_actualites" href="http://www.DayZcom/french/gameplay" title="Actualitï¿½s"></a></li>
 			<li id="nav_item_articles"><a class="nav_item_articles" href="#" title="Articles"></a></li>
 			<li id="nav_item_forum" ><a class="nav_item_forum" href="#" title="Forum"></a></li>
 			<li id="nav_item_staff"><a class="nav_item_staff" href="#" title="Le staff"></a></li>
@@ -110,8 +110,8 @@
 			<li id="nav_item_faq" ><a class="nav_item_faq" href="#" title="Foire Aux Questions"></a></li>
 			<li id="nav_item_events" class="last"><a class="nav_item_events" href="#" title="Events"></a></li>
 		</ul>
-	</div>	
-	<br />	
+	</div>
+	<br />
 	<div id="slideshow">
 		<div class="fadein">
 			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.png"/>
@@ -121,12 +121,12 @@
 			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/5.png"/>
 			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/6.png"/>
 			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/7.png"/>
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/8.png"/>			
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/8.png"/>
 		</div>
 	</div>
 
 
-		<br />			
+		<br />
 
 		<div id="sous-global">
 		<nav id="breadcrumb" itemprop="breadcrumb">
@@ -237,10 +237,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop"   href="#top_page"></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page"></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" href="#bottom_page"></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page"></a>
 		</div>
 	</div>
 	<div id="bottom_page" /></div>

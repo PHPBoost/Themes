@@ -1,20 +1,20 @@
 	# INCLUDE MAINTAIN #
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>	
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/simple.dropdown.js"></script>
-	
-	<div id="top_page" /></div>	
-	
+
+	<div id="top_page" /></div>
+
 	<div id="header-gsm">
 	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
-	</div>	
+	</div>
 	<section id="Motto">
 				<div id="menu-title">Nenu principal</div>
 				<nav  class="nav">
 						<ul class="nav-list">
 							<li class="nav-item">
 								<a href="?=about">Accueil</a>
-							</li>	
+							</li>
 							<li class="nav-item">
 								<a href="?=about">News</a>
 							</li>
@@ -65,7 +65,7 @@
 						</ul>
 					</nav>
 			</section>
-			
+
 	<div id="sub-header">
 	<div class="sub-container">
 		<a  href="{PATH_TO_ROOT}/contact/" alt="Nous contacter ..." ><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/tweetboost.png" title="logotype">@TwistBoost</a>
@@ -100,7 +100,7 @@
 		<div class="spacer"></div>
 	</header>
 
-	<br />	
+	<br />
 	<div id="global">
 		<div id="sous-global">
 
@@ -123,7 +123,7 @@
 				# ENDIF #
 
 				<div id="main-content" itemprop="mainContentOfPage">
-				
+
 					# INCLUDE ACTIONS_MENU #
 					<nav id="breadcrumb" itemprop="breadcrumb">
 						<ol>
@@ -211,10 +211,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop"   href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
 	<div id="bottom_page" /></div>

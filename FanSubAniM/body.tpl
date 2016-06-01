@@ -1,9 +1,9 @@
 	# INCLUDE MAINTAIN #
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>	
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
-	
-	<div id="top_page" /></div>	
-	
+
+	<div id="top_page" /></div>
+
 	<header id="header">
 		<div id="header-gsm">
 		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
@@ -32,9 +32,9 @@
 			<a href="{PATH_TO_ROOT}/wiki/wiki.php" class="blackbar"><i class="fa fa-file-text-o"></i> Tutoriels</a>
 			<a href="{PATH_TO_ROOT}/faq/index.php" class="blackbar"><i class="fa fa-bars"></i> Divers</a>
 			<a href="{PATH_TO_ROOT}/" class="blackbar"><i class="fa fa-user-md"></i> Astuces</a>
-			<a href="{PATH_TO_ROOT}/" class="blackbar"><i class="fa fa-medkit"></i> F.A.Q</a>			
+			<a href="{PATH_TO_ROOT}/" class="blackbar"><i class="fa fa-medkit"></i> F.A.Q</a>
 			<a href="{PATH_TO_ROOT}/calendar/index.php" class="blackbar element"><i class="fa fa-calendar"></i> Calendrier</a>
-			<a href="{PATH_TO_ROOT}/" class="blackbar"><i class="fa fa-desktop"></i> Portfolio</a>		
+			<a href="{PATH_TO_ROOT}/" class="blackbar"><i class="fa fa-desktop"></i> Portfolio</a>
 			<a href="{PATH_TO_ROOT}/" class="blackbar"><i class="fa fa-envelope"></i> Contact</a>
 		</div>
 
@@ -45,7 +45,7 @@
 						<ul class="nav-list">
 							<li class="nav-item">
 								<a href="?=about">Accueil</a>
-							</li>	
+							</li>
 							<li class="nav-item">
 								<a href="?=about">News</a>
 							</li>
@@ -96,7 +96,7 @@
 						</ul>
 					</nav>
 			</section>
-			
+
 			# IF C_MENUS_SUB_HEADER_CONTENT #
 				# START menus_sub_header #
 				{menus_sub_header.MENU}
@@ -104,10 +104,10 @@
 			# ENDIF #
 			</div>
 		</div>
-	
+
 		<div class="spacer"></div>
 	</header>
-	
+
 	<div id="global">
 		<div id="sous-global">
 
@@ -215,10 +215,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop"   href="#top_page"></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page"></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" href="#bottom_page"></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page"></a>
 		</div>
 	</div>
 	<div id="bottom_page" /></div>

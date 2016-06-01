@@ -4,7 +4,7 @@
 // DEMO http://jsfiddle.net/dizel3d/1eamwt4e/
 
     $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
+        $('.js-scrollTo').click(function() {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
             if (target.length) {

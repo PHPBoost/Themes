@@ -1,11 +1,11 @@
 	# INCLUDE MAINTAIN #
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/Mnflaunt.js"></script>	
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/Mnflaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
-	
-	<div id="top_page" /></div>	
+
+	<div id="top_page" /></div>
 			<div id="header-gsm">
 			<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
-			</div>	
+			</div>
 
 		<div id="sub-header">
 			# IF C_MENUS_SUB_HEADER_CONTENT #
@@ -14,9 +14,9 @@
 				# END menus_sub_header #
 			# ENDIF #
 		</div>
-		
-	
-	
+
+
+
 	<header id="header">
 
 		<div id="top-header">
@@ -39,15 +39,15 @@
 		</div>
 		<div class="spacer"></div>
 	</header>
-	
+
 	<div id="prim-nav">
 		<section id="navbook">
-			<div id="menu-title">Menu principal</div>		
+			<div id="menu-title">Menu principal</div>
 			<nav  class="MNnav">
 					<ul id="Mn-nav" class="MNnav-list">
 						<li class="MNnav-item">
 							<a href="?=about"><i class="fa fa-home"></i> Accueil</a>
-						</li>	
+						</li>
 						<li class="MNnav-item">
 							<a href="?=home"><i class="fa fa-newspaper-o"></i> Promenades</a>
 							<ul  class="MNnav-submenu">
@@ -87,7 +87,7 @@
 						</li>
 						<li class="MNnav-item">
 							<a href="?=about"><i class="fa fa-medkit"></i> F.A.Q</a>
-						</li>						
+						</li>
 						<li class="MNnav-item">
 							<a href="?=about"><i class="fa fa-newspaper-o"></i> News</a>
 						</li>
@@ -101,7 +101,7 @@
 				</nav>
 		</section>
 	</div>
-	<br />	
+	<br />
 	<div id="global">
 		<div id="sous-global">
 
@@ -124,7 +124,7 @@
 				# ENDIF #
 
 				<div id="main-content" itemprop="mainContentOfPage">
-				
+
 					# INCLUDE ACTIONS_MENU #
 					<nav id="breadcrumb" itemprop="breadcrumb">
 						<ol>
@@ -210,10 +210,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop"   href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
 	<div id="bottom_page" /></div>

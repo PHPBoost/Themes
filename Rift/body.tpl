@@ -1,10 +1,10 @@
 	# INCLUDE MAINTAIN #
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/google-font.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/slide.js"></script>
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>	
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
-	
-	<div id="top_page" /></div>	
+
+	<div id="top_page" /></div>
 
 		<div id="sub-header">
 			<section id="Motto">
@@ -13,7 +13,7 @@
 						<ul class="nav-list">
 							<li class="nav-item">
 								<a href="?=about">Accueil</a>
-							</li>	
+							</li>
 							<li class="nav-item">
 								<a href="?=about">News</a>
 							</li>
@@ -64,7 +64,7 @@
 						</ul>
 					</nav>
 			</section>
-			
+
 			# IF C_MENUS_SUB_HEADER_CONTENT #
 				# START menus_sub_header #
 				{menus_sub_header.MENU}
@@ -72,9 +72,9 @@
 			# ENDIF #
 			</div>
 		</div>
-		
-	
-	
+
+
+
 	<header id="header">
 		<div id="header-gsm">
 		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
@@ -90,7 +90,7 @@
 		</div>
 		<div class="spacer"></div>
 	</header>
-	<br />	
+	<br />
 	<div id="global">
 		<div id="top-header-content">
 		# IF C_MENUS_HEADER_CONTENT #
@@ -99,15 +99,15 @@
 			# END menus_header #
 		# ENDIF #
 		</div>
-			<br />	
+			<br />
 		<div id="slideshow">
 			<div class="fadein">
 				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.png"/>
 				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/2.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/3.png"/>		
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/3.png"/>
 			</div>
 		</div>
-			<br />				
+			<br />
 		<div id="sous-global">
 
 
@@ -130,7 +130,7 @@
 					# ENDIF #
 
 					<div id="main-content" itemprop="mainContentOfPage">
-					
+
 					<div id="menu-mess">
 						# INCLUDE ACTIONS_MENU #
 						<nav id="breadcrumb" itemprop="breadcrumb">
@@ -185,7 +185,7 @@
 	</div>
 
 	<footer id="footer">
-		
+
 		# IF C_MENUS_FOOTER_CONTENT #
 		<div class="footer-content">
 			# START menus_footer #
@@ -196,13 +196,13 @@
 
 		<div class="footer-infos">
 			<div id="social">
-				<ul>   
+				<ul>
 					<li><a href="http://www.facebook.com/RIFTgame" target="_blank"><span><div id="fb" class="fade"></div></span></a></li>
 					<li><a href="http://twitter.com/riftgame"target="_blank"><span><div id="twt" class="fade"></div></span></a></li>
 					<li><a href="http://www.youtube.com/user/RiftMMO"target="_blank"><span><div id="yt" class="fade"></div></span></a></li>
 					<li><a href="http://twitch.tv/Trionworlds" target="_blank"><span><div id="twitch" class="fade"></div></span></a></li>
 				</ul>
-			</div>		
+			</div>
 			<span class="cms">
 				{L_POWERED_BY} <a href="http://www.phpboost.com" title="PHPBoost">PHPBoost</a> {L_PHPBOOST_RIGHT}
 			</span>
@@ -228,10 +228,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop"   href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
 	<div id="bottom_page" /></div>
