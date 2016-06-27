@@ -1316,7 +1316,6 @@
 			</whatsnew>
 		</version>
 	</app>
-
 	<!-- PaperToss -->
 	<app id="plus" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
@@ -1339,6 +1338,79 @@
 			<description>Version 5.0.2 du theme Plus</description>
 			<whatsnew>
 				<new type="bug">Correction du bug JS Scroll-to</new>
+			</whatsnew>
+		</version>
+	</app>
+	<!-- Bell Cranel -->
+	<app id="gaming-blue" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/06/27">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-blue/gaming-blue.zip">Gaming Blue</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 Gaming Blue template</description>
+			<whatsnew>
+				<new type="improvment">First release</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/06/27">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-blue/gaming-blue.zip">Gaming Blue</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 du theme Gaming Blue</description>
+			<whatsnew>
+				<new type="improvment">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="gaming-green" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="Gaming Green" priority="low" security-update="false" pubdate="2016/06/27">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-green/gaming-green.zip">Gaming Green</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 Gaming Green template</description>
+			<whatsnew>
+				<new type="improvment">First release</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="Gaming Green" priority="low" security-update="false" pubdate="2016/06/27">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-green/gaming-green.zip">Gaming Green</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 du theme Gaming Green</description>
+			<whatsnew>
+				<new type="improvment">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="gaming-red" type="template">
+		<version num="5.0.1" language="english" localized_language="English" name="Gaming Red" priority="low" security-update="false" pubdate="2016/06/27">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-red/gaming-red.zip">Gaming Red</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 Gaming Red template</description>
+			<whatsnew>
+				<new type="improvment">First release</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.1" language="french" localized_language="Francais" name="Gaming Red" priority="low" security-update="false" pubdate="2016/06/27">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-red/gaming-red.zip">Gaming Red</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.1 du theme Gaming Red</description>
+			<whatsnew>
+				<new type="improvment">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
