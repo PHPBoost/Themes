@@ -1,0 +1,255 @@
+/* Barre style G */
+div.gmenu {
+	height: 28px;
+	margin: 0 0 0 0;
+	width: auto;
+	color: #FEFEFE;
+	padding: 0 10px 0 10px;
+	background: #2D2D2D repeat scroll 0 0;
+	box-shadow: 0 0px 4px #E5E5E5;
+	border-bottom: 1px solid #000000;
+}
+
+/* La barre de navigation du menu */
+ul.gnav {
+	list-style: none;
+	margin: auto;
+	width: 970px;
+}
+
+/* Chaque Item du Menu */
+ul.gnav > li {
+	float: left;
+	margin: 1px 0 0 0;
+	position: relative;
+	height: 20px;
+	font-family: Century Schoolbook;
+}
+
+ul.gnav li.txt {
+	font-size:11px;
+	padding : 6px 5px 0 15px;
+    color: #676767;
+    font-family: Georgia,serif;
+    font-style: italic;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+li.welcome {
+	padding: 0 50px 0 20px;
+}
+
+ul.gnav li.gmsg {
+	background: url(images/gnav-msg.png) no-repeat center center;
+	height:21px;
+	top: 2px;
+	width: 32px;
+}
+
+ul.gnav li.delimiteur {
+	background: url(images/gnav-separator.png) no-repeat center center;
+	height: 27px;
+	width: 32px;
+	padding: 0px;
+}
+
+ul.gnav li.profil {
+	width: 29px;
+	height: 29px;
+	padding: 0 5px 0 5px;
+	margin: 0 1px 0 1px;
+}
+
+ul.gnav li.profil:hover,
+ul.gnav li.open,
+ul.gnav li.open:hover {
+	background-color: #FFFFFF;
+}
+
+ul.option {
+	padding: 10px 0px !important;
+}
+
+ul.option > li {
+	position: relative;
+	padding: 1px 0px 1px 5px !important;
+}
+
+ul.option > li a {
+	font-weight: normal !important;
+	color: #444444 !important;
+}
+ul.option > li a:hover {
+	text-decoration: none !important;
+	color: #ACACAC !important;
+}
+
+ul.option > li.extend:after {
+	content: "\f0da";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: black;
+	position: absolute;
+	right: 5px;
+	transition: all 0.5s;
+}
+
+ul.option > li.extend:hover:after {
+	right: 3px;
+	transition: all 0.5s;
+}
+
+ul.option > li.extend ul {
+	display: none;
+	background: #FFFFFF;
+	border: 1px solid #AAAAAA;
+	position: absolute;
+	left: 170px;
+	top: -10px;
+	list-style: none;
+	width: 170px;
+	margin: 5px 0px;
+}
+
+ul.option > li.extend:hover ul {
+	display: block;
+}
+
+ul.option > li.extend ul li {
+	padding: 5px;
+}
+
+/* Chaque lien des item du menu */
+ul.gnav > li > a {
+	color: #999999;
+	display: block;
+	text-decoration: none;
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: capitalize;
+	margin: 5px 0 0 0;
+	text-shadow: 0px 0px 4px #000000;
+}
+
+ul.gnav li a:hover {
+	color: #ADADAD;
+	text-decoration: underline;
+}
+
+ul.gnav li a.gmsg {
+	text-align: center;
+	font-weight: bold;
+	color: #999999;
+	text-indent: 0px;
+	width: 32px;
+	margin-top: 2px;
+}
+
+ul.gnav li:hover a.gmsg {
+	color: #CCCCCC;
+	text-shadow: 1px 1px 15px #3399CC;
+	text-decoration: none;
+}
+
+ul.gnav li a.profil-avatar {
+	margin-top: 3px;
+}
+
+a.profil-avatar img {
+	width: 100%;
+}
+
+ul.gnav li.admin {
+	width: auto;
+}
+
+ul.gnav li a.profiladm {
+	background: url(images/gnav-login.png) no-repeat center 10%;
+	height: 25px;
+	width: 28px;
+	margin-top: 3px;
+}
+
+
+ul.gnav li ul.login {
+	width: 330px;
+	left: -30px;
+}
+
+ul.gnav li ul.option {
+	width: 170px;
+	right: -25px;
+}
+
+ul.gnav li:hover a.profiladm,
+ul.gnav li.open a.profiladm {
+	background-position: center 90%;
+}
+
+/* Chaque bouton de menu déroulant*/
+
+/* Menu déroulant */
+ul.subgnav {
+	background: #FFFFFF;
+	list-style: none;
+	position: absolute;
+	top: 26px;
+	margin: 0;
+	padding: 10px;
+	display: none;
+	box-shadow: 2px 3px 3px #666666;
+	z-index:10;
+}
+
+li.open ul.subgnav {
+	display: block;
+}
+
+ul.subgnav li.sub-avatar,
+ul.login li:first-child {
+	float: left;
+	padding: 0px;
+}
+
+ul.subgnav li {
+	text-align: left;
+	padding: 3px 0 0 0;
+}
+
+ul.login li {
+	padding: 3px 0px 0px 90px;
+}
+
+ul.login li:last-child {
+	border-top: 1px solid #004F83;
+	margin-top: 10px;
+	clear: left;
+}
+
+/* Chaque lien du menu déroulant*/
+ul.subgnav a,
+ul.subgnav i {
+	color: #2D2D2D;
+	vertical-align: 0px;
+}
+ul.subgnav li a {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	color: #2D2D2D;
+	text-transform: none;
+	text-shadow:none;
+	font-style:normal;
+	font-weight:bold;
+	font-size:12px;
+	text-indent:0px;
+	display: inline;
+
+}
+ul.subgnav li a:hover{
+	color: #000000;
+}
