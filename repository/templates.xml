@@ -1338,6 +1338,126 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="ValentineSDay" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="ValentineSDay" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ValentineSDay/ValentineSDay.zip">ValentineSDay template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 ValentineSDay template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="ValentineSDay" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ValentineSDay/ValentineSDay.zip">Theme ValentineSDay</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme ValentineSDay</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="ApresMidiDete" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="ApresMidiDete" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ApresMidiDete/ApresMidiDete.zip">ApresMidiDete template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 ApresMidiDete template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="ApresMidiDete" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ApresMidiDete/ApresMidiDete.zip">Theme ApresMidiDete</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme ApresMidiDete</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="HeureDhiver" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="HeureDhiver" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/HeureDhiver/HeureDhiver.zip">HeureDhiver template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 HeureDhiver template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="HeureDhiver" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/HeureDhiver/HeureDhiver.zip">Theme HeureDhiver</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme HeureDhiver</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="MatinDePrintemps" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="MatinDePrintemps" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/MatinDePrintemps/MatinDePrintemps.zip">MatinDePrintemps template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 MatinDePrintemps template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="MatinDePrintemps" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/MatinDePrintemps/MatinDePrintemps.zip">Theme MatinDePrintemps</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme MatinDePrintemps</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="SoirdAutomne" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="SoirdAutomne" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SoirdAutomne/SoirdAutomne.zip">SoirdAutomne template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 SoirdAutomne template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="SoirdAutomne" priority="low" security-update="false" pubdate="2016/07/31">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SoirdAutomne/SoirdAutomne.zip">Theme SoirdAutomne</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme SoirdAutomne</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- PaperToss -->
 	<app id="plus" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
