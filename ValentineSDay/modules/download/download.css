@@ -1,0 +1,40 @@
+/*---------------------------------------------------------
+ * Theme    :  Xtrem_Gaming_Pink 5.0.4
+ * Par      : EDN | Swan
+ * Date     : 30/04/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+.deco {
+	background:rgba(0, 0, 0, 0)  url('./../../theme/images/deco.png') no-repeat scroll center bottom;
+	margin:-107px;
+	height: 250px;
+}
+.decofilecontroller{
+    background: rgba(0, 0, 0, 0) url("./../../theme/images/deco.png") no-repeat scroll center bottom;
+    height: 96px;
+    margin: -12px;
+}
+
+.download-picture {
+	display: block;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.options {
+	max-width: 280px;
+}
+
+@media (min-width: 480px) {
+	.download-picture {
+		float: right;
+		padding-left: 10px;
+	}
+}
