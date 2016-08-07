@@ -727,7 +727,7 @@
 	<app id="Japanese_Traditions" type="template">
 		<version num="5.0.0" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2016/08/07">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Japanese_Traditions/Japanese_Traditions.zip">Japanese_Traditions theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/JapaneseTraditions/JapaneseTraditions.zip">Japanese_Traditions theme</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
@@ -739,7 +739,7 @@
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2016/08/07">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Japanese_Traditions/Japanese_Traditions.zip">Theme Japanese_Traditions</download>
+			<download url="https://dl.phpboost.com/5.0/templates/JapaneseTraditions/JapaneseTraditions.zip">Theme Japanese_Traditions</download>
 			<authors>
 				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
