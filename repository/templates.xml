@@ -725,6 +725,30 @@
 	</app>
 	<!-- MarcelD -->
 	<app id="Japanese_Traditions" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Japanese_Traditions/Japanese_Traditions.zip">Japanese_Traditions theme</download>
+			<authors>
+				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0 Japanese_Traditions theme</description>
+			<whatsnew>
+				<new type="new">Update for PHPBoost 5.0</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Japanese_Traditions/Japanese_Traditions.zip">Theme Japanese_Traditions</download>
+			<authors>
+				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0 du theme Japanese_Traditions</description>
+			<whatsnew>
+				<new type="new">Mise à jour pour PHPBoost 5.0</new>
+			</whatsnew>
+		</version>
 		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
 			<download url="https://dl.phpboost.com/4.0/templates/MarcelD/Japanese_Traditions/Japanese_Traditions.zip">Japanese_Traditions theme</download>
@@ -1453,6 +1477,102 @@
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
 			<description>Version 5.0.0 du theme SoirdAutomne</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="SimplyBlackSmall" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="SimplyBlackSmall" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyBlackSmall/SimplyBlackSmall.zip">SimplyBlackSmall template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 SimplyBlackSmall template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyBlackSmall" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyBlackSmall/SimplyBlackSmall.zip">Theme SimplyBlackSmall</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme SimplyBlackSmall</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="SimplyBlackXL" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="SimplyBlackXL" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyBlackXL/SimplyBlackXL.zip">SimplyBlackXL template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 SimplyBlackXL template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyBlackXL" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyBlackXL/SimplyBlackXL.zip">Theme SimplyBlackXL</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme SimplyBlackXL</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="SimplyWhiteSmall" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="SimplyWhiteSmall" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyWhiteSmall/SimplyWhiteSmall.zip">SimplyWhiteSmall template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 SimplyWhiteSmall template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyWhiteSmall" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyWhiteSmall/SimplyWhiteSmall.zip">Theme SimplyWhiteSmall</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme SimplyWhiteSmall</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="SimplyWhiteXL" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="SimplyWhiteXL" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyWhiteXL/SimplyWhiteXL.zip">SimplyWhiteXL template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 SimplyWhiteXL template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyWhiteXL" priority="low" security-update="false" pubdate="2016/08/07">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/SimplyWhiteXL/SimplyWhiteXL.zip">Theme SimplyWhiteXL</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme SimplyWhiteXL</description>
 			<whatsnew>
 				<new type="new">première version</new>
 			</whatsnew>
