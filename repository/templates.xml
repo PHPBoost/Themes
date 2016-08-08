@@ -1578,6 +1578,270 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="1erMai" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="1erMai" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/1erMai/1erMai.zip">1erMai template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 1erMai template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="1erMai" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/1erMai/1erMai.zip">Theme 1erMai</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme 1erMai</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Bamboo" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Bamboo" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Bamboo/Bamboo.zip">Bamboo template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Bamboo template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Bamboo" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Bamboo/Bamboo.zip">Theme Bamboo</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Bamboo</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="BlackSwan" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="BlackSwan" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/BlackSwan/BlackSwan.zip">BlackSwan template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 BlackSwan template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="BlackSwan" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/BlackSwan/BlackSwan.zip">Theme BlackSwan</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme BlackSwan</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Coqueline" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Coqueline" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Coqueline/Coqueline.zip">Coqueline template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Coqueline template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Coqueline" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Coqueline/Coqueline.zip">Theme Coqueline</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Coqueline</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Coqueline_Rose" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Coqueline_Rose" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Coqueline_Rose/Coqueline_Rose.zip">Coqueline_Rose template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Coqueline_Rose template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Coqueline_Rose" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Coqueline_Rose/Coqueline_Rose.zip">Theme Coqueline_Rose</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Coqueline_Rose</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="KoiFish" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="KoiFish" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/KoiFish/KoiFish.zip">KoiFish template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 KoiFish template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="KoiFish" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/KoiFish/KoiFish.zip">Theme KoiFish</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme KoiFish</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Mariage" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Mariage" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Mariage/Mariage.zip">Mariage template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Mariage template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Mariage" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Mariage/Mariage.zip">Theme Mariage</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Mariage</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="MyLove" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="MyLove" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/MyLove/MyLove.zip">MyLove template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 MyLove template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="MyLove" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/MyLove/MyLove.zip">Theme MyLove</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme MyLove</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="MyLoving" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="MyLoving" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/MyLoving/MyLoving.zip">MyLoving template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 MyLoving template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="MyLoving" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/MyLoving/MyLoving.zip">Theme MyLoving</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme MyLoving</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Rosane" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Rosane" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Rosane/Rosane.zip">Rosane template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Rosane template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Rosane" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Rosane/Rosane.zip">Theme Rosane</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Rosane</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Rosina" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Rosina" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Rosina/Rosina.zip">Rosina template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Rosina template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Rosina" priority="low" security-update="false" pubdate="2016/08/09">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Rosina/Rosina.zip">Theme Rosina</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Rosina</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- PaperToss -->
 	<app id="plus" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
