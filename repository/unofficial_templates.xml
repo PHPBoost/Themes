@@ -772,6 +772,32 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="JapaneseTraditionsXL" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="JapaneseTraditionsXL" priority="low" security-update="false" pubdate="2016/08/10">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/JapaneseTraditionsXL/JapaneseTraditionsXL.zip">Japanese_Traditions XL theme</download>
+			<authors>
+				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0 Japanese_Traditions XL theme</description>
+			<whatsnew>
+				<new type="new">Update for PHPBoost 5.0</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="JapaneseTraditionsXL" priority="low" security-update="false" pubdate="2016/08/10">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/JapaneseTraditionsXL/JapaneseTraditionsXL.zip">Theme Japanese_Traditions XL</download>
+			<authors>
+				<author name="MarcelD" email="dehousse.marcel@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0 du theme Japanese_Traditions XL</description>
+			<whatsnew>
+				<new type="new">Mise à jour pour PHPBoost 5.0</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- MrToine -->
 	<app id="fantasy" type="template">
 		<version num="1.1" language="english" localized_language="English" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
