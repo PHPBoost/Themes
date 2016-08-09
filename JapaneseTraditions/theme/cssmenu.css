@@ -37,7 +37,11 @@ Contient les elements associes aux menus
 }
 
 .cssmenu 		{ display: block; }
-header .cssmenu { display: inline-block; }
+
+header .cssmenu { 
+    display: inline-block;
+    margin-top: -11px;
+}
 
 .cssmenu ul,
 .cssmenu ul li,
@@ -101,8 +105,8 @@ header .cssmenu { display: inline-block; }
 	vertical-align: bottom;
 }
 
-#top-header .cssmenu ul > li:first-child > .cssmenu-title 				{ border-radius: 0 5px 0 0;   }
-#top-header .cssmenu ul > li:last-child > .cssmenu-title  				{ border-radius: 0 0 5px 5px; }
+#top-header .cssmenu ul > li:first-child > .cssmenu-title 				{ /*border-radius: 0 5px 0 0;*/   }
+#top-header .cssmenu ul > li:last-child > .cssmenu-title  				{ /*border-radius: 0 0 5px 5px; */}
 #top-header .cssmenu ul > li.has-sub:first-child:hover > .cssmenu-title { border-radius: 0 0 0 0;     }
 #top-header .cssmenu ul > li.has-sub:last-child:hover > .cssmenu-title  { border-radius: 0 0 0;       }
 	
@@ -148,7 +152,7 @@ header .cssmenu { display: inline-block; }
 
 /* --- Variante cssmenu-horizontal --- */
 #main .cssmenu-horizontal {
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
 }
 
 /* --- Variante cssmenu-group --- */
@@ -231,16 +235,17 @@ div.cssmenu-group .cssmenu-title {
 
 #sub-header .cssmenu-horizontal > ul > li {
 	position: relative;
-	border-right: 1px solid #444444;
+	/*border-right: 1px solid #444444;*/
 }
 
 #sub-header .cssmenu-horizontal > ul > li:after {
+/*	border-right: 1px solid #333333;*/
 	position:absolute;
 	right: 1%;
 	top: 50px;
 	height: 100%;
 	width: 1px;
-	border-right: 1px solid #333333;
+
 }
 
 
@@ -273,13 +278,13 @@ div.cssmenu-group .cssmenu-title {
 	border-right: 1px solid #EEEEEE;
 }
 
-header .cssmenu-horizontal > ul > li:hover {
+/*header .cssmenu-horizontal > ul > li:hover {
 	border-radius : 5px 5px 5px 5px;
 }
 
 header .cssmenu-horizontal > ul > li.has-sub:hover {
 	border-radius : 5px 5px 0 0;
-}
+}*/
 
 .cssmenu-left > ul > li,
 .cssmenu-right > ul > li {
@@ -439,9 +444,9 @@ aside .cssmenu-right.cssmenu-static li:hover > ul 	{ right: 0;		top: 0;		}
 /* --- Variante cssmenu-static --- */
 #main .cssmenu.cssmenu-static,
 #top-footer .cssmenu.cssmenu-static {
-	margin: 5px 0;
-	background-color: #ffffff;
-	border: 1px solid #BEBEBE;
+	margin:5px 0 0 30px;
+/*	background-color: #ffffff;
+	border: 1px solid #BEBEBE;*/
 }
 
 .cssmenu.cssmenu-static > ul > li {
@@ -620,11 +625,11 @@ header .cssmenu-vertical ul ul li .cssmenu-title,
 /* -------------------------------- */
 
 /* --- Niveau 1 --- */
-header .cssmenu > ul > li > .cssmenu-title 					{ color: #DDDDDD; }
+header .cssmenu > ul > li > .cssmenu-title 					{ color: #444444; }
 .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title		{ color: #444444; }
 #main .cssmenu > ul > li > .cssmenu-title 					{ color: #444444; }
 .cssmenu-actionslinks > ul > li > .cssmenu-title 			{ color: #666666; }
-footer .cssmenu-static > ul > li > .cssmenu-title 			{ color: #DDDDDD; }
+footer .cssmenu-static > ul > li > .cssmenu-title 			{ color: #444444; }
 #top-footer .cssmenu-static > ul > li > .cssmenu-title 		{ color: #444444; }
 
 header .cssmenu li:hover > .cssmenu-title 					{ color: #000; }
@@ -632,12 +637,12 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #000; }
 #main .cssmenu li:hover > .cssmenu-title 					{ color: #666666; }
 
 @media (min-width: 769px) {
-	header .cssmenu-horizontal > ul > li:hover				{ background-color: #c6dfc6; }
-	#main .cssmenu-horizontal > ul > li:hover  				{ background-color: #F9F9F9; }
+	header .cssmenu-horizontal > ul > li:hover				{ background-color: /*#c6dfc6;*/ }
+	#main .cssmenu-horizontal > ul > li:hover  				{ background-color: /*#F9F9F9*/; }
 }
 
 /* --- Niveau 2 --- */
-.cssmenu ul ul li .cssmenu-title 							{ color: #DDDDDD; }
+.cssmenu ul ul li .cssmenu-title 							{ color: #444444; }
 #main .cssmenu ul ul li .cssmenu-title 						{ color: #333333; }
 .cssmenu.cssmenu-vertical ul ul li .cssmenu-title  			{ color: #333333; }
 .cssmenu-actionslinks li ul li .cssmenu-title    			{ color: #666666; }
@@ -645,21 +650,21 @@ aside .cssmenu-static li ul li .cssmenu-title,
 #top-footer .cssmenu-static li ul li .cssmenu-title 		{ color: #666666; }
 
 .cssmenu ul ul li:hover > .cssmenu-title					{ color: #333333; }
-header .cssmenu ul ul li:hover > .cssmenu-title 			{ color: #FFFFFF; }
+header .cssmenu ul ul li:hover > .cssmenu-title 			{ color: #666666; }
 #main .cssmenu ul ul li:hover > .cssmenu-title 				{ color: #555555; }
 .cssmenu.cssmenu-vertical ul ul li:hover > .cssmenu-title 	{ color: #555555; }
 .cssmenu-actionslinks li:hover > .cssmenu-title 			{ color: #333333; }
-footer .cssmenu-static ul ul li:hover > .cssmenu-title 		{ color: #FFFFFF; }
+footer .cssmenu-static ul ul li:hover > .cssmenu-title 		{ color: #666666; }
 #top-footer .cssmenu-static ul ul li:hover > .cssmenu-title { color: #262626; }
 
-.cssmenu.cssmenu-vertical ul ul li .cssmenu-title  				{ background-color: #FFFFFF;}
+.cssmenu.cssmenu-vertical ul ul li .cssmenu-title  				{ background-color: #c6dfc6;}
 
 
 header .cssmenu ul ul li .cssmenu-title							{ background-color: #c6dfc6;}
 .cssmenu-actionslinks li:hover > .cssmenu-title 				{ background-color: #c6dfc6;}
 .cssmenu-actionslinks.small-screen li:hover > .cssmenu-title 	{ background-color: transparent;}
-#main .cssmenu-horizontal ul ul									{ background-color: #F9F9F9;}
-#main .cssmenu-horizontal ul ul	> li:hover						{ background-color: #F1F1F1;}
+#main .cssmenu-horizontal ul ul									{ background-color: #c6dfc6;}
+#main .cssmenu-horizontal ul ul	> li:hover						{ background-color: #c6dfc6;}
 #cssmenu-galleryfilter ul ul li .cssmenu-title					{ background-color: #FFFFFF;}
 #cssmenu-galleryfilter ul ul li:hover .cssmenu-title			{ background-color: #c6dfc6;}
 

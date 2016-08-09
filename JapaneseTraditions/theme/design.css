@@ -107,8 +107,8 @@ div#sub-header {
 }
 
 div#sub-header-content{
-	margin: auto;
-	max-width: 1024px;
+    margin: auto;
+    max-width: 1024px;
 }
 
 /* --- Logo et Nom du site web --- */
@@ -268,8 +268,10 @@ aside#menu-right {
 }
 
 div#top-footer {
-	background:transparent url('images/global.png') repeat-y scroll 9px 0;
+	background:transparent url('images/global.png') repeat-y scroll 6px 0;
 	padding: 2% 0;
+	margin:auto;
+	max-width: 1024px;	
 }
 
 
@@ -307,7 +309,7 @@ div#bottom-content {
 footer#footer {
     background: transparent url('images/footer.png') no-repeat scroll 9px 0;
     clear: both;
-    height: 175px;
+    min-height: 175px;
     margin: 0 auto auto;
     padding: 12px;
     text-align: center;
@@ -319,7 +321,6 @@ footer#footer .footer-content {
 	margin: 0 auto 0 auto;
 	padding: 1.5em 0;
 	max-width: 1024px;
-	border-bottom: 2px groove #444444;
 }
 
 footer#footer .footer-infos {
