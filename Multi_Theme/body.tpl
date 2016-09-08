@@ -1,12 +1,11 @@
 	# INCLUDE MAINTAIN #
-		<script src="{PATH_TO_ROOT}/templates/{THEME}/js/slide-show.js"></script>
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>	
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
 
-
-	<div id="top_page" /></div>
-	<div id="contenu">
+	
+	<div id="top_page" /></div>	
+	<div id="contenu">	
 	<header id="header">
 		<div id="header-gsm">
 		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
@@ -31,19 +30,21 @@
 				# END menus_header #
 			# ENDIF #
 			</div>
+			
+			<section id="slider" class="demo">
+				 <a href="#" class="next"><i class="fa fa-chevron-right fa-2"></i></a>
+				 <a href="#" class="prev"><i class="fa fa-chevron-left fa-2"></i></a>
+				<div class="container">
+					<div style="display: inline-block;"><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.jpg"/></a></div>
+					<div><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/2.jpg"/></a></div>
+					<div><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/3.jpg"/></a></div>
+					<div><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/4.jpg"/></a></div>
+					<div><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/5.jpg"/></a></div>
+					<div><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/6.jpg"/></a></div>
+				</div>
+			</section>
 
-			<div id="slider">
-				 <a href="#" class="control_next"><i class="fa fa-chevron-right fa-2"></i></a>
-				 <a href="#" class="control_prev"><i class="fa fa-chevron-left fa-2"></i></a>
-				<ul id="slide-images">
-					<li id="slide-images"><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.jpg"/></a></li>
-					<li id="slide-images"><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/2.jpg"/></a></li>
-					<li id="slide-images"><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/3.jpg"/></a></li>
-					<li id="slide-images"><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/4.jpg"/></a></li>
-					<li id="slide-images"><a href="index.php"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/5.jpg"/></a></li>
-				</ul>
-			</div>
-
+		
 			<div id="silverbarnav">
 				<a href="./index.php" class="silverbar"><i class="fa fa-home"></i> Accueil</a>
 				<a href="{PATH_TO_ROOT}/news/index.php" class="silverbar"><i class="fa fa-newspaper-o"></i> News</a>
@@ -51,8 +52,8 @@
 				<a href="{PATH_TO_ROOT}/wiki/wiki.php" class="silverbar"><i class="fa fa-file-text-o"></i> Tutoriels</a>
 				<a href="{PATH_TO_ROOT}/faq/index.php" class="silverbar"><i class="fa fa-bars"></i> Divers</a>
 				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-user-md"></i> Astuces</a>
-				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-medkit"></i> F.A.Q</a>
-				<a href="{PATH_TO_ROOT}/calendar/index.php" class="silverbar element"><i class="fa fa-calendar"></i> Calendrier</a>
+				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-medkit"></i> F.A.Q</a>			
+				<a href="{PATH_TO_ROOT}/calendar/index.php" class="silverbar element"><i class="fa fa-calendar"></i> Calendrier</a>	
 				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-envelope"></i> Contact</a>
 			</div>
 
@@ -63,7 +64,7 @@
 						<ul class="nav-list">
 							<li class="nav-item">
 								<a href="?=about">Accueil</a>
-							</li>
+							</li>	
 							<li class="nav-item">
 								<a href="?=about">News</a>
 							</li>
@@ -114,7 +115,7 @@
 						</ul>
 					</nav>
 			</section>
-
+			
 			# IF C_MENUS_SUB_HEADER_CONTENT #
 				# START menus_sub_header #
 				{menus_sub_header.MENU}
@@ -122,10 +123,10 @@
 			# ENDIF #
 			</div>
 		</div>
-
+	
 		<div class="spacer"></div>
 	</header>
-
+		
 	<div id="global">
 		<div id="sous-global">
 
@@ -155,7 +156,7 @@
 								<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
 									<span itemprop="title">{L_INDEX}</span>
 								</a>
-							</li>
+							</li>						
 							# START link_bread_crumb #
 							<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
 								<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
@@ -198,9 +199,9 @@
 			<div class="spacer"></div>
 		</div>
 	</div>
-
+	
 	</div><!-- fermeture du "Id:contenu"-->
-
+	
 	<footer id="footer">
 
 		# IF C_MENUS_FOOTER_CONTENT #
@@ -229,13 +230,13 @@
 		</div>
 
 	</footer>
-
+	
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page" ><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page" ><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
 	<div id="bottom_page" /></div>

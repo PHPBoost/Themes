@@ -28,7 +28,7 @@
 		# ENDIF #
 
 		# INCLUDE JS_TOP #
-		
+		<script src="{PATH_TO_ROOT}/templates/{THEME}/js/slide-show.js"></script>	
 	</head>
 
 	<body itemscope="itemscope" itemtype="http://schema.org/WebPage">

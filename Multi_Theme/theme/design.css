@@ -59,36 +59,33 @@ div#top-header {
 div#top-header-content{
 	float: right;
 }
-/* --- paramètres slideshow --- */
+/* --- paramètres slideshow --- 
+* base : https://codepen.io/SitePoint/pen/YqmjRj/
+--------------------------------------------------*/
 
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 32px auto 0 auto;
+section#slider {
+	padding:0px;
+	position: relative;
+	overflow: hidden;
+	margin:auto;
 }
 
-#slider ul {
+#contenair {
   position: relative;
   margin: 0;
   padding: 0;
   height: 228px;
+  text-align: center;
   list-style: none;
 }
-
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 1000px;
-  height: 228px;
-  background: #ccc;
-  text-align: center;
-  /*line-height: 300px;*/
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
 }
 
-a.control_prev, a.control_next {
+a.prev, a.next {
   position: absolute;
   top: 35%;
   z-index: 999;
@@ -103,25 +100,18 @@ a.control_prev, a.control_next {
   cursor: pointer;
 }
 
-a.control_prev:hover, a.control_next:hover {
+a.prev:hover, a.next :hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
 }
 
-a.control_prev {
+a.prev {
   border-radius: 0 2px 2px 0;
 }
 
-a.control_next {
+a.next {
   right: 0;
   border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
 }
 
 /* --- Partie inferieur du header --- */
@@ -469,7 +459,7 @@ section#Motto{
 div#gotop {	
     display: block;
     position: fixed;
-    right: 152px;
+    right: 150px;
     top: 110px;
     z-index: 150;
 }
@@ -485,7 +475,7 @@ div#gotop a {
 div#gobottom {
     display: block;
     position: fixed;
-    right: 152px;
+    right: 150px;
     top: 216px;
     z-index: 150;
 }
