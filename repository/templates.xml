@@ -1221,26 +1221,26 @@
 		</version>
 	</app>
 	<app id="Multi_Theme" type="template">
-		<version num="5.0.2" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/06/01">
+		<version num="5.0.3" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/09/08">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Multi_Theme template</download>
 			<authors>
 				<author name="Sakura" email="admin@news-manga.com" />
 			</authors>
-			<description>Version 5.0.2 Multi_Theme template</description>
+			<description>Version 5.0.3 Multi_Theme template</description>
 			<whatsnew>
-				<new type="bug">Fix JS Scroll-to</new>
+				<new type="bug">Fix JS Slideshow</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.2" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/06/01">
+		<version num="5.0.3" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/09/08">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Theme Multi_Theme</download>
 			<authors>
 				<author name="Sakura" email="admin@news-manga.com" />
 			</authors>
-			<description>Version 5.0.2 du theme Multi_Theme</description>
+			<description>Version 5.0.3 du theme Multi_Theme</description>
 			<whatsnew>
-				<new type="bug">Correction du bug JS Scroll-to</new>
+				<new type="bug">Correction du bug JS slideshow</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1863,6 +1863,54 @@
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
 			<description>Version 5.0.0 du theme Rosina</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="JapanMangaXL" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="JapanMangaXL" priority="low" security-update="false" pubdate="2016/09/08">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/JapanMangaXL/JapanMangaXL.zip">JapanMangaXL template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 JapanMangaXL template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="JapanMangaXL" priority="low" security-update="false" pubdate="2016/09/08">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/JapanMangaXL/JapanMangaXL.zip">Theme JapanMangaXL</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme JapanMangaXL</description>
+			<whatsnew>
+				<new type="new">première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="ScoopOldPost" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="ScoopOldPost" priority="low" security-update="false" pubdate="2016/09/08">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ScoopOldPost/ScoopOldPost.zip">ScoopOldPost template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 ScoopOldPost template</description>
+			<whatsnew>
+				<new type="new">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="ScoopOldPost" priority="low" security-update="false" pubdate="2016/09/08">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ScoopOldPost/ScoopOldPost.zip">Theme ScoopOldPost</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme ScoopOldPost</description>
 			<whatsnew>
 				<new type="new">première version</new>
 			</whatsnew>
