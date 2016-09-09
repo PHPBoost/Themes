@@ -1,0 +1,26 @@
+
+#shoutbox-messages-container {
+    height: 150px;
+    margin: auto;
+    overflow: auto;
+    text-align: left;
+    word-wrap: break-word;
+}
+.shout-horizontal {
+    padding-left: 1.5em;
+}
+.shout-spacing {
+    margin: 10px 0;
+}
+#module-mini-shoutbox textarea, #module-mini-shoutbox textarea:valid {
+    border-color: #dddddd;
+    width: 90%;
+}
+#shoutbox-bbcode-container ul {
+    margin: 0;
+    padding: 0;
+}
+#shoutbox-bbcode-container ul li {
+    border: medium none;
+    display: inline-block;
+}

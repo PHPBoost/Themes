@@ -1,0 +1,914 @@
+/* --------------------------------------
+		content.css
+Contient les elements : 
+ - conteneurs generaux, elements de module,
+ - pagination des pages,
+ - exploreur de categorie,
+ - gestion des categories,
+ - mini-module,
+ - message postes,
+ - profile user,
+ - maintenance,
+ - contribution,
+ - erreur 403/404.
+-----------------------------------------*/
+
+
+/* -- Conteneurs, elements de module -- */
+/* ------------------------------------ */
+
+section,
+article {
+	width: 100%;
+	margin: 0 auto;	
+	vertical-align: top;
+}
+
+@media (min-width: 769px) {
+	section,
+	article {
+		width: 100%;
+	}
+}
+
+
+/* --- articles --- */
+.article-several.block,
+.article-several.small-block,
+.article-several.medium-block {
+	clear: none!important;
+}
+
+.article-several {
+	clear: both;
+}
+
+/* --- Titre d'une page ou d'un element d'un module --- */
+section > header h1 {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 14px 55px 14px 8px;
+	margin: 0 0 20px;
+}
+
+.cssmenu-tools + h1 {
+	padding: 14px 80px 14px 8px;
+}
+
+article header {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 8px;
+	margin: 20px 0 0;	
+}
+
+@media (min-width: 769px){
+	article header {
+		padding: 14px;
+		margin: 0 0 20px;	
+	}
+}
+
+section header h2,
+article header h2 {
+	padding: 5px;
+}
+
+section header h3,
+article header h3 {
+	padding: 5px 10px;
+}
+
+@media (min-width: 769px) {
+	section header,
+	article header {
+		margin: 0 0 1em 0;
+	}	
+}
+
+/* --- Titre d'un bas de page --- */
+@media (min-width: 769px) {
+	section footer,
+	article footer {
+		margin-bottom: 1.5em;
+	}
+}
+
+/* --- Icones actions (edition, suppression, etc) --- */
+span.actions {
+	float: right;
+}
+
+header span.actions a {
+	font-size: 1.2em;
+}
+
+header span.actions a {
+	font-size: 1.2rem;
+}
+
+.more {
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-style: italic;
+}
+
+@media (min-width: 769px) {
+	.more {
+		margin: 2em 0.2em 0 1.2em;
+		text-align: right;
+	}
+}
+
+a.read-more {
+}
+
+/* --- Contenu --- */
+.content {
+	padding: 0 2em;
+	/*overflow: hidden;*/
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	div#main.main-with-left.main-with-right section .content {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding: 1em;
+	}
+}
+
+.content + aside {
+	clear: both;
+}
+
+/* --- Block --- */
+.block,
+.medium-block,
+.small-block {
+	border-top: 5px solid rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .2);
+	padding: 0.8em;
+}
+
+.block .content,
+.medium-block .content,
+.small-block .content {
+	margin: 0;
+}
+
+.block h1,
+.medium-block h1,
+.small-block h1 {
+	border: none;
+}
+
+.block {
+	width: auto;
+}
+
+.block header {
+	margin: 0 0 1% 0;
+}
+
+.block footer {
+	margin: 0;
+}
+
+.medium-block,
+.small-block {
+	float: left;
+	margin: 1% 0.5%;
+}
+
+/* ---- Affiche 2 blocs côte a côte ---- */
+.medium-block {
+	width: 49.00%;
+}
+
+/* ---- Affiche 3 blocs côte a côte ---- */
+.small-block {
+	width: 32.33%;
+}
+
+/* ---- Affiche des blocs en vertical ---- */
+@media (max-width: 480px) {
+	.small-block,
+	.medium-block {
+		width: 100%;
+		margin: 1% 0%;
+	}
+}
+
+@media (max-width: 768px) {
+	.block {
+		width: 100%;
+		margin: 1em 0;
+	}
+	#main.main-with-left .small-block,
+	#main.main-with-left .medium-block,
+	#main.main-with-right .small-block,
+	#main.main-with-right .medium-block {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#main.main-with-left.main-with-right .small-block,
+	#main.main-with-left.main-with-right .medium-block {
+		width: 100%;
+	}
+}
+
+
+/* -- Pagination des pages -- */
+/* -------------------------- */
+section footer ul.pagination {
+	text-align: center;
+}
+
+ul.pagination {
+	margin: 0;
+}
+
+ul.pagination .fa:before {
+	font-size: 0.8em;
+}
+
+ul.pagination-block {
+	margin: 5px 0;
+}
+
+ul.pagination-block li {
+	padding: 2px 2px;
+}
+
+ul.pagination-block li a {
+	display: inline-block;
+	padding: 4px 10px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 40px;
+	border: 1px solid transparent;
+}
+
+ul.pagination-block li a:hover {
+	background-color: rgba(255, 255, 255, .1);
+	transition: all 0.1s linear;
+}
+
+ul.pagination-block li a:active {
+	background-color: rgba(0, 0, 0, .2);
+	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+ul.pagination-block li a.current-page {
+	background-color: rgba(0, 0, 0, .2);
+	border: 1px solid rgba(255, 255, 255, .5);
+	text-decoration: none;
+}
+
+ul.pagination-block li a.prev-page,
+ul.pagination-block li a.next-page {
+	background: none;
+	font-size: 2rem;
+	padding: 0 8px;
+}
+
+ul.pagination-block-bis li a.prev-page,
+ul.pagination-block-bis li a.next-page {
+	border: none;
+	background: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+ul.pagination-block-bis li a.prev-page:hover,
+ul.pagination-block-bis li a.next-page:hover {
+	text-decoration: underline;
+}
+
+.pages-pagination a {
+	text-decoration: none;
+}
+
+/* -- Exploreur des categories -- */
+/* ------------------------------ */
+.explorer .cats,
+.explorer .files {
+	display: inline-block;
+	width: 48%;
+	margin: 5px 0.33%;
+	vertical-align: top;
+}
+
+@media (max-width: 480px) {
+	.explorer .cats,
+	.explorer .files {
+		width: 100%;
+	}
+}
+
+.explorer .cats {
+	width: 35.6%;
+	min-width: 200px;
+}
+
+.explorer h1 {
+	font-size: 13px;
+	margin: 5px 0;
+}
+
+.explorer .content {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 5px !important;
+	min-height: 120px;
+}
+
+.explorer .content ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.explorer .content ul ul {
+	margin-left: 22px;
+}
+
+.explorer .content ul a.parent {
+	float: left;
+}
+
+.explorer .content ul a {
+	padding: 3px;
+	display: block;
+	text-decoration: none;
+	color: rgba(255, 255, 255, .7);
+}
+
+.explorer .content > ul > li > a {
+	padding: 3px 5px;
+}
+
+.explorer .content ul .fa {
+	width: 20px;
+	vertical-align: top;
+}
+
+.explorer .content ul .fa:before {
+	vertical-align: middle;
+}
+
+.explorer .content ul a.parent .fa:first-child {
+	width: 14px;
+}
+.explorer .content ul a.parent .fa:first-child:before {
+	width: 14px;
+	font-size: 11px;
+}
+
+.explorer .content ul a:hover,
+.explorer .content ul a:hover + a
+{
+	background-color: rgba(255, 255, 255, .2);
+	color: rgba(0, 0, 0, .5);
+}
+
+.explorer .content ul .sub a.parent {
+	padding-left: 4px;
+}
+
+.explorer .selected {
+	background-color: rgba(255, 255, 255, .2);
+	color: rgba(0, 0, 0, .5) !important;
+}
+
+.options {
+	margin: 5px;
+	float: right;
+	max-width: 100%;
+}
+
+.options h6 {
+	margin: 10px 3px;
+	font-size: 14px;
+}
+
+.infos {
+	margin-left: 20px;
+}
+
+/* -- Gestion des categories -- */
+/* ---------------------------- */
+.cat-description {
+	margin: 10px 5px;
+}
+
+.subcat-container {
+	margin: 10px 0 5px 0;
+}
+
+.subcat-element {
+	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.subcat-content {
+	margin: auto;
+	padding: 0 5px;
+}
+
+.subcat-content img {
+	margin-bottom: 10px;
+}
+
+
+/* --- Systeme de drag&Drop --- */
+.sortable-block .sortable-element > .sortable-block {
+	margin-left: 30px;
+}
+
+.sortable-block {
+	list-style-type: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	min-height: 24px;
+}
+
+.sortable-block .sortable-element {
+	padding: 0;
+	margin-bottom: 6px;
+	transition: box-shadow 0.2s;
+	display: table;
+	width: 100%;
+}
+
+@media (min-width:769px){ 
+	.sortable-block .sortable-element .sortable-selector {
+		display: table-cell;
+		position: relative;
+		width: 20px;
+		background-color: rgba(0, 0, 0, .5);
+		opacity: 0.3;
+		transition: opacity 1s;
+		cursor: move;
+	}
+	
+	.sortable-selector:after {
+		position: absolute;
+		content: "\f047";
+		top: 34%;
+		left: 4px;
+		font-family: fontawesome;
+	}
+}
+
+.sortable-block .sortable-element:hover .sortable-actions {
+	opacity: 1;
+}
+
+.sortable-block .sortable-element:hover .sortable-selector {
+	opacity: 0.6;
+}
+
+.sortable-block .sortable-title {
+	background-color: rgba(0, 0, 0, .2);
+	padding: 8px 5px 5px 10px;
+}
+
+.sortable-block .sortable-title span {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.sortable-block .sortable-title span.cat-desc {
+	font-size: 0.8em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.sortable-block .sortable-title img {
+	cursor: move;
+}
+
+.sortable-block fieldset {
+	padding: 0 30px;
+}
+
+.sortable-block .sortable-actions {
+	float: right;
+	padding: 3px 3px;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+}
+
+.sortable-block .sortable-element hr {
+	background-color: rgba(255, 255, 255, .5);
+	margin-top: 5px;
+}
+
+.sortable-block .sortable-element label {
+	margin-left: 14px;
+}
+
+.sortable-block .sortable-actions img,
+.sortable-block .sortable-element:hover label,
+.sortable-block .sortable-element .fa:hover {
+	cursor: pointer;
+}
+
+.dragged {
+	position: absolute;
+	opacity: 0.9;
+	z-index: 2000;
+}
+
+body.dragging, body.dragging * {
+	cursor: move !important;
+}
+
+.dropzone {
+	margin: 10px 0;
+	padding-top: 5px;
+	height: 30px;
+	border: 1px dashed rgba(255, 255, 255, .5);
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	text-align: center;
+	opacity: 0.6;
+}
+
+.preview img {
+	overflow: hidden;
+}
+
+/* -- Modules minis -- */
+/* ------------------- */
+.module-mini-container {
+	clear: both;
+}
+
+.module-mini-top {
+	padding: 16px 5px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-mini-container h5,
+.module-mini-container h3 {
+	font-size: 2rem;
+}
+
+.module-mini-contents {
+	border-top: none;
+	border-bottom: none;
+	text-align: center;
+	padding: 10px;
+}
+
+.module-mini-bottom {
+	height: 15px;
+	padding: 20px 10px;
+}
+
+
+/* -- Messages postes par les membres -- */
+/*          (mp & commentaires)          */
+/* ------------------------------------- */
+#comments-list {
+	clear: both;
+}
+
+#comments-list > header { 
+	display:none;
+}
+
+.message {
+	width: 98%;
+	margin: 0 auto 20px;
+	overflow: auto;
+}
+
+#comments-list .message > header {
+	display:none;
+}
+
+.view-topic {
+	margin-top: 10px;
+}
+
+.view-topic i {
+	margin: 0 0 1px 5px;
+}
+
+/* --- infos du message --- */
+.message-date {
+	margin-left: 150px;
+}
+
+.message-user-infos {
+	text-align: center;
+	width: 120px;
+	float: left;
+}
+
+.message-container {
+}
+
+.message-message {
+	position: relative;
+	padding: 15px;
+	margin: 5px 0 0 140px;
+	border: 1px solid rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .2);
+	min-height: 80px;
+	border-radius: 4px;
+}
+
+.message-message::before {
+	content: "";
+	top: 15px;
+	bottom: auto;
+	left: -25px;
+	position: absolute;
+	border-width: 15px 25px 15px 0;
+	border-color: transparent rgba(0, 0, 0, .3);
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+.message-message::after {
+	content: "";
+	top: 16px;
+	bottom: auto;
+	left: -24px;
+	position: absolute;
+	border-width: 14px 24px 14px 0;
+	border-color: transparent rgba(0, 0, 0, .2);
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+.message-avatar {
+	width: 80px;
+}
+
+.message-content {
+}
+
+.message-pseudo a {
+}
+
+.message-user-infos img {
+	padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+	.message-container {
+		padding: 4px;
+	}
+	.message-user-infos {
+		width:80px;
+	}
+	.message-user-infos img {
+		max-width: 40px;
+	}
+	.message-date {
+		margin-left: 90px;
+	}
+	.message-date span.actions {
+		float: none;
+		display: block;
+		text-align: right;
+		margin-bottom: 20px;
+	}
+	.message-message {
+		clear: both;
+		margin: 0;
+	}
+
+	.message-message::before {
+		content: "";
+		top: auto;
+		bottom: 100%;
+		left: 204px;
+		position: absolute;
+		border-width: 15px;
+		border-color: transparent;
+		border-bottom-color:  rgba(0, 0, 0, .3);
+		border-style: solid;
+		display: block;
+		width: 0;
+	}
+	
+	.message-message::after {
+		content: "";
+		top: auto;
+		bottom: 100%;
+		left: 205px;
+		position: absolute;
+		border-width: 14px;
+		border-color: transparent;
+		border-bottom-color:  rgba(0, 0, 0, .2);
+		border-style: solid;
+		display: block;
+		width: 0;
+	}
+}
+
+/* --- Moderation des messages --- */
+.message-moderate {
+	padding: 4px 0 4px 0;
+	margin-bottom: 10px;
+	width: 98%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.message-moderate a {
+	vertical-align: top;
+}
+
+i.message-announce,
+i.message-announce-new,
+i.message-announce-track {
+	font-size: 1.6em;
+}
+
+i.message-announce {
+	color: #D1D2D4;
+}
+
+i.message-announce-new {
+	color: #4372AA;
+}
+
+
+/* -- Profile User -- */
+/* ------------------ */
+ul#profile-container {
+	width: 99%;
+	margin: 30px auto;
+	list-style-type: none;
+}
+
+ul#profile-container li {
+	margin-right: 2px;
+	padding: 10px;
+	text-align: center;
+}
+
+.preview-img {
+	vertical-align: top;
+	max-height: 180px;
+}
+
+.user-agreement {
+	max-width: none;
+	width: 90%;
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+
+/* -- Le maintenance -- */ 
+/* -------------------- */
+#maintain {
+	margin: 10px 0;
+}
+
+div.delay {
+	margin: 20px 0;
+}
+
+#global.global-maintain {
+	flex-direction: column;
+	-ms-flex-direction: column;
+}
+
+div#message-maintain {
+	top: 5px;
+	width: 100%;
+	position: absolute;
+	opacity: 0.98;
+	text-align: center;
+}
+
+div#message-maintain > div {
+	margin: 0 auto;
+}
+
+div#release {
+	margin-top: 20px;
+}
+
+
+
+/* -- Contribution -- */ 
+/* ------------------ */
+#module-user-contribution-list hr {
+	margin: 20px 0;
+}
+
+.module-contribution-element {
+	float: left;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.unprocessed-contribution {
+	text-align: center;
+	margin: auto;
+	width: 300px;
+	overflow: hidden;
+}
+
+.unprocessed-contribution div {
+	float: left;
+	width: 50%;
+}
+
+#module-user-moderation-panel .content {
+	padding-bottom: 75px;
+}
+
+#module-user-moderation-panel .bt td:before {
+	display: none;
+}
+
+#module-user-moderation-panel .bt-content {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.contribution-module-container {
+	float: left;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.convers-announce {
+	padding-right: 0px;
+}
+
+.convers-title {
+	width: 50%;
+	text-align: left;
+}
+
+table.announce-legend td {
+	width: 33%;
+}
+
+@media (min-width: 769px) {
+	.post-pm {
+		margin: auto;
+		width: 80%;
+	}
+}
+
+.available-modules-msg {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/* -- Error 403/404 -- */ 
+/* ------------------- */
+#module-user-error-403 .content
+#module-user-error-404 .content, {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#module-user-error-403 .fa-warning:before,
+#module-user-error-404 .fa-warning:before {
+	content: "\f071"; 
+}
+
+#module-user-error-403 .fa-warning,
+#module-user-error-404 .fa-warning {
+	color: #C19954;
+	display: block;
+	margin: 40px auto 20px auto;
+}
+
+#module-user-error-403 .message-error,
+#module-user-error-404 .message-error {
+	padding: 20px 0;
+}
+
+#module-user-error-403 .type-error,
+#module-user-error-404 .type-error {
+	padding: 10px 0;
+}

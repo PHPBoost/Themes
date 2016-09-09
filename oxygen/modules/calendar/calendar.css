@@ -1,0 +1,124 @@
+div.calendar-content {
+	padding: 6px;
+}
+
+/* Affichage du mois en cours */
+div.calendar-top-container {
+	padding: 4px;
+	background-color: #4BA9A1;
+    border: 1px solid #BEBEBE;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.calendar-top-content {
+	text-align: center;
+}
+
+div.calendar-top-container a,
+div.calendar-top-container a:hover {
+	color: #666666;
+	cursor: pointer;
+}
+
+div.calendar-top-l {
+	float: left;
+	padding: 1px 0 0 25px;
+}
+
+div.calendar-top-r {
+	float: right;
+	padding: 1px 25px 0 0;
+}
+
+/* Affichage des evenements */
+div.event-display-author {
+	float: left;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 0.8em;
+}
+
+div.event-display-dates {
+	float: right;
+	padding: 4px;
+	width: 180px;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.event-display-dates + hr {
+	margin: 0 auto 40px auto;
+	width: 70%;
+	clear: both;
+}
+
+/* Particularite du tableau du calendrier */
+
+@media ( min-width: 769px ) {
+	#module-calendar table.calendar-table tbody tr td {
+		height: 40px;
+	}
+}
+
+/* Couleur des differents evenements */
+table tbody tr td.calendar-none    { background-color: #FFFFFF; }
+table tbody tr td.calendar-today   { background-color: #B5E5B9; }
+table tbody tr td.calendar-other   { background-color: #F1F1F1; }
+table tbody tr td.calendar-weekend { background-color: #FFE3B6; }
+
+#module-calendar table tbody tr td.calendar-week {
+	width: 8%;
+	border-right: 1px solid #AAAAAA;
+}
+
+/* Affichage de du titre de l'evenement dans le tableau de l'administration */
+table tbody tr th.column-title {
+	width: 28%;
+}
+
+/* Affichage du mini calendrier dans une colonne */
+#module-mini-calendar .calendar-top-container {
+	padding: 2px;
+}
+
+#module-mini-calendar .calendar-top-content h5 {
+	padding-top: 1px;
+	font-size: 0.9em;
+}
+
+#module-mini-calendar .calendar-top-l { padding: 0 0 0 7px; }
+#module-mini-calendar .calendar-top-r { padding: 0 7px 0 0; }
+
+#module-mini-calendar #date_select_form form.fieldset-content {
+	margin-top: 0;
+}
+
+#module-mini-calendar #CalendarAjaxCalendarController_choose-date {
+	margin: 5px 0 10px 0;
+}
+
+#module-mini-calendar #CalendarAjaxCalendarController_choose-date div.form-element {
+	margin: 0;
+}
+
+#module-mini-calendar .form-field select {
+	padding: 4px;
+}
+
+#CalendarAjaxCalendarController_month_field,
+#CalendarAjaxCalendarController_year_field {
+	display: inline-block;
+}
+
+.legend-line {
+	padding: 0 0 8px 0;
+}
+
+.legend-color {
+	font-size: 2em;
+	vertical-align: -1px;
+}
+
+.legend {
+	padding-right: 20px;
+}

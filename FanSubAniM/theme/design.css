@@ -1,0 +1,599 @@
+/*---------------------------------------------------------
+ * Theme    : FanSubAniM
+ * Par      : Striker,Jiraya & EDN | Swan
+ * Date     : 31/03/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme --
+--------------------------------------*/
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+    background: url('images/bgr.jpg') no-repeat fixed top center #000000;
+    color: #403a3e;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+	position: relative;
+	height: auto;
+	min-height: 100%;
+    font-size: 12px;
+}
+
+
+/* -- En-tete de page - Header --
+--------------------------------------*/
+header#header {
+max-width: 1250px;
+margin:50px auto auto;
+}
+
+/* --- Partie superieure du header --- */
+
+div#top-header {
+    background: transparent url('images/header.png') no-repeat scroll center 0;
+	min-height: 325px;
+	max-width: 1250px;
+	margin: auto;
+	overflow: hidden;
+}
+
+div#top-header-content{
+	float: right;
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+background: #a91315; /* Old browsers */
+background: -moz-linear-gradient(center top , rgba(169, 19, 21, 0.5) 0%, rgba(169, 19, 21, 0.5) 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a91315), color-stop(37%,#9b3a30), color-stop(64%,#9b392e), color-stop(100%,#a91315)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* IE10+ */
+background: linear-gradient(to bottom, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a91315', endColorstr='#a91315',GradientType=0 ); /* IE6-9 */	
+	
+    border: 2px solid #400203;
+    min-height: 35px;
+    text-align: center;
+}
+
+div#sub-header-content{
+	max-width: 1024px;
+	margin: auto;
+}
+
+
+div#sub-header-menu{
+	text-align:center;
+	font-size:16px;
+	margin-top:20px;
+}
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	max-width: 940px;
+	margin: 1.5em 1.5em 0 1.5em;
+	float: left;
+}
+
+div#site-logo {
+    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    float: left;
+    height: 200px;
+    margin: 10px 1em 0 0;
+    position: absolute;
+    width: 217px;
+    z-index: 1000;
+}
+
+div#site-name-container {
+    margin: 1em 0 0 20em;
+	overflow: hidden;
+	float: left;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 4em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0,0,0), 1px 0 0 rgb(-255,-255,-255), 2px 0 0.1px rgba(0,0,0,0.1), 2px 0 0.1px rgba(0,0,0,0.2), 0 0 1px rgba(0,0,0,.1);
+}
+@media (max-width:768px) {
+
+
+}
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width:800px) {
+	a#site-name {display:none;}
+	div#site-infos {display:none;}
+}
+
+
+/* -- Conteneur global du site --
+--------------------------------------*/
+div#global {
+    background-color: #000;
+    border-top: 1px solid #000;
+    margin: auto;
+    max-width: 1250px;
+	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
+}
+div#sous-global {
+    background: transparent url('images/global.png') repeat-y scroll center 0;
+
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+	max-width: 1248px;
+	margin: auto;
+	padding: 0 10px;
+}
+aside#menu-left,
+aside#menu-right {
+    width: auto;
+}
+
+#main {
+   width: auto;
+}
+
+/* -- Contenu de la page --
+--------------------------------------*/
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 1em;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+}
+
+div#bottom-content {
+	margin: 2% 0 0 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#top-footer {
+	clear: both;
+	padding: 2% 0;
+}
+
+/* -- Pied de page - Footer --
+--------------------------------------*/
+footer#footer {
+    background: url('images/footer.png') no-repeat scroll 0 0 transparent;
+    clear: both;
+    height: 250px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    text-align: center;
+    width: 1250px;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	max-width: 1024px;
+	padding: 1.5em 0;
+	border-bottom: 2px groove #444444;
+}
+
+
+footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 89px;
+    text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #403a3e;
+	font-size: 0.8em;
+}
+
+/* -- Elements specifiques PHPboost --
+--------------------------------------*/
+/* --- Compteur de visite --- */
+div#compteur {
+	color: #E9ECD9;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size: 0.9em;
+	margin-right: 15px;
+	text-align: right;
+}
+
+/* --- Barre d'outils --- */
+#actions-links-menu {
+	float:right;
+	margin: 0 5px 5px 5px;
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+    height: 33px;
+    margin: 0 0 20px 10px;
+    padding: 4px;
+    text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	list-style: none;
+	margin: 0;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}
+
+/*################################
+		Barre de navigation
+#################################*/
+
+#blackbarnav {
+    background: rgba(0, 0, 0, 0) url('images/blackbar.jpg') repeat-x scroll left top;
+    height: 51px;
+    margin: auto;
+    width: 1250px;
+}
+
+#blackbarnav b {
+    background: url('images/blackbar.jpg') no-repeat scroll right -64px rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 50px;
+    width: 24px;
+}
+a.blackbar {
+    background: url('images/blackbar.jpg') no-repeat scroll right -64px rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+a.blackbar:hover {
+    background: url('images/blackbar.jpg') repeat-x scroll right -116px rgba(0, 0, 0, 0);
+    color: #000000;
+	text-decoration: none;
+} 
+
+
+/*======================================
+		Todd Motto Labs -
+		Flaunt JS Navigation
+		Adapté pour phpboost 5.0
+		URL: www.toddmotto.com
+========================================*/
+
+section#Motto{
+	background: #3d3d3b;
+    margin: auto;
+    padding: 0px;
+    vertical-align: top;
+    width: 100%;
+	height:auto;
+	z-index:100;
+}
+#menu-title{
+    color: #ffffff;
+    float: left;
+    font-weight: bold;
+    padding: 18px 0 0 87px;
+    text-align: center;
+    text-transform: uppercase;
+	}
+.nav {
+	position:relative;
+	/*display:inline-block;*/
+	font-size:14px;
+	font-weight:900;
+}
+.nav-list {
+	text-align:left;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+}
+.nav-item a {
+	display:block;
+	color:#FFF;
+	padding:15px 20px;
+	background:#7D7D7D;
+	border-bottom:1px solid #8C8B8C;
+}
+.nav-item > a:hover {
+	background:#8F8C8E;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:180px;
+}
+.nav-submenu-item a {
+	background:#ADADAD;
+	border-bottom:1px solid #7d7d7d;
+	display:block;
+	padding:15px;
+}
+.nav-submenu-item a:hover {
+	background:#918E91;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    border-left: 1px solid #222222;
+    cursor: pointer;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	border-left: 1px solid #8c8b8c;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url('images/drop.svg') no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#ADADAD;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+/*======================================
+		  Navigation latérale
+		 "gadget de navigation"
+========================================*/
+div#gotop {
+    display: block;
+    position: fixed;
+    right: 57px;
+    top: 150px;
+    z-index: 150;
+}
+div#gotop a {
+    background: url('images/sprite_bigNav.png') no-repeat scroll center top transparent;
+    float: left;
+    height: 80px;
+    opacity: 0.3;
+    width: 80px;
+}
+div#gobottom {
+    display: block;
+    position: fixed;
+    right: 57px;
+    top: 238px;
+    z-index: 150;
+}
+div#gobottom a {
+    background: url('images/sprite_bigNav.png') no-repeat scroll center bottom transparent;
+    float: left;
+    height: 80px;
+    opacity: 0.3;
+    width: 80px;	
+}
+
+
+/*======================================
+			Alls Media Queries
+		 CSS applique aux écrans PC 
+========================================*/
+
+@media ( min-width: 769px ) {
+
+	/* --- Menu gauche --- */
+	aside#menu-left {
+		border-right: 1px solid #eadcbf;
+		float: left;
+		width: 19%;
+		margin-right: 1%;
+	}
+
+	/* --- Menu droit --- */
+	aside#menu-right {
+		border-left: 1px solid #eadcbf;
+		float: right;
+		width: 19%;
+		margin-left: 1%;
+	}
+
+	/* --- Menu central : main --- */
+	div#main {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	div#main.main-with-left,
+	div#main.main-with-right {
+		width: 80%;
+	}
+
+	div#main.main-with-left.main-with-right {
+		width: 60%;
+	}
+
+}
+
+@media (max-width:768px) {
+
+	body {font-size: 1.4em;}
+	header#header {margin: auto;}
+	div#top-header{display: none;}
+	div#header-gsm {background-color:#222222; height:50px; text-align:center;}
+	div#sub-header { border: none;}
+	a#site-name {
+    color: #f9fcff;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    line-height: 1em;
+	}
+	div#global {
+		background-color: #000;
+		border-top: 1px solid #000;
+		margin: auto;
+		max-width: 1250px;
+		-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
+	}
+	div#sous-global {
+		background-color: # faf6ee;
+		margin: auto;
+		padding: 0 10px;
+	}
+	footer#footer {
+		background: #7d7e7d; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTBlMGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-8 */
+		border-left: 1px solid #fff;
+		border-right: 1px solid #fff;
+		border-top: 1px solid #222222;
+		clear: both;
+		margin: auto;
+		width: 1250px;
+   height: auto;		
+	}
+	footer#footer .footer-infos {
+		min-height: 40px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #eeeeee;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+	#blackbarnav{display: none;}
+}
+
+@media (min-width:769px) {
+	section#Motto {display: none;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		list-style: none outside none;		
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	ul{margin-left:0px;}
+	.nav-submenu{margin-bottom:0px}
+}
+@media (max-width:768px) {
+	div#menugo {display: none;}
+}
+

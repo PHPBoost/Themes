@@ -1,0 +1,45 @@
+#mini-search-form {
+	float: right;
+	margin: 10px 30px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		display: none;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button {
+	position: relative;
+}
+
+#mini-search-form.input-element-button input {
+	padding: 0 4px 0 29px;
+	width: 229px;
+	height: 24px;
+	background: url('images/search.png') no-repeat;
+	border: none;
+	font-size: 0.9em;
+	color: #403F3D;
+}
+
+#mini-search-form.input-element-button button {
+	position: absolute;
+	left: 0;
+	padding: 0 0 2px 3px;
+	height: 24px;
+	width: 25px;
+	border-radius: 10px 0 0 10px;
+	border: none;
+}
+#mini-search-form.input-element-button button i {
+	color: #403F3D;
+	font-size: 0.9em;
+}

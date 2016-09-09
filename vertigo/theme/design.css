@@ -1,0 +1,324 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background: #E8EDF3 url(images/body.png);
+	color: #555555;
+	font-size: 1.3em;
+	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	margin: auto;
+	min-height: 139px;
+	max-width: 1080px;
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	min-height: 35px;
+	min-width: 1200px;
+	background-color: #4D4C50;
+	border-bottom: 3px solid #F47321;
+}
+
+div#sub-header-content{
+	margin: auto;
+	max-width: 1080px;
+}
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 1.5em 0 0 1.5em;
+	max-width: 940px;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url('images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	div#site-name-container {
+		margin: 1em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+	
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 1.5em auto 0 auto;
+	padding: 0 10px;
+	max-width: 1080px;
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		padding: 0 10px;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+		width: 200px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 200px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 400px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+div#top-footer {
+	padding: 2% 0;
+}
+
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 0.8em;
+	background-color: #FFFFFF;
+	border: 3px solid #CBCBCB;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+	clear: both;
+	width: 100%;
+	padding: 5px 10px;
+	background-color: #4D4C50;
+	border-top: #F47321 3px solid;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1200px;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#compteur {
+	position: absolute;
+	right: 0;
+	margin-right: 15px;
+	font-size: 0.9em;
+	color: #E9ECD9;
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	div#compteur {
+		top: 100px;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	margin: 0 0 20px 10px;
+	text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}

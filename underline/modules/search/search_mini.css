@@ -1,0 +1,48 @@
+#mini-search-form {
+	float: right;
+	margin: 40px 20px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	width: 120px;
+	height: 25px;
+	border-radius: 4px 0 0 4px;
+	background: #001B51;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.9) rgba(255, 255, 255, 0.9) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.3);
+	color: #CCCCCC;
+}
+
+#mini-search-form.input-element-button input:hover,
+#mini-search-form.input-element-button input:focus,
+#mini-search-form.input-element-button input:active {
+	background: #001b51;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.9) rgba(255, 255, 255, 0.9) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.3);
+	color: #EEEEEE;
+}
+
+#mini-search-form.input-element-button button {
+	margin-left: -5px;
+	padding: 4px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0 4px 4px 0;
+	background: #001B51;
+	border: solid;
+	border-width: 1px 1px 1px 0px;
+	border-color: rgba(0, 0, 0, 0.9) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) black;
+	color: #CCCCCC;
+}

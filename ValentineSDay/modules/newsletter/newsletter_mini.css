@@ -1,0 +1,70 @@
+/*---------------------------------------------------------
+ * Theme    :  Valentin's Day
+ * Par      : EDN | Swan
+ * Date     : 03/02/2015
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+.newsletter-form {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("images/newsletter_form.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    height: 35px;
+    padding-left: 1px;
+    padding-top: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 290px;
+}
+
+.newsletter-title {
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px 5px 0 0;
+    text-indent: 10px;
+	vertical-align: middle;
+}
+ 
+div#newsletter { 
+	float: right;
+	margin: 10px;
+}
+ 
+.newsletter-link { 
+	margin: 0;
+	margin-top: 10px;
+}
+
+.newsletter-form.input-element-button input[type="text"] {
+    background-color: none;
+    border:none;
+	border-radius: 4px 4px 4px 4px;
+    height: 25px;
+    margin-top: -2px;
+    width: 157px;
+}
+
+.input-element-button button {    
+	background: #df5799;
+    border: medium none;
+	font-size: 12px;
+	border-radius: 4px 4px 4px 4px;
+	margin-left: -1px;
+}
+.input-element-button button:hover { background:#cccccc; }
+
+button.newsletter-submit{
+margin-top:-3px;
+  padding: 4px 12px;
+}

@@ -1,0 +1,330 @@
+/*                          --- colorscheme ---
+ *
+ *          contient les classes de couleurs
+ *
+ *                  couleurs principales : #22273D #394165 #366393
+ *
+ *                  couleurs secondaires :
+ *
+ *                      bleu :      #29AED7
+ *                      vert :      #00BC9E
+ *                      orange :    #DD7430
+ *                      rouge :     #c43827
+ *                      violet :    #A769BC
+ *                      
+ * ======================================================================= */
+
+/* --- design =========================================================================================== */
+
+body {
+    background-color: #394165;
+}
+
+header#header,
+#main,
+aside#menu-left,
+aside#menu-right,
+#top-footer,
+footer#footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* --- Default --- */
+#lightcase-overlay {
+    background-color: #394165;
+}
+
+
+#lightcase-case[data-type="image"] .lightcase-content,
+#lightcase-case[data-type="video"] .lightcase-content {
+	background-color: #22273D;
+}
+
+/* --- content =========================================================================================== */
+
+section > header h1,
+.module-mini-container h5,
+.module-mini-container h3 {
+    color: rgba(255, 255, 255, .6);
+}
+
+article header,
+.module-mini-top{
+	background-color: rgba(0, 0, 0, .2);
+}
+
+/* --- table --- */
+
+
+/* --- cssmenu --- */
+header#header .cssmenu > ul > li > .cssmenu-title 					{ color: rgba(255, 255, 255, .6); }
+header#header .cssmenu > ul > li:hover > .cssmenu-title 			{ color: rgba(255, 255, 255, 1); }
+
+header#header .cssmenu ul ul li .cssmenu-title						{ background-color: transparent; }
+
+
+header#header .cssmenu > ul > li:nth-child(5n+1) > .cssmenu-title 	{ border-bottom: 5px solid #29AED7; }
+header#header .cssmenu > ul > li:nth-child(5n+1):hover > .cssmenu-title,
+header#header .cssmenu > ul > li:nth-child(5n+1) ul 				{ background-color: 	   #29AED7; }
+
+header#header .cssmenu > ul > li:nth-child(5n+2) > .cssmenu-title 	{ border-bottom: 5px solid #00BC9E; }
+header#header .cssmenu > ul > li:nth-child(5n+2):hover > .cssmenu-title,
+header#header .cssmenu > ul > li:nth-child(5n+2) ul 				{ background-color: 	   #00BC9E; }
+
+header#header .cssmenu > ul > li:nth-child(5n+3) > .cssmenu-title 	{ border-bottom: 5px solid #DD7430; }
+header#header .cssmenu > ul > li:nth-child(5n+3):hover > .cssmenu-title,
+header#header .cssmenu > ul > li:nth-child(5n+3) ul 				{ background-color: 	   #DD7430; }
+
+header#header .cssmenu > ul > li:nth-child(5n+4) > .cssmenu-title 	{ border-bottom: 5px solid #c43827; }
+header#header .cssmenu > ul > li:nth-child(5n+4):hover > .cssmenu-title,
+header#header .cssmenu > ul > li:nth-child(5n+4) ul 				{ background-color: 	   #c43827; }
+
+header#header .cssmenu > ul > li:nth-child(5n+5) > .cssmenu-title 	{ border-bottom: 5px solid #A769BC; }
+header#header .cssmenu > ul > li:nth-child(5n+5):hover > .cssmenu-title,
+header#header .cssmenu > ul > li:nth-child(5n+5) ul 				{ background-color: 	   #A769BC; }
+
+#main .cssmenu.cssmenu-actionslinks.small-screen .menu-button {
+    color: transparent;
+}
+
+.cssmenu-actionslinks ul { background-color: #394165; }
+
+
+/* --- Personnalisation de l'indicateur de sous-Menu --- */
+
+.cssmenu li.has-sub > .cssmenu-title:after,
+.cssmenu li.has-sub > .cssmenu-title:before, 		 	
+.cssmenu-vertical li.has-sub > .cssmenu-title:after,
+.cssmenu-vertical li.has-sub > .cssmenu-title:before { background-color: rgba(255, 255, 255, .7); }
+
+.cssmenu.cssmenu-vertical ul ul li .cssmenu-title  	{ }
+
+.cssmenu.cssmenu-vertical ul ul li  { background-color: #394165; }
+
+#main .cssmenu-horizontal ul ul								{ background-color: #394165; }
+#main .cssmenu-horizontal ul ul	> li:hover					{ background-color:  rgba(255, 255, 255, .05); }
+
+
+/* --- form ================================================================================================ */
+
+/* --- Bouton de formulaire --- */
+button.submit {
+	background-color: #366393;
+}
+
+button.submit:hover {
+	background-color: #00BC9E;
+}
+
+button.submit:active {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.basic-button {
+	background-color: #29AED7;
+}
+
+.basic-button:hover {
+	background-color: #00BC9E;
+}
+
+.basic-button.alt {
+	background-color: #00BC9E;
+}
+
+.basic-button.alt:hover {
+	background-color: #29AED7;
+}
+
+/* --- radio --- */
+
+.form-field-radio label {
+	background-color: #dddddd;
+}
+
+.form-field-radio input[type=radio]:checked + label {
+	background-color: #00BC9E;
+}
+
+/* --- checkbox --- */
+
+.form-field-checkbox:before {
+	color: #00BC9E;
+}
+
+.form-field-checkbox:after {
+	color: #c43827 !important;
+}
+
+.form-field-checkbox label {
+	background-color: #c43827;
+}
+
+.form-field-checkbox input[type=checkbox]:checked + label {
+	background-color: #00BC9E;
+}
+
+/* --- Global =================================================================================== */
+
+hr {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+a.admin  { color: #29AED7; }
+a.modo   { color: #00BC9E; }
+a.member { color: #A769BC; }
+
+.code {
+    background-color: #a8afcc;
+}
+
+.progressbar-container .progressbar {
+	background-color: #00BC9E;
+}
+
+.error, .error:before       { color: #c43827; }
+.notice, .notice:before     { color: #A769BC; }
+.warning, .warning:before   { color: #DD7430; }
+.success, .success:before   { color: #00BC9E; }
+.question, .question:before { color: #29AED7; }
+
+.error    { border-color: #c43827; }
+.notice   { border-color: #A769BC; }
+.warning  { border-color: #DD7430; }
+.success  { border-color: #00BC9E; }
+.question { border-color: #29AED7; }
+
+.options > h6,
+.options > a ,
+.options > span > a.small {
+    color: #222222;
+}
+
+/* --- Modules ============================================================================ */
+
+/* --- Articles --- */
+
+/* --- BBCode --- */
+.bbcode-block {
+	background: #394165;
+}
+
+/* --- Calendar --- */
+#module-mini-calendar .module-mini-top,
+section#module-calendar > header h1 {
+    background-color: #00BC9E;
+}
+
+table tbody tr td.calendar-none    {  }
+table tbody tr td.calendar-today   { background: #00BC9E; }
+table tbody tr td.calendar-other   {  }
+table tbody tr td.calendar-weekend { background: #A769BC; }
+
+/* --- connect --- */
+ul.connect-content, 
+div.connect-content {
+	background-color: #22273D;
+}
+
+/* --- Contact --- */
+section#module-contact > header h1 {
+    background-color: #366393;
+}
+
+/* --- Download --- */
+#module-mini-download .module-mini-top,
+section#module-download > header h1 {
+    background-color: #A769BC;
+}
+
+
+/* --- Faq --- */
+#module-mini-faq .module-mini-top,
+section#module-faq > header h1 {
+    background-color: #29AED7;
+}
+
+/* --- Gallery --- */
+#module-mini-gallery .module-mini-top,
+section#module-gallery > header h1 {
+    background-color: #DD7430;
+}
+
+
+/* --- Guestbook --- */
+#module-mini-guestbook .module-mini-top,
+section#module-guestbook > header h1 {
+    background-color: #DD7430;
+}
+
+
+/* --- Forum --- */
+section#module-forum > header h1 {
+    background-color: #366393;
+}
+
+.fa-announce:before,
+.fa-announce-hot:before 		{ color: #D1D2D4;   }
+.fa-announce-new:before,
+.fa-announce-new-hot:before 	{ color: #676A74;   }
+
+.fa-warning:before              { color: #DD7430; }
+.fa-eraser:before               { color: #A769BC; }
+.fa-globe:before                { color: #29AED7; }
+.fa-msg-display:before 			{ color: #00BC9E; }
+.fa-msg-not-display:before 		{ color: #366393; }
+.fa-msg-track:before 			{ color: #c43827; }
+.fa-msg-not-track:before 		{ color: #22273D; }
+.fa-pm-track:before 			{ color: #29AED7; }
+.fa-pm-not-track:before 		{ color: #366393; }
+.fa-mail-track:before 			{ color: #A769BC; }
+.fa-mail-not-track:before 		{ color: #366393; }
+.fa-lastview:before 			{ color: #00BC9E; }
+.fa-notread:before 				{ color: #DD7430; }
+
+
+/* --- News --- */
+
+
+/* --- Online --- */
+#module-mini-online .module-mini-top,
+section#module-online > header h1 {
+    background-color: #c43827;
+}
+
+/* --- Poll --- */
+#module-mini-poll .module-mini-top,
+section#module-poll-main > header h1 {
+    background-color: #00BC9E;
+}
+
+/* --- Shoutbox --- */
+#module-mini-shoutbox .module-mini-top,
+section#module-shoutbox > header h1 {
+    background-color: #29AED7;
+}
+
+/* --- Stats --- */
+#module-mini-stats .module-mini-top,
+section#module-stats > header h1 {
+    background-color: #A769BC;
+}
+
+/* --- Upload --- */
+#module-user-upload {
+    background-color: #394165;
+}
+
+section#module-user-upload > header h1 {
+    background-color: #366393;
+}
+
+.fa-cloud-upload {
+    color: #29AED7;
+}
+
+/* --- Web --- */
+#module-mini-web .module-mini-top,
+section#module-web > header h1 {
+    background-color: #A769BC;
+}

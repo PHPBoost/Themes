@@ -1,0 +1,403 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+@font-face {
+	font-family: 'allerregular';
+	src: url('fonts/aller_rg-webfont.eot');
+	src: url('fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/aller_rg-webfont.woff') format('woff'),
+		 url('fonts/aller_rg-webfont.ttf') format('truetype'),
+		 url('fonts/aller_rg-webfont.svg#allerregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background: #E8EDF3 url(images/body.png) repeat;
+	color: #555555;
+	font-size: 1.3em;
+	font-family: 'allerregular',"Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+	height: 195px;
+	width: 100%;
+	background-color: #DDDDDD;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	margin: auto;
+	background-color: #403F3D;
+	z-index: 11;
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	min-height: 45px;
+	max-width: 1024px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	position: relative;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	min-height: 35px;
+	max-width: 1024px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	div#sub-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+}
+
+div#sub-header-content{
+	margin: auto;
+	max-width: 1024px;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 0 auto 0 auto;
+	max-width: 1024px;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+div#site-logo {
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+	margin: 3px 15px 0px 20px;
+	padding: 35px;
+	width: 30px;
+	height: 30px;
+	background: url('images/logo.png') no-repeat 32% 65%;
+	background-size: 70%;
+	background-color: #0CCEB9;
+	border-radius: 100em;
+	box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+}
+
+div#site-name-container {
+	margin: 1em 0 0 0;
+}
+
+a#site-name {
+	color: #555555;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
+	text-shadow: #888888 1px 1px 5px;
+	font-family: 'allerregular',"Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+	letter-spacing: 1.1pt;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #999999;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		margin: 3px auto 0px 35px;
+		padding: 77px;
+		width: 90px;
+		height: 90px;
+		background-size: 74%;
+		box-shadow: 0px 9px 5px rgba(0,0,0,0.3);
+	}
+
+	div#site-name-container {
+		margin: 4em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 3em;
+	}
+	
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#global {
+	position: relative;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 1.5em auto 0 auto;
+	padding: 0 10px;
+	max-width: 1024px;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.28);
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		padding: 20px 10px 0 10px;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+		width: 200px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+		margin-top: 25px;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 200px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 400px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+div#top-footer {
+	padding: 2% 0;
+}
+
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 0.8em;
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+	width: 100%;
+	background: #212121;
+	border-top: #00B8A4 2px solid;
+	clear: both;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1024px;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+}
+
+footer#footer .footer-infos span a {
+	color: #AAAAAA;
+	font-size: 0.9em;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#compteur {
+	position: absolute;
+	top: -20px;
+	right: 5px;
+	font-size: 0.8em;
+	font-style: italic;
+	color: #AAAAAA;
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	div#compteur {
+		top: -17px;
+		right: 150px;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	margin: 0 0 20px 10px;
+	text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}
+
+
+.block-round {
+	display: block;
+	margin: 0 0 0 0;
+	padding: 15px;
+	width: 62px;
+	background: transparent;
+	background-color: #DDDDDD;
+	border: 1px solid #999999;	
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	border-radius: 100em;
+	outline: none;
+	transition: background-color 0.4s;
+	color: #555555;
+}
+
+.block-round img { 
+	max-width: none;
+	width: 32px;
+}
+
+.block-round:hover,
+.block-round:focus {
+	background-color: #F1F1F1;
+	border: 1px solid #999999;
+	color: #666666;
+}
+.block-round.cyan {
+	background-color: #00B8A4;
+	color: #DEDEDE;
+}

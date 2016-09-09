@@ -1,0 +1,259 @@
+#connect-menu div.horizontal-fieldset {
+	padding: 2px 8px 2px 2px;
+}
+
+#connect-menu div.vertical-fieldset,
+#connect-menu div.horizontal-fieldset {
+	margin: 0;
+}
+
+#connect-menu div.vertical-fieldset form {
+	margin-bottom: 10px;
+}
+#connect-menu div.horizontal-fieldset form {
+	display: inline-block;
+}
+
+#connect-menu div.horizontal-fieldset span {
+	display: none;
+}
+
+ul.connect-content {
+	margin: auto;
+	padding-top: 3px;
+}
+
+#connect-menu ul.connect-content li {
+	list-style-type: none;
+}
+
+#connect-menu div.horizontal-fieldset ul.connect-content li {
+	display: inline-block;
+	margin-right: 10px;
+}
+#connect-menu div.horizontal-fieldset ul.connect-content li:last-child {
+	margin-right: 0;
+}
+
+#connect-menu ul.connect-content li > i {
+	width: 18px;
+	text-align: center;
+}
+
+@media (min-width: 769px) {
+	#connect-menu div.horizontal-fieldset ul li,
+	#connect-menu div.horizontal-fieldset ul li a {
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 768px) {
+	#connect-menu div.horizontal-fieldset ul li,
+	#connect-menu div.horizontal-fieldset ul li a {
+		color: #EFEFEF;
+	}
+}
+
+#connect-menu div.horizontal-fieldset ul li > i {
+	vertical-align: 0;
+}
+
+#connect-menu div.vertical-fieldset label {
+	padding-right: 0;
+	text-align: center;
+}
+
+#connect-menu div.vertical-fieldset ul.connect-content {
+	text-align: left;
+}
+
+#connect-menu div.horizontal-fieldset ul.connect-content {
+	text-align: center;
+}
+
+div.connect-register i {
+	vertical-align: -1px;
+}
+
+#connect-menu input#login,
+#connect-menu input#password {
+	padding: 4px 6px;
+}
+
+#connect-menu div.horizontal-fieldset input#login,
+#connect-menu div.horizontal-fieldset input#password {
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	#connect-menu div.horizontal-fieldset input#login,
+	#connect-menu div.horizontal-fieldset input#password {
+		margin: 5px 0;
+	}
+}
+
+#connect-menu div.vertical-fieldset input#login,
+#connect-menu div.vertical-fieldset input#password {
+	width: 120px;
+}
+
+#connect-menu div.vertical-fieldset button {
+	margin: 5px 0;
+}
+
+#connect-menu div.horizontal-fieldset button {
+	margin: 0;
+}
+
+/* Mot de passe oublie */ 
+#connect-menu .vertical-fieldset .forgot-pass {
+	color: #999999;
+}
+#connect-menu .vertical-fieldset .forgot-pass:hover {
+	color: #555555;
+}
+
+@media (min-width: 769px) {
+	#connect-menu .forgot-pass {
+		display: inline-block;
+		padding: 0 0 0 5px;
+		vertical-align: middle;
+		color: #E0F3FF;
+	}
+	#connect-menu .forgot-pass:hover {
+		color: #F1F1F1;
+	}
+}
+
+@media (max-width: 768px) {
+	#connect-menu .forgot-pass {
+		padding: 20px;
+		display: block;
+	}
+	#connect-menu .forgot-pass:hover {
+		text-decoration: underline;
+	}
+}
+
+.js-menu-button {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.js-menu-button {
+		display: inline-block;
+		padding: 5px 10px 5px 10px;
+	}
+	
+	#connect-menu div.horizontal-fieldset div.connect-content,
+	#connect-menu div.horizontal-fieldset form {
+		width: 100%;
+		text-align: center;
+	}
+
+	#connect-menu .horizontal-fieldset a {
+		color: #666666;
+		text-decoration: none;
+	}
+
+	#connect-menu div.horizontal-fieldset span {
+		display: inline-block;
+	}
+
+	.horizontal-fieldset ul.connect-content, 
+	.horizontal-fieldset div.connect-content {
+		position: absolute;
+		z-index: 200;
+		padding: 10px;
+		left: -100%;
+		visibility: hidden;
+		opacity: 0;
+		background-color: #353535;
+		transition: left 0.5s, visibility 0.5s 2s, opacity 0.5s 2s;
+	}
+
+	#connect-menu.active ul.connect-content,
+	#connect-menu.active div.connect-content {
+		left: 0%;
+		width: 100%;
+		visibility: visible;
+		opacity: 1;
+		transition: left 0.5s, visibility 0.5s, opacity 0.5s;
+	}
+
+	#connect-menu div.horizontal-fieldset ul.connect-content li {
+		display: block;
+		text-align: left;
+	}
+	
+	#connect-menu.active div.horizontal-fieldset div.connect-content input {
+		display: block;
+		margin-bottom: 10px;
+		padding: 10px 20px;
+		width: 100%;
+	}
+	
+	#connect-menu.active div.horizontal-fieldset div.connect-content button.submit {
+		display: inline-block;
+		margin-bottom: 10px;
+		padding: 10px 20px;
+		width: 100%;
+	}
+}
+
+
+/* Partie Sociale */
+#connect-menu .horizontal-fieldset a.fb {
+	padding: 6px 0 0 4px;
+}
+
+@media (min-width: 769px) {
+	#connect-menu a.fb {
+		padding: 7px 0 0 4px;
+	}
+}
+
+
+/* --- block-round --- */
+
+#connect-menu .block-round {
+	background: none;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	width: auto;
+}
+
+@media (min-width: 769px) {
+	#connect-menu .block-round {
+		display: block;
+		margin: 0 0 0 0;
+		padding: 15px;
+		width: 62px;
+		background: transparent;
+		background-color: #DDDDDD;
+		border: 1px solid #999999;	
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+		border-radius: 100em;
+		outline: none;
+		transition: background-color 0.4s;
+		color: #555555;
+	}
+
+	#connect-menu .block-round img { 
+		max-width: none;
+		width: 32px;
+	}
+
+	#connect-menu .block-round:hover,
+	#connect-menu .block-round:focus {
+		background-color: #F1F1F1;
+		border: 1px solid #999999;
+		color: #666666;
+	}
+
+	#connect-menu .block-round.cyan {
+		background-color: #00B8A4;
+		color: #DEDEDE;
+	}		
+}

@@ -1,0 +1,427 @@
+/*---------------------------------------------------------
+ * Theme    :  Thème SimplyBlackSmall 
+ * Par      : EDN | Swan
+ * Date     : 01/08/2015
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+/* afficher le texte sélectionné en blanc sur fond gris */
+::-moz-selection { color:#efefef;  background: #555555 none repeat scroll 0 0;}
+::selection     { color:#efefef;  background:#555555 none repeat scroll 0 0;}
+
+/* afficher le texte sélectionné dans un paragraphe en blanc sur fond gris */
+p::-moz-selection { color:#efefef;  background: #222222 none repeat scroll 0 0; }
+p::selection      { color:#efefef;  background: #222222 none repeat scroll 0 0;}
+
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background-color: #222222;
+	color: #DADADA;
+	font-size: 12px;
+	font-family:Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+    background: transparent url('images/header.png') no-repeat scroll center 0;
+    height: 150px;
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	margin: auto;
+	min-height: 125px;
+	max-width: 1024px;
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	min-height: 35px;
+}
+
+div#sub-header-content{
+	margin: auto;
+	max-width: 1024px;
+}
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 1.5em 0 0 1.5em;
+	max-width: 940px;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url('images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	div#site-name-container {
+		margin: 1em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+	
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#SuperGlobal {
+    background: #000000 none repeat scroll 0 0;
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
+    margin: auto;
+    width: 1000px;
+}
+
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 1.5em auto 0 auto;
+	padding: 0 10px;
+	max-width: 1024px;
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+	border-right: 1px solid #444444;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+	border-left: 1px solid #444444;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		padding: 0 2px;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+    	width: 200px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 200px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 400px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+div#top-footer {
+	padding: 2% 0;
+}
+
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 0.8em;
+/*	border: 1px #BEBEBE solid;
+	background-color: #FFFFFF;*/
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+	padding: 0.1em 0.8em;
+	/*background-color: #FFFFFF;
+	border: 1px solid #BEBEBE;*/
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+	padding: 0.1em 0.8em;
+	/*background-color: #FFFFFF;
+	border: 1px solid #BEBEBE;*/
+}
+
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+	width: 100%;
+	clear: both;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1024px;
+
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #DADADA;
+	font-size: 0.8em;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#compteur {
+	position: absolute;
+	right: 0;
+	margin-right: 15px;
+	font-size: 0.9em;
+	color: #E9ECD9;
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	div#compteur {
+		top: 100px;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	margin: 0 0 20px 10px;
+	text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '';
+	color: #616161;
+}
+
+
+/*======================================
+			Alls Media Queries
+		 CSS applique aux écrans PC 
+========================================*/
+
+
+@media (max-width:768px) {
+
+	body {font-size: 1.4em;}
+	
+	div#SuperGlobal {width: auto;}	
+	header#header {margin: auto; background:none; height:35px; margin: auto;width: auto;}
+	div#top-header{display: none;}
+	div#header-gsm {background-color:#000000; border-bottom:2px solid #444444; height:50px; text-align:center;}
+	div#sub-header {
+		background: #444444 none repeat scroll 0 0;
+		float: none;
+		margin-right: 0;
+		margin-top: 0;
+		min-height: 35px;
+		text-align: center;
+	}
+	.sub-container{display: none;}
+	a#site-name {
+    color: #DDDDDD;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+	text-shadow:none;
+	}
+	
+	aside#menu-left {border-right: none;}
+	aside#menu-right{border-left: none;}	
+	
+	footer#footer {
+
+	clear: both;
+	margin: auto;
+	width: 1250px;
+   height: auto;		
+	}
+	footer#footer .footer-infos {
+		min-height: 40px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	.footer-infos a {color:#ffffff;}
+	.footer-infos a:hover {color:#ffffff;}
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #DADADA;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+	#prim-nav{display: none;}
+}
+
+@media (min-width:769px) {
+	div#header-gsm{display: none;}
+}
+
+

@@ -1,0 +1,204 @@
+/* --------------------------------------
+		table.css
+Contient les elements pour l'affichage des tableaux HTML et responsive.
+--------------------------------------*/
+
+/* -- Affichage des tableaux basic -- */
+/* --------------------------------- */
+table {
+	width: 100%;
+	padding: 0;
+	margin: 8px 0;
+	border-spacing: 0;
+}
+
+/* --- Entete du tableau --- */
+table caption {
+	font-size: 2rem;
+	text-align: left;
+	margin: 5px 0 5px 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+table thead th {
+	padding: 8px;
+	background-color: rgba(0, 0, 0, .5);
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: normal;
+}
+
+/* --- Contenu du tableau --- */
+table tbody td {
+	background-color: rgba(0, 0, 0, .3);
+	border-top: 1px solid rgba(0, 0, 0, .5);
+	border-left: 1px solid rgba(0, 0, 0, .5);
+	padding: 8px;
+	text-align: center;
+}
+
+tr:nth-child(even) td {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+table tbody tr:last-child td {
+	border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+table tbody tr td:last-child {
+	border-right: 1px solid rgba(0, 0, 0, .5);
+}
+
+table tbody tr.no-separator td {
+	border-top: none;
+}
+
+table tbody tr td.no-separator {
+	border-left: none;
+}
+
+table tbody tr td.no-separator:first-child {
+	border-left: 1px solid rgba(0, 0, 0, .5);
+}
+
+/* --- Pied de tableau --- */
+table tfoot tr th {
+	padding: 8px;
+	border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+table tfoot tr th:first-child {
+	border-left: 1px solid rgba(0, 0, 0, .5);
+}
+
+table tfoot tr th:last-child {
+	border-right: 1px solid rgba(0, 0, 0, .5);
+}
+
+table tfoot tr th:only-child {
+	text-align: right;
+}
+
+table tfoot tr th * {
+	vertical-align: middle;
+}
+
+table tfoot tr th select {
+	padding: 2px 5px;
+}
+
+/* --- Patch thead tableaux formates --- */
+table.formatter-table th.formatter-table-head {
+	padding: 8px;
+	background-color: rgba(0, 0, 0, .5);
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: normal;
+}
+
+table.formatter-table th.formatter-table-head p {
+	margin-bottom: 0;
+}
+
+/* --- Taille des colonnes --- */
+.col-smaller { width: 3em;  }
+.col-small   { width: 6em;  }
+.col-large   { width: 9em;  }
+.col-larger  { width: 12em; }
+.col-xlarge  { width: 15em; }
+
+
+/* --- mini tableaux --- */
+table.mini th,
+table.mini td {
+	padding: 3px 1px;
+	font-size: 11px;
+}
+
+table.mini th a,
+table.mini td a {
+	font-size: 11px;
+}
+
+/* --- Pagination footer tableaux --- */
+table tfoot nav.pagination a {
+	text-decoration: none;
+	padding: 3px 3px;
+
+}
+
+table tfoot nav.pagination a span.current-page {
+	text-decoration: none;
+}
+
+/* --- Affichage des tableaux responsive sur les petits ecrans --- */
+@media (max-width: 768px) {
+	table thead th,
+	table tbody td,
+	table tfoot tr th {
+		padding: 4px;
+		font-size: 0.9em;
+	}
+}
+
+
+/* -- Table responsive basictable.js -- */
+/* ------------------------------------ */
+table.bt thead th {
+	display: none;
+}
+
+table.bt thead th:first-child{
+	display: block;
+	border-radius: 0;
+}
+
+@media (min-width:769px){
+	table.bt thead th:first-child {
+		border-radius: 3px 3px 0 0;
+	}
+}
+
+table.bt tbody td {
+	width: 100%;
+	text-align: left;
+	display: block;
+	vertical-align: top;
+	border-right: 1px solid rgba(0, 0, 0, .5);
+}
+
+table.bt tbody td.no-separator {
+	border-left: 1px solid  rgba(0, 0, 0, .5);
+}
+
+table.bt tbody td:before {
+	content: attr(data-th) " ";
+	font-weight: bold;
+	display: inline-block ;
+	width: 35%;
+}
+
+table.bt tbody td.bt-hide {
+	display: none;
+}
+
+table.bt tbody td .bt-content {
+	vertical-align: top;
+	display: inline-block ;
+	padding-left: 6px;
+	max-width: 100%;
+}
+
+table.bt tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table.bt tbody tr:last-child td:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.bt-wrapper.active {
+	max-height: 310px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,383 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background-color: #E8EDF3;
+	color: #555555;
+	font-size: 1.3em;
+	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+	background-color: #000000;
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	position: relative;
+	z-index: 11;
+	margin: auto;
+	max-width: 1080px;
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	position: relative;
+	margin: auto;
+	width: 1080px;
+	height: 40px;
+}
+
+div#sub-header-content{
+	width: 100%;
+	height: 48px;
+	position: absolute;
+	top: -5px;
+	z-index: 10;
+	background-color: rgba(102, 102, 102, 1);
+	background-image: linear-gradient(to bottom,  rgba(102,102,102,1) 0%,rgba(34,34,34,1) 100%);
+	border: 1px solid rgba(34,34,34,1);
+	border-radius: 12px;
+}
+
+#slide-container {
+	margin-top: 2px;
+	overflow: hidden;
+}
+
+#slide-content {
+	margin: auto;
+	max-width: 1650px;
+	max-height: 302px;
+}
+
+.slidesjs-navigation,
+.slidesjs-pagination {
+	display: none !important;
+}
+
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	position: absolute;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 1.5em 0 0 1.5em;
+	max-width: 940px;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url('images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	text-shadow: 1px 1px 10px #000000, -1px -1px 10px #000000, 1px -1px 10px #000000, -1px 1px 10px #000000;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	div#site-name-container {
+		margin: 1em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#wrapper {
+	background-image: url(images/wrapper.png);
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+}
+
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	background-color: #FFFFFF;
+	max-width: 1080px;
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		padding: 0 10px 0 0;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+		width: 200px;
+	}
+
+	aside#menu-left  {
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right {
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+
+	.main-with-left,
+	.main-with-right {
+		width: calc(100% - 200px);
+	}
+
+	.main-with-left.main-with-right {
+		width: calc(100% - 400px);
+	}
+}
+
+div#top-footer {
+	padding: 2% 0;
+}
+
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 0.8em;
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+	padding: 0.1em 0.8em;
+	background-color: #FFFFFF;
+	border: 1px solid #BEBEBE;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+	padding: 0.1em 0.8em;
+	background-color: #FFFFFF;
+	border: 1px solid #BEBEBE;
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+	clear: both;
+	width: 100%;
+	background: #0C0C0C url(images/footer-background.png) repeat-x;
+	min-height: 200px;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1080px;
+	min-height: 200px;
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+	background: url(images/footer-bottom.png) repeat-x;
+}
+
+footer#footer .footer-infos span {
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#compteur {
+	position: absolute;
+	right: 0;
+	margin-right: 15px;
+	font-size: 0.9em;
+	color: #E9ECD9;
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	div#compteur {
+		top: 100px;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	margin: -15px auto 0 auto;
+	max-width: 1080px;
+	height: 55px;
+	background: url(images/header-background.png) repeat-x;
+	border-style: solid;
+	border-width: 0 1px;
+	border-color: #A7A6A6;
+	text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	padding: 25px 0 0 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}
+
+nav#breadcrumb a,
+nav#breadcrumb span {
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* --- Menu TOP --- */
+.gmenu-container {
+	margin: 0 0 0 0;
+	padding: 0 10px 0 10px;
+	min-height: 28px;
+	background-color: #2D2D2D;
+	border-bottom: 1px solid #000000;
+	box-shadow: 0 0px 4px #E5E5E5;
+	color: #FEFEFE;
+}
+
+.gmenu {
+	margin: 0 auto;
+	max-width: 1080px;
+	text-align: center;
+}
