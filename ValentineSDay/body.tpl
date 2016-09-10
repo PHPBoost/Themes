@@ -69,7 +69,7 @@
 
 	<div id="connect-gsm">
 		# IF IS_USER_CONNECTED  #
-            <i class="fa fa-user"></i> <a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> Mon Profil</a> | <i class="fa fa-sign-out"></i> <a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> Se déconnecter</a>
+            <i class="fa fa-user"></i> <a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> Mon Profil</a> | <i class="fa fa-sign-out"></i> <a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> Se dÃ©connecter</a>
 		# ELSE #		
 			<i class="fa fa-sign-out"></i> <a id="C-gsm" href="{PATH_TO_ROOT}/user/login/">Se connecter</a>
 		# ENDIF #	

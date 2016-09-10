@@ -2,7 +2,7 @@
 <html lang="{L_XML_LANGUAGE}">
 	<head>
 		<title>{TITLE}</title>
-		<meta charset="windows-1252" />
+		<meta charset="UTF-8" />
 		# IF C_DESCRIPTION #<meta name="description" content="{SITE_DESCRIPTION}" /># ENDIF #
 		<meta name="generator" content="PHPBoost" />
 		# IF C_CANONICAL_URL #<link rel="canonical" href="{U_CANONICAL}" /># ENDIF #
@@ -47,11 +47,11 @@
 			
 			$(function(){
 				$(window).scroll(
-				function () {						// Au scroll dans la fenetre on déclenche la fonction
+				function () {						// Au scroll dans la fenetre on dÃ©clenche la fonction
 				if ($(this).scrollTop() > 0) {
-				$('#top-header').addClass("fix"); 	//on ajoute la classe "fix" à <div id="top-header">
+				$('#top-header').addClass("fix"); 	//on ajoute la classe "fix" Ã  <div id="top-header">
 				} else {
-				$('#top-header').removeClass("fix");//sinon on retire la classe "fix" à <div id="top-header">
+				$('#top-header').removeClass("fix");//sinon on retire la classe "fix" Ã  <div id="top-header">
 						}
 					}
 				);			 

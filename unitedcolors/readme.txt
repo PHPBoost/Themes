@@ -8,8 +8,8 @@ orange : #DD7430
 rouge : #c43827
 violet : #A769BC
 
-/* --- configuration idéale --- */
+/* --- configuration idÃ©ale --- */
 
-menu principal    => sous-entête / horizontal déroulant
-menu de connexion => entête
+menu principal    => sous-entÃªte / horizontal dÃ©roulant
+menu de connexion => entÃªte
 

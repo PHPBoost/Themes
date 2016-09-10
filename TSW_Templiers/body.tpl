@@ -97,7 +97,7 @@
 	<div id="nav">
 		<ul>
 			<li id="nav_item_accueil"><a class="nav_item_accueil" href="{START_PAGE}"  title="Accueil"></a></li>
-			<li id="nav_item_actualites"><a class="nav_item_actualites" href="http://www.thesecretworld.com/french/gameplay" title="Actualités"></a></li>
+			<li id="nav_item_actualites"><a class="nav_item_actualites" href="http://www.thesecretworld.com/french/gameplay" title="ActualitÃ©s"></a></li>
 			<li id="nav_item_articles"><a class="nav_item_articles" href="#" title="Articles"></a></li>
 			<li id="nav_item_forum" ><a class="nav_item_forum" href="#" title="Forum"></a></li>
 			<li id="nav_item_staff"><a class="nav_item_staff" href="#" title="Le staff"></a></li>
@@ -209,8 +209,8 @@
 		<div class="footer-infos">
 			<span>
 				<p>
-					<br />Site fan non officiel <a href="http://www.thesecretworld.com/french/">"The Secret World"™</a>.
-					&nbsp; Toutes les images, les marques déposées et copyrights sont la propriété de leurs auteurs respectifs. 
+					<br />Site fan non officiel <a href="http://www.thesecretworld.com/french/">"The Secret World"Â™</a>.
+					&nbsp; Toutes les images, les marques dÃ©posÃ©es et copyrights sont la propriÃ©tÃ© de leurs auteurs respectifs. 
 				</p>
 			</span>	
 			<span class="cms">
