@@ -2014,4 +2014,30 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="Game_Team" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Game_Team/Game_Team.zip">Game Team</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Game_Team template</description>
+			<whatsnew>
+				<new type="improvment">First release</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Game_Team/Game_Team.zip">Game Team</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Game_Team</description>
+			<whatsnew>
+				<new type="improvment">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
 </repository>
