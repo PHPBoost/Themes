@@ -1,0 +1,60 @@
+.newsletter-form {
+	margin: 20px 25px 10px 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.newsletter-title {
+	padding: 5px 10px 0 0;
+	font-size: 12px;
+	vertical-align: middle;
+	color: #FFF;
+}
+ 
+div#newsletter { 
+    margin-left: auto;
+    max-width: 322px;
+}
+
+div#newsletter button,
+div#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+    background: #FFF;
+	width: 150px;
+    height: 35px;
+    border-radius: 0px 0 0 0px;
+    font-size: 12px;
+    border: none;
+}
+
+div#newsletter  .input-element-button button {
+    background: #1C2023;
+    height: 35px;
+    margin-left: -5px;
+    border: 2px solid #FFF;
+    border-radius: 0 0px 0px 0;
+    color: #FFF;
+    font-size: 14px;
+    outline: none;
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+}
+
+div#newsletter  .input-element-button button:hover {
+	background: #FFF;
+	color: #000;   
+    outline: none;  
+	-webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+}
