@@ -16,6 +16,7 @@
 				 ::&nbsp;<span>{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>&nbsp;:: &nbsp; Bienvenue sur <a id="wellcome-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a> !
 				# ENDIF #
 			</div>
+			
 			<div id="site-infos">
 				<div id="site-logo" # IF C_HEADER_LOGO #style="background: url('{HEADER_LOGO}') no-repeat;"# ENDIF #></div>
 				<div id="site-name-container">
@@ -46,7 +47,7 @@
 
 		
 			<div id="silverbarnav">
-				<a href="./index.php" class="silverbar"><i class="fa fa-home"></i> Accueil</a>
+				<a href="{PATH_TO_ROOT}/index.php" class="silverbar"><i class="fa fa-home"></i> Accueil</a>
 				<a href="{PATH_TO_ROOT}/news/index.php" class="silverbar"><i class="fa fa-newspaper-o"></i> News</a>
 				<a href="{PATH_TO_ROOT}/articles/index.php" class="silverbar"><i class="fa fa-rss"></i> Blog</a>
 				<a href="{PATH_TO_ROOT}/wiki/wiki.php" class="silverbar"><i class="fa fa-file-text-o"></i> Tutoriels</a>
@@ -59,7 +60,7 @@
 
 		<div id="sub-header">
 			<section id="Motto">
-				<div id="menu-title">Nenu principal</div>
+				<div id="menu-title">Menu principal</div>
 				<nav  class="nav">
 						<ul class="nav-list">
 							<li class="nav-item">
