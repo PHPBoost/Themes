@@ -13,7 +13,7 @@
 			<description>Version 3.3 blogbooster theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="2.3" language="english" localized_language="English" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
@@ -36,7 +36,7 @@
 			<description>Version 3.3 du theme blogbooster</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 		<version num="2.3" language="french" localized_language="Francais" name="blogbooster" priority="low" security-update="false" pubdate="2013/08/26">
@@ -60,7 +60,7 @@
 			</authors>
 			<description>Version 1.3 dojo theme</description>
 			<whatsnew>
-				<new type="feature">Changing no_avatar.png, theme.jpg and new design for forum</new>
+				<new type="improvement">Changing no_avatar.png, theme.jpg and new design for forum</new>
 			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="dojo" priority="low" security-update="false" pubdate="2013/08/26">
@@ -71,7 +71,7 @@
 			</authors>
 			<description>Version 1.3 du theme dojo</description>
 			<whatsnew>
-				<new type="feature">Modification des images no_avatar.png, theme.jpg and nouveau design pour le forum</new>
+				<new type="improvement">Modification des images no_avatar.png, theme.jpg and nouveau design pour le forum</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -96,7 +96,7 @@
 			<description>Version 1.2 Valley theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="Valley" priority="low" security-update="false" pubdate="2015/05/10">
@@ -119,7 +119,7 @@
 			<description>Version 1.2 du theme Valley</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -144,7 +144,7 @@
 			<description>Version 1.1 Lanzarote theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Lanzarote" priority="low" security-update="false" pubdate="2015/05/10">
@@ -167,7 +167,7 @@
 			<description>Version 1.1 du theme Lanzarote</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -180,7 +180,7 @@
 			</authors>
 			<description>Version 2.0.3 United Colors theme</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.0.3" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2016/04/30">
@@ -191,7 +191,7 @@
 			</authors>
 			<description>Version 2.0.3 du theme United Colors</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="english" localized_language="English" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
@@ -214,7 +214,7 @@
 			<description>Version 1.3 United Colors theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="United Colors" priority="low" security-update="false" pubdate="2015/05/10">
@@ -237,7 +237,7 @@
 			<description>Version 1.3 du theme United Colors</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -262,7 +262,7 @@
 			<description>Version 1.1 Iceland theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="Iceland" priority="low" security-update="false" pubdate="2015/05/10">
@@ -285,7 +285,7 @@
 			<description>Version 1.1 du theme Iceland</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -324,7 +324,7 @@
 			</authors>
 			<description>Version 2.0 Just Play for FuN theme</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost V5.0</new>
+				<new type="improvement">Compatibility with PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
@@ -347,7 +347,7 @@
 			<description>Version 1.3 Just Play for FuN theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="2.0" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2016/07/16">
@@ -358,7 +358,7 @@
 			</authors>
 			<description>Version 2.0 du theme Just Play for FuN</description>
 			<whatsnew>
-				<new type="feature">Compatibilité avec PHPBoost V5.0</new>
+				<new type="improvement">Compatibilité avec PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
@@ -381,7 +381,7 @@
 			<description>Version 1.3 du theme Just Play for FuN</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -418,7 +418,7 @@
 			</authors>
 			<description>Version 3.0.3 Underline theme for PBT 5.0</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="3.0.3" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2016/04/30">
@@ -429,7 +429,7 @@
 			</authors>
 			<description>Version 3.0.3 du theme Underline compatible avec la version 5.0 de PHPBoost</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
@@ -440,7 +440,7 @@
 			</authors>
 			<description>Version 2.6 Underline theme for PBT 4.1</description>
 			<whatsnew>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="underline" priority="low" security-update="false" pubdate="2015/04/23">
@@ -451,7 +451,7 @@
 			</authors>
 			<description>Version 2.6 du theme Underline compatible avec la version 4.1 de PHPBoost</description>
 			<whatsnew>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 		<version num="1.7" language="english" localized_language="English" name="underline" priority="low" security-update="false" pubdate="2013/08/26">
@@ -489,7 +489,7 @@
 			</authors>
 			<description>Version 4.0.3 Cameleon theme</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="4.0.3" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/30">
@@ -502,7 +502,7 @@
 			</authors>
 			<description>Version 4.0.3 du theme Cameleon</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
@@ -515,7 +515,7 @@
 			<description>Version 2.2 Cameleon theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
@@ -528,7 +528,7 @@
 			<description>Version 2.2 du theme Cameleon</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
@@ -613,7 +613,7 @@
 			</authors>
 			<description>Version 2.6 Around_the_world theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
@@ -624,7 +624,7 @@
 			</authors>
 			<description>Version 2.6 du theme Around_the_world</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "recherche mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "recherche mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -639,7 +639,7 @@
 			</authors>
 			<description>Version 4.0.3 Summerday theme</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="4.0.3" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2016/04/30">
@@ -651,7 +651,7 @@
 			</authors>
 			<description>Version 4.0.3 du theme Summerday</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="3.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
@@ -685,7 +685,7 @@
 			<description>Version 3.2 Summerday theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="3.2" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2015/04/23">
@@ -697,7 +697,7 @@
 			<description>Version 3.2 du theme Summerday</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
@@ -708,7 +708,7 @@
 			</authors>
 			<description>Version 2.6 Summerday theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="2.6" language="french" localized_language="Francais" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
@@ -719,7 +719,7 @@
 			</authors>
 			<description>Version 2.6 du theme Summerday</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "recherche mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "recherche mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -734,7 +734,7 @@
 			</authors>
 			<description>Version 5.0 Japanese_Traditions theme</description>
 			<whatsnew>
-				<new type="feature">Update for PHPBoost 5.0</new>
+				<new type="improvement">Update for PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2016/08/07">
@@ -746,7 +746,7 @@
 			</authors>
 			<description>Version 5.0 du theme Japanese_Traditions</description>
 			<whatsnew>
-				<new type="feature">Mise à jour pour PHPBoost 5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
@@ -757,7 +757,7 @@
 			</authors>
 			<description>Version 2.2 Japanese_Traditions theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="french" localized_language="Francais" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
@@ -768,7 +768,7 @@
 			</authors>
 			<description>Version 2.2 du theme Japanese_Traditions</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -782,7 +782,7 @@
 			</authors>
 			<description>Version 5.0 Japanese_Traditions XL theme</description>
 			<whatsnew>
-				<new type="feature">Update for PHPBoost 5.0</new>
+				<new type="improvement">Update for PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="JapaneseTraditionsXL" priority="low" security-update="false" pubdate="2016/08/10">
@@ -794,7 +794,7 @@
 			</authors>
 			<description>Version 5.0 du theme Japanese_Traditions XL</description>
 			<whatsnew>
-				<new type="feature">Mise à jour pour PHPBoost 5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -808,7 +808,7 @@
 			</authors>
 			<description>Version 1.1 fantasy theme</description>
 			<whatsnew>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Fantasy" priority="low" security-update="false" pubdate="2015/04/23">
@@ -819,7 +819,7 @@
 			</authors>
 			<description>Version 1.1 du theme Fantasy</description>
 			<whatsnew>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -833,7 +833,7 @@
 			</authors>
 			<description>Version 1.3 ActiWeb2.0 theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais"
@@ -845,7 +845,7 @@
 			</authors>
 			<description>Version 1.3 du theme ActiWeb2.0</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -859,7 +859,7 @@
 			</authors>
 			<description>Version 2.1 ActiWeb3.0 theme</description>
 			<whatsnew>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.2" language="english" localized_language="English" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
@@ -870,7 +870,7 @@
 			</authors>
 			<description>Version 1.2 ActiWeb3.0 theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="2.1" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2015/04/23">
@@ -882,7 +882,7 @@
 			</authors>
 			<description>Version 2.1 du theme ActiWeb3.0</description>
 			<whatsnew>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 		<version num="1.2" language="french" localized_language="Francais" name="ActiWeb3.0" priority="low" security-update="false" pubdate="2013/08/26">
@@ -893,7 +893,7 @@
 			</authors>
 			<description>Version 1.2 du theme ActiWeb3.0</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -906,7 +906,7 @@
 			</authors>
 			<description>Version 1.3 WhiteWeb 2.0 theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="1.3" language="french" localized_language="Francais" name="WhiteWeb 2.0" priority="low" security-update="false" pubdate="2013/08/26">
@@ -917,7 +917,7 @@
 			</authors>
 			<description>Version 1.3 du theme WhiteWeb 2.0</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -932,7 +932,7 @@
 			</authors>
 			<description>Version 2.0.3 of Vertigo template</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.0.3" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/30">
@@ -944,7 +944,7 @@
 			</authors>
 			<description>Version 2.0.3 du theme Vertigo</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="1.1" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
@@ -955,7 +955,7 @@
 			</authors>
 			<description>Version 1.1 of Vertigo template</description>
 			<whatsnew>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="1.1" language="french" localized_language="Francais" name="Vertigo" priority="low" security-update="false" pubdate="2015/04/23">
@@ -966,7 +966,7 @@
 			</authors>
 			<description>Version 1.1 du theme Vertigo</description>
 			<whatsnew>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -979,7 +979,7 @@
 				<author name="schyzo" email="mx.koder@gmail.com" /></authors>
 			<description>Version 1.5 lorem theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new></whatsnew>
+				<new type="improvement">Add update fonction</new></whatsnew>
 		</version>
 		<version num="1.5" language="french" localized_language="Francais" name="lorem" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
@@ -989,7 +989,7 @@
 			</authors>
 			<description>Version 1.5 du theme lorem</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1003,7 +1003,7 @@
 			</authors>
 			<description>Version 1.6 steel_blue theme</description>
 			<whatsnew>
-				<new type="feature">Add update fonction</new>
+				<new type="improvement">Add update fonction</new>
 			</whatsnew>
 		</version>
 		<version num="1.6" language="french" localized_language="Francais" name="Steel Blue" priority="low" security-update="false" pubdate="2013/08/26">
@@ -1015,7 +1015,7 @@
 			</authors>
 			<description>Version 1.6 du theme steel_blue</description>
 			<whatsnew>
-				<new type="feature">Ajout de la fonction "mise a jour"</new>
+				<new type="improvement">Ajout de la fonction "mise a jour"</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1030,7 +1030,7 @@
 			</authors>
 			<description>Version 3.0.3 oxygen theme</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="3.0.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
@@ -1042,7 +1042,7 @@
 			</authors>
 			<description>Version 3.0.3 oxygen theme</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
@@ -1079,7 +1079,7 @@
 			<description>Version 2.3 oxygen theme</description>
 			<whatsnew>
 				<new type="bug">Fix tpl module connect</new>
-				<new type="feature">Change repository link</new>
+				<new type="improvement">Change repository link</new>
 			</whatsnew>
 		</version>
 		<version num="2.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
@@ -1092,7 +1092,7 @@
 			<description>Version 2.3 du theme oxygen</description>
 			<whatsnew>
 				<new type="bug">Correction du tpl du module connect</new>
-				<new type="feature">Changement du lien de repository</new>
+				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
@@ -1229,7 +1229,7 @@
 			</authors>
 			<description>Version 5.0.4 Multi_Theme template</description>
 			<whatsnew>
-				<new type="feature">Add Flexbox</new>
+				<new type="improvement">Add Flexbox</new>
 				<new type="bug">Fix slider JS smallscreen</new>
 				<new type="bug">Remove chevrom smallscreen</new>
 				<new type="bug">Two menu columns</new>
@@ -1243,7 +1243,7 @@
 			</authors>
 			<description>Version 5.0.4 du theme Multi_Theme</description>
 			<whatsnew>
-				<new type="feature">Ajout des flexbox</new>
+				<new type="improvement">Ajout des flexbox</new>
 				<new type="bug">Correction du slider JS smallscreen</new>
 				<new type="bug">Suppression des chevrons en format gsm</new>
 				<new type="bug"> 2 colonne de menu</new>
@@ -1307,7 +1307,7 @@
 			</authors>
 			<description>Version 5.0.1 TSW_Dragon template</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Dragon" priority="low" security-update="false" pubdate="2016/04/30">
@@ -1318,7 +1318,7 @@
 			</authors>
 			<description>Version 5.0.1 du theme TSW_Dragon</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1331,7 +1331,7 @@
 			</authors>
 			<description>Version 5.0.1 TSW_Illuminati template</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Illuminati" priority="low" security-update="false" pubdate="2016/04/30">
@@ -1342,7 +1342,7 @@
 			</authors>
 			<description>Version 5.0.1 du theme TSW_Illuminati</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1355,7 +1355,7 @@
 			</authors>
 			<description>Version 5.0.1 TSW_Templiers template</description>
 			<whatsnew>
-				<new type="feature">Compatibility with PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.1" language="french" localized_language="Francais" name="TSW_Templiers" priority="low" security-update="false" pubdate="2016/04/30">
@@ -1366,7 +1366,7 @@
 			</authors>
 			<description>Version 5.0.1 du theme TSW_Templiers</description>
 			<whatsnew>
-				<new type="feature">Compatibilite avec PHPBoost 5.0.4</new>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1403,7 +1403,7 @@
 			</authors>
 			<description>Version 5.0.0 ValentineSDay template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="ValentineSDay" priority="low" security-update="false" pubdate="2016/07/31">
@@ -1414,7 +1414,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ValentineSDay</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1427,7 +1427,7 @@
 			</authors>
 			<description>Version 5.0.0 ApresMidiDete template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="ApresMidiDete" priority="low" security-update="false" pubdate="2016/07/31">
@@ -1438,7 +1438,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ApresMidiDete</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1451,7 +1451,7 @@
 			</authors>
 			<description>Version 5.0.0 HeureDhiver template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="HeureDhiver" priority="low" security-update="false" pubdate="2016/07/31">
@@ -1462,7 +1462,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme HeureDhiver</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1475,7 +1475,7 @@
 			</authors>
 			<description>Version 5.0.0 MatinDePrintemps template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="MatinDePrintemps" priority="low" security-update="false" pubdate="2016/07/31">
@@ -1486,7 +1486,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MatinDePrintemps</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1499,7 +1499,7 @@
 			</authors>
 			<description>Version 5.0.0 SoirdAutomne template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="SoirdAutomne" priority="low" security-update="false" pubdate="2016/07/31">
@@ -1510,7 +1510,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SoirdAutomne</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1523,7 +1523,7 @@
 			</authors>
 			<description>Version 5.0.0 SimplyBlackSmall template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyBlackSmall" priority="low" security-update="false" pubdate="2016/08/07">
@@ -1534,7 +1534,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyBlackSmall</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1547,7 +1547,7 @@
 			</authors>
 			<description>Version 5.0.0 SimplyBlackXL template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyBlackXL" priority="low" security-update="false" pubdate="2016/08/07">
@@ -1558,7 +1558,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyBlackXL</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1571,7 +1571,7 @@
 			</authors>
 			<description>Version 5.0.0 SimplyWhiteSmall template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyWhiteSmall" priority="low" security-update="false" pubdate="2016/08/07">
@@ -1582,7 +1582,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyWhiteSmall</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1595,7 +1595,7 @@
 			</authors>
 			<description>Version 5.0.0 SimplyWhiteXL template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="SimplyWhiteXL" priority="low" security-update="false" pubdate="2016/08/07">
@@ -1606,7 +1606,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyWhiteXL</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1619,7 +1619,7 @@
 			</authors>
 			<description>Version 5.0.0 1erMai template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="1erMai" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1630,7 +1630,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme 1erMai</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1643,7 +1643,7 @@
 			</authors>
 			<description>Version 5.0.0 Bamboo template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Bamboo" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1654,7 +1654,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Bamboo</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1667,7 +1667,7 @@
 			</authors>
 			<description>Version 5.0.0 BlackSwan template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="BlackSwan" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1678,7 +1678,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlackSwan</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1691,7 +1691,7 @@
 			</authors>
 			<description>Version 5.0.0 Coqueline template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Coqueline" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1702,7 +1702,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Coqueline</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1715,7 +1715,7 @@
 			</authors>
 			<description>Version 5.0.0 Coqueline_Rose template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Coqueline_Rose" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1726,7 +1726,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Coqueline_Rose</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1739,7 +1739,7 @@
 			</authors>
 			<description>Version 5.0.0 KoiFish template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="KoiFish" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1750,7 +1750,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme KoiFish</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1763,7 +1763,7 @@
 			</authors>
 			<description>Version 5.0.0 Mariage template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Mariage" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1774,7 +1774,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Mariage</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1787,7 +1787,7 @@
 			</authors>
 			<description>Version 5.0.0 MyLove template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="MyLove" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1798,7 +1798,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MyLove</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1811,7 +1811,7 @@
 			</authors>
 			<description>Version 5.0.0 MyLoving template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="MyLoving" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1822,7 +1822,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MyLoving</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1835,7 +1835,7 @@
 			</authors>
 			<description>Version 5.0.0 Rosane template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Rosane" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1846,7 +1846,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Rosane</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1859,7 +1859,7 @@
 			</authors>
 			<description>Version 5.0.0 Rosina template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Rosina" priority="low" security-update="false" pubdate="2016/08/09">
@@ -1870,7 +1870,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Rosina</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1883,7 +1883,7 @@
 			</authors>
 			<description>Version 5.0.0 JapanMangaXL template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="JapanMangaXL" priority="low" security-update="false" pubdate="2016/09/08">
@@ -1894,7 +1894,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme JapanMangaXL</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1907,7 +1907,7 @@
 			</authors>
 			<description>Version 5.0.0 ScoopOldPost template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="ScoopOldPost" priority="low" security-update="false" pubdate="2016/09/08">
@@ -1918,7 +1918,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ScoopOldPost</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1931,7 +1931,7 @@
 			</authors>
 			<description>Version 5.0.0 TravelToThePast template</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="improvement">First Revision</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="TravelToThePast" priority="low" security-update="false" pubdate="2016/10/12">
@@ -1942,7 +1942,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme TravelToThePast</description>
 			<whatsnew>
-				<new type="feature">première version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1981,7 +1981,7 @@
 			</authors>
 			<description>Version 5.0.2 Gaming Blue template</description>
 			<whatsnew>
-				<new type="feature">Add tag-list</new>
+				<new type="improvement">Add tag-list</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/10/12">
@@ -1992,7 +1992,7 @@
 			</authors>
 			<description>Version 5.0.2 du theme Gaming Blue</description>
 			<whatsnew>
-				<new type="feature">Prise en compte du tag top-list</new>
+				<new type="improvement">Prise en compte du tag top-list</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2005,7 +2005,7 @@
 			</authors>
 			<description>Version 5.0.2 Gaming Green template</description>
 			<whatsnew>
-				<new type="feature">Add tag-list</new>
+				<new type="improvement">Add tag-list</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Green" priority="low" security-update="false" pubdate="2016/10/12">
@@ -2016,7 +2016,7 @@
 			</authors>
 			<description>Version 5.0.2 du theme Gaming Green</description>
 			<whatsnew>
-				<new type="feature">Prise en compte du tag top-list</new>
+				<new type="improvement">Prise en compte du tag top-list</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2029,7 +2029,7 @@
 			</authors>
 			<description>Version 5.0.2 Gaming Red template</description>
 			<whatsnew>
-				<new type="feature">Add tag-list</new>
+				<new type="improvement">Add tag-list</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Red" priority="low" security-update="false" pubdate="2016/10/12">
@@ -2040,7 +2040,7 @@
 			</authors>
 			<description>Version 5.0.2 du theme Gaming Red</description>
 			<whatsnew>
-				<new type="feature">Prise en compte du tag top-list</new>
+				<new type="improvement">Prise en compte du tag top-list</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2054,7 +2054,7 @@
 			</authors>
 			<description>Version 5.0.0 Game_Team template</description>
 			<whatsnew>
-				<new type="feature">First release</new>
+				<new type="improvement">First release</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
@@ -2066,7 +2066,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Game_Team</description>
 			<whatsnew>
-				<new type="feature">Première version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2080,7 +2080,7 @@
 			</authors>
 			<description>Version 5.0.0 minecraftien template</description>
 			<whatsnew>
-				<new type="feature">First release</new>
+				<new type="improvement">First release</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/10/12">
@@ -2092,7 +2092,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme minecraftien</description>
 			<whatsnew>
-				<new type="feature">Première version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
