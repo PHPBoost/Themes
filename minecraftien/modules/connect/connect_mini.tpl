@@ -111,9 +111,9 @@
 	# IF C_USER_NOTCONNECTED #
 	<nav id="cssmenu-015" class="cssmenu">
 				<ul class="level-0">
-				<li><a href="/user/login/" title="" class="cssmenu-title">Se connecter</a></li>
+				<li><a href="${relative_url(UserUrlBuilder::connect())}" title="" class="cssmenu-title">Se connecter</a></li>
 				# IF C_USER_REGISTER #
-				<li><a href="/user/registration/" title="" class="cssmenu-title">{L_REGISTER}</a></li>
+				<li><a href="${relative_url(UserUrlBuilder::registration())}" title="" class="cssmenu-title">{L_REGISTER}</a></li>
 					
 					# IF C_FB_AUTH_ENABLED #
 					<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
