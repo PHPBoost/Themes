@@ -255,60 +255,61 @@ td.calendar-week {
 }
 
 /* --- les blocs de quote, de code ou caches --- */
-.formatter-hide,
-.formatter-code,
-.formatter-blockquote {
+.formatter-container {
+	position: relative;
 	display: block;
 	margin: auto;
-	padding: 2px 0;
 	width: 93%;
+	color: #444444;
+}
+
+.formatter-content-title {
 	font-weight: bold;
 }
 
-.hide,
-.code,
-.blockquote {
-	margin: 0 25px;
+.formatter-content {
+	margin: 0;
 	padding: 8px;
 	max-height: 500px;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
-	border-radius: 3px;
 	overflow: auto;
-	color: #444444;
 }
 
-.blockquote {
-	position: relative;
-	padding: 8px 8px 8px 40px;
-	border-width: 1px 1px 1px 8px;
-}
-
-.blockquote:before {
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 2em;
-	position: absolute;
-	left: 6px;
-	width: 28px;
-	text-align: center;
-	content: "\f10e";
-	color: #DDDDDD;
-}
-
-.hide {
+.formatter-hide .formatter-content {
 	height: 10px;
 	overflow: hidden;
-	cursor: pointer;
+	visibility: hidden;
 }
 
-.hide2 {
-	visibility: hidden;
+.formatter-show .formatter-content {
+	height: auto;
 	overflow: auto;
+	visibility: visible;
+}
+
+.formatter-hide .hide-message {
+	display: block;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.8em;
+	color: #BBBBBB;
+	padding: 4px 8px;
+	width: 100%;
+	margin: -20px auto 0 auto;
+	background-color: #FDFDFD;
+	border: 1px solid #EEEEEE;
+}
+
+.formatter-show .hide-message {
+	display: none;
+}
+
+.copy-code {
+	float: right;
+	padding: 4px 4px;
+	color: #999999;
+	cursor: copy;
 }
 
 /* --- les autres element bbcode --- */

@@ -30,7 +30,7 @@ div.calendar-top-r {
 	padding: 1px 25px 0px 0px;
 }
 
-/* Affichage des Ã©venements */
+/* Affichage des évenements */
 div.event-display-author {
 	font-size: 0.8em;
 	float: left;
@@ -46,16 +46,16 @@ div.event-display-dates {
 	width: 180px;
 }
 
-/* ParticularitÃ© du tableau du calendrier */
+/* Particularité du tableau du calendrier */
 
-/* CSS applique aux Ã©crans PC */
+/* CSS applique aux écrans PC */
 @media ( min-width: 769px ) {
 	#module-calendar table.calendar-table tbody tr td {
 		height: 40px;
 	}
 }
 
-/* Couleur des diffÃ©rents Ã©venements */
+/* Couleur des différents évenements */
 table tbody tr td.calendar-none    { background: #FFFFFF none repeat scroll 0 0; }
 table tbody tr td.calendar-today   { background: #B5E5B9 none repeat scroll 0 0; }
 table tbody tr td.calendar-other   { background: #F1F1F1 none repeat scroll 0 0; }
@@ -66,7 +66,7 @@ table tbody tr td.calendar-weekend { background: #D6D6D6 none repeat scroll 0 0;
 	width: 8%;
 }
 
-/* Affichage de du titre de l'Ã©venement dans le tableau de l'administration */
+/* Affichage de du titre de l'évenement dans le tableau de l'administration */
 table tbody tr th.column-title {
 	width: 28%;
 }

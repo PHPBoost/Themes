@@ -49,11 +49,7 @@ margin:50px auto auto;
 /* --- Partie superieure du header --- */
 
 div#top-header {
-	flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	-webkit-flex: 1 1 auto;
     background: transparent url('images/header.png') no-repeat scroll center 0;
-	height:28px;
 	min-height: 365px;
 	max-width: 1005px;
 	margin: auto;
@@ -62,20 +58,6 @@ div#top-header {
 
 div#top-header-content{
 	float: right;
-}
-
-@media (max-width: 768px) {
-	div#top-header {
-		flex-direction: column;
-		-ms-flex-direction: column;
-		-webkit-flex-direction: column;
-	}
-	
-	div#top-header-content {
-		align-self: flex-end;
-		-ms-align-self: flex-end;
-		-webkit-align-self: flex-end;
-	}
 }
 /* --- paramètres slideshow --- 
 * base : https://codepen.io/SitePoint/pen/YqmjRj/
@@ -209,12 +191,6 @@ span#site-slogan {
 /* -- Conteneur global du site --
 --------------------------------------*/
 div#global {
-	display: flex;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	flex-direction: column;
-	-ms-flex-direction: column;
-	-webkit-flex-direction: column;
     margin: auto;
     max-width: 1005px;
 }
@@ -223,72 +199,15 @@ div#sous-global {
 	margin: auto;
 	padding: 0 10px;
 }
-
 aside#menu-left,
 aside#menu-right {
-	width: 100%;
+    width: auto;
 }
 
-aside#menu-left  {
-	order : 2;
-	-ms-flex-order: 2;
-	-webkit-flex-order: 2;
-}
-aside#menu-right {
-	order : 3;
-	-ms-flex-order: 3;
-	-webkit-flex-order: 3;
-}
 #main {
-	order : 1;
-	-ms-flex-order: 1;
-	-webkit-flex-order: 1;
    width: auto;
 }
-@media (min-width: 769px) {
-	div#global {
-		min-height: 100vh;
-		flex-direction: row;
-		-ms-flex-direction: row;
-		-webkit-flex-direction: row;
-	}
 
-	div#main {
-		padding: 0 5px;
-		order : 2;
-		-ms-flex-order: 2;
-		-webkit-flex-order: 2;
-		flex: 1 0 auto;
-		-ms-flex: 1 0 100%;
-	}
-
-	aside#menu-left,
-	aside#menu-right {
-    	width: 180px;
-	}
-
-	aside#menu-left  { 
-		order : 1;
-		-ms-flex-order: 1;
-		-webkit-flex-order: 1;
-	}
-	aside#menu-right { 
-		order : 3;
-		-ms-flex-order: 3;
-		-webkit-flex-order: 3;
-	}
-	
-	#main.main-with-left,
-	#main.main-with-right {
-		width: calc(100% - 200px);
-		-ms-flex: 1 0 auto; /*Tricks IE*/
-	}
-	
-	#main.main-with-left.main-with-right {
-		width: calc(100% - 360px);
-		-ms-flex: 1 0 auto; /*Tricks IE*/
-	}
-}
 /* -- Contenu de la page --
 --------------------------------------*/
 /* --- Contenu central --- */
@@ -303,11 +222,6 @@ div#top-content {
 
 div#bottom-content {
 	margin: 2% 0 0 0;
-}
-/* --- Emplacement au dessus du pied de page --- */
-div#bottom-content {
-	margin: 2% 0 0 0;
-	padding: 0.1em 0.8em;
 }
 
 /* --- Emplacement au dessus du pied de page --- */
@@ -351,12 +265,12 @@ footer#footer .footer-infos span {
 /* --- Compteur de visite --- */
 div#compteur {
     color: #445766;
-    float: left;
     font-size: 0.9em;
-    height: 28px;
+    margin-right: 15px;
     padding-left: 10px;
     padding-top: 8px;
-    text-align: left;
+    position: absolute;
+    text-align: right;
 }
 
 /* --- Barre d'outils --- */
@@ -610,7 +524,7 @@ div#gobottom a {
 	}
 
 	div#main.main-with-left.main-with-right {
-		width: 48%;
+		width: 60%;
 	}
 
 }
@@ -624,13 +538,11 @@ div#gobottom a {
 		background:none;
 		margin: auto;
 		max-width: auto;
-		/*min-height: auto;*/
+		min-height: auto;
 		overflow: hidden;
 	}
-
 	div#compteur,
 	div#site-infos,
-	a.prev, a.next,
 	div#top-header-content,
 	div#slider{display: none;}
 	

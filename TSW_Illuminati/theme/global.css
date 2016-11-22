@@ -281,34 +281,61 @@ hr { background: #222222 none repeat scroll 0 0;}
 }
 
 /* --- les blocs de quote, de code ou caches --- */
-.formatter-blockquote, .formatter-code, .formatter-hide {
+.formatter-container {
+	position: relative;
 	display: block;
-	width: 93%;
-	padding: 2px 0px;
-	font-weight: bold;
 	margin: auto;
-}
-
-.blockquote, .code, .hide {
-	overflow: auto;
-	max-height: 500px;
-	background: #eeeeee;
-	border: 1px solid #DDDDDD;
-	border-radius: 3px;
+	width: 93%;
 	color: #444444;
-	padding: 8px;
-	margin: 0px 25px;
 }
 
-.hide {
-	cursor: pointer;
+.formatter-content-title {
+	font-weight: bold;
+}
+
+.formatter-content {
+	margin: 0;
+	padding: 8px;
+	max-height: 500px;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+	overflow: auto;
+}
+
+.formatter-hide .formatter-content {
 	height: 10px;
 	overflow: hidden;
+	visibility: hidden;
 }
 
-.hide2 {
-	visibility: hidden;
+.formatter-show .formatter-content {
+	height: auto;
 	overflow: auto;
+	visibility: visible;
+}
+
+.formatter-hide .hide-message {
+	display: block;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.8em;
+	color: #BBBBBB;
+	padding: 4px 8px;
+	width: 100%;
+	margin: -20px auto 0 auto;
+	background-color: #FDFDFD;
+	border: 1px solid #EEEEEE;
+}
+
+.formatter-show .hide-message {
+	display: none;
+}
+
+.copy-code {
+	float: right;
+	padding: 4px 4px;
+	color: #999999;
+	cursor: copy;
 }
 
 /* --- les autres element bbcode --- */

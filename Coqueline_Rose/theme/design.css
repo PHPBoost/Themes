@@ -355,17 +355,13 @@ footer#footer .footer-infos span {
 div#compteur {
 	position: absolute;
 	right: 0;
-	margin-right: 15px;
+	bottom : 1em;
+	margin-right: 10px;
 	font-size: 0.9em;
-	color: #E9ECD9;
+	color: #F9FCFF;
 	text-align: right;
 }
 
-@media (min-width: 769px) {
-	div#compteur {
-		top: 100px;
-	}
-}
 
 /* --- Barre de lien rapide --- */
 nav#breadcrumb {
@@ -465,5 +461,45 @@ nav#breadcrumb ol li:not(.current):after {
 	div#header-gsm{display: none;}
 }
 
+/* --- Scroll to Top --- */
+.scroll-to {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	background-color: rgba(15, 15, 16, 0.8);
+}
 
+#scroll-to-top {
+	right: 25px;
+	bottom: 0;
+	padding: 2px 11px 3px 10px;
+	transition: 0.2s;
+}
 
+.scroll-to i {
+	color: rgba(255, 255, 255, 0.8);
+	transition: 0.2s;
+}
+
+.scroll-to:hover i {
+	color: rgba(255, 255, 255, 1);
+	transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 25px;
+		padding: 9px 11px 11px 10px;
+	}
+
+	.scroll-to i {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
+}

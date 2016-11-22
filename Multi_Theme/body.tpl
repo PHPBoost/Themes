@@ -11,12 +11,21 @@
 		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 		</div>
 		<div id="top-header">
-			<div id="compteur">
-				# IF C_COMPTEUR #
-				 ::&nbsp;<span>{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>&nbsp;:: &nbsp; Bienvenue sur <a id="wellcome-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a> !
-				# ENDIF #
+			# IF C_COMPTEUR #
+			<div id="compteur" class="hidden-small-screens">
+				::&nbsp;
+				<div class="compteur-total">
+					<span class="text-strong">{L_VISIT} : </span>
+					{COMPTEUR_TOTAL}
+				</div>
+				&nbsp;-&nbsp;
+				<div class="compteur-today">
+					<span class="text-strong">{L_TODAY} : </span>
+					{COMPTEUR_DAY}
+				</div>
+				&nbsp;:: &nbsp; Bienvenue sur <a id="wellcome-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a> !
 			</div>
-			
+			# ENDIF #
 			<div id="site-infos">
 				<div id="site-logo" # IF C_HEADER_LOGO #style="background: url('{HEADER_LOGO}') no-repeat;"# ENDIF #></div>
 				<div id="site-name-container">
@@ -47,7 +56,7 @@
 
 		
 			<div id="silverbarnav">
-				<a href="{PATH_TO_ROOT}/index.php" class="silverbar"><i class="fa fa-home"></i> Accueil</a>
+				<a href="./index.php" class="silverbar"><i class="fa fa-home"></i> Accueil</a>
 				<a href="{PATH_TO_ROOT}/news/index.php" class="silverbar"><i class="fa fa-newspaper-o"></i> News</a>
 				<a href="{PATH_TO_ROOT}/articles/index.php" class="silverbar"><i class="fa fa-rss"></i> Blog</a>
 				<a href="{PATH_TO_ROOT}/wiki/wiki.php" class="silverbar"><i class="fa fa-file-text-o"></i> Tutoriels</a>
@@ -60,7 +69,7 @@
 
 		<div id="sub-header">
 			<section id="Motto">
-				<div id="menu-title">Menu principal</div>
+				<div id="menu-title">Nenu principal</div>
 				<nav  class="nav">
 						<ul class="nav-list">
 							<li class="nav-item">

@@ -296,12 +296,12 @@ text-align:center;
 --------------------------------------*/
 /* --- Compteur de visite --- */
 div#compteur {
-	color: #E9ECD9;
 	position: absolute;
-	top: 50px;
-	right: 0px;
+	right: 0;
+	bottom : 1em;
+	margin-right: 10px;
 	font-size: 0.9em;
-	margin-right: 15px;
+	color: #F9FCFF;
 	text-align: right;
 }
 

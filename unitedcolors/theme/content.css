@@ -7,10 +7,7 @@ Contient les elements :
  - gestion des categories,
  - mini-module,
  - message postes,
- - profile user,
- - maintenance,
- - contribution,
- - erreur 403/404.
+ - maintenance.
 -----------------------------------------*/
 
 
@@ -754,33 +751,6 @@ i.message-announce-new {
 }
 
 
-/* -- Profile User -- */
-/* ------------------ */
-ul#profile-container {
-	width: 99%;
-	margin: 30px auto;
-	list-style-type: none;
-}
-
-ul#profile-container li {
-	margin-right: 2px;
-	padding: 10px;
-	text-align: center;
-}
-
-.preview-img {
-	vertical-align: top;
-	max-height: 180px;
-}
-
-.user-agreement {
-	max-width: none;
-	width: 90%;
-	max-height: 250px;
-	overflow-y: auto;
-}
-
-
 /* -- Le maintenance -- */ 
 /* -------------------- */
 #maintain {
@@ -810,105 +780,4 @@ div#message-maintain > div {
 
 div#release {
 	margin-top: 20px;
-}
-
-
-
-/* -- Contribution -- */ 
-/* ------------------ */
-#module-user-contribution-list hr {
-	margin: 20px 0;
-}
-
-.module-contribution-element {
-	float: left;
-	text-align: center;
-	margin: 20px 0px;
-}
-
-.unprocessed-contribution {
-	text-align: center;
-	margin: auto;
-	width: 300px;
-	overflow: hidden;
-}
-
-.unprocessed-contribution div {
-	float: left;
-	width: 50%;
-}
-
-#module-user-moderation-panel .content {
-	padding-bottom: 75px;
-}
-
-#module-user-moderation-panel .bt td:before {
-	display: none;
-}
-
-#module-user-moderation-panel .bt-content {
-	width: 100%;
-	text-align: center;
-	display: block;
-}
-
-.contribution-module-container {
-	float: left;
-	text-align: center;
-	margin: 20px 0px;
-}
-
-.convers-announce {
-	padding-right: 0px;
-}
-
-.convers-title {
-	width: 50%;
-	text-align: left;
-}
-
-table.announce-legend td {
-	width: 33%;
-}
-
-@media (min-width: 769px) {
-	.post-pm {
-		margin: auto;
-		width: 80%;
-	}
-}
-
-.available-modules-msg {
-	text-align: center;
-	margin-bottom: 15px;
-}
-
-/* -- Error 403/404 -- */ 
-/* ------------------- */
-#module-user-error-403 .content
-#module-user-error-404 .content, {
-	text-align: center;
-	font-size: 1.5em;
-}
-
-#module-user-error-403 .fa-warning:before,
-#module-user-error-404 .fa-warning:before {
-	content: "\f071"; 
-}
-
-#module-user-error-403 .fa-warning,
-#module-user-error-404 .fa-warning {
-	color: #C19954;
-	display: block;
-	margin: 40px auto 20px auto;
-}
-
-#module-user-error-403 .message-error,
-#module-user-error-404 .message-error {
-	padding: 20px 0;
-}
-
-#module-user-error-403 .type-error,
-#module-user-error-404 .type-error {
-	padding: 10px 0;
 }

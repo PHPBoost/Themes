@@ -226,7 +226,16 @@
 			</span>
 			# ENDIF #
 			# IF C_COMPTEUR #
-			<span class="footer-infos-separator"> | </span><span>{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>
+			<div id="compteur" class="hidden-small-screens">
+				<div class="compteur-total">
+					<span class="text-strong">{L_VISIT} : </span>
+					{COMPTEUR_TOTAL}
+				</div>
+				<div class="compteur-today">
+					<span class="text-strong">{L_TODAY} : </span>
+					{COMPTEUR_DAY}
+				</div>
+			</div>
 			# ENDIF #
 			<div class="corp-logo">
 				<a target="_blank" href="http://trionworlds.com/fr/"><img alt="TRION Worlds" src="./templates/{THEME}/theme/images/TRION.png"></a>

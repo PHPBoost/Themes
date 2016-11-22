@@ -248,65 +248,61 @@ td.calendar-week {
 }
 
 /* --- les blocs de quote, de code ou caches --- */
-.formatter-blockquote, .formatter-code, .formatter-hide {
-	display: block;
-	width: 93%;
-	padding: 2px 0;
-	font-weight: bold;
-	margin: auto;
-}
-
-.blockquote, .code, .hide {
-	background-color: rgba(0, 0, 0, .2);
-	overflow: auto;
-	max-height: 500px;
-	padding: 8px;
-	margin: 0 25px;
-}
-
-.blockquote {
+.formatter-container {
 	position: relative;
-	overflow: visible;
-	font-style: italic;
-	max-height: none;
-	height: auto;
-	background-color: transparent;
-	padding: 8px 20px;
-	font-size: 1.8rem;
-	font-weight: 300;
+	display: block;
+	margin: auto;
+	width: 93%;
+	color: #444444;
 }
 
-.blockquote:before {
-	position: absolute;
-	content: '\f10e';
-	font-family: fontawesome;
-	font-size: 2.5rem;
-	left: -25px;
-	top: 8px;
+.formatter-content-title {
+	font-weight: bold;
 }
 
-.blockquote:after {
-	position: absolute;
-	content: '\f10d';
-	font-family: fontawesome;
-	font-size: 2.5rem;
-	right: -20px;
-	bottom: 8px;
+.formatter-content {
+	margin: 0;
+	padding: 8px;
+	max-height: 500px;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+	overflow: auto;
 }
 
-.code {
-	color: rgba(0, 0, 0, .5);
-}
-
-.hide {
-	cursor: pointer;
+.formatter-hide .formatter-content {
 	height: 10px;
 	overflow: hidden;
+	visibility: hidden;
 }
 
-.hide2 {
-	visibility: hidden;
+.formatter-show .formatter-content {
+	height: auto;
 	overflow: auto;
+	visibility: visible;
+}
+
+.formatter-hide .hide-message {
+	display: block;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.8em;
+	color: #BBBBBB;
+	padding: 4px 8px;
+	width: 100%;
+	margin: -20px auto 0 auto;
+	background-color: #FDFDFD;
+	border: 1px solid #EEEEEE;
+}
+
+.formatter-show .hide-message {
+	display: none;
+}
+
+.copy-code {
+	float: right;
+	padding: 4px 4px;
+	color: #999999;
+	cursor: copy;
 }
 
 /* --- les autres element bbcode --- */

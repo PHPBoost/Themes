@@ -19,11 +19,18 @@
 
 		</div>
 		
-		<div id="compteur"> 
-			# IF C_COMPTEUR #
-				<span>{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>
-			# ENDIF #
+		# IF C_COMPTEUR #
+		<div id="compteur" class="hidden-small-screens">
+			<div class="compteur-total">
+				<span class="text-strong">{L_VISIT} : </span>
+				{COMPTEUR_TOTAL}
+			</div>
+			<div class="compteur-today">
+				<span class="text-strong">{L_TODAY} : </span>
+				{COMPTEUR_DAY}
+			</div>
 		</div>
+		# ENDIF #
 		<div class="date"> <?php echo date('l jS \of F Y h:i:s A'); ?> </div>
 		
 		<div id="sub-header">
@@ -139,3 +146,5 @@
 		</div>
 
 	</footer>
+
+	<a id="scroll-to-top" class="scroll-to" href="#" title="${LangLoader::get_message('scroll-to.top', 'user-common')}"><i class="fa fa-chevron-up"></i></a>

@@ -31,9 +31,15 @@
 
 	<div id="global">
 		# IF C_COMPTEUR #
-		<div id="compteur">
-			<span class="text-strong">{L_VISIT} : </span>{COMPTEUR_TOTAL} / 
-			<span class="text-strong">{L_TODAY} : </span>{COMPTEUR_DAY}
+		<div id="compteur" class="hidden-small-screens">
+			<div class="compteur-total">
+				<span class="text-strong">{L_VISIT} : </span>
+				{COMPTEUR_TOTAL}
+			</div>
+			<div class="compteur-today">
+				<span class="text-strong">{L_TODAY} : </span>
+				{COMPTEUR_DAY}
+			</div>
 		</div>
 		# ENDIF #
 		
@@ -140,3 +146,5 @@
 		</div>
 
 	</footer>
+
+	<a id="scroll-to-top" class="scroll-to" href="#" title="${LangLoader::get_message('scroll-to.top', 'user-common')}"><i class="fa fa-chevron-up"></i></a>
