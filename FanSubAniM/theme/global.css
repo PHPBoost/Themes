@@ -305,7 +305,7 @@ hr { background: #222222 none repeat scroll 0 0;}
 .copy-code {
 	float: right;
 	padding: 4px 4px;
-	color: #999999;
+	color: #BBBBBB;
 	cursor: copy;
 }
 
@@ -334,6 +334,7 @@ hr { background: #222222 none repeat scroll 0 0;}
 
 .formatter-ul {
 	text-align: left;
+	list-style-position: inside;
 }
 
 /* --- les listes numerotees --- */

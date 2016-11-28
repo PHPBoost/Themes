@@ -928,6 +928,7 @@ div.delay {
 
 div#message-maintain {
 	position: absolute;
+	z-index: 20;
 	top: 5px;
 	width: 100%;
 	opacity: 0.98;
@@ -940,105 +941,4 @@ div#message-maintain > div {
 
 div#release {
 	margin-top: 20px;
-}
-
-
-/* -- Contribution -- */ 
-/* ------------------ */
-#module-user-contribution-list hr {
-	margin: 20px 0;
-}
-
-.module-contribution-element {
-	float: left;
-	margin: 20px 0;
-	text-align: center;
-}
-
-.unprocessed-contribution {
-	margin: auto;
-	width: 300px;
-	overflow: hidden;
-	text-align: center;
-}
-
-.unprocessed-contribution div {
-	float: left;
-	width: 50%;
-}
-
-#module-user-moderation-panel .content {
-	padding-bottom: 75px;
-}
-
-#module-user-moderation-panel .bt td:before {
-	display: none;
-}
-
-#module-user-moderation-panel .bt-content {
-	display: block;
-	width: 100%;
-	text-align: center;
-}
-
-.contribution-module-container {
-	float: left;
-	margin: 20px 0;
-	text-align: center;
-}
-
-.convers-announce {
-	padding-right: 0;
-}
-
-.convers-title {
-	width: 50%;
-	text-align: left;
-}
-
-table.announce-legend td {
-	width: 33%;
-}
-
-@media (min-width: 769px) {
-	.post-pm {
-		margin: auto;
-		width: 80%;
-	}
-}
-
-.available-modules-msg {
-	margin-bottom: 15px;
-	text-align: center;
-}
-
-
-/* -- Error 403/404 -- */ 
-/* ------------------- */
-#module-user-error-403 .content,
-#module-user-error-404 .content {
-	text-align: center;
-	font-size: 1.5em;
-}
-
-#module-user-error-403 .fa-warning:before,
-#module-user-error-404 .fa-warning:before {
-	content: "\f071"; 
-}
-
-#module-user-error-403 .fa-warning,
-#module-user-error-404 .fa-warning {
-	display: block;
-	margin: 40px auto 20px auto;
-	color: #C19954;
-}
-
-#module-user-error-403 .message-error,
-#module-user-error-404 .message-error {
-	padding: 20px 0;
-}
-
-#module-user-error-403 .type-error,
-#module-user-error-404 .type-error {
-	padding: 10px 0;
 }

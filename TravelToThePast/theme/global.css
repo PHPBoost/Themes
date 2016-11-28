@@ -221,7 +221,7 @@ border-bottom: 1px solid #685535;
 .copy-code {
 	float: right;
 	padding: 4px 4px;
-	color: #999999;
+	color: #BBBBBB;
 	cursor: copy;
 }
 
@@ -248,6 +248,7 @@ border-bottom: 1px solid #685535;
 
 .formatter-ul {
 	text-align: left;
+	list-style-position: inside;
 }
 
 /* --- les listes numerotees --- */

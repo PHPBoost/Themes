@@ -1588,6 +1588,7 @@ div.delay {
 
 div#message-maintain {
 	position: absolute;
+	z-index: 20;
 	top: 5px;
 	width: 100%;
 	opacity: 0.98;

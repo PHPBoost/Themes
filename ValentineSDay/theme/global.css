@@ -370,7 +370,7 @@ td.calendar-week {
 .copy-code {
 	float: right;
 	padding: 4px 4px;
-	color: #999999;
+	color: #BBBBBB;
 	cursor: copy;
 }
 
@@ -397,6 +397,7 @@ td.calendar-week {
 
 .formatter-ul {
 	text-align: left;
+	list-style-position: inside;
 }
 
 /* --- les listes numerotees --- */
