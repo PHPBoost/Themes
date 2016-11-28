@@ -377,6 +377,7 @@ hr { background: #222222 none repeat scroll 0 0;}
 	margin: -20px auto 0 auto;
 	background-color: #FDFDFD;
 	border: 1px solid #EEEEEE;
+	cursor: pointer;
 }
 
 .formatter-show .hide-message {
