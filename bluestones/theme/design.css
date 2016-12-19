@@ -1,0 +1,362 @@
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+/* --- Colors --- */
+/* -- bleu 1: #0E2134 - #1D3248 // #2F4154 // #455A6F - #647689 - #b8c1cb
+ * -- bleu 2: // #1E73BE // #63a8e7
+ * -- bleu 3: // #BDE9F2 // #D7F2F7 - #E5F6FA - #F2FBFC
+ * -- orange 1:	// #FA9C0A //
+ * -- orange 2: // #E6481D //
+ * -- vert : #81d742
+ **/
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+a {outline: none;}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background-color: #FFFFFF;
+	color: #2F4154;
+	font-size: 1.4em;
+	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 1.6em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+	margin: auto;
+	color: #F2F2F2;
+	background-image: url(images/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	min-height: 150px;
+	background-color: rgba(25, 35, 45, 0.4);
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+	
+	div#top-header {
+		min-height: 300px;
+	}
+	
+	div#top-header-content {
+		text-align: center;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	background-color: rgba(25, 35, 45, 0.4);
+	border-bottom: 2px solid #0E2134;
+}
+
+@media (min-width: 769px) {
+	div#sub-header {
+		background-color: #2F4154;
+	}
+	
+}
+
+div#sub-header-content{
+	margin: auto;
+	max-width: 1024px;
+	position: relative;
+}
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	padding: 1.5em 0 0 1.5em;
+	width: 100%;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url('images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #FFFFFF;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+a#site-name:hover {color: #2F4154}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+	
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 2em auto 0 ;
+	max-width: 1074px;
+}
+
+div#main {
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+	padding: 0 25px;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+    	width: 30%;
+		padding: 0 25px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+		border-right: 1px solid #d9d9d9;
+	}
+	
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+		border-left: 1px solid #d9d9d9;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 30%);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 40%);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+div#top-footer {
+	padding: 2% 0;
+}
+
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+div#main-content {
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+div#top-header div.block-container {
+	display: inline-block;
+	margin: 0 25px 0 0;
+	max-width: 30%;
+	vertical-align: top;
+}
+
+div#top-header div.block-container h5 {
+	padding: 5px 10px;
+	background: #0E2134;
+}
+
+div#top-header div.block-contents div,
+div#top-header div.block-contents ul {
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 5px;
+}
+
+div#top-header div.block-contents div a,
+div#top-header div.block-contents ul a { color: #BDE9F2; }
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+	padding: 0.1em 0.8em;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+	padding: 0.1em 0.8em;
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+	width: 100%;
+	background-color: #2F4154;
+	border-top: #0E2134 2px solid;
+	clear: both;
+}
+
+footer#footer a 		{ color: #BDE9F2; }
+footer#footer a:hover 	{ color: #1E73BE; }
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1024px;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#compteur {
+	position: absolute;
+	right: 0;
+	margin-right: 15px;
+	font-size: 0.9em;
+	color: #E9ECD9;
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	div#compteur {
+		top: 100px;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	margin: 0 0 20px 10px;
+	text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}

@@ -1,0 +1,111 @@
+.avatar { margin: 10px; }
+
+#connect-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#connect-menu li { padding: 5px 20px; }
+
+#connect-menu li:hover { background-color: rgba(0, 0, 0, 0.2); }
+
+/* horizontal */
+#connect-menu.horizontal-fieldset {
+	float: right;
+	margin: 0;
+	background-color: #2F4154;
+}
+
+#connect-menu.horizontal-fieldset .js-menu-button {
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #F2F2F2;
+	font-size: 1.5em;
+	position: relative;
+}
+
+#connect-menu.horizontal-fieldset .c-alert {
+	position: absolute;
+	font-size: 1rem;
+	top: 5px;;
+	right: 5px;
+	padding: 3px 4px 5px;;
+	line-height: 1;
+	border-radius: 100%;
+}
+
+#connect-menu.horizontal-fieldset .c-pm {background-color: #81d742}
+#connect-menu.horizontal-fieldset .c-admin {background-color: #E6481D}
+#connect-menu.horizontal-fieldset .c-contrib {background-color: #1E73BE}
+
+#connect-menu.horizontal-fieldset div.connect-content {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: calc(100% + 100px);
+	opacity: 0;
+	visibility: hidden;
+	background-color: #2F4154;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+#connect-menu.active.horizontal-fieldset div.connect-content {
+	z-index: 200;
+	top: calc(100% + 2px);
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s;
+	padding: 10px;
+}
+
+#connect-menu.horizontal-fieldset div.connect-content ul {
+	text-align: left;
+	float: right;
+}
+
+#connect-menu.horizontal-fieldset li a 			{ color: #F2F2F2; display: block;}
+#connect-menu.horizontal-fieldset li a:hover 	{ color: #1E73BE; }
+
+#connect-menu.horizontal-fieldset div.connect-content.not-connected {
+	display: table;
+	margin: 0 auto;
+	padding: 10px 20%;
+	text-align: center
+}
+ 
+#connect-menu.horizontal-fieldset input {
+	border: none;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #d9d9d9;
+	border-radius: 0;
+	padding: 10px;
+	color: #F2F2F2;
+	width: 100%;
+	margin-bottom: 10px;
+}	
+ 
+#connect-menu.horizontal-fieldset input[type="checkbox"] {
+	width: auto;
+	display: inline-block;
+	margin: 0;
+}
+ 
+#connect-menu.horizontal-fieldset button.submit-connect, 
+#connect-menu.horizontal-fieldset button.submit-register, 
+#connect-menu.horizontal-fieldset a.alt {
+	width: 160px;
+	border: none;
+	margin: 5px auto;
+	color: #F2F2F2;
+}
+ 
+#connect-menu.horizontal-fieldset button.submit-connect {
+	background-color: #81d742;
+}	
+ 
+#connect-menu.horizontal-fieldset button.submit-register {
+	background-color: #2F4154;
+}	
