@@ -45,78 +45,70 @@
 				</div>
 			</section>
 
-		
-			<div id="silverbarnav">
-				<a href="{PATH_TO_ROOT}/index.php" class="silverbar"><i class="fa fa-home"></i> Accueil</a>
-				<a href="{PATH_TO_ROOT}/news/index.php" class="silverbar"><i class="fa fa-newspaper-o"></i> News</a>
-				<a href="{PATH_TO_ROOT}/articles/index.php" class="silverbar"><i class="fa fa-rss"></i> Blog</a>
-				<a href="{PATH_TO_ROOT}/wiki/wiki.php" class="silverbar"><i class="fa fa-file-text-o"></i> Tutoriels</a>
-				<a href="{PATH_TO_ROOT}/faq/index.php" class="silverbar"><i class="fa fa-bars"></i> Divers</a>
-				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-user-md"></i> Astuces</a>
-				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-medkit"></i> F.A.Q</a>			
-				<a href="{PATH_TO_ROOT}/calendar/index.php" class="silverbar element"><i class="fa fa-calendar"></i> Calendrier</a>	
-				<a href="{PATH_TO_ROOT}/" class="silverbar"><i class="fa fa-envelope"></i> Contact</a>
+			<div class="spacer"></div>
+			<div id="prim-nav">
+				<section id="navbook">
+					<div id="menu-title">Menu principal</div>		
+					<nav  class="MNnav">
+							<ul id="MNnav" class="MNnav-list">
+								<li class="MNnav-item">
+									<a href="?=about"><i class="fa fa-home"></i> Accueil</a>
+								</li>	
+								<li class="MNnav-item">
+									<a href="?=home"><i class="fa fa-newspaper-o"></i> Promenades</a>
+									<ul  class="MNnav-submenu">
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-1">Trajets 1</a>
+										</li>
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-2">Trajets 2</a>
+										</li>
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-3">Trajets 3</a>
+										</li>
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-4">Trajets 3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="MNnav-item">
+									<a href="?=portfolio"><i class="fa fa-bars"></i> Les sites</a>
+									<ul  class="MNnav-submenu">
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-1">Site 1</a>
+										</li>
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-2">Site 2</a>
+										</li>
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-3">Site 3</a>
+										</li>
+										<li class="MNnav-submenu-item">
+											<a href="?=submenu-4">Site 3</a>
+										</li>
+									</ul>
+								</li>
+								<li class="MNnav-item">
+									<a href="?=about"><i class="fa fa-rss"></i> Blog</a>
+								</li>
+								<li class="MNnav-item">
+									<a href="?=about"><i class="fa fa-medkit"></i> F.A.Q</a>
+								</li>						
+								<li class="MNnav-item">
+									<a href="?=about"><i class="fa fa-newspaper-o"></i> News</a>
+								</li>
+								<li class="MNnav-item">
+									<a href="?=testimonials"><i class="fa fa-desktop"></i> Photos</a>
+								</li>
+								<li class="MNnav-item">
+									<a href="?=contact"><i class="fa fa-envelope"></i> Contact</a>
+								</li>
+							</ul>
+						</nav>
+				</section>
 			</div>
 
 		<div id="sub-header">
-			<section id="Motto">
-				<div id="menu-title">Menu principal</div>
-				<nav  class="nav">
-						<ul class="nav-list">
-							<li class="nav-item">
-								<a href="?=about">Accueil</a>
-							</li>	
-							<li class="nav-item">
-								<a href="?=about">News</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=home">Divers</a>
-								<ul class="nav-submenu">
-									<li class="nav-submenu-item">
-										<a href="?=submenu-1">Astuces</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-2">Blog</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-3">F.A.Q</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-4">Calendrier</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a href="?=portfolio">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=services">Services</a>
-								<ul class="nav-submenu">
-									<li class="nav-submenu-item">
-										<a href="?=submenu-1">Submenu item 1</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-2">Submenu item 2</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-3">Submenu item 3</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-4">Submenu item 4</a>
-									</li>
-								</ul>
-							</li>
-
-							<li class="nav-item">
-								<a href="?=testimonials">Staff</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=contact">Contact</a>
-							</li>
-						</ul>
-					</nav>
-			</section>
-			
 			# IF C_MENUS_SUB_HEADER_CONTENT #
 				# START menus_sub_header #
 				{menus_sub_header.MENU}
@@ -127,7 +119,16 @@
 	
 		<div class="spacer"></div>
 	</header>
-		
+	
+	<div id="menugo">
+		<div id="gotop" style="display: block;">
+			<a id="gotop" class="js-scrollTo" href="#top_page" ><i class="fa fa-chevron-up"></i></a>
+		</div>
+		<div id="gobottom" style="display: block;">
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page" ><i class="fa fa-chevron-down"></i></a>
+		</div>
+	</div>		
+	
 	<div id="global">
 		<div id="sous-global">
 
@@ -232,12 +233,5 @@
 
 	</footer>
 	
-	<div id="menugo">
-		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page" ><i class="fa fa-chevron-up"></i></a>
-		</div>
-		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page" ><i class="fa fa-chevron-down"></i></a>
-		</div>
-	</div>
+
 	<div id="bottom_page" /></div>

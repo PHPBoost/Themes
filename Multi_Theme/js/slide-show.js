@@ -1,13 +1,13 @@
 /*---------------------------------------------------------
  * Theme    : Multi_Theme
  * Par      : Sakura
- * PortÃ© en V5.0.XX  :  01/04/2016
+ * Porté en V5.0.XX  :  01/04/2016
  * Site web :  http://news-manga.com | http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entÃªte des fichiers CSS.
+ # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
- * ThÃ©me non compatible avec deux menus (droite et gauche)
-          le choix reste possible sur un menu
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
 // base : https://codepen.io/SitePoint/pen/YqmjRj/
