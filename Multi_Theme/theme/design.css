@@ -35,6 +35,7 @@ body {
 }
 
 div#contenu {
+	position:relative;
     background: rgba(0, 0, 0, 0) url('images/global.png') repeat-y scroll center top;
     margin: auto;
     width: 1060px;
@@ -43,21 +44,39 @@ div#contenu {
 --------------------------------------*/
 header#header {
 max-width: 1005px;
-margin:50px auto auto;
+margin:10px auto auto;
 }
 
 /* --- Partie superieure du header --- */
 
 div#top-header {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
     background: transparent url('images/header.png') no-repeat scroll center 0;
+	height:28px;
 	min-height: 365px;
 	max-width: 1005px;
 	margin: auto;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 div#top-header-content{
 	float: right;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
 }
 /* --- paramètres slideshow --- 
 * base : https://codepen.io/SitePoint/pen/YqmjRj/
@@ -191,6 +210,12 @@ span#site-slogan {
 /* -- Conteneur global du site --
 --------------------------------------*/
 div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
     margin: auto;
     max-width: 1005px;
 }
@@ -199,15 +224,72 @@ div#sous-global {
 	margin: auto;
 	padding: 0 10px;
 }
+
 aside#menu-left,
 aside#menu-right {
-    width: auto;
+	width: 100%;
 }
 
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
 #main {
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
    width: auto;
 }
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
 
+	div#main {
+		padding: 0 5px;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+    	width: 180px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 200px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 360px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
 /* -- Contenu de la page --
 --------------------------------------*/
 /* --- Contenu central --- */
@@ -222,6 +304,11 @@ div#top-content {
 
 div#bottom-content {
 	margin: 2% 0 0 0;
+}
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+	padding: 0.1em 0.8em;
 }
 
 /* --- Emplacement au dessus du pied de page --- */
@@ -265,12 +352,12 @@ footer#footer .footer-infos span {
 /* --- Compteur de visite --- */
 div#compteur {
     color: #445766;
+    float: left;
     font-size: 0.9em;
-    margin-right: 15px;
+    height: 28px;
     padding-left: 10px;
     padding-top: 8px;
-    position: absolute;
-    text-align: right;
+    text-align: left;
 }
 
 /* --- Barre d'outils --- */
@@ -301,115 +388,89 @@ nav#breadcrumb ol li:not(.current):after {
 	color: #616161;
 }
 
-/*################################
-		Barre de navigation
-#################################*/
+/*======================================
+*		EDN : reprise du menu MOTTO
+*		     - SUB-Menu -
+*		 - Todd Motto Labs -
+========================================*/
+#prim-nav {
+    height: 52px;
+    margin:auto;
 
-#silverbarnav {
-    background: rgba(0, 0, 0, 0) url('images/silverbar.jpg') repeat-x scroll left top;
+}
+#navbook {
     height: 51px;
     margin: auto;
-    width: 1005px;
+    position: relative;
+    z-index: 1000;
 }
-
-#silverbarnav b {
-    background: url('images/silverbar.jpg') no-repeat scroll right -64px rgba(0, 0, 0, 0);
+#navbook b {
     display: block;
     float: left;
     height: 50px;
     width: 24px;
 }
-a.silverbar {
-    background: url('images/silverbar.jpg') no-repeat scroll right -64px rgba(0, 0, 0, 0);
-    color: #515c68;
-    display: block;
-    float: left;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 50px;
-    padding: 0 20px;
-    text-decoration: none;
-}
 
-a.silverbar:hover {
-    background: url('images/silverbar.jpg') repeat-x scroll right -116px rgba(0, 0, 0, 0);
-    color: #2f404d;
-	text-decoration: none;
-} 
-
-
-/*======================================
-		Todd Motto Labs -
-		Flaunt JS Navigation
-		Adapté pour phpboost 5.0
-		URL: www.toddmotto.com
-========================================*/
-
-section#Motto{
-	background: #3d3d3b;
-    margin: auto;
-    padding: 0px;
-    vertical-align: top;
-    width: 100%;
-	height:auto;
-	z-index:100;
+.MNnav {
+    font-size: 14px;
+    font-weight: 900;
+    position: relative;
+	display:inline-block;
 }
-#menu-title{
-    color: #ffffff;
-    float: left;
-    font-weight: bold;
-    padding: 18px 0 0 87px;
-    text-align: center;
-    text-transform: uppercase;
-	}
-.nav {
-	position:relative;
-	/*display:inline-block;*/
-	font-size:14px;
-	font-weight:900;
+.MNnav-list {
+    list-style: outside none none;
+    margin-left: 0;
+    text-align: left;
 }
-.nav-list {
-	text-align:left;
-}
-.nav-item {
+.MNnav-item {
 	float:left;
 	*display:inline;
 	zoom:1;
 	position:relative;
 }
-.nav-item a {
-    background: #d7dee3 none repeat scroll 0 0;
-    border-bottom:1px solid #bccad3;
-    color: #445766;
-    display: block;
+.MNnav-item a {
+    color: #515c68;
+	display:block;
 	padding:15px 20px;
 
 }
-.nav-item > a:hover {
-	background:#f2f5f6;
+.MNnav-item > a:hover { 
+    background: rgba(0, 0, 0, 0) url('images/silverbar.jpg') repeat-x scroll right -116px;
+    color: #2f404d;
+    text-decoration: none;
 }
-.nav-item:hover .nav-submenu {
+.MNnav-item:hover .MNnav-submenu {
 	display:block;
 }
 /* Navigation submenu */
-.nav-submenu {
+
+ul.MNnav-submenu{list-style:none;}
+
+#Mn-nav  {
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.MNnav-submenu {
 	display:none;
 	position:absolute;
 	left:0;
 	width:180px;
 }
-.nav-submenu-item a {
-	background:#f2f5f6;
-	border-bottom: 1px solid #bccad3;
-	display:block;
-	padding:15px;
+.MNnav-submenu-item a {
+    background: #E9EFF1 none repeat scroll 0 0;
+    border-bottom: 1px solid #ffffff;
+    color: #445766;
+    display: block;
+    margin-left: -30px;
+    padding: 15px;
 }
-.nav-submenu-item a:hover {
-	background:#d7dee3 none repeat scroll 0 0;
+.MNnav-submenu-item a:hover {
+	background:#D9E0E4 ;
+	color:#2f404d;
 }
 /* Mobile navigation */
-.nav-mobile {
+.MNnav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
     background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
@@ -420,9 +481,14 @@ section#Motto{
     top: 0;
     width: 50px;
 }
-
+/* Police des liens */
+.MNnav-item a , .MNnav-item > a:hover, .MNnav-submenu-item a, .MNnav-submenu-item a:hover{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
 /* Mobile navigation, clickable area for revealing <ul> */
-.nav-click {	color: #445766;
+.MNnav-click {
 	position:absolute;
 	top:0;
 	right:0;
@@ -432,63 +498,62 @@ section#Motto{
 	width:50px;
 	cursor:pointer;
 }
-.nav-click i {
-
+.MNnav-click i {
 	display:block;
 	height:48px;
 	width:48px;
 	background:url('images/drop.svg') no-repeat center center;
 	background-size:20px;
 }
-.nav-click:hover {
+.MNnav-click:hover {
 	background-color:#f2f5f6;
-	color: #445766;
 }
-.nav-rotate {
+.MNnav-rotate {
 	-webkit-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 	transform:rotate(180deg);
 }
-
 /*======================================
 		  Navigation latérale
 		 "gadget de navigation"
 ========================================*/
-div#gotop {	
+div#menugo {
+    position: absolute;
+    top: 0px;
+    right: 26px;
+}
+div#gotop {    
     display: block;
     position: fixed;
-    right: 150px;
     top: 110px;
     z-index: 150;
 }
 div#gotop a {
-	background:#C7D8E2;
+    background:#C7D8E2;
     float: left;
-	color: #445766;
-	font-size:30px;
-	padding:25px 10px;
+    color: #445766;
+    font-size:30px;
+    padding:25px 10px;
     opacity: 0.3;
-	border-radius: 0 10px 10px 0;	
+    border-radius: 0 10px 10px 0;    
 }
 div#gobottom {
     display: block;
     position: fixed;
-    right: 150px;
-    top: 216px;
+    top: 210px;
     z-index: 150;
 }
 div#gobottom a {
-	background:#C7D8E2;
+    background:#C7D8E2;
     float: left;
-	color: #445766;
-	font-size:30px;
-	padding:25px 10px;
+    color: #445766;
+    font-size:30px;
+    padding:25px 10px;
     opacity: 0.3;
-	border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
 }
-
 
 /*======================================
 			Alls Media Queries
@@ -524,7 +589,7 @@ div#gobottom a {
 	}
 
 	div#main.main-with-left.main-with-right {
-		width: 60%;
+		width: 48%;
 	}
 
 }
@@ -535,14 +600,15 @@ div#gobottom a {
 	div#contenu{background:none;margin: auto;width: auto;}
 	header#header {margin: auto;}
 	div#top-header {
-		background:none;
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		height: 70%;
 		margin: auto;
-		max-width: auto;
 		min-height: auto;
-		overflow: hidden;
 	}
+
 	div#compteur,
 	div#site-infos,
+	a.prev, a.next,
 	div#top-header-content,
 	div#slider{display: none;}
 	
@@ -616,47 +682,99 @@ div#gobottom a {
 }
 
 @media (min-width:769px) {
-	section#Motto {display: none;}
+	#menu-title {display: none;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+	
+/* EDN MNNAV Original */
+	#prim-nav{
+		background:none;
+		border-left:none;
+		border-right:none;
+		height: 51px;
+		margin: auto;
+		width:auto;
+	}
 
-	.nav-mobile {
+	section#navbook {
+		background: #3d3d3b none repeat scroll 0 0;
+		border-right:none;		
+		/*height: auto;*/
+		margin: auto auto auto -1px;
+		padding: 0;
+		vertical-align: top;
+		width: 100%;
+		z-index: 100;
+	}
+	#menu-title{
+		color: #ffffff;
+		float: left;
+		font-weight: bold;
+		padding: 18px 0 0 87px;
+		text-align: center;
+		text-transform: uppercase;
+		}
+	.MNnav-mobile {
 		display:block;
 	}
-	.nav {
+	.MNnav {
 		width:100%;
 		padding:50px 0 0;
+		margin-top: -34px;
+		position: relative;
 	}
-	.nav-list {
+	.MNnav-list {
 		display:none;
 	}
-	.nav-item {
+	.MNnav-item {
 		width:100%;
 		float:none;
 		list-style: none outside none;		
 	}
-	.nav-item > a {
+	.MNnav-item > a {
 		padding:15px;
 	}
-	.nav-click {
+	.MNnav-click {
 		display:block;
 	}
-	.nav-mobile-open {
+	.MNnav-mobile-open {
 		border-radius:5px 5px 0 0;
 		-webkit-border-radius:5px 5px 0 0;
 		-moz-border-radius:5px 5px 0 0;
 	}
-	.nav-item:hover .nav-submenu {
+	.MNnav-item:hover .nav-submenu {
 		display:none;
 	}
-	.nav-submenu {
+	.MNnav-submenu {
 		position:static;
 		width:100%;
 	}
 	ul{margin-left:0px;}
-	.nav-submenu{margin-bottom:0px}
+	.MNnav-submenu{margin-bottom:0px}
+	.MNnav-item a {
+		background: #d7dee3 none repeat scroll 0 0;
+		border-bottom:1px solid #bccad3;
+		color: #445766;
+		display: block;
+	}
+	.MNnav-item > a:hover {
+		background:#f2f5f6 none repeat scroll 0 0;
+	}
+	.MNnav-submenu-item a {
+		background: #efefef none repeat scroll 0 0;
+		border-bottom: 1px solid #bccad3;
+		color:#445766;
+		display: block;
+		margin-left:0px;
+		padding: 15px;
+	}
+	.MNnav-submenu-item a:hover {
+		background:#d7dee3 none repeat scroll 0 0;
+		color: #2f404d;
+	}
 }
 @media (max-width:768px) {
 	div#menugo {display: none;}
 }
+
