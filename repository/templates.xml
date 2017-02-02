@@ -1966,6 +1966,78 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="ChristmasBlue" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Christmas Blue" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ChristmasBlue/ChristmasBlue.zip">Christmas Blue template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Christmas Blue template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Christmas Blue" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ChristmasBlue/ChristmasBlue.zip">Theme Christmas Blue</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme ChristmasBlue</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="ChristmasRed" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Christmas Red" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ChristmasRed/ChristmasRed.zip">Christmas Red template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Christmas Red template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Christmas Red" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ChristmasRed/ChristmasRed.zip">Theme Christmas Red</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme ChristmasRed</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="ChristmasGreen" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Christmas Green" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ChristmasGreen/ChristmasGreen.zip">Christmas Green template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Christmas Green template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Christmas Green" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/ChristmasGreen/ChristmasGreen.zip">Theme Christmas Green</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Christmas Green</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- PaperToss -->
 	<app id="plus" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
