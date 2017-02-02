@@ -1245,32 +1245,28 @@
 		</version>
 	</app>
 	<app id="Multi_Theme" type="template">
-		<version num="5.0.4" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/10/12">
+		<version num="5.0.5" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2017/02/02">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Multi_Theme template</download>
 			<authors>
 				<author name="Sakura" email="admin@news-manga.com" />
+				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.4 Multi_Theme template</description>
+			<description>Version 5.0.5 Multi_Theme template</description>
 			<whatsnew>
-				<new type="improvement">Add Flexbox</new>
-				<new type="bug">Fix slider JS smallscreen</new>
-				<new type="bug">Remove chevrom smallscreen</new>
-				<new type="bug">Two menu columns</new>
+				<new type="bug">Fix Submenu</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.4" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2016/10/12">
+		<version num="5.0.5" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2017/02/02">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Theme Multi_Theme</download>
 			<authors>
 				<author name="Sakura" email="admin@news-manga.com" />
+				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.4 du theme Multi_Theme</description>
+			<description>Version 5.0.5 du theme Multi_Theme</description>
 			<whatsnew>
-				<new type="improvement">Ajout des flexbox</new>
-				<new type="bug">Correction du slider JS smallscreen</new>
-				<new type="bug">Suppression des chevrons en format gsm</new>
-				<new type="bug"> 2 colonne de menu</new>
+				<new type="bug">Menu avec sous-menus intégrés</new>
 			</whatsnew>
 		</version>
 	</app>
