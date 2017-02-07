@@ -957,9 +957,10 @@ textarea {
 .form-element-textarea .form-field-textarea { display: block; }
 .form-element-textarea .form-field-textarea div { float: left; }
 
-.form-element-preview {
-	text-align: center;
+.form-element-preview, .form-element-reset {
 	margin: 5px auto 0 auto;
+	text-align: center;
+	display: inline;
 }
 
 .form-element-auth .form-field {
@@ -995,7 +996,7 @@ textarea {
 
 .advanced-auth-input {
 	margin-left: 5px;
-	width: 144px;
+	width: auto;
 }
 
 .advanced-auth-input input {
