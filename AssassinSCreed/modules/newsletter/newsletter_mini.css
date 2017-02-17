@@ -1,0 +1,51 @@
+/* --- Newsletter--- */
+/* ------------------------ */
+
+
+.newsletter-form {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8c98a7+0,5e6d81+49,444954+100;footer+AC */
+	background: #8c98a7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #8c98a7 0%, #5e6d81 49%, #444954 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #8c98a7 0%,#5e6d81 49%,#444954 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #8c98a7 0%,#5e6d81 49%,#444954 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c98a7', endColorstr='#444954',GradientType=0 ); /* IE6-9 */
+    border-radius: 4px;
+    margin: 20px 25px 10px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.newsletter-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 2px 4px 0 0;
+    vertical-align: middle;
+}
+div#newsletter {
+    float: right;
+    margin: 10px;
+}
+div#newsletter button, div#newsletter .button {
+    margin-top: 0;
+}
+
+.newsletter-link {
+    margin: 10px 0 0;
+}
+div#newsletter .input-element-button input {
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+    width: 120px;
+}
+div#newsletter .input-element-button button {
+	background-color:rgba(0,0,0, 0);
+	border: 1px solid #444954;
+    border-color: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 12px;
+    margin-left: -5px;
+}
+
+
