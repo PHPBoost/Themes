@@ -2038,6 +2038,33 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="AssassinSCreed" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="AssassinSCreed" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/AssassinSCreed/AssassinSCreed.zip">AssassinSCreed template</download>
+			<authors>
+				<author name="Rusti" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 AssassinSCreed template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="AssassinSCreed" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/AssassinSCreed/AssassinSCreed.zip">Theme AssassinSCreed</download>
+			<authors>
+				<author name="Rusti" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme AssassinSCreed</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	AssassinSCreed
 	<!-- PaperToss -->
 	<app id="plus" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
