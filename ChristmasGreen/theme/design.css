@@ -4,11 +4,11 @@
  * Date     : 29/01/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entÃªte des fichiers CSS.
+ # Merci de ne pas toucher au entête des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
- * ThÃ¨me compatible avec un  menu (droite ou gauche)
+ * Thème compatible avec un  menu (droite ou gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
@@ -210,7 +210,7 @@ article#EDN-menu-icons {
 /* ------------------------------ */
 div#SuperGlobal {
     margin: auto;
-    width: 1030px;
+    width: 1049px;
 }
 div#global {
 	display: flex;
@@ -221,7 +221,7 @@ div#global {
 	-webkit-flex-direction: column;
 	margin: 1.5em auto 0 auto;
 	padding: 0px;
-	max-width: 1024px;
+	max-width: 1049px;
 }
 
 div#main {
