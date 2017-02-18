@@ -14,19 +14,23 @@
 
 /* --- Les liens du site --- */
 a {
-	color: #cc0000;
+	color: #690B00;
+	font-weight:bold;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #c6aa57;
+	color: #ACACAC;
 	text-decoration: underline;
 }
 
-hr  {background-color: #c6aa57;}
 
+hr {
+    background-color: #690B00;
+	height:2px;
+}
 /* --- Couleur des liens --- */
-a.admin  { color: #AA0000; }
+a.admin  { color: #D60002; }
 a.modo   { color: #006699; }
 a.member { color: #000000; }
 
@@ -48,7 +52,7 @@ tr td.bkgd-color-processing { background-color: #FFD86F; }
 tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
 
 /* --- Tailles de polices --- */
-.smaller { font-size: 0.9em; }
+.smaller { font-size: 0.7em; }
 .small   { font-size: 0.9em; }
 .normal  { font-size: 1.0em; }
 .big     { font-size: 1.2em; }
@@ -73,14 +77,26 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {  }
+h2.formatter-title {	display:inline;
+	color:#690B00;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:35px;
+	padding:2px 5px;
+	font-weight:bold;
+	background:rgba(255, 255, 255, 0.4);
+    border: 1px solid #690B00;
+    border-left: 3px solid #690B00;
+    border-right: 3px solid #690B00;
+    border-radius:5px;
+}
 h3.formatter-title { margin-left: 1.5rem; }
 h4.formatter-title { margin-left: 3rem; }
 h5.formatter-title { margin-left: 5rem; }
 
 h4.formatter-title,
 h5.formatter-title {
-	border-bottom: 1px solid #cc0000;
+	border-bottom: 1px solid #366393;
 }
 
 
@@ -221,8 +237,8 @@ td.calendar-week {
 
 .bbcode-block {
 	margin: 0;
-	background-color: #F3F3F3;
-	border: 1px solid #AAAAAA;
+	background-color: #000000;
+	border: 1px solid #690B00;
 	border-radius: 3px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -398,7 +414,7 @@ td.calendar-week {
 
 .progressbar-container .progressbar {
 	height: 13px;
-	background-color: #c6aa57;
+	background-color: #CCCCCC;
 	transition: width .6s ease;
 }
 
@@ -421,7 +437,7 @@ td.calendar-week {
 /* ---------------------------------------------------- */
 
 /* --- les couleurs d icones --- */
-.fa-syndication:before { color: #c6aa57; }
+.fa-syndication:before { content: url('images/rss.png'); color: #F57900;}
 .fa-success:before     { color: #478948; }
 .fa-forbidden:before   { color: #BA4B49; }
 .fa-error:before       { color: #BA4B49; }
@@ -434,6 +450,7 @@ td.calendar-week {
 .fa-offline:before     { color: #E05759; }
 .fa-trend-up:before    { color: #478948; }
 .fa-trend-down:before  { color: #BA4B49; }
+.fa.fa-envelope-o:before  {color: #efefef;}
 
 /* --- Les alertes --- */
 li.small-block .fa-stack {
@@ -459,7 +476,6 @@ li.small-block .fa-stack {
 	font-size: 0.7em;
 	text-align: center;
 }
-
 /* -- Les messages d erreurs -- */
 /* ---------------------------- */
 div.message-helper-small {
@@ -508,18 +524,17 @@ div.message-helper-small {
 .success:before	 { content: "\f00c"; }
 .question:before { content: "\f128"; }
 
-.error, .error:before       { color: #BA4B49; }
-.notice, .notice:before     { color: #888888; }
-.warning, .warning:before   { color: #C19954; }
-.success, .success:before   { color: #478948; }
-.question, .question:before { color: #3B88AE; }
+.error, .error:before       { color: #efefef; }
+.notice, .notice:before     { color: #F0F0F0; }
+.warning, .warning:before   { color: #AD022A; }
+.success, .success:before   { color: #044D00; }
+.question, .question:before { color: #DAEEF8; }
 
-.error    { background-color: #F3DFDF; border-color: #ECCDD2; }
-.notice   { background-color: #F0F0F0; border-color: #E2E2E2; }
-.warning  { background-color: #FDF9E4; border-color: #FBECCD; }
-.success  { background-color: #E0F1D9; border-color: #D7EAC7; }
-.question { background-color: #DAEEF8; border-color: #BDE9F2; }
-
+.error    { background-color: #6d0000; border-color: #6d0000; }
+.notice   { background-color: #888888; border-color: #888888; }
+.warning  { background-color: #EDB600; border-color: #EDB600; }
+.success  { background-color: #8ac77f; border-color: #8ac77f; }
+.question { background-color: #3B88AE; border-color: #3B88AE; }
 
 /* -- Systeme d Upload -- */
 /* ---------------------- */

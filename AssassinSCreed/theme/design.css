@@ -1,6 +1,6 @@
 /*---------------------------------------------------------
- * Theme    :  Theme Christmas Red
- * Par      : EDN | Swan
+ * Theme    :  Thème AssassinSCreed
+ * Par      : Rusty
  * Date     : 27/12/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
@@ -8,19 +8,22 @@
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 06/02/2017
+ *---------------------------------------------------------
  * Thème compatible avec un  menu (droite ou gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
-/* -- Ã‰lÃ©ments HTML génériques spécifique au theme -- */
+/* -- Éléments HTML génériques spécifique au thème -- */
 /* -------------------------------------------------- */
 /* afficher le texte sélectionné en blanc sur fond gris */
-::-moz-selection { color:#444444;  background: #FFC0C0 none repeat scroll 0 0;}
-::selection     { color:#444444;  background:#FFC0C0 none repeat scroll 0 0;}
+::-moz-selection { color:#690B00;  background: #cccccc none repeat scroll 0 0;}
+::selection     { color:#690B00;  background:#cccccc none repeat scroll 0 0;}
 
 /* afficher le texte sélectionné dans un paragraphe en blanc sur fond gris */
-p::-moz-selection { color:#444444;  background: #FFC0C0 none repeat scroll 0 0; }
-p::selection      { color:#444444;  background: #FFC0C0 none repeat scroll 0 0;}
+p::-moz-selection { color:#690B00;  background: #cccccc none repeat scroll 0 0; }
+p::selection      { color:#690B00;  background: #cccccc none repeat scroll 0 0;}
 
 html {
 	font-size: 100%;
@@ -28,14 +31,14 @@ html {
 }
 
 body {
+    background: #000000 url('images/bg.jpg') no-repeat scroll center top;
+    background-attachment: fixed;
+    color: #690B00;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+   	font-size: 1.3em;
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	/*background-color: #ffffff;*/
-	background: url('images/bg1.jpg') fixed center top transparent;
-	color: #000000;
-	font-size: 1.3em;
-	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
 }
 
 @media (max-width: 768px) {
@@ -47,25 +50,22 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background-color: #cc0000;
-    margin-top: 20px;
+background: url('images/header.jpg') no-repeat scroll center 0 transparent;
+height: 370px;
 }
 
 /* --- Partie superieure du header --- */
+
 div#top-header {
+	background: url('images/titre.png') no-repeat scroll center 0 transparent;
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	flex-direction: row;
 	-ms-flex-direction: row;
 	-webkit-flex-direction: row;
-	
--webkit-justify-content: center;
--ms-flex-pack: center;
-justify-content: center;
--webkit-align-content: center;	
 	margin: auto;
-	min-height: 139px;
+	min-height: 280px;
 	max-width: 1024px;
 }
 
@@ -92,7 +92,6 @@ div#top-header-content {
 /* --- Partie inferieur du header --- */
 div#sub-header {
 	min-height: 35px;
-	background-color: #c6aa57;
 }
 
 div#sub-header-content{
@@ -160,55 +159,14 @@ span#site-slogan {
 	}
 	
 }
-/* -- section EDN-menu -- */
-/* ------------------------------ */
-section#EDN-menu-body {
-    min-height: 120px;
-    min-width: 100%;
-    padding: 10px 0 0 10px;
-}
 
-article#EDN-menu-icons {
-    margin: auto;
-    width: 100%;
-}
-.menu-blocks{
-    clear: none !important;
-}
-
-.fa-menu {
-    background-color: #cc0000; /* Couleur de fonds des icons */
-    border-radius: 50px;
-    display: inline-block;
-    font-size: 55px;
-    margin: 0 8px 0 0; /* Espacement entre les icons */
-    min-height: 100px;
-    min-width: 100px;
-    padding: 11px 0 0 5px;
-    text-align: center;
-	border: 5px solid #c6aa57;
-}
-.fa-menu:hover{ background-color: #ffffff;} /* Couleur de fonds des icons au survole */
-
-.fa-menu > a {
-	color:#ffffff; /* Couleur des icons flats */
-	transition: all 0.2s ease 0s;
-} 
-.fa-menu > a:hover {color:#cc0000;}/* Couleur des icons flats au survole */
-
-@media (max-width:768px) {
-/* Le menu disparait en site web adaptatif (gsm) */
-	section#EDN-menu-body {
-		position: absolute;
-		left: -9999em;	
-	}
-}
 /* -- Conteneur global du site -- */
 /* ------------------------------ */
 div#SuperGlobal {
     margin: auto;
-    width: 1049px;
+    width: 995px;
 }
+
 div#global {
 	display: flex;
 	display: -ms-flexbox;
@@ -217,8 +175,8 @@ div#global {
 	-ms-flex-direction: column;
 	-webkit-flex-direction: column;
 	margin: 1.5em auto 0 auto;
-	padding: 0px;
-	max-width: 1049px;
+	padding: 0 10px;
+	max-width: 1024px;
 }
 
 div#main {
@@ -254,6 +212,7 @@ aside#menu-right {
 	}
 
 	div#main {
+		padding: 0 10px;
 		order : 2;
 		-ms-flex-order: 2;
 		-webkit-flex-order: 2;
@@ -263,7 +222,7 @@ aside#menu-right {
 
 	aside#menu-left,
 	aside#menu-right {
-    	width: 300px;
+    	width: 200px;
 	}
 
 	aside#menu-left  { 
@@ -276,26 +235,21 @@ aside#menu-right {
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 	}
-	#main.main-with-left{ padding-left: 10px;}
-	#main.main-with-right{padding-right: 10px;}	
 	
 	#main.main-with-left,
 	#main.main-with-right {
-		width: calc(100% - 300px);
+		width: calc(100% - 200px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 	
 	#main.main-with-left.main-with-right {
-		width: calc(100% - 500px);
+		width: calc(100% - 400px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 }
 
 div#top-footer {
-    background-color: #ffffff;
-    border: 5px solid #c6aa57;
 	padding: 2% 0;
-	margin-bottom: 20px;
 }
 
 
@@ -304,9 +258,12 @@ div#top-footer {
 
 /* --- Contenu central --- */
 div#main-content {
-	padding: 1.5em 0.8em;
-	border: 5px solid #c6aa57;
-	background-color: #FFFFFF;
+	padding-top: 0.8em;
+	border: 1px solid #690B00;
+	background:rgba(255, 255, 255, 0.4) ;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px
+
 }
 
 div.block-container {
@@ -316,20 +273,34 @@ div.block-container {
 /* --- Emplacement au dessus et en dessous du contenu de la page --- */
 div#top-content {
 	margin: 0 0 2% 0;
+	padding: 0.1em 0.8em;
+	border: 1px solid #690B00;
+	background:rgba(255, 255, 255, 0.4) ;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px
 }
 
 /* --- Emplacement au dessus du pied de page --- */
 div#bottom-content {
 	margin: 2% 0 0 0;
 	padding: 0.1em 0.8em;
-	background-color: #FFFFFF;
-	border: 5px solid #c6aa57;
+	border: 1px solid #690B00;
+	background:rgba(255, 255, 255, 0.4) ;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px
 }
 
 
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 footer#footer {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8c98a7+0,5e6d81+49,444954+100 */
+	background: #8c98a7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #8c98a7 0%, #5e6d81 49%, #444954 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #8c98a7 0%,#5e6d81 49%,#444954 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #8c98a7 0%,#5e6d81 49%,#444954 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c98a7', endColorstr='#444954',GradientType=0 ); /* IE6-9 */
+	border-top: 2px #690B00 solid;
 	width: 100%;
 	clear: both;
 }
@@ -337,19 +308,17 @@ footer#footer {
 footer#footer .footer-content {
 	margin: 0 auto 0 auto;
 	padding: 1.5em 0;
-	max-width: 1024px;
 	border-bottom: 2px groove #444444;
 }
 
 footer#footer .footer-infos {
-    margin-bottom: 15px;
-    min-height: 40px;
-    padding-top: 10px;
-    text-align: center;
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
 }
 
 footer#footer .footer-infos span {
-	color: #222222;
+	color: #FFFFFF;
 	font-size: 0.8em;
 }
 
@@ -389,36 +358,214 @@ nav#breadcrumb ol li {
 }
 
 nav#breadcrumb ol li:not(.current):after {
-	content: '/';
-	color: #616161;
+	content: '::';
 }
-
 /* --- Search - Mini --- */
 /* ------------------------ */
 
 #mini-search-form > button {
-    background-color: #c6aa57;
+    background-color: #3B483E;
+border: 1px solid #CCCCCC;
+border-color: #515E55 #515E55 #3B483E #3B483E;	
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
+
 #mini-search-form > button:hover {
-    background-color: #D6B44F;
+    background-color: #515E55;
+}
+
+/* --- Entete articles/news --- */
+/* ------------------------ */
+.subhead-top {background: #394147; padding:5px;}
+
+/* ##############################
+		 menus liens -buttons
+#################################*/
+
+#menus {
+    height: 50px;
+    margin: auto;
+    padding: 0;
+    width: 840px;
+}
+#menus ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#menus ul li {
+    float: left;
+    margin: 0;
+    padding: 7px;
+    width: 116px;
+}
+#menus ul li a {
+	background:url('images/btn.png') no-repeat scroll 0 0 transparent;
+	transition-property: color;
+	transition-duration: 1s;	
+  color: #000000;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 116px;
+}
+#menus ul li a span {
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	margin: auto;
+	height: 30px;
+	margin-top: 4px;
+}
+#menus ul li a:hover, #menus ul li.active a {
+	background:url('images/btn-o.png') no-repeat scroll 0 0 transparent;
+	transition-property: color;
+	transition-duration: 1s;
+    color: #690B00;  
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+	text-decoration: none;
+	width:116px
+}
+#menus ul li a:hover span, #menus ul li.active a span {    
+}
+
+@media (max-width:768px) {
+	#menus {display:none;}
 }
 
 /*======================================
-			Alls Media Queries
-		 CSS applique aux écrans PC 
+		Todd Motto Labs -
+		Flaunt JS Navigation
+		Adapté pour phpboost 5.0
+		URL: www.toddmotto.com
 ========================================*/
 
+section#Motto{
+	background: #3d3d3b;
+    margin: auto;
+    padding: 0px;
+    vertical-align: top;
+    width: 100%;
+	height:auto;
+	z-index:100;
+}
+#menu-title{
+    color: #ffffff;
+    float: left;
+    font-weight: bold;
+    padding: 18px 0 0 87px;
+    text-align: center;
+    text-transform: uppercase;
+	}
+.nav {
+	position:relative;
+	/*display:inline-block;*/
+	font-size:14px;
+	font-weight:900;
+}
+.nav-list {
+	text-align:left;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+}
+.nav-item a {
+	background:#000000 none repeat scroll 0 0;
+	border-bottom:1px solid #690B00;
+	display:block;
+	color:#ffffff;
+	padding:15px 20px;
+
+}
+.nav-item > a:hover {
+	background:#222222 none repeat scroll 0 0;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:180px;
+}
+.nav-submenu-item a {
+	background:rgba(255,255,255, 0.5);
+	border-bottom:1px solid #690B00;
+	display:block;
+	padding:15px;
+}
+.nav-submenu-item a:hover {
+	background:#222222;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    border-left: 1px solid #222222;
+    cursor: pointer;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+}
+
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	border-left: 1px solid #690B00;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url('images/drop.svg') no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background:rgba(255,255,255, 0.5);
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+/*======================================
+			Alls Media Queries
+		 CSS applique aux ꤲans PC 
+========================================*/
 
 @media (max-width:768px) {
 
 	body {font-size: 1.4em;}
 	
 	div#SuperGlobal {width: auto;}	
-	header#header {margin: auto; background:none; height:35px; min-height:0px; margin: auto;width: auto;}
+	header#header {margin: auto; background:none; height: 64px; min-height:0px; margin: auto;width: auto;}
 	div#top-header, div#titre, div#footer_left{display: none;}
 	div#header-gsm {
 		background-color: #880000;
-		border-bottom: 2px solid #c6aa57;
+		border-bottom: 2px solid #000000;
 		min-height:50px; 
 		text-align:center;
 	}
@@ -426,8 +573,8 @@ nav#breadcrumb ol li:not(.current):after {
 		float: none;
 		margin-right: 0px;
 		margin-top: 0px;
-	background: #000000; /* Old browsers */
-	border-bottom: 1px solid #103480;
+	background: #222222; /* Old browsers */
+	border-bottom: 2px solid #690B00;
     min-height: 35px;
     text-align: center;
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
@@ -441,20 +588,12 @@ nav#breadcrumb ol li:not(.current):after {
     line-height: 3.5em;
     text-shadow: none;
 	}
-	div#global{background:rgba(255, 255, 255, 0.7) url('images/global.png') repeat-y scroll center 0;}
+	div#global{background:rgba(255, 255, 255, 0.7); margin: a auto 0 auto;}
 	aside#menu-left {border-right: none;}
 	aside#menu-right{border-left: none;}	
 	
 	div#top-footer {background:rgba(255, 255, 255, 0.7) none repeat scroll 0 0;}	
 
-	footer#footer {
-    background: #880000 none repeat scroll 0 0;
-    border-top: 2px solid #c6aa57;
-	clear: both;
-	margin: auto;
-	width: 1250px;
-    height: auto;		
-	}
 	div#footer-bis {  height: 1px;}	
 	footer#footer .footer-infos {
 		min-height: 40px;
@@ -463,8 +602,8 @@ nav#breadcrumb ol li:not(.current):after {
 		padding-top: 10px;
 	}
 	footer#footer {width:100%}
-	footer#footer .footer-infos span a{color:#fefefe;}
-	footer#footer .footer-infos span a:hover {color:#5f3f12;}
+	footer#footer .footer-infos span a{color:#690B00;}
+	footer#footer .footer-infos span a:hover {color:#ACACAC;}
 	.footer-infos span {
     display: block;
     padding: 0 0 5px;
@@ -485,6 +624,52 @@ nav#breadcrumb ol li:not(.current):after {
 
 @media (min-width:769px) {
 	div#header-gsm{display: none;}
+}
+
+@media (min-width:769px) {
+	section#Motto {display: none;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+		list-style: none outside none;		
+	}
+	.nav-item > a {
+		padding:15px;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	ul{margin-left:0px;}
+	.nav-submenu{margin-bottom:0px}
+}
+@media (max-width:768px) {
+	div#menugo {display: none;}
 }
 
 /* --- Scroll to Top --- */
