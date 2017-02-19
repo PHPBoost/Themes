@@ -334,6 +334,10 @@ hr { background: #222222 none repeat scroll 0 0;}
 	transition: all 0.3s linear;
 }
 
+.formatter-code .formatter-title {
+	margin: 1rem 0 0.5rem 0;
+}
+
 .copy-code {
 	float: right;
 	padding: 1rem 0 0 0;

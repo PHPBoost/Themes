@@ -85,7 +85,7 @@ h1 a:hover {
 @media (max-width:768px) {
 
 	h5 { font-size: 2rem;}
-	h1 a, h1 a:hover, section header h1 a:hover, .submenu-button a, .submenu-button a:hover{ font-size: 1.3rem; }
+	h1 a, h1 a:hover, section header a:hover, .submenu-button a, .submenu-button a:hover{ font-size: 1.3rem; }
 
 }
 
@@ -362,6 +362,10 @@ hr { background: #222222 none repeat scroll 0 0;}
 .formatter-hide-close-button:hover {
 	color: #444444;
 	transition: all 0.3s linear;
+}
+
+.formatter-code .formatter-title {
+	margin: 1rem 0 0.5rem 0;
 }
 
 .copy-code {

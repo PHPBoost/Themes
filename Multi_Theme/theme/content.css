@@ -109,7 +109,7 @@ article header h1 {
     color: #444444;
 }
 
-section header h1 a:hover {
+section header a:hover {
 	text-decoration: none;
 }
 
@@ -1301,64 +1301,82 @@ div.field-required:after {
 }
 
 
-/* Système de drag&Drop */
+/* --- Systeme de drag&Drop --- */
 .sortable-block .sortable-element > .sortable-block {
 	margin-left: 30px;
 }
 
 .sortable-block {
-	list-style-type: none;
-	list-style-position: outside;
 	margin: 0;
 	padding: 0;
 	min-height: 24px;
+	list-style-type: none;
+	list-style-position: outside;
+	color: #777777;
 }
 
 .sortable-block .sortable-element {
-	background: #FFFFFF;
-	border: 1px solid #DEDEDE;
-	padding: 0;
-	margin-bottom: 6px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-	transition: box-shadow 0.2s;
 	display: table;
+	margin-bottom: 6px;
+	padding: 0;
 	width: 100%;
+	border-color: #517BA6;
+	border-style: solid;
+	border-width: 0 0 0 3px;
+	transition: all 0.2s;	
 }
 
 .sortable-block .sortable-element:hover {
-	border: 1px solid #d0d8e1;
-	box-shadow: 0px 0px 5px #EAEAEA;
+	border-color: #366493;
+	transition: all 0.2s;
 }
 
-.sortable-block .sortable-element .sortable-selector {
-	display: table-cell;
-	width: 10px;
-	background: #DEDEDE;
-	opacity: 0;
-	transition: opacity 1s;
-	cursor: move;
+@media (min-width:769px){ 
+	.sortable-block .sortable-element .sortable-selector {
+		display: table-cell;
+		position: relative;
+		width: 20px;
+		opacity: 0.2;
+		transition: opacity 0.3s;
+		cursor: move;
+	}
+	
+	.sortable-selector:after {
+		position: absolute;
+		content: "\f047";
+		top: 34%;
+		left: 4px;
+		color: #517BA6;
+		font-family: fontawesome;
+	}
 }
 
 .sortable-block .sortable-element:hover .sortable-actions {
 	opacity: 1;
+	transition: opacity 0.3s;
 }
 
 .sortable-block .sortable-element:hover .sortable-selector {
-	opacity: 0.6;
+	opacity: 1;
+	transition: opacity 0.3s;
 }
 
 .sortable-block .sortable-title {
-	background-image: linear-gradient(to bottom, #FFFFFF 50%, #FAFAFA 100%);
 	padding: 8px 5px 5px 10px;
 }
 
 .sortable-block .sortable-title:hover {
-	background-image: linear-gradient(to bottom, #FFFFFF 25%, #F2F5F8 100%);
+	background-color: #FAFAFA;
+	transition: all 0.2s linear;
 }
 
-.sortable-block .sortable-title span {
+.sortable-block .sortable-title > span {
 	font-size: 1.5em;
 	font-weight: bold;
+}
+
+.sortable-block .sortable-title a {
+	color: #555555;
 }
 
 .sortable-block .sortable-title span.cat-desc {
@@ -1372,24 +1390,24 @@ div.field-required:after {
 }
 
 .sortable-block fieldset {
-	padding: 0px 30px;
+	padding: 0 30px;
 }
 
 .sortable-block .sortable-actions {
 	float: right;
 	padding: 3px 3px;
-	opacity: 0.5;
+	opacity: 0.2;
 	transition: opacity 0.2s;
 }
 
 .sortable-block .sortable-element hr {
-	background-color: #999999;
 	margin-top: 5px;
+	background-color: #999999;
 }
 
 .sortable-block .sortable-element label {
-	color: #1F507F;
 	margin-left: 14px;
+	color: #1F507F;
 }
 
 .sortable-block .sortable-actions img,
@@ -1405,19 +1423,23 @@ div.field-required:after {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
-body.dragging, body.dragging * {
+body.dragging,
+body.dragging * {
 	cursor: move !important;
 }
 
 .dropzone {
-	margin: 10px 0px;
+	margin: 10px 0;
 	padding-top: 5px;
 	height: 30px;
+	opacity: 0.6;
 	border: 1px dashed #AAAAAA;
-	border-radius: 5px;
 	text-align: center;
 	color: #AAAAAA;
-	opacity: 0.6;
+}
+
+.preview img {
+	overflow: hidden;
 }
 
 
