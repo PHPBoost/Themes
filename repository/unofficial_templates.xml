@@ -2064,7 +2064,54 @@
 			</whatsnew>
 		</version>
 	</app>
-	AssassinSCreed
+	<app id="FinalFantasy" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="FinalFantasy" priority="low" security-update="false" pubdate="2017/03/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/FinalFantasy/FinalFantasy.zip">FinalFantasy template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 FinalFantasy template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="FinalFantasy" priority="low" security-update="false" pubdate="2017/03/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/FinalFantasy/FinalFantasy.zip">Theme FinalFantasy</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme FinalFantasy</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Universal-PBT" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Universal-PBT" priority="low" security-update="false" pubdate="2017/03/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Universal-PBT/Universal-PBT.zip">Universal-PBT template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Universal-PBT template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Universal-PBT" priority="low" security-update="false" pubdate="2017/03/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Universal-PBT/Universal-PBT.zip">Theme Universal-PBT</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Universal-PBT</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- PaperToss -->
 	<app id="plus" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
