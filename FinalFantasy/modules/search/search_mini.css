@@ -1,0 +1,54 @@
+/*---------------------------------------------------------
+ * Theme    : Thème FinalFantasy
+ * Par      : EDN | Rusty
+ * Date     : 03/12/11
+ * Site web : http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 06/02/2017
+/*--------------------------------------*/
+
+
+/* ---      Search      --- */
+/* ------------------------ */
+
+#mini-search-form {
+	float: right;
+	margin: 40px 20px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	width: 120px;
+	height: 25px;
+	border-radius: 4px 0 0 4px;
+}
+
+#mini-search-form.input-element-button button {
+	background-image:none;
+	background: rgba(255,255,255, 0.5);
+	margin-left: -5px;
+	padding: 4px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0 4px 4px 0;
+}
+#mini-search-form.input-element-button button:hover{
+	background-image:none;
+	background: rgba(255,255,255, 0.7);
+}
