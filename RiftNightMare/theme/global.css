@@ -387,6 +387,11 @@ hr { background: #222222 none repeat scroll 0 0;}
 	margin: 1rem 0 0.5rem 0;
 }
 
+.formatter-code .formatter-content {
+	overflow: auto;
+	max-height: 500px;
+}
+
 .copy-code {
 	float: right;
 	padding: 1rem 0 0 0;
