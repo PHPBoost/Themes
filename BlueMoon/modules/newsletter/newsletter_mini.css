@@ -1,0 +1,68 @@
+/*---------------------------------------------------------
+ * Theme    : Thème BlueMoon
+ * Par      : EDN-Swan
+ * Date     : 13/02/09
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 05/03/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+/* --- Newsletter--- */
+/* ------------------------ */
+
+
+.newsletter-form {
+    background-color: rgba(42, 73, 117, 0.8);
+    border: 1px solid #8ed3ff;
+    margin: 20px 25px 10px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 5px;	
+}
+
+.newsletter-title {
+    color: #efefef;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 2px 4px 0 0;
+    vertical-align: middle;
+}
+div#newsletter {
+    float: right;
+    margin: 10px;
+}
+div#newsletter button, div#newsletter .button {
+    margin-top: 0;
+}
+
+.newsletter-link {
+    margin: 10px 0 0;
+}
+div#newsletter .input-element-button input {
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+    width: 120px;
+}
+div#newsletter .input-element-button button {
+	background-image:none;
+	background-color:rgba(0,0,0, 0);
+	border:  rgba(255,255,255, 0.7);
+    border-color: none;
+    border-radius: 0 4px 4px 0;
+	color: #00e5ff;
+    font-size: 12px;
+    margin-left: -5px;
+
+}
+
+

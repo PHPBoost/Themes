@@ -1,52 +1,67 @@
 /*---------------------------------------------------------
- * Theme    : Thème FinalFantasy
- * Par      : EDN | Rusty
- * Date     : 03/12/11
- * Site web : http://easy-design.net/
+ * Theme    : Thème BlueMoon
+ * Par      : EDN-Swan
+ * Date     : 11/02/10
+ * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
  * Porté par : EDN | Swan
- * Date      : 06/02/2017
-/*--------------------------------------
+ * Date      : 10/03/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/* --------------------------------------
 		content.css
-Contient les elements : 
- - conteneurs generaux, elements de module,
- - pagination des pages,
- - exploreur de categorie,
- - gestion des categories,
- - mini-module,
- - message postes,
- - maintenance,
------------------------------------------*/
+Contient les formulaires, les modules (et modules minis), messages.
+--------------------------------------*/
 
+/* CSS applique aux écrans PC */
+@media ( min-width: 769px ) {
 
-/* -- Conteneurs, elements de module -- */
-/* ------------------------------------ */
-section{
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
-	vertical-align: top;
-	padding-bottom:15px;
 }
 
+/* CSS applique aux tablettes */
+@media ( max-width: 768px ) {
 
+}
+
+/* CSS applique aux smartphones */
+@media ( max-width: 480px ) {
+
+}
+
+/* -- Conteneurs, éléments de module, ... --
+*  Hauteur & largeur
+*  Fond/background,
+*  Police/font 
+*  Couleurs etc..
+--------------------------------------*/
+
+section,
 article {
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
+    margin: 1em auto;
+    padding: 5px;
+    width: 100%;
 	vertical-align: top;
 }
+section {
+	background-color: #c4dded;
+	border: 2px solid #ffffff;
+	border-radius:5px
+}
 
-@media (min-width: 769px) {
-	section,
-	article {
-		margin: 1em auto;
-		width: 100%;
-	}
+article{
+
+    margin: auto auto 20px;
+}
+article.message, .explorer .inline, article#article-wiki{
+    background: none;
+    border: none;
 }
 
 /* --- articles --- */
@@ -60,35 +75,28 @@ article {
 	clear: both;
 }
 
+
 /* --- Titre d'une page ou d'un element d'un module --- */
 section header h1,
 article header h1 {
-	border-bottom: 2px groove #87A3B0;
-	margin-left: 15px;
+    border-bottom: 2px solid #157da1;
+    margin-top: 10px;
 }
+
 section header a:hover {
 	text-decoration: none;
 }
 
-section header h2,
+section header h2, 
 article header h2 {
-	border-bottom: 2px groove #87A3B0;
+    border-bottom: 2px solid #157da1;
+    margin-top: 10px;
 }
 
 section header h3,
 article header h3 {
-	border-bottom: 2px groove #87A3B0;
-}
-header h1 a , header h3 a {margin-left: 15px;}
-
-header h2 span.title {
-    margin-left: 15px;
-}
-@media (min-width: 769px) {
-	section header,
-	article header {
-		margin: 0 0 1em 0;
-	}	
+    border-bottom: 2px solid #157da1;
+    margin-top: 10px;
 }
 
 /* --- Titre d'un bas de page --- */
@@ -145,7 +153,7 @@ header span.actions a {
 
 @media (max-width: 768px) {
 	.content {
-		padding: 1em 0;
+		padding: 1em 0.2em;
 	}
 }
 
@@ -157,10 +165,11 @@ header span.actions a {
 .block,
 .medium-block,
 .small-block {
-	border: 1px solid #87A3B0;
-	background-color: rgba(255,255,255, 0.5);
-	border-radius: 3px;	
-	padding: 0.8em;
+    background: #fff none repeat scroll 0 0;
+    border-color: #2e3b5f #efefef;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    padding: 0.8em;
 }
 
 .block .content,
@@ -221,12 +230,13 @@ header span.actions a {
 
 /* ---- Friends content ---- */
 .content-friends {
-    border-width: 7px 1px 1px 1px;
-    border-top-color: #103B67;
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #103B67;
 }
+
 .content-privileged-friends {
-    border-width: 7px 1px 1px 1px;
-    border-top-color: #E2BE47;
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #E2BE47;
 }
 
 
@@ -237,7 +247,7 @@ section footer ul.pagination {
 }
 
 ul.pagination {
-	margin: 0;
+	margin: 0px;
 }
 
 ul.pagination .fa:before {
@@ -263,37 +273,35 @@ ul.pagination-block li a {
 }
 
 ul.pagination-block li a {
-	background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.18) 0%, rgba(56, 56, 56, 0.10) 100%);
-	background-color: rgba(255, 255, 255, 0.5);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 4px;
-	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.05);
 	color: #333333;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+	background-image: linear-gradient(to bottom,  rgba(255,255,255,0.18) 0%, rgba(56,56,56,0.10) 100%);
+	background-color: #F9F9F9;
+	border: 1px solid #CCCCCC;
+	border-color: #E1E1E1 #E1E1E1 #BFBFBF #CFCFCF;
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0px 2px rgba(0, 0, 0, 0.05);
 }
-
 ul.pagination-block li a:hover {
-	background-color: rgba(255, 255, 255, 0.7);
-	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.1);
+	background-color: #FDFDFD;
+	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0px 2px rgba(0, 0, 0, 0.1);
 	transition: all 0.1s linear;
 }
-
 ul.pagination-block li a:active {
 	background-color: #F1F1F1;
 	border: 1px solid #DDDDDD;
-	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0px 2px rgba(0, 0, 0, 0.05);
 }
 
 ul.pagination-block li a.current-page {
-	background-color: rgba(0,0,0, 0.5);
-	border-color: rgba(0,0,0, 0.4);
 	color: #FEFEFE;
+	background-color: #3B6B9F;
+	border-color: #366393;
 	text-decoration: none;
 }
-
 ul.pagination-block li a.current-page:hover {
-	background-color: rgba(245, 245, 245, 0.5);
-	border: 1px solid rgba(245, 245, 245, 0.5);
+	background-color: #366393;
+	border-color: #315A86;
 }
 
 ul.pagination-block-bis li a.prev-page,
@@ -331,6 +339,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	}
 }
 
+
 .explorer .cats {
 	min-width: 200px;
 }
@@ -341,39 +350,32 @@ ul.pagination-block-bis li a.next-page:hover {
 	font-size: 13px;
 }
 
+
 .explorer .content {
+	border: 1px solid #efefef;
 	padding: 5px 0;
-	min-height: 120px;
-	border: 1px solid #87A3B0;
-	background-color: rgba(255,255,255, 0.5);	
 	border-radius: 3px;
+	min-height: 120px;
 }
 
 .explorer .content ul {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 }
-
 .explorer .content ul ul {
 	margin-left: 22px;
 }
 
 .explorer .content ul a.parent {
 	float: left;
-	height: 0;
-}
-
-.explorer .content ul a.parent i[id^="img2_"] {
-	margin-left: -18px;
 }
 
 .explorer .content ul a {
+	padding: 3px 0px;
 	display: block;
-	padding: 3px 0;
-	color: #000000;
 	text-decoration: none;
-	text-align: left;
+	color: #666666;
 }
 
 .explorer .content > ul > li > a {
@@ -384,7 +386,6 @@ ul.pagination-block-bis li a.next-page:hover {
 	width: 20px;
 	vertical-align: top;
 }
-
 .explorer .content ul .fa:before {
 	vertical-align: middle;
 }
@@ -392,15 +393,14 @@ ul.pagination-block-bis li a.next-page:hover {
 .explorer .content ul a.parent .fa:first-child {
 	width: 14px;
 }
-
 .explorer .content ul a.parent .fa:first-child:before {
 	width: 14px;
 	font-size: 11px;
 }
 
 .explorer .content ul a:hover,
-.explorer .content ul a:hover + a {
-	background-color: rgba(255,255,255, 0.5);	
+.explorer .content ul a:hover+a {
+	background-color: #FFFFFF;
 }
 
 .explorer .content ul .sub a.parent {
@@ -408,17 +408,16 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .explorer .selected {
-	background-color: rgba(255,255,255, 0.5);	
+	background: #ffffff none repeat scroll 0 0;
 }
 
 .options {
-	float: right;
 	margin: 5px;
 	padding: 6px 12px;
-	max-width: 100%;
-	border: 1px solid #87A3B0;
-	background-color: rgba(255,255,255, 0.5);
-	border-radius: 3px;	
+	background: #ffffff none repeat scroll 0 0;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	float: right;
 }
 
 .options h6 {
@@ -429,7 +428,8 @@ ul.pagination-block-bis li a.next-page:hover {
 .options > h6,
 .options > a ,
 .options > span > a.small {
-	color: #333333;
+	color: #FFFFFF;
+	font-weight:normal;
 }
 
 .infos {
@@ -443,7 +443,6 @@ ul.pagination-block-bis li a.next-page:hover {
 		margin: 0 0 10px;
 	}
 }
-
 
 /* -- Gestion des categories -- */
 /* ---------------------------- */
@@ -484,7 +483,6 @@ ul.pagination-block-bis li a.next-page:hover {
 	margin-bottom: 10px;
 }
 
-
 /* --- Systeme de drag&Drop --- */
 .sortable-block .sortable-element > .sortable-block {
 	margin-left: 30px;
@@ -507,7 +505,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	border-color: #517BA6;
 	border-style: solid;
 	border-width: 0 0 0 3px;
-	transition: all 0.2s;	
+	transition: all 0.2s;    
 }
 
 .sortable-block .sortable-element:hover {
@@ -524,8 +522,8 @@ ul.pagination-block-bis li a.next-page:hover {
 		transition: opacity 0.3s;
 		cursor: move;
 	}
-	
-	.sortable-selector:after {
+
+    .sortable-selector:after {
 		position: absolute;
 		content: "\f047";
 		top: 34%;
@@ -555,7 +553,7 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .sortable-block .sortable-title > span {
-	font-size: 1.5em;
+ 	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -626,40 +624,49 @@ body.dragging * {
 	overflow: hidden;
 }
 
-/* -- Modules minis -- */
-/* ------------------- */
+/* -- Modules minis --
+--------------------------------------*/
 .module-mini-container {
-	margin: 0 0 10px 0;
-	padding: 5px;
-	background-color: rgba(255,255,255, 0.5);
-	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.8);
+background: url('images/contentbg.jpg') no-repeat scroll center top #c4dded;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+	margin: 0px 0px 10px 0px;
 	border-spacing: 1px;
-	border-radius: 5px;
 	clear: both;
 }
 
 .module-mini-top {
-	padding: 0.2em 0 0.2em 0;
-	min-height: 24px;
-	border-bottom: 2px groove #87A3B0;
+	min-height: 37px;
 	text-align: center;
+	padding: 1em 0;
 }
 
 .module-mini-container h5,
-.module-mini-container h3 {
-	color: #000000;
+.module-mini-container h3,
+.module-mini-container h3 a {
+	font-size: 1.3rem;
+	color: #515C68;
 }
 
 .module-mini-contents {
-	padding: 5px 4px 0 4px;
 	border-top: none;
 	border-bottom: none;
 	text-align: center;
+	padding: 5px 4px 0px 4px;
 }
 
 .module-mini-bottom {
-	height: 15px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+3,c4dded+64,b6d6ea+100 */
+background: #f0f9ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #f0f9ff 3%, #c4dded 64%, #b6d6ea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f0f9ff 3%,#c4dded 64%,#b6d6ea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f0f9ff 3%,#c4dded 64%,#b6d6ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#b6d6ea',GradientType=0 ); /* IE6-9 */
+
+height: 26px;
+border-radius: 0 0 12px 12px;	
 }
+
 
 
 /* -- Messages postes par les membres -- */
@@ -715,9 +722,10 @@ body.dragging * {
 	margin: 5px 0 0 140px;
 	padding: 15px;
 	min-height: 80px;
-	background-color: rgba(255,255,255, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.5);
 	border-radius: 4px;
-	color: #333333;
+	color: #efefef;
 }
 
 .message-message::before {
@@ -728,7 +736,7 @@ body.dragging * {
 	display: block;
 	width: 0;
 	border-width: 15px 25px 15px 0;
-	border-color: transparent rgba(255,255,255, 0.5);
+	border-color: transparent rgba(0, 0, 0, 0.5);
 	border-style: solid;
 	content: "";
 }
@@ -742,7 +750,7 @@ body.dragging * {
 	display: block;
 	width: 0;
 	border-width: 14px 24px 14px 0;
-	border-color: transparent rgba(255,255,255, 0.5);
+	border-color: transparent rgba(0, 0, 0, 0.5);
 	border-style: solid;	
 }
 
@@ -910,12 +918,12 @@ article .message-user-infos .message-user-group {
 
 /* --- Moderation des messages --- */
 .message-moderate {
-	margin-bottom: 10px;
-	padding: 4px 0 4px 0;
-	width: 98%;
-	background-color: #ECEFFA;
+	background: #ECEFFA;
 	border: 1px solid #D6DEE7;
 	border-radius: 4px;
+	padding: 4px 0 4px 0;
+	margin-bottom: 10px;
+	width: 98%;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -935,7 +943,7 @@ i.message-announce {
 }
 
 i.message-announce-new {
-	color: #000000;
+	color: #4372AA;
 }
 
 
@@ -969,4 +977,20 @@ div#message-maintain > div {
 
 div#release {
 	margin-top: 20px;
+}
+
+
+/* -- Les forms 
+--------------------------------------*/
+
+
+form.fieldset-content {
+	background-color: #c4dded;
+	border: 2px solid #ffffff;
+	margin: 20px auto auto;
+	width: 100%;	
+}
+form#comments, form#ContactController, form#shoutboxform, form#GuestbookFormController{
+background:none;
+border:none;
 }

@@ -66,7 +66,7 @@ article header h1 {
 	border-bottom: 2px groove #87A3B0;
 	margin-left: 15px;
 }
-section header h1 a:hover {
+section header a:hover {
 	text-decoration: none;
 }
 

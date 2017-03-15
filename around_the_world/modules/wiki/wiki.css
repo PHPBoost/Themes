@@ -1,0 +1,167 @@
+/*---------------------------------------------------------
+ * Theme    : Thème AroundTheWorld
+ * Par      : Grenouille
+ * Date     : 27/01/13
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 10/03/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+.wiki_paragraph1 {
+    border-bottom: 2px solid #343d49;
+    color: ##445766;
+    font-size: 17px;
+    font-weight: bold;
+    margin: auto;
+    padding: 0 5px;
+}
+.wiki_paragraph2 {
+	background-color: #FFFFFF;
+    border-bottom: 3px solid #343d49;
+    border-radius: 3px;
+    clear: both;
+    color: ##445766;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 10px 45px;
+    padding: 0 3px;
+}
+.wiki_paragraph3 {
+    	background-color: #FFFFFF;
+    border-color: #343d49;
+    border-style: solid;
+    border-width: 1px 3px;
+    color: ##445766;
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 60px;
+    text-indent: 5px;
+}
+.wiki_paragraph4 {
+    	background-color: #FFFFFF;
+    border-color: #343d49;
+    border-style: solid;
+    border-width: 1px 3px;
+    color: ##445766;
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 80px;
+    text-indent: 5px;
+}
+.wiki_paragraph5 {
+    color: #343d49;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: underline;
+    text-indent: 100px;
+}
+
+.wiki_list_1 { list-style-type: upper-roman; 	}
+.wiki_list_2 { list-style-type: decimal; 		}
+.wiki_list_3 { list-style-type: upper-alpha; 	}
+.wiki_list_4 { list-style-type: lower-alpha; 	}
+.wiki_list_5 { list-style-type: lower-greek; 	}
+
+.wiki-button {
+	margin-left: 10px;
+	padding: 4px 2px;
+	width: 145px;
+	height: 20px;
+	background: #A7C7DF;
+	border: 1px solid #6D93B4;
+	color: #EDFFF0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ol {
+	margin: 0 0 0 25px;
+}
+
+ol.wiki_list_1 > li {
+	margin-top: 5px;
+}
+
+ul.no-list {
+	margin: 0 0 0 20px;
+}
+
+ul.no-list a i.fa {
+	width: 18px;
+}
+
+#module-wiki .content .options {
+	float: none;
+	text-align: center;
+}
+
+.wiki-summary {
+	border: 1px solid #cccccc ;
+	background-color: #FFFFFF;
+	border-radius: 3px;	
+    display: inline-block;
+    margin: 5px;
+    max-width: 100%;
+    padding: 6px 12px;
+}
+
+.wiki-summary-title {
+	font-weight: bold;
+}
+
+.futur-cat-pages {
+	padding-left: 17px;
+}
+
+#article-wiki .content {
+	margin-bottom: 30px;
+}
+
+#article-wiki .content .options {
+	float: none;
+	width: 50%;
+}
+
+.wiki-hits {
+	margin: 8px auto 10px auto;
+	text-align: center;
+}
+
+.wiki-bbcode {
+	margin-bottom: -6px;
+}
+
+.wiki-edit .bbcode-containers {
+	border-radius: 0;
+	border-top: none;
+}
+
+.wiki-edit .wiki-bbcode .bbcode-containers {
+	border-radius: 4px 4px 0 0;
+	border-top: 1px solid #BBBBBB;
+	border-bottom: none;
+}
+
+.bbcode li.bbcode-elements > a.bbcode-wiki-insert {
+	width: 100%;
+}
+
+.wiki-bbcode.bbcode li:nth-child(3).bbcode-elements > a {
+	padding: 0;
+}
+
+.wiki-tools-container {
+	margin-bottom: 25px;
+}
