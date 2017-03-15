@@ -289,6 +289,131 @@
 			</whatsnew>
 		</version>
 	</app>
+	<!-- Bell Cranel -->
+	<app id="gaming-blue" type="template">
+		<version num="5.0.2" language="english" localized_language="English" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-blue/gaming-blue.zip">Gaming Blue</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 Gaming Blue template</description>
+			<whatsnew>
+				<new type="improvement">Add tag-list</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-blue/gaming-blue.zip">Gaming Blue</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 du theme Gaming Blue</description>
+			<whatsnew>
+				<new type="improvement">Prise en compte du tag top-list</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="gaming-green" type="template">
+		<version num="5.0.2" language="english" localized_language="English" name="Gaming Green" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-green/gaming-green.zip">Gaming Green</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 Gaming Green template</description>
+			<whatsnew>
+				<new type="improvement">Add tag-list</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Green" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-green/gaming-green.zip">Gaming Green</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 du theme Gaming Green</description>
+			<whatsnew>
+				<new type="improvement">Prise en compte du tag top-list</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="gaming-red" type="template">
+		<version num="5.0.2" language="english" localized_language="English" name="Gaming Red" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-red/gaming-red.zip">Gaming Red</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 Gaming Red template</description>
+			<whatsnew>
+				<new type="improvement">Add tag-list</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Red" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/gaming-red/gaming-red.zip">Gaming Red</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 du theme Gaming Red</description>
+			<whatsnew>
+				<new type="improvement">Prise en compte du tag top-list</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Game_Team" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Game_Team/Game_Team.zip">Game Team</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Game_Team template</description>
+			<whatsnew>
+				<new type="improvement">First release</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Game_Team/Game_Team.zip">Game Team</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Game_Team</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="minecraftien" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Game Team" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/minecraftien/minecraftien.zip">Game Team</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 minecraftien template</description>
+			<whatsnew>
+				<new type="improvement">First release</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/10/12">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/minecraftien/minecraftien.zip">Game Team</download>
+			<authors>
+				<author name="Bell Cranel" email="fightermanga@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme minecraftien</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- Bidi -->
 	<app id="BidiBlue" type="template">
 		<version num="1.2" language="english" localized_language="English" name="BidiBlue" priority="low" security-update="false" pubdate="2013/08/26">
@@ -651,6 +776,30 @@
 				<new type="improvement">Ajout de la fonction "recherche mise a jour"</new>
 			</whatsnew>
 		</version>
+		<version num="5.0.0" language="english" localized_language="English" name="Around The World" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/AroundTheWorld/AroundTheWorld.zip">Around The World Theme</download>
+			<authors>
+				<author name="Grenouille" email="mariedozol@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0 Around The World theme</description>
+			<whatsnew>
+				<new type="new">Update for PHPBoost v5.0</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Around The World" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/AroundTheWorld/AroundTheWorld.zip">Theme Around The World</download>
+			<authors>
+				<author name="Grenouille" email="mariedozol@gmail.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0 du theme Around The World</description>
+			<whatsnew>
+				<new type="new">Mise à jour pour PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
 	</app>
 	<!-- Kits_Graphiques -->
 	<app id="Summerday" type="template">
@@ -846,6 +995,30 @@
 				<new type="improvement">Changement du lien de repository</new>
 			</whatsnew>
 		</version>
+		<version num="5.0.0" language="english" localized_language="English" name="Fantasy" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Fantasy/Fantasy.zip">Fantasy template</download>
+			<authors>
+				<author name="Sawk/MrToine" email="anthony.violet@outlook.fr" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Fantasy template</description>
+			<whatsnew>
+				<new type="improvement">Update for PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Fantasy" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Fantasy/Fantasy.zip">Theme Fantasy</download>
+			<authors>
+				<author name="Sawk/MrToine" email="anthony.violet@outlook.fr" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Fantasy</description>
+			<whatsnew>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
 	</app>
 	<!-- Myster -->
 	<app id="actiweb2" type="template">
@@ -945,6 +1118,58 @@
 			</whatsnew>
 		</version>
 	</app>
+	<!-- PaperToss -->
+	<app id="plus" type="template">
+		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/plus/plus.zip">Plus template</download>
+			<authors>
+				<author name="PaperToss" email="t0ssp4p3r@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 Plus template</description>
+			<whatsnew>
+				<new type="bug">Fix JS Scroll-to</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.2" language="french" localized_language="Francais" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/plus/plus.zip">Theme Plus</download>
+			<authors>
+				<author name="PaperToss" email="t0ssp4p3r@gmail.com" />
+			</authors>
+			<description>Version 5.0.2 du theme Plus</description>
+			<whatsnew>
+				<new type="bug">Correction du bug JS Scroll-to</new>
+			</whatsnew>
+		</version>
+	</app>
+ 	<!-- pegasetkc : EasyDesign.net -->
+	<app id="CSN-Gaming" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="CSN-Gaming" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/CSN-Gaming/CSN-Gaming.zip">CSN-Gaming template</download>
+			<authors>
+				<author name="pegasetkc" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 CSN-Gaming template</description>
+			<whatsnew>
+				<new type="improvement">Update for PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="CSN-Gaming" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/CSN-Gaming/CSN-Gaming.zip">Theme CSN-Gaming</download>
+			<authors>
+				<author name="pegasetkc" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme CSN-Gaming</description>
+			<whatsnew>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- riptide -->
 	<app id="vertigo" type="template">
 		<version num="2.0.3" language="english" localized_language="English" name="Vertigo" priority="low" security-update="false" pubdate="2016/04/30">
@@ -991,6 +1216,60 @@
 			<description>Version 1.1 du theme Vertigo</description>
 			<whatsnew>
 				<new type="improvement">Changement du lien de repository</new>
+			</whatsnew>
+		</version>
+	</app>
+	<!-- Rusti : EasyDesign.net -->
+	<app id="AssassinSCreed" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="AssassinSCreed" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/AssassinSCreed/AssassinSCreed.zip">AssassinSCreed template</download>
+			<authors>
+				<author name="Rusti" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 AssassinSCreed template</description>
+			<whatsnew>
+				<new type="improvement">First Revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="AssassinSCreed" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/AssassinSCreed/AssassinSCreed.zip">Theme AssassinSCreed</download>
+			<authors>
+				<author name="Rusti" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme AssassinSCreed</description>
+			<whatsnew>
+				<new type="improvement">Première version</new>
+			</whatsnew>
+		</version>
+	</app>
+	<!-- Sakura : EasyDesign.net -->
+	<app id="Multi_Theme" type="template">
+		<version num="5.0.5" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Multi_Theme template</download>
+			<authors>
+				<author name="Sakura" email="admin@news-manga.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.5 Multi_Theme template</description>
+			<whatsnew>
+				<new type="bug">Fix Submenu</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.5" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2017/02/02">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Theme Multi_Theme</download>
+			<authors>
+				<author name="Sakura" email="admin@news-manga.com" />
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.5 du theme Multi_Theme</description>
+			<whatsnew>
+				<new type="bug">Menu avec sous-menus intégrés</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1043,127 +1322,32 @@
 			</whatsnew>
 		</version>
 	</app>
-	<!-- Teki-Latex -->
-	<app id="oxygen" type="template">
-		<version num="3.0.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
+	<!-- Striker & Jiraya : EasyDesign.net -->
+	<app id="FanSubAniM" type="template">
+		<version num="5.0.2" language="english" localized_language="English" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/06/01">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">FanSubAniM template</download>
 			<authors>
-				<author name="ElenWii" email="elenwii@phpboost.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
+				<author name="Striker" email="contact@easy-design.net" />
+				<author name="Jiraya" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 3.0.3 oxygen theme</description>
+			<description>Version 5.0.2 FanSubAniM template</description>
 			<whatsnew>
-				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
+				<new type="bug">Fix JS Scroll-to</new>
 			</whatsnew>
 		</version>
-		<version num="3.0.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
+		<version num="5.0.2" language="french" localized_language="Francais" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/06/01">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">Theme FanSubAniM</download>
 			<authors>
-				<author name="ElenWii" email="elenwii@phpboost.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
+				<author name="Striker" email="contact@easy-design.net" />
+				<author name="Jiraya" email="contact@easy-design.net" />
+				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 3.0.3 oxygen theme</description>
+			<description>Version 5.0.2 du theme FanSubAniM</description>
 			<whatsnew>
-				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
-			</whatsnew>
-		</version>
-		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
-			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwii@phpboost.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 2.4 oxygen theme</description>
-			<whatsnew>
-				<new type="bug">Modules templates fix</new>
-			</whatsnew>
-		</version>
-		<version num="2.4" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
-			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwii@phpboost.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 2.4 oxygen theme</description>
-			<whatsnew>
-				<new type="bug">Correction des templates des modules</new>
-			</whatsnew>
-		</version>
-		<version num="2.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
-			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwii@phpboost.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 2.3 oxygen theme</description>
-			<whatsnew>
-				<new type="bug">Fix tpl module connect</new>
-				<new type="improvement">Change repository link</new>
-			</whatsnew>
-		</version>
-		<version num="2.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
-			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="ElenWii" email="elenwii@phpboost.com" />
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 2.3 du theme oxygen</description>
-			<whatsnew>
-				<new type="bug">Correction du tpl du module connect</new>
-				<new type="improvement">Changement du lien de repository</new>
-			</whatsnew>
-		</version>
-		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
-			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 1.3 oxygen theme</description>
-			<whatsnew>
-				<new type="bug">Correction CSS files : footer.tpl (add clear:both)</new>
-			</whatsnew>
-		</version>
-		<version num="1.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
-			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
-			<authors>
-				<author name="Teki-Latex" email="teklatex@gmail.com" />
-			</authors>
-			<description>Version 1.3 du theme oxygen</description>
-			<whatsnew>
-				<new type="bug">Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)</new>
-			</whatsnew>
-		</version>
-	</app>
-	<!-- Tijim -->
-	<app id="metro" type="template">
-		<version num="4.3" language="english" localized_language="English" name="metro" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">metro theme</download>
-			<authors>
-				<author name="PcAndCom" email="info@pcandcom.net" />
-			</authors>
-			<description>Version 4.3 metro theme</description>
-			<whatsnew>
-				<new type="bug">Correction header.tpl and default.css</new>
-			</whatsnew>
-		</version>
-		<version num="4.3" language="french" localized_language="Francais" name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
-			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">theme metro</download>
-			<authors>
-				<author name="PcAndCom" email="info@pcandcom.net" />
-			</authors>
-			<description>Version 4.3 du theme metro</description>
-			<whatsnew>
-				<new type="bug">Correction des fichiers header.tpl et de l'appel du default.css</new>
+				<new type="bug">Correction du bug JS Scroll-to</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1213,60 +1397,6 @@
 			<description>Version 5.0.2 du theme FaceBoost</description>
 			<whatsnew>
 				<new type="bug">Correction du bug JS Scroll-to</new>
-			</whatsnew>
-		</version>
-	</app>
-	<app id="FanSubAniM" type="template">
-		<version num="5.0.2" language="english" localized_language="English" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/06/01">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">FanSubAniM template</download>
-			<authors>
-				<author name="Striker" email="contact@easy-design.net" />
-				<author name="Jiraya" email="contact@easy-design.net" />
-				<author name="EDN" email="contact@easy-design.net" />
-			</authors>
-			<description>Version 5.0.2 FanSubAniM template</description>
-			<whatsnew>
-				<new type="bug">Fix JS Scroll-to</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.2" language="french" localized_language="Francais" name="FanSubAniM" priority="low" security-update="false" pubdate="2016/06/01">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/FanSubAniM/FanSubAniM.zip">Theme FanSubAniM</download>
-			<authors>
-				<author name="Striker" email="contact@easy-design.net" />
-				<author name="Jiraya" email="contact@easy-design.net" />
-				<author name="EDN" email="contact@easy-design.net" />
-			</authors>
-			<description>Version 5.0.2 du theme FanSubAniM</description>
-			<whatsnew>
-				<new type="bug">Correction du bug JS Scroll-to</new>
-			</whatsnew>
-		</version>
-	</app>
-	<app id="Multi_Theme" type="template">
-		<version num="5.0.5" language="english" localized_language="English" name="Multi_Theme" priority="low" security-update="false" pubdate="2017/02/02">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Multi_Theme template</download>
-			<authors>
-				<author name="Sakura" email="admin@news-manga.com" />
-				<author name="EDN" email="contact@easy-design.net" />
-			</authors>
-			<description>Version 5.0.5 Multi_Theme template</description>
-			<whatsnew>
-				<new type="bug">Fix Submenu</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.5" language="french" localized_language="Francais" name="Multi_Theme" priority="low" security-update="false" pubdate="2017/02/02">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Multi_Theme/Multi_Theme.zip">Theme Multi_Theme</download>
-			<authors>
-				<author name="Sakura" email="admin@news-manga.com" />
-				<author name="EDN" email="contact@easy-design.net" />
-			</authors>
-			<description>Version 5.0.5 du theme Multi_Theme</description>
-			<whatsnew>
-				<new type="bug">Menu avec sous-menus intégrés</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2038,32 +2168,6 @@
 			</whatsnew>
 		</version>
 	</app>
-	<app id="AssassinSCreed" type="template">
-		<version num="5.0.0" language="english" localized_language="English" name="AssassinSCreed" priority="low" security-update="false" pubdate="2017/02/02">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/AssassinSCreed/AssassinSCreed.zip">AssassinSCreed template</download>
-			<authors>
-				<author name="Rusti" email="contact@easy-design.net" />
-				<author name="EDN" email="contact@easy-design.net" />
-			</authors>
-			<description>Version 5.0.0 AssassinSCreed template</description>
-			<whatsnew>
-				<new type="improvement">First Revision</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.0" language="french" localized_language="Francais" name="AssassinSCreed" priority="low" security-update="false" pubdate="2017/02/02">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/AssassinSCreed/AssassinSCreed.zip">Theme AssassinSCreed</download>
-			<authors>
-				<author name="Rusti" email="contact@easy-design.net" />
-				<author name="EDN" email="contact@easy-design.net" />
-			</authors>
-			<description>Version 5.0.0 du theme AssassinSCreed</description>
-			<whatsnew>
-				<new type="improvement">Première version</new>
-			</whatsnew>
-		</version>
-	</app>
 	<app id="FinalFantasy" type="template">
 		<version num="5.0.0" language="english" localized_language="English" name="FinalFantasy" priority="low" security-update="false" pubdate="2017/03/01">
 			<compatibility min="5.0" />
@@ -2112,153 +2216,199 @@
 			</whatsnew>
 		</version>
 	</app>
-	<!-- PaperToss -->
-	<app id="plus" type="template">
-		<version num="5.0.2" language="english" localized_language="English" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
+	<app id="BlueMoon" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="BlueMoon" priority="low" security-update="false" pubdate="2017/03/15">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/plus/plus.zip">Plus template</download>
+			<download url="https://dl.phpboost.com/5.0/templates/BlueMoon/BlueMoon.zip">BlueMoon template</download>
 			<authors>
-				<author name="PaperToss" email="t0ssp4p3r@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 Plus template</description>
-			<whatsnew>
-				<new type="bug">Fix JS Scroll-to</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.2" language="french" localized_language="Francais" name="Plus" priority="low" security-update="false" pubdate="2016/06/01">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/plus/plus.zip">Theme Plus</download>
-			<authors>
-				<author name="PaperToss" email="t0ssp4p3r@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 du theme Plus</description>
-			<whatsnew>
-				<new type="bug">Correction du bug JS Scroll-to</new>
-			</whatsnew>
-		</version>
-	</app>
-	<!-- Bell Cranel -->
-	<app id="gaming-blue" type="template">
-		<version num="5.0.2" language="english" localized_language="English" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/10/12">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/gaming-blue/gaming-blue.zip">Gaming Blue</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 Gaming Blue template</description>
-			<whatsnew>
-				<new type="improvement">Add tag-list</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/10/12">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/gaming-blue/gaming-blue.zip">Gaming Blue</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 du theme Gaming Blue</description>
-			<whatsnew>
-				<new type="improvement">Prise en compte du tag top-list</new>
-			</whatsnew>
-		</version>
-	</app>
-	<app id="gaming-green" type="template">
-		<version num="5.0.2" language="english" localized_language="English" name="Gaming Green" priority="low" security-update="false" pubdate="2016/10/12">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/gaming-green/gaming-green.zip">Gaming Green</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 Gaming Green template</description>
-			<whatsnew>
-				<new type="improvement">Add tag-list</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Green" priority="low" security-update="false" pubdate="2016/10/12">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/gaming-green/gaming-green.zip">Gaming Green</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 du theme Gaming Green</description>
-			<whatsnew>
-				<new type="improvement">Prise en compte du tag top-list</new>
-			</whatsnew>
-		</version>
-	</app>
-	<app id="gaming-red" type="template">
-		<version num="5.0.2" language="english" localized_language="English" name="Gaming Red" priority="low" security-update="false" pubdate="2016/10/12">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/gaming-red/gaming-red.zip">Gaming Red</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 Gaming Red template</description>
-			<whatsnew>
-				<new type="improvement">Add tag-list</new>
-			</whatsnew>
-		</version>
-		<version num="5.0.2" language="french" localized_language="Francais" name="Gaming Red" priority="low" security-update="false" pubdate="2016/10/12">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/gaming-red/gaming-red.zip">Gaming Red</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
-			</authors>
-			<description>Version 5.0.2 du theme Gaming Red</description>
-			<whatsnew>
-				<new type="improvement">Prise en compte du tag top-list</new>
-			</whatsnew>
-		</version>
-	</app>
-	<app id="Game_Team" type="template">
-		<version num="5.0.0" language="english" localized_language="English" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Game_Team/Game_Team.zip">Game Team</download>
-			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.0 Game_Team template</description>
+			<description>Version 5.0.0 BlueMoon template</description>
 			<whatsnew>
-				<new type="improvement">First release</new>
+				<new type="improvement">Update for PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/09/13">
+		<version num="5.0.0" language="french" localized_language="Francais" name="BlueMoon" priority="low" security-update="false" pubdate="2017/03/15">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/Game_Team/Game_Team.zip">Game Team</download>
+			<download url="https://dl.phpboost.com/5.0/templates/BlueMoon/BlueMoon.zip">Theme BlueMoon</download>
 			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.0 du theme Game_Team</description>
+			<description>Version 5.0.0 du theme BlueMoon</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
-	<app id="minecraftien" type="template">
-		<version num="5.0.0" language="english" localized_language="English" name="Game Team" priority="low" security-update="false" pubdate="2016/10/12">
+	<app id="BlueNess" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="BlueNess" priority="low" security-update="false" pubdate="2017/03/15">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/minecraftien/minecraftien.zip">Game Team</download>
+			<download url="https://dl.phpboost.com/5.0/templates/BlueNess/BlueNess.zip">BlueNess template</download>
 			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.0 minecraftien template</description>
+			<description>Version 5.0.0 BlueNess template</description>
 			<whatsnew>
-				<new type="improvement">First release</new>
+				<new type="improvement">Update for PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.0" language="french" localized_language="Francais" name="Game Team" priority="low" security-update="false" pubdate="2016/10/12">
+		<version num="5.0.0" language="french" localized_language="Francais" name="BlueNess" priority="low" security-update="false" pubdate="2017/03/15">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/minecraftien/minecraftien.zip">Game Team</download>
+			<download url="https://dl.phpboost.com/5.0/templates/BlueNess/BlueNess.zip">Theme BlueNess</download>
 			<authors>
-				<author name="Bell Cranel" email="fightermanga@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.0 du theme minecraftien</description>
+			<description>Version 5.0.0 du theme BlueNess</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Terra" type="template">
+		<version num="5.0.0" language="english" localized_language="English" name="Terra" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Terra/Terra.zip">Terra template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 Terra template</description>
+			<whatsnew>
+				<new type="improvement">Update for PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
+		<version num="5.0.0" language="french" localized_language="Francais" name="Terra" priority="low" security-update="false" pubdate="2017/03/15">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/Terra/Terra.zip">Theme Terra</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.0.0 du theme Terra</description>
+			<whatsnew>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+			</whatsnew>
+		</version>
+	</app>
+	<!-- Teki-Latex -->
+	<app id="oxygen" type="template">
+		<version num="3.0.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwii@phpboost.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 3.0.3 oxygen theme</description>
+			<whatsnew>
+				<new type="improvement">Compatibility with PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="3.0.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2016/04/30">
+			<compatibility min="5.0" />
+			<download url="https://dl.phpboost.com/5.0/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwii@phpboost.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 3.0.3 oxygen theme</description>
+			<whatsnew>
+				<new type="improvement">Compatibilite avec PHPBoost 5.0.4</new>
+			</whatsnew>
+		</version>
+		<version num="2.4" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
+			<compatibility min="4.1" />
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwii@phpboost.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 2.4 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Modules templates fix</new>
+			</whatsnew>
+		</version>
+		<version num="2.4" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/05/10">
+			<compatibility min="4.1" />
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwii@phpboost.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 2.4 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Correction des templates des modules</new>
+			</whatsnew>
+		</version>
+		<version num="2.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
+			<compatibility min="4.1" />
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwii@phpboost.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 2.3 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Fix tpl module connect</new>
+				<new type="improvement">Change repository link</new>
+			</whatsnew>
+		</version>
+		<version num="2.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2015/04/23">
+			<compatibility min="4.1" />
+			<download url="https://dl.phpboost.com/4.1/templates/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="ElenWii" email="elenwii@phpboost.com" />
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 2.3 du theme oxygen</description>
+			<whatsnew>
+				<new type="bug">Correction du tpl du module connect</new>
+				<new type="improvement">Changement du lien de repository</new>
+			</whatsnew>
+		</version>
+		<version num="1.3" language="english" localized_language="English" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 1.3 oxygen theme</description>
+			<whatsnew>
+				<new type="bug">Correction CSS files : footer.tpl (add clear:both)</new>
+			</whatsnew>
+		</version>
+		<version num="1.3" language="french" localized_language="Francais" name="Oxygen" priority="low" security-update="false" pubdate="2014/07/15">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/Teki-Latex/oxygen/oxygen.zip">Oxygen theme</download>
+			<authors>
+				<author name="Teki-Latex" email="teklatex@gmail.com" />
+			</authors>
+			<description>Version 1.3 du theme oxygen</description>
+			<whatsnew>
+				<new type="bug">Correction des fichiers CSS : footer.tpl (ajout d'un clear:both)</new>
+			</whatsnew>
+		</version>
+	</app>
+	<!-- Tijim -->
+	<app id="metro" type="template">
+		<version num="4.3" language="english" localized_language="English" name="metro" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">metro theme</download>
+			<authors>
+				<author name="PcAndCom" email="info@pcandcom.net" />
+			</authors>
+			<description>Version 4.3 metro theme</description>
+			<whatsnew>
+				<new type="bug">Correction header.tpl and default.css</new>
+			</whatsnew>
+		</version>
+		<version num="4.3" language="french" localized_language="Francais" name="Metro" priority="low" security-update="false" pubdate="2013/08/26">
+			<compatibility min="4.0" />
+			<download url="https://dl.phpboost.com/4.0/templates/PcAndCom/metro/metro.zip">theme metro</download>
+			<authors>
+				<author name="PcAndCom" email="info@pcandcom.net" />
+			</authors>
+			<description>Version 4.3 du theme metro</description>
+			<whatsnew>
+				<new type="bug">Correction des fichiers header.tpl et de l'appel du default.css</new>
 			</whatsnew>
 		</version>
 	</app>
