@@ -12,7 +12,7 @@
  * Date      : 06/02/2017
 /*--------------------------------------*/
 
-.wiki_paragraph1 {
+.wiki-paragraph-1 {
 	margin: auto;
 	padding: 0 5px;
 	border-bottom: 2px solid #000000;
@@ -21,7 +21,7 @@
 	font-weight: bold;
 }
 
-.wiki_paragraph2 {
+.wiki-paragraph-2 {
 	display: inline-block;
 	margin: 5px 0 10px 15px;
 	padding: 0 3px;
@@ -35,7 +35,7 @@
 	border-radius:5px;
 }
 
-.wiki_paragraph3 {
+.wiki-paragraph-3 {
 	color:#000000;
 	text-indent: 60px;
 	font-size: 16px;
@@ -43,7 +43,7 @@
 	text-decoration: underline;
 }
 
-.wiki_paragraph4 {
+.wiki-paragraph-4 {
 	color:#000000;
 	text-indent: 80px;
 	font-size: 14px;
@@ -51,18 +51,18 @@
 	text-decoration: underline;
 }
 
-.wiki_paragraph5 { 
+.wiki-paragraph-5 { 
 	color:#aa0000;
 	text-indent: 100px;
 	font-size: 12px;
 	font-style: italic;
 }
 
-.wiki_list_1 { list-style-type: upper-roman; 	}
-.wiki_list_2 { list-style-type: decimal; 		}
-.wiki_list_3 { list-style-type: upper-alpha; 	}
-.wiki_list_4 { list-style-type: lower-alpha; 	}
-.wiki_list_5 { list-style-type: lower-greek; 	}
+.wiki-list-1 { list-style-type: upper-roman; 	}
+.wiki-list-2 { list-style-type: decimal; 		}
+.wiki-list-3 { list-style-type: upper-alpha; 	}
+.wiki-list-4 { list-style-type: lower-alpha; 	}
+.wiki-list-5 { list-style-type: lower-greek; 	}
 
 .wiki-button {
 	margin-left: 10px;
@@ -82,7 +82,7 @@ ol {
 	margin: 0 0 0 25px;
 }
 
-ol.wiki_list_1 > li {
+ol.wiki-list-1 > li {
 	margin-top: 5px;
 }
 
@@ -135,12 +135,12 @@ ul.no-list a i.fa {
 	margin-bottom: -6px;
 }
 
-.wiki-edit .bbcode-containers {
+.wiki-bbcode .bbcode-containers {
 	border-radius: 0;
 	border-top: none;
 }
 
-.wiki-edit .wiki-bbcode .bbcode-containers {
+.wiki-bbcode .bbcode-containers {
 	border-radius: 4px 4px 0 0;
 	border-top: 1px solid #BBBBBB;
 	border-bottom: none;
@@ -156,4 +156,8 @@ ul.no-list a i.fa {
 
 .wiki-tools-container {
 	margin-bottom: 25px;
+}
+
+#wiki-link-container li {
+	margin: 0 3px 0 0;
 }

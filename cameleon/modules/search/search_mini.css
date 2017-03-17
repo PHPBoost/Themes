@@ -1,4 +1,4 @@
-.mini-search-wrapper {
+#module-mini-search form {
 	float: right;
 	padding: 10px;
 	margin: 40px 20px 0 0;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 768px) {
-	.mini-search-wrapper {
+	#module-mini-search form {
 		display: none;
 	}
 }

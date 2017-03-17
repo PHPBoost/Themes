@@ -12,7 +12,7 @@
 		</div>
 	# ELSE #
 		# START news #
-			<article id="article-news-{news.ID}" class="article-news article-several# IF C_DISPLAY_BLOCK_TYPE # block# ENDIF ## IF C_SEVERAL_COLUMNS # inline-block# ENDIF #" # IF C_SEVERAL_COLUMNS # style="width:calc(98% / {NUMBER_COLUMNS})" # ENDIF # itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+			<article id="article-news-{news.ID}" class="article-news article-several# IF news.C_TOP_LIST # top-list# ENDIF ## IF C_DISPLAY_BLOCK_TYPE # block# ENDIF ## IF C_SEVERAL_COLUMNS # inline-block# ENDIF ## IF news.C_NEW_CONTENT # new-content# ENDIF #" # IF C_SEVERAL_COLUMNS # style="width:calc(98% / {NUMBER_COLUMNS})" # ENDIF # itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 		
 				<div class="subhead-top">
 					<header>
@@ -51,11 +51,17 @@
 				<div class="news_bottom">
 					<div class="more">
 						# IF news.C_AUTHOR_DISPLAYED #
-							# IF news.C_AUTHOR_EXIST #<a itemprop="author" class="{news.USER_LEVEL_CLASS}" href="{news.U_AUTHOR_PROFILE}"# IF news.C_USER_GROUP_COLOR # style="color:{news.USER_GROUP_COLOR}"# ENDIF #>{news.PSEUDO}</a>, # ELSE #{news.PSEUDO}# ENDIF #
+							${LangLoader::get_message('by', 'common')}
+							# IF news.C_AUTHOR_CUSTOM_NAME #
+								{news.AUTHOR_CUSTOM_NAME}
+							# ELSE #
+								# IF news.C_AUTHOR_EXIST #<a itemprop="author" class="{news.USER_LEVEL_CLASS}" href="{news.U_AUTHOR_PROFILE}"# IF news.C_USER_GROUP_COLOR # style="color:{news.USER_GROUP_COLOR}"# ENDIF #>{news.PSEUDO}</a>, # ELSE #{news.PSEUDO}# ENDIF #
+							# ENDIF #
 						# ENDIF #
-						<time datetime="# IF NOT news.C_DIFFERED #{news.DATE_ISO8601}# ELSE #{news.DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT news.C_DIFFERED #{news.DATE}# ELSE #{news.DIFFERED_START_DATE}# ENDIF #</time>
-						 <a itemprop="about" href="{news.U_CATEGORY}">{news.CATEGORY_NAME}</a>
+						${TextHelper::lcfirst(LangLoader::get_message('the', 'common'))} <time datetime="# IF NOT news.C_DIFFERED #{news.DATE_ISO8601}# ELSE #{news.DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT news.C_DIFFERED #{news.DATE}# ELSE #{news.DIFFERED_START_DATE}# ENDIF #</time>
+						${TextHelper::lcfirst(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{news.U_CATEGORY}">{news.CATEGORY_NAME}</a>
 						# IF C_COMMENTS_ENABLED #- # IF news.C_COMMENTS # {news.NUMBER_COMMENTS} # ENDIF # {news.L_COMMENTS}# ENDIF #
+						# IF news.C_NB_VIEW_ENABLED #- <span title="{news.NUMBER_VIEW} {@news.view}"><i class="fa fa-eye"></i> {news.NUMBER_VIEW}</span> # ENDIF #
 					</div>
 				</div>
 				<br />

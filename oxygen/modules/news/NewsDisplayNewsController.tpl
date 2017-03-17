@@ -9,7 +9,7 @@
 		# IF NOT C_VISIBLE #
 			# INCLUDE NOT_VISIBLE_MESSAGE #
 		# ENDIF #
-		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-news-{ID}" class="article-news">
+		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-news-{ID}" class="article-news# IF C_NEW_CONTENT # new-content# ENDIF #">
 			<header>
 				<h2>
 					<span itemprop="name">{NAME}</span>
@@ -32,7 +32,7 @@
 	
 			</header>
 			<div class="content">
-				# IF C_PICTURE #<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="right" /># ENDIF #
+				# IF C_PICTURE #<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="news-picture" /># ENDIF #
 	
 				<div itemprop="text">{CONTENTS}</div>
 			</div>

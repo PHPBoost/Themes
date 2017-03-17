@@ -2,7 +2,7 @@ div.calendar-content {
 	padding: 6px;
 }
 
-/* Affichage du mois en cours*/
+/* Affichage du mois en cours */
 div.calendar-top-container {
 	background-color: #103054;
 	box-shadow: 0 0 10px black, 0 0 0 1px rgba(0, 255, 255, 0.2) inset;
@@ -56,13 +56,13 @@ div.event-display-dates {
 }
 
 /* Couleur des différents évenements */
-table tbody tr td.calendar-none    { background: #103054 none repeat scroll 0 0; }
-table tbody tr td.calendar-today  { background:rgba(74, 134, 255, 0.5) none repeat scroll 0 0; }
-table tbody tr td.calendar-other   { background: #3c3c3c none repeat scroll 0 0; }
-table tbody tr td.calendar-weekend { background: rgba(68, 68, 68, 0.5) none repeat scroll 0 0; }
+tbody td.calendar-none    { background: #103054 none repeat scroll 0 0; }
+tbody td.calendar-today  { background:rgba(74, 134, 255, 0.5) none repeat scroll 0 0; }
+tbody td.calendar-other   { background: #3c3c3c none repeat scroll 0 0; }
+tbody td.calendar-weekend { background: rgba(68, 68, 68, 0.5) none repeat scroll 0 0; }
 
 
-#module-calendar table tbody tr td.calendar-week {
+#module-calendar tbody td.calendar-week {
 	border-right: 1px solid #AAAAAA;
 	width: 8%;
 }

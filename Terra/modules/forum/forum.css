@@ -735,8 +735,17 @@ a.msg-link-pseudo:hover {
 .fa-lastview:before 			{ content: "\f017"; color: #efefef; }
 .fa-notread:before 				{ content: "\f0f6"; color: #efefef; }
 
-.msg-contents-info.fa-hand-o-right,.fa-quote-right:before, .fa-edit:before,.fa-delete:before, .fa-cut:before,	.fa-arrow-up:before, .fa-arrow-down:before{ color: #efefef; }
-.fa-eraser:before, .fa-sign-out:before, .fa-globe:before {color: #efefef; }
+.msg-contents-info.fa-hand-o-right,
+.fa-quote-right:before,
+.fa-edit:before,
+.fa-delete:before,
+.fa-cut:before,
+.fa-arrow-up:before,
+.fa-arrow-down:before 	{ color: #efefef; }
+
+.fa-eraser:before,
+.fa-sign-out:before,
+.fa-globe:before 		{ color: #efefef; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {

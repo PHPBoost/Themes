@@ -215,10 +215,10 @@ section#module-calendar > header h1 {
     background-color: #00BC9E;
 }
 
-table tbody tr td.calendar-none    {  }
-table tbody tr td.calendar-today   { background: #00BC9E; }
-table tbody tr td.calendar-other   {  }
-table tbody tr td.calendar-weekend { background: #A769BC; }
+tbody td.calendar-none    {  }
+tbody td.calendar-today   { background: #00BC9E; }
+tbody td.calendar-other   {  }
+tbody td.calendar-weekend { background: #A769BC; }
 
 /* --- connect --- */
 ul.connect-content, 

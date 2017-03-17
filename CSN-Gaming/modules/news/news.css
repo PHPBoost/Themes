@@ -30,6 +30,10 @@
 	width: 70%;
 }
 
+.news-picture {
+	float: left;
+}
+
 .navigation-link-previous 	{ float: left;  }
 .navigation-link-next 		{ float: right; }
 

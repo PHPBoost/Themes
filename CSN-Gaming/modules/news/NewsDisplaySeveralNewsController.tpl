@@ -12,7 +12,7 @@
 		</div>
 	# ELSE #
 		# START news #	
-				<article id="article-news-{news.ID}" class="article-news article-several# IF C_DISPLAY_BLOCK_TYPE # block# ENDIF ## IF C_SEVERAL_COLUMNS # inline-block# ENDIF #" # IF C_SEVERAL_COLUMNS # style="width:calc(98% / {NUMBER_COLUMNS})" # ENDIF # itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+				<article id="article-news-{news.ID}" class="article-news article-several# IF news.C_TOP_LIST # top-list# ENDIF ## IF C_DISPLAY_BLOCK_TYPE # block# ENDIF ## IF C_SEVERAL_COLUMNS # inline-block# ENDIF ## IF news.C_NEW_CONTENT # new-content# ENDIF #" # IF C_SEVERAL_COLUMNS # style="width:calc(98% / {NUMBER_COLUMNS})" # ENDIF # itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 			
 					<header>
 						<h2>
@@ -38,7 +38,7 @@
 					</header>
 
 					<div class="content">
-						# IF news.C_PICTURE #<img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" class="right" /># ENDIF #
+						# IF news.C_PICTURE #<a href="{news.U_LINK}" class="news-picture"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /> </a># ENDIF #
 						<div itemprop="text"># IF C_DISPLAY_CONDENSED_CONTENT # {news.DESCRIPTION}# IF news.C_READ_MORE #... <a href="{news.U_LINK}">[${LangLoader::get_message('read-more', 'common')}]</a># ENDIF ## ELSE # {news.CONTENTS} # ENDIF #</div>
 					</div>
 					

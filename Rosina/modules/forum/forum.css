@@ -662,7 +662,13 @@ a.msg-link-pseudo:hover {
 .fa-notread:before 				{ content: "\f0f6"; color: #8b191b; }
 
 
-.msg-contents-info.fa-hand-o-right,.fa-quote-right:before, .fa-edit:before,.fa-delete:before, .fa-cut:before,	.fa-arrow-up:before, .fa-arrow-down:before{ color: #efefef; }
+.msg-contents-info.fa-hand-o-right,
+.fa-quote-right:before,
+.fa-edit:before,
+.fa-delete:before,
+.fa-cut:before,
+.fa-arrow-up:before,
+.fa-arrow-down:before { color: #efefef; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {

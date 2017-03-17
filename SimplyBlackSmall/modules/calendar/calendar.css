@@ -73,12 +73,12 @@ div.event-display-dates {
 }
 
 /* Couleur des differents evenements */
-table tbody tr td.calendar-none    { background-color: #000000; }
-table tbody tr td.calendar-today   { background-color: #dddddd; }
-table tbody tr td.calendar-other   { background-color: #222222; }
-table tbody tr td.calendar-weekend { background-color: #666666; }
+tbody td.calendar-none    { background-color: #000000; }
+tbody td.calendar-today   { background-color: #dddddd; }
+tbody td.calendar-other   { background-color: #222222; }
+tbody td.calendar-weekend { background-color: #666666; }
 
-#module-calendar table tbody tr td.calendar-week {
+#module-calendar tbody td.calendar-week {
 	width: 8%;
 	border-right: 1px solid #AAAAAA;
 }

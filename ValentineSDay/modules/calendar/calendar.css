@@ -15,7 +15,7 @@ div.calendar-content {
 	padding: 6px;
 }
 
-/* Affichage du mois en cours*/
+/* Affichage du mois en cours */
 div.calendar-top-container {
 	background-color: #FEFEFE;
 	border: 1px solid #DDDDDD;
@@ -73,52 +73,52 @@ div.event-display-dates {
 /* Couleur des différents évenements */
 
 
-table tbody tr td.calendar-none { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6); }
-table tbody tr td.calendar-today { background: #AAAAAA none repeat scroll 0 0 } 
-table tbody tr td.calendar-event { background: #DBE5EE; }
-table tbody tr td.calendar-other {}
-table tbody tr td.calendar-weekend { background: #ec94c0 none repeat scroll 0 0; }
-aside#menu-right  table tbody tr td.calendar-weekend   {background:#ec94c0 none repeat scroll 0 0;}
+tbody td.calendar-none { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6); }
+tbody td.calendar-today { background: #AAAAAA none repeat scroll 0 0 } 
+tbody td.calendar-event { background: #DBE5EE; }
+tbody td.calendar-other {}
+tbody td.calendar-weekend { background: #ec94c0 none repeat scroll 0 0; }
+aside#menu-right  tbody td.calendar-weekend   {background:#ec94c0 none repeat scroll 0 0;}
 .calendar-other > a {color:#888888;}
 .calendar-weekend > a {color:#ffffff;}
 .calendar-today > a {color:#ffffff;}
 .calendar-today > a:hover {color:#222222;}
 
-aside#menu-left table tbody tr td.calendar-other a ,
-aside#menu-right  table tbody tr td.calendar-other a{
+aside#menu-left tbody td.calendar-other a ,
+aside#menu-right  tbody td.calendar-other a{
     color: #AAAAAA;
 }
-aside#menu-left table tbody tr td.calendar-today a ,
-aside#menu-right  table tbody tr td.calendar-today a{
+aside#menu-left tbody td.calendar-today a ,
+aside#menu-right  tbody td.calendar-today a{
     color: #fefefe;
 }
 
-aside#menu-left table tbody tr td.calendar-weekend a,
-aside#menu-right  table tbody tr td.calendar-weekend a  {
+aside#menu-left tbody td.calendar-weekend a,
+aside#menu-right  tbody td.calendar-weekend a  {
     color: #FEFEFE;
 }
-aside#menu-left table tbody tr td.calendar-weekend a:hover, 
-aside#menu-right table tbody tr td.calendar-weekend a:hover{
+aside#menu-left tbody td.calendar-weekend a:hover, 
+aside#menu-right tbody td.calendar-weekend a:hover{
 color:#df5799;
 }
-aside#menu-left table tbody tr td.calendar-other:hover ,
-aside#menu-right  table tbody tr td.calendar-other:hover,
-aside#menu-left table tbody tr td.calendar-today:hover ,
-aside#menu-right  table tbody tr td.calendar-today:hover  {
+aside#menu-left tbody td.calendar-other:hover ,
+aside#menu-right  tbody td.calendar-other:hover,
+aside#menu-left tbody td.calendar-today:hover ,
+aside#menu-right  tbody td.calendar-today:hover  {
 background:#fefefe none repeat scroll 0 0;
 }
-aside#menu-left table tbody tr td.calendar-weekend:hover,
-aside#menu-right  table tbody tr td.calendar-weekend:hover  {
+aside#menu-left tbody td.calendar-weekend:hover,
+aside#menu-right  tbody td.calendar-weekend:hover  {
 	background-color: #df5799;
 }
-aside#menu-left table tbody tr td.calendar-other a:hover ,
-aside#menu-right  table tbody tr td.calendar-other a:hover,
-aside#menu-left table tbody tr td.calendar-today a:hover ,
-aside#menu-right  table tbody tr td.calendar-today a:hover  {
+aside#menu-left tbody td.calendar-other a:hover ,
+aside#menu-right  tbody td.calendar-other a:hover,
+aside#menu-left tbody td.calendar-today a:hover ,
+aside#menu-right  tbody td.calendar-today a:hover  {
 color: #555555;
 }
 
-#module-calendar table tbody tr td.calendar-week {
+#module-calendar tbody td.calendar-week {
 	border-right: 1px solid #AAAAAA;
 	width: 8%;
 }
