@@ -264,8 +264,8 @@ aside#menu-right {
 }
 
 div#top-footer {
-	background: url('images/global.png') repeat-y scroll center 0 transparent;
-	padding: 2% 0;
+    background: url(images/global.png) repeat-y scroll center 0 transparent;
+    padding: 2% 3.5%;
 }
 
 

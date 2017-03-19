@@ -399,6 +399,11 @@ nav#breadcrumb ol li:not(.current):after {
 	text-align: center;
 }
 
+.cookiebar-container,
+.cookiebar-container a {
+	color: rgba(0, 0, 0, 0.6);
+}
+
 .cookiebar-container.fixed {
 	position: fixed;
 }
