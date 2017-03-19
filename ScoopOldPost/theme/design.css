@@ -1,24 +1,24 @@
 /*---------------------------------------------------------
- * Theme    :  Thème SimplyWhiteSmall 
+ * Theme    :  ThÃ¨me SimplyWhiteSmall 
  * Par      : EDN | Swan
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entÃªte des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
- * Théme compatible avec deux menus (droite et gauche)
+ * ThÃ©me compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
 /* -- Elements HTML generiques specifique au theme -- */
 /* -------------------------------------------------- */
-/* afficher le texte sélectionné en blanc sur fond gris */
+/* afficher le texte sÃ©lectionnÃ© en blanc sur fond gris */
 ::-moz-selection { color:#efefef;  background: #555555 none repeat scroll 0 0;}
 ::selection     { color:#efefef;  background:#555555 none repeat scroll 0 0;}
 
-/* afficher le texte sélectionné dans un paragraphe en blanc sur fond gris */
+/* afficher le texte sÃ©lectionnÃ© dans un paragraphe en blanc sur fond gris */
 p::-moz-selection { color:#efefef;  background: #222222 none repeat scroll 0 0; }
 p::selection      { color:#efefef;  background: #222222 none repeat scroll 0 0;}
 
@@ -34,7 +34,7 @@ body {
 	min-height: 100%;
 	color: #333333;
 	font-size: 1.3em;
-	/* Sélectionnez cette police si vous souhaitez un typographie plus ancienne.
+	/* SÃ©lectionnez cette police si vous souhaitez un typographie plus ancienne.
 	------------------------------
 	font-family: monospace,"times new roman",times,serif;
 	*/
@@ -363,7 +363,7 @@ nav#breadcrumb ol li:not(.current):after {
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC 
+		 CSS applique aux Ã©crans PC 
 ========================================*/
 
 

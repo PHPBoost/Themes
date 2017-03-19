@@ -125,7 +125,7 @@
 			<header>
 				<h2>
 					<a href="${relative_url(SyndicationUrlBuilder::rss('forum',ID))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
-                                        <a href="./index.php" title="Index"><i class="fa fa-globe"></i></a> » {U_FORUM_CAT} 
+                                        <a href="./index.php" title="Index"><i class="fa fa-globe"></i></a> Â» {U_FORUM_CAT} 
 					
 					<span class="float-right">
 						# IF C_PAGINATION # # INCLUDE PAGINATION # # ENDIF #

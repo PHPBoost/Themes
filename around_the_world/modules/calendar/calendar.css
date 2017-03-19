@@ -1,14 +1,14 @@
 /*---------------------------------------------------------
- * Theme    : Thème AroundTheWorld
+ * Theme    : ThÃ¨me AroundTheWorld
  * Par      : Grenouille
  * Date     : 27/01/13
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entÃªte des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
- * Porté par : EDN | Swan
+ * PortÃ© par : EDN | Swan
  * Date      : 11/03/2017
  *---------------------------------------------------------*/
 
@@ -44,7 +44,7 @@ div.calendar-top-r {
 	padding: 1px 25px 0px 0px;
 }
 
-/* Affichage des évenements */
+/* Affichage des Ã©venements */
 div.event-display-author {
 	font-size: 0.8em;
 	float: left;
@@ -60,16 +60,16 @@ div.event-display-dates {
 	width: 180px;
 }
 
-/* Particularité du tableau du calendrier */
+/* ParticularitÃ© du tableau du calendrier */
 
-/* CSS applique aux écrans PC */
+/* CSS applique aux Ã©crans PC */
 @media ( min-width: 769px ) {
 	#module-calendar table.calendar-table tbody tr td {
 		height: 40px;
 	}
 }
 
-/* Couleur des différents évenements */
+/* Couleur des diffÃ©rents Ã©venements */
 tbody td.calendar-none    { background: #FFFFFF; }
 tbody td.calendar-today   { background: #B5E5B9; }
 tbody td.calendar-other   { background: #F1F1F1; }
@@ -80,7 +80,7 @@ tbody td.calendar-weekend { background: #dedede; }
 	width: 8%;
 }
 
-/* Affichage de du titre de l'évenement dans le tableau de l'administration */
+/* Affichage de du titre de l'Ã©venement dans le tableau de l'administration */
 table tbody tr th.column-title {
 	width: 28%;
 }

@@ -4,9 +4,9 @@
  * Date     : 30/04/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entÃªte des fichiers CSS.
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * ThÃ©me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
@@ -712,7 +712,7 @@ footer#forum-bottom .forum-message-options {
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC 
+		 CSS applique aux Ã©crans PC 
 ========================================*/
 
 @media (max-width: 768px) {

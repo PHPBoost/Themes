@@ -141,7 +141,7 @@
 			<div class="dropdownLabel"> <a href="{PATH_TO_ROOT}/user/registration/" class="login-connect">S'inscrire</a></div>
 		</div>
 		<div class="dropdownWrapper">
-			<div class="dropdownLabel"> <a href="{PATH_TO_ROOT}/user/password/lost/" class="login-connect">Mot de passe oublié</a></div>
+			<div class="dropdownLabel"> <a href="{PATH_TO_ROOT}/user/password/lost/" class="login-connect">Mot de passe oubliÃ©</a></div>
 		</div>
 	</div>
 		# ELSE #

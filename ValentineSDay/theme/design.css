@@ -4,11 +4,11 @@
  * Date     : 08/05/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entÃªte des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * ThÃ©me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
@@ -450,7 +450,7 @@ text-align:center;
   }
 
 /*###############################
-	décoration(s) diverse(s)
+	dÃ©coration(s) diverse(s)
 #################################*/
 #deco_bottom {
     background: url('images/deco.png') no-repeat scroll center bottom rgba(0, 0, 0, 0);
@@ -460,7 +460,7 @@ text-align:center;
 /*======================================
 		Todd Motto Labs -
 		Flaunt JS Navigation
-		Adapté pour phpboost 5.0
+		AdaptÃ© pour phpboost 5.0
 		URL: www.toddmotto.com
 ========================================*/
 
@@ -572,7 +572,7 @@ section#Motto{
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC 
+		 CSS applique aux Ã©crans PC 
 ========================================*/
 
 @media ( min-width: 769px ) {

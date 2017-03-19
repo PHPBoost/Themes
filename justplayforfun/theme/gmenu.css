@@ -192,9 +192,9 @@ ul.gnav li.open a.profiladm {
 	background-position: center 90%;
 }
 
-/* Chaque bouton de menu déroulant*/
+/* Chaque bouton de menu dÃ©roulant*/
 
-/* Menu déroulant */
+/* Menu dÃ©roulant */
 ul.subgnav {
 	background: #FFFFFF;
 	list-style: none;
@@ -232,7 +232,7 @@ ul.login li:last-child {
 	clear: left;
 }
 
-/* Chaque lien du menu déroulant*/
+/* Chaque lien du menu dÃ©roulant*/
 ul.subgnav a,
 ul.subgnav i {
 	color: #2D2D2D;

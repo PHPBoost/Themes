@@ -4,9 +4,9 @@
  * Date     : 30/04/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entÃªte des fichiers CSS.
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * ThÃ©me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
@@ -45,7 +45,7 @@ div.calendar-top-r {
 	padding: 1px 25px 0px 0px;
 }
 
-/* Affichage des évenements */
+/* Affichage des Ã©venements */
 div.event-display-author {
 	font-size: 0.8em;
 	float: left;
@@ -61,16 +61,16 @@ div.event-display-dates {
 	width: 180px;
 }
 
-/* Particularité du tableau du calendrier */
+/* ParticularitÃ© du tableau du calendrier */
 
-/* CSS applique aux écrans PC */
+/* CSS applique aux Ã©crans PC */
 @media ( min-width: 769px ) {
 	#module-calendar table.calendar-table tbody tr td {
 		height: 40px;
 	}
 }
 
-/* Couleur des différents évenements */
+/* Couleur des diffÃ©rents Ã©venements */
 
 
 tbody td.calendar-none { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6); }
@@ -123,7 +123,7 @@ color: #555555;
 	width: 8%;
 }
 
-/* Affichage de du titre de l'évenement dans le tableau de l'administration */
+/* Affichage de du titre de l'Ã©venement dans le tableau de l'administration */
 table tbody tr th.column-title {
 	width: 28%;
 }
