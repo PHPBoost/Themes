@@ -29,7 +29,7 @@
 
 # IF C_VERTICAL #
 	# IF C_USER_NOTCONNECTED #
-		<div id="connect-menu" class="module-mini-container">
+		<div id="connect-menu" class="module-mini-container not-connected">
 			<div class="module-mini-top">
 				<h5 class="sub-title">{L_CONNECT}</h5>
 			</div>
@@ -61,15 +61,15 @@
 			</div>
 		</div>
 	# ELSE #
-		<div id="connect-menu" class="module-mini-container">
+		<div id="connect-menu" class="module-mini-container connected">
 			<div class="module-mini-top">
-				<h5 class="sub-title">{L_PROFIL}</h5>
+				<h5 class="sub-title">{L_PRIVATE_PROFIL}</h5>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<ul class="connect-content">
 					<li>
-						<i class="fa fa-user"></i>
-						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PRIVATE_PROFIL}</a>
+						<i class="fa fa-profil"></i>
+						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PROFIL}</a>
 					</li>
 					<li>
 						<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>
@@ -103,14 +103,14 @@
 	# ENDIF #
 # ELSE #
 	# IF C_USER_NOTCONNECTED #
-	<div id="connect-menu">
+	<div id="connect-menu" class="not-connected">
 		<div class="horizontal-fieldset">
 			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> {L_CONNECT}</a>
 			<div class="connect-content">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
-					<input type="text" id="login" name="login" placeholder="{L_PSEUDO}" class="connect_form">
-					<input type="password" id="password" name="password" class="connect_form" placeholder="{L_PASSWORD}">
-					<input checked="checked" type="checkbox" name="autoconnect">
+					<input type="text" id="login" name="login" title="{L_PSEUDO}" placeholder="{L_PSEUDO}" class="connect-form">
+					<input type="password" id="password" name="password" class="connect-form" title="{L_PASSWORD}" placeholder="{L_PASSWORD}">
+					<input checked="checked" type="checkbox" name="autoconnect" title="{L_AUTOCONNECT}">
 					<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
 					<input type="hidden" name="token" value="{TOKEN}">
 					<button type="submit" name="authenticate" value="internal" class="submit">{L_CONNECT}</button>
@@ -132,7 +132,7 @@
 		</div>
 	</div>
 	# ELSE #
-	<div id="connect-menu">
+	<div id="connect-menu" class="connected">
 		<div class="horizontal-fieldset">
 			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_PROFIL}"><i class="fa fa-bars"></i> {L_PROFIL}</a>
 			<ul class="connect-content">

@@ -759,10 +759,12 @@ a.msg-link-pseudo:hover {
 .fa-mail-not-track:before 		{ content: "\f003"; color: #000000; }
 .fa-lastview:before 			{ content: "\f017"; color: #6dc922; }
 .fa-notread:before 				{ content: "\f0f6"; color: #eeeeee; }
-.fa-globe:before {color: #435a8b;}
-.fa-refresh:before {color: #0AC8F2;}
-.fa-eraser:before{color: #FA6B7E;}
-.fa-hand-o-right:before {color: #435a8b;}
+.fa-showmymsg:before 			{ content: "\f0e6"; color: #eeeeee; }
+
+.fa-globe:before 		{ color: #435a8b; }
+.fa-refresh:before 		{ color: #0AC8F2; }
+.fa-eraser:before		{ color: #FA6B7E; }
+.fa-hand-o-right:before { color: #435a8b; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {

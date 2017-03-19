@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Theme    :  Xtrem_Gaming_Pink 5.0.4
+ * Theme    :  ValentineSDay
  * Par      : EDN | Swan
  * Date     : 30/04/2016
  * Site web :  http://easy-design.net/
@@ -143,20 +143,26 @@
 	content: " ";
 }
 
-.block-smileys {
-	background-color:#222222;
-	border: 1px solid #ab019d;
-	width: 150px;
-	height: 150px;
-	padding: 2px 0px 2px 3px;
-	overflow-y: scroll;
+.bbcode-block-smileys,
+.bbcode-block-fa {
+	max-height: 200px;
+	padding: 4px 0px 2px 3px;
+	overflow-y: auto;
+	text-align: left;
 }
 
-.block-smileys li {
+.bbcode-block-smileys li,
+.bbcode-block-fa li {
 	display: inline-block;
 }
 
-.block-smileys li a {
+.bbcode-block-fa li {
+	padding: 1px 2px;
+	width: 20px;
+}
+
+.bbcode-block-smileys li a,
+.bbcode-block-fa li a {
 	display: block;
 }
 

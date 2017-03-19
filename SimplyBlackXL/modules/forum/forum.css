@@ -677,9 +677,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
 .fa-mail-not-track:before 		{ content: "\f003"; color: #000000; }
 .fa-lastview:before 			{ content: "\f017"; color: #ffffff; }
 .fa-notread:before 				{ content: "\f0f6"; color: #ffffff; }
+.fa-showmymsg:before 			{ content: "\f0e6"; color: #ffffff; }
 
-
-.fa-hand-o-right,.fa-quote-right:before, .fa-edit:before,.fa-delete:before, .fa-cut:before,	.fa-arrow-up:before, .fa-arrow-down:before{ color: #ffffff; }
+.fa-hand-o-right,
+.fa-quote-right:before,
+.fa-edit:before,
+.fa-delete:before,
+.fa-cut:before,
+.fa-arrow-up:before,
+.fa-arrow-down:before { color: #ffffff; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {

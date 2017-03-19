@@ -29,7 +29,7 @@
 
 # IF C_VERTICAL #
 	# IF C_USER_NOTCONNECTED #
-		<div id="connect-menu" class="module-mini-container">
+		<div id="connect-menu" class="module-mini-container not-connected">
 			<div class="module-mini-top">
 				<h5 class="sub-title">{L_CONNECT}</h5>
 			</div>
@@ -54,22 +54,22 @@
 						# ENDIF #
 					# ENDIF #
 					<br />
-					<a class="small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {L_FORGOT_PASS}</a>
+					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {L_FORGOT_PASS}</a>
 				</div>
 			</div>
 			<div class="module-mini-bottom">
 			</div>
 		</div>
 	# ELSE #
-		<div id="connect-menu" class="module-mini-container">
+		<div id="connect-menu" class="module-mini-container connected">
 			<div class="module-mini-top">
-				<h5 class="sub-title">{L_PROFIL}</h5>
+				<h5 class="sub-title">{L_PRIVATE_PROFIL}</h5>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<ul class="connect-content">
 					<li>
-						<i class="fa fa-user"></i>
-						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PRIVATE_PROFIL}</a>
+						<i class="fa fa-profil"></i>
+						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PROFIL}</a>
 					</li>
 					<li>
 						<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>
@@ -103,7 +103,7 @@
 	# ENDIF #
 # ELSE #
 	# IF C_USER_NOTCONNECTED #
-	<div id="connect-menu">
+	<div id="connect-menu" class="not-connected">
 		<div class="horizontal-fieldset">
 			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> {L_CONNECT}</a>
 			<div class="connect-content">
@@ -127,7 +127,7 @@
 					<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus-square biggest"></i><span>&nbsp; ${LangLoader::get_message('google-connect', 'user-common')}</span></a>
 					# ENDIF #
 				# ENDIF #
-				<a class="small" href="${relative_url(UserUrlBuilder::forget_password())}">{L_FORGOT_PASS}</a>
+				<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">{L_FORGOT_PASS}</a>
 			</div>
 		</div>
 	</div>
@@ -146,13 +146,13 @@
 	</div>
 		# ELSE #
 
-	<div id="connect-menu">
+	<div id="connect-menu" class="connected">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_PROFIL}"><i class="fa fa-bars"></i> {L_PROFIL}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_PROFIL}"><i class="fa fa-bars"></i> {L_PRIVATE_PROFIL}</a>
 			<ul class="connect-content">
 				<li>
-					<i class="fa fa-user"></i>
-					<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PRIVATE_PROFIL}</a>
+					<i class="fa fa-profil"></i>
+					<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PROFIL}</a>
 				</li>
 				<li>
 					<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>

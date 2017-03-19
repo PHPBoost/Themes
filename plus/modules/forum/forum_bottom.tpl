@@ -15,6 +15,11 @@
 					<ul>
 						<li>
 							<span class="cssmenu-title">
+								<i class="fa fa-showmymsg"></i> <a class="small" title="{L_SHOW_MY_MSG}" href="{U_SHOW_MY_MSG}">{L_SHOW_MY_MSG}</a>
+							</span>
+						</li>
+						<li>
+							<span class="cssmenu-title">
 								<i class="fa fa-msg-track"></i> {U_TOPIC_TRACK}
 							</span>
 						</li>
@@ -35,7 +40,7 @@
 						</li>
 						<li>
 							<span class="cssmenu-title">
-								<i class="fa fa-eraser"></i> {U_MSG_SET_VIEW}
+								<i class="fa fa-eraser"></i> <a class="small" href="{U_MSG_SET_VIEW}" title="{L_MARK_AS_READ}" onclick="javascript:return Confirm_read_topics();">{L_MARK_AS_READ}</a>
 							</span>
 						</li>
 				# IF C_FORUM_CONNEXION #

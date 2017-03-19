@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Theme    :  Thème WW2
+ * Theme    :  Thème TravelToThePast
  * Par      : EDN | Swan
  * Date     : 10/09/2016
  * Site web :  http://easy-design.net/
@@ -673,9 +673,15 @@ a.msg-link-pseudo:hover {
 .fa-mail-not-track:before 		{ content: "\f003"; color: #000000; }
 .fa-lastview:before 			{ content: "\f017"; color: #404040; }
 .fa-notread:before 				{ content: "\f0f6"; color: #404040; }
+.fa-showmymsg:before 			{ content: "\f0e6"; color: #404040; }
 
-
-.fa-hand-o-right,.fa-quote-right:before, .fa-edit:before,.fa-delete:before, .fa-cut:before,	.fa-arrow-up:before, .fa-arrow-down:before{ color: #efefef; }
+.fa-hand-o-right,
+.fa-quote-right:before,
+.fa-edit:before,
+.fa-delete:before,
+.fa-cut:before,
+.fa-arrow-up:before,
+.fa-arrow-down:before { color: #efefef; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {

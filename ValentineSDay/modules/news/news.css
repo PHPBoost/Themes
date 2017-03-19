@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Theme    :  Xtrem_Gaming_Pink 5.0.4
+ * Theme    :  ValentineSDay
  * Par      : EDN | Swan
  * Date     : 01/05/2016
  * Site web :  http://easy-design.net/
@@ -39,7 +39,7 @@
 .navigation-link-next i 	{ margin-left: 5px;  }
 
 
-#deco_news_bottom {
+#deco-news-bottom {
     background: rgba(0, 0, 0, 0) url('./../../theme/images/deco.png') no-repeat scroll center bottom;
     height: 250px;
     margin-top: -214px;

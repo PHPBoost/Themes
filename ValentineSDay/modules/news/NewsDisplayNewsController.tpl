@@ -40,13 +40,18 @@
 			<div class="more">
 				# IF C_AUTHOR_DISPLAYED #
 					${LangLoader::get_message('by', 'common')}
-					# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #,
+					# IF C_AUTHOR_CUSTOM_NAME #
+						{AUTHOR_CUSTOM_NAME}
+					# ELSE #
+						# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #,
+					# ENDIF #
 				# ENDIF #
-				${TextHelper::lowercase_first(LangLoader::get_message('the', 'common'))} <time datetime="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT C_DIFFERED #{DATE}# ELSE #{DIFFERED_START_DATE}# ENDIF #</time>
-				${TextHelper::lowercase_first(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{U_CATEGORY}">{CATEGORY_NAME}</a>
-				# IF C_COMMENTS_ENABLED #- # IF C_COMMENTS # {NUMBER_COMMENTS} # ENDIF # {L_COMMENTS}# ENDIF #	
-				</div>
-			<div id="deco_news_bottom"></div>
+				${TextHelper::lcfirst(LangLoader::get_message('the', 'common'))} <time datetime="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT C_DIFFERED #{DATE}# ELSE #{DIFFERED_START_DATE}# ENDIF #</time>
+				${TextHelper::lcfirst(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{U_CATEGORY}">{CATEGORY_NAME}</a>
+				# IF C_COMMENTS_ENABLED #- # IF C_COMMENTS # {NUMBER_COMMENTS} # ENDIF # {L_COMMENTS}# ENDIF #
+				# IF C_NB_VIEW_ENABLED #- <span title="{NUMBER_VIEW} {@news.view}"><i class="fa fa-eye"></i> {NUMBER_VIEW}</span># ENDIF #
+			</div>
+			<div id="deco-news-bottom"></div>
 			
 			<aside>
 				# IF C_SOURCES #

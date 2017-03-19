@@ -9,7 +9,7 @@
 		# IF NOT C_VISIBLE #
 			# INCLUDE NOT_VISIBLE_MESSAGE #
 		# ENDIF #
-		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-download-{ID}" class="article-download">
+		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-download-{ID}" class="article-download# IF C_NEW_CONTENT # new-content# ENDIF #">
 			<header>
 				<h2>
 					<span id="name" itemprop="name">{NAME}</span>
@@ -59,6 +59,7 @@
 					<span class="text-strong">${LangLoader::get_message('form.date.creation', 'common')} : </span><span><time datetime="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT C_DIFFERED #{DATE}# ELSE #{DIFFERED_START_DATE}# ENDIF #</time></span><br/>
 					# IF C_UPDATED_DATE #<span class="text-strong">${LangLoader::get_message('form.date.update', 'common')} : </span><span><time datetime="{UPDATED_DATE_ISO8601}" itemprop="dateModified">{UPDATED_DATE}</time></span><br/># ENDIF #
 					<span class="text-strong">{@downloads_number} : </span><span>{NUMBER_DOWNLOADS}</span><br/>
+					# IF C_NB_VIEW_ENABLED #<span class="text-strong">{@download.number.view} : </span><span>{NUMBER_VIEW}</span># ENDIF #<br />
 					<span class="text-strong">${LangLoader::get_message('category', 'categories-common')} : </span><span><a itemprop="about" class="small" href="{U_CATEGORY}">{CATEGORY_NAME}</a></span><br/>
 					# IF C_KEYWORDS #
 						<span class="text-strong">${LangLoader::get_message('form.keywords', 'common')} : </span>
@@ -71,8 +72,8 @@
 					# IF C_AUTHOR_DISPLAYED #
 						<span class="text-strong">${LangLoader::get_message('author', 'common')} : </span>
 						<span>
-							# IF C_CUSTOM_AUTHOR_DISPLAY_NAME #
-								{CUSTOM_AUTHOR_DISPLAY_NAME}
+							# IF C_AUTHOR_CUSTOM_NAME #
+								{AUTHOR_CUSTOM_NAME}
 							# ELSE #
 								# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #  
 							# ENDIF #

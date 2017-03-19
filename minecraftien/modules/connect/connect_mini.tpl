@@ -29,7 +29,7 @@
 
 # IF C_VERTICAL #
 	# IF C_USER_NOTCONNECTED #
-		<div id="connect-menu" class="module-mini-container">
+		<div id="connect-menu" class="module-mini-container not-connected">
 			<div class="module-mini-top">
 				<h5 class="sub-title">{L_CONNECT}</h5>
 			</div>
@@ -61,14 +61,14 @@
 			</div>
 		</div>
 	# ELSE #
-		<div id="connect-menu" class="module-mini-container">
+		<div id="connect-menu" class="module-mini-container connected">
 			<div class="module-mini-top">
-				<h5 class="sub-title">{L_PROFIL}</h5>
+				<h5 class="sub-title">{L_PRIVATE_PROFIL}</h5>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<ul class="connect-content">
 				<li class="has-sub"><span class="submenu-button"></span>
-				<a href="#" title="Animée" class="cssmenu-title">{L_PRIVATE_PROFIL}</a>
+				<a href="#" title="Animée" class="cssmenu-title">{L_PROFIL}</a>
 				 
 				<ul class="level-1"> 
 					<li>

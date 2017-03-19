@@ -22,7 +22,7 @@
 				# ENDIF #
 				<a itemprop="about" href="{sub_categories_list.U_CATEGORY}">{sub_categories_list.CATEGORY_NAME}</a>
 				<br />
-				<span class="small">{sub_categories_list.ARTICLES_NUMBER} # IF sub_categories_list.C_MORE_THAN_ONE_ARTICLE #${TextHelper::lowercase_first(LangLoader::get_message('articles', 'common', 'articles'))}# ELSE #${TextHelper::lowercase_first(LangLoader::get_message('article', 'common', 'articles'))}# ENDIF #</span>
+				<span class="small">{sub_categories_list.ARTICLES_NUMBER} # IF sub_categories_list.C_MORE_THAN_ONE_ARTICLE #${TextHelper::lcfirst(LangLoader::get_message('articles', 'common', 'articles'))}# ELSE #${TextHelper::lcfirst(LangLoader::get_message('article', 'common', 'articles'))}# ENDIF #</span>
 			</div>
 		</div>
 		# END sub_categories_list #
@@ -43,8 +43,9 @@
 		# ENDIF #
 		<div class="spacer"></div>
 			# START articles #
-				<article id="article-articles-{articles.ID}" class="article-articles article-several# IF C_MOSAIC # small-block# ENDIF ## IF C_ONE_ARTICLE_AVAILABLE # one-article# ENDIF ## IF C_TWO_ARTICLES_AVAILABLE # two-articles# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-				# IF articles.C_HAS_PICTURE #<img itemprop="thumbnailUrl" src="{articles.PICTURE}" alt="{articles.TITLE}" /># ENDIF #
+				<article id="article-articles-{articles.ID}" class="article-articles article-several# IF C_MOSAIC # small-block# ENDIF ## IF C_ONE_ARTICLE_AVAILABLE # one-article# ENDIF ## IF C_TWO_ARTICLES_AVAILABLE # two-articles# ENDIF ## IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+				# IF articles.C_HAS_PICTURE #<a href="{articles.U_ARTICLE}"><img itemprop="thumbnailUrl" src="{articles.PICTURE}" alt="{articles.TITLE}" /></a># ENDIF #
+						
 					<header>
 						<h2>
 							<a itemprop="url" href="{articles.U_ARTICLE}"><span itemprop="name">{articles.TITLE}</span></a>
@@ -61,13 +62,21 @@
 						<div class="more">
 							# IF articles.C_AUTHOR_DISPLAYED #
 								${LangLoader::get_message('by', 'common')}
-								# IF articles.C_AUTHOR_EXIST #<a itemprop="author" href="{articles.U_AUTHOR}" class="{articles.USER_LEVEL_CLASS}" # IF C_USER_GROUP_COLOR # style="color:{articles.USER_GROUP_COLOR}"# ENDIF #>{articles.PSEUDO}</a># ELSE #{articles.PSEUDO}# ENDIF #,
-								${TextHelper::lowercase_first(LangLoader::get_message('the', 'common'))} 
+								# IF articles.C_AUTHOR_CUSTOM_NAME #
+									{articles.AUTHOR_CUSTOM_NAME}
+								# ELSE #
+									# IF articles.C_AUTHOR_EXIST #
+										<a itemprop="author" href="{articles.U_AUTHOR}" class="{articles.USER_LEVEL_CLASS}" # IF C_USER_GROUP_COLOR # style="color:{articles.USER_GROUP_COLOR}"# ENDIF #>{articles.PSEUDO}</a>
+									# ELSE #
+										{articles.PSEUDO}
+									# ENDIF #,
+								# ENDIF #
+								${TextHelper::lcfirst(LangLoader::get_message('the', 'common'))} 
 							# ELSE #
 								${LangLoader::get_message('the', 'common')} 
 							# ENDIF # 
 							<time datetime="# IF NOT articles.C_DIFFERED #{articles.DATE_ISO8601}# ELSE #{articles.PUBLISHING_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT articles.C_DIFFERED #{articles.DATE}# ELSE #{articles.PUBLISHING_START_DATE}# ENDIF #</time>
-							${TextHelper::lowercase_first(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{articles.U_CATEGORY}">{articles.CATEGORY_NAME}</a>
+							${TextHelper::lcfirst(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{articles.U_CATEGORY}">{articles.CATEGORY_NAME}</a>
 						</div>
 						
 						<meta itemprop="url" content="{articles.U_ARTICLE}">

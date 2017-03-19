@@ -1,4 +1,4 @@
-		<span id="go_top"></span>
+		<span id="go-top"></span>
 		
 		# INCLUDE forum_top #
 		
@@ -229,7 +229,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="msg-top-right">
-                                                            # IF C_AUTH_POST #<a href="topic{msg.U_VARS_QUOTE}#go_bottom" title="{L_QUOTE}"><i class="fa fa-quote-right"></i></a># ENDIF #
+                                                            # IF C_AUTH_POST #<a href="topic{msg.U_VARS_QUOTE}#go-bottom" title="{L_QUOTE}"><i class="fa fa-quote-right"></i></a># ENDIF #
                                                             # IF msg.C_FORUM_MSG_EDIT # 
                                                             <br/>
                                                             <a href="post{msg.U_FORUM_MSG_EDIT}" title="{L_EDIT}" class="fa fa-edit"></a>
@@ -252,7 +252,7 @@
 
                                                             # IF msg.C_FORUM_MSG_CUT # <a href="move{msg.U_FORUM_MSG_CUT}" title="{L_CUT_TOPIC}" class="fa fa-cut" data-confirmation="{L_ALERT_CUT_TOPIC}"></a> # ENDIF #
                                                             <br/>
-                                                            <a title="${LangLoader::get_message('go_top', 'common', 'forum')}" href="{U_TITLE_T}#go_top" onclick="jQuery('html, body').animate({scrollTop:jQuery('#go_top').offset().top}, 'slow'); return false;"><i class="fa fa-arrow-up"></i></a> <a title="${LangLoader::get_message('go_bottom', 'common', 'forum')}" href="{U_TITLE_T}#go_bottom" onclick="jQuery('html, body').animate({scrollTop:jQuery('#go_bottom').offset().top}, 'slow'); return false;"><i class="fa fa-arrow-down"></i></a>
+                                                            <a title="${LangLoader::get_message('go-top', 'common', 'forum')}" href="{U_TITLE_T}#go-top" onclick="jQuery('html, body').animate({scrollTop:jQuery('#go-top').offset().top}, 'slow'); return false;"><i class="fa fa-arrow-up"></i></a> <a title="${LangLoader::get_message('go-bottom', 'common', 'forum')}" href="{U_TITLE_T}#go-bottom" onclick="jQuery('html, body').animate({scrollTop:jQuery('#go-bottom').offset().top}, 'slow'); return false;"><i class="fa fa-arrow-down"></i></a>
                                                     </div>
 							
 							
@@ -307,7 +307,7 @@
 			</div>
 		# END msg #
 			
-			<span id="go_bottom"></span>
+			<span id="go-bottom"></span>
 		# IF C_AUTH_POST #
 			<div class="forum-post-form">
 				<form action="post{U_FORUM_ACTION_POST}" method="post" onsubmit="return check_form_msg();">

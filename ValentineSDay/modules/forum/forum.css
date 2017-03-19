@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * Theme    :  Xtrem_Gaming_Pink 5.0.4
+ * Theme    :  ValentineSDay
  * Par      : EDN | Swan
  * Date     : 30/04/2016
  * Site web :  http://easy-design.net/
@@ -679,8 +679,9 @@ a.msg-link-pseudo:hover {
 .fa-mail-not-track:before 		{ content: "\f003"; color: #000000; }
 .fa-lastview:before 			{ content: "\f017"; color: #df5799; }
 .fa-notread:before 				{ content: "\f0f6"; color: #df5799; }
-.fa-eraser:before {color: #df5799;}
-.fa-refresh:before {color: #aaaaaa;}
+.fa-showmymsg:before 			{ content: "\f0e6"; color: #df5799; }
+.fa-eraser:before 	{ color: #df5799; }
+.fa-refresh:before 	{ color: #aaaaaa; }
 /* -- footer ==================================================================== */
 footer#forum-bottom {
     background-color: #fefefe;
