@@ -18,7 +18,7 @@
 						<!-- fin : modifier l'image et le titre -->
 						</h5>					
 					</div>
-					<br />${Feed::get_parsed('news', 'master', 0, false, 10)}
+					<br />${Feed::get_parsed('forum', 'master', 0, false, 10)}
 				</div>
 			</div>
 		<!-- fin : modifier ou supprimer tout -->	
