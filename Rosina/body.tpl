@@ -18,7 +18,7 @@
 						<!-- fin : modifier l'image et le titre -->
 						</h5>					
 					</div>
-					<br /> <?php echo Feed::get_parsed('forum', Feed::DEFAULT_FEED_NAME, 0, false, 10); ?>
+					<br />${Feed::get_parsed('news', 'master', 0, false, 10)}
 				</div>
 			</div>
 		<!-- fin : modifier ou supprimer tout -->	
