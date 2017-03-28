@@ -1434,7 +1434,7 @@ body.dragging * {
 }
 
 .module-mini-top {
-  background: transparent url('images/top.png') no-repeat scroll center top;
+  background: transparent url(images/top.png) no-repeat scroll center top;
 	min-height: 37px;
 	text-align: center;
 	padding: 1em 0;

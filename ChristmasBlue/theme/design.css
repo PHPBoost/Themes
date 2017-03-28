@@ -32,7 +32,7 @@ body {
 	height: auto;
 	min-height: 100%;
 	/*background-color: #ffffff;*/
-	background: url('images/bg.jpg') fixed center top #ffffff;
+	background: url(images/bg.jpg) fixed center top #ffffff;
 	color: #000000;
 	font-size: 1.3em;
 	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
@@ -114,7 +114,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -443,7 +443,7 @@ nav#breadcrumb ol li:not(.current):after {
     line-height: 3.5em;
     text-shadow: none;
 	}
-	div#global{background:rgba(255, 255, 255, 0.7) url('images/global.png') repeat-y scroll center 0;}
+	div#global{background:rgba(255, 255, 255, 0.7) url(images/global.png) repeat-y scroll center 0;}
 	aside#menu-left {border-right: none;}
 	aside#menu-right{border-left: none;}	
 	

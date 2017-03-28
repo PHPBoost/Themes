@@ -57,7 +57,7 @@ article {
 /* --- Titre d'une page ou d'un element d'un module --- */
 section header h1,
 article header h1 {
-  background: rgba(0, 0, 0, 0) url('images/border-top.png') repeat-x scroll center bottom;
+  background: rgba(0, 0, 0, 0) url(images/border-top.png) repeat-x scroll center bottom;
   font-size: 1.5rem;
 }
 section header a:hover {
@@ -66,13 +66,13 @@ section header a:hover {
 
 section header h2,
 article header h2 {
-  background: rgba(0, 0, 0, 0) url('images/border-top.png') repeat-x scroll center bottom;
+  background: rgba(0, 0, 0, 0) url(images/border-top.png) repeat-x scroll center bottom;
   font-size: 1.5rem;
 }
 
 section header h3,
 article header h3 {
-  background: rgba(0, 0, 0, 0) url('images/border-top.png') repeat-x scroll center bottom;
+  background: rgba(0, 0, 0, 0) url(images/border-top.png) repeat-x scroll center bottom;
   font-size: 1.5rem;
 }
 
@@ -630,7 +630,7 @@ body.dragging * {
 .module-mini-container {
 	margin: 0 0 10px 0;
 	padding: 5px;
-	background: #2b2b2b url('images/top.png') repeat-x scroll 0 0;
+	background: #2b2b2b url(images/top.png) repeat-x scroll 0 0;
 	border: 1px solid #2b2b2b;
 	border-spacing: 1px;
 	box-shadow: 3px 3px 3px 3px #000000;	

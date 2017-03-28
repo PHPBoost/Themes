@@ -20,7 +20,7 @@ Attention tout de même au poids de votre images, qui risque si elle est lourde d
 
 Dans le dossier "theme", fichier "Design.css" à la ligne 12 :
 
-background:transparent url('images/bg.jpg') no-repeat scroll top center;	
+background:transparent url(images/bg.jpg) no-repeat scroll top center;	
 /*Enlevez ou rajoutez les balises commentaires ci-dessous pour valider ou invalider le css */	
 background-attachment:fixed;
 
@@ -29,7 +29,7 @@ background-attachment:fixed;
 Dans le dossier "theme", fichier "Design.css" à la ligne 12 :
 
 /* remplacer le -transparent- par une couleur hexadécimal #XXXXXX, si vous le souhaitez*/
-background:transparent url('images/bg.jpg') no-repeat scroll top center;	
+background:transparent url(images/bg.jpg) no-repeat scroll top center;	
 /*Enlevez ou rajoutez les balises commentaires ci-dessous pour valider ou invalider le css */	
 /*background-attachment:fixed;*/
 

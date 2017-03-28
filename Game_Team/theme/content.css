@@ -644,7 +644,7 @@ body.dragging * {
 }
 
 aside#menu-left .module-mini-top {
-	background: url('images/menu_left.png') no-repeat;
+	background: url(images/menu_left.png) no-repeat;
     color: #515C68;
     height: 62px;
     margin-left: -20px;
@@ -653,7 +653,7 @@ aside#menu-left .module-mini-top {
 }
 
 aside#menu-right .module-mini-top  {
-    background: rgba(0, 0, 0, 0) url('images/menu_right.png') no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url(images/menu_right.png) no-repeat scroll 0 0;
     color: #515c68;
     height: 62px;
     margin-right: -20px;

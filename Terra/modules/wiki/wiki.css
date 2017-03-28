@@ -108,7 +108,7 @@ ul.no-list a i.fa {
 }
 
 .wiki-summary {
-	background: #000000 url('../../theme/images/main.png') no-repeat scroll center top;
+	background: #000000 url(../../theme/images/main.png) no-repeat scroll center top;
 	border: 1px solid #2a2dc9;
 	border-radius: 3px;	
     display: inline-block;

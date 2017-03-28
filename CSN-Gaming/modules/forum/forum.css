@@ -164,7 +164,7 @@ article footer ul.pagination {
 
 article header {
 	padding: 8px;
-	background: #4d4c50 url('images/top-cat.jpg') repeat-x scroll top center;
+	background: #4d4c50 url(images/top-cat.jpg) repeat-x scroll top center;
 	border: 1px solid #000000;
 	border-radius: 3px;
 }

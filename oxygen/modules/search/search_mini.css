@@ -24,7 +24,7 @@
 	padding: 0 4px 0 29px;
 	width: 229px;
 	height: 24px;
-	background: url('images/search.png') no-repeat;
+	background: url(images/search.png) no-repeat;
 	border: none;
 	font-size: 0.9em;
 	color: #403F3D;

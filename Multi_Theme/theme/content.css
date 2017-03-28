@@ -1453,7 +1453,7 @@ body.dragging * {
 }
 
 .module-mini-top {
-  background: transparent url('images/top.png') no-repeat scroll center top;
+  background: transparent url(images/top.png) no-repeat scroll center top;
 	min-height: 37px;
 	text-align: center;
 	padding: 1em 0;
@@ -1466,7 +1466,7 @@ body.dragging * {
 }
 
 .module-mini-contents {
-    background: transparent url('images/y.png') repeat-y scroll 0 0;
+    background: transparent url(images/y.png) repeat-y scroll 0 0;
     border-bottom: medium none;
     border-top: medium none;
     margin-bottom: -8px;
@@ -1475,7 +1475,7 @@ body.dragging * {
 }
 
 .module-mini-bottom {
-    background: rgba(0, 0, 0, 0) url('images/ybop.png') no-repeat scroll center top;
+    background: rgba(0, 0, 0, 0) url(images/ybop.png) no-repeat scroll center top;
     height: 63px;
 	text-align: center;
 }

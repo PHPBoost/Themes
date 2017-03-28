@@ -186,7 +186,7 @@ article footer ul.pagination {
 
 /* --- header du contenu de la page --- */
 article header {
-	background: #000000 url('../../theme/images/main.png') no-repeat scroll center top;
+	background: #000000 url(../../theme/images/main.png) no-repeat scroll center top;
 	border: 1px solid #2a2dc9;
 	border-bottom: 1px solid #78e4ff;
 	border-top-left-radius: 5px;
@@ -750,7 +750,7 @@ a.msg-link-pseudo:hover {
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {
-	background: #000000 url('../../theme/images/main.png') no-repeat scroll center top;
+	background: #000000 url(../../theme/images/main.png) no-repeat scroll center top;
 	border: 1px solid #2a2dc9;
     border-radius: 5px;
 	margin: 15px 0 5px 0;

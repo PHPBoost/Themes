@@ -12,7 +12,7 @@
 
 
 .deco {
-	background:rgba(0, 0, 0, 0)  url('./../../theme/images/deco.png') no-repeat scroll center bottom;
+	background:rgba(0, 0, 0, 0)  url(./../../theme/images/deco.png) no-repeat scroll center bottom;
 	margin:-107px;
 	height: 250px;
 }

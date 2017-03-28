@@ -11,7 +11,7 @@
 	<header id="header">
 		<div id="top-header">
 			<div id="site-infos">
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url('{HEADER_LOGO}');"# ENDIF #>
+				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({HEADER_LOGO});"# ENDIF #>
 					<div id="site-name-rotate">
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					</div>

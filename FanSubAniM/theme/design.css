@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background: url('images/bgr.jpg') no-repeat fixed top center #000000;
+    background: url(images/bgr.jpg) no-repeat fixed top center #000000;
     color: #403a3e;
     font-family: Verdana,Arial,Helvetica,sans-serif;
 	position: relative;
@@ -45,7 +45,7 @@ margin:50px auto auto;
 /* --- Partie superieure du header --- */
 
 div#top-header {
-    background: transparent url('images/header.png') no-repeat scroll center 0;
+    background: transparent url(images/header.png) no-repeat scroll center 0;
 	min-height: 325px;
 	max-width: 1250px;
 	margin: auto;
@@ -91,7 +91,7 @@ div#site-infos {
 }
 
 div#site-logo {
-    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    background: rgba(0, 0, 0, 0) url(images/logo.png) no-repeat scroll center center / cover ;
     float: left;
     height: 200px;
     margin: 10px 1em 0 0;
@@ -145,7 +145,7 @@ div#global {
 	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
 }
 div#sous-global {
-    background: transparent url('images/global.png') repeat-y scroll center 0;
+    background: transparent url(images/global.png) repeat-y scroll center 0;
 
     border-left: 1px solid #222222;
     border-right: 1px solid #222222;
@@ -187,7 +187,7 @@ div#top-footer {
 /* -- Pied de page - Footer --
 --------------------------------------*/
 footer#footer {
-    background: url('images/footer.png') no-repeat scroll 0 0 transparent;
+    background: url(images/footer.png) no-repeat scroll 0 0 transparent;
     clear: both;
     height: 250px;
     margin: 0 auto 20px;
@@ -261,21 +261,21 @@ nav#breadcrumb ol li:not(.current):after {
 #################################*/
 
 #blackbarnav {
-    background: rgba(0, 0, 0, 0) url('images/blackbar.jpg') repeat-x scroll left top;
+    background: rgba(0, 0, 0, 0) url(images/blackbar.jpg) repeat-x scroll left top;
     height: 51px;
     margin: auto;
     width: 1250px;
 }
 
 #blackbarnav b {
-    background: url('images/blackbar.jpg') no-repeat scroll right -64px rgba(0, 0, 0, 0);
+    background: url(images/blackbar.jpg) no-repeat scroll right -64px rgba(0, 0, 0, 0);
     display: block;
     float: left;
     height: 50px;
     width: 24px;
 }
 a.blackbar {
-    background: url('images/blackbar.jpg') no-repeat scroll right -64px rgba(0, 0, 0, 0);
+    background: url(images/blackbar.jpg) no-repeat scroll right -64px rgba(0, 0, 0, 0);
     color: #FFFFFF;
     display: block;
     float: left;
@@ -288,7 +288,7 @@ a.blackbar {
 }
 
 a.blackbar:hover {
-    background: url('images/blackbar.jpg') repeat-x scroll right -116px rgba(0, 0, 0, 0);
+    background: url(images/blackbar.jpg) repeat-x scroll right -116px rgba(0, 0, 0, 0);
     color: #000000;
 	text-decoration: none;
 } 
@@ -365,7 +365,7 @@ section#Motto{
 /* Mobile navigation */
 .nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
     cursor: pointer;
     height: 50px;
@@ -390,7 +390,7 @@ section#Motto{
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .nav-click:hover {
@@ -415,7 +415,7 @@ div#gotop {
     z-index: 150;
 }
 div#gotop a {
-    background: url('images/sprite_bigNav.png') no-repeat scroll center top transparent;
+    background: url(images/sprite_bigNav.png) no-repeat scroll center top transparent;
     float: left;
     height: 80px;
     opacity: 0.3;
@@ -429,7 +429,7 @@ div#gobottom {
     z-index: 150;
 }
 div#gobottom a {
-    background: url('images/sprite_bigNav.png') no-repeat scroll center bottom transparent;
+    background: url(images/sprite_bigNav.png) no-repeat scroll center bottom transparent;
     float: left;
     height: 80px;
     opacity: 0.3;

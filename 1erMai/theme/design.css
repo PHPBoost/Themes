@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    background: #c7dfc7 url('images/bg.jpg') no-repeat fixed center top;
+    background: #c7dfc7 url(images/bg.jpg) no-repeat fixed center top;
     color: #000000;
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
@@ -51,13 +51,13 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: url('images/header.png') no-repeat scroll center top transparent;
+    background: url(images/header.png) no-repeat scroll center top transparent;
     height: 351px;
     margin: auto;
     max-width: 1030px;
 }
 div#titre {
-    background: transparent url('images/title.png') no-repeat scroll center 0;
+    background: transparent url(images/title.png) no-repeat scroll center 0;
     float: left;
     height: 90px;
     margin-left: 243px;
@@ -124,7 +124,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -183,7 +183,7 @@ div#global {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	background: url('images/global.png') repeat-y scroll center 0 transparent;
+	background: url(images/global.png) repeat-y scroll center 0 transparent;
 	flex-direction: column;
 	-ms-flex-direction: column;
 	-webkit-flex-direction: column;
@@ -301,7 +301,7 @@ div#bottom-content {
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 footer#footer {
-    background: transparent url('images/footer.png') no-repeat scroll 5px 0;
+    background: transparent url(images/footer.png) no-repeat scroll 5px 0;
     clear: both;
     height: 431px;
     margin: 0 auto auto;

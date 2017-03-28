@@ -28,7 +28,7 @@ html {
 }
 
 body {
-	background: url('images/bg.jpg') repeat scroll center top rgba(255, 255, 255, 0.5);
+	background: url(images/bg.jpg) repeat scroll center top rgba(255, 255, 255, 0.5);
 	color:#404040;
     font-family:Verdana,Arial,Helvetica,sans-serif;
     font-size:12px;
@@ -43,13 +43,13 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: url('images/header.png') no-repeat scroll center 0 transparent;
+    background: url(images/header.png) no-repeat scroll center 0 transparent;
     min-height: 450px;
 }
 
 /* --- Partie superieure du header --- */
 div#top-header {
-    background: transparent url('images/surheader.png') no-repeat scroll center 0;
+    background: transparent url(images/surheader.png) no-repeat scroll center 0;
 
 	display: flex;
 	display: -ms-flexbox;
@@ -106,7 +106,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -146,7 +146,7 @@ div#SuperGlobal {
 }
 
 div#global {
-    background: transparent url('images/global.png') repeat-y scroll 9px 0;
+    background: transparent url(images/global.png) repeat-y scroll 9px 0;
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -230,7 +230,7 @@ aside#menu-right {
 }
 
 div#top-footer {
-    background: transparent url('images/global.png') repeat-y scroll 9px 0;
+    background: transparent url(images/global.png) repeat-y scroll 9px 0;
     margin: auto;
     max-width: 1024px;
     padding: 2% 0;
@@ -269,7 +269,7 @@ div#bottom-content {
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 footer#footer {
-	background: transparent url('images/footer.png') no-repeat scroll 11px 0;
+	background: transparent url(images/footer.png) no-repeat scroll 11px 0;
 	width: 100%;
 	clear: both;
     margin: 0 auto auto;
@@ -371,7 +371,7 @@ nav#breadcrumb ol li:not(.current):after {
     line-height: 3.5em;
     text-shadow: none;
 	}
-	div#global{    background: transparent url('images/global.png') repeat-y scroll center 0;}
+	div#global{    background: transparent url(images/global.png) repeat-y scroll center 0;}
 	aside#menu-left {border-right: none;}
 	aside#menu-right{border-left: none;}	
 	

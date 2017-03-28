@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    background:#000000 url('images/background.jpg') no-repeat scroll center top ;
+    background:#000000 url(images/background.jpg) no-repeat scroll center top ;
     color: #c9c9c9;
     font-family: "verdana","Lucida Sans Unicode",Verdana,"Bitstream Vera Sans",Times,serif;
     font-size: 12px;
@@ -46,7 +46,7 @@ body {
 /* -- En-tete de page - Header --
 --------------------------------------*/
 header#header {
-    background: url('images/header.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(images/header.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     margin: auto;
 	max-width: 1050px;
 }
@@ -90,7 +90,7 @@ div#site-infos {
 }
 
 div#site-logo {
-    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    background: rgba(0, 0, 0, 0) url(images/logo.png) no-repeat scroll center center / cover ;
     float: left;
     height: 200px;
     margin: 10px 1em 0 0;
@@ -249,7 +249,7 @@ nav#breadcrumb ol li {
 nav#breadcrumb ol li:not(.current):after {
 
 	content: '';
-	background:url('images/breadcrumb.png') no-repeat scroll 0 0 transparent;
+	background: url(images/breadcrumb.png) no-repeat scroll 0 0 transparent;
 	width: 13px; height: 20px;
 	color: #616161;
 }
@@ -278,7 +278,7 @@ div#nav-invisible ul, div#nav ul {
     padding: 0;
 }
 div#nav-invisible ul li, div#nav ul li {
-    background: url('images/blank.gif') repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(images/blank.gif) repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: inline;
     float: left;
     margin: 0;
@@ -289,7 +289,7 @@ div#nav-invisible ul li.last, div#nav ul li.last {
     padding-right: 0;
 }
 a.nav_item_accueil {
-    background: url('images/sprite_bar_1.png') repeat scroll -21px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -21px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 115px;
@@ -307,7 +307,7 @@ div#nav-invisible a.nav_item_actualites {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_actualites {
-    background: url('images/sprite_bar_1.png') repeat scroll -139px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -139px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 140px;
@@ -325,7 +325,7 @@ div#nav-invisible a.nav_item_articles {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_articles {
-    background: url('images/sprite_bar_1.png') repeat scroll -283px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -283px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 153px;
@@ -343,7 +343,7 @@ div#nav-invisible a.nav_item_forum {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_forum {
-    background: url('images/sprite_bar_1.png') repeat scroll -439px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -439px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 90px;
@@ -362,7 +362,7 @@ div#nav-invisible a.nav_item_staff {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_staff {
-    background: url('images/sprite_bar_1.png') repeat scroll -534px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -534px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 97px;
@@ -380,7 +380,7 @@ div#nav-invisible a.nav_item_documentation {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_documentation {
-    background: url('images/sprite_bar_1.png') repeat scroll -636px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -636px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 186px;
@@ -398,7 +398,7 @@ div#nav-invisible a.nav_item_faq {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_faq {
-    background: url('images/sprite_bar_1.png') repeat scroll -831px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -831px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 59px;
@@ -416,7 +416,7 @@ div#nav-invisible a.nav_item_events{
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_events{
-    background: url('images/sprite_bar_1.png') repeat scroll -897px -90px rgba(0, 0, 0, 0);
+    background: url(images/sprite_bar_1.png) repeat scroll -897px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 80px;
@@ -565,7 +565,7 @@ section#Motto{
 /* Mobile navigation */
 .nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222;
     cursor: pointer;
     height: 50px;
@@ -590,7 +590,7 @@ section#Motto{
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .nav-click:hover {

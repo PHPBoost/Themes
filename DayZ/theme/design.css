@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    background: url('images/bgr.jpg') no-repeat top center #000000;
+    background: url(images/bgr.jpg) no-repeat top center #000000;
     color: #c9c9c9;
     font-family: "verdana","Lucida Sans Unicode",Verdana,"Bitstream Vera Sans",Times,serif;
     font-size: 12px;
@@ -89,7 +89,7 @@ div#site-infos {
 }
 
 div#site-logo {
-    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    background: rgba(0, 0, 0, 0) url(images/logo.png) no-repeat scroll center center / cover ;
     float: left;
     height: 200px;
     margin: 10px 1em 0 0;
@@ -248,7 +248,7 @@ nav#breadcrumb ol li {
 nav#breadcrumb ol li:not(.current):after {
 
 	content: '';
-	background:url('images/breadcrumb.png') no-repeat scroll 0 0 transparent;
+	background: url(images/breadcrumb.png) no-repeat scroll 0 0 transparent;
 	width: 13px; height: 20px;
 	color: #616161;
 }
@@ -500,7 +500,7 @@ section#Motto{
 /* Mobile navigation */
 .nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
     cursor: pointer;
     height: 50px;
@@ -525,7 +525,7 @@ section#Motto{
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .nav-click:hover {
@@ -550,7 +550,7 @@ div#gotop {
     z-index: 150;
 }
 div#gotop a {
-    background: url('images/sprite_bigNav.png') no-repeat scroll center top transparent;
+    background: url(images/sprite_bigNav.png) no-repeat scroll center top transparent;
     float: left;
     height: 80px;
     opacity: 0.3;
@@ -564,7 +564,7 @@ div#gobottom {
     z-index: 150;
 }
 div#gobottom a {
-    background: url('images/sprite_bigNav.png') no-repeat scroll center bottom transparent;
+    background: url(images/sprite_bigNav.png) no-repeat scroll center bottom transparent;
     float: left;
     height: 80px;
     opacity: 0.3;

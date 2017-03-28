@@ -21,7 +21,7 @@ html {
 }
 
 body {
-	background:#f2f2f2 url('images/body.png') repeat-x scroll 0 0;
+	background:#f2f2f2 url(images/body.png) repeat-x scroll 0 0;
 	position: relative;
 	height: auto;
 	min-height: 100%;
@@ -43,7 +43,7 @@ div#connect-gsm{
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: transparent url('images/header.png') no-repeat scroll 0 0;
+    background: transparent url(images/header.png) no-repeat scroll 0 0;
     height: 174px;
     margin: auto;
     width: 1050px;
@@ -104,7 +104,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -260,7 +260,7 @@ div#bottom-content {
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 footer#footer {
-	background: transparent url('images/footer.png') repeat-x scroll 0 0;
+	background: transparent url(images/footer.png) repeat-x scroll 0 0;
 	width: 100%;
 	clear: both;
 
@@ -370,7 +370,7 @@ nav#breadcrumb ol li:not(.current):after {
     top: 0;
 }
 .ribbon h4 {
-    background: url('images/bouton-menu-haut.png') no-repeat scroll 0 0 transparent;
+    background: url(images/bouton-menu-haut.png) no-repeat scroll 0 0 transparent;
     height: 50px;
     margin-top: 37px;
     padding-top: 0;
@@ -437,7 +437,7 @@ text-align:center;
 }
 
 #fb, #twt, #yt{
-    background: url('images/circle.png') no-repeat scroll center 0 transparent;
+    background: url(images/circle.png) no-repeat scroll center 0 transparent;
     padding-top: 7px;
 	height:50px;
 	width:50px;
@@ -453,7 +453,7 @@ text-align:center;
 	décoration(s) diverse(s)
 #################################*/
 #deco_bottom {
-    background: url('images/deco.png') no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    background: url(images/deco.png) no-repeat scroll center bottom rgba(0, 0, 0, 0);
     height: 285px;
 }
 
@@ -531,7 +531,7 @@ section#Motto{
 /* Mobile navigation */
 .nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222;
     cursor: pointer;
     height: 50px;
@@ -556,7 +556,7 @@ section#Motto{
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .nav-click:hover {

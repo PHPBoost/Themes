@@ -40,7 +40,7 @@
 
 
 #deco-news-bottom {
-    background: rgba(0, 0, 0, 0) url('./../../theme/images/deco.png') no-repeat scroll center bottom;
+    background: rgba(0, 0, 0, 0) url(./../../theme/images/deco.png) no-repeat scroll center bottom;
     height: 250px;
     margin-top: -214px;
 }

@@ -31,7 +31,7 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-    background: #000000 url('images/bg.jpg') repeat-y scroll center top;
+    background: #000000 url(images/bg.jpg) repeat-y scroll center top;
     color: #9a9a9a;
     font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,"Bitstream Vera Sans",Times,serif;
 	font-size: 1.3em;
@@ -45,7 +45,7 @@ body {
 
 
 div#top-deco {
-    background: rgba(0, 0, 0, 0) url('images/top-deco.png') repeat-x scroll 0 0;
+    background: rgba(0, 0, 0, 0) url(images/top-deco.png) repeat-x scroll 0 0;
     height: 372px;
     margin-bottom: -350px;
 }
@@ -57,7 +57,7 @@ div#SuperGlobal {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: rgba(0, 0, 0, 0) url('images/header.png') no-repeat scroll left center;
+    background: rgba(0, 0, 0, 0) url(images/header.png) no-repeat scroll left center;
     margin-bottom: 8px;
 
 /*	background-color: #366393;*/
@@ -121,7 +121,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -264,7 +264,7 @@ div#top-footer {
 
 /* --- Contenu central --- */
 div#main-content {
-    background: #2b2b2b url('images/main-content.png') no-repeat scroll 0 0;
+    background: #2b2b2b url(images/main-content.png) no-repeat scroll 0 0;
     border: 1px solid #2b2b2b;
 	padding: 1.5em 0.8em;
 	box-shadow: 3px 3px 3px 3px #000000;
@@ -295,7 +295,7 @@ div#bottom-content {
 /* --------------------------- */
 footer#footer {
 	width: 100%;
-	background: rgba(0, 0, 0, 0) url('images/footer.png') repeat-x scroll center center;
+	background: rgba(0, 0, 0, 0) url(images/footer.png) repeat-x scroll center center;
     clear: both;
     height: 146px;
     margin:-70px auto auto;

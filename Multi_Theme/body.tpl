@@ -27,7 +27,7 @@
 			</div>
 			# ENDIF #
 			<div id="site-infos">
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background: url('{HEADER_LOGO}') no-repeat;"# ENDIF #></div>
+				<div id="site-logo" # IF C_HEADER_LOGO #style="background: url({HEADER_LOGO}) no-repeat;"# ENDIF #></div>
 				<div id="site-name-container">
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>

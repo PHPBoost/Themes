@@ -33,7 +33,7 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	background: url('images/bg.jpg')no-repeat scroll 0 0 #00175d;
+	background: url(images/bg.jpg)no-repeat scroll 0 0 #00175d;
 	color: #44d3ff;
 	font-size: 1.3em;
 	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
@@ -117,7 +117,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

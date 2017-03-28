@@ -437,7 +437,7 @@ td.calendar-week {
 /* ---------------------------------------------------- */
 
 /* --- les couleurs d icones --- */
-.fa-syndication:before { content: url('images/rss.png'); color: #F57900;}
+.fa-syndication:before { content: url(images/rss.png); color: #F57900;}
 .fa-success:before     { color: #478948; }
 .fa-forbidden:before   { color: #BA4B49; }
 .fa-error:before       { color: #BA4B49; }

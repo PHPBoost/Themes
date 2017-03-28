@@ -49,7 +49,7 @@ article {
 /* --- Titre d'une page ou d'un element d'un module --- */
 section header h1,
 article header h1{
-	background: transparent url('images/striped.png')no-repeat scroll center right;
+	background: transparent url(images/striped.png)no-repeat scroll center right;
 	border: 2px solid #000000;
 	font-family: georgia,prestige,sans-serif;
 	font-size: 20px;
@@ -61,7 +61,7 @@ section header a:hover {
 	text-decoration: none;
 }
 section header h2, article header h2 {
-	background: transparent url('images/striped.png')no-repeat scroll center right;
+	background: transparent url(images/striped.png)no-repeat scroll center right;
 	border: 2px solid #000000;
 	font-family: georgia,prestige,sans-serif;
 	font-size: 20px;
@@ -615,7 +615,7 @@ body.dragging * {
 /* -- Modules minis -- */
 /* ------------------- */
 .module-mini-container {	
-	background: transparent url('images/contentbg.png') no-repeat scroll center top;
+	background: transparent url(images/contentbg.png) no-repeat scroll center top;
 	border: 1px solid #690B00;
 	margin: 0 0 10px 0;
 	padding: 5px;

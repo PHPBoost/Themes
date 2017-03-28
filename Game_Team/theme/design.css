@@ -28,7 +28,7 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	background: url('images/bg.jpg') no-repeat;
+	background: url(images/bg.jpg) no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	color: #555555;
@@ -56,7 +56,7 @@ div#contenu-global {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-background: url('images/header.jpg') no-repeat; 
+background: url(images/header.jpg) no-repeat; 
 margin: auto;
 min-height: 255px;
 max-width: 1036px;
@@ -100,7 +100,7 @@ div#top-header-content {
 div#sub-header {
 	min-height: 136px;
 	margin-top: -6px;
-	background: url('images/header_menu.png') no-repeat; 
+	background: url(images/header_menu.png) no-repeat; 
 }
 
 div#sub-header-content{
@@ -122,7 +122,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 176px;
 	height: 109px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -330,7 +330,7 @@ footer#footer .footer-infos span {
 
 /* --- Compteur de visite --- */
 div#compteur {
-	background: url('images/comp.png') no-repeat;
+	background: url(images/comp.png) no-repeat;
     position: relative;
     font-size: 0.9em;
     color: #E9ECD9;
@@ -445,7 +445,7 @@ ul.MNnav-submenu{	list-style:none; margin-left: 30px;}
 /* Mobile navigation */
 .MNnav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
     cursor: pointer;
     height: 50px;
@@ -475,7 +475,7 @@ ul.MNnav-submenu{	list-style:none; margin-left: 30px;}
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .MNnav-click:hover {

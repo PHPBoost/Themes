@@ -31,7 +31,7 @@ p::selection      { color:#fbf9a3;  background: #000000 none repeat scroll 0 0;}
     font-family: 'MedievalSharp';
     font-style: normal;
     font-weight: normal;
-    src: url('fonts/MedievalSharp.ttf') format('truetype');
+    src: url(fonts/MedievalSharp.ttf') format('truetype');
 }
 
 
@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    background: #000000 url('images/fond.jpg') no-repeat fixed 0 0 / cover ;
+    background: #000000 url(images/fond.jpg) no-repeat fixed 0 0 / cover ;
     color: #fbf9a3;
     font-family: "MedievalSharp","Trebuchet MS",Verdana,"Bitstream Vera Sans",Times,serif;
 	font-size: 1.5em;
@@ -129,7 +129,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

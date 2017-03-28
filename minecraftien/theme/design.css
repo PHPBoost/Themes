@@ -16,7 +16,7 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	background-image: url('images/bg.jpg');
+	background-image: url(images/bg.jpg);
 	background-attachment: fixed;
 	background-position: top;
 	color: #555555;
@@ -37,7 +37,7 @@ header#header {
 
 /* --- Partie superieure du header --- */
 div#top-header {
-	background-image: url('images/stone.jpg');
+	background-image: url(images/stone.jpg);
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -117,7 +117,7 @@ div#site-logo {
 	width: 40px;
 	height: 40px;
 	float: left;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -181,7 +181,7 @@ div#global-contenue {
 div#global-header {
 	width: 1100px;
 	height: 400px;
-	background-image: url('images/header.jpg');
+	background-image: url(images/header.jpg);
 	border-bottom: 1px solid #000;
 }
 

@@ -11,7 +11,7 @@
 			</div>
 			# ENDIF #
 			<div id="site-infos">
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url('{HEADER_LOGO}');"# ENDIF #></div>
+				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({HEADER_LOGO});"# ENDIF #></div>
 				<div id="site-name-container">
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>

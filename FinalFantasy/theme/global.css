@@ -475,11 +475,11 @@ div.message-helper-small {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.error:before    { content: url('images/form/error.png'); }
-.notice:before   { content: url('images/form/notice.png'); }
-.warning:before	 { content: url('images/form/warning.png'); }
-.success:before	 { content: url('images/form/success.png'); }
-.question:before { content: url('images/form/question.png'); }
+.error:before    { content: url(images/form/error.png); }
+.notice:before   { content: url(images/form/notice.png); }
+.warning:before	 { content: url(images/form/warning.png); }
+.success:before	 { content: url(images/form/success.png); }
+.question:before { content: url(images/form/question.png); }
 
 .error, .error:before       { color: #000000; }
 .notice, .notice:before     { color: #000000; }

@@ -631,7 +631,7 @@ body.dragging * {
 }
 
 .module-mini-top {
-    background: transparent url('images/mini-top.png') no-repeat scroll 0 0;
+    background: transparent url(images/mini-top.png) no-repeat scroll 0 0;
     font-weight: bold;
     height: 44px;
 	padding: 0.2em 0 0.2em 0;
@@ -655,7 +655,7 @@ body.dragging * {
 }
 
 .module-mini-bottom {
-    background: transparent url('images/mini-container-bottom.png') no-repeat scroll center top;
+    background: transparent url(images/mini-container-bottom.png) no-repeat scroll center top;
     height: 30px;
 }
 
@@ -816,7 +816,7 @@ article .message-user-infos .message-user-group {
 @media (max-width: 768px) {
 
 	.module-mini-top {
-		background: transparent url('images/mini-top.png') no-repeat scroll center center;
+		background: transparent url(images/mini-top.png) no-repeat scroll center center;
 	}
 	.message-container {
 		position: relative;

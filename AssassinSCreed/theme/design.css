@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    background: #000000 url('images/bg.jpg') no-repeat scroll center top;
+    background: #000000 url(images/bg.jpg) no-repeat scroll center top;
     background-attachment: fixed;
     color: #690B00;
     font-family: Verdana,Arial,Helvetica,sans-serif;
@@ -50,14 +50,14 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-background: url('images/header.jpg') no-repeat scroll center 0 transparent;
+background: url(images/header.jpg) no-repeat scroll center 0 transparent;
 height: 370px;
 }
 
 /* --- Partie superieure du header --- */
 
 div#top-header {
-	background: url('images/titre.png') no-repeat scroll center 0 transparent;
+	background: url(images/titre.png) no-repeat scroll center 0 transparent;
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -113,7 +113,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -400,7 +400,7 @@ text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
     width: 116px;
 }
 #menus ul li a {
-	background:url('images/btn.png') no-repeat scroll 0 0 transparent;
+	background: url(images/btn.png) no-repeat scroll 0 0 transparent;
 	transition-property: color;
 	transition-duration: 1s;	
   color: #000000;
@@ -423,7 +423,7 @@ text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 	margin-top: 4px;
 }
 #menus ul li a:hover, #menus ul li.active a {
-	background:url('images/btn-o.png') no-repeat scroll 0 0 transparent;
+	background: url(images/btn-o.png) no-repeat scroll 0 0 transparent;
 	transition-property: color;
 	transition-duration: 1s;
     color: #690B00;  
@@ -513,7 +513,7 @@ section#Motto{
 /* Mobile navigation */
 .nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
     cursor: pointer;
     height: 50px;
@@ -538,7 +538,7 @@ section#Motto{
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .nav-click:hover {

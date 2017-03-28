@@ -463,7 +463,7 @@ a.msg-link-pseudo:hover {
 /* Pseudo du membre */
 .msg-pseudo-mbr {
 	padding: 4px;
-	background:#afbdc0 url('./../../theme/images/msg_top_row.png') repeat-x scroll 0 bottom;
+	background:#afbdc0 url(./../../theme/images/msg_top_row.png) repeat-x scroll 0 bottom;
 }
 
 .msg-info-mbr { /* Case des informations du membre */
@@ -498,7 +498,7 @@ a.msg-link-pseudo:hover {
 
 /* --- info case du message ---*/
 .msg-contents-info {
-	background:#afbdc0 url('./../../theme/images/msg_top_row.png') repeat-x scroll 0 bottom;
+	background:#afbdc0 url(./../../theme/images/msg_top_row.png) repeat-x scroll 0 bottom;
 	padding: 4px;
 	color: #E8EAEB;
 }
@@ -519,7 +519,7 @@ a.msg-link-pseudo:hover {
 /* Signature du membre */
 .msg-sign,
 .msg-sign2 { 
-	background: transparent  url('./../../theme/images/deco-o.png') no-repeat scroll right top;
+	background: transparent  url(./../../theme/images/deco-o.png) no-repeat scroll right top;
     border-left: 1px dotted #dddddd;
     font-size: 11px;
     margin-top: 10px;

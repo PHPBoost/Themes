@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background:  url('images/global.jpg') repeat-x scroll 0 0 #c8d7dc;
+    background:  url(images/global.jpg) repeat-x scroll 0 0 #c8d7dc;
     color: #2f404d;
     font-family: Verdana,Arial,Helvetica,sans-serif;
 	position: relative;
@@ -36,7 +36,7 @@ body {
 
 div#contenu {
 	position:relative;
-    background: rgba(0, 0, 0, 0) url('images/global.png') repeat-y scroll center top;
+    background: rgba(0, 0, 0, 0) url(images/global.png) repeat-y scroll center top;
     margin: auto;
     width: 1060px;
 }
@@ -53,7 +53,7 @@ div#top-header {
 	flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
 	-webkit-flex: 1 1 auto;
-    background: transparent url('images/header.png') no-repeat scroll center 0;
+    background: transparent url(images/header.png) no-repeat scroll center 0;
 	height:28px;
 	min-height: 365px;
 	max-width: 1005px;
@@ -168,7 +168,7 @@ div#site-infos {
 }
 
 div#site-logo {
-    background: rgba(0, 0, 0, 0) url('images/logo.png') no-repeat scroll center center / cover ;
+    background: rgba(0, 0, 0, 0) url(images/logo.png) no-repeat scroll center center / cover ;
     float: left;
     height: 200px;
     margin: 10px 1em 0 0;
@@ -320,7 +320,7 @@ div#top-footer {
 /* -- Pied de page - Footer --
 --------------------------------------*/
 footer#footer {
-    background: url('images/footer.png') no-repeat scroll center top transparent;
+    background: url(images/footer.png) no-repeat scroll center top transparent;
     clear: both;
     height: 299px;
     margin: auto;
@@ -435,7 +435,7 @@ nav#breadcrumb ol li:not(.current):after {
 
 }
 .MNnav-item > a:hover { 
-    background: rgba(0, 0, 0, 0) url('images/silverbar.jpg') repeat-x scroll right -116px;
+    background: rgba(0, 0, 0, 0) url(images/silverbar.jpg) repeat-x scroll right -116px;
     color: #2f404d;
     text-decoration: none;
 }
@@ -472,7 +472,7 @@ ul.MNnav-submenu{list-style:none;}
 /* Mobile navigation */
 .MNnav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
     cursor: pointer;
     height: 50px;
@@ -502,7 +502,7 @@ ul.MNnav-submenu{list-style:none;}
 	display:block;
 	height:48px;
 	width:48px;
-	background:url('images/drop.svg') no-repeat center center;
+	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
 .MNnav-click:hover {

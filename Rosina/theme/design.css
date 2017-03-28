@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    background: #9b1b22 url('images/bg.jpg') no-repeat fixed center top;
+    background: #9b1b22 url(images/bg.jpg) no-repeat fixed center top;
     color: #000000;
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
@@ -51,7 +51,7 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: url('images/header.png') no-repeat scroll -8px 0 transparent;
+    background: url(images/header.png) no-repeat scroll -8px 0 transparent;
     height: 382px;
     margin: auto;
     max-width: 1030px;
@@ -130,7 +130,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -189,7 +189,7 @@ div#global {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	background: transparent url('images/global.png') repeat-y scroll -4px 0;
+	background: transparent url(images/global.png) repeat-y scroll -4px 0;
 	flex-direction: column;
 	-ms-flex-direction: column;
 	-webkit-flex-direction: column;
@@ -272,7 +272,7 @@ aside#menu-right {
 }
 
 div#top-footer {
-	background: transparent url('images/global.png') repeat-y scroll 3px 0;
+	background: transparent url(images/global.png) repeat-y scroll 3px 0;
     padding: 2% 0;
 }
 
@@ -308,7 +308,7 @@ div#bottom-content {
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 footer#footer {
-    background: transparent url('images/footer.png') no-repeat scroll 3px 0;
+    background: transparent url(images/footer.png) no-repeat scroll 3px 0;
     clear: both;
     height: 478px;
     margin: 0 auto auto;
@@ -422,7 +422,7 @@ nav#breadcrumb ol li:not(.current):after {
     line-height: 1.5em;
 	text-shadow:none;
 	}
-	div#global{    background: transparent url('images/global.png') repeat-y scroll center 0;}
+	div#global{    background: transparent url(images/global.png) repeat-y scroll center 0;}
 	aside#menu-left {border-right: none;}
 	aside#menu-right{border-left: none;}	
 

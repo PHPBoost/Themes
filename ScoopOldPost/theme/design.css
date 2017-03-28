@@ -28,7 +28,7 @@ html {
 }
 
 body {
-	background: url('images/bg.jpg') repeat scroll center center rgba(0, 0, 255, 0.5);
+	background: url(images/bg.jpg) repeat scroll center center rgba(0, 0, 255, 0.5);
 	position: relative;
 	height: auto;
 	min-height: 100%;
@@ -59,7 +59,7 @@ box-shadow: 3px 2px 3px 0px #9b9b9b;
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: transparent url('images/header.png') no-repeat scroll center 0;
+    background: transparent url(images/header.png) no-repeat scroll center 0;
     height: 200px;
 }
 
@@ -130,7 +130,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

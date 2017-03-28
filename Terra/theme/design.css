@@ -50,12 +50,12 @@ div#SuperGlobal {
 	margin:auto;
 }
 div#sub-bg {
-    background:url('images/sub-footer.png') no-repeat scroll center bottom transparent;
+    background: url(images/sub-footer.png) no-repeat scroll center bottom transparent;
 }
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: #000000 url('images/header.jpg') no-repeat scroll center top;
+    background: #000000 url(images/header.jpg) no-repeat scroll center top;
 }
 
 /* --- Partie superieure du header --- */
@@ -93,7 +93,7 @@ div#top-header-content {
 
 /* --- Partie inférieur du header --- */
 div#sub-header {
-    background: #000000 url('images/sub_header.jpg') no-repeat scroll right top;
+    background: #000000 url(images/sub_header.jpg) no-repeat scroll right top;
     border-top: 1px solid #009ce8;
     border-bottom: 2px solid #0e179a;
 	min-height: 40px;
@@ -117,7 +117,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -258,7 +258,7 @@ div#top-footer {
 
 /* --- Contenu central --- */
 div#main-content {
-    background: #000000 url('images/main.png') no-repeat scroll center top;
+    background: #000000 url(images/main.png) no-repeat scroll center top;
     border: 1px solid #2a2dc9;
 	border-radius: 12px;
 	padding: 1.5em 0;
@@ -286,7 +286,7 @@ div#bottom-content {
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 footer#footer {
-    background: #000000 url('images/footer.png') repeat-x scroll 0 0;
+    background: #000000 url(images/footer.png) repeat-x scroll 0 0;
     border-top: 1px solid #2a2dc9;
 	width: 100%;
 	clear: both;

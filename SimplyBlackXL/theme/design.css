@@ -47,7 +47,7 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background: transparent url('images/header.png') no-repeat scroll center 0;
+    background: transparent url(images/header.png) no-repeat scroll center 0;
     height: 150px;
 }
 
@@ -108,7 +108,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

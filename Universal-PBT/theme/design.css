@@ -28,7 +28,7 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	background:transparent url('images/bg.jpg') no-repeat scroll center center;
+	background:transparent url(images/bg.jpg) no-repeat scroll center center;
 	background-attachment:fixed;
     font-size:12px;
     font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, 'Bitstream Vera Sans', Times, serif;
@@ -46,7 +46,7 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-background: url('images/header.png') no-repeat scroll 0 0 transparent;
+background: url(images/header.png) no-repeat scroll 0 0 transparent;
 margin: auto;
 }
 
@@ -85,7 +85,7 @@ div#top-header-content {
 
 /* --- Partie inférieur du header --- */
 div#sub-header {
-	background: transparent url('images/subheader.png') no-repeat scroll center top;
+	background: transparent url(images/subheader.png) no-repeat scroll center top;
 	min-height: 36px;
 	padding: 2px 5px;	
 }
@@ -109,7 +109,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

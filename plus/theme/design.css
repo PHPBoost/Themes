@@ -138,7 +138,7 @@ div#site-logo {
     margin: 0 1em 0 0;
     width: 60px;
     height: 60px;
-    background-image: url('images/logo.png');
+    background-image: url(images/logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,7 +184,7 @@ span#site-slogan {
 }
 
 #head-banner {
-    background-image: url('images/banner.jpg');
+    background-image: url(images/banner.jpg);
     height:210px !important;
     background-position: 50% 0;
     background-repeat: no-repeat;

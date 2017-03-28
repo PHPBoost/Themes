@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background: url('images/bgr.jpg') repeat-x scroll center 228px #b2d0ec;
+    background: url(images/bgr.jpg) repeat-x scroll center 228px #b2d0ec;
     color: #2e3b5f;
     font-family: Verdana,Arial,Helvetica,sans-serif;
 	position: relative;
@@ -49,13 +49,13 @@ body {
 /* -- En-tete de page - Header --
 --------------------------------------*/
 header#header {
-	background: url('images/header.jpg') no-repeat scroll center 0 transparent;
+	background: url(images/header.jpg) no-repeat scroll center 0 transparent;
 }
 
 /* --- Partie superieure du header --- */
 
 div#top-header {
-	background: url('images/titre.png') no-repeat scroll center 0 transparent;
+	background: url(images/titre.png) no-repeat scroll center 0 transparent;
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -95,7 +95,7 @@ div#top-header-content {
 
 /* --- Partie inferieur du header --- */
 div#sub-header {
-    background: rgba(0, 0, 0, 0) url('images/sub_header.jpg') repeat-x scroll 0 0;
+    background: rgba(0, 0, 0, 0) url(images/sub_header.jpg) repeat-x scroll 0 0;
     border-bottom: 2px solid #efefef;
     border-top: 2px solid #efefef;
     min-height: 35px;
@@ -134,7 +134,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
+	background-image: url(images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -486,7 +486,7 @@ transition: 0.5s;
 
 
 @media (max-width:768px) {
-	body {background: url('images/bgr.jpg') repeat-x scroll center 107px #b2d0ec;}
+	body {background: url(images/bgr.jpg) repeat-x scroll center 107px #b2d0ec;}
 	div#SuperGlobal {width: auto;}	
 	header#header {margin: auto; background:none; height:auto; min-height:0px; margin: auto;width: auto;}
 	div#top-header, div#titre, div#footer_left{display: none;}

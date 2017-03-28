@@ -22,7 +22,7 @@
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>
 				</div>
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url('{HEADER_LOGO}');"# ENDIF #></div>
+				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({HEADER_LOGO});"# ENDIF #></div>
 			</div>
 			<div class="spacer"></div>
 		</div>
