@@ -307,7 +307,7 @@ header .cssmenu-horizontal > ul > li.has-sub:hover {
 }
 
 #sub-header .cssmenu li.has-sub:hover > ul.level-1 {
-	max-height: 200px;
+	max-height: 230px;
 	background-color: #4F4F4F;
 	border-radius: 0 8px 8px 8px;
 	border-style: solid;

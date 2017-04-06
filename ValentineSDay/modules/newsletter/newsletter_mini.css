@@ -47,7 +47,7 @@ div#newsletter {
 }
 
 .newsletter-form.input-element-button input[type="text"] {
-    background-color: none;
+    background-color: transparent;
     border:none;
 	border-radius: 4px 4px 4px 4px;
     height: 25px;

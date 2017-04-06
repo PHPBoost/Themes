@@ -42,6 +42,8 @@
 
 .news-picture {
 	float: left;
+	padding: 10px;
+	max-width: 40%;
 }
 
 .navigation-link-previous 	{ float: left;  }
@@ -63,7 +65,7 @@
 	}
 
 	article {
-		background-color: none;
+		background-color: transparent;
 		box-shadow: none;
 		position: relative;
 		margin: 0 auto;

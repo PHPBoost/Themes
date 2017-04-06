@@ -86,9 +86,6 @@ span.actions {
 	float: right;
 }
 
-header span.actions a {
-	font-size: 1.2em;
-}
 
 header span.actions a {
 	font-size: 1.2rem;
@@ -190,11 +187,58 @@ header span.actions a {
 	}
 }
 
+.no-style .block {
+	background-color: transparent!important;
+	border: none!important;
+}
+
+.elements-container {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.elements-container > .block {
+	flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+}
+
+/* Gestion en colonnes pour ecran large*/
+@media (min-width: 769px) {
+	.elements-container {
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+		margin-left: -5px; /* @{gutter} */ 
+	}
+
+	.block { 
+		margin-left: 5px; /* @{gutter} */ 
+		width: 100%;
+	} 
+	
+	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */ 
+	.columns-3 .block { width: calc(100% / 3 - 5px); }
+	.columns-4 .block { width: calc(100% / 4 - 5px); }
+	.columns-5 .block { width: calc(100% / 5 - 5px); }
+	.columns-6 .block { width: calc(100% / 6 - 5px); }
+	.columns-7 .block { width: calc(100% / 7 - 5px); }
+	
+	.block-xlarge { width: 100%!important; } /* Extension du bloc sur une ligne complète */
+}
+
+/* Gestion en ligne pour petit ecran */
 @media (max-width: 768px) {
 	.block {
+		margin-bottom: 5px;
 		width: 100%;
-		margin: 1em 0;
-	}
+	}	
 }
 
 
@@ -406,6 +450,10 @@ ul.pagination-block-bis li a.next-page:hover {
 .options > a ,
 .options > span > a.small {
 	color: #333333;
+}
+
+.options img {
+	margin: 0 0 5px 0;
 }
 
 .infos {
@@ -803,7 +851,7 @@ article .message-user-infos .message-user-group {
 	}
 
 	.message-message {
-		background-color: none;
+		background-color: transparent;
 		border: none;
 		border-radius: 0;
 	}

@@ -153,7 +153,7 @@ header .cssmenu { display: inline-block; }
 
 /* --- Variante cssmenu-horizontal --- */
 #main .cssmenu-horizontal {
-	background-color: none;
+	background-color: transparent;
 }
 
 /* --- Variante cssmenu-group --- */

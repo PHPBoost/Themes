@@ -441,7 +441,7 @@ a.msg-link-pseudo:hover {
 
 /* Barre superieur des messages */
 .msg-top {
-	background-color: none;
+	background-color: transparent;
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -534,7 +534,7 @@ a.msg-link-pseudo:hover {
 
 /* Signature du membre => Couleur alternative */
 .msg-sign2 {
-	background-color: none;
+	background-color: transparent;
 }
 
 /* Signature du membre, fixe la hauteur maximale */

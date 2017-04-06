@@ -132,9 +132,6 @@ span.actions {
 	float: right;
 }
 
-header span.actions a {
-	font-size: 1.2em;
-}
 
 header span.actions a, header span.actions a:hover {
 	font-size: 1.2rem;
@@ -242,6 +239,70 @@ article footer {
 	}
 }
 
+.no-style .block {
+	background-color: transparent!important;
+	border: none!important;
+}
+
+.elements-container {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.elements-container > .block {
+	flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+}
+
+/* Gestion en colonnes pour ecran large*/
+@media (min-width: 769px) {
+	.elements-container {
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+		margin-left: -5px; /* @{gutter} */ 
+	}
+
+	.block { 
+		margin-left: 5px; /* @{gutter} */ 
+		width: 100%;
+	} 
+	
+	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */ 
+	.columns-3 .block { width: calc(100% / 3 - 5px); }
+	.columns-4 .block { width: calc(100% / 4 - 5px); }
+	.columns-5 .block { width: calc(100% / 5 - 5px); }
+	.columns-6 .block { width: calc(100% / 6 - 5px); }
+	.columns-7 .block { width: calc(100% / 7 - 5px); }
+	
+	.block-xlarge { width: 100%!important; } /* Extension du bloc sur une ligne complète */
+}
+
+/* Gestion en ligne pour petit ecran */
+@media (max-width: 768px) {
+	.block {
+		margin-bottom: 5px;
+		width: 100%;
+	}	
+}
+
+/* ---- Friends content ---- */
+.content-friends {
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #103B67;
+}
+
+.content-privileged-friends {
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #E2BE47;
+}
 
 /* --- Pagination des pages --- */
 section footer ul.pagination {

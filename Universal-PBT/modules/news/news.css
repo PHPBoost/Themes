@@ -57,6 +57,8 @@ article {
 
 .news-picture {
 	float: left;
+	padding: 10px;
+	max-width: 40%;
 }
 
 .navigation-link-previous 	{ float: left;  }
@@ -105,7 +107,7 @@ article {
 	}
 
 	article {
-		background-color: none;
+		background-color: transparent;
 		box-shadow: none;
 		position: relative;
 		margin: 0 auto;
@@ -116,7 +118,7 @@ article {
 	fieldset#NewsFormController_news  legend,
 	fieldset#NewsFormController_other legend,
 	fieldset#NewsFormController_publication legend{
-		background-color: none;
+		background-color: transparent;
 		box-shadow: none;
 		border-spacing: 1px;
 		border-radius: 5px;
@@ -131,7 +133,7 @@ article {
 	fieldset#NewsFormController_other,
 	fieldset#NewsFormController_publication,
 	fieldset#NewsFormController_fbuttons{
-		background-color: none;
+		background-color: transparent;
 		box-shadow: none;
 		border-spacing: 1px;
 		border-radius: 5px;

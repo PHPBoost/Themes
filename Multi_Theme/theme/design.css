@@ -411,53 +411,53 @@ nav#breadcrumb ol li:not(.current):after {
     width: 24px;
 }
 
-.MNnav {
+.nav {
     font-size: 14px;
     font-weight: 900;
     position: relative;
 	display:inline-block;
 }
-.MNnav-list {
+.nav-list {
     list-style: outside none none;
     margin-left: 0;
     text-align: left;
 }
-.MNnav-item {
+.nav-item {
 	float:left;
 	*display:inline;
 	zoom:1;
 	position:relative;
 }
-.MNnav-item a {
+.nav-item a {
     color: #515c68;
 	display:block;
 	padding:15px 20px;
 
 }
-.MNnav-item > a:hover { 
+.nav-item > a:hover { 
     background: rgba(0, 0, 0, 0) url(images/silverbar.jpg) repeat-x scroll right -116px;
     color: #2f404d;
     text-decoration: none;
 }
-.MNnav-item:hover .MNnav-submenu {
+.nav-item:hover .nav-submenu {
 	display:block;
 }
 /* Navigation submenu */
 
-ul.MNnav-submenu{list-style:none;}
+ul.nav-submenu{list-style:none;}
 
 #Mn-nav  {
     line-height: normal;
     margin-bottom: 0px;
     margin-left: 0px;
 }
-.MNnav-submenu {
+.nav-submenu {
 	display:none;
 	position:absolute;
 	left:0;
 	width:180px;
 }
-.MNnav-submenu-item a {
+.nav-submenu-item a {
     background: #E9EFF1 none repeat scroll 0 0;
     border-bottom: 1px solid #ffffff;
     color: #445766;
@@ -465,12 +465,12 @@ ul.MNnav-submenu{list-style:none;}
     margin-left: -30px;
     padding: 15px;
 }
-.MNnav-submenu-item a:hover {
+.nav-submenu-item a:hover {
 	background:#D9E0E4 ;
 	color:#2f404d;
 }
 /* Mobile navigation */
-.MNnav-mobile {
+.nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
     background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
@@ -482,13 +482,13 @@ ul.MNnav-submenu{list-style:none;}
     width: 50px;
 }
 /* Police des liens */
-.MNnav-item a , .MNnav-item > a:hover, .MNnav-submenu-item a, .MNnav-submenu-item a:hover{
+.nav-item a , .nav-item > a:hover, .nav-submenu-item a, .nav-submenu-item a:hover{
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 /* Mobile navigation, clickable area for revealing <ul> */
-.MNnav-click {
+.nav-click {
 	position:absolute;
 	top:0;
 	right:0;
@@ -498,17 +498,17 @@ ul.MNnav-submenu{list-style:none;}
 	width:50px;
 	cursor:pointer;
 }
-.MNnav-click i {
+.nav-click i {
 	display:block;
 	height:48px;
 	width:48px;
 	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
-.MNnav-click:hover {
+.nav-click:hover {
 	background-color:#f2f5f6;
 }
-.MNnav-rotate {
+.nav-rotate {
 	-webkit-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
@@ -715,53 +715,53 @@ div#gobottom a {
 		text-align: center;
 		text-transform: uppercase;
 		}
-	.MNnav-mobile {
+	.nav-mobile {
 		display:block;
 	}
-	.MNnav {
+	.nav {
 		width:100%;
 		padding:50px 0 0;
 		margin-top: -34px;
 		position: relative;
 	}
-	.MNnav-list {
+	.nav-list {
 		display:none;
 	}
-	.MNnav-item {
+	.nav-item {
 		width:100%;
 		float:none;
 		list-style: none outside none;		
 	}
-	.MNnav-item > a {
+	.nav-item > a {
 		padding:15px;
 	}
-	.MNnav-click {
+	.nav-click {
 		display:block;
 	}
-	.MNnav-mobile-open {
+	.nav-mobile-open {
 		border-radius:5px 5px 0 0;
 		-webkit-border-radius:5px 5px 0 0;
 		-moz-border-radius:5px 5px 0 0;
 	}
-	.MNnav-item:hover .nav-submenu {
+	.nav-item:hover .nav-submenu {
 		display:none;
 	}
-	.MNnav-submenu {
+	.nav-submenu {
 		position:static;
 		width:100%;
 	}
 	ul{margin-left:0px;}
-	.MNnav-submenu{margin-bottom:0px}
-	.MNnav-item a {
+	.nav-submenu{margin-bottom:0px}
+	.nav-item a {
 		background: #d7dee3 none repeat scroll 0 0;
 		border-bottom:1px solid #bccad3;
 		color: #445766;
 		display: block;
 	}
-	.MNnav-item > a:hover {
+	.nav-item > a:hover {
 		background:#f2f5f6 none repeat scroll 0 0;
 	}
-	.MNnav-submenu-item a {
+	.nav-submenu-item a {
 		background: #efefef none repeat scroll 0 0;
 		border-bottom: 1px solid #bccad3;
 		color:#445766;
@@ -769,7 +769,7 @@ div#gobottom a {
 		margin-left:0px;
 		padding: 15px;
 	}
-	.MNnav-submenu-item a:hover {
+	.nav-submenu-item a:hover {
 		background:#d7dee3 none repeat scroll 0 0;
 		color: #2f404d;
 	}
