@@ -74,6 +74,8 @@ div#top-header-content {
 
 /* --- Partie inferieur du header --- */
 div#sub-header {
+	max-width: 95%;
+	margin: auto;
 }
 
 div#sub-header-content{
@@ -264,7 +266,7 @@ div.block-container {
 /* --- Emplacement au dessus et en dessous du contenu de la page --- */
 div#top-content {
 	margin: 0 0 0 0;
-	padding: 0 1em;
+	padding: 0 0 0 0;
 	height: 46px;
 	width: auto;
 	text-decoration: none;
@@ -275,7 +277,7 @@ div#top-content {
 /* --- Emplacement au dessus du pied de page --- */
 div#bottom-content {
 	margin: 2% 0 0 0;
-	padding: 0.1em 0.8em;
+	padding: 0 0 0 0;
 	background-color: #FFFFFF;
 	border: 1px solid #BEBEBE;
 }
