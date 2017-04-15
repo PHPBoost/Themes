@@ -603,26 +603,26 @@
 		</version>
 	</app>
 	<app id="oneunit" type="template">
-		<version num="5.0.0" language="english" localized_language="English" name="OneUnit" priority="low" security-update="false" pubdate="2016/10/23">
+		<version num="5.0.1" language="english" localized_language="English" name="OneUnit" priority="low" security-update="false" pubdate="2017/04/15">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oneunit/oneunit.zip">Theme OneUnit</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 			</authors>
-			<description>Version 5.0.0 OneUnit theme for PBT 5.0</description>
+			<description>Version 5.0.1 OneUnit theme for PBT 5.0</description>
 			<whatsnew>
-				<new type="feature">First Revision</new>
+				<new type="bug">Fix subheader width</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.0" language="french" localized_language="Francais" name="OneUnit" priority="low" security-update="false" pubdate="2016/10/23">
+		<version num="5.0.1" language="french" localized_language="Francais" name="OneUnit" priority="low" security-update="false" pubdate="2017/04/15">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/oneunit/oneunit.zip">Theme OneUnit</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 			</authors>
-			<description>Version 5.0.0 du theme OneUnit compatible avec la version 5.0 de PHPBoost</description>
+			<description>Version 5.0.1 du theme OneUnit compatible avec la version 5.0 de PHPBoost</description>
 			<whatsnew>
-				<new type="feature">Première version</new>
+				<new type="bug">Correction de la largeur du subheader</new>
 			</whatsnew>
 		</version>
 	</app>
