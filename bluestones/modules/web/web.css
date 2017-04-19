@@ -1,0 +1,26 @@
+h2.web-partner {
+	border-style: solid;
+	border-width: 1px 1px 1px 3px;
+	border-color: #FA9C0A;
+}
+
+h2.web-privileged-partner {
+	border-style: solid;
+	border-width: 1px 1px 1px 3px;
+	border-color: #E6481D;
+}
+
+#module-web .options {
+	background: none;
+	border: none;
+}
+
+#module-web .home-filters .options { max-width: 100%; }
+
+#module-web .options img { margin-bottom: 5px; }
+
+@media (min-width: 769px) {
+	#module-web .options { max-width: 40%;}
+}
+
+#module-web div.horizontal-fieldset { margin: 0;}

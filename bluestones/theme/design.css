@@ -1,54 +1,51 @@
-/*---------------------------------------------------------
- * Theme    :  Theme Christmas Blue
- * Par      : EDN | Swan
- * Date     : 27/01/2017
- * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
- * Contient les conteneurs de mise en page.
- * Le design.css permet de mettre en forme votre site web avec le design de votre choix
- *---------------------------------------------------------
- * Thème compatible avec deux menus (droite et gauche)
-					le choix reste possible sur un menu
- *----------------------------------------------------------*/
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+/* --- Colors --- */
+/* -- bleu 1: #0E2134 - #1D3248 // #2F4154 // #455A6F - #647689 - #b8c1cb
+ * -- bleu 2: // #1E73BE // #63a8e7
+ * -- bleu 3: // #BDE9F2 // #D7F2F7 - #E5F6FA - #F2FBFC
+ * -- orange 1:	// #FA9C0A //
+ * -- orange 2: // #E6481D //
+ * -- vert : #81d742
+ **/
 
 /* -- Elements HTML generiques specifique au theme -- */
 /* -------------------------------------------------- */
-/* afficher le texte sélectionné en blanc sur fond gris */
-::-moz-selection { color:#444444;  background: #c8d6e8 none repeat scroll 0 0;}
-::selection     { color:#444444;  background:#c8d6e8 none repeat scroll 0 0;}
-
-/* afficher le texte sélectionné dans un paragraphe en blanc sur fond gris */
-p::-moz-selection { color:#444444;  background: #c8d6e8 none repeat scroll 0 0; }
-p::selection      { color:#444444;  background: #c8d6e8 none repeat scroll 0 0;}
-
 html {
 	font-size: 100%;
 	font-size: 10px;
 }
+a {outline: none;}
 
 body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	/*background-color: #ffffff;*/
-	background: url(images/bg.jpg) fixed center top #ffffff;
-	color: #000000;
-	font-size: 1.3em;
+	background-color: #FFFFFF;
+	color: #2F4154;
+	font-size: 1.4em;
 	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	body {
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 }
 
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 header#header {
-    background-color: #0074B1;
-    margin-top: 20px;
+	margin: auto;
+	color: #F2F2F2;
+	background-image: url(images/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 /* --- Partie superieure du header --- */
@@ -56,17 +53,11 @@ div#top-header {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	flex-direction: row;
-	-ms-flex-direction: row;
-	-webkit-flex-direction: row;
-	
--webkit-justify-content: center;
--ms-flex-pack: center;
-justify-content: center;
--webkit-align-content: center;	
-	margin: auto;
-	min-height: 139px;
-	max-width: 1024px;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	min-height: 150px;
+	background-color: rgba(25, 35, 45, 0.4);
 }
 
 div#top-header-content {
@@ -75,29 +66,34 @@ div#top-header-content {
 	-webkit-flex: 1 1 auto;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+	
 	div#top-header {
-		flex-direction: column;
-		-ms-flex-direction: column;
-		-webkit-flex-direction: column;
+		min-height: 300px;
 	}
 	
 	div#top-header-content {
-		align-self: flex-end;
-		-ms-align-self: flex-end;
-		-webkit-align-self: flex-end;
+		text-align: center;
 	}
 }
 
 /* --- Partie inferieur du header --- */
 div#sub-header {
-	min-height: 35px;
-	background-color: #c6aa57;
+	background-color: rgba(25, 35, 45, 0.4);
+	border-bottom: 2px solid #0E2134;
+}
+
+@media (min-width: 769px) {
+	div#sub-header {
+		background-color: #2F4154;
+	}
+	
 }
 
 div#sub-header-content{
 	margin: auto;
 	max-width: 1024px;
+	position: relative;
 }
 
 /* --- Logo et Nom du site web --- */
@@ -105,8 +101,8 @@ div#site-infos {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	margin: 1.5em 0 0 1.5em;
-	max-width: 940px;
+	padding: 1.5em 0 0 1.5em;
+	width: 100%;
 	flex: 1 1 auto;
 }
 
@@ -114,7 +110,7 @@ div#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url(images/logo.png);
+	background-image: url('images/logo.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -128,14 +124,16 @@ div#site-name-container {
 }
 
 a#site-name {
-	color: #F9FCFF;
-	font-size: 3em;
+	color: #FFFFFF;
+	font-size: 2em;
 	font-weight: bold;
 	line-height: 1em;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
 }
+
+a#site-name:hover {color: #2F4154}
 
 span#site-slogan {
 	display: block;
@@ -147,12 +145,8 @@ span#site-slogan {
 
 @media (min-width: 769px) {
 	div#site-logo {
-		height: 100px;
 		width: 90px;
-	}
-
-	div#site-name-container {
-		margin: 1em 0 0 0;
+		height: 90px;
 	}
 
 	a#site-name {
@@ -160,56 +154,9 @@ span#site-slogan {
 	}
 	
 }
-/* -- section EDN-menu -- */
-/* ------------------------------ */
-
-section#EDN-menu-body {
-    background: #efefef none repeat scroll 0 0; /* Couleur de fonds de la barre */
-   /* color: #ffffff;*/
-    min-height: 120px;
-    min-width: 100%;
-    padding: 10px 0 0 10px;
-}
-
-article#EDN-menu-icons {
-/*  display: inline;
-   padding: 25px 0 0 5px;*/
-    margin: auto;
-    width: 100%;
-	
-}
-.menu-blocks{
-    clear: none !important;
-}
-
-.fa-menu {
-    background-color: #ffffff; /* Couleur de fonds des icons */
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 80px;
-    margin: 0 9px 0 0; /* Espacement entre les icons */
-    min-height: 100px;
-    min-width: 100px;
-    padding: 0 0 0 5px;
-    text-align: center;
-}
-.fa-menu > a {color:#222222; transition: all 0.2s ease 0s;}  /* Couleur des icons flats */
-.fa-menu > a:hover {color:#c6aa57;} /* Couleur des icons flats au survole */
-
-@media (max-width:768px) {
-/* Le menu disparait en site web adaptatif (gsm) */
-	section#EDN-menu-body {
-		position: absolute;
-		left: -9999em;	
-	}
-}
 
 /* -- Conteneur global du site -- */
 /* ------------------------------ */
-div#SuperGlobal {
-    margin: auto;
-    width: 1049px;
-}
 div#global {
 	display: flex;
 	display: -ms-flexbox;
@@ -217,17 +164,16 @@ div#global {
 	flex-direction: column;
 	-ms-flex-direction: column;
 	-webkit-flex-direction: column;
-	margin: 1.5em auto 0 auto;
-	padding: 0px;
-	max-width: 1049px;
+	margin: 2em auto 0 ;
+	max-width: 1074px;
 }
 
 div#main {
-	padding: 0 0 10px 0;
 	max-width: 100%;
 	order : 1;
 	-ms-flex-order: 1;
 	-webkit-flex-order: 1;
+	padding: 0 25px;
 }
 
 aside#menu-left,
@@ -264,39 +210,38 @@ aside#menu-right {
 
 	aside#menu-left,
 	aside#menu-right {
-    	width: 300px;
+    	width: 30%;
+		padding: 0 25px;
 	}
 
 	aside#menu-left  { 
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
+		border-right: 1px solid #d9d9d9;
 	}
+	
 	aside#menu-right { 
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
+		border-left: 1px solid #d9d9d9;
 	}
-	#main.main-with-left{ padding-left: 10px;}
-	#main.main-with-right{padding-right: 10px;}	
 	
 	#main.main-with-left,
 	#main.main-with-right {
-		width: calc(100% - 300px);
+		width: calc(100% - 30%);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 	
 	#main.main-with-left.main-with-right {
-		width: calc(100% - 500px);
+		width: calc(100% - 40%);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 }
 
 div#top-footer {
-    background-color: #ffffff;
-    border: 5px solid #c6aa57;
 	padding: 2% 0;
-	margin-bottom: 20px;
 }
 
 
@@ -305,26 +250,44 @@ div#top-footer {
 
 /* --- Contenu central --- */
 div#main-content {
-	padding: 1.5em 0.8em;
-	border: 5px solid #c6aa57;
-	background-color: #FFFFFF;
 }
 
 div.block-container {
 	margin-top: 15px;
 }
 
+div#top-header div.block-container {
+	display: inline-block;
+	margin: 0 25px 0 0;
+	max-width: 30%;
+	vertical-align: top;
+}
+
+div#top-header div.block-container h5 {
+	padding: 5px 10px;
+	background: #0E2134;
+}
+
+div#top-header div.block-contents div,
+div#top-header div.block-contents ul {
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 5px;
+}
+
+div#top-header div.block-contents div a,
+div#top-header div.block-contents ul a { color: #BDE9F2; }
+
 /* --- Emplacement au dessus et en dessous du contenu de la page --- */
 div#top-content {
 	margin: 0 0 2% 0;
+	padding: 0.1em 0.8em;
 }
 
 /* --- Emplacement au dessus du pied de page --- */
 div#bottom-content {
 	margin: 2% 0 0 0;
 	padding: 0.1em 0.8em;
-	background-color: #FFFFFF;
-	border: 5px solid #c6aa57;
 }
 
 
@@ -332,8 +295,13 @@ div#bottom-content {
 /* --------------------------- */
 footer#footer {
 	width: 100%;
+	background-color: #2F4154;
+	border-top: #0E2134 2px solid;
 	clear: both;
 }
+
+footer#footer a 		{ color: #BDE9F2; }
+footer#footer a:hover 	{ color: #1E73BE; }
 
 footer#footer .footer-content {
 	margin: 0 auto 0 auto;
@@ -343,14 +311,13 @@ footer#footer .footer-content {
 }
 
 footer#footer .footer-infos {
-    margin-bottom: 15px;
-    min-height: 40px;
-    padding-top: 10px;
-    text-align: center;
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
 }
 
 footer#footer .footer-infos span {
-	color: #222222;
+	color: #FFFFFF;
 	font-size: 0.8em;
 }
 
@@ -392,101 +359,6 @@ nav#breadcrumb ol li {
 nav#breadcrumb ol li:not(.current):after {
 	content: '/';
 	color: #616161;
-}
-
-/* --- Search - Mini --- */
-/* ------------------------ */
-
-#mini-search-form > button {
-    background-color: #c6aa57;
-}
-#mini-search-form > button:hover {
-    background-color: #D6B44F;
-}
-
-
-/*======================================
-			Alls Media Queries
-		 CSS applique aux écrans PC 
-========================================*/
-
-
-@media (max-width:768px) {
-
-	body {font-size: 1.4em;}
-	
-	div#SuperGlobal {width: auto;}	
-	header#header {margin: auto; background:none; height:35px; min-height:0px; margin: auto;width: auto;}
-	div#top-header, div#titre, div#footer_left{display: none;}
-	div#header-gsm {
-		background-color: #0074b1;
-		border-bottom: 2px solid #c6aa57;
-		min-height:50px; 
-		text-align:center;
-	}
-	div#sub-header {
-		float: none;
-		margin-right: 0px;
-		margin-top: 0px;
-	background: #000000; /* Old browsers */
-	border-bottom: 1px solid #103480;
-    min-height: 35px;
-    text-align: center;
-	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
-	}
-
-	a#site-name {
-    color: #f5f5f5;
-    font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 3.5em;
-    text-shadow: none;
-	}
-	div#global{background:rgba(255, 255, 255, 0.7) url(images/global.png) repeat-y scroll center 0;}
-	aside#menu-left {border-right: none;}
-	aside#menu-right{border-left: none;}	
-	
-	div#top-footer {background:rgba(255, 255, 255, 0.7) none repeat scroll 0 0;}	
-
-	footer#footer {
-    background: #0074B1 none repeat scroll 0 0;
-    border-top: 2px solid #c6aa57;
-	clear: both;
-	margin: auto;
-	width: 1250px;
-    height: auto;		
-	}
-	div#footer-bis {  height: 1px;}	
-	footer#footer .footer-infos {
-		min-height: 40px;
-		text-align: center;
-		margin-bottom: 0px;
-		padding-top: 10px;
-	}
-	footer#footer {width:100%}
-	footer#footer .footer-infos span a{color:#fefefe;}
-	footer#footer .footer-infos span a:hover {color:#5f3f12;}
-	.footer-infos span {
-    display: block;
-    padding: 0 0 5px;
-	}
-	footer#footer .footer-infos {
-    min-height: 40px;
-    padding-top: 5px;
-    text-align: center;
-}
-	footer#footer .footer-infos span {
-	color: #eeeeee;
-	font-size: 0.8em;
-}
-	span.footer-infos-separator {
-		display: none;
-	}
-}
-
-@media (min-width:769px) {
-	div#header-gsm{display: none;}
 }
 
 /* --- Scroll to Top --- */

@@ -1,0 +1,14 @@
+#module-download .options {
+	background: none;
+	border: none;
+}
+
+#module-download .home-filters .options { max-width: 100%; }
+
+#module-download .options img { margin-bottom: 5px; }
+
+@media (min-width: 769px) {
+	#module-download .options { max-width: 40%;}
+}
+
+#module-download div.horizontal-fieldset { margin: 0;}
