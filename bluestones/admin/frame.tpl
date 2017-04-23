@@ -7,10 +7,11 @@
 
 		<!-- Theme CSS -->
 		# IF C_CSS_CACHE_ENABLED #
-		<link rel="stylesheet" href="${CSSCacheManager::get_css_path('/templates/default/theme/default.css;/kernel/lib/css/font-awesome/css/font-awesome.css;/templates/{THEME}/admin/admin_design.css;/templates/{THEME}/admin/admin_content.css;/templates/{THEME}/admin/admin_cssmenu.css;/templates/{THEME}/admin/admin_menus.css;/templates/{THEME}/admin/admin_table.css;/templates/{THEME}/admin/admin_form.css;/templates/{THEME}/admin/admin_global.css')}" type="text/css" media="screen, print" />
+		<link rel="stylesheet" href="${CSSCacheManager::get_css_path('/templates/default/theme/default.css;/kernel/lib/css/font-awesome/css/font-awesome.css;/kernel/lib/css/font-awesome-animation/css/font-awesome-animation.css;/templates/{THEME}/admin/admin_design.css;/templates/{THEME}/admin/admin_content.css;/templates/{THEME}/admin/admin_cssmenu.css;/templates/{THEME}/admin/admin_menus.css;/templates/{THEME}/admin/admin_table.css;/templates/{THEME}/admin/admin_form.css;/templates/{THEME}/admin/admin_global.css')}" type="text/css" media="screen, print" />
 		# ELSE #
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/default/theme/default.css" type="text/css" media="screen, print" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/kernel/lib/css/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="{PATH_TO_ROOT}/kernel/lib/css/font-awesome-animation/css/font-awesome-animation.css" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/admin/admin_design.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/admin/admin_content.css" type="text/css" media="screen, print" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/admin/admin_cssmenu.css" type="text/css" media="screen, print" />
