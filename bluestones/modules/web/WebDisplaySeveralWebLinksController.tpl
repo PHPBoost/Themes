@@ -14,9 +14,9 @@
 	</header>
 	
 	# IF C_SUB_CATEGORIES #
-	<div class="subcat-container">
+	<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{NUMBER_CATS_COLUMNS}# ENDIF #">
 		# START sub_categories_list #
-		<div class="subcat-element" style="width:{CATS_COLUMNS_WIDTH}%;">
+		<div class="subcat-element block">
 			<div class="subcat-content">
 				<a itemprop="about" class="picture-link" href="{sub_categories_list.U_CATEGORY}">
 					<div class="home-picture-cat" # IF sub_categories_list.C_CATEGORY_IMAGE #style="background-image: url({sub_categories_list.CATEGORY_IMAGE})"# ENDIF # itemprop="thumbnailUrl"></div>
@@ -57,7 +57,7 @@
 					# START weblinks #
 					<tr>
 						<td>
-							<a href="{weblinks.U_LINK}" itemprop="name">{weblinks.NAME}</a>
+							<a href="{weblinks.U_LINK}" itemprop="name"# IF weblinks.C_NEW_CONTENT # class="new-content"# ENDIF#>{weblinks.NAME}</a>
 						</td>
 						<td>
 							# IF weblinks.C_KEYWORDS #
@@ -98,7 +98,7 @@
 		# ELSE #
 			# START weblinks #
 			# IF C_CATEGORY_DISPLAYED_SUMMARY #
-			<article id="article-web-{weblinks.ID}" class="module-home" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+			<article id="article-web-{weblinks.ID}" class="module-home# IF weblinks.C_IS_PARTNER # content-friends# ENDIF ## IF weblinks.C_IS_PRIVILEGED_PARTNER # content-privileged-friends# ENDIF ## IF weblinks.C_NEW_CONTENT # new-content# ENDIF#" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 							
 				<a href="{weblinks.U_LINK}" title="{weblinks.NAME}" class="picture-link">
 					<div class="home-picture" # IF weblinks.C_HAS_PARTNER_PICTURE #style="background-image: url({weblinks.U_PARTNER_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
@@ -160,9 +160,13 @@
 					<div class="content">
 						<div class="options infos">
 							<div class="center">
-								# IF weblinks.C_HAS_PARTNER_PICTURE #
-									<img src="{weblinks.U_PARTNER_PICTURE}" alt="{weblinks.NAME}" itemprop="image" />
+								# IF weblinks.C_IS_PARTNER #
+									# IF weblinks.C_HAS_PARTNER_PICTURE #
+									<span class="web-partner-picture">
+										<img src="{weblinks.U_PARTNER_PICTURE}" alt="{weblinks.NAME}" itemprop="image" />
+									</span>
 									<div class="spacer"></div>
+									# ENDIF #
 								# ENDIF #
 								# IF weblinks.C_VISIBLE #
 									<a href="{weblinks.U_VISIT}" class="basic-button">
@@ -194,7 +198,13 @@
 								<div class="center">{weblinks.NOTATION}</div>
 							# ENDIF #
 						</div>
-						
+
+						# IF weblinks.C_PICTURE #
+						<span class="web-picture">
+							<img src="{weblinks.U_PICTURE}" alt="{weblinks.NAME}" itemprop="image" />
+						</span>
+						# ENDIF #
+
 						<div itemprop="text">{weblinks.CONTENTS}</div>
 					</div>
 				
@@ -203,13 +213,14 @@
 			# ENDIF #
 			# END weblinks #
 		# ENDIF #
+		</div>
 	# ELSE #
 		# IF NOT C_HIDE_NO_ITEM_MESSAGE #
-		<div class="center">
+		<div class="content center">
 			${LangLoader::get_message('no_item_now', 'common')}
 		</div>
 		# ENDIF #
 	# ENDIF #
-	</div>
+
 	<footer># IF C_PAGINATION # # INCLUDE PAGINATION # # ENDIF #</footer>
 </section>

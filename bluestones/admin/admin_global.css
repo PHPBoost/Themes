@@ -254,15 +254,9 @@ ul, ol {
 }
 
 .bbcode-block {
-	margin: 0;
 	background-color: #0E2134;
 	border: 1px solid #BDE9F2;
 	border-radius: 3px;
-}
-
-.bbcode-block a {
-	cursor: pointer;
-	text-decoration: none;
 }
 
 .bbcode a, .bbcode .fa { color: #1E73BE !important; }

@@ -219,11 +219,6 @@ td.calendar-week {
 	padding: 3px;
 }
 
-.bbcode-block a {
-	cursor: pointer;
-	text-decoration: none;
-}
-
 /* --- Le selecteur de couleur --- */
 .color-picker {
 	position: absolute;

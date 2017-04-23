@@ -10,7 +10,7 @@
 		# IF NOT C_VISIBLE #
 			# INCLUDE NOT_VISIBLE_MESSAGE #
 		# ENDIF #
-		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-news-{ID}" class="article-news">
+		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-news-{ID}" class="article-news# IF C_NEW_CONTENT # new-content# ENDIF #">
 			<header>
 				<h2>
 					<span itemprop="name">{NAME}</span>
@@ -27,11 +27,16 @@
 				<div class="more">
 					# IF C_AUTHOR_DISPLAYED #
 						${LangLoader::get_message('by', 'common')}
+						# IF C_AUTHOR_CUSTOM_NAME #
+						{AUTHOR_CUSTOM_NAME}
+						# ELSE #
 						# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #,
+						# ENDIF #
 					# ENDIF #
 					${TextHelper::lcfirst(LangLoader::get_message('the', 'common'))} <time datetime="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT C_DIFFERED #{DATE}# ELSE #{DIFFERED_START_DATE}# ENDIF #</time>
 					${TextHelper::lcfirst(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{U_CATEGORY}">{CATEGORY_NAME}</a>
 					# IF C_COMMENTS_ENABLED #- # IF C_COMMENTS # {NUMBER_COMMENTS} # ENDIF # {L_COMMENTS}# ENDIF #
+					# IF C_NB_VIEW_ENABLED #- <span title="{NUMBER_VIEW} {@news.view}"><i class="fa fa-eye"></i> {NUMBER_VIEW}</span># ENDIF #
 				</div>
 	
 				<meta itemprop="url" content="{U_LINK}">
@@ -45,7 +50,7 @@
 			<div class="content">
 				# IF C_PICTURE #
 					<a href="{U_PICTURE}" data-lightbox="formatter" data-rel="lightcase:collection" title="{NAME}">
-						<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="right" />
+						<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="news-picture right" />
 					</a>
 				# ENDIF #
 	

@@ -15,6 +15,15 @@
 	width: 70%;
 }
 
+.news-picture {
+	float: left;
+	padding: 10px;
+}
+
+img.news-picture {
+	max-width: 40%;
+}
+
 .navigation-link-previous 	{ float: left;  }
 .navigation-link-next 		{ float: right; }
 

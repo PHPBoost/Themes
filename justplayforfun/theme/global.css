@@ -219,16 +219,8 @@ td.calendar-week {
 }
 
 .bbcode-block {
-	margin: 0;
 	background-color: #F3F3F3;
 	border: 1px solid #AAAAAA;
-	border-radius: 3px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.bbcode-block a {
-	cursor: pointer;
-	text-decoration: none;
 }
 
 /* --- Le selecteur de couleur --- */

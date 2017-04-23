@@ -10,7 +10,7 @@
 		# IF NOT C_VISIBLE #
 			# INCLUDE NOT_VISIBLE_MESSAGE #
 		# ENDIF #
-		<article id="article-web-{ID}" itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="article-web# IF C_IS_PARTNER # web-partner# ENDIF ## IF C_IS_PRIVILEGED_PARTNER # web-privileged-partner# ENDIF #">
+		<article id="article-web-{ID}" itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="article-web# IF C_IS_PARTNER # content-friends# ENDIF ## IF C_IS_PRIVILEGED_PARTNER # content-privileged-friends# ENDIF ## IF C_NEW_CONTENT # new-content# ENDIF#">
 			<header>
 				<h2>
 					<span id="name" itemprop="name">{NAME}</span>
@@ -35,9 +35,13 @@
 			<div class="content">
 				<div class="options infos">
 					<div class="center">
-						# IF C_HAS_PARTNER_PICTURE #
-							<img src="{U_PARTNER_PICTURE}" alt="{NAME}" itemprop="image" />
+						# IF C_IS_PARTNER #
+							# IF C_HAS_PARTNER_PICTURE #
+							<span class="web-partner-picture">
+								<img src="{U_PARTNER_PICTURE}" alt="{NAME}" itemprop="image" />
+							</span>
 							<div class="spacer"></div>
+							# ENDIF #
 						# ENDIF #
 						# IF C_VISIBLE #
 							<a href="{U_VISIT}" class="basic-button">
@@ -71,7 +75,13 @@
 						# ENDIF #
 					# ENDIF #
 				</div>
-				
+
+				# IF C_PICTURE #
+				<span class="web-picture">
+					<img src="{U_PICTURE}" alt="{NAME}" itemprop="image" />
+				</span>
+				# ENDIF #
+								
 				<div itemprop="text">{CONTENTS}</div>
 			</div>
 			<aside>

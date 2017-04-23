@@ -13,9 +13,9 @@
 				</header>
 				
 				# IF C_SUB_CATEGORIES #
-				<div class="subcat-container">
+				<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{NUMBER_CATS_COLUMNS}# ENDIF #">
 					# START sub_categories_list #
-					<div class="subcat-element" style="width:{CATS_COLUMNS_WIDTH}%;">
+					<div class="subcat-element block">
 						<div class="subcat-content">
 							<a itemprop="about" class="picture-link" href="{sub_categories_list.U_CATEGORY}">
 								<div class="home-picture-cat" # IF sub_categories_list.C_CATEGORY_IMAGE #style="background-image: url({sub_categories_list.CATEGORY_IMAGE})"# ENDIF # itemprop="thumbnailUrl"></div>
@@ -61,7 +61,7 @@
 						<div class="spacer"></div>
 	
 						# START file #
-							<article id="article-media-{file.ID}" class="module-home">
+							<article id="article-media-{file.ID}" class="module-home# IF file.C_NEW_CONTENT # new-content# ENDIF #">
 								<header>
 									<h2>
 										<a href="{file.U_MEDIA_LINK}">{file.NAME}</a>
@@ -98,12 +98,15 @@
 								<footer></footer>
 							</article>
 						# END file #
+					</div>
 					# ENDIF #
 	
 					# IF C_DISPLAY_NO_FILE_MSG #
+					<div class="content">
 						<div class="notice">${LangLoader::get_message('no_item_now', 'common')}</div>
+					</div>
 					# ENDIF #
-				</div>
+				
 				<footer># IF C_PAGINATION #<span class="center"># INCLUDE PAGINATION #</span># ENDIF #</footer>
 			</section>
 		# ENDIF #
@@ -116,7 +119,7 @@
 				</h1>
 			</header>
 			<div class="content">
-				<article id="article-media-{ID}" class="article-media">
+				<article id="article-media-{ID}" class="article-media# IF C_NEW_CONTENT # new-content# ENDIF #">
 					<header>
 						<h2>
 							{NAME} 
