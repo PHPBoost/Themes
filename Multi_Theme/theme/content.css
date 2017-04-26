@@ -1662,6 +1662,10 @@ div#release {
 
 }
 
+div[id*='keyword'] .form-autocompleter-container input {
+	max-width: calc(100% - 20px);
+}
+
 /* --- Lined textarea --- */
 .linedwrap {
 	max-width: 100%;
