@@ -323,15 +323,16 @@ ul.pagination-block li a:active {
 }
 
 ul.pagination-block li a.current-page {
-	background-color: #3B6B9F;
-	border-color: #366393;
-	color: #FEFEFE;
+    background-color: #343D49;
+    border-color: #1E2630;
+    color: #fefefe;
 	text-decoration: none;
 }
 
 ul.pagination-block li a.current-page:hover {
-	background-color: #366393;
-	border-color: #315A86;
+	background-color: #1E2630;
+	border-color: #343D49;
+	transition: all 0.1s linear;
 }
 
 ul.pagination-block-bis li a.prev-page,
@@ -608,10 +609,6 @@ ul.pagination-block-bis li a.next-page:hover {
 	font-size: 0.8em;
 	font-weight: normal;
 	font-style: italic;
-}
-
-.sortable-block .sortable-title img {
-	cursor: move;
 }
 
 .sortable-block fieldset {

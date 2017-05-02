@@ -115,6 +115,11 @@ hr {
 	border-radius: 3px;
 }
 
+.form-field .calendar-container {
+    display: inline-block;
+    position: relative;
+}
+
 .calendar-block .date-picker {
 	margin: 0;
 	width: 178px;
@@ -223,6 +228,11 @@ hr {
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 	border: 1px solid #AAAAAA;
 	margin: 0;
+}
+
+.bbcode-block a {
+	cursor: pointer;
+	text-decoration: none;
 }
 
 /* --- Le selecteur de couleur --- */
