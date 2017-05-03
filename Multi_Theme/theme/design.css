@@ -332,7 +332,6 @@ footer#footer .footer-content {
 	margin: 0 auto 0 auto;
 	max-width: 1024px;
 	padding: 1.5em 0;
-	border-bottom: 2px groove #444444;
 }
 
 
@@ -411,53 +410,53 @@ nav#breadcrumb ol li:not(.current):after {
     width: 24px;
 }
 
-.nav {
+.MNnav {
     font-size: 14px;
     font-weight: 900;
     position: relative;
 	display:inline-block;
 }
-.nav-list {
+.MNnav-list {
     list-style: outside none none;
     margin-left: 0;
     text-align: left;
 }
-.nav-item {
+.MNnav-item {
 	float:left;
 	*display:inline;
 	zoom:1;
 	position:relative;
 }
-.nav-item a {
+.MNnav-item a {
     color: #515c68;
 	display:block;
 	padding:15px 20px;
 
 }
-.nav-item > a:hover { 
+.MNnav-item > a:hover { 
     background: rgba(0, 0, 0, 0) url(images/silverbar.jpg) repeat-x scroll right -116px;
     color: #2f404d;
     text-decoration: none;
 }
-.nav-item:hover .nav-submenu {
+.MNnav-item:hover .MNnav-submenu {
 	display:block;
 }
 /* Navigation submenu */
 
-ul.nav-submenu{list-style:none;}
+ul.MNnav-submenu{list-style:none;}
 
 #Mn-nav  {
     line-height: normal;
     margin-bottom: 0px;
     margin-left: 0px;
 }
-.nav-submenu {
+.MNnav-submenu {
 	display:none;
 	position:absolute;
 	left:0;
 	width:180px;
 }
-.nav-submenu-item a {
+.MNnav-submenu-item a {
     background: #E9EFF1 none repeat scroll 0 0;
     border-bottom: 1px solid #ffffff;
     color: #445766;
@@ -465,12 +464,12 @@ ul.nav-submenu{list-style:none;}
     margin-left: -30px;
     padding: 15px;
 }
-.nav-submenu-item a:hover {
+.MNnav-submenu-item a:hover {
 	background:#D9E0E4 ;
 	color:#2f404d;
 }
 /* Mobile navigation */
-.nav-mobile {
+.MNnav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
     background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
@@ -482,13 +481,13 @@ ul.nav-submenu{list-style:none;}
     width: 50px;
 }
 /* Police des liens */
-.nav-item a , .nav-item > a:hover, .nav-submenu-item a, .nav-submenu-item a:hover{
+.MNnav-item a , .MNnav-item > a:hover, .MNnav-submenu-item a, .MNnav-submenu-item a:hover{
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 /* Mobile navigation, clickable area for revealing <ul> */
-.nav-click {
+.MNnav-click {
 	position:absolute;
 	top:0;
 	right:0;
@@ -498,17 +497,17 @@ ul.nav-submenu{list-style:none;}
 	width:50px;
 	cursor:pointer;
 }
-.nav-click i {
+.MNnav-click i {
 	display:block;
 	height:48px;
 	width:48px;
 	background: url(images/drop.svg) no-repeat center center;
 	background-size:20px;
 }
-.nav-click:hover {
+.MNnav-click:hover {
 	background-color:#f2f5f6;
 }
-.nav-rotate {
+.MNnav-rotate {
 	-webkit-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
@@ -715,7 +714,7 @@ div#gobottom a {
 		text-align: center;
 		text-transform: uppercase;
 		}
-	.nav-mobile {
+	.MNnav-mobile {
 		display:block;
 	}
 	.nav {
@@ -724,44 +723,44 @@ div#gobottom a {
 		margin-top: -34px;
 		position: relative;
 	}
-	.nav-list {
+	.MNnav-list {
 		display:none;
 	}
-	.nav-item {
+	.MNnav-item {
 		width:100%;
 		float:none;
 		list-style: none outside none;		
 	}
-	.nav-item > a {
+	.MNnav-item > a {
 		padding:15px;
 	}
-	.nav-click {
+	.MNnav-click {
 		display:block;
 	}
-	.nav-mobile-open {
+	.MNnav-mobile-open {
 		border-radius:5px 5px 0 0;
 		-webkit-border-radius:5px 5px 0 0;
 		-moz-border-radius:5px 5px 0 0;
 	}
-	.nav-item:hover .nav-submenu {
+	.MNnav-item:hover .MNnav-submenu {
 		display:none;
 	}
-	.nav-submenu {
+	.MNnav-submenu {
 		position:static;
 		width:100%;
 	}
 	ul{margin-left:0px;}
-	.nav-submenu{margin-bottom:0px}
-	.nav-item a {
+	.MNnav-submenu{margin-bottom:0px}
+	.MNnav-item a {
 		background: #d7dee3 none repeat scroll 0 0;
 		border-bottom:1px solid #bccad3;
 		color: #445766;
 		display: block;
 	}
-	.nav-item > a:hover {
+	.MNnav-item > a:hover {
 		background:#f2f5f6 none repeat scroll 0 0;
 	}
-	.nav-submenu-item a {
+	.MNnav-submenu-item a {
 		background: #efefef none repeat scroll 0 0;
 		border-bottom: 1px solid #bccad3;
 		color:#445766;
@@ -769,7 +768,7 @@ div#gobottom a {
 		margin-left:0px;
 		padding: 15px;
 	}
-	.nav-submenu-item a:hover {
+	.MNnav-submenu-item a:hover {
 		background:#d7dee3 none repeat scroll 0 0;
 		color: #2f404d;
 	}
