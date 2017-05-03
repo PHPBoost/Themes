@@ -347,7 +347,7 @@ td.calendar-week {
 .formatter-hide-close-button {
 	position: absolute;
 	display: none;
-	top: 2em;
+	top: 1em;
 	right: 0;
 	color: #BBBBBB;
 	font-size: 0.8em;
@@ -367,6 +367,10 @@ td.calendar-week {
 .formatter-hide-close-button:hover {
 	color: #444444;
 	transition: all 0.3s linear;
+}
+
+.formatter-hide-close-button i.fa-close {
+	vertical-align: top;
 }
 
 .formatter-code .formatter-title {

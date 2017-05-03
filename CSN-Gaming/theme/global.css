@@ -338,7 +338,7 @@ td.calendar-week {
 .formatter-hide-close-button {
 	position: absolute;
 	display: none;
-	top: 2em;
+	top: 1em;
 	right: 0;
 	color: #BBBBBB;
 	font-size: 0.8em;
@@ -393,8 +393,8 @@ td.calendar-week {
 }
 
 .formatter-block {
-    background: #333333 none repeat scroll 0 0;
-    border: 1px solid #e9992a;
+    background-color: #FAFAFA;
+    border: 1px solid #E9992A;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
     display: block;
     margin: 5px 20px;

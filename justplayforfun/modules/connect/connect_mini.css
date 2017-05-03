@@ -95,7 +95,7 @@
 	display: block;
     height: 27px;
     width: 32px;
-    padding: 5px 0 0 1px; 
+    padding: 5px 0 0 10px; 
     background-image: url(images/gnav-msg.png);
     background-repeat: no-repeat;
     background-position: center center;

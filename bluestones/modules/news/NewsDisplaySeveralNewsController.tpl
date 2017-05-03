@@ -21,7 +21,7 @@
 					</div>
 					
 					<a href="{news.U_LINK}" title="{news.NAME}" class="picture-link">
-						<div class="home-picture" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
+						<div class="home-picture" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /></div>
 					</a>					
 					
 					<div class="home-more">
@@ -57,10 +57,9 @@
 				<footer></footer>
 			</article>
 			# ELSE #
-			<article id="article-news-{news.ID}" class="module-home-list" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-				
+			<article id="article-news-{news.ID}" class="module-home-list" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">		
 				<a href="{news.U_LINK}" title="{news.NAME}" class="picture-link">
-					<div class="home-picture-list" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl" title="{news.NAME}"></div>
+					<div class="home-picture-list" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl" title="{news.NAME}"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /></div>
 				</a>
 			
 				<header>

@@ -194,6 +194,11 @@ hr { background: #222222 none repeat scroll 0 0;}
 	border-radius: 3px;
 }
 
+.form-field .calendar-container {
+	display: inline-block;
+	position: relative;
+}
+
 .calendar-block .date-picker {
 	margin: 0;
 	width: 178px;
@@ -389,7 +394,7 @@ hr { background: #222222 none repeat scroll 0 0;}
 .formatter-hide-close-button {
 	position: absolute;
 	display: none;
-	top: 2em;
+	top: 1em;
 	right: 0;
 	color: #BBBBBB;
 	font-size: 0.8em;
