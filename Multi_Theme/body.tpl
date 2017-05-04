@@ -4,11 +4,11 @@
 
 
 	
-	<div id="top_page" /></div>	
+	<div id="top_page"></div>	
 	<div id="contenu">	
 	<header id="header">
 		<div id="header-gsm">
-		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+			<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 		</div>
 		<div id="top-header">
 			<div id="compteur">
@@ -18,7 +18,7 @@
 			</div>
 			
 			<div id="site-infos">
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background: url('{HEADER_LOGO}') no-repeat;"# ENDIF #></div>
+				<div id="site-logo"# IF C_HEADER_LOGO # style="background: url({HEADER_LOGO}) no-repeat;"# ENDIF #></div>
 				<div id="site-name-container">
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>
@@ -114,18 +114,16 @@
 				{menus_sub_header.MENU}
 				# END menus_sub_header #
 			# ENDIF #
-			</div>
 		</div>
-	
 		<div class="spacer"></div>
 	</header>
 	
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page" ><i class="fa fa-chevron-up"></i></a>
+			<a class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page" ><i class="fa fa-chevron-down"></i></a>
+			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>		
 	

@@ -221,6 +221,7 @@ div#global {
 }
 div#sous-global {
 	max-width: 1060px;
+	width: 100%;
 	margin: auto;
 	padding: 0 10px;
 }
@@ -414,8 +415,14 @@ nav#breadcrumb ol li:not(.current):after {
     font-size: 14px;
     font-weight: 900;
     position: relative;
-	display:inline-block;
 }
+
+@media (min-width: 768px) {
+	.MNnav {
+		display:inline-block;
+	}	
+}
+
 .MNnav-list {
     list-style: outside none none;
     margin-left: 0;
