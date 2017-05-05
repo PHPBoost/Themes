@@ -20,9 +20,7 @@
 						<a itemprop="about" href="{news.U_CATEGORY}" title="{news.CATEGORY_NAME}">{news.CATEGORY_NAME}</a>
 					</div>
 					
-					<a href="{news.U_LINK}" title="{news.NAME}" class="picture-link">
-						<div class="home-picture" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /></div>
-					</a>					
+					# IF news.C_PICTURE #<a href="{news.U_LINK}" class="news-picture"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /> </a># ENDIF #				
 					
 					<div class="home-more">
 						# IF C_COMMENTS_ENABLED #<span class="float-right"><i class="fa fa-comments-o"></i> # IF news.C_COMMENTS # ({news.NUMBER_COMMENTS})# ELSE #(0)# ENDIF #</span># ENDIF #
@@ -58,9 +56,7 @@
 			</article>
 			# ELSE #
 			<article id="article-news-{news.ID}" class="module-home-list" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">		
-				<a href="{news.U_LINK}" title="{news.NAME}" class="picture-link">
-					<div class="home-picture-list" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl" title="{news.NAME}"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /></div>
-				</a>
+				# IF news.C_PICTURE #<a href="{news.U_LINK}" class="news-picture"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /> </a># ENDIF #
 			
 				<header>
 					<h2>

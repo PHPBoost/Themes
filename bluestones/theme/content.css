@@ -522,11 +522,12 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .subcat-element {
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     font-size: 13px;
     text-align: center;
     border: none;
     background-color: transparent;
+    width: auto;
 }
 
 .subcat-content {
