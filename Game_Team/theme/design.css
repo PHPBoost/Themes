@@ -329,7 +329,7 @@ footer#footer .footer-infos span {
 /* ----------------------------------- */
 
 /* --- Compteur de visite --- */
-div#compteur {
+div#visit-counter {
 	background: url(images/comp.png) no-repeat;
     position: relative;
     font-size: 0.9em;

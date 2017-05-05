@@ -106,7 +106,7 @@
 		# ELSE #
 			# START downloadfiles #
 			# IF C_CATEGORY_DISPLAYED_SUMMARY #
-			<article id="article-download-{downloadfiles.ID}" class="module-home# IF downloadfiles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+			<article id="article-download-{downloadfiles.ID}" class="module-home block# IF downloadfiles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 				
 				<a href="{downloadfiles.U_LINK}" title="{downloadfiles.NAME}" class="picture-link">
 					<div class="home-picture" # IF downloadfiles.C_PICTURE #style="background-image: url({downloadfiles.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>

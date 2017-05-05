@@ -350,7 +350,7 @@ footer#footer .footer-infos span {
 /* -- Elements specifiques PHPboost --
 --------------------------------------*/
 /* --- Compteur de visite --- */
-div#compteur {
+div#visit-counter {
     color: #445766;
     float: left;
     font-size: 0.9em;
@@ -612,7 +612,7 @@ div#gobottom a {
 		min-height: auto;
 	}
 
-	div#compteur,
+	div#visit-counter,
 	div#site-infos,
 	a.prev, a.next,
 	div#top-header-content,

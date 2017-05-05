@@ -5,15 +5,14 @@
 		</h1>
 	</header-->
 	
-	<div class="content">
+	<div class="content elements-container# IF C_SEVERAL_COLUMNS # columns-{NUMBER_COLUMNS}# ENDIF #">
 	# IF C_NEWS_NO_AVAILABLE #
 		<div class="center">
 			${LangLoader::get_message('no_item_now', 'common')}
 		</div>
 	# ELSE #
 		# START news #
-			<article id="article-news-{news.ID}" class="article-news article-several# IF news.C_TOP_LIST # top-list# ENDIF ## IF C_DISPLAY_BLOCK_TYPE # block# ENDIF ## IF C_SEVERAL_COLUMNS # inline-block# ENDIF ## IF news.C_NEW_CONTENT # new-content# ENDIF #" # IF C_SEVERAL_COLUMNS # style="width:calc(98% / {NUMBER_COLUMNS})" # ENDIF # itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-		
+			<article id="article-news-{news.ID}" class="article-news article-several# IF news.C_TOP_LIST # top-list# ENDIF ## IF C_DISPLAY_BLOCK_TYPE # block# ENDIF ## IF news.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 				<div class="subhead-top">
 					<header>
 						<h2>

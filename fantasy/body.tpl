@@ -33,6 +33,19 @@
 	</header>
 
 	<div id="global">
+		# IF C_VISIT_COUNTER #
+		<div id="visit-counter" class="hidden-small-screens">
+			<div class="visit-counter-total">
+				<span class="text-strong">{L_VISIT} : </span>
+				{VISIT_COUNTER_TOTAL}
+			</div>
+			<div class="visit-counter-today">
+				<span class="text-strong">{L_TODAY} : </span>
+				{VISIT_COUNTER_DAY}
+			</div>
+		</div>
+		# ENDIF #
+	
 		# IF C_MENUS_LEFT_CONTENT #
 		<aside id="menu-left">
 			# START menus_left #

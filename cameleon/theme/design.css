@@ -323,7 +323,7 @@ footer#footer .footer-infos span a {
 /* ----------------------------------- */
 
 /* --- Compteur de visite --- */
-div#compteur-container {
+div#visit-counter-container {
 	position: absolute;
 	bottom: 0;
 	right: 20px;
@@ -336,7 +336,7 @@ div#compteur-container {
 	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
 }
 
-div#compteur {
+div#visit-counter {
 	padding: 4px 10px;
 	background-color: #ECECEC;
 	border: 1px #FFFFFF solid;
@@ -344,7 +344,7 @@ div#compteur {
 }
 
 @media (max-width: 768px) {
-	div#compteur-container {
+	div#visit-counter-container {
 		display: none;
 	}
 }

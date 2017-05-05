@@ -11,9 +11,9 @@
 			<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 		</div>
 		<div id="top-header">
-			<div id="compteur">
-				# IF C_COMPTEUR #
-				 ::&nbsp;<span>{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>&nbsp;:: &nbsp; Bienvenue sur <a id="wellcome-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a> !
+			<div id="visit-counter">
+				# IF C_VISIT_COUNTER #
+				 ::&nbsp;<span>{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>&nbsp;:: &nbsp; Bienvenue sur <a id="wellcome-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a> !
 				# ENDIF #
 			</div>
 			

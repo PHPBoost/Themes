@@ -128,8 +128,8 @@
 				<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
 			</span>
 			# ENDIF #
-			# IF C_COMPTEUR #
-			<span class="footer-infos-separator"> | </span><span class="compteur">{L_VISIT} : {COMPTEUR_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {COMPTEUR_DAY}</span>
+			# IF C_VISIT_COUNTER #
+			<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
 	</footer>

@@ -49,7 +49,7 @@
 		<div class="content elements-container# IF C_SEVERAL_COLUMNS # columns-{NUMBER_COLUMNS}# ENDIF#">
 			# START articles #
 				# IF C_MOSAIC #
-				<article id="article-articles-{articles.ID}" class="module-home# IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+				<article id="article-articles-{articles.ID}" class="module-home block# IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 					<header>
 					
 						<a href="{articles.U_ARTICLE}" title="{articles.TITLE}" itemprop="thumbnailUrl" class="picture-link">

@@ -336,7 +336,7 @@ footer#footer .footer-infos span {
 /* ----------------------------------- */
 
 /* --- Compteur de visite --- */
-div#compteur {
+div#visit-counter {
 	position: absolute;
 	right: 0;
 	bottom : 1em;

@@ -327,7 +327,7 @@ footer#footer .footer-infos span {
 /* ----------------------------------- */
 
 /* --- Compteur de visite --- */
-div#compteur {
+div#visit-counter {
 	position: absolute;
 	right: 0;
 	margin-right: 15px;
@@ -337,7 +337,7 @@ div#compteur {
 }
 
 @media (min-width: 769px) {
-	div#compteur {
+	div#visit-counter {
 		top: 100px;
 	}
 }

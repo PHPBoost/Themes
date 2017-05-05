@@ -125,15 +125,15 @@
 				<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
 			</span>
 			# ENDIF #
-			# IF C_COMPTEUR #
-			<div id="compteur" class="hidden-small-screens">
-				<div class="compteur-total">
+			# IF C_VISIT_COUNTER #
+			<div id="visit-counter" class="hidden-small-screens">
+				<div class="visit-counter-total">
 					<span class="text-strong">{L_VISIT} : </span>
-					{COMPTEUR_TOTAL}
+					{VISIT_COUNTER_TOTAL}
 				</div>
-				<div class="compteur-today">
+				<div class="visit-counter-today">
 					<span class="text-strong">{L_TODAY} : </span>
-					{COMPTEUR_DAY}
+					{VISIT_COUNTER_DAY}
 				</div>
 			</div>
 			# ENDIF #

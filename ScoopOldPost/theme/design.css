@@ -330,7 +330,7 @@ footer#footer .footer-infos span {
 /* ----------------------------------- */
 
 /* --- Compteur de visite --- */
-div#compteur {
+div#visit-counter {
 	position: absolute;
 	right: 0;
 	bottom : 1em;
@@ -373,7 +373,7 @@ nav#breadcrumb ol li:not(.current):after {
 	
 	div#SuperGlobal {width: auto;}	
 	header#header {margin: auto; background:none; height:35px; margin: auto;width: auto;}
-	div#top-header, div#compteur, .date{display: none;}
+	div#top-header, div#visit-counter, .date{display: none;}
 	div#header-gsm {background-color:#ffffff; border-bottom:2px solid #cccccc; height:50px; text-align:center;}
 	div#sub-header {
 		background: #cccccc none repeat scroll 0 0;

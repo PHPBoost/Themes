@@ -231,7 +231,7 @@ footer#footer .footer-infos span {
 /* -- Elements specifiques PHPboost --
 --------------------------------------*/
 /* --- Compteur de visite --- */
-div#compteur {
+div#visit-counter {
 	position: absolute;
 	right: 0;
 	bottom : 1em;
@@ -296,9 +296,9 @@ nav#breadcrumb ol li:not(.current):after {
     background: #fff none repeat scroll 0 0;
     border-right: 1px solid #dddddd;
     height: 51px;
-    margin: auto auto auto 234px;
+    margin: auto auto auto 200px;
     position: relative;
-    width: 866px;
+    width: 899px;
     z-index: 1000;
 }
 #navbook b {

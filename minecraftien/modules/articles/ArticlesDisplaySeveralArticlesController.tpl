@@ -12,9 +12,9 @@
 	</header>
 	
 	# IF C_SUB_CATEGORIES #
-	<div class="subcat-container">
+	<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{NUMBER_CATS_COLUMNS}# ENDIF #">
 		# START sub_categories_list #
-		<div class="subcat-element" style="width:{CATS_COLUMNS_WIDTH}%;">
+		<div class="subcat-element block">
 			<div class="subcat-content">
 				# IF C_DISPLAY_CATS_ICON #
 				# IF sub_categories_list.C_CATEGORY_IMAGE #<a itemprop="about" href="{sub_categories_list.U_CATEGORY}"><img itemprop="thumbnailUrl" src="{sub_categories_list.CATEGORY_IMAGE}" alt="{sub_categories_list.CATEGORY_NAME}" /></a># ENDIF #
@@ -42,8 +42,9 @@
 			# INCLUDE FORM #
 		# ENDIF #
 		<div class="spacer"></div>
+		<div class="content elements-container# IF C_SEVERAL_COLUMNS # columns-{NUMBER_COLUMNS}# ENDIF#">
 			# START articles #
-				<article id="article-articles-{articles.ID}" class="article-articles article-several# IF C_MOSAIC # small-block# ENDIF ## IF C_ONE_ARTICLE_AVAILABLE # one-article# ENDIF ## IF C_TWO_ARTICLES_AVAILABLE # two-articles# ENDIF ## IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+				<article id="article-articles-{articles.ID}" class="article-articles article-several# IF C_MOSAIC # block# ENDIF ## IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 				# IF articles.C_HAS_PICTURE #<a href="{articles.U_ARTICLE}"><img itemprop="thumbnailUrl" src="{articles.PICTURE}" alt="{articles.TITLE}" /></a># ENDIF #
 						
 					<header>
