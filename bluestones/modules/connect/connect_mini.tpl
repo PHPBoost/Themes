@@ -35,8 +35,8 @@
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();" class="form-element">
-					<label>{L_PSEUDO}<br /><input type="text" id="login" name="login" placeholder="{L_PSEUDO}" maxlength="25"></label>
-					<label>{L_PASSWORD}<br /><input type="password" id="password" name="password" placeholder="{L_PASSWORD}" maxlength="30"></label>
+					<label>{L_PSEUDO}<br /><input type="text" id="login" name="login" placeholder="{L_PSEUDO}"></label>
+					<label>{L_PASSWORD}<br /><input type="password" id="password" name="password" placeholder="{L_PASSWORD}"></label>
 					<label>{L_AUTOCONNECT} <input checked="checked" type="checkbox" name="autoconnect"></label>
 					<br /><br />
 					<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
