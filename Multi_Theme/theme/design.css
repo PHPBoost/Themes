@@ -620,7 +620,7 @@ div#gobottom a {
 	
 	div#header-gsm {background-color:#222222; height:50px; text-align:center;}
 	div#sub-header {background:#222222 none repeat scroll 0 0;border: none;}
-	a#site-name {
+	a#site-name-gsm {
     color: #f9fcff;
     font-size: 2em;
     font-weight: bold;
