@@ -5,9 +5,8 @@
 
 
 	<div id="header-gsm">
-	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 	</div>	
-
 
 	<section id="Motto">
 		<div id="menu-title">Nenu principal</div>
@@ -64,7 +63,7 @@
 						<a href="?=contact">Contact</a>
 					</li>
 				</ul>
-			</nav>
+		</nav>
 	</section>			
 
 	<div id="connect-gsm">
@@ -94,7 +93,7 @@
 	 <div class="ribbon">
 		<h4>
 			<div class="ouvert"><a href="#banner" id="open-menu"><i class="fa fa-heart"></i></a></div>
-			<div class="fermer"><a href="#" id="close-menu"><i class="fa fa-heart-o"></i></a><div>
+			<div class="fermer"><a href="#" id="close-menu"><i class="fa fa-heart-o"></i></a></div>
 		</h4>
 	 </div>
 </div>	

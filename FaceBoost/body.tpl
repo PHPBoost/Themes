@@ -2,20 +2,18 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/Mnflaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
-	<div id="top_page" /></div>
-			<div id="header-gsm">
-			<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
-			</div>
+	<div id="top_page"></div>
+	<div id="header-gsm">
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	</div>
 
-		<div id="sub-header">
-			# IF C_MENUS_SUB_HEADER_CONTENT #
-				# START menus_sub_header #
-				{menus_sub_header.MENU}
-				# END menus_sub_header #
-			# ENDIF #
-		</div>
-
-
+	<div id="sub-header">
+		# IF C_MENUS_SUB_HEADER_CONTENT #
+			# START menus_sub_header #
+			{menus_sub_header.MENU}
+			# END menus_sub_header #
+		# ENDIF #
+	</div>
 
 	<header id="header">
 
@@ -43,7 +41,7 @@
 	<div id="prim-nav">
 		<section id="navbook">
 			<div id="menu-title">Menu principal</div>
-			<nav  class="MNnav">
+			<nav class="MNnav">
 					<ul id="Mn-nav" class="MNnav-list">
 						<li class="MNnav-item">
 							<a href="?=about"><i class="fa fa-home"></i> Accueil</a>
@@ -142,9 +140,9 @@
 							# END link_bread_crumb #
 						</ol>
 					</nav>
-				<div id="menu-mess">
-					# INCLUDE KERNEL_MESSAGE #
-				</div>
+					<div id="menu-mess">
+						# INCLUDE KERNEL_MESSAGE #
+					</div>
 					{CONTENT}
 				</div>
 
@@ -219,10 +217,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
-	<div id="bottom_page" /></div>
+	<div id="bottom_page"></div>

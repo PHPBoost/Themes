@@ -3,68 +3,67 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/simple.dropdown.js"></script>
 
-	<div id="top_page" /></div>
+	<div id="top_page"></div>
 
 	<div id="header-gsm">
-	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 	</div>
 	<section id="Motto">
-				<div id="menu-title">Nenu principal</div>
-				<nav  class="nav">
-						<ul class="nav-list">
-							<li class="nav-item">
-								<a href="?=about">Accueil</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=about">News</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=home">Divers</a>
-								<ul class="nav-submenu">
-									<li class="nav-submenu-item">
-										<a href="?=submenu-1">Astuces</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-2">Blog</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-3">F.A.Q</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-4">Calendrier</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a href="?=portfolio">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=services">Services</a>
-								<ul class="nav-submenu">
-									<li class="nav-submenu-item">
-										<a href="?=submenu-1">Submenu item 1</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-2">Submenu item 2</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-3">Submenu item 3</a>
-									</li>
-									<li class="nav-submenu-item">
-										<a href="?=submenu-4">Submenu item 4</a>
-									</li>
-								</ul>
-							</li>
-
-							<li class="nav-item">
-								<a href="?=testimonials">Staff</a>
-							</li>
-							<li class="nav-item">
-								<a href="?=contact">Contact</a>
-							</li>
-						</ul>
-					</nav>
-			</section>
+		<div id="menu-title">Nenu principal</div>
+		<nav  class="nav">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="?=about">Accueil</a>
+				</li>
+				<li class="nav-item">
+					<a href="?=about">News</a>
+				</li>
+				<li class="nav-item">
+					<a href="?=home">Divers</a>
+					<ul class="nav-submenu">
+						<li class="nav-submenu-item">
+							<a href="?=submenu-1">Astuces</a>
+						</li>
+						<li class="nav-submenu-item">
+							<a href="?=submenu-2">Blog</a>
+						</li>
+						<li class="nav-submenu-item">
+							<a href="?=submenu-3">F.A.Q</a>
+						</li>
+						<li class="nav-submenu-item">
+							<a href="?=submenu-4">Calendrier</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="?=portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a href="?=services">Services</a>
+					<ul class="nav-submenu">
+						<li class="nav-submenu-item">
+							<a href="?=submenu-1">Submenu item 1</a>
+						</li>
+						<li class="nav-submenu-item">
+							<a href="?=submenu-2">Submenu item 2</a>
+						</li>
+						<li class="nav-submenu-item">
+							<a href="?=submenu-3">Submenu item 3</a>
+						</li>
+						<li class="nav-submenu-item">
+							<a href="?=submenu-4">Submenu item 4</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="?=testimonials">Staff</a>
+				</li>
+				<li class="nav-item">
+					<a href="?=contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
 
 	<div id="sub-header">
 	<div class="sub-container">
@@ -220,10 +219,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
-	<div id="bottom_page" /></div>
+	<div id="bottom_page"></div>

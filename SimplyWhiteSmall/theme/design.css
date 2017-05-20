@@ -360,7 +360,7 @@ nav#breadcrumb ol li:not(.current):after {
 		text-align: center;
 	}
 	.sub-container{display: none;}
-	a#site-name {
+	a#site-name-gsm {
     color: #DDDDDD;
     font-size: 2em;
     font-weight: bold;

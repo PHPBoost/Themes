@@ -597,7 +597,7 @@ aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:
 	div#header-gsm {background-color:#000000; height:50px; text-align:center;}
 	div#sub-header { border: none;}
 	.sub-container{display: none;}
-	a#site-name {
+	a#site-name-gsm {
     color: #f9fcff;
     font-size: 2em;
     font-weight: bold;

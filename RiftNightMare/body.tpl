@@ -4,7 +4,7 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
-	<div id="top_page" /></div>
+	<div id="top_page"></div>
 
 		<div id="sub-header">
 			<section id="Motto">
@@ -77,7 +77,7 @@
 
 	<header id="header">
 		<div id="header-gsm">
-		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 		</div>
 		<div id="top-header">
 			<div id="site-infos">
@@ -99,7 +99,7 @@
 			# END menus_header #
 		# ENDIF #
 		</div>
-			<br />
+		<br />
 		<div id="slideshow">
 			<div class="fadein">
 				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.png"/>
@@ -115,7 +115,7 @@
 				<li><a href="#"><span class="galr">Galerie</span></a></li>
 			</ul>
 		</div>
-			<br />
+		<br />
 		<div id="sous-global">
 
 
@@ -139,26 +139,26 @@
 
 					<div id="main-content" itemprop="mainContentOfPage">
 
-					<div id="menu-mess">
-						# INCLUDE ACTIONS_MENU #
-						<nav id="breadcrumb" itemprop="breadcrumb">
-							<ol>
-								<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-									<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
-										<span itemprop="title">{L_INDEX}</span>
-									</a>
-								</li>
-								# START link_bread_crumb #
-								<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
-									<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
-										<span itemprop="title"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/breadcrumb.png" alt="" class="valign_middle" /> {link_bread_crumb.TITLE}</span>
-									</a>
-								</li>
-								# END link_bread_crumb #
-							</ol>
-						</nav>
-						# INCLUDE KERNEL_MESSAGE #
-					</div>
+						<div id="menu-mess">
+							# INCLUDE ACTIONS_MENU #
+							<nav id="breadcrumb" itemprop="breadcrumb">
+								<ol>
+									<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+										<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
+											<span itemprop="title">{L_INDEX}</span>
+										</a>
+									</li>
+									# START link_bread_crumb #
+									<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"# IF link_bread_crumb.C_CURRENT # class="current"# ENDIF #>
+										<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
+											<span itemprop="title"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/breadcrumb.png" alt="" class="valign_middle" /> {link_bread_crumb.TITLE}</span>
+										</a>
+									</li>
+									# END link_bread_crumb #
+								</ol>
+							</nav>
+							# INCLUDE KERNEL_MESSAGE #
+						</div>
 						{CONTENT}
 					</div>
 
@@ -189,7 +189,7 @@
 				# ENDIF #
 
 				<div class="spacer"></div>
-			</div>
+		</div>
 	</div>
 
 	<footer id="footer">
@@ -245,10 +245,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
-	<div id="bottom_page" /></div>
+	<div id="bottom_page"></div>

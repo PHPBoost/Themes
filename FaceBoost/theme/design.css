@@ -148,7 +148,7 @@ span#site-slogan {
 }
 
 @media (min-width:769px) {
-	#header-gsm a#site-name {display:none;}
+	#header-gsm a#site-name-gsm {display:none;}
 /*	div#site-infos {display:none;}*/
 }
 
@@ -516,7 +516,7 @@ aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:
 	div#top-header{display: none;}
 	div#header-gsm {background-color:#435a8b; height:50px; text-align:center;}
 	div#sub-header { border: none;}
-	a#site-name {
+	a#site-name-gsm {
     color: #f9fcff;
     font-size: 2em;
     font-weight: bold;

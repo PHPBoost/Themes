@@ -2,7 +2,7 @@
 <script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>		
 
 <div id="header-gsm">
-	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 </div>	
 
 <div id="SuperGlobal">	

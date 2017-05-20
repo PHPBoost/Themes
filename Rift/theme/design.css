@@ -126,7 +126,7 @@ span#site-slogan {
 }
 
 @media (min-width:800px) {
-	a#site-name {display:none;}
+	a#site-name-gsm {display:none;}
 	div#site-infos {display:none;}
 }
 
@@ -629,7 +629,7 @@ aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:
 	
 	div#header-gsm {background-color:#222222; height:50px; padding-top: 10px; text-align:center;}
 	div#sub-header { border: none;background-color:#000000;}
-	a#site-name {
+	a#site-name-gsm {
     color: #f9fcff;
     font-size: 2em;
     font-weight: bold;

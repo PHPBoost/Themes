@@ -2,7 +2,7 @@
 	# INCLUDE MAINTAIN #
 	
 	<div id="header-gsm">
-		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 	</div>	
 	
 <div id="SuperGlobal">	

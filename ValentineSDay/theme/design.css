@@ -637,7 +637,7 @@ section#Motto{
 	
 	div#header-gsm {background-color:#f393c1; height:50px; padding-top: 10px; text-align:center;}
 	div#sub-header {background-color:#222222; border: medium none; height: 61px; padding:0px;}
-	a#site-name {
+	a#site-name-gsm {
     color: #f9fcff;
     font-size: 2em;
     font-weight: bold;

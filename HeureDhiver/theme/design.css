@@ -385,7 +385,7 @@ nav#breadcrumb ol li:not(.current):after {
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
 	}
 	.sub-container{display: none;}
-	a#site-name {
+	a#site-name-gsm {
     color: #267482;
     font-size: 2em;
     font-weight: bold;

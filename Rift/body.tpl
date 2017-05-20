@@ -4,7 +4,7 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
-	<div id="top_page" /></div>
+	<div id="top_page"></div>
 
 		<div id="sub-header">
 			<section id="Motto">
@@ -77,7 +77,7 @@
 
 	<header id="header">
 		<div id="header-gsm">
-		<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 		</div>
 		<div id="top-header">
 			<div id="site-infos">
@@ -237,10 +237,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
+			<a class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
-	<div id="bottom_page" /></div>
+	<div id="bottom_page"></div>

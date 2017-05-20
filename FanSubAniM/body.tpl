@@ -2,7 +2,7 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
-	<div id="top_page" /></div>
+	<div id="top_page"></div>
 
 	<header id="header">
 		<div id="header-gsm">
@@ -224,10 +224,10 @@
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a id="gotop" class="js-scrollTo" href="#top_page"></a>
+			<a class="js-scrollTo" href="#top_page"></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a id="gobottom" class="js-scrollTo" href="#bottom_page"></a>
+			<a class="js-scrollTo" href="#bottom_page"></a>
 		</div>
 	</div>
-	<div id="bottom_page" /></div>
+	<div id="bottom_page"></div>
