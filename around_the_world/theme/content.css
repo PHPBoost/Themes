@@ -683,10 +683,11 @@ body.dragging * {
 	text-align: left;
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	display: block;
+	font-weight: bold;
 	color: #515c68;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 
 .module-mini-contents {

@@ -31,7 +31,7 @@
 	# IF C_USER_NOTCONNECTED #
 		<div id="connect-menu" class="module-mini-container not-connected">
 			<div class="module-mini-top">
-				<h5 class="sub-title">{L_CONNECT}</h5>
+				<div class="sub-title">{L_CONNECT}</div>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();" class="form-element">
@@ -63,7 +63,7 @@
 	# ELSE #
 		<div id="connect-menu" class="module-mini-container connected">
 			<div class="module-mini-top">
-				<h5 class="sub-title">{L_PRIVATE_PROFIL}</h5>
+				<div class="sub-title">{L_PRIVATE_PROFIL}</div>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<ul class="connect-content">

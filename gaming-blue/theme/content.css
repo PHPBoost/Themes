@@ -665,8 +665,11 @@ body.dragging * {
 	border-bottom: 1px solid #383C46;
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+	font-size: 1.6rem;
 	color: #DDDDDD;
     text-decoration: none;
 }

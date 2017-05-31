@@ -1523,9 +1523,10 @@ body.dragging * {
 		padding: 1em 0;
 	}
 }
-.module-mini-container h5,
-.module-mini-container h3 a {
-
+.module-mini-container .sub-title {
+	display: block;
+	font-weight: bold;
+	font-size: 1.6rem;
 	color: #AA0000;
 }
 

@@ -673,8 +673,11 @@ body.dragging * {
 	background-color: #2F4154;
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+	font-size: 1.6rem;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	font-weight: 300;

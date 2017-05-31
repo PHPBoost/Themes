@@ -685,9 +685,10 @@ background: url(images/contentbg.jpg) no-repeat scroll center top #c4dded;
 	padding: 1em 0;
 }
 
-.module-mini-container h5,
-.module-mini-container h3,
-.module-mini-container h3 a {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
 	font-size: 1.3rem;
 	color: #515C68;
 }

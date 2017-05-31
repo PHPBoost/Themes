@@ -43,8 +43,10 @@ footer#footer {
 /* --- content =========================================================================================== */
 
 section > header h1,
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	display: block;
+	font-weight: bold;
+	font-size: 1.6rem;
     color: rgba(255, 255, 255, .6);
 }
 

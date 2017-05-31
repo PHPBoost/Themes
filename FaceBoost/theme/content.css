@@ -1522,10 +1522,8 @@ body.dragging * {
 	text-align: center;
 }
 
-aside#menu-right .module-mini-container h5,
-aside#menu-right .module-mini-container h3 a,
-aside#menu-left .module-mini-container h5,
-aside#menu-left .module-mini-container h3 a  {
+aside#menu-right .module-mini-container .sub-title,
+aside#menu-left .module-mini-container .sub-title  {
     color: #777C85;
     font-size: 16px;
     font-weight: normal;
@@ -1543,8 +1541,10 @@ aside#menu-left .module-mini-container h3 a  {
 		padding: 1em 0;
 	}
 }
-.module-mini-container h5,
-.module-mini-container h3 a {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
 
 	color: #ff0000;
 }

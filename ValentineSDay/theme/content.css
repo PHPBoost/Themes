@@ -683,13 +683,14 @@ body.dragging * {
 	text-align: center;
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+	font-size: 2.6rem;
     color: #df5799;
     font-family: "Euphoria Script",cursive;
-    font-size: 31px;
 }
-
 
 .module-mini-contents {
 	padding: 5px 4px 0 4px;

@@ -1538,16 +1538,13 @@ body.dragging * {
 	text-align: center;
 }
 
-aside#menu-right .module-mini-container h5,
-aside#menu-right .module-mini-container h3 a,
-aside#menu-left .module-mini-container h5,
-aside#menu-left .module-mini-container h3 a  {
+aside#menu-right .module-mini-container .sub-title,
+aside#menu-left .module-mini-container .sub-title  {
     color: #aa8dff;
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
-    margin-top: -4px;
     padding-bottom: 2px;
     text-shadow: 1px 1px 0 #000000;
 }
@@ -1555,12 +1552,13 @@ aside#menu-left .module-mini-container h3 a  {
 
 	
 @media (max-width:768px) {
-	aside#menu-right .module-mini-container h5,
-	aside#menu-right .module-mini-container h3 a,
-	aside#menu-left .module-mini-container h5,
-	aside#menu-left .module-mini-container h3 a  {
+	aside#menu-right .module-mini-container .sub-title,
+	aside#menu-left .module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+		font-weight: bold;
 		margin-top: -10px;
-
 	}
 
 	.module-mini-top {
@@ -1571,9 +1569,11 @@ aside#menu-left .module-mini-container h3 a  {
 		padding: 1em 0;
 	}
 }
-.module-mini-container h5,
-.module-mini-container h3 a {
-
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+	font-size: 1.6rem;
 	color: #ff0000;
 }
 

@@ -682,12 +682,14 @@ body.dragging * {
 	left: 10px;
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
+	font-size: 1.6rem;
 	margin-top: -2px;
 	padding-bottom: 2px;
 	text-align: center;
-	font-size: 1.2em;
 	font-weight: bold;
 }
 

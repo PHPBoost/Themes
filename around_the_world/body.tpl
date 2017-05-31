@@ -120,7 +120,7 @@
 
 		<div class="footer-infos">
 			<span class="cms">
-				{L_POWERED_BY} <a href="http://www.phpboost.com" title="PHPBoost">PHPBoost</a> {L_PHPBOOST_RIGHT}
+				{L_POWERED_BY} <a href="http://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a> {L_PHPBOOST_RIGHT}
 			</span>
 			# IF C_DISPLAY_BENCH #
 			<span class="requete">

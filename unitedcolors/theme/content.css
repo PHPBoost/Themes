@@ -642,8 +642,9 @@ body.dragging * {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	display: block;
+	font-weight: bold;
 	font-size: 2rem;
 }
 

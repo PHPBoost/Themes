@@ -688,8 +688,10 @@ body.dragging * {
 	text-align: center;
 }
 
-.module-mini-container h5,
-.module-mini-container h3 {
+.module-mini-container .sub-title {
+	margin-top: 5px;
+	display: block;
+	font-weight: bold;
     color: #685535;
     font-size: 11px;
     margin-top: 7px;
