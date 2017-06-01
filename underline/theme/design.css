@@ -76,6 +76,10 @@ div#sub-header {
 	border: 1px solid #222222;
 }
 
+div#sub-header a {
+	color: #FFFFFF;
+}
+
 @media (min-width: 769px) {
 	div#sub-header {
 		border-radius: 5px;
