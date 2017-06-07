@@ -353,12 +353,16 @@ nav#breadcrumb ol li:not(.current):after {
 	color: #616161;
 }
 
-/* --- Scroll to Top --- */
+/*======================
+ --- Scroll to Top ---
+=======================*/
+
 .scroll-to {
 	position: fixed;
 	z-index: 10;
 	display: none;
 	background-color: rgba(15, 15, 16, 0.8);
+	border-radius: 12px;	
 }
 
 #scroll-to-top {
@@ -385,7 +389,7 @@ nav#breadcrumb ol li:not(.current):after {
 	}
 
 	.scroll-to i {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 
@@ -396,17 +400,19 @@ nav#breadcrumb ol li:not(.current):after {
 	}
 }
 
-/* --   Cookie Bar  -- */ 
-/* ------------------- */
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
 .cookiebar-container {
 	z-index: 100;
 	left: 0;
 	right: 0;
 	top: 0;
 	padding: 7px 20px;
-	background-color: #F2F2F2;
-	border-bottom: 1px solid #E2E2E2;
-	font-size: 0.9em;
+	background-color: #000000;
+	border-bottom: 3px solid #7ca133;
+	color:#efefef;
+	font-size: 1em;
 	text-align: center;
 }
 
@@ -421,13 +427,13 @@ nav#breadcrumb ol li:not(.current):after {
 @media (min-width: 769px) {
 	.cookiebar-content {
 		display: inline-block;
-		max-width: calc(100% - 250px);
+		max-width: calc(100% - 300px);
 		vertical-align: middle;
 	}
 
 	.cookiebar-actions {
 		display: inline-block;
-		width: 250px;
+		width: 300px;
 	}
 }
 
@@ -453,14 +459,16 @@ nav#breadcrumb ol li:not(.current):after {
 	}
 }
 
-.cookiebar-button-understand 		{ background-color: #337AB7; border-color: #2E6DA4; }
-.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
+.cookiebar-button-understand 		{ background-color: #7ca133; border:none;}
+.cookiebar-button-understand:hover 	{ background-color: #82A046; color: rgba(255, 255, 255, 0.5); }
 
-.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
-.cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000;}
+.cookiebar-button-allowed:hover 		{ background: #000000; }
 
-.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
-.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019;}
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+.cookiebar-button-understand , .cookiebar-button-allowed , .cookiebar-button-declined  {padding: 0.2em 1em;}
 
 @media (max-width: 468px) {
 	.cookiebar-more {

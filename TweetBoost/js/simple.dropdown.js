@@ -1,13 +1,11 @@
-$(document).on('ready', function(){
-  var $dropdown = $('div.dropdownWrapper'),
-      $drpBtn   = $dropdown.find('div.dropdownLabel');
-  $drpBtn.on('click', function(e){
-    e.stopPropagation();
-    var $element = $(this).parent();
-    $element.find('.dropdownPanel').fadeToggle(200);
-  });
-  $("body").click(function(){
-    $('.dropdownPanel').hide(200);
-  });
+// fonction revu le 29/05/2017 par EDN
 
-});
+var main = function () {
+  $('.dropdownWrapper').click(function() {
+
+    $(this).children('.dropdownPanel').fadeToggle(200);
+  });
+  
+};
+
+$(document).ready(main);

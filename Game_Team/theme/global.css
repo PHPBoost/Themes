@@ -7,10 +7,12 @@
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
- 
 /* -------------------------------------
 		global.css
  Contient les classes globales au site, peuvent etre utilisees partout.
@@ -304,7 +306,7 @@ td.calendar-week {
 .formatter-hide-close-button {
 	position: absolute;
 	display: none;
-	top: 2em;
+	top: 1em;
 	right: 0;
 	color: #BBBBBB;
 	font-size: 0.8em;

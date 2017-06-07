@@ -1,7 +1,7 @@
 # INCLUDE MAINTAIN #
 
 <div id="header-gsm">
-	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 </div>	
 	
 <header id="header">
@@ -9,7 +9,7 @@
 		<!--div id="site-infos">
 			<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({HEADER_LOGO});"# ENDIF #></div>
 			<div id="site-name-container">
-				<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+				<a href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 				<span id="site-slogan">{SITE_SLOGAN}</span>
 			</div>
 		</div-->
@@ -152,7 +152,7 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<span class="footer-infos-separator"> | </span><span>{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
+				<span class="footer-infos-separator"> | </span><span>{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
 

@@ -1,3 +1,20 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Cameleon
+ * Par      : EnymSay
+ * Date     : 31/05/2017
+ * Site web :  http://easy-design.net/ | https://www.phpboost.com/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Modifié par : EDN | Swan
+ * Date      : 31/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 /* -------------------------------------
 		global.css
  Contient les classes globales au site, peuvent etre utilisees partout.
@@ -14,14 +31,18 @@
 
 /* --- Les liens du site --- */
 a {
-	color: #333333;
-	font-weight: bold;
-	text-decoration: none;
+color: #445766;
+text-decoration: none;
+font-size: 11px;
+font-weight: bold;
+font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 a:hover {
-	color: #666666;
+	color: #2F404D;
 	text-decoration: underline;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* --- Couleur des liens --- */
@@ -72,16 +93,37 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {  }
-h3.formatter-title { margin-left: 1.5rem; }
-h4.formatter-title { margin-left: 3rem; }
-h5.formatter-title { margin-left: 5rem; }
-
-h4.formatter-title,
-h5.formatter-title {
-	border-bottom: 1px solid #366393;
+h2.formatter-title {  
+	color: #E53B00;
+	border-bottom: 2px solid #E53B00;
+	font-size: 1.4em;
+	width: 100%;	
 }
 
+h3.formatter-title { 
+	background: #FFFFFF;
+	color: #000000;
+	padding: 2px 5px;
+	border: 1px solid #E53B00;
+	border-left: 3px solid #E53B00;
+	border-right: 3px solid #E53B00;
+	margin-left: 1.5rem;
+	width: 98%;	
+ }
+h4.formatter-title { 
+	border: 1px solid #0578CC;
+	border-left: 3px solid #0578CC;
+	border-right: 3px solid #0578CC;
+	border-bottom: 1px solid #366393;
+	padding: 2px 5px;	
+	margin-left: 3rem; 
+}
+h5.formatter-title {	
+	border: 1px solid #0578CC;
+	border-top: 3px solid #0578CC;
+	border-bottom: 1px solid #366393;
+	padding: 2px 5px;	 
+	margin-left: 5rem; }
 
 /* -- Mise en forme du contenu -- */
 /* ------------------------------ */
@@ -292,7 +334,7 @@ td.calendar-week {
 .formatter-hide-close-button {
 	position: absolute;
 	display: none;
-	top: 2em;
+	top: 1em;
 	right: 0;
 	color: #BBBBBB;
 	font-size: 0.8em;

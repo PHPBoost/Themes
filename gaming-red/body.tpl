@@ -44,19 +44,6 @@
 
 	<!-- CONTENU GLOBAL -->
 	<div id="global">
-			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
-			# ENDIF #
-
 		# IF C_MENUS_LEFT_CONTENT #
 		<aside id="menu-left">
 			# START menus_left #
@@ -153,6 +140,9 @@
 					| {L_THEME} {L_THEME_NAME} {L_BY}
 					<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
 				</span>
+				# ENDIF #
+				# IF C_VISIT_COUNTER #
+					<span class="footer-infos-separator"> | </span><span>{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 				# ENDIF #
 			</div>
 		</div>

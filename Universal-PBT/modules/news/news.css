@@ -1,16 +1,20 @@
-/*---------------------------------------------------------
+ /*---------------------------------------------------------
  * Theme    : Thème Universal-PBT
  * Par      : EDN | Swan
  * Date     : 02/02/10
- * Site web : http://easy-design.net/
+ * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
- * Contient les conteneurs de mise en page.
- * Le design.css permet de mettre en forme votre site web avec le design de votre choix
- *---------------------------------------------------------
+  *---------------------------------------------------------
  * Porté par : EDN | Swan
- * Date      : 06/02/2017
-/*--------------------------------------*/
+ * Date V3.0 : 02/02/2010 
+ * Date V4.0 : 22/12/2012
+ * Date V5.0 : 06/02/2017
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------*/
 div#main-content {
 	background-color: transparent;
 	box-shadow: none;

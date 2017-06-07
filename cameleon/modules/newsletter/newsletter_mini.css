@@ -1,0 +1,49 @@
+.newsletter-form {
+	margin: 20px 75px 10px 0;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px #BEBEBE solid;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	border-spacing: 1px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+@media (max-width: 768px) {
+	.newsletter-form {
+		position:absolute;
+		left: -9999em;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+}
+.newsletter-title {
+	padding: 5px 10px 0 0;
+	font-size: 12px;
+	vertical-align: middle;
+}
+ 
+div#newsletter { 
+	float: right;
+	margin: 10px;
+}
+
+div#newsletter button,
+div#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+	width: 120px;
+	font-size: 12px;
+}
+
+div#newsletter  .input-element-button button {
+	margin-left: -5px;
+	font-size: 12px;
+}

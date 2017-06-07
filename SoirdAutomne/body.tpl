@@ -1,7 +1,7 @@
 	# INCLUDE MAINTAIN #
 	
 	<div id="header-gsm">
-	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 	</div>	
 	<header id="header">
 		<div id="titre"></div>
@@ -130,19 +130,9 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
-
 	</footer>
 
 	<a id="scroll-to-top" class="scroll-to" href="#" title="${LangLoader::get_message('scroll-to.top', 'user-common')}"><i class="fa fa-chevron-up"></i></a>

@@ -126,7 +126,7 @@ span#site-slogan {
 }
 
 @media (min-width:800px) {
-	a#site-name-gsm {display:none;}
+	a#site-name {display:none;}
 	div#site-infos {display:none;}
 }
 
@@ -414,7 +414,7 @@ div#nav-invisible a.nav_item_events{
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 a.nav_item_events{
-    background: url("images/sprite_bar_1.png") repeat scroll -897px -90px rgba(0, 0, 0, 0);
+    background: url('images/sprite_bar_1.png') repeat scroll -897px -90px rgba(0, 0, 0, 0);
     display: block;
     height: 44px;
     width: 80px;
@@ -500,7 +500,7 @@ section#Motto{
 /* Mobile navigation */
 .nav-mobile {
 	display:none; /* Hide from browsers that don't support media queries */
-    background: #3d3d3b url(images/nav.svg) no-repeat scroll center center / 22px auto;
+    background: #3d3d3b url('images/nav.svg') no-repeat scroll center center / 22px auto;
     border-left: 1px solid #222222;
     cursor: pointer;
     height: 50px;
@@ -525,7 +525,7 @@ section#Motto{
 	display:block;
 	height:48px;
 	width:48px;
-	background: url(images/drop.svg) no-repeat center center;
+	background: url('images/drop.svg') no-repeat center center;
 	background-size:20px;
 }
 .nav-click:hover {
@@ -543,32 +543,37 @@ section#Motto{
 		 "gadget de navigation"
 ========================================*/
 div#gotop {
-    display: block;
     position: fixed;
-    right: 57px;
-    top: 150px;
+    right: 120px;
+    top: 350px;
     z-index: 150;
 }
 div#gotop a {
-    background: url(images/sprite_bigNav.png) no-repeat scroll center top transparent;
+    background: rgba(0, 0, 0, 0.5)none repeat scroll 0 0;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #dddddd;
     float: left;
-    height: 80px;
-    opacity: 0.3;
-    width: 80px;
+	font-size:12px;
+	padding:12px 6px;
+    opacity: 0.8;
 }
 div#gobottom {
     display: block;
     position: fixed;
-    right: 57px;
-    top: 238px;
+    right: 120px;
+    top: 400px;
     z-index: 150;
 }
 div#gobottom a {
-    background: url(images/sprite_bigNav.png) no-repeat scroll center bottom transparent;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #dddddd;
     float: left;
-    height: 80px;
-    opacity: 0.3;
-    width: 80px;	
+	font-size:12px;
+	padding:12px 6px;
+    opacity: 0.8;
 }
 
 /*################################
@@ -592,6 +597,100 @@ aside#menu-left span.bt-content > a, aside#menu-right span.bt-content > a {
 }
 aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:hover {
     color: #bb0000;
+}
+
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 7px 20px;
+	background: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid #aa0000;
+	font-size: 1em;
+	text-align: center;
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 300px);
+		vertical-align: middle;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 5px;
+	}
+
+	.cookiebar-actions {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 5px 0 5px;
+	border-radius: 4px;
+	color: #FEFEFE;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 10px 0 10px;
+	}
+}
+
+.cookiebar-button-understand 		{ background-color: #337AB7; /*border-color: #2E6DA4; }*/}
+.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
+
+.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
+.cookiebar-button-allowed:hover 		{ background-color: #4CAE4C; }
+
+.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
+.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0px 0 20px 0px;
+}
+
+footer#cookiebar-change-choice {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
 }
 
 /*======================================
@@ -741,96 +840,4 @@ aside#menu-left span.bt-content > a:hover, aside#menu-right span.bt-content > a:
 }
 @media (max-width:768px) {
 	div#menugo {display: none;}
-}
-
-/* --   Cookie Bar  -- */ 
-/* ------------------- */
-.cookiebar-container {
-	z-index: 100;
-	left: 0;
-	right: 0;
-	top: 0;
-	padding: 7px 20px;
-	background-color: #F2F2F2;
-	border-bottom: 1px solid #E2E2E2;
-	font-size: 0.9em;
-	text-align: center;
-}
-
-.cookiebar-container.fixed {
-	position: fixed;
-}
-
-.cookiebar-content {
-	text-align: justify;
-}
-
-@media (min-width: 769px) {
-	.cookiebar-content {
-		display: inline-block;
-		max-width: calc(100% - 250px);
-		vertical-align: middle;
-	}
-
-	.cookiebar-actions {
-		display: inline-block;
-		width: 250px;
-	}
-}
-
-@media (max-width: 768px) {
-	.cookiebar-content {
-		margin-bottom: 5px;
-	}
-
-	.cookiebar-actions {
-		margin: 15px 0 5px 0;
-	}
-}
-
-.cookiebar-button {
-	margin: 0 5px 0 5px;
-	border-radius: 4px;
-	color: #FEFEFE;
-}
-
-@media (max-width: 768px) {
-	.cookiebar-button {
-		margin: 0 10px 0 10px;
-	}
-}
-
-.cookiebar-button-understand 		{ background-color: #337AB7; border-color: #2E6DA4; }
-.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
-
-.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
-.cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
-
-.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
-.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
-
-@media (max-width: 468px) {
-	.cookiebar-more {
-		display: block;
-		margin: 10px 0 5px 0;
-	}
-}
-
-.aboutcookie-title {
-	font-size: 1.3em;
-	line-height: 1.3em;
-	font-weight: bold
-}
-
-.aboutcookie-title + p {
-	margin: 0px 0 20px 0px;
-}
-
-footer#cookiebar-change-choice {
-	margin-top: 10px;
-	text-align: center;
-}
-
-.cookiebar-change-choice-link {
-	text-align: center;
 }

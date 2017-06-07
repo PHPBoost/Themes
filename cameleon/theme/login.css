@@ -1,3 +1,20 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Cameleon
+ * Par      : EnymSay
+ * Date     : 31/05/2017
+ * Site web :  http://easy-design.net/ | https://www.phpboost.com/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Modifié par : EDN | Swan
+ * Date      : 31/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 /* --------------------------------------
 		login.css
 Contient les elements pour afficher la page de connexion a l'administration ou au site lorsqu'il est en maintenance.

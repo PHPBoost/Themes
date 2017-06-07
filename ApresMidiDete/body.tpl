@@ -1,7 +1,7 @@
 	# INCLUDE MAINTAIN #
 	
 	<div id="header-gsm">
-	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 	</div>		
 <div id="SuperGlobal">
 	<header id="header">
@@ -129,19 +129,9 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="text-strong">{L_VISIT} : </span>{VISIT_COUNTER_TOTAL} - <span class="text-strong">{L_TODAY} : </span>{VISIT_COUNTER_DAY}
 			# ENDIF #
 		</div>
-
 	</footer>
 </div>
 

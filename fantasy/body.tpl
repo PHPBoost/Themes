@@ -145,4 +145,5 @@
 		</div>
 
 	</footer>
+	
 	<a id="scroll-to-top" class="scroll-to" href="#"><i class="fa fa-chevron-up"></i></a>

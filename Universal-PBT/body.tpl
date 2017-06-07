@@ -134,9 +134,10 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
 	</footer>
 </div> <!-- la fin du SuperGlobal-->
+
 <a id="scroll-to-top" class="scroll-to" href="#"><i class="fa fa-chevron-up"></i></a>

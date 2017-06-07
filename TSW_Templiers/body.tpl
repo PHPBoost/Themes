@@ -2,7 +2,9 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/google-font.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/slide.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>	
-	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/simple.dropdown.js"></script>
+	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
+
+	<div id="top_page"></div>
 	
 	<header id="header">
 		<div id="header-gsm">
@@ -229,18 +231,17 @@
 
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
 	</footer>
 
-	<a id="scroll-to-top" class="scroll-to" href="#" title="${LangLoader::get_message('scroll-to.top', 'user-common')}"><i class="fa fa-chevron-up"></i></a>
+	<div id="menugo">
+		<div id="gotop" style="display: block;">
+			<a class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
+		</div>
+		<div id="gobottom" style="display: block;">
+			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
+		</div>
+	</div>
+	<div id="bottom_page"></div>

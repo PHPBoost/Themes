@@ -1,4 +1,20 @@
 /*---------------------------------------------------------
+ * Theme    : Rift
+ * Par      : EDN | Swan
+ * Date     : 11/04/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+/*---------------------------------------------------------
  * Theme    : RiftNightMare 
  * Par      : EDN | Swan
  * Date     : 11/04/2016
@@ -1544,11 +1560,10 @@ aside#menu-left .module-mini-container .sub-title  {
 @media (max-width:768px) {
 	aside#menu-right .module-mini-container .sub-title,
 	aside#menu-left .module-mini-container .sub-title {
-	margin-top: 5px;
-	display: block;
-	font-weight: bold;
-		font-weight: bold;
 		margin-top: -10px;
+		display: block;
+		font-weight: bold;
+
 	}
 
 	.module-mini-top {
@@ -1559,12 +1574,9 @@ aside#menu-left .module-mini-container .sub-title  {
 		padding: 1em 0;
 	}
 }
+.module-mini-container h5,
+.module-mini-container h3 a {
 
-.module-mini-container .sub-title {
-	margin-top: 5px;
-	display: block;
-	font-weight: bold;
-	font-size: 1.6rem;
 	color: #ff0000;
 }
 

@@ -1,3 +1,20 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Cameleon
+ * Par      : EnymSay
+ * Date     : 31/05/2017
+ * Site web :  http://easy-design.net/ | https://www.phpboost.com/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Modifié par : EDN | Swan
+ * Date      : 31/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 /* --------------------------------------
 		cssmenu.css
 Contient les elements associes aux menus 
@@ -24,7 +41,13 @@ Contient les elements associes aux menus
 }
 
 .cssmenu 		{ display: block; }
-header .cssmenu { display: inline-block; }
+
+header .cssmenu { 
+margin-top:5px;
+display: inline-block;
+/*position: absolute;
+bottom: 0;*/
+}
 
 .cssmenu ul,
 .cssmenu ul li,
@@ -146,7 +169,11 @@ header .cssmenu { display: inline-block; }
 
 /* --- Variante cssmenu-horizontal --- */
 #main .cssmenu-horizontal {
-	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px #BEBEBE solid;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
 }
 
 /* --- Variante cssmenu-group --- */
@@ -262,6 +289,7 @@ div.cssmenu-group .cssmenu-title {
 
 #main .cssmenu-horizontal > ul > li {
 	position: relative;
+	padding: 5px;	
 	border-right: 1px solid #EFEFEF;
 }
 
@@ -293,12 +321,13 @@ header .cssmenu-horizontal > ul > li.has-sub:hover {
 }
 
 .cssmenu > ul > li > .cssmenu-title {
-	padding: 17px;
+	padding: 10px;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
 
+	
 /* --- Indicateur de sous menu --- */
 .cssmenu > ul > li.has-sub > .cssmenu-title {
 	padding-right: 30px;
@@ -643,7 +672,7 @@ header .cssmenu-vertical ul ul li .cssmenu-title,
 footer .cssmenu-static > ul > li > .cssmenu-title 			{ color: #DDDDDD; }
 #top-footer .cssmenu-static > ul > li > .cssmenu-title 		{ color: #444444; }
 
-header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
+header .cssmenu li:hover > .cssmenu-title 					{ color: #888888; }
 .cssmenu.cssmenu-vertical li:hover > .cssmenu-title 		{ color: #666666; }
 #main .cssmenu li:hover > .cssmenu-title 					{ color: #666666; }
 
@@ -658,8 +687,8 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 	}
 }
 @media (min-width: 769px) {
-	header .cssmenu-horizontal > ul > li:hover	{ background-color: #333333; }
-	#main .cssmenu-horizontal > ul > li:hover  	{ background-color: #F9F9F9; }
+	header .cssmenu-horizontal > ul > li:hover	{ background-color: rgba(255, 255, 255, 0.6); border-radius: 10px; }
+	#main .cssmenu-horizontal > ul > li:hover  	{ background-color: rgba(255, 255, 255, 0.6); border-radius: 10px;}
 	
 	#sub-header .cssmenu > ul > li {
 		transition: 0.3s;
@@ -668,7 +697,7 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 		margin-top: -10px;
 		transition: 0.3s;
 	}
-
+/* Modification EDN */
 	#sub-header .cssmenu > ul > li > .cssmenu-title {
 		background-color: #ECECEC;
 		border: 1px #FFFFFF solid;
@@ -687,7 +716,7 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 }
 
 /* --- Niveau 2 --- */
-.cssmenu ul ul li .cssmenu-title 							{ color: #DDDDDD; }
+.cssmenu ul ul li .cssmenu-title 							{ color: #888888; }
 #main .cssmenu ul ul li .cssmenu-title 						{ color: #333333; }
 .cssmenu.cssmenu-vertical ul ul li .cssmenu-title  			{ color: #333333; }
 .cssmenu-actionslinks li ul li .cssmenu-title				{ color: #666666; }
@@ -706,7 +735,7 @@ footer .cssmenu-static ul ul li:hover > .cssmenu-title 		{ color: #FFFFFF; }
 
 .cssmenu-actionslinks ul li:hover > .cssmenu-title:after 		{ background-color: #333333;	}
 
-header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
+header .cssmenu ul ul li .cssmenu-title							{ background-color: rgba(255, 255, 255, 0.6);	}
 .cssmenu-actionslinks li:hover > .cssmenu-title 				{ background-color: #DDDDDD;	}
 .cssmenu-actionslinks.small-screen li:hover > .cssmenu-title 	{ background-color: transparent;}
 #main .cssmenu-horizontal ul ul									{ background-color: #F9F9F9;	}

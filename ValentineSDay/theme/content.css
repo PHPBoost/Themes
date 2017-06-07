@@ -1,3 +1,19 @@
+/*---------------------------------------------------------
+ * Theme    :  ValentineSDay
+ * Par      : EDN | Swan
+ * Date     : 08/05/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.0 : 08/05/2016
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 /* --------------------------------------
 		content.css
 Contient les elements : 
@@ -687,10 +703,11 @@ body.dragging * {
 	margin-top: 5px;
 	display: block;
 	font-weight: bold;
-	font-size: 2.6rem;
     color: #df5799;
     font-family: "Euphoria Script",cursive;
+    font-size: 31px;
 }
+
 
 .module-mini-contents {
 	padding: 5px 4px 0 4px;

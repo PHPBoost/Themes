@@ -3,9 +3,9 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
-	<div id="top_page"></div>
+	<div id="top_page" /></div>
 
-	<div id="sub-header">
+		<div id="sub-header">
 			<section id="Motto">
 				<div id="menu-title">Nenu principal</div>
 				<nav  class="nav">
@@ -70,15 +70,17 @@
 				# END menus_sub_header #
 			# ENDIF #
 			</div>
-	</div>
+		</div>
+
+
 
 	<header id="header">
 		<div id="header-gsm">
-			<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 		</div>
 		<div id="top-header">
 			<div id="site-infos">
-				<div id="site-logo"# IF C_HEADER_LOGO # style="background: url({HEADER_LOGO}) no-repeat;"# ENDIF # ></div>
+				<div id="site-logo" # IF C_HEADER_LOGO #style="background: url({HEADER_LOGO}) no-repeat;"# ENDIF #></div>
 				<div id="site-name-container">
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>
@@ -95,34 +97,35 @@
 
 		<div class="spacer"></div>
 	</header>
-
 	<br />
 	<div id="global">
-		<div id="nav">
-			<ul>
-				<li id="nav_item_accueil"><a class="nav_item_accueil" href="{START_PAGE}"  title="Accueil"></a></li>
-				<li id="nav_item_actualites"><a class="nav_item_actualites" href="http://www.DayZcom/french/gameplay" title="Actualit�s"></a></li>
-				<li id="nav_item_articles"><a class="nav_item_articles" href="#" title="Articles"></a></li>
-				<li id="nav_item_forum" ><a class="nav_item_forum" href="#" title="Forum"></a></li>
-				<li id="nav_item_staff"><a class="nav_item_staff" href="#" title="Le staff"></a></li>
-				<li id="nav_item_documentation"><a class="nav_item_documentation" href="#" title="documentation"></a></li>
-				<li id="nav_item_faq" ><a class="nav_item_faq" href="#" title="Foire Aux Questions"></a></li>
-				<li id="nav_item_events" class="last"><a class="nav_item_events" href="#" title="Events"></a></li>
-			</ul>
+	<div id="nav">
+		<ul>
+			<li id="nav_item_accueil"><a class="nav_item_accueil" href="{START_PAGE}"  title="Accueil"></a></li>
+			<li id="nav_item_actualites"><a class="nav_item_actualites" href="http://www.DayZcom/french/gameplay" title="Actualit�s"></a></li>
+			<li id="nav_item_articles"><a class="nav_item_articles" href="#" title="Articles"></a></li>
+			<li id="nav_item_forum" ><a class="nav_item_forum" href="#" title="Forum"></a></li>
+			<li id="nav_item_staff"><a class="nav_item_staff" href="#" title="Le staff"></a></li>
+			<li id="nav_item_documentation"><a class="nav_item_documentation" href="#" title="documentation"></a></li>
+			<li id="nav_item_faq" ><a class="nav_item_faq" href="#" title="Foire Aux Questions"></a></li>
+			<li id="nav_item_events" class="last"><a class="nav_item_events" href="#" title="Events"></a></li>
+		</ul>
+	</div>
+	<br />
+	<div id="slideshow">
+		<div class="fadein">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/2.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/3.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/4.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/5.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/6.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/7.png"/>
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/8.png"/>
 		</div>
-		<br />
-		<div id="slideshow">
-			<div class="fadein">
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/2.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/3.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/4.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/5.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/6.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/7.png"/>
-				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/8.png"/>
-			</div>
-		</div>
+	</div>
+
+
 		<br />
 
 		<div id="sous-global">
@@ -143,58 +146,61 @@
 			</ol>
 		</nav>
 
-		# IF C_MENUS_LEFT_CONTENT #
-		<aside id="menu-left">
-			# START menus_left #
-			{menus_left.MENU}
-			# END menus_left #
-		</aside>
-		# ENDIF #
-
-		<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT # main-with-right# ENDIF #" role="main">
-			# IF C_MENUS_TOPCENTRAL_CONTENT #
-			<div id="top-content">
-				# START menus_top_central #
-				{menus_top_central.MENU}
-				# END menus_top_central #
-			</div>
-			<div class="spacer"></div>
+			# IF C_MENUS_LEFT_CONTENT #
+			<aside id="menu-left">
+				# START menus_left #
+				{menus_left.MENU}
+				# END menus_left #
+			</aside>
 			# ENDIF #
 
-			<div id="main-content" itemprop="mainContentOfPage">
+			<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT # main-with-right# ENDIF #" role="main">
+				# IF C_MENUS_TOPCENTRAL_CONTENT #
+				<div id="top-content">
+					# START menus_top_central #
+					{menus_top_central.MENU}
+					# END menus_top_central #
+				</div>
+				<div class="spacer"></div>
+				# ENDIF #
+
+				<div id="main-content" itemprop="mainContentOfPage">
 				<div id="menu-mess">
 					# INCLUDE ACTIONS_MENU #
+
 					# INCLUDE KERNEL_MESSAGE #
 				</div>
-				{CONTENT}
+					{CONTENT}
+				</div>
+
+				# IF C_MENUS_BOTTOM_CENTRAL_CONTENT #
+				<div id="bottom-content">
+					# START menus_bottom_central #
+					{menus_bottom_central.MENU}
+					# END menus_bottom_central #
+				</div>
+				# ENDIF #
 			</div>
 
-			# IF C_MENUS_BOTTOM_CENTRAL_CONTENT #
-			<div id="bottom-content">
-				# START menus_bottom_central #
-				{menus_bottom_central.MENU}
-				# END menus_bottom_central #
+			# IF C_MENUS_RIGHT_CONTENT #
+			<aside id="menu-right">
+				# START menus_right #
+				{menus_right.MENU}
+				# END menus_right #
+			</aside>
+			# ENDIF #
+
+			# IF C_MENUS_TOP_FOOTER_CONTENT #
+			<div id="top-footer">
+				# START menus_top_footer #
+				{menus_top_footer.MENU}
+				# END menus_top_footer #
+				<div class="spacer"></div>
 			</div>
 			# ENDIF #
-		</div>
 
-		# IF C_MENUS_RIGHT_CONTENT #
-		<aside id="menu-right">
-			# START menus_right #
-			{menus_right.MENU}
-			# END menus_right #
-		</aside>
-		# ENDIF #
-		# IF C_MENUS_TOP_FOOTER_CONTENT #
-		<div id="top-footer">
-			# START menus_top_footer #
-			{menus_top_footer.MENU}
-			# END menus_top_footer #
 			<div class="spacer"></div>
 		</div>
-		# ENDIF #
-
-		<div class="spacer"></div>
 	</div>
 
 	<footer id="footer">
@@ -223,27 +229,17 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
-
 	</footer>
 
 	<div id="menugo">
 		<div id="gotop" style="display: block;">
-			<a class="js-scrollTo" href="#top_page"></a>
+			<a id="gotop" class="js-scrollTo" href="#top_page"><i class="fa fa-chevron-up"></i></a>
 		</div>
 		<div id="gobottom" style="display: block;">
-			<a class="js-scrollTo" href="#bottom_page"></a>
+			<a id="gobottom" class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
-	<div id="bottom_page"></div>
+	<div id="bottom_page" /></div>

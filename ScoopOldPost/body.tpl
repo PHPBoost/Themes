@@ -1,7 +1,7 @@
 	# INCLUDE MAINTAIN #
 	
 <div id="header-gsm">
-	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 </div>
 
 <div id="SuperGlobal">
@@ -21,14 +21,7 @@
 		
 		# IF C_VISIT_COUNTER #
 		<div id="visit-counter" class="hidden-small-screens">
-			<div class="visit-counter-total">
-				<span class="text-strong">{L_VISIT} : </span>
-				{VISIT_COUNTER_TOTAL}
-			</div>
-			<div class="visit-counter-today">
-				<span class="text-strong">{L_TODAY} : </span>
-				{VISIT_COUNTER_DAY}
-			</div>
+			<span>{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 		</div>
 		# ENDIF #
 		<div class="date"> <?php echo date('l jS \of F Y h:i:s A'); ?> </div>

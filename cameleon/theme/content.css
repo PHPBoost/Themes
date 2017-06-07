@@ -1,3 +1,20 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Cameleon
+ * Par      : EnymSay
+ * Date     : 31/05/2017
+ * Site web :  http://easy-design.net/ | https://www.phpboost.com/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Modifié par : EDN | Swan
+ * Date      : 31/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 /* --------------------------------------
 		content.css
 Contient les elements : 
@@ -25,7 +42,7 @@ article {
 	section,
 	article {
 		margin: 1em auto;
-		width: 98%;
+		width: 100%;
 	}
 }
 
@@ -51,10 +68,18 @@ section header a:hover {
 
 section header h2,
 article header h2 {
-	margin-left: 15px;
-	border-bottom: 1px solid #336397;
+	height: 30px;
+	background: #fff;
+	margin: 8px;
+	border-radius: 7px;	
+	text-indent:5px;
 }
-
+section header h2 a,
+article header h2 a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #888;
+}
 section header h3,
 article header h3 {
 	margin-left: 15px;
@@ -132,10 +157,10 @@ header span.actions a {
 .medium-block,
 .small-block {
 	padding: 0.8em;
-	background-color: #F2F8FF;
+	background-color: #FFFFFF;
 	border-style: solid;
 	border-width: 2px 1px 1px 1px;
-	border-color: #366393 #CCCCCC #99B1CB #CCCCCC;
+	border-color: #0578CC #DDDDDD #DDDDDD #DDDDDD;
 }
 
 .block .content,
@@ -666,8 +691,8 @@ body.dragging * {
 .module-mini-top {
 	position: relative;
 	padding: 15px 0 15px 5px;
-	min-height: 24px;
-	background-color: #ECECEC;
+	height: 52px;
+	background: url('images/mini-top.png') no-repeat center bottom #F6F6F6;
 	border: 1px #FFFFFF solid;
 	border-bottom: none;
 	border-radius: 10px 10px 0 0;
@@ -676,26 +701,27 @@ body.dragging * {
 
 .module-mini-top:before {
 	position: absolute;
-	font-family: fontawesome;
-	content: "\f144";
-	font-size: 15px;
-	left: 10px;
+	content: url('images/top-arrow.png');
+	vertical-align: middle;
+	left: 0;
+	margin-top: -7px;
 }
 
 .module-mini-container .sub-title {
 	margin-top: 5px;
 	display: block;
 	font-weight: bold;
-	font-size: 1.6rem;
 	margin-top: -2px;
 	padding-bottom: 2px;
 	text-align: center;
+	font-size: 12px;
+	color:#888888;
 	font-weight: bold;
 }
 
 .module-mini-contents {
 	padding: 5px 4px 0 4px;
-	background-color: #ECECEC;
+	background-color: #F6F6F6;
 	border: 1px #FFFFFF solid;
 	border-top: none;
 	border-bottom: none;
@@ -710,7 +736,7 @@ body.dragging * {
 
 .module-mini-bottom {
 	height: 15px;
-	background-color: #ECECEC;
+	background-color: #F6F6F6;
 	border: 1px #FFFFFF solid;
 	border-radius: 0 0 10px 10px;
 	border-top: none;

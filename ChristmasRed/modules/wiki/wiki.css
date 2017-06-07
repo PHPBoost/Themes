@@ -1,3 +1,17 @@
+/*---------------------------------------------------------
+ * Theme    :  Theme Christmas Red
+ * Par      : EDN | Swan
+ * Date     : 27/12/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 .wiki-paragraph-1 {
 	margin: auto;
 	padding: 0 5px;
@@ -15,6 +29,7 @@
 	border-bottom: 2px solid #cc0000;
 	color: #333333;
 	font-size: 16px;
+	font-weight: bold;
 	font-weight: bold;
 	clear: both;
 }

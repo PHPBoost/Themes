@@ -2,18 +2,20 @@
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/Mnflaunt.js"></script>
 	<script src="{PATH_TO_ROOT}/templates/{THEME}/js/scroll-to.js"></script>
 
-	<div id="top_page"></div>
-	<div id="header-gsm">
-		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
-	</div>
+	<div id="top_page" /></div>
+			<div id="header-gsm">
+			<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+			</div>
 
-	<div id="sub-header">
-		# IF C_MENUS_SUB_HEADER_CONTENT #
-			# START menus_sub_header #
-			{menus_sub_header.MENU}
-			# END menus_sub_header #
-		# ENDIF #
-	</div>
+		<div id="sub-header">
+			# IF C_MENUS_SUB_HEADER_CONTENT #
+				# START menus_sub_header #
+				{menus_sub_header.MENU}
+				# END menus_sub_header #
+			# ENDIF #
+		</div>
+
+
 
 	<header id="header">
 
@@ -140,9 +142,9 @@
 							# END link_bread_crumb #
 						</ol>
 					</nav>
-					<div id="menu-mess">
-						# INCLUDE KERNEL_MESSAGE #
-					</div>
+				<div id="menu-mess">
+					# INCLUDE KERNEL_MESSAGE #
+				</div>
 					{CONTENT}
 				</div>
 
@@ -200,19 +202,9 @@
 			<span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY} <a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
-
 	</footer>
 
 	<div id="menugo">
@@ -223,4 +215,4 @@
 			<a class="js-scrollTo" href="#bottom_page"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
-	<div id="bottom_page"></div>
+	<div id="bottom_page" /></div>

@@ -5,7 +5,10 @@
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
- *---------------------------------------------------------
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
  * Théme compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
@@ -678,12 +681,10 @@ body.dragging * {
 }
 
 .module-mini-container .sub-title {
-	margin-top: 5px;
 	display: block;
 	font-weight: bold;
-	font-size: 1.6rem;
 	color: #404040;
-	padding-top: 10px;
+	font-size: 1em;
 }
 
 .module-mini-contents {

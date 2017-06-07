@@ -363,72 +363,50 @@ nav#breadcrumb ol li:not(.current):after {
 	color: #616161;
 }
 
-/*======================================
-		Alls Media Queries
-	CSS applique aux écrans PC & GSM 
-========================================*/
-
-@media ( max-width: 768px ) {
-
-	header#header {background:none;	height: auto;width: 100%;}
-	div#top-header {
-		margin: auto;
-		max-width: 100%;
-		min-height: auto;
-	}
-	div#sub-header {
-		margin-top: -27px;
-	}	
-	#slideshow {    margin: 2px auto auto;width: 98%;	}
-	
-	.footer-infos span {
-    display: block;
-    padding: 0 0 5px;
-	}
-	footer#footer .footer-infos {
-    min-height: 40px;
-    padding-top: 5px;
-    text-align: center;
-}
-	footer#footer .footer-infos span {
-	color: #ffffff;
-	font-size: 0.8em;
-}
-	span.footer-infos-separator {
-		display: none;
-	}	
-}
-
-@media (min-width:768px) {
-		#header-gsm {
-			display: none;
-		}
-}
-
-
-/* --- Scroll to Top --- */
+/*======================
+ --- Scroll to Top ---
+=======================*/
 .scroll-to {
 	position: fixed;
 	z-index: 10;
 	display: none;
 	background-color: rgba(15, 15, 16, 0.8);
+	border-radius: 5px;
 }
 
 #scroll-to-top {
 	right: 25px;
-	bottom: 25px;
-	padding: 9px 11px 11px 10px;
+	bottom: 0;
+	padding: 2px 11px 3px 10px;
+	transition: 0.2s;
 }
 
 .scroll-to i {
-	font-size: 2em;
 	color: rgba(255, 255, 255, 0.8);
 	transition: 0.2s;
 }
 
 .scroll-to:hover i {
 	color: rgba(255, 255, 255, 1);
-	transition: 0.5s;
+	transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 40px;
+		padding: 5px 8px 8px 8px;
+	}
+
+	.scroll-to i {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
 }
 
 /* --   Cookie Bar  -- */ 
@@ -522,3 +500,46 @@ footer#cookiebar-change-choice {
 .cookiebar-change-choice-link {
 	text-align: center;
 }
+
+/*======================================
+		Alls Media Queries
+	CSS applique aux écrans PC & GSM 
+========================================*/
+
+@media ( max-width: 768px ) {
+
+	header#header {background:none;	height: auto;width: 100%;}
+	div#top-header {
+		margin: auto;
+		max-width: 100%;
+		min-height: auto;
+	}
+	div#sub-header {
+		margin-top: -27px;
+	}	
+	#slideshow {    margin: 2px auto auto;width: 98%;	}
+	
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #ffffff;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}	
+}
+
+@media (min-width:768px) {
+		#header-gsm {
+			display: none;
+		}
+}
+

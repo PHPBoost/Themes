@@ -2,7 +2,7 @@
 <script src="{PATH_TO_ROOT}/templates/{THEME}/js/flaunt.js"></script>		
 
 <div id="header-gsm">
-	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 </div>	
 
 <div id="SuperGlobal">	
@@ -194,7 +194,7 @@
 			</span>
 			# ENDIF #
 			# IF C_DISPLAY_AUTHOR_THEME #
-			<span><span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY} <a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
+			<span><span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY} <a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR} | EDN</a></span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
 			<span><span class="footer-infos-separator"> | </span><span>{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>

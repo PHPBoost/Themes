@@ -1,7 +1,8 @@
 /*---------------------------------------------------------
  * Theme    : Multi_Theme
  * Par      : Sakura
- * Porté en V5.0.XX  :  01/04/2016
+ * Porté en V5.0.XX : 01/04/2016
+ * Porté en V5.1.XX : 30/05/2017
  * Site web :  http://news-manga.com | http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
@@ -559,6 +560,102 @@ div#gobottom a {
     padding:25px 10px;
     opacity: 0.3;
     border-radius: 0 10px 10px 0;
+}
+
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 7px 20px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-bottom: 2px solid #D8DFE3;
+	font-size: 1em;
+	text-align: center;
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 300px);
+		vertical-align: middle;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 5px;
+	}
+
+	.cookiebar-actions {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 5px 0 5px;
+	border-radius: 4px;
+	color: #FEFEFE;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 10px 0 10px;
+	}
+}
+
+.cookiebar-button-understand 		{ background-color: #ffe4e4; border-color: #d7dee3; color: #888888; }
+.cookiebar-button-understand:hover 	{ background-color: #d2b3b3; }
+
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000; }
+.cookiebar-button-allowed:hover 		{ background: #000000; }
+
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019; }
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+.cookiebar-more a {color: #222222; }
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0px 0 20px 0px;
+}
+
+footer#cookiebar-change-choice {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
 }
 
 /*======================================

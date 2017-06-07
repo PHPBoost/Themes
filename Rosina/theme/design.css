@@ -8,6 +8,9 @@
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
  * Théme compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
@@ -389,11 +392,153 @@ nav#breadcrumb ol li:not(.current):after {
 	color: #8b191b;
 }
 
+/*======================
+ --- Scroll to Top ---
+=======================*/
+.scroll-to {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid #8b2a33;	
+	border-radius: 5px;
+}
+
+#scroll-to-top {
+	right: 25px;
+	bottom: 0;
+	padding: 2px 11px 3px 10px;
+	transition: 0.2s;
+}
+
+.scroll-to i {
+	color: rgba(139, 42, 51, 0.8);
+	transition: 0.2s;
+}
+
+.scroll-to:hover i {
+	color: rgba(139, 42, 51, 1);
+	transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 40px;
+		padding: 5px 8px 8px 8px;
+	}
+
+	.scroll-to i {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
+}
+
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 7px 20px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-bottom: 2px solid #AA0000;
+	font-size: 1em;
+	text-align: center;
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 300px);
+		vertical-align: middle;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 5px;
+	}
+
+	.cookiebar-actions {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 5px 0 5px;
+	border-radius: 4px;
+	color: #FEFEFE;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 10px 0 10px;
+	}
+}
+
+.cookiebar-button-understand 		{ background-color: #ffe4e4; border-color: #cd6d6d; color: #8b191b; }
+.cookiebar-button-understand:hover 	{ background-color: #d2b3b3; }
+
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000; }
+.cookiebar-button-allowed:hover 		{ background: #000000; }
+
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019; }
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+.cookiebar-more a {color: #222222; }
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0px 0 20px 0px;
+}
+
+footer#cookiebar-change-choice {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
+}
+
 /*======================================
 			Alls Media Queries
 		 CSS applique aux écrans PC 
 ========================================*/
-
 
 @media (max-width:768px) {
 
@@ -414,7 +559,7 @@ nav#breadcrumb ol li:not(.current):after {
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
 	}
 	.sub-container{display: none;}
-	a#site-name-gsm {
+	a#site-name {
     color: #cd6d6d;
     font-size: 2em;
     font-weight: bold;
@@ -465,139 +610,3 @@ nav#breadcrumb ol li:not(.current):after {
 @media (min-width:769px) {
 	div#header-gsm{display: none;}
 }
-
-/* --- Scroll to Top --- */
-.scroll-to {
-	position: fixed;
-	z-index: 10;
-	display: none;
-	background-color: rgba(15, 15, 16, 0.8);
-}
-
-#scroll-to-top {
-	right: 25px;
-	bottom: 0;
-	padding: 2px 11px 3px 10px;
-	transition: 0.2s;
-}
-
-.scroll-to i {
-	color: rgba(255, 255, 255, 0.8);
-	transition: 0.2s;
-}
-
-.scroll-to:hover i {
-	color: rgba(255, 255, 255, 1);
-	transition: 0.3s;
-}
-
-@media (min-width: 769px) {
-	#scroll-to-top {
-		bottom: 25px;
-		padding: 9px 11px 11px 10px;
-	}
-
-	.scroll-to i {
-		font-size: 2em;
-	}
-}
-
-@media (max-width: 768px) {
-	#scroll-to-top:hover {
-		padding: 9px 11px 11px 10px;
-		transition: 0.3s;
-	}
-}
-
-/* --   Cookie Bar  -- */ 
-/* ------------------- */
-.cookiebar-container {
-	z-index: 100;
-	left: 0;
-	right: 0;
-	top: 0;
-	padding: 7px 20px;
-	background-color: #F2F2F2;
-	border-bottom: 1px solid #E2E2E2;
-	font-size: 0.9em;
-	text-align: center;
-}
-
-.cookiebar-container.fixed {
-	position: fixed;
-}
-
-.cookiebar-content {
-	text-align: justify;
-}
-
-@media (min-width: 769px) {
-	.cookiebar-content {
-		display: inline-block;
-		max-width: calc(100% - 250px);
-		vertical-align: middle;
-	}
-
-	.cookiebar-actions {
-		display: inline-block;
-		width: 250px;
-	}
-}
-
-@media (max-width: 768px) {
-	.cookiebar-content {
-		margin-bottom: 5px;
-	}
-
-	.cookiebar-actions {
-		margin: 15px 0 5px 0;
-	}
-}
-
-.cookiebar-button {
-	margin: 0 5px 0 5px;
-	border-radius: 4px;
-	color: #FEFEFE;
-}
-
-@media (max-width: 768px) {
-	.cookiebar-button {
-		margin: 0 10px 0 10px;
-	}
-}
-
-.cookiebar-button-understand 		{ background-color: #337AB7; border-color: #2E6DA4; }
-.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
-
-.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
-.cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
-
-.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
-.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
-
-@media (max-width: 468px) {
-	.cookiebar-more {
-		display: block;
-		margin: 10px 0 5px 0;
-	}
-}
-
-.aboutcookie-title {
-	font-size: 1.3em;
-	line-height: 1.3em;
-	font-weight: bold
-}
-
-.aboutcookie-title + p {
-	margin: 0px 0 20px 0px;
-}
-
-footer#cookiebar-change-choice {
-	margin-top: 10px;
-	text-align: center;
-}
-
-.cookiebar-change-choice-link {
-	text-align: center;
-} 
-

@@ -114,24 +114,24 @@
 		</div>
 		# ENDIF #
 
-	<div class="footer-infos">
-		<span class="cms">
-			{L_POWERED_BY} <a href="http://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a> {L_PHPBOOST_RIGHT}
-		</span>
-		# IF C_DISPLAY_BENCH #
-		<span class="requete">
-		<span class="footer-infos-separator"> | </span>{L_ACHIEVED} {BENCH}{L_UNIT_SECOND} - {REQ} {L_REQ} - {MEMORY_USED}
-		</span>
-		# ENDIF #
-		# IF C_DISPLAY_AUTHOR_THEME #
-		<span class="author">
-		<span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY}
-			<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
-		</span>
-		# ENDIF #
-		# IF C_VISIT_COUNTER #
-		<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
-		# ENDIF #
-	</div>
+		<div class="footer-infos">
+			<span class="cms">
+				{L_POWERED_BY} <a href="http://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a> {L_PHPBOOST_RIGHT}
+			</span>
+			# IF C_DISPLAY_BENCH #
+			<span class="requete">
+			<span class="footer-infos-separator"> | </span>{L_ACHIEVED} {BENCH}{L_UNIT_SECOND} - {REQ} {L_REQ} - {MEMORY_USED}
+			</span>
+			# ENDIF #
+			# IF C_DISPLAY_AUTHOR_THEME #
+			<span class="author">
+			<span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY}
+				<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
+			</span>
+			# ENDIF #
+			# IF C_VISIT_COUNTER #
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
+			# ENDIF #
+		</div>
 	</footer>
 	<a id="scroll-to-top" class="scroll-to" href="#"><i class="fa fa-chevron-up"></i></a>

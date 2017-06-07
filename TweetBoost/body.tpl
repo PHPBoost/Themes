@@ -6,68 +6,69 @@
 	<div id="top_page"></div>
 
 	<div id="header-gsm">
-		<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+	<a id="site-name-gsm" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 	</div>
 	<section id="Motto">
-		<div id="menu-title">Nenu principal</div>
-		<nav  class="nav">
-			<ul class="nav-list">
-				<li class="nav-item">
-					<a href="?=about">Accueil</a>
-				</li>
-				<li class="nav-item">
-					<a href="?=about">News</a>
-				</li>
-				<li class="nav-item">
-					<a href="?=home">Divers</a>
-					<ul class="nav-submenu">
-						<li class="nav-submenu-item">
-							<a href="?=submenu-1">Astuces</a>
-						</li>
-						<li class="nav-submenu-item">
-							<a href="?=submenu-2">Blog</a>
-						</li>
-						<li class="nav-submenu-item">
-							<a href="?=submenu-3">F.A.Q</a>
-						</li>
-						<li class="nav-submenu-item">
-							<a href="?=submenu-4">Calendrier</a>
-						</li>
-					</ul>
-				</li>
-				<li class="nav-item">
-					<a href="?=portfolio">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a href="?=services">Services</a>
-					<ul class="nav-submenu">
-						<li class="nav-submenu-item">
-							<a href="?=submenu-1">Submenu item 1</a>
-						</li>
-						<li class="nav-submenu-item">
-							<a href="?=submenu-2">Submenu item 2</a>
-						</li>
-						<li class="nav-submenu-item">
-							<a href="?=submenu-3">Submenu item 3</a>
-						</li>
-						<li class="nav-submenu-item">
-							<a href="?=submenu-4">Submenu item 4</a>
-						</li>
-					</ul>
-				</li>
-				<li class="nav-item">
-					<a href="?=testimonials">Staff</a>
-				</li>
-				<li class="nav-item">
-					<a href="?=contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</section>
+				<div id="menu-title">Nenu principal</div>
+				<nav  class="nav">
+						<ul class="nav-list">
+							<li class="nav-item">
+								<a href="?=about">Accueil</a>
+							</li>
+							<li class="nav-item">
+								<a href="?=about">News</a>
+							</li>
+							<li class="nav-item">
+								<a href="?=home">Divers</a>
+								<ul class="nav-submenu">
+									<li class="nav-submenu-item">
+										<a href="?=submenu-1">Astuces</a>
+									</li>
+									<li class="nav-submenu-item">
+										<a href="?=submenu-2">Blog</a>
+									</li>
+									<li class="nav-submenu-item">
+										<a href="?=submenu-3">F.A.Q</a>
+									</li>
+									<li class="nav-submenu-item">
+										<a href="?=submenu-4">Calendrier</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="?=portfolio">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a href="?=services">Services</a>
+								<ul class="nav-submenu">
+									<li class="nav-submenu-item">
+										<a href="?=submenu-1">Submenu item 1</a>
+									</li>
+									<li class="nav-submenu-item">
+										<a href="?=submenu-2">Submenu item 2</a>
+									</li>
+									<li class="nav-submenu-item">
+										<a href="?=submenu-3">Submenu item 3</a>
+									</li>
+									<li class="nav-submenu-item">
+										<a href="?=submenu-4">Submenu item 4</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item">
+								<a href="?=testimonials">Staff</a>
+							</li>
+							<li class="nav-item">
+								<a href="?=contact">Contact</a>
+							</li>
+						</ul>
+					</nav>
+			</section>
 
 	<div id="sub-header">
 	<div class="sub-container">
-		<a  href="{PATH_TO_ROOT}/contact/" alt="Nous contacter ..." ><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/tweetboost.png" title="logotype">@TwistBoost</a>
+		<a  href="{PATH_TO_ROOT}/contact/" alt="Nous contacter ..." ><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/tweetboost.png" title="logotype">@TweetBoost</a>
 	</div>
 		# IF C_MENUS_SUB_HEADER_CONTENT #
 			# START menus_sub_header #
@@ -202,19 +203,9 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 		</div>
-
 	</footer>
 
 	<div id="menugo">

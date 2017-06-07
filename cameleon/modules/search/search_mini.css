@@ -1,11 +1,33 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Cameleon
+ * Par      : EnymSay
+ * Date     : 31/05/2017
+ * Site web :  http://easy-design.net/ | https://www.phpboost.com/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Modifié par : EDN | Swan
+ * Date      : 31/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+#module-mini-search {
+	position: absolute;
+	right: 20px;
+	padding: 0 10px 0 70px;
+	margin: 0px 20px 0 0;
+	background: url('images/search.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0.0);
+	width: 247px;
+	height: 60px;
+	color: #888;
+}
 #module-mini-search form {
-	float: right;
-	padding: 10px;
-	margin: 40px 20px 0 0;
-	background-color: rgba(255, 255, 255, 0.6);
-	border: 1px #BEBEBE solid;
-	border-radius: 10px;
-	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+margin: 7px 2px 0 0;
+width: 166px;
+height: 30px;
 }
 
 @media (max-width: 768px) {
@@ -33,9 +55,10 @@
 #mini-search-form.input-element-button input {
 	width: 120px;
 	height: 25px;
-	background-color: #ECECEC;
-	border: 1px #FFFFFF solid;
+	background: none;
+	border:none;
 	border-radius: 10px 0 0 10px;
+	color: #FFFFFF;
 }
 
 #mini-search-form.input-element-button button {
@@ -46,4 +69,14 @@
 	border-width: 1px;
 	border-style: solid;
 	border-color: #FFFFFF #FFFFFF #FFFFFF #E1E1E1;
+}
+@media (max-width: 768px) {
+	#module-mini-search {
+		position:absolute;
+		left: 0;
+		top: -500px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
 }

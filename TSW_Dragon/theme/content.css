@@ -1,11 +1,15 @@
 /*---------------------------------------------------------
  * Theme    : TSW_Dragon 
  * Par      : EDN | Swan
- * Date     : 13/04/2016
+ * Date     : 27/01/2014
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
- *---------------------------------------------------------
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.0 : 13/04/2016
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
  * Théme compatible avec deux menus (droite et gauche)
  * le choix reste possible sur une seule colonne de menus.
  *----------------------------------------------------------*/
@@ -1529,8 +1533,10 @@ body.dragging * {
 	text-align: center;
 }
 
-aside#menu-right .module-mini-container .sub-title,
-aside#menu-left .module-mini-container .sub-title  {
+aside#menu-right .module-mini-container h5,
+aside#menu-right .module-mini-container h3 a,
+aside#menu-left .module-mini-container h5,
+aside#menu-left .module-mini-container h3 a  {
     color: #ffffff;
     font-size: 12px;
     line-height: 30px;
@@ -1542,10 +1548,7 @@ aside#menu-left .module-mini-container .sub-title  {
 	
 @media (max-width:768px) {
 	aside#menu-right .module-mini-container .sub-title,
-	aside#menu-left .module-mini-container .sub-title {
-	margin-top: 5px;
-	display: block;
-	font-weight: bold;
+	aside#menu-left .module-mini-container .sub-title  {
 		/*margin-top: -10px;*/
 		 line-height: 5px;
 
@@ -1559,10 +1562,8 @@ aside#menu-left .module-mini-container .sub-title  {
 	}
 }
 .module-mini-container .sub-title {
-	margin-top: 5px;
 	display: block;
 	font-weight: bold;
-
 	color: #ff0000;
 }
 

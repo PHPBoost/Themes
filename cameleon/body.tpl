@@ -2,29 +2,17 @@
 	<header id="header">
 		<div id="top-header">
 			<div id="site-infos">
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({HEADER_LOGO});"# ENDIF #></div>
+				<!--div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({HEADER_LOGO});"# ENDIF #></div>
 				<div id="site-name-container">
 					<a id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>
-				</div>
+				</div-->
 			</div>
 			<div id="top-header-content">
 			# IF C_MENUS_HEADER_CONTENT #
 				# START menus_header #
 				{menus_header.MENU}
 				# END menus_header #
-			# ENDIF #
-			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
 			# ENDIF #
 			</div>
 		</div>
@@ -127,20 +115,22 @@
 			# ENDIF #
 
 			<div class="footer-infos">
-				<span>
+				<span class="cms">
 					{L_POWERED_BY} <a href="http://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a> {L_PHPBOOST_RIGHT}
 				</span>
 				# IF C_DISPLAY_BENCH #
-				<span>
-					&nbsp;|&nbsp;
-					{L_ACHIEVED} {BENCH}{L_UNIT_SECOND} - {REQ} {L_REQ} - {MEMORY_USED}
+				<span class="requete">
+				<span class="footer-infos-separator"> | </span>{L_ACHIEVED} {BENCH}{L_UNIT_SECOND} - {REQ} {L_REQ} - {MEMORY_USED}
 				</span>
 				# ENDIF #
 				# IF C_DISPLAY_AUTHOR_THEME #
-				<span>
-					| {L_THEME} {L_THEME_NAME} {L_BY}
+				<span class="author">
+				<span class="footer-infos-separator"> | </span>{L_THEME} {L_THEME_NAME} {L_BY}
 					<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
 				</span>
+				# ENDIF #
+				# IF C_VISIT_COUNTER #
+					<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 				# ENDIF #
 			</div>
 		</div>

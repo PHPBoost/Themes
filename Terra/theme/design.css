@@ -9,8 +9,9 @@
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
  *---------------------------------------------------------
  * Porté par : EDN | Swan
- * Date      : 07/03/2017
- *---------------------------------------------------------
+ * Date V5.0 : 07/03/2017
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
  * Thème compatible avec un  menu (droite ou gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
@@ -368,13 +369,16 @@ nav#breadcrumb ol li:not(.current):after {
 	}
 }
 
-
-/* --- Scroll to Top --- */
+/*======================
+ --- Scroll to Top ---
+=======================*/
 .scroll-to {
 	position: fixed;
 	z-index: 10;
 	display: none;
-	background-color: rgba(15, 15, 16, 0.8);
+	background-color: rgba(0, 6, 64, 0.8);
+	border: 1px solid #2a2dc9;
+	border-radius: 5px;
 }
 
 #scroll-to-top {
@@ -394,17 +398,37 @@ nav#breadcrumb ol li:not(.current):after {
 	transition: 0.5s;
 }
 
-/* --   Cookie Bar  -- */ 
-/* ------------------- */
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 40px;
+		padding: 9px 11px 11px 10px;
+	}
+
+	.scroll-to i {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
+}
+
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+
 .cookiebar-container {
 	z-index: 100;
 	left: 0;
 	right: 0;
 	top: 0;
 	padding: 7px 20px;
-	background-color: #F2F2F2;
-	border-bottom: 1px solid #E2E2E2;
-	font-size: 0.9em;
+	background-color: #000645;
+	border-bottom: 2px solid #2a2dc9;
+	font-size: 1em;
 	text-align: center;
 }
 
@@ -419,13 +443,13 @@ nav#breadcrumb ol li:not(.current):after {
 @media (min-width: 769px) {
 	.cookiebar-content {
 		display: inline-block;
-		max-width: calc(100% - 250px);
+		max-width: calc(100% - 300px);
 		vertical-align: middle;
 	}
 
 	.cookiebar-actions {
 		display: inline-block;
-		width: 250px;
+		width: 300px;
 	}
 }
 
@@ -451,14 +475,16 @@ nav#breadcrumb ol li:not(.current):after {
 	}
 }
 
-.cookiebar-button-understand 		{ background-color: #337AB7; border-color: #2E6DA4; }
-.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
+.cookiebar-button-understand 		{ background-color: #000000; border: 1px solid #366393;  color: #78e4ff; box-shadow: 0 0 0 rgba(255, 255, 255, 0.2) inset, 0 0 2px rgba(0, 0, 0, 0.05);}
+.cookiebar-button-understand:hover 	{ background-color: #091c44; }
 
-.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
-.cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000; }
+.cookiebar-button-allowed:hover 		{ background: #000000; }
 
-.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
-.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019; }
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+.cookiebar-more a {color: #efefef; }
 
 @media (max-width: 468px) {
 	.cookiebar-more {

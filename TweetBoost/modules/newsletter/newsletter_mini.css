@@ -1,3 +1,19 @@
+/*---------------------------------------------------------
+ * Theme    : TweetBoost
+ * Par      : EDN | Swan
+ * Date     : 03/04/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+   *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.0 : 03/04/2016
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
 .newsletter-form {
 	background: #000000 none repeat scroll 0 0;
     border: 1px solid #000000;

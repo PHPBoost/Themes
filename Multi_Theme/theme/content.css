@@ -1,15 +1,15 @@
 /*---------------------------------------------------------
- * Theme    : HASH_Black
- * Par      : EDN | Swan
- * Date     : 18/11/2015
- * Site web :  http://easy-design.net/
+ * Theme    : Multi_Theme
+ * Par      : Sakura
+ * Porté en V5.0.XX : 01/04/2016
+ * Porté en V5.1.XX : 30/05/2017
+ * Site web :  http://news-manga.com | http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
-
 /* --------------------------------------
 		content.css
 Contient les formulaires, les modules (et modules minis), messages.
@@ -1502,7 +1502,7 @@ body.dragging * {
 	display: block;
 	font-weight: bold;
     color: #515c68;
-    font-size: 1.6rem;
+    font-size: 12px;
 }
 
 .module-mini-contents {
@@ -1683,9 +1683,7 @@ div#release {
 		padding: 1em 0;
 	}
 
-	.module-mini-container .sub-title,
-	.module-mini-container h3 {
-
+	.module-mini-container .sub-title {
 		color: #444444;
 	}
 

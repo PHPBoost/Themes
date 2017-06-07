@@ -99,7 +99,7 @@
 			# END menus_header #
 		# ENDIF #
 		</div>
-		<br />
+			<br />
 		<div id="slideshow">
 			<div class="fadein">
 				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/1.png"/>
@@ -109,13 +109,13 @@
 		</div>
 		<div id="menus">
 			<ul>
-				<li><a href="#"><span class="actu">Actualit�s</span></a></li>
+				<li><a href="#"><span class="actu">Actualités</span></a></li>
 				<li><a href="#"><span class="frum">Forum</span></a></li>
-				<li><a href="#"><span class="vids">Vid�os</span></a></li>
+				<li><a href="#"><span class="vids">Vidéos</span></a></li>
 				<li><a href="#"><span class="galr">Galerie</span></a></li>
 			</ul>
 		</div>
-		<br />
+			<br />
 		<div id="sous-global">
 
 
@@ -139,26 +139,26 @@
 
 					<div id="main-content" itemprop="mainContentOfPage">
 
-						<div id="menu-mess">
-							# INCLUDE ACTIONS_MENU #
-							<nav id="breadcrumb" itemprop="breadcrumb">
-								<ol>
-									<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-										<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
-											<span itemprop="title">{L_INDEX}</span>
-										</a>
-									</li>
-									# START link_bread_crumb #
-									<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"# IF link_bread_crumb.C_CURRENT # class="current"# ENDIF #>
-										<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
-											<span itemprop="title"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/breadcrumb.png" alt="" class="valign_middle" /> {link_bread_crumb.TITLE}</span>
-										</a>
-									</li>
-									# END link_bread_crumb #
-								</ol>
-							</nav>
-							# INCLUDE KERNEL_MESSAGE #
-						</div>
+					<div id="menu-mess">
+						# INCLUDE ACTIONS_MENU #
+						<nav id="breadcrumb" itemprop="breadcrumb">
+							<ol>
+								<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+									<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
+										<span itemprop="title">{L_INDEX}</span>
+									</a>
+								</li>
+								# START link_bread_crumb #
+								<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
+									<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
+										<span itemprop="title"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/breadcrumb.png" alt="" class="valign_middle" /> {link_bread_crumb.TITLE}</span>
+									</a>
+								</li>
+								# END link_bread_crumb #
+							</ol>
+						</nav>
+						# INCLUDE KERNEL_MESSAGE #
+					</div>
 						{CONTENT}
 					</div>
 
@@ -189,7 +189,7 @@
 				# ENDIF #
 
 				<div class="spacer"></div>
-		</div>
+			</div>
 	</div>
 
 	<footer id="footer">
@@ -226,16 +226,7 @@
 			</span>
 			# ENDIF #
 			# IF C_VISIT_COUNTER #
-			<div id="visit-counter" class="hidden-small-screens">
-				<div class="visit-counter-total">
-					<span class="text-strong">{L_VISIT} : </span>
-					{VISIT_COUNTER_TOTAL}
-				</div>
-				<div class="visit-counter-today">
-					<span class="text-strong">{L_TODAY} : </span>
-					{VISIT_COUNTER_DAY}
-				</div>
-			</div>
+				<span class="footer-infos-separator"> | </span><span class="visit-counter">{L_VISIT} : {VISIT_COUNTER_TOTAL}&nbsp;-&nbsp;{L_TODAY} : {VISIT_COUNTER_DAY}</span>
 			# ENDIF #
 			<div class="corp-logo">
 				<a target="_blank" href="http://trionworlds.com/fr/"><img alt="TRION Worlds" src="./templates/{THEME}/theme/images/TRION.png"></a>
