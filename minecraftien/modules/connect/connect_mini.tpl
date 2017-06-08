@@ -31,20 +31,20 @@
 	# IF C_USER_NOTCONNECTED #
 		<div id="connect-menu" class="module-mini-container not-connected">
 			<div class="module-mini-top">
-				<div class="sub-title">{L_CONNECT}</div>
+				<div class="sub-title">{@connection}</div>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();" class="form-element">
-					<label>{L_PSEUDO}<br /><input type="text" id="login" name="login" placeholder="{L_PSEUDO}"></label>
-					<label>{L_PASSWORD}<br /><input type="password" id="password" name="password" placeholder="{L_PASSWORD}"></label>
-					<label>{L_AUTOCONNECT} <input checked="checked" type="checkbox" name="autoconnect"></label>
+					<label>{@login}<br /><input type="text" id="login" name="login" placeholder="{@login}"></label>
+					<label>{@password}<br /><input type="password" id="password" name="password" placeholder="{@password}"></label>
+					<label>{@autoconnect} <input checked="checked" type="checkbox" name="autoconnect"></label>
 					<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
 					<input type="hidden" name="token" value="{TOKEN}">
-					<button type="submit" name="authenticate" value="internal" class="submit">{L_CONNECT}</button>
+					<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 				</form>
 				<div class="connect-register">
 					# IF C_USER_REGISTER #
-						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {L_REGISTER}</a>
+						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
 						<br />
 						# IF C_FB_AUTH_ENABLED #
 						<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
@@ -54,7 +54,7 @@
 						# ENDIF #
 					# ENDIF #
 					<br />
-					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {L_FORGOT_PASS}</a>
+					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {@forget-password}</a>
 				</div>
 			</div>
 			<div class="module-mini-bottom">
@@ -68,7 +68,7 @@
 			<div class="module-mini-contents vertical-fieldset">
 				<ul class="connect-content">
 				<li class="has-sub"><span class="submenu-button"></span>
-				<a href="#" title="Animée" class="cssmenu-title">{L_PROFIL}</a>
+				<a href="#" title="Animée" class="cssmenu-title">{@dashboard}</a>
 				 
 				<ul class="level-1"> 
 					<li>
@@ -97,7 +97,7 @@
 					</li>
 					<li>
 						<i class="fa fa-sign-out"></i>
-						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {L_DISCONNECT}</a>
+						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {@disconnect}</a>
 					</li>
 				</ul>
 				</li>
@@ -113,7 +113,7 @@
 				<ul class="level-0">
 				<li><a href="${relative_url(UserUrlBuilder::connect())}" title="" class="cssmenu-title">Se connecter</a></li>
 				# IF C_USER_REGISTER #
-				<li><a href="${relative_url(UserUrlBuilder::registration())}" title="" class="cssmenu-title">{L_REGISTER}</a></li>
+				<li><a href="${relative_url(UserUrlBuilder::registration())}" title="" class="cssmenu-title">{@register}</a></li>
 					
 					# IF C_FB_AUTH_ENABLED #
 					<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
@@ -156,7 +156,7 @@
 					</li>
 					<li>
 						
-						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="cssmenu-title"><i class="fa fa-sign-out"></i> {L_DISCONNECT}</a>
+						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="cssmenu-title"><i class="fa fa-sign-out"></i> {@disconnect}</a>
 					</li>
 				</ul>
 				</li>

@@ -31,20 +31,20 @@
 	# IF C_USER_NOTCONNECTED #
 		<div id="connect-menu" class="module-mini-container">
 			<div class="module-mini-top">
-				<div class="sub-title">{L_CONNECT}</div>
+				<div class="sub-title">{@connection}</div>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();" class="form-element">
-					<label>{L_PSEUDO}<br /><input type="text" id="login" name="login" placeholder="{L_PSEUDO}"></label>
-					<label>{L_PASSWORD}<br /><input type="password" id="password" name="password" placeholder="{L_PASSWORD}"></label>
-					<label>{L_AUTOCONNECT} <input checked="checked" type="checkbox" name="autoconnect"></label>
+					<label>{@login}<br /><input type="text" id="login" name="login" placeholder="{@login}"></label>
+					<label>{@password}<br /><input type="password" id="password" name="password" placeholder="{@password}"></label>
+					<label>{@autoconnect} <input checked="checked" type="checkbox" name="autoconnect"></label>
 					<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
 					<input type="hidden" name="token" value="{TOKEN}">
-					<button type="submit" name="authenticate" value="internal" class="submit">{L_CONNECT}</button>
+					<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 				</form>
 				<div class="connect-register">
 					# IF C_USER_REGISTER #
-						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {L_REGISTER}</a>
+						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
 						<br />
 						# IF C_FB_AUTH_ENABLED #
 						<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
@@ -54,7 +54,7 @@
 						# ENDIF #
 					# ENDIF #
 					<br />
-					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {L_FORGOT_PASS}</a>
+					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {@forget-password}</a>
 				</div>
 			</div>
 			<div class="module-mini-bottom">
@@ -63,7 +63,7 @@
 	# ELSE #
 		<div id="connect-menu" class="module-mini-container">
 			<div class="module-mini-top">
-				<h5 class="sub-title">{L_PROFIL}</h5>
+				<h5 class="sub-title">{@dashboard}</h5>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<ul class="connect-content">
@@ -93,7 +93,7 @@
 					</li>
 					<li>
 						<i class="fa fa-sign-out"></i>
-						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {L_DISCONNECT}</a>
+						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {@disconnect}</a>
 					</li>
 				</ul>
 			</div>
@@ -105,19 +105,19 @@
 	# IF C_USER_NOTCONNECTED #
 	<div id="connect-menu">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> {L_CONNECT}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{@connection}"><i class="fa fa-sign-in"></i> {@connection}</a>
 			<div class="noconnect-content">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
-					<input type="text" id="login" name="login" placeholder="{L_PSEUDO}" class="connect_form">
-					<input type="password" id="password" name="password" class="connect_form" placeholder="{L_PASSWORD}">
+					<input type="text" id="login" name="login" placeholder="{@login}" class="connect_form">
+					<input type="password" id="password" name="password" class="connect_form" placeholder="{@password}">
 					<input checked="checked" type="checkbox" name="autoconnect">
 					<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
 					<input type="hidden" name="token" value="{TOKEN}">
-					<button type="submit" name="authenticate" value="internal" class="submit">{L_CONNECT}</button>
+					<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 				</form>
 				# IF C_USER_REGISTER #
 					<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
-						<button type="submit" name="register" value="true" class="submit">{L_REGISTER}</button>
+						<button type="submit" name="register" value="true" class="submit">{@register}</button>
 						<input type="hidden" name="token" value="{TOKEN}">
 					</form>
 					# IF C_FB_AUTH_ENABLED #
@@ -127,14 +127,14 @@
 					<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus"></i><span>${LangLoader::get_message('google-connect', 'user-common')}</span></a>
 					# ENDIF #
 				# ENDIF #
-				<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">{L_FORGOT_PASS}</a>
+				<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">{@forget-password}</a>
 			</div>
 		</div>
 	</div>
 	# ELSE #
 	<div id="connect-menu">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_PROFIL}"><i class="fa fa-bars"></i> {L_PROFIL}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{@dashboard}"><i class="fa fa-bars"></i> {@dashboard}</a>
 			<ul class="connect-content">
 				<li>
 					<i class="fa fa-user"></i>
@@ -162,7 +162,7 @@
 				</li>
 				<li>
 					<i class="fa fa-sign-out"></i>
-					<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {L_DISCONNECT}</a>
+					<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {@disconnect}</a>
 				</li>
 			</ul>
 		</div>

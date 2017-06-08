@@ -31,20 +31,20 @@
 	# IF C_USER_NOTCONNECTED #
 		<div id="connect-menu" class="module-mini-container not-connected">
 			<div class="module-mini-top">
-				<div class="sub-title">{L_CONNECT}</div>
+				<div class="sub-title">{@connection}</div>
 			</div>
 			<div class="module-mini-contents vertical-fieldset">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();" class="form-element">
-					<label>{L_PSEUDO}<br /><input type="text" id="login" name="login" title="{L_PSEUDO}" placeholder="{L_PSEUDO}"></label>
-					<label>{L_PASSWORD}<br /><input type="password" id="password" name="password" title="{L_PASSWORD}" placeholder="{L_PASSWORD}"></label>
-					<label>{L_AUTOCONNECT} <input checked="checked" type="checkbox" name="autoconnect" title="{L_AUTOCONNECT}"></label>
+					<label>{@login}<br /><input type="text" id="login" name="login" title="{@login}" placeholder="{@login}"></label>
+					<label>{@password}<br /><input type="password" id="password" name="password" title="{@password}" placeholder="{@password}"></label>
+					<label>{@autoconnect} <input checked="checked" type="checkbox" name="autoconnect" title="{@autoconnect}"></label>
 					<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
 					<input type="hidden" name="token" value="{TOKEN}">
-					<button type="submit" name="authenticate" value="internal" class="submit">{L_CONNECT}</button>
+					<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 				</form>
 				<div class="connect-register">
 					# IF C_USER_REGISTER #
-						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {L_REGISTER}</a>
+						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
 						<br />
 						# IF C_FB_AUTH_ENABLED #
 						<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
@@ -54,7 +54,7 @@
 						# ENDIF #
 					# ENDIF #
 					<br />
-					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {L_FORGOT_PASS}</a>
+					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {@forget-password}</a>
 				</div>
 			</div>
 			<div class="module-mini-bottom">
@@ -69,7 +69,7 @@
 				<ul class="connect-content">
 					<li>
 						<i class="fa fa-profil"></i>
-						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PROFIL}</a>
+						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {@dashboard}</a>
 					</li>
 					<li>
 						<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>
@@ -93,7 +93,7 @@
 					</li>
 					<li>
 						<i class="fa fa-sign-out"></i>
-						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {L_DISCONNECT}</a>
+						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {@disconnect}</a>
 					</li>
 				</ul>
 			</div>
@@ -105,20 +105,20 @@
 	# IF C_USER_NOTCONNECTED #
 	<div id="connect-menu" class="not-connected">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_CONNECT}"><i class="fa fa-sign-in"></i> {L_CONNECT}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{@connection}"><i class="fa fa-sign-in"></i> {@connection}</a>
 			<div class="connect-content">
-				<a href="{PATH_TO_ROOT}/user/login/" title="" class="cssmenu-title">Se connecter</a>&nbsp;|&nbsp;<a href="{PATH_TO_ROOT}/user/registration/" title="" class="cssmenu-title">{L_REGISTER}</a>
+				<a href="{PATH_TO_ROOT}/user/login/" title="" class="cssmenu-title">Se connecter</a>&nbsp;|&nbsp;<a href="{PATH_TO_ROOT}/user/registration/" title="" class="cssmenu-title">{@register}</a>
 			</div>
 		</div>
 	</div>
 	# ELSE #
 	<div id="connect-menu" class="connected">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{L_PROFIL}"><i class="fa fa-bars"></i> {L_PRIVATE_PROFIL}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{@dashboard}"><i class="fa fa-bars"></i> {L_PRIVATE_PROFIL}</a>
 			<ul class="connect-content">
 				<li>
 					<i class="fa fa-profil"></i>
-					<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PROFIL}</a>
+					<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {@dashboard}</a>
 				</li>
 				<li>
 					<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>
@@ -142,7 +142,7 @@
 				</li>
 				<li>
 					<i class="fa fa-sign-out"></i>
-					<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {L_DISCONNECT}</a>
+					<a href="${relative_url(UserUrlBuilder::disconnect())}" class="small"> {@disconnect}</a>
 				</li>
 			</ul>
 		</div>
