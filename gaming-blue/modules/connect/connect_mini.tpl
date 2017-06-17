@@ -54,7 +54,7 @@
 						# ENDIF #
 					# ENDIF #
 					<br />
-					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> {@forget-password}</a>
+					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> ${LangLoader::get_message('forget-password', 'user-common')}</a>
 				</div>
 			</div>
 			<div class="module-mini-bottom">

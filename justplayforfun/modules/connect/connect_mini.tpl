@@ -53,7 +53,7 @@
 				<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus"></i><span>${LangLoader::get_message('google-connect', 'user-common')}</span></a>
 				# ENDIF #
 			# ENDIF #
-			<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">{@forget-password}</a>
+			<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">${LangLoader::get_message('forget-password', 'user-common')}</a>
 		</div>
 	</div>
 </div>
