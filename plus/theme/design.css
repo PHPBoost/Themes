@@ -12,14 +12,6 @@ html {
     font-size: 10px;
 }
 
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url("http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2") format("woff2");
-    unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
 body {
     position: relative;
     height: auto;
@@ -27,7 +19,7 @@ body {
     background-color: #FFF;
     color: #555555;
     font-size: 1.3em;
-    font-family:"Open Sans", "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -499,13 +491,13 @@ nav#breadcrumb ol li:not(.current):after {
     }
 }
 
-.cookiebar-button-understand        { background-color: #337AB7; border-color: #2E6DA4; }
-.cookiebar-button-understand:hover  { background-color: #2E6DA4; }
+.cookiebar-button-understand        { background-color: #1eb0bc; }
+.cookiebar-button-understand:hover  { background-color: #444; transition: all 0.1s linear; }
 
-.cookiebar-button-allowed           { background-color: #5CB85C; border-color: #4CAE4C; }
-.cookiebar-button-allowed:hover     { background-color: #4CAE4C; }
+.cookiebar-button-allowed           { background-color: #1eb0bc; }
+.cookiebar-button-allowed:hover     { background-color: #444; transition: all 0.1s linear; }
 
-.cookiebar-button-declined          { background-color: #E84E40; border-color: #CE271A; }
+.cookiebar-button-declined          { background-color: #888888; }
 .cookiebar-button-declined:hover    { background-color: #CE271A; }
 
 @media (max-width: 468px) {

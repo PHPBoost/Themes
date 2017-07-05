@@ -41,7 +41,6 @@ ul.connect-content {
 }
 
 #connect-menu div.horizontal-fieldset ul li {
-	color: #FFFFFF;
 	border-right:1px solid #21A7C4;
 	border-left: 1px solid #21BECB;
 }
@@ -55,9 +54,12 @@ ul.connect-content {
 }
 
 #connect-menu div.horizontal-fieldset ul li a {
-	color: #FFFFFF;
 	padding: 2px;
 	font-size:1.4rem;
+}
+
+#top-header #connect-menu div.horizontal-fieldset ul li a {
+	color: #FFFFFF;
 }
 
 #connect-menu div.horizontal-fieldset ul li a:hover {
