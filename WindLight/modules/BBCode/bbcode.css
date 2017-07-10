@@ -342,6 +342,8 @@
 	.bbcode-block-code 		{ width: 130px; }
 	.bbcode-block-smileys   { width: 188px; }
 	.bbcode-block-fa        { width: 272px; }
+	.bbcode-block-aligns    { width: 120px; }
+	.bbcode-block-positions { width: 120px; }
 }
 
 
@@ -402,6 +404,8 @@
 .bbcode-icon-help:before        { content: url('images/help.png'); }
 .bbcode-icon-upload:before      { content: url('images/upload.png'); }
 .bbcode-icon-fa:before          { content: "\f024"; }
+.bbcode-icon-mail:before        { content: "\f0e0"; }
+.bbcode-icon-feed:before        { content: "\f09e"; }
 /* Modification end
 ---------------------------------*/
 
