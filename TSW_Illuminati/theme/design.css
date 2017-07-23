@@ -131,7 +131,7 @@ span#site-slogan {
 }
 
 @media (min-width:800px) {
-	a#site-name {display:none;}
+	a#site-name-gsm {display:none;}
 	div#site-infos {display:none;}
 }
 
