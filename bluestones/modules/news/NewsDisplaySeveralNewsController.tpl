@@ -19,9 +19,11 @@
 					<div class="home-cat">
 						<a itemprop="about" href="{news.U_CATEGORY}" title="{news.CATEGORY_NAME}">{news.CATEGORY_NAME}</a>
 					</div>
-					
-					# IF news.C_PICTURE #<a href="{news.U_LINK}" class="news-picture"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /> </a># ENDIF #				
-					
+						
+					<a href="{news.U_LINK}" title="{news.NAME}" class="picture-link">
+						<div class="home-picture news-picture" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
+					</a>	
+
 					<div class="home-more">
 						# IF C_COMMENTS_ENABLED #<span class="float-right"><i class="fa fa-comments-o"></i> # IF news.C_COMMENTS # ({news.NUMBER_COMMENTS})# ELSE #(0)# ENDIF #</span># ENDIF #
 						<time datetime="# IF NOT news.C_DIFFERED #{news.DATE_ISO8601}# ELSE #{news.DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT news.C_DIFFERED #{news.DATE}# ELSE #{news.DIFFERED_START_DATE}# ENDIF #</time>
