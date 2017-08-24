@@ -271,7 +271,7 @@ hr {border-bottom: 2px groove #87A3B0;}
 	color: #444444;
 }
 
-.formatter-content-title {
+.formatter-container .formatter-title {
 	font-weight: bold;
 }
 

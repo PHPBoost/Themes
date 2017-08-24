@@ -40,6 +40,11 @@ ul.connect-content {
 	padding-top: 3px;
 }
 
+div.connect-content {
+	margin: -7px auto 0 auto;
+	text-align: center; 
+}
+
 #connect-menu ul.connect-content li {
 	list-style-type: none;
 }
@@ -201,7 +206,7 @@ div.connect-register i {
 
 
 @media (min-width: 769px) {
-	#connect-menu div.horizontal-fieldset ul li, #connect-menu div.horizontal-fieldset ul li a {color: #404040; font-weight: normal;}
+	#connect-menu div.horizontal-fieldset ul li, #connect-menu div.horizontal-fieldset ul li a {color: #685535; font-weight: normal;}
 	
 	#connect-menu div.horizontal-fieldset input#login,
 	#connect-menu div.horizontal-fieldset input#password {margin: 5px 0;}
@@ -211,10 +216,8 @@ div.connect-register i {
 		display: inline-block;
 		padding: 0 0 0 5px;
 		vertical-align: middle;
-		color: #E0F3FF;
-	}
-	#connect-menu .forgot-pass:hover {
-		color: #F1F1F1;
+		color: #685535;
+		font-weight: normal;
 	}
 	#connect-menu a.fb {
 		padding: 7px 0 0 4px;

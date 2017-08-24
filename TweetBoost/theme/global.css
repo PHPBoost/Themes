@@ -319,7 +319,7 @@ hr { background: #bbbbbb none repeat scroll 0 0;}
 	color: #444444;
 }
 
-.formatter-content-title {
+.formatter-container .formatter-title {
 	font-weight: bold;
 }
 

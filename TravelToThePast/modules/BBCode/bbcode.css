@@ -15,6 +15,7 @@
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
+
 /** BBcode **/
 .bbcode {
 	position: relative;
@@ -23,7 +24,6 @@
 	width: 99%;
 	background-color: #dfd9c8;
 	border: 1px solid #BBBBBB;
-	border-radius: 4px 4px 0 0;
 }
 
 .bbcode-containers {
@@ -131,11 +131,27 @@
 
 .bbcode-block-container {
 	position: absolute;
+	top: 26px;
+	left: -4px;	
 	bottom: 0;
 	margin: 0;
 	padding: 0;
-	z-index: 10;
+	z-index: 20;
+	text-align: center;
 }
+
+.bbcode-block {
+	margin: 0;
+	background-color: #F3F3F3;
+	border: 1px solid #AAAAAA;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bbcode-block a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
 	.bbcode-block-container {
@@ -272,8 +288,6 @@
 	font-weight: bold;
 }
 
-
-
 .bbcode-block .form-element {
 	margin: 2px 7px;
 }
@@ -328,6 +342,7 @@
 	.bbcode-block-aligns    { width: 120px; }
 	.bbcode-block-positions { width: 120px; }
 }
+
 
 .bbcode-forbidden,
 .bbcode-forbidden i {

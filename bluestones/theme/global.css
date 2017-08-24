@@ -230,7 +230,7 @@ h5.formatter-title { margin-left: 5rem; }
     width: 93%;
     color: #444444;
 }
-.formatter-content-title {
+.formatter-container .formatter-title {
     font-weight: bold;
 }
 .formatter-content {
@@ -277,7 +277,7 @@ h5.formatter-title { margin-left: 5rem; }
 .formatter-hide-close-button {
     position: absolute;
     display: none;
-    top: 2em;
+    top: 1em;
     right: 0;
     color: #BBBBBB;
     font-size: 0.8em;
