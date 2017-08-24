@@ -20,22 +20,21 @@
 						</li>
 						<li>
 							<span class="cssmenu-title">
-								<i class="fa fa-msg-track"></i> {U_TOPIC_TRACK}
+								<i class="fa fa-msg-track"></i> <a class="small" href="{U_TOPIC_TRACK}" title="{L_SHOW_TOPIC_TRACK}">{L_SHOW_TOPIC_TRACK}</a>
 							</span>
 						</li>
 						<li>
 							<span class="cssmenu-title">
-								<i class="fa fa-lastview"></i> {U_LAST_MSG_READ}
+								<i class="fa fa-lastview"></i> <a class="small" href="{U_LAST_MSG_READ}" title="{L_SHOW_LAST_READ}">{L_SHOW_LAST_READ}</a>
 							</span>
 						</li>
 						<li>
 							<span class="cssmenu-title">
-								<i class="fa fa-notread"></i> <span id="nbr_unread_topics2">{U_MSG_NOT_READ}</span>
+								<i class="fa fa-notread"></i> <a class="small" href="{U_MSG_NOT_READ}" title="{L_SHOW_NOT_READS}">{L_SHOW_NOT_READS} # IF C_IS_GUEST # ({NBR_MSG_NOT_READ})# ENDIF #</a>
 								<div class="forum-refresh">
-									<div style="display: none;" id="forum_blockforum_unread2">
-									</div>
+									<div id="forum_blockforum_unread" style="display: none;"></div>
 								</div>
-								<a href="" onclick="XMLHttpRequest_unread_topics('2');return false;" onmouseover="forum_hide_block('forum_unread2', 1);" onmouseout="forum_hide_block('forum_unread2', 0);"><i class="fa fa-refresh" id="refresh_unread2"></i></a>
+								<a href="" onclick="XMLHttpRequest_unread_topics('');return false;" onmouseover="forum_hide_block('forum_unread', 1);" onmouseout="forum_hide_block('forum_unread', 0);"><i class="fa fa-refresh" id="refresh_unread"></i></a>
 							</span>
 						</li>
 						<li>
