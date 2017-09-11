@@ -580,16 +580,73 @@ div.message-helper-small {
 .upload-elements-container {
 	margin: 10px 0 0 20px;
 	overflow: hidden;
+	text-align: left;
 }
 
 .upload-elements-file,
 .upload-elements-repertory {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	margin: 10px;
 }
 
 .upload-elements-repertory {
-	height: 60px;
+	line-height: 50px;
+	width: 180px;
+	text-align: center;
+	border: 1px solid #366493;
+	background-color: #aec7e1;
+}
+
+.upload-repertory-controls {
+	font-size: 0;
+}
+
+.upload-repertory-controls span {
+	font-size: 1.6rem;
+	width: calc(100% / 3);
+	display: inline-block;
+}
+
+.upload-elements-file {
+	width: 180px;
+}
+
+.upload-elements-file input {
+	width: 100%;
+}
+
+.upload-element-name {
+	width: 100%;
+	text-align: center;
+}
+
+.upload-element-picture {
+	width: 100%;
+	height: 100px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.upload-element-icon {
+	width: 100%;
+	line-height: 100px;
+	text-align: center;
+	border: 1px solid #d9d9d9;
+}
+
+.upload-file-controls {
+	font-size: 0;
+}
+
+.upload-file-controls a {
+	font-size: 1.6rem;
+	width: calc(100% / 4);
+	display: inline-block;
+	text-align: center;
+	padding: 3px 0;
 }
 
 .upload-recent-file {
