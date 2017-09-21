@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE repository SYSTEM "http://www.phpboost.com/repository/repository.dtd">
 <repository>
 	<header />
@@ -410,7 +410,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme minecraftien</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -483,7 +483,7 @@
 			</authors>
 			<description>Version 2.0 du theme Just Play for FuN</description>
 			<whatsnew>
-				<new type="improvement">Compatibilité avec PHPBoost V5.0</new>
+				<new type="improvement">CompatibilitÃ© avec PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
@@ -797,7 +797,7 @@
 			</authors>
 			<description>Version 5.0 du theme Around The World</description>
 			<whatsnew>
-				<new type="new">Mise à jour pour PHPBoost V5.0</new>
+				<new type="new">Mise Ã  jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -919,7 +919,7 @@
 			</authors>
 			<description>Version 5.0 du theme Japanese_Traditions</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost 5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
@@ -967,7 +967,7 @@
 			</authors>
 			<description>Version 5.0 du theme Japanese_Traditions XL</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost 5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1016,7 +1016,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Fantasy</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1166,7 +1166,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme CSN-Gaming</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1242,7 +1242,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme AssassinSCreed</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1269,7 +1269,7 @@
 			</authors>
 			<description>Version 5.0.5 du theme Multi_Theme</description>
 			<whatsnew>
-				<new type="bug">Menu avec sous-menus intégrés</new>
+				<new type="bug">Menu avec sous-menus intÃ©grÃ©s</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1366,11 +1366,11 @@
 		</version>
 		<version num="5.0.2" language="french" localized_language="Francais" name="DayZ" priority="low" security-update="false" pubdate="2016/06/01">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">Thème DayZ</download>
+			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">ThÃ¨me DayZ</download>
 			<authors>
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.2 du thème DayZ</description>
+			<description>Version 5.0.2 du thÃ¨me DayZ</description>
 			<whatsnew>
 				<new type="bug">Correction du bug JS Scroll-to</new>
 			</whatsnew>
@@ -1564,7 +1564,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ValentineSDay</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1588,7 +1588,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ApresMidiDete</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1612,7 +1612,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme HeureDhiver</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1636,7 +1636,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MatinDePrintemps</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1660,7 +1660,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SoirdAutomne</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1684,7 +1684,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyBlackSmall</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1708,7 +1708,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyBlackXL</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1732,7 +1732,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyWhiteSmall</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1756,7 +1756,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyWhiteXL</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1780,7 +1780,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme 1erMai</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1804,7 +1804,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Bamboo</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1828,7 +1828,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlackSwan</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1852,7 +1852,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Coqueline</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1876,7 +1876,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Coqueline_Rose</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1900,7 +1900,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme KoiFish</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1924,7 +1924,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Mariage</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1948,7 +1948,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MyLove</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1972,7 +1972,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MyLoving</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1996,7 +1996,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Rosane</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2020,7 +2020,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Rosina</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2044,7 +2044,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme JapanMangaXL</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2068,7 +2068,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ScoopOldPost</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2092,7 +2092,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme TravelToThePast</description>
 			<whatsnew>
-				<new type="improvement">première version</new>
+				<new type="improvement">premiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2116,7 +2116,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ChristmasBlue</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2140,7 +2140,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ChristmasRed</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2164,7 +2164,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Christmas Green</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2188,7 +2188,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme FinalFantasy</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2212,7 +2212,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Universal-PBT</description>
 			<whatsnew>
-				<new type="improvement">Première version</new>
+				<new type="improvement">PremiÃ¨re version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2236,7 +2236,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlueMoon</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2260,7 +2260,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlueNess</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2284,7 +2284,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Terra</description>
 			<whatsnew>
-				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2308,7 +2308,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme WindLight</description>
 			<whatsnew>
-				<new type="improvement">Mise àjour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise Ã jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
