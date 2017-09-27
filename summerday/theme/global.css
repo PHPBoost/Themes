@@ -490,7 +490,7 @@ li.small-block .fa-stack {
 
 /* -- Les messages d erreurs -- */
 /* ---------------------------- */
-div.message-helper-small {
+.message-helper-small {
 	width: 50%;
 }
 
@@ -498,7 +498,8 @@ div.message-helper-small {
 .notice,
 .warning,
 .success,
-.question {
+.question,
+.message-helper {
 	position: relative;
 	display: block;
 	margin: 5px auto 15px auto;
@@ -514,8 +515,9 @@ div.message-helper-small {
 .error:before,
 .notice:before,
 .warning:before,
-.success:before, 
-.question:before {
+.success:before,
+.question:before,
+.message-helper:before {
 	position: absolute;
 	left: 6px;
 	top: 7px;
@@ -535,19 +537,27 @@ div.message-helper-small {
 .warning:before	 { content: "\f071"; }
 .success:before	 { content: "\f00c"; }
 .question:before { content: "\f128"; }
+.member-only:before { content: "\f071"; }
+.modo-only:before   { content: "\f071"; }
+.admin-only:before  { content: "\f071"; }
 
 .error, .error:before       { color: #BA4B49; }
 .notice, .notice:before     { color: #888888; }
 .warning, .warning:before   { color: #C19954; }
 .success, .success:before   { color: #478948; }
 .question, .question:before { color: #3B88AE; }
+.member-only, .member-only:before   { color: #FF5500; }
+.modo-only, .modo-only:before       { color: #FF5500; }
+.admin-only, .admin-only:before     { color: #FF5500; }
 
 .error    { border-color: #BA4B49; }
 .notice   { border-color: #888888; }
 .warning  { border-color: #C19954; }
 .success  { border-color: #478948; }
 .question { border-color: #3B88AE; }
-
+.member-only  { border-color: #FF5500; }
+.modo-only    { border-color: #FF5500; }
+.admin-only   { border-color: #FF5500; }
 
 /* -- Systeme d Upload -- */
 /* ---------------------- */

@@ -533,7 +533,7 @@ li.small-block .fa-stack {
 
 /* -- Les messages d erreurs -- */
 /* ---------------------------- */
-div.message-helper-small {
+.message-helper-small {
 	width: 50%;
 }
 
@@ -541,7 +541,8 @@ div.message-helper-small {
 .notice,
 .warning,
 .success,
-.question {
+.question,
+.message-helper {
 	position: relative;
 	display: block;
 	margin: 5px auto 15px auto;
@@ -557,8 +558,9 @@ div.message-helper-small {
 .error:before,
 .notice:before,
 .warning:before,
-.success:before, 
-.question:before {
+.success:before,
+.question:before,
+.message-helper:before {
 	position: absolute;
 	left: 6px;
 	top: 7px;
@@ -578,19 +580,27 @@ div.message-helper-small {
 .warning:before	 { content: url('../images/icons/warning.png');}
 .success:before	 { content: url('../images/icons/success.png');}
 .question:before { content: url('../images/icons/question.png');}
+.member-only:before { content: "\f071"; }
+.modo-only:before   { content: "\f071"; }
+.admin-only:before  { content: "\f071"; }
 
 .error, .error:before       { color: #88181A; }
 .notice, .notice:before     { color: #641C7E; }
 .warning, .warning:before   { color: #5E3D0F; }
 .success, .success:before   { color: #09460E; }
 .question, .question:before { color: #0000FF; }
+.member-only, .member-only:before   { color: #C19954; }
+.modo-only, .modo-only:before       { color: #C19954; }
+.admin-only, .admin-only:before     { color: #C19954; }
 
 .error    { background-color: #FF9193;}
 .notice   { background-color: #F6C7FF;}
 .warning  { background-color: #F3BC70;}
 .success  { background-color: #E0F1D9;}
 .question { background-color: #ADCEE2;}
-
+.member-only  { background-color: #FDF9E4; border-color: #FBECCD; }
+.modo-only    { background-color: #FDF9E4; border-color: #FBECCD; }
+.admin-only   { background-color: #FDF9E4; border-color: #FBECCD; }
 
 /* -- Systeme d Upload -- */
 /* ---------------------- */

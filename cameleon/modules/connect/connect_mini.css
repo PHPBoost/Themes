@@ -15,149 +15,30 @@
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
-#connect-menu {
-	width: 100%;
-}
 
-@media (max-width: 768px) {
-	#connect-menu {
-		margin: -2px auto 0 auto;
-	}
-}
-
-#connect-menu div.horizontal-fieldset {
-	padding: 10px ;
-	}
-
-@media (max-width: 768px) {
-	#connect-menu div.horizontal-fieldset {
-		padding: 6px ;
-		text-align: center;
-	}
-}
-
-#connect-menu div.vertical-fieldset,
-#connect-menu div.horizontal-fieldset {
+/* -- Connected & not-connected --*/
+#module-connect .horizontal-fieldset {
 	margin: 0;
 }
 
-#connect-menu div.vertical-fieldset form {
-	margin-bottom: 10px;
-}
-#connect-menu div.horizontal-fieldset form {
-	display: inline-block;
+#sub-header #module-connect {
+	min-height: 35px;
 }
 
-#connect-menu div.horizontal-fieldset span {
-	display: none;
-}
-
-ul.connect-content {
-	margin: auto;
+#sub-header #module-connect .connect-contents {
 	padding-top: 3px;
 }
 
-#connect-menu ul.connect-content li {
-	list-style-type: none;
-}
-
-#connect-menu div.horizontal-fieldset ul.connect-content li {
-	display: inline-block;
-	margin-right: 10px;
-}
-#connect-menu div.horizontal-fieldset ul.connect-content li:last-child {
-	margin-right: 0;
-}
-
-#connect-menu ul.connect-content li > i {
-	width: 18px;
-	text-align: center;
-}
-
-#connect-menu div.horizontal-fieldset ul li,
-#connect-menu div.horizontal-fieldset ul li a {
+.connect-register a > i,
+.connect-element a > i,
+.forget-pass-container a > i {
 	color: #121212;
-}
-
-#connect-menu div.horizontal-fieldset ul li > i {
 	vertical-align: 0;
 }
 
-#connect-menu div.vertical-fieldset label {
-	padding-right: 0;
-	text-align: center;
-}
-
-#connect-menu div.vertical-fieldset ul.connect-content {
-	text-align: left;
-}
-
-#connect-menu div.horizontal-fieldset ul.connect-content {
-	text-align: center;
-}
-
-div.connect-register i {
-	vertical-align: -1px;
-}
-
-#connect-menu input#login,
-#connect-menu input#password {
-	padding: 4px 6px;
-}
-
-#connect-menu div.horizontal-fieldset input#login,
-#connect-menu div.horizontal-fieldset input#password {
-	margin: 0;
-}
-
-@media (max-width: 768px) {
-	#connect-menu div.horizontal-fieldset input#login,
-	#connect-menu div.horizontal-fieldset input#password {
-		margin: 5px 0;
-	}
-}
-
-#connect-menu div.vertical-fieldset input#login,
-#connect-menu div.vertical-fieldset input#password {
-	width: 120px;
-}
-
-#connect-menu div.vertical-fieldset button {
-	margin: 5px 0;
-}
-
-#connect-menu div.horizontal-fieldset button {
-	margin: 0;
-}
-
-/* Mot de passe oublie */ 
-#connect-menu .vertical-fieldset .forgot-pass {
-	color: #999999;
-}
-#connect-menu .vertical-fieldset .forgot-pass:hover {
-	color: #555555;
-}
-
-@media (min-width: 769px) {
-	#connect-menu .forgot-pass {
-		display: inline-block;
-		padding: 0 0 0 5px;
-		vertical-align: middle;
-		color: #222222;
-	}
-	#connect-menu .forgot-pass:hover {
-		color: #F1F1F1;
-	}
-}
-
-@media (max-width: 768px) {
-	#connect-menu .forgot-pass {
-		padding: 20px;
-		display: block;
-	}
-	#connect-menu .forgot-pass:hover {
-		text-decoration: underline;
-	}
+#module-connect a > span {
+	color: #121212;
+	margin: 0 0 0 5px;
 }
 
 .js-menu-button {
@@ -167,81 +48,161 @@ div.connect-register i {
 @media (max-width: 768px) {
 	.js-menu-button {
 		display: inline-block;
-		padding: 5px 10px 5px 10px;
-	}
-	
-	#connect-menu div.horizontal-fieldset div.connect-content,
-	#connect-menu div.horizontal-fieldset form {
-		width: 100%;
-		text-align: center;
+		padding: 5px 10px 5px 12px;
 	}
 
-	#connect-menu .horizontal-fieldset li {
-		padding: 8px 0 8px 2px;
-	}
-
-	#connect-menu .horizontal-fieldset a {
-		color: #121212;
-		text-decoration: none;
-	}
-
-	#connect-menu div.horizontal-fieldset span {
-		display: inline-block;
-	}
-
-	.horizontal-fieldset ul.connect-content, 
-	.horizontal-fieldset div.connect-content {
-		position: absolute;
-		padding: 10px;
-		left: -100%;
-		visibility: hidden;
-		opacity: 0;
-		transition: left 0.5s, visibility 0.5s, opacity 0.5s;
-	}
-
-	#connect-menu.active ul.connect-content,
-	#connect-menu.active div.connect-content {
-		z-index: 200;
-		left: 0%;
-		width: 100%;
-		visibility: visible;
-		opacity: 1;
-		transition: left 0.5s, visibility 0.5s, opacity 0.5s;
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMGYwZjAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-		background: linear-gradient(to right,  rgba(254,254,254,0) 0%,rgba(254,254,254,1) 20%,rgba(254,254,254,1) 35%,rgba(254,254,254,1) 50%,rgba(254,254,254,1) 65%,rgba(248,248,248,1) 80%,rgba(240,240,240,0) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fefefe', endColorstr='#00f0f0f0',GradientType=1 ); /* IE6-8 */
-	}
-
-	#connect-menu div.horizontal-fieldset ul.connect-content li {
-		display: block;
-		text-align: center;
-	}
-	
-	#connect-menu.active div.horizontal-fieldset div.connect-content input {
-		display: block;
-		margin-bottom: 10px;
-		padding: 10px 20px;
-		width: 100%;
-	}
-	
-	#connect-menu.active div.horizontal-fieldset div.connect-content button.submit {
-		display: inline-block;
-		margin-bottom: 10px;
-		padding: 10px 20px;
-		width: 100%;
+	.js-menu-button span {
+		padding: 0 0 0 7px;
 	}
 }
 
+/* -- not-connected --*/
+.connect-register-container form {
+	display: inline-block;
+}
 
-/* Partie Sociale */
-#connect-menu .horizontal-fieldset a.fb {
+.connect-register a.fb {
 	padding: 6px 0 0 4px;
 }
 
-@media (min-width: 769px) {
-	#connect-menu a.fb {
-		padding: 7px 0 0 4px;
+a.social-connect {
+	margin: -2px 0;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	.connect-input-container label,
+	.connect-input-container label > span,
+	.connect-input-container button {
+		display: block;
+	}
+
+	.connect-register-container {
+		margin: 0.5em 0.6em 0.5em 0.6em;
+	}
+
+	.forget-pass-container {
+		margin: 0 0.6em 0.5em 0.6em;
+	}
+
+	.connect-input-container button {
+		margin: 5px 0 0 0;
+	}
+
+	.active.not-connected.horizontal .connect-containers {
+		height: 300px;
+	}
+
+	.module-mini-contents.connect-contents,
+	.connect-contents label,
+	.connect-contents button {
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+
+	.connect-contents button {
+		display: inline-block;
+		margin: 10px 0 10px 0;
 	}
 }
 
+@media (min-width: 769px) {
+	.connect-input-container,
+	.connect-register-container,
+	.forget-pass-container {
+		display: inline-block;
+	}
 
+	.horizontal-fieldset.connect-input-container label > span {
+		display: none;
+	}
+
+	.vertical-fieldset form label {
+		margin-bottom: 10px;
+	}
+
+	.module-mini-contents .connect-register-container a {
+		display: inline-block;
+	}
+	.module-mini-contents .connect-register {
+		padding: 5px 0 0 0;
+	}
+
+	.module-mini-contents .forget-pass-container {
+		display: block;
+		margin: 10px;
+	}
+
+	.connect-register a.fb {
+		padding: 7px 0 0 4px;
+	}
+
+}
+
+/* -- connected -- */
+.connect-elements-container {
+	margin: 0;
+	padding: 0;
+}
+
+.connect-element {
+	list-style-type: none;
+}
+
+.connect-element a {
+	display: block;
+	margin: 0 10px 0 0;
+}
+
+.horizontal .connect-element a 	{ padding: 7px 0 7px 0; }
+.vertical .connect-element a 	{ padding: 5px 0 5px 0; }
+
+@media (min-width: 769px) {
+	.horizontal .connect-contents {
+		text-align: center;
+	}
+
+	.connected .vertical .connect-contents {
+		text-align: left;
+	}
+
+	.horizontal .connect-element {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 768px) {
+	.horizontal .connect-containers,
+	.horizontal .connect-containers label {
+		text-align: center;
+	}
+
+	.horizontal .connect-containers label {
+		display: block;
+	}
+
+	.horizontal .connect-elements-container,
+	.horizontal .connect-containers {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+		padding: 0 0 0 12px;
+	}
+
+	.active.horizontal .connect-elements-container,
+	.active.horizontal .connect-containers {
+		position: relative;
+		z-index: 200;
+		width: 100%;
+		transition: height 0.3s;
+	}
+
+	.active.horizontal .connect-elements-container {
+		height: 190px;
+	}
+
+	.vertical .connect-element a {
+		padding: 9px 0 9px 0;
+		margin: 3px 0 3px 0;
+	}
+}

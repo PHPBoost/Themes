@@ -169,3 +169,19 @@ ul.no-list a i.fa {
 #wiki-link-container li {
 	margin: 0 3px 0 0;
 }
+
+
+/* Last articles */
+.last-articles-element-container {
+	padding: 8px 8px 8px 10px;
+	border-width: 1px 1px 0 1px;
+	text-align: left;
+}
+
+.last-articles-element-container:last-child {
+	border-width: 1px 1px 1px 1px;
+}
+
+.last-articles-element i {
+	margin: 0 5px 0 0;	
+}

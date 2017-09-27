@@ -522,11 +522,16 @@ li.small-block .fa-stack {
 
 /* -- Les messages d erreurs -- */
 /* ---------------------------- */
-div.message-helper-small {
+.message-helper-small {
 	width: 50%
 }
 
-.error, .notice, .warning, .success, .question {
+.error,
+.notice,
+.warning,
+.success,
+.question,
+.message-helper {
 	height: auto;
 	padding: 10px 10px 10px 40px;
 	margin: 5px auto 15px auto;
@@ -540,7 +545,12 @@ div.message-helper-small {
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.error:before, .notice:before, .warning:before, .success:before, .question:before {
+.error:before,
+.notice:before,
+.warning:before,
+.success:before,
+.question:before,
+.message-helper:before {
 	font-family: FontAwesome;
 	font-style: normal;
 	font-weight: normal;
@@ -560,6 +570,9 @@ div.message-helper-small {
 .warning:before	 { content: "\f071"; }
 .success:before	 { content: "\f00c"; }
 .question:before { content: "\f128"; }
+.member-only:before { content: "\f071"; }
+.modo-only:before   { content: "\f071"; }
+.admin-only:before  { content: "\f071"; }
 
 
 /* -- Systeme d Upload -- */

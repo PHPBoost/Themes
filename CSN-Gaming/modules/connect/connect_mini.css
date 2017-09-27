@@ -12,141 +12,32 @@
  * Théme compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
-#connect-menu div.horizontal-fieldset {
-	padding: 0px 8px 2px 2px;
-}
 
-#connect-menu div.vertical-fieldset,
-#connect-menu div.horizontal-fieldset {
+
+/* -- Connected & not-connected --*/
+#module-connect .horizontal-fieldset {
 	margin: 0;
 }
 
-#connect-menu div.vertical-fieldset form {
-	margin-bottom: 10px;
-}
-#connect-menu div.horizontal-fieldset form {
-	display: inline-block;
+#sub-header #module-connect {
+	min-height: 35px;
 }
 
-#connect-menu div.horizontal-fieldset span {
-	display: none;
-}
-
-ul.connect-content {
-	margin: auto;
-	padding-top: 10px;
-}
-
-#connect-menu ul.connect-content li {
-	list-style-type: none;
-}
-
-#connect-menu div.horizontal-fieldset ul.connect-content li {
-	display: inline-block;
-	margin-right: 10px;
-}
-#connect-menu div.horizontal-fieldset ul.connect-content li:last-child {
-	margin-right: 0;
-}
-
-#connect-menu ul.connect-content li > i {
-	width: 18px;
-	text-align: center;
-}
-
-#connect-menu div.horizontal-fieldset ul li,
-#connect-menu div.horizontal-fieldset ul li a {
-    color: #FFFFFF;
-}
-
-#connect-menu div.horizontal-fieldset ul li:hover,
-#connect-menu div.horizontal-fieldset ul li a:hover {
-    color: #E9992A;
-}
-
-#connect-menu div.horizontal-fieldset ul li > i {
-	vertical-align: 0;
-}
-
-#connect-menu div.vertical-fieldset label {
-	padding-right: 0;
-	text-align: center;
-}
-
-#connect-menu div.vertical-fieldset ul.connect-content {
-	text-align: left;
-}
-
-#connect-menu div.horizontal-fieldset ul.connect-content {
+#sub-header #module-connect .connect-contents {
+	padding-top: 3px;
 	text-align: right;
 }
 
-div.connect-register i {
-	vertical-align: -1px;
+.connect-register a > i,
+.connect-element a > i,
+.forget-pass-container a > i {
+	color: #ffffff;
+	vertical-align: 0;
 }
 
-#connect-menu input#login,
-#connect-menu input#password {
-	padding: 4px 6px;
-}
-
-#connect-menu div.horizontal-fieldset input#login,
-#connect-menu div.horizontal-fieldset input#password {
-    margin: 0;
-    padding: 0.1em 1em;
-}
-
-@media (max-width: 768px) {
-	#connect-menu div.horizontal-fieldset input#login,
-	#connect-menu div.horizontal-fieldset input#password {
-		margin: 5px 0;
-	}
-}
-
-#connect-menu div.vertical-fieldset input#login,
-#connect-menu div.vertical-fieldset input#password {
-	width: 120px;
-}
-
-#connect-menu div.vertical-fieldset button {
-	margin: 5px 0;
-}
-
-#connect-menu div.horizontal-fieldset button {
-	margin: 0;
-    padding: 0.1em 1em;	
-}
-.connect-content {
-    padding-top: 10px;
-}
-/* Mot de passe oublie */ 
-#connect-menu .vertical-fieldset .forgot-pass {
-	color: #999999;
-}
-#connect-menu .vertical-fieldset .forgot-pass:hover {
-	color: #555555;
-}
-
-@media (min-width: 769px) {
-	#connect-menu .forgot-pass {
-		display: inline-block;
-		padding: 0 0 0 5px;
-		vertical-align: middle;
-		color: #ffc000;
-	}
-	#connect-menu .forgot-pass:hover {
-    color: #ffc000;
-	}
-}
-
-@media (max-width: 768px) {
-	#connect-menu .forgot-pass {
-		padding: 20px;
-		display: block;
-	}
-	#connect-menu .forgot-pass:hover {
-		text-decoration: underline;
-	}
+#module-connect a > span {
+	color: #ffffff;
+	margin: 0 0 0 5px;
 }
 
 .js-menu-button {
@@ -156,86 +47,161 @@ div.connect-register i {
 @media (max-width: 768px) {
 	.js-menu-button {
 		display: inline-block;
-		padding: 5px 10px 5px 10px;
-	}
-	
-	#connect-menu div.horizontal-fieldset div.connect-content,
-	#connect-menu div.horizontal-fieldset form {
-		width: 100%;
-		text-align: center;
+		padding: 5px 10px 5px 12px;
 	}
 
-	#connect-menu .horizontal-fieldset li {
-		padding: 8px 0 8px 2px;
-	}
-
-	#connect-menu .horizontal-fieldset a {
-		color: #DEDEDE;
-		font-size: 15px;
-		text-decoration: none;
-	}
-
-	#connect-menu div.horizontal-fieldset span {
-		display: inline-block;
-	}
-
-	.horizontal-fieldset ul.connect-content, 
-	.horizontal-fieldset div.connect-content {
-		position: absolute;
-		padding: 10px;
-		left: -100%;
-		background-color: #353535;
-		transition: left 0.5s;
-	}
-
-	#connect-menu.active ul.connect-content,
-	#connect-menu.active div.connect-content {
-		z-index: 200;
-		left: 0%;
-		width: auto;
-		transition: left 0.5s;
-	}
-
-	#connect-menu div.horizontal-fieldset ul.connect-content li {
-		display: block;
-		text-align: left;
-	}
-	
-	#connect-menu.active div.horizontal-fieldset div.connect-content input {
-		display: block;
-		margin-bottom: 10px;
-		padding: 10px 20px;
-		width: 100%;
-	}
-	
-	#connect-menu.active div.horizontal-fieldset div.connect-content button.submit {
-		display: inline-block;
-		margin-bottom: 10px;
-		padding: 10px 20px;
-		width: 100%;
+	.js-menu-button span {
+		padding: 0 0 0 7px;
 	}
 }
 
+/* -- not-connected --*/
+.connect-register-container form {
+	display: inline-block;
+}
 
-/* Partie Sociale */
-#connect-menu .horizontal-fieldset a.fb {
+.connect-register a.fb {
 	padding: 6px 0 0 4px;
 }
 
+a.social-connect {
+	margin: -2px 0;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	.connect-input-container label,
+	.connect-input-container label > span,
+	.connect-input-container button {
+		display: block;
+	}
+
+	.connect-register-container {
+		margin: 0.5em 0.6em 0.5em 0.6em;
+	}
+
+	.forget-pass-container {
+		margin: 0 0.6em 0.5em 0.6em;
+	}
+
+	.connect-input-container button {
+		margin: 5px 0 0 0;
+	}
+
+	.active.not-connected.horizontal .connect-containers {
+		height: 300px;
+	}
+
+	.module-mini-contents.connect-contents,
+	.connect-contents label,
+	.connect-contents button {
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+
+	.connect-contents button {
+		display: inline-block;
+		margin: 10px 0 10px 0;
+	}
+}
+
 @media (min-width: 769px) {
-	#connect-menu a.fb {
+	.connect-input-container,
+	.connect-register-container,
+	.forget-pass-container {
+		display: inline-block;
+	}
+
+	.horizontal-fieldset.connect-input-container label > span {
+		display: none;
+	}
+
+	.vertical-fieldset form label {
+		margin-bottom: 10px;
+	}
+
+	.module-mini-contents .connect-register-container a {
+		display: inline-block;
+	}
+	.module-mini-contents .connect-register {
+		padding: 5px 0 0 0;
+	}
+
+	.module-mini-contents .forget-pass-container {
+		display: block;
+		margin: 10px;
+	}
+
+	.connect-register a.fb {
 		padding: 7px 0 0 4px;
 	}
+
 }
 
-@media (max-width:768px) {
+/* -- connected -- */
+.connect-elements-container {
+	margin: 0;
+	padding: 0;
+}
 
-	#connect-menu div.horizontal-fieldset ul li, #connect-menu div.horizontal-fieldset ul li a {
-    color: #efefef;
+.connect-element {
+	list-style-type: none;
+}
+
+.connect-element a {
+	display: block;
+	margin: 0 10px 0 0;
+}
+
+.horizontal .connect-element a 	{ padding: 7px 0 7px 0; }
+.vertical .connect-element a 	{ padding: 5px 0 5px 0; }
+
+@media (min-width: 769px) {
+	.horizontal .connect-contents {
+		text-align: center;
 	}
-	
-	#connect-menu div.horizontal-fieldset ul li a:hover {
-    color: #8d8d8d;
+
+	.connected .vertical .connect-contents {
+		text-align: left;
+	}
+
+	.horizontal .connect-element {
+		display: inline-block;
 	}
 }
 
+@media (max-width: 768px) {
+	.horizontal .connect-containers,
+	.horizontal .connect-containers label {
+		text-align: center;
+	}
+
+	.horizontal .connect-containers label {
+		display: block;
+	}
+
+	.horizontal .connect-elements-container,
+	.horizontal .connect-containers {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+		padding: 0 0 0 12px;
+	}
+
+	.active.horizontal .connect-elements-container,
+	.active.horizontal .connect-containers {
+		position: relative;
+		z-index: 200;
+		width: 100%;
+		transition: height 0.3s;
+	}
+
+	.active.horizontal .connect-elements-container {
+		height: 190px;
+	}
+
+	.vertical .connect-element a {
+		padding: 9px 0 9px 0;
+		margin: 3px 0 3px 0;
+	}
+}

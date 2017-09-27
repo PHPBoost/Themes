@@ -126,41 +126,35 @@
 			</nav>
 	# ELSE #
 	<nav id="cssmenu-015" class="cssmenu cssmenu-login">
-				<ul class="level-0">
-				<li class="has-sub"><span class="submenu-button"></span>
-				<a href="#" title="" class="cssmenu-title">{L_PRIVATE_PROFIL}</a>
+		<ul class="level-0">
+			<li class="has-sub"><span class="submenu-button"></span>
+				<a href="#" title="" class="cssmenu-title"><i class="fa fa-bars # IF NUMBER_TOTAL_ALERT # blink alert# ENDIF #"></i> <span>{@dashboard}</span></a>
 				<ul class="level-1"> 
 					<li>
-						
 						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="cssmenu-title"><i class="fa fa-user"></i> {L_PRIVATE_PROFIL}</a>
 					</li>
 					<li>
-						
 						<a href="{U_USER_PM}" class="cssmenu-title"><i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i> {L_NBR_PM}</a>
 					</li>
 					# IF C_ADMIN_AUTH #
 					<li>
-						
 						<a href="${relative_url(UserUrlBuilder::administration())}" class="cssmenu-title"> <i class="fa fa-wrench# IF C_UNREAD_ALERT # blink# ENDIF #"></i> {L_ADMIN_PANEL}</a>
 					</li>
 					# ENDIF #
 					# IF C_MODERATOR_AUTH #
 					<li>
-						
 						<a href="${relative_url(UserUrlBuilder::moderation_panel())}" class="cssmenu-title"><i class="fa fa-legal"></i> {L_MODO_PANEL}</a>
 					</li>
 					# ENDIF #
 					<li>
-						
 						<a href="${relative_url(UserUrlBuilder::contribution_panel())}" class="cssmenu-title"><i class="fa fa-file-text# IF C_UNREAD_CONTRIBUTION # blink# ENDIF #"></i> {L_CONTRIBUTION_PANEL}</a>
 					</li>
 					<li>
-						
 						<a href="${relative_url(UserUrlBuilder::disconnect())}" class="cssmenu-title"><i class="fa fa-sign-out"></i> {@disconnect}</a>
 					</li>
 				</ul>
-				</li>
-			</ul>
-			</nav>
+			</li>
+		</ul>
+	</nav>
 	# ENDIF #
 # ENDIF #

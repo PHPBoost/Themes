@@ -1,0 +1,27 @@
+/*---------------------------------------------------------
+ * Theme    : Japanese_Traditions
+ * Par      : MarcelD
+ * Adapté     : 03/08/2016
+ * Porté par : EDN |Swan
+ * Site web :  http://www.phpboost.com
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/* -- Module Web --
+--------------------------------------*/
+
+  article.web-partner {
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #5f3f12;
+}
+
+article.web-privileged-partner {
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #aa0000;
+}

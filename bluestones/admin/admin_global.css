@@ -490,12 +490,12 @@ li.small-block .fa-stack {
 
 /* -- Les message d erreurs --
 --------------------------------------*/
-div.message-helper-small {
+.message-helper-small {
 	width: 90%;
 }
 
 @media (min-width: 769px) {
-	div.message-helper-small {
+	.message-helper-small {
 		width: 50%;
 	}
 }
@@ -504,7 +504,8 @@ div.message-helper-small {
 .notice,
 .warning,
 .success,
-.question {
+.question,
+.message-helper {
 	position: relative;
 	display: block;
 	overflow: hidden;

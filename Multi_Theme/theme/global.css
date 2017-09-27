@@ -527,57 +527,78 @@ li.small-block .fa-stack {
 }
 
 
-/* -- Les message d erreurs --
---------------------------------------*/
-div.message-helper-small {
-	width: 50%
+/* -- Les messages d erreurs -- */
+/* ---------------------------- */
+
+.message-helper-small {
+	width: 50%;
 }
 
-.error, .notice, .warning, .success, .question {
-	height: auto;
-	padding: 10px 10px 10px 40px;
-	margin: 5px auto 15px auto;
-	line-height: 20px;
-	border: 1px solid #FFFFFF;
-	border-radius: 4px;
+.error,
+.notice,
+.warning,
+.success,
+.question,
+.message-helper {
 	position: relative;
 	display: block;
+	margin: 5px auto 15px auto;
+	padding: 10px 10px 10px 40px;
+	height: auto;
+	border: 1px solid #FFFFFF;
+	line-height: 20px;
 	text-align: left;
 	overflow: hidden;
 }
 
-.error:before, .notice:before, .warning:before, .success:before, .question:before {
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 2em;
+.error:before,
+.notice:before,
+.warning:before,
+.success:before,
+.question:before,
+.message-helper:before {
 	position: absolute;
 	left: 6px;
 	top: 7px;
 	width: 28px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 2em;
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.error:before    { content: "\f00d"; }
-.notice:before   { content: "\f12a"; }
-.warning:before	 { content: "\f071"; }
-.success:before	 { content: "\f00c"; }
-.question:before { content: "\f128"; }
 
-.error, .error:before       { color: #efefef; }
-.notice, .notice:before     { color: #F0F0F0; }
-.warning, .warning:before   { color: #AD022A; }
-.success, .success:before   { color: #044D00; }
-.question, .question:before { color: #DAEEF8; }
+.error:before       { content: "\f00d"; }
+.notice:before      { content: "\f12a"; }
+.warning:before     { content: "\f071"; }
+.success:before     { content: "\f00c"; }
+.question:before    { content: "\f128"; }
+.member-only:before { content: "\f070"; }
+.modo-only:before   { content: "\f070"; }
+.admin-only:before  { content: "\f070"; }
 
-.error    { background-color: #6d0000; border-color: #6d0000; }
-.notice   { background-color: #888888; border-color: #888888; }
-.warning  { background-color: #EDB600; border-color: #EDB600; }
-.success  { background-color: #8ac77f; border-color: #8ac77f; }
-.question { background-color: #3B88AE; border-color: #3B88AE; }
+.error, .error:before               { color: #BA4B49; }
+.notice, .notice:before             { color: #888888; }
+.warning, .warning:before           { color: #C19954; }
+.success, .success:before           { color: #478948; }
+.question, .question:before         { color: #3B88AE; }
+.member-only, .member-only:before   { color: #C19954; }
+.modo-only, .modo-only:before       { color: #C19954; }
+.admin-only, .admin-only:before     { color: #C19954; }
+
+.error        { background-color: #F3DFDF; border-color: #ECCDD2; }
+.notice       { background-color: #F0F0F0; border-color: #E2E2E2; }
+.warning      { background-color: #FDF9E4; border-color: #FBECCD; }
+.success      { background-color: #E0F1D9; border-color: #D7EAC7; }
+.question     { background-color: #DAEEF8; border-color: #BDE9F2; }
+.member-only  { background-color: #FDF9E4; border-color: #FBECCD; }
+.modo-only    { background-color: #FDF9E4; border-color: #FBECCD; }
+.admin-only   { background-color: #FDF9E4; border-color: #FBECCD; }
+
 
 
 /* -- Le maintenance --

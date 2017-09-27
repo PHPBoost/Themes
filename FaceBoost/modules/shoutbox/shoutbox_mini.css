@@ -37,3 +37,16 @@
     border: medium none;
     display: inline-block;
 }
+
+.shoutbox-message-container {}
+.shoutbox-message-date {}
+
+.shoutbox-message {
+	font-size: 0.9em;
+}
+
+span.shoutbox-message-author {
+	text-decoration: italic;
+}
+
+.shoutbox-message-content {}

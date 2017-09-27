@@ -467,7 +467,7 @@ li.small-block .fa-stack {
 }
 /* -- Les messages d erreurs -- */
 /* ---------------------------- */
-div.message-helper-small {
+.message-helper-small {
 	width: 50%;
 }
 
@@ -475,14 +475,14 @@ div.message-helper-small {
 .notice,
 .warning,
 .success,
-.question {
+.question,
+.message-helper {
 	position: relative;
 	display: block;
 	margin: 5px auto 15px auto;
 	padding: 10px 10px 10px 40px;
 	height: auto;
 	border: 1px solid #FFFFFF;
-	border-radius: 4px;
 	line-height: 20px;
 	text-align: left;
 	overflow: hidden;
@@ -491,8 +491,9 @@ div.message-helper-small {
 .error:before,
 .notice:before,
 .warning:before,
-.success:before, 
-.question:before {
+.success:before,
+.question:before,
+.message-helper:before {
 	position: absolute;
 	left: 6px;
 	top: 7px;
@@ -512,18 +513,27 @@ div.message-helper-small {
 .warning:before	 { content: "\f071"; }
 .success:before	 { content: "\f00c"; }
 .question:before { content: "\f128"; }
+.member-only:before { content: "\f070"; }
+.modo-only:before   { content: "\f070"; }
+.admin-only:before  { content: "\f070"; }
 
 .error, .error:before       { color: #efefef; }
 .notice, .notice:before     { color: #F0F0F0; }
 .warning, .warning:before   { color: #AD022A; }
 .success, .success:before   { color: #044D00; }
 .question, .question:before { color: #DAEEF8; }
+.member-only, .member-only:before   { color: #C19954; }
+.modo-only, .modo-only:before       { color: #C19954; }
+.admin-only, .admin-only:before     { color: #C19954; }
 
 .error    { background-color: #6d0000; border-color: #6d0000; }
 .notice   { background-color: #888888; border-color: #888888; }
 .warning  { background-color: #EDB600; border-color: #EDB600; }
 .success  { background-color: #8ac77f; border-color: #8ac77f; }
 .question { background-color: #3B88AE; border-color: #3B88AE; }
+.member-only  { background-color: #ffbe5e; border-color: #ffbe5e; }
+.modo-only    { background-color: #ffbe5e; border-color: #ffbe5e; }
+.admin-only   { background-color: #ffbe5e; border-color: #ffbe5e; }
 
 /* -- Systeme d Upload -- */
 /* ---------------------- */

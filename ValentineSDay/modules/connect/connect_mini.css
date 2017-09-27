@@ -107,6 +107,91 @@ div.connect-register i {
 	display: none;
 }
 
+
+/* -- not-connected --*/
+.connect-register-container form {
+	display: inline-block;
+}
+
+.connect-register a.fb {
+	padding: 6px 0 0 4px;
+}
+
+a.social-connect {
+	margin: -2px 0;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	.connect-input-container label,
+	.connect-input-container label > span,
+	.connect-input-container button {
+		display: block;
+	}
+
+	.connect-register-container {
+		margin: 0.5em 0.6em 0.5em 0.6em;
+	}
+
+	.forget-pass-container {
+		margin: 0 0.6em 0.5em 0.6em;
+	}
+
+	.connect-input-container button {
+		margin: 5px 0 0 0;
+	}
+
+	.active.not-connected.horizontal .connect-containers {
+		height: 300px;
+	}
+
+	.module-mini-contents.connect-contents,
+	.connect-contents label,
+	.connect-contents button {
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+
+	.connect-contents button {
+		display: inline-block;
+		margin: 10px 0 10px 0;
+	}
+}
+
+@media (min-width: 769px) {
+	.connect-input-container,
+	.connect-register-container,
+	.forget-pass-container {
+		display: inline-block;
+	}
+
+	.horizontal-fieldset.connect-input-container label > span {
+		display: none;
+	}
+
+	.vertical-fieldset form label {
+		margin-bottom: 10px;
+	}
+
+	.module-mini-contents .connect-register-container a {
+		display: inline-block;
+	}
+	.module-mini-contents .connect-register {
+		padding: 5px 0 0 0;
+	}
+
+	.module-mini-contents .forget-pass-container {
+		display: block;
+		margin: 10px;
+	}
+
+	.connect-register a.fb {
+		padding: 7px 0 0 4px;
+	}
+
+}
+
+
 @media ( max-width: 768px ) {
 
 	.js-menu-button {
