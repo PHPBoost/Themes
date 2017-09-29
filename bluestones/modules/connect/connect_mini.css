@@ -50,6 +50,9 @@
 	background-color: #2F4154;
 	text-align: center;
 	transition: all 0.5s;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 520px;
 }
 
 #connect-menu.active.horizontal-fieldset div.connect-content {
@@ -59,6 +62,8 @@
 	visibility: visible;
 	transition: all 0.5s;
 	padding: 10px;
+	margin: auto;
+	max-width: 1024px;
 }
 
 #connect-menu.horizontal-fieldset div.connect-content ul {
@@ -75,7 +80,7 @@
 	padding: 10px 20%;
 	text-align: center
 }
- 
+
 #connect-menu.horizontal-fieldset input {
 	border: none;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -85,27 +90,27 @@
 	color: #F2F2F2;
 	width: 100%;
 	margin-bottom: 10px;
-}	
- 
+}
+
 #connect-menu.horizontal-fieldset input[type="checkbox"] {
 	width: auto;
 	display: inline-block;
 	margin: 0;
 }
- 
-#connect-menu.horizontal-fieldset button.submit-connect, 
-#connect-menu.horizontal-fieldset button.submit-register, 
+
+#connect-menu.horizontal-fieldset button.submit-connect,
+#connect-menu.horizontal-fieldset button.submit-register,
 #connect-menu.horizontal-fieldset a.alt {
 	width: 160px;
 	border: none;
 	margin: 5px auto;
 	color: #F2F2F2;
 }
- 
+
 #connect-menu.horizontal-fieldset button.submit-connect {
 	background-color: #81d742;
-}	
- 
+}
+
 #connect-menu.horizontal-fieldset button.submit-register {
 	background-color: #2F4154;
-}	
+}

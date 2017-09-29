@@ -67,11 +67,11 @@ div#top-header-content {
 }
 
 @media (min-width: 768px) {
-	
+
 	div#top-header {
 		min-height: 300px;
 	}
-	
+
 	div#top-header-content {
 		text-align: center;
 	}
@@ -81,19 +81,19 @@ div#top-header-content {
 div#sub-header {
 	background-color: rgba(25, 35, 45, 0.4);
 	border-bottom: 2px solid #0E2134;
+	position: relative;
 }
 
 @media (min-width: 769px) {
 	div#sub-header {
 		background-color: #2F4154;
 	}
-	
+
 }
 
 div#sub-header-content{
 	margin: auto;
 	max-width: 1024px;
-	position: relative;
 }
 
 /* --- Logo et Nom du site web --- */
@@ -152,7 +152,7 @@ span#site-slogan {
 	a#site-name {
 		font-size: 4em;
 	}
-	
+
 }
 
 /* -- Conteneur global du site -- */
@@ -214,26 +214,26 @@ aside#menu-right {
 		padding: 0 25px;
 	}
 
-	aside#menu-left  { 
+	aside#menu-left  {
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 		border-right: 1px solid #d9d9d9;
 	}
-	
-	aside#menu-right { 
+
+	aside#menu-right {
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 		border-left: 1px solid #d9d9d9;
 	}
-	
+
 	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 30%);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
-	
+
 	#main.main-with-left.main-with-right {
 		width: calc(100% - 40%);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
@@ -386,7 +386,7 @@ nav#breadcrumb ol li:not(.current):after {
 	transition: 0.5s;
 }
 
-/* --   Cookie Bar  -- */ 
+/* --   Cookie Bar  -- */
 /* ------------------- */
 .cookiebar-container {
 	z-index: 100;

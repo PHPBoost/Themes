@@ -22,7 +22,7 @@
 						# ENDIF #
 					</span>
 				</h2>
-				
+
 				<a itemprop="url" href="{U_LINK}"></a>
 			</header>
 			<div class="event-display-dates">
@@ -36,13 +36,14 @@
 					<meta itemprop="discussionUrl" content="{U_COMMENTS}">
 					<meta itemprop="interactionCount" content="{NUMBER_COMMENTS} UserComments">
 					# ENDIF #
-					
+
 					<div class="options">
 						# IF C_LOCATION #
 						<div class="spacer"></div>
 						<div itemprop="location" itemscope itemtype="http://schema.org/Place">
 							<span class="text-strong">{@calendar.labels.location}</span> :
 							<span itemprop="name">{LOCATION}</span>
+							# IF C_LOCATION_MAP #<div class="location-map">{LOCATION_MAP}</div># ENDIF #
 						</div>
 						# ENDIF #
 						# IF C_PARTICIPATION_ENABLED #
@@ -78,17 +79,17 @@
 							# ENDIF #
 							# IF C_REGISTRATION_CLOSED #<span class="small text-italic">{@calendar.labels.registration_closed}</span># ENDIF #
 						# ENDIF #
-						
+
 						<div class="spacer"></div>
 						<div class="event-display-author">
 							{@calendar.labels.created_by} : # IF C_AUTHOR_EXIST #<a itemprop="author" href="{U_AUTHOR_PROFILE}" class="{AUTHOR_LEVEL_CLASS}" # IF C_AUTHOR_GROUP_COLOR # style="color:{AUTHOR_GROUP_COLOR}" # ENDIF #>{AUTHOR}</a># ELSE #{AUTHOR}# ENDIF #
 						</div>
 					</div>
-					<div itemprop="text">{CONTENTS}</div>					
+					<div itemprop="text">{CONTENTS}</div>
 				</div>
-				
+				<div class="spacer"></div>
 				<hr>
-				
+
 				# INCLUDE COMMENTS #
 			</div>
 			<footer></footer>
