@@ -580,27 +580,28 @@ li.small-block .fa-stack {
 .warning:before	 { content: url('../images/icons/warning.png');}
 .success:before	 { content: url('../images/icons/success.png');}
 .question:before { content: url('../images/icons/question.png');}
-.member-only:before { content: "\f071"; }
-.modo-only:before   { content: "\f071"; }
-.admin-only:before  { content: "\f071"; }
+.member-only:before { content: url('../images/icons/warning.png');}
+.modo-only:before   { content: url('../images/icons/warning.png');}
+.admin-only:before  { content: url('../images/icons/warning.png');}
 
 .error, .error:before       { color: #88181A; }
 .notice, .notice:before     { color: #641C7E; }
 .warning, .warning:before   { color: #5E3D0F; }
 .success, .success:before   { color: #09460E; }
 .question, .question:before { color: #0000FF; }
-.member-only, .member-only:before   { color: #C19954; }
-.modo-only, .modo-only:before       { color: #C19954; }
-.admin-only, .admin-only:before     { color: #C19954; }
+.member-only, .member-only:before   { color: #222222; }
+.modo-only, .modo-only:before       { color: #222222; }
+.admin-only, .admin-only:before     { color: #222222; }
+
 
 .error    { background-color: #FF9193;}
 .notice   { background-color: #F6C7FF;}
 .warning  { background-color: #F3BC70;}
 .success  { background-color: #E0F1D9;}
 .question { background-color: #ADCEE2;}
-.member-only  { background-color: #FDF9E4; border-color: #FBECCD; }
-.modo-only    { background-color: #FDF9E4; border-color: #FBECCD; }
-.admin-only   { background-color: #FDF9E4; border-color: #FBECCD; }
+.member-only  { background-color: #FDF9E4; }
+.modo-only    { background-color: #FDF9E4; }
+.admin-only   { background-color: #FDF9E4; }
 
 /* -- Systeme d Upload -- */
 /* ---------------------- */

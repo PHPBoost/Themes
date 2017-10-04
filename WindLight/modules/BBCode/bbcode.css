@@ -191,10 +191,11 @@
 
 .bbcode-block-smileys,
 .bbcode-block-fa {
-	width: 150px;
-	height: 150px;
-	padding: 2px 0px 2px 3px;
-	overflow-y: scroll;
+
+	max-height: 230px;
+	padding: 4px 0px 2px 3px;
+	overflow-y: auto;
+	text-align: left;
 }
 
 .bbcode-block-smileys li,
@@ -347,6 +348,7 @@
 }
 
 
+
 .bbcode-forbidden,
 .bbcode-forbidden i {
 	opacity: 0.3 !important;
@@ -361,8 +363,8 @@
 	vertical-align: 0;
 }
 
-/* partie modifiée par EDN 
---------------------------------*/
+/* partie modifiée par EDN | Pack Tango
+--------------------------------------------------*/
 .bbcode-icon-anchor:before      { content: url('images/anchor.png'); }
 .bbcode-icon-bold:before        { content: url('images/bold.png'); }
 .bbcode-icon-italic:before      { content: url('images/italic.png'); }
@@ -403,10 +405,11 @@
 .bbcode-icon-html:before        { content: url('images/html.png'); }
 .bbcode-icon-help:before        { content: url('images/help.png'); }
 .bbcode-icon-upload:before      { content: url('images/upload.png'); }
-.bbcode-icon-fa:before          { content: "\f024"; }
-.bbcode-icon-mail:before        { content: "\f0e0"; }
-.bbcode-icon-feed:before        { content: "\f09e"; }
-.bbcode-icon-bgcolor:before     { content: "\f1fc"; }
+.bbcode-icon-fa:before          { content: url('images/flag.png'); }
+.bbcode-icon-mail:before        { content: url('images/mail.png'); }
+.bbcode-icon-feed:before        { content: url('images/rss.png'); }
+.bbcode-icon-bgcolor:before   { content: url('images/brush.png'); }
+
 /* Modification end
 ---------------------------------*/
 

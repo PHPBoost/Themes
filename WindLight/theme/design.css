@@ -10,6 +10,9 @@
  *---------------------------------------------------------
  * Porté par : EDN | Swan
  * Date      : 15/03/2017
+ *--------------------------------------------------------- 
+ * Porté par : Elenwii 
+ * Date V5.1 : 08/06/2017 
  *---------------------------------------------------------
  * Thème compatible avec un  menu (droite ou gauche)
 					le choix reste possible sur un menu
@@ -515,7 +518,6 @@ nav#breadcrumb ol li:not(.current):after {
 @media (min-width:769px) {
 		img.entete{display: none;}
 }
-
 /*======================
  --- Scroll to Top ---
 =======================*/
@@ -524,7 +526,7 @@ nav#breadcrumb ol li:not(.current):after {
 	z-index: 10;
 	display: none;
 	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid #ead4eb;	
+	border: 1px solid #CCCCCC;	
 	border-radius: 5px;
 }
 
@@ -536,12 +538,12 @@ nav#breadcrumb ol li:not(.current):after {
 }
 
 .scroll-to i {
-	color: rgba(234, 212, 235, 0.8);
+	color: rgba(162, 124, 184, 0.8);
 	transition: 0.2s;
 }
 
 .scroll-to:hover i {
-	color: rgba(234, 212, 235, 1);
+	color: rgba(139, 42, 51, 1);
 	transition: 0.3s;
 }
 
@@ -574,7 +576,7 @@ nav#breadcrumb ol li:not(.current):after {
 	top: 0;
 	padding: 7px 20px;
 	background-color: rgba(255, 255, 255, 0.6);
-	border-bottom: 2px solid rgba(196, 60, 43, 0.8);
+	border-bottom: 2px solid #A27CB8;
 	font-size: 1em;
 	text-align: center;
 }
@@ -622,16 +624,16 @@ nav#breadcrumb ol li:not(.current):after {
 	}
 }
 
-.cookiebar-button-understand 		{ background-color: #FCC6F8; color: #764882; }
-.cookiebar-button-understand:hover 	{ background-color: #FDE5FC; }
+.cookiebar-button-understand 		{ background-color: #ffe4e4; border-color: #CCCCCC; color: #A27CB8; }
+.cookiebar-button-understand:hover 	{ background-color: #d2b3b3; }
 
 .cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000; }
-.cookiebar-button-allowed:hover 	{ background: linear-gradient(to bottom, #7d7e7d 0%,#7d7e7d 100%); color: #FFFFFF;}
+.cookiebar-button-allowed:hover 		{ background: #000000;  color:#cccccc;}
 
 .cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019; }
-.cookiebar-button-declined:hover 	{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#8f0222 100%); color: #FFFFFF;}
+.cookiebar-button-declined:hover 	{ background: #AA0000; color:#cccccc;}
 
-.cookiebar-more a {color: #222222; }
+.cookiebar-more a {color: #888888; }
 
 @media (max-width: 468px) {
 	.cookiebar-more {

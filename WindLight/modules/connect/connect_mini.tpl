@@ -48,13 +48,13 @@
 						<br />
 						# IF C_FB_AUTH_ENABLED #
 						<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i></a>
-						# IF C_GOOGLE_AUTH_ENABLED #
 						# ENDIF #
+						# IF C_GOOGLE_AUTH_ENABLED #
 						<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus"></i></a>
 						# ENDIF #
 					# ENDIF #
 					<br />
-					<a class="small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> ${LangLoader::get_message('forget-password', 'user-common')}</a>
+					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> ${LangLoader::get_message('forget-password', 'user-common')}</a>
 				</div>
 			</div>
 			<div class="module-mini-bottom">

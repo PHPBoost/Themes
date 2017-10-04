@@ -189,12 +189,18 @@ a.member { color: #A769BC; }
 .warning, .warning:before   { color: #DD7430; }
 .success, .success:before   { color: #00BC9E; }
 .question, .question:before { color: #29AED7; }
+.member-only:before { color: #FF5500; }
+.modo-only:before   { color: #FF5500; }
+.admin-only:before  { color: #FF5500; }
 
 .error    { border-color: #c43827; }
 .notice   { border-color: #A769BC; }
 .warning  { border-color: #DD7430; }
 .success  { border-color: #00BC9E; }
 .question { border-color: #29AED7; }
+.member-only  { border-color: #FF5500; }
+.modo-only    { border-color: #FF5500; }
+.admin-only   { border-color: #FF5500; }
 
 .options > h6,
 .options > a ,

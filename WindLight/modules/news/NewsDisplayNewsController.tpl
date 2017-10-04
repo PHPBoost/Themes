@@ -1,65 +1,57 @@
 <section id="module-news">
-	<!--header>
+	<header>
 		<h1>
 			<a href="{U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
 			{@news}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF # # IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller"></i></a># ENDIF #
 		</h1>
-	</header-->
+	</header>
 	<div class="content">
 		# IF NOT C_VISIBLE #
 			# INCLUDE NOT_VISIBLE_MESSAGE #
 		# ENDIF #
-		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-news-{ID}" class="article-news">
-		    <div class="news-top-l"></div>
-            <div class="news-top-r"></div>
-            <div class="news-top">
-				<header>
-					<h2>
-					<a href="{U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
-						<span itemprop="name">{NAME}</span>
-						<span class="actions">
-							# IF C_EDIT #
-								<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-							# ENDIF #
-							# IF C_DELETE #
-								<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
-							# ENDIF #
-						</span>
-					</h2>
-					<meta itemprop="url" content="{U_LINK}">
-					<meta itemprop="description" content="${escape(DESCRIPTION)}" />
-					# IF C_COMMENTS_ENABLED #
-					<meta itemprop="discussionUrl" content="{U_COMMENTS}">
-					<meta itemprop="interactionCount" content="{NUMBER_COMMENTS} UserComments">
+		<article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" id="article-news-{ID}" class="article-news# IF C_NEW_CONTENT # new-content# ENDIF #">
+			<header>
+				<h2>
+					<span itemprop="name">{NAME}</span>
+					<span class="actions">
+						# IF C_EDIT #
+							<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+						# ENDIF #
+						# IF C_DELETE #
+							<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+						# ENDIF #
+					</span>
+				</h2>
+	
+				<div class="more">
+					# IF C_AUTHOR_DISPLAYED #
+						${LangLoader::get_message('by', 'common')}
+						# IF C_AUTHOR_CUSTOM_NAME #
+							{AUTHOR_CUSTOM_NAME}
+						# ELSE #
+							# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #,
+						# ENDIF #
 					# ENDIF #
-		
-				</header>
-			</div>
-				<div class="content news-content">
+					${TextHelper::lcfirst(LangLoader::get_message('the', 'common'))} <time datetime="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT C_DIFFERED #{DATE}# ELSE #{DIFFERED_START_DATE}# ENDIF #</time>
+					${TextHelper::lcfirst(LangLoader::get_message('in', 'common'))} <a itemprop="about" href="{U_CATEGORY}">{CATEGORY_NAME}</a>
+					# IF C_COMMENTS_ENABLED #- # IF C_COMMENTS # {NUMBER_COMMENTS} # ENDIF # {L_COMMENTS}# ENDIF #
+					# IF C_NB_VIEW_ENABLED #- <span title="{NUMBER_VIEW} {@news.view}"><i class="fa fa-eye"></i> {NUMBER_VIEW}</span># ENDIF #
+				</div>
+	
+				<meta itemprop="url" content="{U_LINK}">
+				<meta itemprop="description" content="${escape(DESCRIPTION)}" />
+				# IF C_COMMENTS_ENABLED #
+				<meta itemprop="discussionUrl" content="{U_COMMENTS}">
+				<meta itemprop="interactionCount" content="{NUMBER_COMMENTS} UserComments">
+				# ENDIF #
+	
+			</header>
+			<div class="content">
 				# IF C_PICTURE #<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="news-picture" /># ENDIF #
 	
 				<div itemprop="text">{CONTENTS}</div>
-			
-				<div class="news-coms">
-					<div class="more">
-							# IF C_AUTHOR_DISPLAYED #
-								# IF C_AUTHOR_CUSTOM_NAME #
-									{AUTHOR_CUSTOM_NAME}
-								# ELSE #
-									# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #,
-								# ENDIF #
-							# ENDIF #
-							 <time datetime="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT C_DIFFERED #{DATE}# ELSE #{DIFFERED_START_DATE}# ENDIF #</time>
-							<a itemprop="about" href="{U_CATEGORY}">{CATEGORY_NAME}</a>
-							# IF C_COMMENTS_ENABLED #- # IF C_COMMENTS # {NUMBER_COMMENTS} # ENDIF # {L_COMMENTS}# ENDIF #
-							# IF C_NB_VIEW_ENABLED #- <span title="{NUMBER_VIEW} {@news.view}"><i class="fa fa-eye"></i> {NUMBER_VIEW}</span># ENDIF #
-
-					</div>
-				</div>	
-			</div>	
-			
+			</div>
 			<aside>
-			
 				# IF C_SOURCES #
 				<div id="news-sources-container">
 					<span class="news-sources-title"><i class="fa fa-map-signs"></i> ${LangLoader::get_message('form.sources', 'common')}</span> :
@@ -109,9 +101,6 @@
 	
 				# INCLUDE COMMENTS #
 			</aside>
-
-	
-			
 			<footer></footer>
 		</article>
 	</div>
