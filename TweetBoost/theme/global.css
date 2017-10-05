@@ -594,10 +594,11 @@ li.small-block .fa-stack {
 }
 
 
-/* -- Les message d erreurs --
---------------------------------------*/
+/* -- Les messages d erreurs -- */
+/* ---------------------------- */
+
 .message-helper-small {
-	width: 50%
+	width: 50%;
 }
 
 .error,
@@ -606,14 +607,13 @@ li.small-block .fa-stack {
 .success,
 .question,
 .message-helper {
-	height: auto;
-	padding: 10px 10px 10px 40px;
-	margin: 5px auto 15px auto;
-	line-height: 20px;
-	border: 1px solid #FFFFFF;
-	border-radius: 4px;
 	position: relative;
 	display: block;
+	margin: 5px auto 15px auto;
+	padding: 10px 10px 10px 40px;
+	height: auto;
+	border: 1px solid #FFFFFF;
+	line-height: 20px;
 	text-align: left;
 	overflow: hidden;
 }
@@ -621,31 +621,32 @@ li.small-block .fa-stack {
 .error:before,
 .notice:before,
 .warning:before,
-.success:before, 
+.success:before,
 .question:before,
 .message-helper:before {
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 2em;
 	position: absolute;
 	left: 6px;
 	top: 7px;
 	width: 28px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 2em;
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
 
 .error:before       { content: "\f00d"; }
 .notice:before      { content: "\f12a"; }
 .warning:before     { content: "\f071"; }
 .success:before     { content: "\f00c"; }
 .question:before    { content: "\f128"; }
-.member-only:before { content: "\f071"; }
-.modo-only:before   { content: "\f071"; }
-.admin-only:before  { content: "\f071"; }
+.member-only:before { content: "\f070"; }
+.modo-only:before   { content: "\f070"; }
+.admin-only:before  { content: "\f070"; }
 
 .error, .error:before               { color: #BA4B49; }
 .notice, .notice:before             { color: #888888; }

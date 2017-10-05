@@ -609,9 +609,9 @@ li.small-block .fa-stack {
 .warning:before	 { content: "\f071"; }
 .success:before	 { content: "\f00c"; }
 .question:before { content: "\f128"; }
-.member-only:before { content: "\f070"; }
-.modo-only:before   { content: "\f070"; }
-.admin-only:before  { content: "\f070"; }
+.member-only:before { content: "\f071"; }
+.modo-only:before   { content: "\f071"; }
+.admin-only:before  { content: "\f071"; }
 
 .error, .error:before       { color: #BA4B49; }
 .notice, .notice:before     { color: #888888; }
@@ -621,7 +621,6 @@ li.small-block .fa-stack {
 .member-only, .member-only:before   { color: #C19954; }
 .modo-only, .modo-only:before       { color: #C19954; }
 .admin-only, .admin-only:before     { color: #C19954; }
-
 
 .error    { background-color: #F3DFDF; border-color: #ECCDD2; }
 .notice   { background-color: #F0F0F0; border-color: #E2E2E2; }

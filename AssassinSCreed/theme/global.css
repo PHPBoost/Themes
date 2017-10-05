@@ -522,9 +522,9 @@ li.small-block .fa-stack {
 .warning, .warning:before   { color: #AD022A; }
 .success, .success:before   { color: #044D00; }
 .question, .question:before { color: #DAEEF8; }
-.member-only, .member-only:before   { color: #C19954; }
-.modo-only, .modo-only:before       { color: #C19954; }
-.admin-only, .admin-only:before     { color: #C19954; }
+.member-only, .member-only:before   { color: #222222; }
+.modo-only, .modo-only:before       { color: #222222; }
+.admin-only, .admin-only:before     { color: #222222; }
 
 .error    { background-color: #6d0000; border-color: #6d0000; }
 .notice   { background-color: #888888; border-color: #888888; }

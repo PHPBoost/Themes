@@ -620,15 +620,19 @@ div#release {
 }
 
 
-/* -- Systeme d Upload --
---------------------------------------*/
+/* -- Systeme d Upload -- */
+/* ---------------------- */
+#module-user-upload {
+	margin: 5px;
+}
+
 .upload-address-bar {
-	background: #FAFAFA;
+	margin: 0 25px;
+	padding: 6px;
+	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	border-radius: 3px;
 	color: #444444;
-	margin: 0px 25px;
-	padding: 6px;
 }
 
 .upload-address-bar-links {
@@ -645,7 +649,9 @@ div#release {
 }
 
 .upload-elements-container {
-	margin: 0 0 0 20px;
+	margin: 10px 0 0 20px;
+	overflow: hidden;
+	text-align: left;
 }
 
 .upload-elements-file,
@@ -718,6 +724,26 @@ div#release {
 	color: #BA4B49;
 }
 
+.upload-input-bbcode {
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.upload-cat-list,
+.upload-cat-explorer {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: normal;
+}
+
+.upload-cat-explorer {
+	padding-left: 30px;
+}
+
+.upload-no-sub-cat {
+	padding-left: 17px;
+}
 
 /* --- Deplacement des fichiers --- */
 .upload-selected-cat {

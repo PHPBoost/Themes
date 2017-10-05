@@ -91,7 +91,7 @@ div#top-header-content {
 div#sub-header {
 	background: transparent url(images/subheader.png) no-repeat scroll center top;
 	min-height: 36px;
-	padding: 2px 5px;	
+	padding: 0 5px;	
 }
 
 div#sub-header-content{

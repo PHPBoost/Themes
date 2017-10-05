@@ -630,6 +630,7 @@ li.small-block .fa-stack {
 	padding: 10px 10px 10px 40px;
 	height: auto;
 	border: 1px solid #FFFFFF;
+	border-radius: 4px;
 	line-height: 20px;
 	text-align: left;
 	overflow: hidden;
@@ -805,6 +806,26 @@ div#release {
 	color: #BA4B49;
 }
 
+.upload-input-bbcode {
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.upload-cat-list,
+.upload-cat-explorer {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: normal;
+}
+
+.upload-cat-explorer {
+	padding-left: 30px;
+}
+
+.upload-no-sub-cat {
+	padding-left: 17px;
+}
 
 /* --- Deplacement des fichiers --- */
 .upload-selected-cat {

@@ -527,45 +527,54 @@ li.small-block .fa-stack {
 }
 
 
-/* -- Les message d erreurs --
---------------------------------------*/
-.message-helper-small {
-	width: 50%;
-}
-
-.error, .notice, .warning, .success, .question, .message-helper {
-	height: auto;
-	padding: 10px 10px 10px 40px;
-	margin: 5px auto 15px auto;
-	line-height: 20px;
-	border: 1px solid #FFFFFF;
-	border-radius: 4px;
+/* -- Les messages d erreurs -- */
+/* ---------------------------- */
+.error,
+.notice,
+.warning,
+.success,
+.question,
+.message-helper {
 	position: relative;
 	display: block;
+	margin: 5px auto 15px auto;
+	padding: 10px 10px 10px 40px;
+	height: auto;
+	border: 1px solid #FFFFFF;
+	line-height: 20px;
 	text-align: left;
 	overflow: hidden;
 }
 
-.error:before, .notice:before, .warning:before, .success:before,.question:before, .message-helper:before {
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 2em;
+.error:before,
+.notice:before,
+.warning:before,
+.success:before,
+.question:before,
+.message-helper:before {
 	position: absolute;
 	left: 6px;
 	top: 7px;
 	width: 28px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 2em;
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.error:before    { content: "\f00d"; }
-.notice:before   { content: "\f12a"; }
-.warning:before	 { content: "\f071"; }
-.success:before	 { content: "\f00c"; }
-.question:before { content: "\f128"; }
+.message-helper-small {
+	width: 50%;
+}
+
+.error:before       { content: "\f00d"; }
+.notice:before      { content: "\f12a"; }
+.warning:before     { content: "\f071"; }
+.success:before     { content: "\f00c"; }
+.question:before    { content: "\f128"; }
 .member-only:before { content: "\f070"; }
 .modo-only:before   { content: "\f070"; }
 .admin-only:before  { content: "\f070"; }
@@ -588,7 +597,6 @@ li.small-block .fa-stack {
 .modo-only    { background-color: #FDF9E4; border-color: #FBECCD; }
 .admin-only   { background-color: #FDF9E4; border-color: #FBECCD; }
 
-
 /* -- Le maintenance --
 --------------------------------------*/
 div#message-maintain {
@@ -608,15 +616,19 @@ div#release {
 }
 
 
-/* -- Systeme d Upload --
---------------------------------------*/
+/* -- Systeme d Upload -- */
+/* ---------------------- */
+#module-user-upload {
+	margin: 5px;
+}
+
 .upload-address-bar {
-	background: #FAFAFA;
+	margin: 0 25px;
+	padding: 6px;
+	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	border-radius: 3px;
 	color: #444444;
-	margin: 0px 25px;
-	padding: 6px;
 }
 
 .upload-address-bar-links {
@@ -633,7 +645,9 @@ div#release {
 }
 
 .upload-elements-container {
-	margin: 0 0 0 20px;
+	margin: 10px 0 0 20px;
+	overflow: hidden;
+	text-align: left;
 }
 
 .upload-elements-file,
@@ -706,6 +720,26 @@ div#release {
 	color: #BA4B49;
 }
 
+.upload-input-bbcode {
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.upload-cat-list,
+.upload-cat-explorer {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: normal;
+}
+
+.upload-cat-explorer {
+	padding-left: 30px;
+}
+
+.upload-no-sub-cat {
+	padding-left: 17px;
+}
 
 /* --- Deplacement des fichiers --- */
 .upload-selected-cat {
