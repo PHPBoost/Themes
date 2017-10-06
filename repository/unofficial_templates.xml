@@ -2289,26 +2289,98 @@
 		</version>
 	</app>
 	<app id="WindLight" type="template">
-		<version num="5.0.0" language="english" localized_language="English" name="WindLight" priority="low" security-update="false" pubdate="2017/05/30">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/WindLight/WindLight.zip">WindLight template</download>
+		<version num="5.1.0" language="english" localized_language="English" name="WindLight" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/WindLight/WindLight.zip">WindLight template</download>
 			<authors>
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.0 WindLight template</description>
+			<description>Revision 5.1.0 fo WindLight template</description>
 			<whatsnew>
-				<new type="improvement">Update for PHPBoost V5.0</new>
+				<new type="improvement">Update for PHPBoost V5.1</new>
 			</whatsnew>
 		</version>
-		<version num="5.0.0" language="french" localized_language="Francais" name="WindLight" priority="low" security-update="false" pubdate="2017/05/30">
-			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/WindLight/WindLight.zip">Theme WindLight</download>
+		<version num="5.1.0" language="french" localized_language="Francais" name="WindLight" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/WindLight/WindLight.zip">Theme WindLight</download>
 			<authors>
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.0 du theme WindLight</description>
+			<description>Version 5.1.0 du theme WindLight</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.1</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="Destiny2" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="Destiny2" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/Destiny2/Destiny2.zip">Destiny2 template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Destiny 2 template</description>
+			<whatsnew>
+				<new type="improvement">First revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="Destiny2" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/Destiny2/Destiny2.zip">Theme Destiny2</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Première version du theme Destiny2</description>
+			<whatsnew>
+				<new type="improvement">Première révision</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="DestinyG1" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="DestinyG1" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/DestinyG1/DestinyG1.zip">DestinyG1 template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>First revision of DestinyG1 template</description>
+			<whatsnew>
+				<new type="improvement">First revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="DestinyG1" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/DestinyG1/DestinyG1.zip">Theme DestinyG1</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Première version du theme DestinyG1</description>
+			<whatsnew>
+				<new type="improvement">Première révision</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="BaseV3" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="BaseV3" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/BaseV3/BaseV3.zip">BaseV3 template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>First revision of BaseV3 template</description>
+			<whatsnew>
+				<new type="improvement">First revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="BaseV3" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/BaseV3/BaseV3.zip">Theme BaseV3</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Première version du theme BaseV3</description>
+			<whatsnew>
+				<new type="improvement">Première révision</new>
 			</whatsnew>
 		</version>
 	</app>
