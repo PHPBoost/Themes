@@ -1,7 +1,7 @@
 /*---------------------------------------------------------
- * Theme    : TSW_Destiny2
+ * Theme    : Destiny_G1
  * Par      : EDN | Swan
- * Date     : 12/09/2017
+ * Date     : 24/09/2017
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
@@ -43,7 +43,7 @@ html {
 }
 
 body {
-	background: #5c5c5c url(images/bg.jpg) no-repeat fixed center center;
+	background: #3D2322 url(images/bg.jpg) no-repeat fixed center top/*220px*/;
 	position: relative;
 	height: auto;
 	min-height: 100%;
@@ -59,8 +59,10 @@ body {
 }
 
 /* -- Gestion de la taille du site -- */
-/* -----------------width: 100%;----------------- */
-#header { width: 100%;}
+/* ---------------------------------- */
+#header {	
+	margin: auto;
+}
 
 @media (min-width: 768px) {
 	#global {
@@ -70,8 +72,14 @@ body {
 
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
+
+#dl-prim{
+	background-color: rgba(69, 49, 50, 0.7);
+	border-top: 2px solid #222222;
+}
+
 #header {
-	background-color: rgba(0,0,0,0.5) ;
+	background: url(images/logo.png) no-repeat scroll 70px 35px transparent;
 	margin: auto;
 }
 
@@ -86,9 +94,6 @@ body {
 	-webkit-flex-direction: row;
 	margin: auto;
 	min-height: 139px;
-	border-color: #E1E1E1;
-	border-width: 0 1px 0 1px;
-	border-style: solid;
 }
 
 #top-header-content {
@@ -114,9 +119,12 @@ body {
 
 /* --- Partie inferieur du header --- */
 #sub-header {
-	background-color: rgba(62, 131, 165, 0.7); /* #3e83a5*/
+	background-color: rgba(0,0,0, 0.35);
+	border-top: 4px solid #EBBF71;
 	color: #FFFFFF;
 	min-height: 35px;
+	width: 1250px;
+	margin: auto;
 }
 
 #sub-header-content{
@@ -188,7 +196,7 @@ body {
 /* -- Conteneur global du site -- */
 /* ------------------------------ */
 #global {
-	background-color: rgba(50,50,50, 0.5) ;
+	background-color: rgba(0,0,0, 0.2); 
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -301,8 +309,8 @@ body {
 /* -- Pied de page - Footer -- */
 /* --------------------------- */
 #footer {
-	background: rgba(50,50,50,0.7);
-	border-color: rgba(62, 131, 165, 0.7); /* #3e83a5*/
+	background-color: rgba(0,0,0,0.5);
+	border-top: 4px solid #FF9900;
 	margin: auto;
 	clear: both;
 	border-width: 4px 0 0 0;
@@ -322,7 +330,7 @@ body {
 }
 
 .footer-infos span 		{ color: #cccccc; }
-.footer-infos span a 	{ color: #51AEDB; }
+.footer-infos span a 	{ color: #EBBF71; }
 
 @media (min-width: 769px) {
 	.footer-infos {
@@ -398,12 +406,12 @@ content: '::'; color: #000000;
 }
 
 .scroll-to i {
-	color: rgba(255, 255, 255, 0.8);
+	color: #D64300;
 	transition: 0.2s;
 }
 
 .scroll-to:hover i {
-	color: rgba(255, 255, 255, 1);
+	color: #FF9900;
 	transition: 0.3s;
 }
 
@@ -517,100 +525,6 @@ content: '::'; color: #000000;
 .cookiebar-change-choice-link {
 	text-align: center;
 }
-/*============================
-*		Le Slider Jssor
-=============================*/
-#jssor_1{
-	position:relative;
-	margin:0 auto;
-	top:0px;
-	left:0px;
-	width:1300px;
-	height:500px;
-	overflow:hidden;
-	visibility:hidden;
-}
-.jssorl-009-spin{
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:100%;
-	text-align:center;
-	background-color:rgba(0,0,0,0.7);
-}
-
-/* jssor slider loading skin spin css */
-.jssorl-009-spin img {
-	margin-top:-19px;
-	position:relative;
-	top:50%;
-	width:38px;
-	height:38px;
-	animation-name: jssorl-009-spin;
-	animation-duration: 1.6s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-
-@keyframes jssorl-009-spin {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-/* IMAGES1 */
-.jssorl-data {cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;}
-.jssorl-logo {position:absolute;top:20px;left:30px;width:480px;height:130px;z-index:0;padding:5px;box-sizing:border-box;}
-.jssorl-name {position:absolute;top:400px;width:100%;height:100px;z-index:0;background-color:rgba(0,0,0, 0.7);font-size:1em;color:#efefef;line-height:25px;padding:5px;box-sizing:border-box;}
-/* IMAGES 2*/
-.jssorl-news {position:absolute;top:20px;left:70px;width:335px;height:430px;z-index:0;background:transparent url(images/infobox.png) no-repeat scroll 0 0 ;padding:5px;box-sizing:border-box;}
-.actus {padding:5px;}
-.jssorl-actus {position:absolute;top:450px;width:100%;height:50px;z-index:0;background-color:rgba(0,0,0, 0.7);font-size:1em;color:#ffffff;line-height:25px;padding:5px;box-sizing:border-box;}
-.jssorl-logo1 {position:absolute;top:100px;right:50px;width:480px;height:130px;z-index:0;padding:5px;box-sizing:border-box;}
-/* IMAGES 3*/
-.jssorl-coms{position:absolute;top:30px;left:30px;width:480px;height:130px;z-index:0;background-color:rgba(0,0,0, 0.7);font-size:40px;font-weight:100;color:#efefef;line-height:60px;padding:5px;box-sizing:border-box;}
-
-
-.jssorb032 {position:absolute;}
-.jssorb032 .i {position:absolute;cursor:pointer;}
-.jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
-.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
-.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
-.jssorb032 .i.idn {opacity:.3;}
-
-.jssora051 {display:block;position:absolute;cursor:pointer;}
-.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-.jssora051:hover {opacity:.8;}
-.jssora051.jssora051dn {opacity:.5;}
-.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-
-
-/*============================
-*	Les flux RSS Slider
-=============================*/
-
-.jssorl-news .rss-feed {
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-	margin-left: 20px;	
-}
-
-.jssorl-news .rss-feed  > li {
-	background: transparent url(images/li.png) no-repeat scroll 0 center;
-	vertical-align: text-top;
-	margin: auto auto auto -15px;
-	height: 20px;
-	padding-left: 15px;
-}
-
-.jssorl-news .rss-feed  > li  span.smaller { font-size: 1em;}
-.jssorl-news .rss-feed  > li  a { color:#04A3E6;}
 
 /*============================
 *	Autres
@@ -622,12 +536,32 @@ sur le mini-module Meilleurs téléchargements*/
     margin: 0;
 }
 
-.ghost {
-background: transparent url(images/ghost.png) no-repeat scroll 0 0;
+.Titan {
+background: transparent url(images/Titan.png) no-repeat scroll 0 0;
 z-index: 11;
 width: 251px;
 height: 232px;
 position: absolute;
 left: 10px;
 margin-top: -130px;
+}
+
+#module-mini-online{
+    font-size: 1.2em;
+    color: #000000;
+
+}
+.poll-container-title {
+    font-size: 1em;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+	#header {
+		background: url(images/logo-md.png) no-repeat scroll left 35px transparent;
+		margin: auto;
+		width:auto;
+	}
+	.Titan {display:none;}
+
 }
