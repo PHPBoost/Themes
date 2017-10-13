@@ -80,7 +80,8 @@ div#top-header-content {
 /* --- Partie inferieur du header --- */
 div#sub-header {
 	background-color: rgba(25, 35, 45, 0.4);
-	border-bottom: 2px solid #0E2134;	
+	border-bottom: 2px solid #0E2134;
+	position: relative;
 }
 
 @media (min-width: 769px) {
@@ -93,7 +94,6 @@ div#sub-header {
 div#sub-header-content{
 	margin: auto;
 	max-width: 1024px;
-	position: relative;
 }
 
 /* --- Logo et Nom du site web --- */
