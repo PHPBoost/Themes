@@ -1,0 +1,61 @@
+/*---------------------------------------------------------
+ * Theme    : Mystic Halloween
+ * Par      : EDN | Swan
+ * Date     : 12/10/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Thème compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+#module-mini-search {
+}
+
+#mini-search-form {
+	float: right;
+	margin: 40px 50px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	background: linear-gradient(to bottom, #1f4c45 0%,#1e3c3a 50%,#20232c 100%);
+	border-style: solid;
+	border-width: 1px 0 2px;
+	border-color: #178055 #000000 #222222 #000000;
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	background-color: #222222;
+	color: #def2eb;
+	border-style: solid;
+	border-width: 1px 0 2px;
+	border-color: #178055 #000000 #222222 #000000;
+	width: 120px;
+	height: 25px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#mini-search-form.input-element-button button {
+	margin-left: -5px;
+	padding: 2px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+@media (max-width: 768px) {
+	#module-mini-search {
+		left: -9999px;
+		position: absolute;
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,82 @@
+/*---------------------------------------------------------
+ * Theme    : BaseV4
+ * Par      : PHPBoost.com
+ * Porté par: EDN | Swan
+ * Date     : 12/10/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+.newsletter-form {
+/*	margin: 20px 25px 10px 0;
+	white-space: nowrap;
+	vertical-align: middle;*/
+
+	float: right;
+	background-color: transparent;
+	background-image: url(images/newsletter-form.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	color: #ffffff;
+	width: 250px;
+	height: 22px;
+}
+.newsletter-submit {
+	padding: 0;
+	margin-left: -3px;
+	border: none;
+	width: 35px;
+	height: 22px;
+	background: url(images/newsletter-submit.png) no-repeat;
+	cursor: pointer;
+	vertical-align: top;
+}
+.newsletter-title {
+	font-weight: bold;
+	text-indent: 10px;
+	font-size: 11px;
+	margin: 0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-right: 5px;
+	margin-top: 3px;
+	float: left;
+}
+ 
+#newsletter { 
+	float: right;
+	margin: 10px;
+}
+
+#newsletter button,
+#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+#newsletter .input-element-button input {
+	background: #CCCCCC;	
+	border: 1px solid #336397;
+	font-size: 12px;
+	padding: 1px 10px 5px 6px; 
+	border-radius: 5px !important;
+	font-size: 11px;
+	width: 120px;
+}
+#newsletter .input-element-button input:hover{background: #efefef;	}
+#newsletter .input-element-button input:focus{background: #FFFFFF;	}
+
+#newsletter .input-element-button button {
+	margin-left: -5px;
+	font-size: 12px;
+}
+.fa-envelope-o::before {
+    content: "" !important;
+}

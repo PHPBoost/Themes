@@ -1,0 +1,53 @@
+/*---------------------------------------------------------
+ * Theme    : Mystic Halloween
+ * Par      : EDN | Swan
+ * Date     : 12/10/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Thème compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+.newsletter-form {
+	background-color: #222222;
+	height: 30px;
+	margin: 20px 25px 10px 0;
+	display:flex;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-radius: 4px;
+	box-shadow: 0 0 10px black, 0 0 0 1px rgba(30, 204, 133, 0.5) inset;
+}
+
+.newsletter-title {
+	padding: 7px 15px 0 5px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+ 
+#newsletter { 
+	float: right;
+	margin: 10px;
+}
+
+#newsletter button,
+#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+	width: 120px;
+	border-radius: 4px 0 0 4px;
+	font-size: 12px;
+}
+
+div#newsletter  .input-element-button button {
+	margin-left: -5px;
+	border-radius: 0 4px 4px 0;
+	font-size: 12px;
+}
