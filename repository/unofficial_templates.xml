@@ -458,7 +458,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme minecraftien</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -491,7 +491,7 @@
 	<app id="justplayforfun" type="template">
 		<version num="2.0" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2016/07/16">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/justplayforfun/justplayforfun.zip">Just Play for FuN theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 			</authors>
@@ -502,7 +502,7 @@
 		</version>
 		<version num="1.4" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 			</authors>
@@ -513,7 +513,7 @@
 		</version>
 		<version num="1.3" language="english" localized_language="English" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/justplayforfun/justplayforfun.zip">Just Play for FuN theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 			</authors>
@@ -531,7 +531,7 @@
 			</authors>
 			<description>Version 2.0 du theme Just Play for FuN</description>
 			<whatsnew>
-				<new type="improvement">CompatibilitÃ© avec PHPBoost V5.0</new>
+				<new type="improvement">Compatibilité avec PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 		<version num="1.4" language="french" localized_language="Francais" name="JustPlayforFuN" priority="low" security-update="false" pubdate="2015/05/10">
@@ -561,7 +561,7 @@
 	<app id="redaurora" type="template">
 		<version num="1.2" language="english" localized_language="English" name="redaurora" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">redaurora Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/ElenWii/redaurora/redaurora.zip">redaurora theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 			</authors>
@@ -678,7 +678,7 @@
 	<app id="Cameleon" type="template">
 		<version num="4.0.3" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Cameleon Theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/cameleon/cameleon.zip">Cameleon theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 				<author name="babsolune" email="babsolune@phpboost.com" />
@@ -704,7 +704,7 @@
 		</version>
 		<version num="2.2" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Cameleon Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/cameleon/cameleon.zip">Cameleon theme</download>
 			<authors>
 				<author name="babsolune" email="babsolune@phpboost.com" />
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
@@ -730,7 +730,7 @@
 		</version>
 		<version num="1.8" language="english" localized_language="English" name="Cameleon" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Cameleon/Cameleon.zip">Cameleon theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
@@ -754,7 +754,7 @@
 	<app id="Enigma" type="template">
 		<version num="1.8" language="english" localized_language="English" name="Enigma" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Enigma Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/EnimSay/Enigma/Enigma.zip">Enigma theme</download>
 			<authors>
 				<author name="EnimSay" email="enim_sayh@hotmail.fr" />
 			</authors>
@@ -779,7 +779,7 @@
 	<app id="Hiver" type="template">
 		<version num="2.8" language="english" localized_language="English" name="Hiver" priority="low" security-update="false" pubdate="2013/11/12">
 			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">hiver Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Gerald72/hiver/hiver.zip">hiver theme</download>
 			<authors>
 				<author name="Gerald72" email="gerald72@gmail.com" />
 			</authors>
@@ -804,7 +804,7 @@
 	<app id="around_the_world" type="template">
 		<version num="2.6" language="english" localized_language="English" name="Around_the_world" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Around_the_world Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Grenouille/around_the_world/around_the_world.zip">Around_the_world theme</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" />
 			</authors>
@@ -826,7 +826,7 @@
 		</version>
 		<version num="5.0.0" language="english" localized_language="English" name="Around The World" priority="low" security-update="false" pubdate="2017/03/15">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/AroundTheWorld/AroundTheWorld.zip">Around The World Theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/AroundTheWorld/AroundTheWorld.zip">Around The World theme</download>
 			<authors>
 				<author name="Grenouille" email="mariedozol@gmail.com" />
 				<author name="EDN" email="contact@easy-design.net" />
@@ -845,7 +845,7 @@
 			</authors>
 			<description>Version 5.0 du theme Around The World</description>
 			<whatsnew>
-				<new type="new">Mise Ã  jour pour PHPBoost V5.0</new>
+				<new type="new">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -853,7 +853,7 @@
 	<app id="Summerday" type="template">
 		<version num="4.0.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2016/04/30">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/5.0/templates/summerday/summerday.zip">Summerday theme</download>
 			<authors>
 				<author name="ElenWii" email="elenwii@phpboost.com" />
 				<author name="babsolune" email="babsolune@phpboost.com" />
@@ -877,7 +877,7 @@
 		</version>
 		<version num="3.3" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/05/10">
 			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday theme</download>
 			<authors>
 				<author name="babsolune" email="babsolune@phpboost.com" />
 			</authors>
@@ -899,7 +899,7 @@
 		</version>
 		<version num="3.2" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2015/04/23">
 			<compatibility min="4.1" />
-			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/4.1/templates/Summerday/Summerday.zip">Summerday theme</download>
 			<authors>
 				<author name="babsolune" email="babsolune@phpboost.com" />
 			</authors>
@@ -923,7 +923,7 @@
 		</version>
 		<version num="2.6" language="english" localized_language="English" name="Summerday" priority="low" security-update="false" pubdate="2013/08/26">
 			<compatibility min="4.0" />
-			<download url="https://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Summerday Theme</download>
+			<download url="https://dl.phpboost.com/4.0/templates/Kits_Graphiques/Summerday/Summerday.zip">Summerday theme</download>
 			<authors>
 				<author name="Kits_Graphiques" email="webmaster@kitgraphiquegratuit.org" />
 			</authors>
@@ -967,7 +967,7 @@
 			</authors>
 			<description>Version 5.0 du theme Japanese_Traditions</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost 5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 		<version num="2.2" language="english" localized_language="English" name="Japanese_Traditions" priority="low" security-update="false" pubdate="2013/08/26">
@@ -1015,7 +1015,7 @@
 			</authors>
 			<description>Version 5.0 du theme Japanese_Traditions XL</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost 5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost 5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1064,7 +1064,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Fantasy</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1214,7 +1214,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme CSN-Gaming</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1290,7 +1290,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme AssassinSCreed</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1317,7 +1317,7 @@
 			</authors>
 			<description>Version 5.0.5 du theme Multi_Theme</description>
 			<whatsnew>
-				<new type="bug">Menu avec sous-menus intÃ©grÃ©s</new>
+				<new type="bug">Menu avec sous-menus intégrés</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1414,11 +1414,11 @@
 		</version>
 		<version num="5.0.2" language="french" localized_language="Francais" name="DayZ" priority="low" security-update="false" pubdate="2016/06/01">
 			<compatibility min="5.0" />
-			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">ThÃ¨me DayZ</download>
+			<download url="https://dl.phpboost.com/5.0/templates/DayZ/DayZ.zip">Theme DayZ</download>
 			<authors>
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
-			<description>Version 5.0.2 du thÃ¨me DayZ</description>
+			<description>Version 5.0.2 du theme DayZ</description>
 			<whatsnew>
 				<new type="bug">Correction du bug JS Scroll-to</new>
 			</whatsnew>
@@ -1612,7 +1612,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ValentineSDay</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1636,7 +1636,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ApresMidiDete</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1660,7 +1660,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme HeureDhiver</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1684,7 +1684,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MatinDePrintemps</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1708,7 +1708,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SoirdAutomne</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1732,7 +1732,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyBlackSmall</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1756,7 +1756,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyBlackXL</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1780,7 +1780,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyWhiteSmall</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1804,7 +1804,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme SimplyWhiteXL</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1828,7 +1828,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme 1erMai</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1852,7 +1852,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Bamboo</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1876,7 +1876,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlackSwan</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1900,7 +1900,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Coqueline</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1924,7 +1924,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Coqueline_Rose</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1948,7 +1948,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme KoiFish</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1972,7 +1972,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Mariage</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1996,7 +1996,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MyLove</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2020,7 +2020,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme MyLoving</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2044,7 +2044,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Rosane</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2068,7 +2068,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Rosina</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2092,7 +2092,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme JapanMangaXL</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2116,7 +2116,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ScoopOldPost</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2140,7 +2140,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme TravelToThePast</description>
 			<whatsnew>
-				<new type="improvement">premiÃ¨re version</new>
+				<new type="improvement">première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2164,7 +2164,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ChristmasBlue</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2188,7 +2188,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme ChristmasRed</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2212,7 +2212,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Christmas Green</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2236,7 +2236,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme FinalFantasy</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2260,7 +2260,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Universal-PBT</description>
 			<whatsnew>
-				<new type="improvement">PremiÃ¨re version</new>
+				<new type="improvement">Première version</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2284,7 +2284,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlueMoon</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2308,7 +2308,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme BlueNess</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2332,7 +2332,7 @@
 			</authors>
 			<description>Version 5.0.0 du theme Terra</description>
 			<whatsnew>
-				<new type="improvement">Mise Ã  jour pour PHPBoost V5.0</new>
+				<new type="improvement">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -2427,6 +2427,78 @@
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
 			<description>Première version du theme BaseV3</description>
+			<whatsnew>
+				<new type="improvement">Première révision</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="BaseV4" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="BaseV4" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/BaseV4/BaseV4.zip">BaseV4 template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>First revision of BaseV4 template</description>
+			<whatsnew>
+				<new type="improvement">First revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="BaseV4" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/BaseV4/BaseV4.zip">Theme BaseV4</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Première version du theme BaseV4</description>
+			<whatsnew>
+				<new type="improvement">Première révision</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="BaseV4-1" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="BaseV4.1" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/BaseV4-1/BaseV4-1.zip">BaseV4.1 template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>First revision of BaseV4.1 template</description>
+			<whatsnew>
+				<new type="improvement">First revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="BaseV4.1" priority="low" security-update="false" pubdate="2017/05/30">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/BaseV4-1/BaseV4-1.zip">Theme BaseV4.1</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Première version du theme BaseV4.1</description>
+			<whatsnew>
+				<new type="improvement">Première révision</new>
+			</whatsnew>
+		</version>
+	</app>
+	<app id="MysticHalloween" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="Mystic'Halloween" priority="low" security-update="false" pubdate="2017/11/07">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/MysticHalloween/MysticHalloween.zip">Mystic'Halloween template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>First revision of Mystic'Halloween template</description>
+			<whatsnew>
+				<new type="improvement">First revision</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="Mystic'Halloween" priority="low" security-update="false" pubdate="2017/11/07">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/MysticHalloween/MysticHalloween.zip">Theme Mystic'Halloween</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Première version du theme Mystic'Halloween</description>
 			<whatsnew>
 				<new type="improvement">Première révision</new>
 			</whatsnew>
