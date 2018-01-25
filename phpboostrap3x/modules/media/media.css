@@ -1,0 +1,34 @@
+.media-picture {
+	margin: 0 0 10px;
+}
+
+@media (min-width: 769px) {
+	.media-picture {
+		margin: 0 10px 10px 0;
+		max-width: 50%;
+		float: left;
+	}
+}
+
+.media-content {
+	position: relative;
+	margin: 25px auto;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.media-content object,
+.media-content embed,
+.media-content video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a.media-flv {
+	display: block;
+	margin: 10px auto;
+}

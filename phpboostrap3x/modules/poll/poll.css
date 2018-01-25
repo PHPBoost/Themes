@@ -1,0 +1,20 @@
+/* --- admin --- */
+
+.admin-module-poll .date-control {
+	width: 100% !important
+}
+
+#calendar3 {
+	top: auto;
+	bottom: 34px;
+}
+
+@media (min-width: 1367px) {
+	.admin-module-poll #calendar2 .calendar-block {
+		left: 320px;
+	}
+}
+
+#module-poll-main .media-left {
+	width: 10%;
+}

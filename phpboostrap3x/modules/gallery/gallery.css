@@ -1,0 +1,49 @@
+/* Surcharge de la classe notes pour passer à la ligne et ne pas deformer les tableaux */
+.notes {
+	white-space: nowrap;
+}
+
+#scrolling_images {
+	position: relative;
+	margin: 20px auto;
+	height: 150px;
+	overflow: hidden;
+}
+
+#module-gallery ul,
+#module-mini-gallery ul {
+	margin: 0 auto;
+	list-style: none;
+}
+
+#mini-gallery-slideshow li {
+	height: 150px;
+}
+
+#mini-gallery-slideshow.fade li 			{ display: none; 			}
+#mini-gallery-slideshow.vertical li 		{ display: inline-block; 	}
+#mini-gallery-slideshow.horizontal li 		{ display: block; 			}
+#mini-gallery-slideshow.fade ul:first-child { display: block; 			}
+
+#module-gallery .panel .btn-group a,
+#module-galery .thumbnail .btn-group a {
+	color: #ffffff;
+}
+
+.move-pics-container {
+	position: absolute;
+	z-index: 100;
+	float: left;
+	display: none;
+	top: 110%;
+}
+
+.move-pics-block {
+	width: 190px;
+	overflow: auto;
+}
+
+.move-pics-block > div {
+	margin-bottom: 4px;
+	font-weight: bold;
+}

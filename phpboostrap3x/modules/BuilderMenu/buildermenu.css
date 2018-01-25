@@ -1,0 +1,45 @@
+.buildermenu-btn {
+    position: fixed;
+    left:15px;
+    bottom: 15px;
+    z-index: 2001;
+}
+
+#buildermenu {
+    position: absolute;
+    left:0;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    padding: 15px;
+    background-color: #563D7C;
+}
+
+@media (min-width: 769px) {
+    #buildermenu {
+        position: fixed;
+    }
+}
+
+#buildermenu .list-group {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+#buildermenu ul ul {
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+#buildermenu ul ul li {
+    margin: 0 -15px;
+    padding: 10px 45px;
+}
+
+#buildermenu ul ul li:last-child {
+    margin-bottom: -10px;
+}
+
+#buildermenu .collapse li {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}

@@ -1,0 +1,558 @@
+
+/* --- ###################################################################### 
+ *
+ *                            admin_global.css
+ *                            
+ *            Contient les classes globales au site, peuvent être utilisees partout.
+ *            - les liens
+ *            - les titres
+ *            - le calendrier
+ *            - le BBCode
+ *            - les barres de progression
+ *            - Font-Awesome
+ *            - les messages d'erreur
+ * 
+ * --- ###################################################################### ---*/
+
+
+/* -- La mise en forme du texte ================================================*/
+
+/* --- Les liens du site --- */
+a {
+	color: #4372AA;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #2D4D73;
+	text-decoration: underline;
+}
+
+/* --- Les liens des utilisateurs --- */
+a.admin 	{ color: #FFA34F; }
+a.modo 		{ color: #006699; }
+a.member 	{ color: #000000; }
+
+/* --- Couleur de texte --- */
+.color-alert 		{ color: #B22222; }
+.color-notavailable { color: #B22222; }
+.color-available 	{ color: #008000; }
+.color-unknown 		{ color: #004b80; }
+
+.bkgd-color-visible 	{ background-color: #CCFFCC; }
+.bkgd-color-unvisible 	{ background-color: #FFEE99; }
+.bkgd-color-unaprobed 	{ background-color: #FFCCCC; }
+
+.bkgd-color-fixed 			{ background-color: #7FFF9C; }
+tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
+.bkgd-color-processing 		{ background-color: #FFD86F; }
+tr td.bkgd-color-processing { background-color: #FFD86F; }
+.bkgd-color-unknown 		{ background-color: #FF796F; }
+tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
+
+/* --- Les differentes tailles de polices --- */
+.smaller 	{ font-size: 0.869em; }
+.small 		{ font-size: 0.923em; }
+.big 		{ font-size: 1.231em; }
+.bigger 	{ font-size: 1.385em; }
+.biggest 	{ font-size: 1.538em; }
+
+/* --- Les titres (balise h) --- */
+h1 { font-size: 1.615em; }
+h2 { font-size: 1.462em; }
+h3 { font-size: 1.385em; }
+h4 { font-size: 1.308em; }
+h5 { font-size: 1.231em; }
+h6 { font-size: 1.154em; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+h5 {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+/* --- Les sous titres --- */
+h3.title1, h3.title2, h4.stitle1, h4.stitle2 {
+	display: inline;
+}
+
+h3.title1, h3.title2 {
+	border-bottom: 1px solid #366393;
+	padding: 0 0 0 3px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+/* --- Titre 1 --- */
+h3.title1 {
+	font-size: 2em;
+}
+
+/* --- Titre 2 --- */
+h3.title2 {
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 1.7em;
+}
+
+/* --- Sous titre 1 --- */
+h4.stitle1 {
+	margin: 0 0 10px 40px;
+	font-size: 1.5em;
+	color: #366393;
+}
+
+/* --- Sous titre 2 --- */
+h4.stitle2 {
+	margin: 0 0 10px 60px;
+	font-size: 1.3em;
+}
+
+/* --- Les listes --- */
+ul, ol {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/* -- Mise en forme du contenu ===========================================*/
+
+/* --- Affichage du mini calendrier --- */
+.calendar-block-container {
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	right: 0;
+}
+
+.calendar-container {
+	display: inline-block;
+}
+
+.calendar-block {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right:0;
+	z-index: 10;
+	border: 1px solid #999999;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+@media (min-width: 769px) {
+	.calendar-block {
+		width: 300px;
+	}
+}
+
+.calendar-block .date-picker {
+	margin: 0;
+	width: 100% !important;
+	table-layout: fixed;
+}
+
+.calendar-block .date-picker a {
+	display: block;
+	padding: 10px 0;
+}
+
+.calendar-block .date-select-container {
+	background-color: #F5F5F5;
+	padding: 2px 0;
+	border-radius: 3px 3px 0 0;
+}
+
+@media (max-width: 768px) {
+	.calendar-block .date-select-container {
+		font-size: 1.5em;
+	}
+}
+
+.calendar-block .date-select-previous 	{ float: left;  }
+.calendar-block .date-select-next 		{ float: right; }
+
+.calendar-block .date-select-next i,
+.calendar-block .date-select-previous i {
+	display: block;
+	padding: 0 10px;
+	color: #666666;
+}
+
+.calendar-block .date-select-content {
+	width: 100%;
+	text-align: center;
+}
+
+.calendar-block .date-select-content select,
+.calendar-block .date-select-content select:focus {
+	padding: 1px 1px;
+	border: none;
+	background: none;
+	box-shadow: none;
+	font-size: 0.9em;
+}
+
+.calendar-block .date-select-month,
+.calendar-block .date-select-year{
+	width: auto;
+}
+
+.calendar-block .date-picker select,
+.calendar-block .date-picker select:focus {
+	box-shadow: none;
+	max-width: 75px;
+}
+
+.calendar-block .date-picker thead tr th {
+	padding: 5px 0;
+	border-top: 1px solid #CCCCCC;
+	border-radius: 0;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	color: #666666;
+}
+
+.calendar-block .date-picker tbody tr:last-child {
+	border-bottom: none;
+}
+
+.calendar-block .date-picker tbody td {
+	height: 23px;
+	padding: 1px 2px;
+}
+
+.calendar-block .date-picker tbody td:first-child { border-left: none; }
+.calendar-block .date-picker tbody td:last-child  { border-right: none; }
+
+.calendar-block .date-picker tbody td.calendar-none    { background-color: #FFFFFF; }
+.calendar-block .date-picker tbody td.calendar-today   { background-color: #B5E5B9; }
+.calendar-block .date-picker tbody td.calendar-event   { background-color: #DBE5EE; }
+.calendar-block .date-picker tbody td.calendar-weekend { background-color: #FFE3B6; }
+
+.calendar-block .date-picker tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.calendar-block .date-picker tbody tr:last-child td:first-child { border-radius: 0 0 0 2px; }
+.calendar-block .date-picker tbody tr:last-child td:last-child  { border-radius: 0 0 2px 0; }
+
+/* --- les blocs bbcode --- */
+.bbcode-block-container {
+	position: absolute;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	z-index: 20;
+	top: 26px;
+	left: -4px;
+}
+
+.bbcode-block {
+	margin: 0;
+	background-color: #F3F3F3;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	border: 1px solid #AAAAAA;
+	border-radius: 3px;
+}
+
+.bbcode-block a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* --- Le selecteur de couleur --- */
+.color-picker {
+	position: absolute;
+	z-index: 100;
+}
+
+.color-picker .bbcode-block table {
+	border-collapse: collapse;
+	margin: auto;
+	border: none;
+}
+
+.color-picker td {
+	padding: 0;
+	border: 1px solid #F3F3F3;
+}
+
+.color-picker td a {
+	display: block;
+	width: 14px;
+	height: 14px;
+}
+
+/* --- les blocs de quote, de code ou caches --- */
+.formatter-blockquote, .formatter-code, .formatter-hide {
+	display: block;
+	width: 93%;
+	margin: auto;
+	padding: 2px 0;
+	font-weight: bold;
+}
+.blockquote, .code, .hide {
+	overflow: auto;
+	margin: 0 25px;
+	padding: 8px;
+	max-height: 500px;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+	color: #444444;
+}
+
+.hide {
+	cursor: pointer;
+	height: 10px;
+	overflow: hidden;
+}
+
+.hide2 {
+	visibility: hidden;
+	overflow: auto;
+}
+
+/* --- les autres element bbcode --- */
+.indent {
+	margin-left: 30px;
+}
+
+.formatter-acronym {
+	cursor: help;
+}
+
+.formatter-block {
+	display: block;
+	overflow: hidden;
+	margin: 5px 20px;
+	padding: 5px;
+	border: 1px solid #C4CED6;	
+}
+
+.formatter-fieldset {
+	margin: 10px;
+}
+
+.formatter-ul {
+	text-align: left;
+}
+
+/* --- les listes numerotees --- */
+.code ol {
+	margin-left: 3em;
+}
+
+/* --- La recherche de membre (AJAX) --- */
+.xmlhttprequest-result-search {
+	overflow: auto;
+	margin: 2px 0 0 0;
+	padding: 2px;
+	min-height: 40px;
+	width: 100px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01);
+}
+
+/* --- La barre de progression --- */
+.progressbar-container {
+	position: relative;
+	margin: 4px 0 10px;
+	background-color: #F5F5F5;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progressbar-container .progressbar-infos {
+	position: absolute;
+	width: 100%;
+	line-height: 13px;
+	font-size: .95em;
+	text-align: center;
+}
+
+.progressbar {
+	border-radius: 3px 0 0 3px;
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.progressbar[style*="width: 100"] {
+	border-radius: 3px 3px 3px 3px;
+}
+
+.progressbar-container .progressbar {
+	height: 13px;
+	background-color: #8ECF67;
+	transition: width .6s ease;
+}
+
+/* --- Le systeme de notation --- */
+.notation,
+.static-notation {
+	display: inline-block;
+}
+
+.notation .star,
+.static-notation .star {
+	padding-right: 5px;
+	color: #E3CF7A;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+
+/* -- Les Icones specifiques PHPBoost de FontAwesome ==================================*/
+.fa-syndication:before 	{ color: #F57900; }
+.fa-success:before 		{ color: #478948; }
+.fa-forbidden:before 	{ color: #BA4B49; }
+.fa-error:before 		{ color: #BA4B49; }
+.fa-warning:before 		{ color: #C19954; }
+.fa-ban:before 			{ color: #BA4B49; }
+.fa-unban:before 		{ color: #478948; }
+.fa-male:before 		{ color: #8DC3E9; }
+.fa-female:before 		{ color: #F49CC4; }
+.fa-online:before 		{ color: #52D132; }
+.fa-offline:before 		{ color: #E05759; }
+.fa-trend-up:before 	{ color: #478948; }
+.fa-trend-down:before 	{ color: #BA4B49; }
+
+li.small-block .fa-stack {
+	height: 2.34em;
+}
+
+.fa-circle-alert {
+	position: absolute;
+	z-index: 1;
+	top: -3px;
+	left: 20px;
+	font-size: 1.32em;
+}
+
+.fa-circle-alert span {
+	display: block;
+	position: absolute;
+	top: 4px;
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+/* --- menu de flux --- */
+.feed-list {
+	margin: 5px 0;
+	list-style-type: none;
+	text-align: left;
+}
+
+@media (max-width: 769px) {
+	.feed-list li a {
+		margin: 1px 0;
+		padding: 4px 0;
+	}
+}
+
+.feed-option-title {
+	padding: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.list {
+	margin-top: 8px
+}
+
+/* --- menu de flux avec image --- */
+.feed-img {
+	float: left;
+	width: 73px;
+	text-align: center;
+}
+
+.feed-desc {
+	float: left;
+	width: 250px;
+	padding-left: 6px;
+}
+
+/* --- menus de contenu --- */
+.block-contents div {
+	text-align: justify;
+	padding-top: 5px;
+}
+
+/* -- Les message d erreurs --
+--------------------------------------*/
+div.message-helper-small {
+	width: 90%;
+}
+
+@media (min-width: 769px) {
+	div.message-helper-small {
+		width: 50%;
+	}
+}
+
+.error,
+.notice,
+.warning,
+.success,
+.question {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	padding: 10px 10px 10px 40px;
+	margin: 5px auto 15px auto;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	text-align: left;
+	line-height: 20px;
+}
+
+.error:before,
+.notice:before,
+.warning:before,
+.success:before,
+.question:before {
+	position: absolute;
+	display: inline-block;
+	left: 6px;
+	top: 7px;
+	width: 28px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 2em;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.error:before 				{ content: "\f00d"; }
+.error, .error:before 		{ color: #BA4B49; }
+.notice:before 				{ content: "\f12a"; }
+.notice, .notice:before 	{ color: #888888; }
+.warning:before 			{ content: "\f071"; }
+.warning, .warning:before 	{ color: #C19954; }
+.success:before 			{ content: "\f00c"; }
+.success, .success:before 	{ color: #478948; }
+.question:before 			{ content: "\f128"; }
+.question, .question:before { color: #3B88AE; }
+
+.question 	{ background-color: #DAEEF8; border-color: #BDE9F2; }
+.notice 	{ background-color: #F0F0F0; border-color: #E2E2E2; }
+.warning 	{ background-color: #FDF9E4; border-color: #FBECCD; }
+.error 		{ background-color: #F3DFDF; border-color: #ECCDD2; }
+.success 	{ background-color: #E0F1D9; border-color: #D7EAC7; }
