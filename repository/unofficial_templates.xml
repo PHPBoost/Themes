@@ -346,6 +346,7 @@
 			</authors>
 			<description>PHPBoostrap 3.x theme Version 5.1.0</description>
 			<whatsnew>
+				<new type="bug">BBCode menu fix</new>
 				<new type="improvement">1st release</new>
 			</whatsnew>
 		</version>
@@ -357,6 +358,7 @@
 			</authors>
 			<description>Version 5.1.0 du theme PHPBoostrap 3.x</description>
 			<whatsnew>
+				<new type="bug">Fix menu du BBCode</new>
 				<new type="improvement">1ère mise en ligne</new>
 			</whatsnew>
 		</version>
