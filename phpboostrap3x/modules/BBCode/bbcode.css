@@ -60,6 +60,7 @@
 .block-hide 		{ left: 25px; }
 .block-alert 		{ left: 52px; }
 .block-table 		{ left: 76px; }
+.block-bgcolor-picker { left: 50px; }
 
 .bbcode-block-container:before {
 	position: absolute;
@@ -149,7 +150,7 @@
 	display: block;
 }
 
-/* --- Conteneur du selecteur de couleur --- */
+/* --- Conteneur du selecteur de couleur de texte --- */
 
 .block-color-picker .bbcode-block table {
 	margin: auto;
@@ -163,6 +164,25 @@
 }
 
 .block-color-picker td a {
+	display: block;
+	width: 14px;
+	height: 14px;
+}
+
+/* --- Conteneur du selecteur de couleur de fond --- */
+
+.block-bgcolor-picker .bbcode-block table {
+	margin: auto;
+	border: none;
+	border-collapse: collapse;
+}
+
+.block-bgcolor-picker td {
+	padding: 0;
+	border: 1px solid #F3F3F3;
+}
+
+.block-bgcolor-picker td a {
 	display: block;
 	width: 14px;
 	height: 14px;
@@ -239,6 +259,7 @@
 .bbcode-icon-hide:before        { content: "\f070"; }
 .bbcode-icon-list:before        { content: "\f03a"; }
 .bbcode-icon-color:before       { content: "\f043"; }
+.bbcode-icon-bgcolor::before 	{ content: "\f1fc"; }
 .bbcode-icon-size:before        { content: "\f034"; }
 .bbcode-icon-font:before        { content: "\f031"; }
 .bbcode-icon-minus:before       { content: "\f068"; }
