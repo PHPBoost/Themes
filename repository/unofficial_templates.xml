@@ -337,6 +337,30 @@
 			</whatsnew>
 		</version>
 	</app>
+	<app id="phpboostrap3x" type="template">
+		<version num="5.1.0" language="english" localized_language="English" name="PHPBoostrap 3.x" priority="low" security-update="false" pubdate="2018/01/25">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/phpboostrap3x/phpboostrap3x.zip">Blue Stones theme</download>
+			<authors>
+				<author name="babsolune" email="babsolune@phpboost.com" />
+			</authors>
+			<description>PHPBoostrap 3.x theme Version 5.1.0</description>
+			<whatsnew>
+				<new type="improvement">1st release</new>
+			</whatsnew>
+		</version>
+		<version num="5.1.0" language="french" localized_language="Francais" name="PHPBoostrap 3.x" priority="low" security-update="false" pubdate="2018/01/25">
+			<compatibility min="5.1" />
+			<download url="https://dl.phpboost.com/5.1/templates/phpboostrap3x/phpboostrap3x.zip">Theme Blue Stones</download>
+			<authors>
+				<author name="babsolune" email="babsolune@phpboost.com" />
+			</authors>
+			<description>Version 5.1.0 du theme PHPBoostrap 3.x</description>
+			<whatsnew>
+				<new type="improvement">1ère mise en ligne</new>
+			</whatsnew>
+		</version>
+	</app>
 	<!-- Bell Cranel -->
 	<app id="gaming-blue" type="template">
 		<version num="5.0.2" language="english" localized_language="English" name="Gaming Blue" priority="low" security-update="false" pubdate="2016/10/12">
