@@ -275,8 +275,8 @@ a.forum-link-pseudo:hover {
 		top: 20px;
 	}
 
-	.forum-refresh #forum_block_forum_unread_top,
-	.forum-refresh #forum_block_forum_unread_bottom {
+	.forum-refresh #forum_block_forum_unread_top > div,
+	.forum-refresh #forum_block_forum_unread_bottom > div {
 		width: 300px !important;
 		overflow: visible !important;
 	}
