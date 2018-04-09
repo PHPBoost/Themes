@@ -403,6 +403,18 @@ function XMLHttpRequest_preview(field)
 			</span>
 		</div>
 
+		<div id="bbcode-container-mail" class="btn-group btn-group-xs bbcode-container-more">
+			<span class="btn btn-default">
+				<a href="" class="fa fa-fw bbcode-icon-mail{AUTH_MAIL}" onclick="{DISABLED_MAIL}bbcode_mail('{FIELD}', ${escapejs(@bb_mail_prompt)});return false;" title="{@bb_mail}"></a>
+			</span>
+		</div>
+
+		<div id="bbcode-container-feed" class="btn-group btn-group-xs bbcode-container-more">
+			<span class="btn btn-default">
+				<a href="" class="fa fa-fw bbcode-icon-feed{AUTH_FEED}" onclick="{DISABLED_FEED}bbcode_feed('{FIELD}', ${escapejs(@bb_feed_prompt)});return false;" title="${escape(@bb_feed)}"></a>
+			</span>
+		</div>
+
 		<div id="bbcode-container-help" class="btn-group btn-group-xs bbcode-container-more">
 			<a class="btn btn-default" href="https://www.phpboost.com/wiki/bbcode" title="{@bb_help}" target="_blank" rel="noopener">
 				<i class="fa fa-fw bbcode-icon-help"></i>

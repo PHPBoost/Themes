@@ -84,6 +84,7 @@
 				{menus_top_central.MENU}
 				# END menus_top_central #
 			</div>
+			<div class="clearfix"></div>
 			# ENDIF #
 
 			# INCLUDE ACTIONS_MENU #
@@ -98,6 +99,7 @@
 				{menus_bottom_central.MENU}
 				# END menus_bottom_central #
 			</div>
+			<div class="clearfix"></div>
 			# ENDIF #
 
 		</div>

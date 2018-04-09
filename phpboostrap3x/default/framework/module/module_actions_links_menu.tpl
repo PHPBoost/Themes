@@ -2,7 +2,7 @@
 
 # IF C_DISPLAY #
 <nav class="dropdown actionslinks mr15">
-    <button id="module-actionslinks" class="btn btn-pbt dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button id="module-actionslinks" class="btn btn-pbt dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="${LangLoader::get_message('content.menus.actions', 'admin-links-common')} {MODULE_NAME}">
         <small class="visible-xs">${LangLoader::get_message('content.menus.actions', 'admin-links-common')} {MODULE_NAME}</small>
         <i class="fa fa-bars"></i>
     </button>

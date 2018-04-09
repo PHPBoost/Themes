@@ -591,6 +591,54 @@ h6.formatter-title { margin-left: 4rem; }
 	list-style-position: inside;
 }
 
+@media (min-width: 769px) {
+    .float-left  { float: left; margin-right: 15px;}
+    .float-right { float: right;  margin-left: 15px;}
+}
+
+.formatter-table {
+  border-collapse: collapse !important;
+}
+.formatter-table td,
+.formatter-table th {
+  background-color: #fff !important;
+}
+
+.formatter-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.formatter-table > thead > tr > th,
+.formatter-table > tbody > tr > th,
+.formatter-table > tfoot > tr > th,
+.formatter-table > thead > tr > td,
+.formatter-table > tbody > tr > td,
+.formatter-table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.formatter-table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.formatter-table > caption + thead > tr:first-child > th,
+.formatter-table > colgroup + thead > tr:first-child > th,
+.formatter-table > thead:first-child > tr:first-child > th,
+.formatter-table > caption + thead > tr:first-child > td,
+.formatter-table > colgroup + thead > tr:first-child > td,
+.formatter-table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.formatter-table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.formatter-table .formatter-table {
+  background-color: #fff;
+}
+
 /* --- Framework
 ============================================================================= */
 

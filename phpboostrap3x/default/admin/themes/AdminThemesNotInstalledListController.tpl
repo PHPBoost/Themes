@@ -44,7 +44,7 @@
 										<a class="btn btn-pbt" href="mailto:{themes_not_installed.AUTHOR_EMAIL}">
 											<i class="fa fa-fw fa-at"></i> {themes_not_installed.AUTHOR_NAME}
 										</a>
-										# IF themes_not_installed.C_WEBSITE #
+										# IF themes_not_installed.C_AUTHOR_WEBSITE #
 										<a href="{themes_not_installed.AUTHOR_WEBSITE}" class="btn btn-info">
 											<i class="fa fa-fw fa-globe"></i> Web
 										</a>
