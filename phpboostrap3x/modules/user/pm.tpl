@@ -101,14 +101,6 @@
 									</th>
 								</tr>
 							</thead>
-							<tfoot>
-								<tr>
-									<td colspan="6">
-										<div class="left">&nbsp;<input type="checkbox" id="validc" onclick="check_convers(this.checked, 'd');" title="{L_SELECT_ALL_MESSAGES}" /> &nbsp;<input type="hidden" name="token" value="{TOKEN}"><button type="submit" name="valid" value="true" class="submit">{L_DELETE}</button></div>
-										# IF convers.C_PAGINATION #<div class="pull-right"># INCLUDE convers.PAGINATION #</div># ENDIF #
-									</td>
-								</tr>
-							</tfoot>
 							<tbody>
 								# START convers.list #
 								<tr>
@@ -141,6 +133,14 @@
 								</tr>
 								# END convers.no_pm #
 							</tbody>
+								<tfoot>
+								<tr>
+									<td colspan="6">
+										<div class="left">&nbsp;<input type="checkbox" id="validc" onclick="check_convers(this.checked, 'd');" title="{L_SELECT_ALL_MESSAGES}" /> &nbsp;<input type="hidden" name="token" value="{TOKEN}"><button type="submit" name="valid" value="true" class="submit">{L_DELETE}</button></div>
+										# IF convers.C_PAGINATION #<div class="pull-right"># INCLUDE convers.PAGINATION #</div># ENDIF #
+									</td>
+								</tr>
+							</tfoot>
 						</table>
 					</div>
 

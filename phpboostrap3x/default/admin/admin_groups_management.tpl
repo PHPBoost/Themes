@@ -34,13 +34,6 @@
 									</th>
 								</tr>
 							</thead>
-							<tfoot>
-								<tr>
-									<td colspan="4">
-										<a href="admin_groups.php?add=1" class="btn btn-info" title="{L_ADD_GROUPS}">{L_ADD_GROUPS}</a>
-									</td>
-								</tr>
-							</tfoot>
 							<tbody>
 								# START group #
 								<tr>
@@ -59,6 +52,13 @@
 								</tr>
 								# END group #
 							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="4">
+										<a href="admin_groups.php?add=1" class="btn btn-info" title="{L_ADD_GROUPS}">{L_ADD_GROUPS}</a>
+									</td>
+								</tr>
+							</tfoot>
 						</table>
 					</div>
 				</div>

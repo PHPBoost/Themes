@@ -383,15 +383,6 @@
 						# ENDIF #
 						
 						<table class="table-pics">
-							# IF C_PAGINATION #
-							<tfoot>
-								<tr>
-									<th colspan="{COLUMNS_NUMBER}">
-									# INCLUDE PAGINATION #
-									</th>
-								</tr>
-							</foot>
-							# ENDIF #
 							<tbody>
 							# START pics_list #
 								# IF pics_list.C_OPEN_TR #<tr># ENDIF #
@@ -450,6 +441,15 @@
 								# IF end_table.C_DISPLAY_TR_END #</tr># ENDIF #
 							# END end_table #
 							</tbody>
+							# IF C_PAGINATION #
+							<tfoot>
+								<tr>
+									<th colspan="{COLUMNS_NUMBER}">
+									# INCLUDE PAGINATION #
+									</th>
+								</tr>
+							</tfoot>
+							# ENDIF #
 						</table>
 					</div>
 					<footer></footer>

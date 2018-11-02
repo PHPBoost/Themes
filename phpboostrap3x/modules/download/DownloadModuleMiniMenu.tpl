@@ -9,15 +9,6 @@
 				# ENDIF #
 			</tr>
 		</thead>
-		<tfoot>
-			<tr>
-				<td colspan="3" class="text-center">
-					<a href="${relative_url(DownloadUrlBuilder::home())}" class="btn btn-pbt">
-						{@module_title}
-					</a>
-				</td>
-			</tr>
-		</tfoot>
 		<tbody>
 		# IF C_FILES #
 			# START downloadfiles #
@@ -39,5 +30,14 @@
 			</tr>
 		# ENDIF #
 		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3" class="text-center">
+					<a href="${relative_url(DownloadUrlBuilder::home())}" class="btn btn-pbt">
+						{@module_title}
+					</a>
+				</td>
+			</tr>
+		</tfoot>
 	</table>
 </div>

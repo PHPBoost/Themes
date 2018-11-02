@@ -30,12 +30,6 @@
 								<th class="forum-last-topic">{L_LAST_MESSAGE}</th>
 							</tr>
 						</thead>
-						<tfoot>
-							<tr>
-								<th colspan="6">
-								</th>
-							</tr>
-						</tfoot>
 						<tbody>
 					# START subcats #
 							<tr>
@@ -82,6 +76,12 @@
 							</tr>
 				# END subcats #
 						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="6">
+								</th>
+							</tr>
+						</tfoot>
 					</table>
 				</div>
 			</article>
@@ -131,8 +131,6 @@
 							</th>
 						</tr>
 					</tfoot>
-					
-
 					
 					# IF C_NO_MSG_NOT_READ #
 					<tr>

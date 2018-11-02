@@ -45,15 +45,6 @@
 							<th></th>
 						</tr>
 					</thead>
-					# IF C_PAGINATION #
-					<tfoot>
-						<tr>
-							<td colspan="7">
-								# INCLUDE PAGINATION #
-							</td>
-						</tr>
-					</tfoot>
-					# ENDIF #
 					<tbody>
 						# START questions #
 						<tr>
@@ -91,6 +82,15 @@
 						</tr>
 						# END questions #
 					</tbody>
+					# IF C_PAGINATION #
+					<tfoot>
+						<tr>
+							<td colspan="7">
+								# INCLUDE PAGINATION #
+							</td>
+						</tr>
+					</tfoot>
+					# ENDIF #
 				</table>
 			</div>
 

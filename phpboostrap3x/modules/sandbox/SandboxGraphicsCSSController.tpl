@@ -484,11 +484,6 @@
 							<th>{@css.table.author}</th>
 						</tr>
 					</thead>
-					<tfoot>
-						<tr>
-							<td colspan="5"># INCLUDE PAGINATION #</td>
-						</tr>
-					</tfoot>
 					<tbody>
 						<tr>
 							<td>{@css.table.test}</td>
@@ -506,6 +501,11 @@
 							<td>{@css.table.author}</td>
 						</tr>
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5"># INCLUDE PAGINATION #</td>
+						</tr>
+					</tfoot>
 				</table>
 			</div>
 		</article>

@@ -30,15 +30,6 @@
 				# ENDIF #
 			</tr>
 		</thead>
-		# IF C_PAGINATION #
-		<tfoot>
-			<tr>
-				<td colspan="{NUMBER_COLUMN}">
-					# INCLUDE PAGINATION #
-				</td>
-			</tr>
-		</tfoot>
-		# ENDIF #
 		<tbody>
 			# START archives_list #
 				<tr>
@@ -72,6 +63,15 @@
 				</td>
 			</tr>
 		</tbody>
+		# IF C_PAGINATION #
+		<tfoot>
+			<tr>
+				<td colspan="{NUMBER_COLUMN}">
+					# INCLUDE PAGINATION #
+				</td>
+			</tr>
+		</tfoot>
+		# ENDIF #
 		# ENDIF #
 	</table>
 </div>

@@ -581,15 +581,6 @@
 						</th>
 					</tr>
 				</thead>
-				# IF C_PAGINATION #
-				<tfoot>
-					<tr>
-						<td colspan="5">
-							# INCLUDE PAGINATION #
-						</td>
-					</tr>
-				</tfoot>
-				# ENDIF #
 				<tbody>
 					# START referer_list #
 					<tr>
@@ -624,6 +615,15 @@
 					</tr>
 					# ENDIF #
 				</tbody>
+				# IF C_PAGINATION #
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							# INCLUDE PAGINATION #
+						</td>
+					</tr>
+				</tfoot>
+				# ENDIF #
 			</table>
 		</div>
 

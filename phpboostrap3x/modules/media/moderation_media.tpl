@@ -83,15 +83,6 @@
 								</th>
 							</tr>
 						</thead>
-						# IF C_PAGINATION #
-						<tfoot>
-							<tr>
-								<td colspan="6">
-									# INCLUDE PAGINATION #
-								</td>
-							</tr>
-						</tfoot>
-						# ENDIF #
 						<tbody>
 							# IF C_NO_MODERATION #
 							<tr>
@@ -123,6 +114,15 @@
 							# END files #
 							# ENDIF #
 						</tbody>
+						# IF C_PAGINATION #
+						<tfoot>
+							<tr>
+								<td colspan="6">
+									# INCLUDE PAGINATION #
+								</td>
+							</tr>
+						</tfoot>
+						# ENDIF #
 					</table>
 				</div>
 				<div class="table-responsive">

@@ -26,12 +26,6 @@
 								<th class="forum-last-topic">{L_LAST_MESSAGE}</th>
 							</tr>
 						</thead>
-						<tfoot>
-							<tr>
-								<td colspan="6">
-								</td>
-							</tr>
-						</tfoot>
 						<tbody>
 					# START subcats #
 							<tr>
@@ -65,6 +59,12 @@
 							</tr>
 				# END subcats #
 						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="6">
+								</td>
+							</tr>
+						</tfoot>
 					</table>
 				</div>
 			</article>
