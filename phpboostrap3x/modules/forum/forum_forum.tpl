@@ -106,19 +106,7 @@
 							<th class="forum-last-topic">{L_LAST_MESSAGE}</th>
 						</tr>
 					</thead>
-					<tfoot>
-						<tr>
-							<th colspan="7">
-								<div class="pull-left">
-									<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a> {U_FORUM_CAT}
-									# IF C_POST_NEW_SUBJECT #
-										 <a href="{U_POST_NEW_SUBJECT}" class="btn btn-info btn-sm" title="{L_POST_NEW_SUBJECT}">{L_POST_NEW_SUBJECT}</a>
-									# ENDIF #
-								</div>
-								# IF C_PAGINATION #<span class="pull-right"># INCLUDE PAGINATION #</span># ENDIF #
-							</th>
-						</tr>
-					</tfoot>
+					<tbody>
 					# IF C_NO_MSG_NOT_READ #
 					<tr>
 						<td colspan="7">
@@ -181,6 +169,20 @@
 						</td>
 					</tr>
 					# ENDIF #
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="7">
+								<div class="pull-left">
+									<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a> {U_FORUM_CAT}
+									# IF C_POST_NEW_SUBJECT #
+										 <a href="{U_POST_NEW_SUBJECT}" class="btn btn-info btn-sm" title="{L_POST_NEW_SUBJECT}">{L_POST_NEW_SUBJECT}</a>
+									# ENDIF #
+								</div>
+								# IF C_PAGINATION #<span class="pull-right"># INCLUDE PAGINATION #</span># ENDIF #
+							</th>
+						</tr>
+					</tfoot>
 				</table>
 			</div>
 		</article>
