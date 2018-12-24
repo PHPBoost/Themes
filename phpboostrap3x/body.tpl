@@ -136,7 +136,7 @@
 
 		<div class="col-sm-12 text-center">
 			<small>
-				{L_POWERED_BY} <a href="http://www.phpboost.com" title="PHPBoost">PHPBoost</a> {L_PHPBOOST_RIGHT}
+				{L_POWERED_BY} <a href="https://www.phpboost.com" title="PHPBoost">PHPBoost</a> {L_PHPBOOST_RIGHT}
 			</small>
 			# IF C_DISPLAY_BENCH #
 			<small>

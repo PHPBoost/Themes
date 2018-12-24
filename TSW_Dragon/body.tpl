@@ -216,7 +216,7 @@
 				</p>
 			</span>	
 			<span class="cms">
-				{L_POWERED_BY} <a href="http://www.phpboost.com" title="PHPBoost">PHPBoost {PHPBOOST_VERSION}</a> {L_PHPBOOST_RIGHT}
+				{L_POWERED_BY} <a href="https://www.phpboost.com" title="PHPBoost">PHPBoost {PHPBOOST_VERSION}</a> {L_PHPBOOST_RIGHT}
 			</span>
 			# IF C_DISPLAY_BENCH #
 			<span class="requete">

@@ -138,7 +138,7 @@
 				</ul>
 			</div>	
 			<span class="cms">
-				{L_POWERED_BY} <a href="http://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a> {L_PHPBOOST_RIGHT}
+				{L_POWERED_BY} <a href="https://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a> {L_PHPBOOST_RIGHT}
 			</span>
 			# IF C_DISPLAY_BENCH #
 			<span class="requete">

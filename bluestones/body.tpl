@@ -121,7 +121,7 @@
 		<div class="footer-infos">
 			<span>
 				{L_POWERED_BY}
-				<a href="http://www.phpboost.com" title="PHPBoost">
+				<a href="https://www.phpboost.com" title="PHPBoost">
 					<img src="{PATH_TO_ROOT}/templates/{THEME}/images/logo-pbt-footer.png" alt="logo pbt" /> PHPBoost
 				</a>
 			</span>
