@@ -1,0 +1,562 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Cameleon
+ * Par      : EnymSay
+ * Date     : 31/05/2017
+ * Site web :  http://easy-design.net/ | https://www.phpboost.com/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Modifié par : EDN | Swan
+ * Date      : 31/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background: #B4DBFF url('images/body.png') repeat-x;
+	color: #0E2A48;
+	font-size: 1.3em;
+	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+	height: 240px;
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	position: relative;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	margin: auto;
+	height: 164px;
+	max-width: 1024px;
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
+}
+
+div#top-header-content {
+	position: relative;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;	
+	}
+
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+	background: url('images/sub-header.png') no-repeat center 0 rgba(0,0,0, 0.0);
+	padding-top: 26px;
+	text-align: center;
+	min-height: 75px;
+	margin-top: 18px;
+}
+
+div#sub-header-content {
+	position: relative;
+	margin: auto;
+	width: auto;
+}
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 1.5em 0 0 1.5em;
+	max-width: 940px;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url('images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	div#site-name-container {
+		margin: 1em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+	
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 1.5em auto 0 auto;
+	padding: 0 10px;
+	max-width: 1250px;
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		padding: 0 10px;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+		width: 250px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 250px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 500px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+div#top-footer {
+	margin: 3px;
+	padding: 3px;
+}
+
+div.top-footer-wrapper {
+	padding: 0.2em;
+}
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+
+div#wrapper-main-content {
+	margin: 0 0 10px 0;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px #BEBEBE solid;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+div#main-content {
+	padding: 0.8em 0.5em;
+	background-color: #F6F6F6;
+	border: 1px #FFFFFF solid;
+	border-radius: 10px;
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+	background: url('images/footer.png') no-repeat scroll center center transparent;
+	height: 65px;
+	margin: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+footer .footer-wrapper {
+	padding: 0.2em 0 0.2em 0;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1024px;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #121212;
+	font-size: 0.8em;
+}
+
+footer#footer .footer-infos span a {
+	color: #999999;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#visit-counter-container {
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	font-size: 0.8em;
+	text-align: right;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px #BEBEBE solid;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+div#visit-counter {
+	padding: 4px 10px;
+	background-color: #F6F6F6;
+	border: 1px #FFFFFF solid;
+	border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	div#visit-counter-container {
+		display: none;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	margin: 0 0 20px 10px;
+	text-indent: 10px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: url('images/breadcrumb.png');
+	vertical-align: middle;
+}
+/*======================
+ --- Scroll to Top ---
+=======================*/
+.scroll-to {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+}
+
+#scroll-to-top {
+	right: 25px;
+	bottom: 0;
+	padding: 2px 11px 3px 10px;
+	transition: 0.2s;
+}
+
+.scroll-to i {
+	color: rgba(85, 85, 85, 0.8);
+	transition: 0.2s;
+}
+
+.scroll-to:hover i {
+	color: rgba(85, 85, 85, 1);
+	transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 40px;
+		padding: 5px 8px 8px 8px;
+	}
+
+	.scroll-to i {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
+}
+
+
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 7px 20px;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #cccccc;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 300px);
+		vertical-align: middle;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 5px;
+	}
+
+	.cookiebar-actions {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 5px 0 5px;
+	border-radius: 4px;
+	color: #FEFEFE;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 10px 0 10px;
+	}
+}
+
+.cookiebar-button-understand 		{ background-color: #dddddd; border-color: #8d8d8d; color: #000000; }
+.cookiebar-button-understand:hover 	{ background-color: #E5E5E5; border-color: #707070;}
+
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000; }
+.cookiebar-button-allowed:hover 		{ background: #000000; }
+
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019; }
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+.cookiebar-more a {color: #222222; }
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0px 0 20px 0px;
+}
+
+footer#cookiebar-change-choice {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
+}
+
+/*======================================
+			Alls Media Queries
+		 CSS applique aux écrans PC 
+========================================*/
+
+@media (max-width:768px) {
+
+	footer#footer {
+		background: rgba(255, 255, 255, 0.6);
+		border-top: 1px #BEBEBE solid;
+		box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);	
+		margin: auto;
+		height: auto;
+	}
+	footer#footer .footer-infos {
+		font-size: 0.8em;	
+
+		height:auto;
+		min-height: 40px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #222222;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+}

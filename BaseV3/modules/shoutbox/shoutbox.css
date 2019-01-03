@@ -1,0 +1,15 @@
+/*---------------------------------------------------------
+ * Theme    : BaseV3
+ * Par      : PHPBoost.com
+ * Porté par: EDN | Swan
+ * Date     : 12/09/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+#module-shoutbox .message > header {
+	display: none;
+}

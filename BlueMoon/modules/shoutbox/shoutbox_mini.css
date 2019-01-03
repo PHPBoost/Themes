@@ -1,0 +1,53 @@
+/*---------------------------------------------------------
+ * Theme    : Thème BlueMoon
+ * Par      : EDN-Swan
+ * Date     : 13/02/09
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 05/03/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+
+/* -- Conteneur des messages de la shoutbox.*/
+#shoutbox-messages-container {
+    height: 150px;
+    margin: auto;
+    max-width: 98%;
+    overflow: auto;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.shout-horizontal {
+	padding-left: 1.5em;
+}
+
+.shout-spacing {
+	margin: 10px 0 10px 0;
+}
+
+#module-mini-shoutbox textarea,
+#module-mini-shoutbox textarea:valid {
+	width: 90%;
+	/*border-color: #CCCCCC;*/
+}
+
+#shoutbox-bbcode-container ul {
+	margin: 0;
+	padding: 0;
+}
+
+#shoutbox-bbcode-container ul li {
+	display: inline-block;
+	border: none;
+}
+

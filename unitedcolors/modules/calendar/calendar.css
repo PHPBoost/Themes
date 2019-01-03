@@ -1,0 +1,114 @@
+div.calendar-content {
+	padding: 6px;
+}
+
+/* Affichage du mois en cours */
+div.calendar-top-container {
+	padding: 4px;
+}
+
+div.calendar-top-content {
+	text-align: center;
+}
+
+div.calendar-top-container a,
+div.calendar-top-container a:hover {
+	cursor: pointer;
+}
+
+div.calendar-top-l {
+	float: left;
+	padding: 1px 0px 0px 25px;
+}
+
+div.calendar-top-r {
+	float: right;
+	padding: 1px 25px 0px 0px;
+}
+
+/* Affichage des evenements */
+div.event-display-author {
+	font-size: 0.8em;
+	float: left;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+div.event-display-dates {
+	font-size: 0.8em;
+	font-weight: normal;
+	padding: 4px;
+	float: right;
+	width: 180px;
+}
+
+.event-display-dates + hr {
+	width: 70%;
+	margin: 0px auto 40px auto;
+	clear: both;
+}
+
+/* Particularite du tableau du calendrier */
+
+@media ( min-width: 769px ) {
+	#module-calendar table.calendar-table tbody tr td {
+		height: 40px;
+	}
+}
+
+#module-calendar tbody td.calendar-week {
+	border-right: 1px solid rgba(255, 255, 255, .2);
+	width: 8%;
+}
+
+/* Affichage de du titre de l'evenement dans le tableau de l'administration */
+table tbody tr th.column-title {
+	width: 28%;
+}
+
+/* Affichage du mini calendrier dans une colonne */
+#module-mini-calendar .calendar-top-container {
+	padding: 2px;
+}
+
+#module-mini-calendar .calendar-top-content h5 {
+	font-size: 0.9em;
+	padding-top: 1px;
+}
+
+#module-mini-calendar .calendar-top-l { padding: 0px 0 0 7px; }
+#module-mini-calendar .calendar-top-r { padding: 0px 7px 0 0; }
+
+#module-mini-calendar #date_select_form form.fieldset-content {
+	margin-top: 0px;
+}
+
+#module-mini-calendar #CalendarAjaxCalendarController_choose-date {
+	margin: 5px 0px 10px 0px;
+}
+
+#module-mini-calendar #CalendarAjaxCalendarController_choose-date div.form-element {
+	margin: 0px;
+}
+
+#module-mini-calendar .form-field select {
+	padding: 4px;
+}
+
+#CalendarAjaxCalendarController_month_field,
+#CalendarAjaxCalendarController_year_field {
+	display: inline-block;
+}
+
+.legend-line {
+	padding: 0 0 8px 0;
+}
+
+.legend-color {
+	font-size: 2em;
+	vertical-align: -1px;
+}
+
+.legend {
+	padding-right: 20px;
+}

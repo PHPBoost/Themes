@@ -1,0 +1,13 @@
+#module-mini-web .partner-picture {
+	padding: 5px;
+}
+
+article.web-partner {
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #3b3b3b;
+}
+
+article.web-privileged-partner {
+	border-width: 7px 1px 1px 1px;
+	border-top-color: #aa0000;
+}

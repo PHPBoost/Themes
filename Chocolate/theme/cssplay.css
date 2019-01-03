@@ -1,0 +1,148 @@
+/*==============================
+ ---       Menu Header       ---
+===============================*/
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/cssplay-responsive-multi-level-menu-jquery.html
+Copyright (c) Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any way to fit your requirements.
+
+=================================================================== */
+
+/* this is the PC menu stylesheet */
+.cssplay_menu {width:100%; text-align:left; height:45px; position:relative; z-index:1001; left:0;}
+.cssplay_toggle {display:none;}
+.cssplay_menu ul {margin:0; padding:0; list-style:none; white-space:nowrap; text-align:left;}
+.cssplay_menu ul {display:inline-block;} 
+.cssplay_menu ul {*display:inline;}
+
+.cssplay_menu li {margin:0; padding:0; list-style:none;}
+.cssplay_menu li.return {display:none;}
+
+.cssplay_menu li {display:inline-block; display:inline;}
+.cssplay_menu ul ul {
+	background: rgb(182, 19, 24);
+    background: rgba(182, 19, 24, 0.9);
+	position:absolute; 
+	left:-9999px; 
+	border-top:0;    
+	border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 3px #000;
+	}
+	
+.cssplay_menu > ul {margin:0 auto;}
+.cssplay_menu > ul > li {float:left; display:block; position:relative;}
+.cssplay_menu ul ul li a {border-top:1px solid #222222;}
+.cssplay_menu > ul > li.has-sub > a {background:transparent url(images/cssplay/down.png) no-repeat right center;  }
+.cssplay_menu ul ul > li.has-sub > a {background:transparent url(images/cssplay/right.png) no-repeat right center;}
+.cssplay_menu ul li.left ul > li.has-sub > a {background: url(images/cssplay/left.png) no-repeat left center;}
+
+.cssplay_menu ul li b {display:block; width:100%; height:45px; background:transparent; position:relative; z-index:10;
+-webkit-transition: 0s 0.5s;
+transition: 0s 0.5s;
+}
+.cssplay_menu ul ul li b {margin-top:-45px;}
+
+.cssplay_menu ul li b {*display:none;}
+
+.cssplay_menu ul > li {	
+	transition: all 0.7s ease-out;
+	color: #fff;
+	
+	text-shadow: -1px 1px 1px #000;
+}
+
+.cssplay_menu a {display:block; font-size:1.5em; color:#FFF; line-height:45px; text-decoration:none; padding:0 40px 0 10px;}
+.cssplay_menu > ul > li > a {float:left; text-transform:uppercase;}
+
+.cssplay_menu ul li:hover > ul {visibility:visible; left:-1px; top:45px; opacity:1;}
+.cssplay_menu ul ul li:hover > ul {visibility:visible; left:100%; top:auto; margin-top:-46px;}
+.cssplay_menu li.left:hover > ul {visibility:visible; left:auto; right:-1px; top:45px;}
+.cssplay_menu li.left ul li:hover > ul {visibility:visible; left:auto; right:100%; top:auto; margin-top:-46px;}
+.cssplay_menu ul li:hover > b {width:0;}
+
+.cssplay_menu li.left ul a {text-align:right; padding:0 10px 0 30px;}
+
+.cssplay_menu li:hover > a,
+.cssplay_menu li.left ul li:hover > a {	
+	background-color: #6b0b0b;
+	background-color: rgba(107, 11, 11, 0,5);	
+	transition: all 0.7s ease-out;
+	color: #FFF;
+	font-size: 1.5em;
+	text-shadow: -1px 1px 1px #000;
+	text-decoration:none;
+}
+
+
+/* this is the stylesheet when the menu is viewed on a device with a max width of 1024 pixels */
+.cssplay_menu_mini {
+	background:#b61318;
+	height:100%; 
+	width:300px; 
+	overflow:scroll; 
+	overflow-x:hidden; 
+	position:fixed; 
+	left:-300px; 
+	top:0; 
+	z-index:500010;
+-webkit-overflow-scrolling: touch;
+}
+.cssplay_menu_mini + .cssplay_toggle {
+	display:block;
+	background:#3e291e url(images/cssplay/menu-icon.gif) no-repeat left center; 
+	width:111px; 
+	height:40px; 
+	position:fixed; 
+	left:-30px; 
+	top:5px; 
+	color:#fff; 
+	cursor:pointer; 
+	border-radius:0 10px 10px 0; 
+	font-size:1.5em; 
+	color:#fff; 
+	text-align:right; 
+	padding-right:10px; 
+	padding-top: 5px;
+	z-index:10000; 
+	-webkit-transition:0.25s;
+	transition:0.25s;
+}
+.cssplay_menu_mini + .cssplay_toggle:hover {left:0;}
+
+.cssplay_menu_mini ul {
+	padding:0; 
+	margin:0 0 20px 0; 
+	list-style:none; 
+	background:#aa0000; 
+	width:100%; 
+	border:1px solid rgba(182, 19, 24,0.2); 
+	border-top:0; text-align:left;
+}
+	
+.cssplay_menu_mini ul ul {background:#510505; width:calc(100% - 30px); margin-left:15px;}
+.cssplay_menu_mini ul ul ul {background:#a11f1f; width:calc(100% - 30px);}
+.cssplay_menu_mini ul ul ul ul {background:#a82525; width:calc(100% - 30px);}
+.cssplay_menu_mini ul li {position:relative; border-top:1px solid rgba(255,255,255,0.2);}
+
+.cssplay_menu_mini li.return {
+	/* Bouton close */ 
+	background:#3e291e url(images/cssplay/close.png) no-repeat 10px center; 
+	display:block; 
+	height:40px; 
+	font-size:1.5em; 
+	color:#fff; 
+	text-align:left; 
+	padding-left:50px; 
+	padding-top: 5px; 
+	cursor:pointer;
+	z-index:10001;
+}
+
+.cssplay_overlay {position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.3); display:none; cursor:pointer;z-index:10002;}
+
+.cssplay_menu_mini ul li a {display:block; font-size:1.5em; color:#fff; text-decoration:none; text-indent:10px;}
+.cssplay_menu_mini b {display:none;}

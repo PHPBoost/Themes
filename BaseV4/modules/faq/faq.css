@@ -1,0 +1,65 @@
+/*---------------------------------------------------------
+ * Theme    : BaseV4
+ * Par      : PHPBoost.com
+ * Porté par: EDN | Swan
+ * Date     : 12/10/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+.faq-answer-container {
+	padding: 10px 5px 10px 0;
+	height: auto;
+}
+
+.faq-answer-container > div {
+	line-height: 1.32em;
+}
+
+.article-faq {
+	background: linear-gradient(to bottom,#FFFFFF 50%,#FAFAFA 100%);
+	border: 1px #cccccc solid;
+    padding: 0;
+    margin: 0 0 6px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s;
+    display: table;
+    width: 100%;
+}
+
+.faq-question-element {
+	margin: 0;
+	padding: 8px 5px 5px 10px;
+}
+
+.question-title {
+	display: inline-block;
+	overflow: initial;
+	border: none;	
+}
+
+.faq-question-element .question-title {
+	margin-left: 5px;
+}
+
+.sortable-title .question-title span {
+    font-size: 1.9rem;
+}
+
+/* hack pour l'ancre */
+.question-anchor {
+	margin-top: -10px;
+	padding-top: 10px;
+}
+
+.article-faq footer {
+	margin: 0;
+	padding: 0;
+}
+
+#questions-titles-list hr {
+	margin: 20px 0;
+}

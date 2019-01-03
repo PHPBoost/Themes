@@ -1,0 +1,41 @@
+#module-articles hr {
+	margin-top: 10px;
+}
+
+.pages-pagination {
+	float: right;
+	width: 33%;
+	margin-bottom: 10px;
+}
+
+#module-articles .block {
+	min-height: 420px;
+}
+
+span.contents + hr {
+	margin: 35px 0 20px 0;
+	clear: both;
+}
+
+.form-field-action-link ul {
+	margin: 0;
+    list-style-type: none;
+}
+
+.form-field-action-link i {
+	font-size: 2.3rem;
+}
+
+.fa-pagebreak:before { content: "\f0f6"; }
+
+/* --- */
+
+#module-articles img.right { max-width: 30%; }
+
+#module-articles .options {
+	background: none;
+	border: none;
+	max-width: 100%;
+}
+
+#module-articles div.horizontal-fieldset { margin: 0; }

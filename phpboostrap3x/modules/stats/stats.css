@@ -1,0 +1,73 @@
+
+
+ i.fa-home                    { color: #05BAB0; }
+ li:hover i.fa-home           { color: #058480; }
+
+ i.fa-users                   { color: #3498DB; }
+ li:hover i.fa-users          { color: #1b7CBD; }
+
+ i.fa-eye                     { color: #2ECC71; }
+ li:hover i.fa-eye            { color: #16A352; }
+
+ i.fa-file-o                  { color: #4372AA; }
+ li:hover i.fa-file-o         { color: #2D4D73; }
+
+ i.fa-globe                   { color: #1FA6D5; }
+ li:hover i.fa-globe          { color: #1589B1; }
+
+ i.fa-laptop                  { color: #999999; }
+ li:hover i.fa-laptop         { color: #777777; }
+
+ i.fa-flag-o                  { color: #9B59B6; }
+ li:hover i.fa-flag-o         { color: #8533A7; }
+
+ i.fa-share-square-o          { color: #f86227; }
+ li:hover i.fa-share-square-o { color: #D6511C; }
+
+ i.fa-key                     { color: #F1C40F; }
+ li:hover i.fa-key            { color: #D8B00E; }
+
+ i.fa-search                  { color: #34495E; }
+ li:hover i.fa-search         { color: #1B344D; }
+
+.stats-color-square {
+	width:10px;
+	height:10px;
+	display:inline-block;
+	border:1px solid #000000;
+}
+
+.date-selector-container {
+    margin: auto;
+    text-align: center;
+}
+
+.table-values-head {
+    background-image: url(images/stats2.png);
+    background-repeat: no-repeat;
+    margin-left: 2px;
+    height: 4px;
+    width: 10px;
+}
+
+.table-values {
+    background-image: url(images/stats.png);
+    background-repeat: no-repeat;
+    margin-left: 2px;
+    width: 10px;
+}
+
+.total-head       { width: 70px; }
+.average-head     { width: 60px; }
+.last-update-head { width: 96px; }
+.trend-head       { width: 100px; }
+
+/* --- referer --- */
+
+.table .table {
+    margin: 0;
+}
+
+.table > tbody > tr > td.stats-referer {
+    padding: 0;
+}

@@ -1,0 +1,20 @@
+#########################################
+##            BIENVENUE                ##
+#########################################
+
+--------------- Infos du template ----------------
+
+
+Vous allez installer le thème : Rosane
+
+
+------------- Dossier : extras -------------------
+Vous y trouverez:
+
+- La bannière modifiable.
+- le top 
+- et le title
+
+##############################################
+##    @micalement Swan : Just For FuN       ##
+##############################################

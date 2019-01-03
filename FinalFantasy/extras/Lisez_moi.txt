@@ -1,0 +1,46 @@
+#########################################
+##            BIENVENUE                ##
+#########################################
+
+-------------------------------- Infos du template -----------------------------
+
+
+Vous allez installer le thème : FinalFantasy
+
+-------------------------------- Pour les Background ------------------------------
+
+Les images sont à placer dans le dossier "templates/FinalFantasy/theme/images".
+Le fichier CSS à modifier est dans le dossier "templates/FinalFantasy/theme".
+
+Le fond est pré-réglé en css. Vous n'avez qu'a changé l'image qui devra être au format préalable/ou supérieur à 1280x900.
+Attention tout de même au poids de votre images, qui risque si elle est lourde de ralentir l'affichage du site.
+
+
+---------------Pour le background en fixe---------------
+
+Dans le dossier "theme", fichier "Design.css" à la ligne 12 :
+
+background:transparent url(images/bg.jpg) no-repeat scroll top center;	
+/*Enlevez ou rajoutez les balises commentaires ci-dessous pour valider ou invalider le css */	
+background-attachment:fixed;
+
+---------------Pour le background en top---------------
+
+Dans le dossier "theme", fichier "Design.css" à la ligne 12 :
+
+/* remplacer le -transparent- par une couleur hexadécimal #XXXXXX, si vous le souhaitez*/
+background:transparent url(images/bg.jpg) no-repeat scroll top center;	
+/*Enlevez ou rajoutez les balises commentaires ci-dessous pour valider ou invalider le css */	
+/*background-attachment:fixed;*/
+
+-------------------------------- Pour finir ------------------------------
+
+N'oublier pas de régénérer le cache.
+
+----------------------------- Dossier : extras ---------------------------
+
+Vous  trouverez l'image titre, dans le dossier "templates/FinalFantasy/theme/images".
+
+##############################################
+##        @micalement Swan : Just For FuN   ##
+##############################################

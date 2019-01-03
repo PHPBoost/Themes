@@ -1,0 +1,51 @@
+/*---------------------------------------------------------
+ * Theme    : DayZ
+ * Par      : EDN | Swan
+ * Date     : 31/03/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+.newsletter-form {
+    background: #222222 none repeat scroll 0 0;
+    border-radius: 3px;
+    margin: 10px 16px 8px 12px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.newsletter-title {
+	padding: 0 10px 0 5px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+ 
+div#newsletter { 
+	float: right;
+	margin: 6px;
+}
+
+div#newsletter button,
+div#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+	width: 120px;
+	border-radius: 4px 0 0 4px;
+	font-size: 12px;
+}
+
+div#newsletter  .input-element-button button {
+	margin-left: -5px;
+	border-radius: 0 4px 4px 0;
+	font-size: 12px;
+}

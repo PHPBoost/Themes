@@ -1,0 +1,14 @@
+/*---------------------------------------------------------
+ * Theme    : Medieval
+ * Par      : EDN | Swan
+ * Date     : 23/02/2018
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+#module-shoutbox .message > header {
+	display: none;
+}

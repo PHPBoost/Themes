@@ -1,0 +1,76 @@
+/* --- User Upload
+============================================================================= */
+
+#module-user-upload .btn-group a,
+.upload-elements-container .btn-group a {
+    color: #ffffff;
+}
+
+#module-user-upload input,
+.upload-elements-container input {
+	width: 100%;
+}
+
+/* --- User Login
+============================================================================= */
+.global-maintain #site-logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url(images/logo.png);
+    margin: 0 auto 15px;
+    width: 60px;
+    height: 60px;
+	float: none;
+}
+
+@media (min-width: 769px) {
+    .global-maintain #site-logo {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* -- Profile User -- */
+/* ------------------ */
+
+/*moderation*/
+
+.convers-announce {
+	padding-right: 0;
+}
+
+.convers-title {
+	width: 50%;
+	text-align: left;
+}
+
+table.announce-legend td {
+	width: 33%;
+}
+
+
+/* -- Error 403/404 -- */
+/* ------------------- */
+
+#module-user-error-403 .fa-warning:before,
+#module-user-error-404 .fa-warning:before {
+	content: "\f071";
+}
+
+#module-user-error-403 .fa-warning,
+#module-user-error-404 .fa-warning {
+	display: block;
+	margin: 40px auto 20px auto;
+	color: #C19954;
+}
+
+#module-user-error-403 .message-error,
+#module-user-error-404 .message-error {
+	padding: 20px 0;
+}
+
+#module-user-error-403 .type-error,
+#module-user-error-404 .type-error {
+	padding: 10px 0;
+}

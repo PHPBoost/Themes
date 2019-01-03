@@ -1,0 +1,72 @@
+/*---------------------------------------------------------
+ * Theme    :  ValentineSDay
+ * Par      : EDN | Swan
+ * Date     : 08/05/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.0 : 08/05/2016
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+ 
+#module-articles hr {
+	margin-top: 10px;
+}
+
+.pages-pagination {
+	float: right;
+	width: 33%;
+	margin-bottom: 10px;
+}
+
+#module-articles .small-block {
+	min-height: 420px;
+}
+
+.article-articles.article-several.small-block {
+	padding: 1.2em;
+}
+
+.article-articles.article-several h2,
+.article-articles.article-several .more {
+	margin: 0;
+}
+
+.article-articles.article-several .content {
+	padding: 0 0.5em 0 0.5em;
+}
+
+.article-articles.article-several img {
+	padding: 0 0 0.5em 0;
+}
+
+span.contents + hr {
+	margin: 35px 0 20px 0;
+	clear: both;
+}
+
+.form-field-action-link ul {
+	margin: 0;
+    list-style-type: none;
+}
+
+.form-field-action-link i {
+	font-size: 2.3rem;
+}
+
+#module-articles .small-block.one-article {
+	width: 99%;
+}
+
+@media (min-width: 769px) {
+	#module-articles .small-block.two-articles {
+		width: 49%;
+	}
+}
+
+.fa-pagebreak:before { content: "\f0f6"; }

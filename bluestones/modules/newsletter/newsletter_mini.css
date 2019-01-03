@@ -1,0 +1,27 @@
+.newsletter-form {
+	margin: 20px 25px 10px 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.newsletter-title {
+	padding: 5px 10px 0 0;
+	vertical-align: middle;
+}
+ 
+div#newsletter { 
+	margin: 10px;
+	text-align: center;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+	padding: 0.4em 1em;
+}
+
+div#newsletter  .newsletter-submit {
+	margin: 0 0 5px 0;
+}

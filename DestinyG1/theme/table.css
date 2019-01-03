@@ -1,0 +1,244 @@
+/*---------------------------------------------------------
+ * Theme    : Destiny2_G1
+ * Par      : EDN | Swan
+ * Date     : 12/09/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec une seule colonne de menus.
+ *----------------------------------------------------------*/
+ 
+/* --------------------------------------
+		table.css
+Contient les elements pour l'affichage des tableaux HTML et responsive.
+ - Affichage des tableaux basic
+ - Table responsive basictable.js
+--------------------------------------*/
+
+
+/* -- Affichage des tableaux basic -- */
+/* --------------------------------- */
+table {
+	margin: 8px 0;
+	padding: 0;
+	width: 100%;
+	border-spacing: 0;
+}
+
+/* --- Entete du tableau --- */
+table caption {
+	margin: 5px 0 5px 0px;
+	border-bottom: 1px solid #DDDDDD;
+	color: #cccccc;
+	font-size: 13px;
+	text-align: left;
+}
+
+table thead th,
+.table-head {
+	background-color: rgba(69, 49, 50, 0.85); /* #453132 */
+	padding: 8px;
+	color: #FF9900;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: normal;
+}
+
+table thead th a 		{ color: #EEEEEE; }
+table thead th a:hover 	{ color: #FFFFFF; }
+table a 		{ color: #efefef; }
+table a:hover		{ color: #cccccc; }
+
+/* --- Contenu du tableau --- */
+table tbody td,
+.table-element-container {
+	padding: 8px;
+	background-color: rgba(0,0,0, 0.3);
+	border-style: solid;
+	border-color: #555555;
+	border-width: 1px 0 0 1px;
+	color: #cccccc;
+	text-align: center;
+}
+
+.table-element-container a {
+	color: #777777;
+}
+
+tr:nth-child(even) td {
+	background-color: rgba(0,0,0, 0.65);
+}
+
+table tbody tr:last-child td {
+	border-bottom: 1px solid #555555;
+}
+
+table.bt tbody tr:last-child td {
+	border-bottom: none;
+}
+
+table.bt tbody tr:last-child td:last-child {
+	border-bottom: 1px solid #555555;
+}
+
+table tbody tr td:last-child {
+	border-right: 1px solid #555555;
+}
+
+table tbody tr.no-separator td {
+	border-top: none;
+}
+
+table tbody tr td.no-separator {
+	border-left: none;
+}
+
+table tbody tr td.no-separator:first-child {
+	border-left: 1px solid #555555;
+}
+
+/* --- Pied de tableau --- */
+table tfoot tr th {
+	padding: 8px;
+	background-color: #000000;
+	border-bottom: 1px solid #000000;
+	color: #AAAAAA;
+}
+
+table tfoot tr th:first-child {
+	border-left: 1px solid #555555;
+}
+
+table tfoot tr th:last-child {
+	border-right: 1px solid #555555;
+}
+
+table tfoot tr th:only-child {
+	text-align: right;
+}
+
+table tfoot tr th * {
+	vertical-align: middle;
+}
+
+table tfoot tr th a {
+	color: #676A74;
+}
+
+table tfoot tr th select {
+	padding: 2px 5px;
+}
+
+/* --- Patch thead tableaux formates --- */
+table.formatter-table th.formatter-table-head {
+	padding: 8px;
+	background-color: #d66700;
+	color: #F1F1F1;
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: normal;
+}
+
+table.formatter-table th.formatter-table-head a 	  {	color: #F1F1F1; }
+table.formatter-table th.formatter-table-head a:hover {	color: #FAFAFA; }
+
+table.formatter-table th.formatter-table-head p {
+	margin-bottom: 0;
+}
+
+/* --- Taille des colonnes --- */
+.col-smaller { width: 3em;  }
+.col-small   { width: 6em;  }
+.col-large   { width: 9em;  }
+.col-larger  { width: 12em; }
+.col-xlarge  { width: 15em; }
+
+/* --- mini tableaux --- */
+table.mini th,
+table.mini td {
+	padding: 3px 1px;
+	font-size: 11px;
+}
+
+@media (max-width: 768px) {
+	table.mini th,
+	table.mini td {
+		padding: 7px 1px;
+	}
+}
+
+table.mini th a,
+table.mini td a {
+	font-size: 11px;
+}
+
+/* --- Pagination footer tableaux --- */
+table tfoot nav.pagination a {
+	color: #777777;
+	text-decoration: none;
+	padding: 3px 3px;
+
+}
+
+table tfoot nav.pagination a span.current-page {
+	color: #555555;
+	text-decoration: none;
+}
+
+/* --- Affichage des tableaux responsive sur les petits ecrans --- */
+@media (max-width: 768px) {
+	table thead th,
+	table tbody td,
+	table tfoot tr th {
+		padding: 4px;
+		font-size: 0.9em;
+	}
+}
+
+
+/* -- Table responsive basictable.js -- */
+/* ------------------------------------ */
+table.bt thead th {
+	display: none;
+}
+
+table.bt thead th:first-child{
+	display: block;
+}
+
+table.bt tbody td {
+	display: block;
+	width: 100%;
+	border-right: 1px solid #DDDDDD;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.bt tbody td.no-separator {
+	border-left: 1px solid #DDDDDD;
+}
+
+table.bt tbody td:before {
+	display: inline-block;
+	width: 35%;
+	content: attr(data-th) " ";
+	font-weight: bold;
+}
+
+table.bt tbody td.bt-hide {
+	display: none;
+}
+
+table.bt tbody td .bt-content {
+	display: inline-block;
+	padding-left: 6px;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.bt-wrapper.active {
+	max-height: 310px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}

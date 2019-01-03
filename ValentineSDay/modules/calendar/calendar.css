@@ -1,0 +1,179 @@
+/*---------------------------------------------------------
+ * Theme    :  ValentineSDay
+ * Par      : EDN | Swan
+ * Date     : 08/05/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.0 : 08/05/2016
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+div.calendar-content {
+	padding: 6px;
+}
+
+/* Affichage du mois en cours */
+div.calendar-top-container {
+	background-color: #FEFEFE;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;	
+	padding: 4px;
+}
+
+div.calendar-top-content {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.calendar-top-container a,
+div.calendar-top-container a:hover {
+	color: #f000ff;
+	cursor: pointer;
+}
+
+div.calendar-top-l {
+	float: left;
+	padding: 1px 0px 0px 25px;
+}
+
+div.calendar-top-r {
+	float: right;
+	padding: 1px 25px 0px 0px;
+}
+
+/* Affichage des évenements */
+div.event-display-author {
+	font-size: 0.8em;
+	float: left;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+div.event-display-dates {
+	font-size: 0.8em;
+	font-weight: normal;
+	padding: 4px;
+	float: right;
+	width: 180px;
+}
+
+/* Particularité du tableau du calendrier */
+
+/* CSS applique aux écrans PC */
+@media ( min-width: 769px ) {
+	#module-calendar table.calendar-table tbody tr td {
+		height: 40px;
+	}
+}
+
+/* Couleur des différents évenements */
+
+
+tbody td.calendar-none { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6); }
+tbody td.calendar-today { background: #AAAAAA none repeat scroll 0 0 } 
+tbody td.calendar-event { background: #DBE5EE; }
+tbody td.calendar-other {}
+tbody td.calendar-weekend { background: #ec94c0 none repeat scroll 0 0; }
+aside#menu-right  tbody td.calendar-weekend   {background:#ec94c0 none repeat scroll 0 0;}
+.calendar-other > a {color:#888888;}
+.calendar-weekend > a {color:#ffffff;}
+.calendar-today > a {color:#ffffff;}
+.calendar-today > a:hover {color:#222222;}
+
+aside#menu-left tbody td.calendar-other a ,
+aside#menu-right  tbody td.calendar-other a{
+    color: #AAAAAA;
+}
+aside#menu-left tbody td.calendar-today a ,
+aside#menu-right  tbody td.calendar-today a{
+    color: #fefefe;
+}
+
+aside#menu-left tbody td.calendar-weekend a,
+aside#menu-right  tbody td.calendar-weekend a  {
+    color: #FEFEFE;
+}
+aside#menu-left tbody td.calendar-weekend a:hover, 
+aside#menu-right tbody td.calendar-weekend a:hover{
+color:#df5799;
+}
+aside#menu-left tbody td.calendar-other:hover ,
+aside#menu-right  tbody td.calendar-other:hover,
+aside#menu-left tbody td.calendar-today:hover ,
+aside#menu-right  tbody td.calendar-today:hover  {
+background:#fefefe none repeat scroll 0 0;
+}
+aside#menu-left tbody td.calendar-weekend:hover,
+aside#menu-right  tbody td.calendar-weekend:hover  {
+	background-color: #df5799;
+}
+aside#menu-left tbody td.calendar-other a:hover ,
+aside#menu-right  tbody td.calendar-other a:hover,
+aside#menu-left tbody td.calendar-today a:hover ,
+aside#menu-right  tbody td.calendar-today a:hover  {
+color: #555555;
+}
+
+#module-calendar tbody td.calendar-week {
+	border-right: 1px solid #AAAAAA;
+	width: 8%;
+}
+
+/* Affichage de du titre de l'évenement dans le tableau de l'administration */
+table tbody tr th.column-title {
+	width: 28%;
+}
+
+/* Affichage du mini calendrier dans une colonne */
+#module-mini-calendar .calendar-top-container {
+	padding: 2px;
+}
+
+#module-mini-calendar .calendar-top-content h5 {
+	font-size: 1.5em;
+	padding-top: 1px;
+}
+
+#module-mini-calendar .calendar-top-l { padding: 0px 0 0 7px; }
+#module-mini-calendar .calendar-top-r { padding: 0px 7px 0 0; }
+
+#module-mini-calendar #date_select_form form.fieldset-content {
+	margin-top: 0px;
+}
+
+#module-mini-calendar #CalendarAjaxCalendarController_choose-date {
+	margin: 5px 0px 10px 0px;
+}
+
+#module-mini-calendar #CalendarAjaxCalendarController_choose-date div.form-element {
+	margin: 0px;
+}
+
+#module-mini-calendar .form-field select {
+	padding: 4px;
+}
+
+#CalendarAjaxCalendarController_month_field,
+#CalendarAjaxCalendarController_year_field {
+	display: inline-block;
+}
+
+.legend-line {
+	padding: 0 0 8px 0;
+}
+
+.legend-color {
+	font-size: 2em;
+	vertical-align: -1px;
+}
+
+.legend {
+	padding-right: 20px;
+}

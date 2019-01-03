@@ -1,0 +1,191 @@
+#sub-header #connect-menu  {
+	margin-top: 2px;
+}
+
+#connect-menu div.horizontal-fieldset {
+	padding: 2px 8px 2px 2px;
+}
+
+#connect-menu div.vertical-fieldset,
+#connect-menu div.horizontal-fieldset {
+	margin: 0px;
+}
+
+#connect-menu div.vertical-fieldset form {
+	margin-bottom: 10px;
+}
+#connect-menu div.horizontal-fieldset form {
+	display: inline-block;
+}
+
+#connect-menu div.horizontal-fieldset span {
+	display: none;
+}
+
+ul.connect-content {
+	margin: auto;
+	padding-top: 3px;
+}
+
+#connect-menu ul.connect-content li {
+	list-style-type: none;
+}
+
+#connect-menu div.horizontal-fieldset ul.connect-content li {
+	display: inline-block;
+	margin-right: 10px;
+}
+#connect-menu div.horizontal-fieldset ul.connect-content li:last-child {
+	margin-right: 0px;
+}
+
+#connect-menu ul.connect-content li > i {
+	width: 18px;
+	text-align: center;
+}
+
+#connect-menu div.horizontal-fieldset ul li,
+#connect-menu div.horizontal-fieldset ul li a {
+	color: #FFFFFF;
+}
+
+#connect-menu div.horizontal-fieldset ul li > i {
+	vertical-align: 0px;
+}
+
+#connect-menu div.vertical-fieldset label {
+	text-align: center;
+	padding-right: 0px;
+}
+
+#connect-menu div.vertical-fieldset ul.connect-content {
+	text-align: left;
+}
+#connect-menu div.horizontal-fieldset ul.connect-content {
+	text-align: center;
+}
+
+div.connect-register i {
+	vertical-align: -1px;
+}
+
+#connect-menu div.vertical-fieldset input#login,
+#connect-menu div.vertical-fieldset input#password {
+	width: 120px;
+}
+
+#connect-menu div.vertical-fieldset button {
+	margin: 5px 0px;
+}
+	
+#connect-menu a.fb 		{ color: #3B5998; }
+#connect-menu a.google 	{ color: #D8432E; }
+#connect-menu a.twitter { color: #5EA9DD; }
+
+
+/* --- modif --- */
+
+
+.js-menu-button {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+}
+
+@media (min-width: 769px){
+	.js-menu-button {
+		padding: 5px 20px 5px 10px;
+	}
+}
+
+.js-menu-button i {
+	padding-bottom: 5px;
+}
+
+#connect-menu {
+	float: right;
+}
+	
+#connect-menu div.horizontal-fieldset div.connect-content,
+#connect-menu div.horizontal-fieldset form{
+	width: 100%;
+	text-align: center;
+}
+
+#connect-menu .horizontal-fieldset li {
+	padding: 3px 0px 3px 2px;
+}
+
+#connect-menu .horizontal-fieldset a {
+	color: #DEDEDE;
+	text-decoration: none;
+}
+
+#connect-menu .horizontal-fieldset a.social-connect {
+	color: #DEDEDE;
+	padding: 5px;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	border-radius:4px;
+}
+
+#connect-menu a.fb 		{ background: #3B5998; }
+#connect-menu a.google 	{ background: #D8432E; }	
+#connect-menu a.twitter { background: #5EA9DD; }
+
+#connect-menu div.horizontal-fieldset span {
+	display: inline-block;
+}
+
+ul.connect-content, 
+div.connect-content {
+	visibility: hidden;
+	opacity: 0;
+	right: 50%;
+	position: absolute;
+	padding: 10px 5px;
+	transition: right 0.5s, visibility 0.5s, opacity 0.5s;
+	min-width: 320px;
+}
+
+@media (min-width: 769px){
+	#connect-menu div.horizontal-fieldset ul.connect-content,
+	#connect-menu div.horizontal-fieldset div.connect-content {
+		width: auto;
+		min-width: 340px;
+	}
+}
+
+#connect-menu.active ul.connect-content,
+#connect-menu.active div.connect-content {
+	visibility: visible;
+	opacity: 1;
+	width: auto;
+	right: 0%;
+	z-index: 200;
+	transition: right 0.5s, visibility 0.5s, opacity 0.5s;
+}
+
+#connect-menu div.horizontal-fieldset ul.connect-content li {
+	display: block;
+	text-align: left;
+}
+
+#connect-menu div.horizontal-fieldset ul.connect-content img {
+	float: right;
+}
+
+#connect-menu.active div.horizontal-fieldset div.connect-content input {
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+
+#connect-menu.active div.horizontal-fieldset div.connect-content button.submit {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+

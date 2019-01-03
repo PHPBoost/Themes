@@ -1,0 +1,131 @@
+/*---------------------------------------------------------
+ * Theme    : HalloweenScarie
+ * Par      : EDN | Swan
+ * Date     : 12/11/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Thème compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+ 
+.wiki-paragraph-1 {}
+.wiki-paragraph-2 {}
+.wiki-paragraph-3 {}
+.wiki-paragraph-4 {}
+.wiki-paragraph-5 {}
+
+.wiki-list {
+	margin: 0.5em 0 0 2.6em;
+}
+
+.wiki-list-1 > li {
+	margin: 0.3em 0 0 0;
+}
+
+.wiki-list-1 { list-style-type: upper-roman; 	}
+.wiki-list-2 { list-style-type: decimal; 	}
+.wiki-list-3 { list-style-type: upper-alpha; 	}
+.wiki-list-4 { list-style-type: lower-alpha; 	}
+.wiki-list-5 { list-style-type: lower-greek; 	}
+
+.wiki-button {
+	margin-left: 10px;
+	padding: 4px 2px;
+	width: 145px;
+	height: 20px;
+	background: #A7C7DF;
+	border: 1px solid #6D93B4;
+	color: #EDFFF0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul.no-list {
+	margin: 0 0 0 20px;
+}
+
+ul.no-list a i.fa {
+	width: 18px;
+}
+
+#module-wiki .content .options {
+	float: none;
+	text-align: center;
+}
+
+.wiki-summary {
+	display: inline-block;
+	padding: 6px 12px;
+	max-width: 100%;
+	background: #444444;
+	border-top: 5px solid #C40000;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;	
+}
+
+.wiki-summary-title {
+	font-weight: bold;
+}
+
+.futur-cat-pages {
+	padding-left: 17px;
+}
+
+#article-wiki .content {
+	margin-bottom: 30px;
+}
+
+#article-wiki .content .options {
+	float: none;
+	width: 50%;
+}
+
+.wiki-hits {
+	margin: 8px auto 10px auto;
+	text-align: center;
+}
+
+.wiki-bbcode {
+	margin-bottom: -6px;
+}
+
+.wiki-bbcode .bbcode-containers {
+	border-radius: 0;
+	border-top: none;
+}
+
+.bbcode li.bbcode-elements > a.bbcode-wiki-insert {
+	width: 100%;
+}
+
+.wiki-bbcode.bbcode li:nth-child(3).bbcode-elements > a {
+	padding: 0;
+}
+
+.wiki-tools-container {
+	margin-bottom: 25px;
+}
+
+#wiki-link-container li {
+	margin: 0 3px 0 0;
+}
+
+/* Last articles */
+.last-articles-element-container {
+	padding: 8px 8px 8px 10px;
+	border-width: 1px 1px 0 1px;
+	text-align: left;
+}
+
+.last-articles-element-container:last-child {
+	border-width: 1px 1px 1px 1px;
+}
+
+.last-articles-element i {
+	margin: 0 5px 0 0;	
+}

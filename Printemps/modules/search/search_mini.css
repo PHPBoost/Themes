@@ -1,0 +1,62 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Printemps
+ * Par      : EDN | EnymSay
+ * Date     : 26/12/08
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+  *---------------------------------------------------------
+ * Porté par : EDN | EnimSay
+ * Date V5.1 : 01/03/2018
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+#module-mini-search {
+    background: url(images/sr.png) no-repeat;
+    right: 20px;
+    top: 0px;
+    width: 257px;
+    height: 60px;
+    color: #222222;
+    float: right;	
+}
+
+#mini-search-form {
+	float: right;
+	margin: 11px 22px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	background:none;
+	border: none;
+	width: 120px;
+	height: 25px;
+	border-radius: 0;
+}
+
+#mini-search-form.input-element-button button {
+	background:none;
+	border: none;
+	margin-left: -5px;
+	padding: 2px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0;
+}
+
+input[type="search"] {color:#000000;}

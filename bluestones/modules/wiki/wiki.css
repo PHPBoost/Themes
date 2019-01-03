@@ -1,0 +1,131 @@
+.wiki-paragraph-1 {
+	margin: auto;
+	padding: 5px;
+	background-color: #BDE9F2;
+	font-weight: bold;
+}
+
+.wiki-paragraph-2 {
+	display: inline-block;
+	margin: 5px 0 10px 45px;
+	padding: 0 3px;
+	font-size: 1.6rem;
+	clear: both;
+}
+
+.wiki-paragraph-3 {
+	text-indent: 60px;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.wiki-paragraph-4 {
+	text-indent: 80px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.wiki-paragraph-5 { 
+	text-indent: 100px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.wiki-list-1 { list-style-type: upper-roman; 	}
+.wiki-list-2 { list-style-type: decimal; 		}
+.wiki-list-3 { list-style-type: upper-alpha; 	}
+.wiki-list-4 { list-style-type: lower-alpha; 	}
+.wiki-list-5 { list-style-type: lower-greek; 	}
+
+.wiki-button {
+	margin-left: 10px;
+	padding: 4px 2px;
+	width: 145px;
+	height: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ol {
+	margin: 0 0 0 25px;
+}
+
+ol.wiki-list-1 > li {
+	margin-top: 5px;
+}
+
+ul.no-list {
+	margin: 0 0 0 20px;
+}
+
+ul.no-list a i.fa {
+	width: 18px;
+}
+
+#module-wiki .content .options {
+	float: none;
+	text-align: center;
+}
+
+.wiki-summary {
+	display: inline-block;
+	margin: 5px;
+	padding: 6px 12px;
+	max-width: 100%;
+	background-color: #BDE9F2;
+}
+
+.wiki-summary-title {
+	font-weight: bold;
+}
+
+.futur-cat-pages {
+	padding-left: 17px;
+}
+
+#article-wiki .content {
+	margin-bottom: 30px;
+}
+
+#article-wiki .content .options {
+	float: none;
+	width: 50%;
+}
+
+.wiki-hits {
+	margin: 8px auto 10px auto;
+	text-align: center;
+}
+
+.wiki-bbcode {
+	margin-bottom: -6px;
+}
+
+.wiki-bbcode .bbcode-containers {
+	border-radius: 0;
+	border-top: none;
+}
+
+.wiki-edit .wiki-bbcode .bbcode-containers {
+	border-radius: 4px 4px 0 0;
+	border-top: 1px solid #BBBBBB;
+	border-bottom: none;
+}
+
+.bbcode li.bbcode-elements > a.bbcode-wiki-insert {
+	width: 100%;
+}
+
+.wiki-bbcode.bbcode li:nth-child(3).bbcode-elements > a {
+	padding: 0;
+}
+
+.wiki-tools-container {
+	margin-bottom: 25px;
+}
+
+#wiki-link-container li {
+	margin: 0 3px 0 0;
+}

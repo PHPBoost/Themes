@@ -1,0 +1,63 @@
+/* --------------------------------------
+		login.css
+Contient les elements pour afficher la page de connexion a l'administration ou au site lorsqu'il est en maintenance.
+--------------------------------------*/
+
+.fieldset-content {
+	margin: 0 auto;
+	width: 450px;
+	max-width: 100%;
+}
+
+body {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
+	-ms-justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	background-color: #2F4154;
+	color: #1E73BE;
+}
+
+div#global {
+	padding: 20px;
+	min-height: 0;
+	width: 100%;
+	background-color: #0E2134;
+}
+
+#connect {
+	margin-bottom: 40px;
+}
+
+div#site-logo { margin: 0 auto 10px;}
+
+legend {
+	color: #BDE9F2;
+	border-color: #BDE9F2;
+}
+
+.form-element label,
+.form-field,
+input { width: 100%; max-width: 100%}
+
+.form-field { margin-top: 10px;}
+
+input {
+	background-color: #2F4154;
+	color: #BDE9F2;
+}
+
+.cookiebar-container {
+	position: fixed;
+}

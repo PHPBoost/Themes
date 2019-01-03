@@ -1,0 +1,203 @@
+/*---------------------------------------------------------
+ * Theme    : FanSubAniM
+ * Par      : Striker,Jiraya & EDN | Swan
+ * Date     : 31/03/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ *---------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+/* -- Connected & not-connected --*/
+#module-connect .horizontal-fieldset {
+	margin: 0;
+}
+
+#sub-header #module-connect {
+	min-height: 35px;
+}
+
+#sub-header #module-connect .connect-contents {
+	padding-top: 3px;
+}
+
+.connect-register a > i,
+.connect-element a > i,
+.forget-pass-container a > i {
+	color: #ffffff;
+	vertical-align: 0;
+}
+
+#module-connect a > span {
+	color: #ffffff;
+	margin: 0 0 0 5px;
+}
+
+.js-menu-button {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.js-menu-button {
+		display: inline-block;
+		padding: 5px 10px 5px 12px;
+	}
+
+	.js-menu-button span {
+		padding: 0 0 0 7px;
+	}
+}
+
+/* -- not-connected --*/
+.connect-register-container form {
+	display: inline-block;
+}
+
+.connect-register a.fb {
+	padding: 6px 0 0 4px;
+}
+
+a.social-connect {
+	margin: -2px 0;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	.connect-input-container label,
+	.connect-input-container label > span,
+	.connect-input-container button {
+		display: block;
+	}
+
+	.connect-register-container {
+		margin: 0.5em 0.6em 0.5em 0.6em;
+	}
+
+	.forget-pass-container {
+		margin: 0 0.6em 0.5em 0.6em;
+	}
+
+	.connect-input-container button {
+		margin: 5px 0 0 0;
+	}
+
+	.active.not-connected.horizontal .connect-containers {
+		height: 300px;
+	}
+
+	.module-mini-contents.connect-contents,
+	.connect-contents label,
+	.connect-contents button {
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+
+	.connect-contents button {
+		display: inline-block;
+		margin: 10px 0 10px 0;
+	}
+}
+
+@media (min-width: 769px) {
+	.connect-input-container,
+	.connect-register-container,
+	.forget-pass-container {
+		display: inline-block;
+	}
+
+	.horizontal-fieldset.connect-input-container label > span {
+		display: none;
+	}
+
+	.vertical-fieldset form label {
+		margin-bottom: 10px;
+	}
+
+	.module-mini-contents .connect-register-container a {
+		display: inline-block;
+	}
+	.module-mini-contents .connect-register {
+		padding: 5px 0 0 0;
+	}
+
+	.module-mini-contents .forget-pass-container {
+		display: block;
+		margin: 10px;
+	}
+
+	.connect-register a.fb {
+		padding: 7px 0 0 4px;
+	}
+
+}
+
+/* -- connected -- */
+.connect-elements-container {
+	margin: 0;
+	padding: 0;
+}
+
+.connect-element {
+	list-style-type: none;
+}
+
+.connect-element a {
+	display: block;
+	margin: 0 10px 0 0;
+}
+
+.horizontal .connect-element a 	{ padding: 7px 0 7px 0; }
+.vertical .connect-element a 	{ padding: 5px 0 5px 0; }
+
+@media (min-width: 769px) {
+	.horizontal .connect-contents {
+		text-align: center;
+	}
+
+	.connected .vertical .connect-contents {
+		text-align: left;
+	}
+
+	.horizontal .connect-element {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 768px) {
+	.horizontal .connect-containers,
+	.horizontal .connect-containers label {
+		text-align: center;
+	}
+
+	.horizontal .connect-containers label {
+		display: block;
+	}
+
+	.horizontal .connect-elements-container,
+	.horizontal .connect-containers {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+		padding: 0 0 0 12px;
+	}
+
+	.active.horizontal .connect-elements-container,
+	.active.horizontal .connect-containers {
+		position: relative;
+		z-index: 200;
+		width: 100%;
+		transition: height 0.3s;
+	}
+
+	.active.horizontal .connect-elements-container {
+		height: 190px;
+	}
+
+	.vertical .connect-element a {
+		padding: 9px 0 9px 0;
+		margin: 3px 0 3px 0;
+	}
+}

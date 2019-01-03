@@ -1,0 +1,66 @@
+/*---------------------------------------------------------
+ * Theme    : Thème AroundTheWorld
+ * Par      : Grenouille
+ * Date     : 27/01/13
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 10/03/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+/* ---      Search      --- */
+/* ------------------------ */
+
+#mini-search-form {
+	float: right;
+	margin: 40px 20px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+    border: 1px solid #cccccc;
+    border-radius: 4px 0 0 4px;
+    height: 25px;
+    width: 120px;
+}
+
+#mini-search-form.input-element-button button {
+	background: rgba(255,255,255, 0.7);
+    border-radius: 0 4px 4px 0;
+    height: 25px;
+    margin-left: -4px;
+    padding: 0 10px;
+}
+#mini-search-form.input-element-button button:hover{
+	background-image:none;
+	background: rgba(103, 84, 16, 0.7) none repeat scroll 0 0;
+}
+
+.fa-search:before {
+    font-size: 1em;
+}
+@media (max-width: 768px) {
+	#mini-search-form{
+		display: none;
+	}
+}

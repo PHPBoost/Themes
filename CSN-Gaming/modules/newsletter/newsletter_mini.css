@@ -1,0 +1,63 @@
+/*---------------------------------------------------------
+ * Theme     : GSN-Gaming
+ * Par       : Pegasetkc
+ * Adapté    : 02/03/2017
+ * Porté par : EDN |Swan
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+.newsletter-form {
+    display: flex;
+    margin: auto;
+    padding: 5px 17px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.newsletter-title {
+    color: #ffc000;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+	padding: 5px 10px 0 0;
+	vertical-align: middle;
+}
+ 
+div#newsletter { 
+    background: #2b2b2b none repeat scroll 0 0;
+    border-radius: 5px;
+	float: right;
+	margin: 10px;
+}
+
+div#newsletter button,
+div#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+	width: 145px;
+	border-radius: 4px 0 0 4px;
+	font-size: 12px;
+}
+
+div#newsletter  .input-element-button button {
+	margin-left: -5px;
+	border-radius: 0 4px 4px 0;
+	font-size: 12px;
+}
+.newsletter-form.input-element-button > input {
+    background-color: #444444;
+    border-color: #000000 #000000 #222222 #222222;
+}

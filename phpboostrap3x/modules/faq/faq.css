@@ -1,0 +1,16 @@
+
+.question-title {
+	display: inline-block;
+	overflow: initial;
+}
+
+/* hack pour l'ancre */
+.question-anchor {
+	margin-top: -10px;
+	padding-top: 10px;
+}
+
+.article-faq footer {
+	margin: 0;
+	padding: 0;
+}

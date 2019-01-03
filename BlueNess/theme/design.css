@@ -1,0 +1,683 @@
+/*---------------------------------------------------------
+ * Theme    : Thème BlueNess
+ * Par      : EDN-Swan
+ * Date     : 11/02/10
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 10/03/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+/*--------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme --
+--------------------------------------*/
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+    background: url(images/bgr.jpg) repeat-x scroll center 228px #b2d0ec;
+    color: #2e3b5f;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+	position: relative;
+	height: auto;
+	min-height: 100%;
+    font-size: 12px;
+}
+
+@media ( max-width: 768px ) {
+
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header --
+--------------------------------------*/
+header#header {
+	background: url(images/header.jpg) no-repeat scroll center 0 transparent;
+}
+
+/* --- Partie superieure du header --- */
+
+div#top-header {
+	background: url(images/titre.png) no-repeat scroll center 0 transparent;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-align-content: center;	
+	min-height: 200px;
+	/*max-width: 1024px;*/
+	margin: auto;
+	overflow: hidden;	
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inferieur du header --- */
+div#sub-header {
+    background: rgba(0, 0, 0, 0) url(images/sub_header.jpg) repeat-x scroll 0 0;
+    border-bottom: 2px solid #efefef;
+    border-top: 2px solid #efefef;
+    min-height: 35px;
+    text-align: center;
+}
+
+div#sub-header-content{
+	max-width: 1024px;
+	margin: auto;
+}
+div#sub-header-menu{
+	text-align:center;
+	font-size:16px;
+	margin-top:20px;
+}
+#sub-header-menu a { color:#333333; text-decoration:none; }
+#sub-header-menu a:hover {
+	color:#999999;
+	text-decoration:none;
+}
+
+span.br-menu{
+	display: none;
+}
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 1.5em 0 0 1.5em;
+	max-width: 940px;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url(images/logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		height: 100px;
+		width: 90px;
+	}
+
+	div#site-name-container {
+		margin: 1em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+	
+}
+/* -- Conteneur global du site -- */
+/* ------------------------------
+div#SuperGlobal {
+    margin: auto;
+    width: 1030px;
+} */
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 1.5em auto 0 auto;
+	padding: 0px;
+	max-width: 1250px;
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+    	width: 300px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+	#main.main-with-left{ padding-left: 10px;}
+	#main.main-with-right{padding-right: 10px;}	
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 250px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 500px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+
+/* -- Contenu de la page --
+--------------------------------------*/
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 0.8em;
+    border-radius: 5px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+}
+
+div#bottom-content {
+	margin: 2% 0 0 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#top-footer {
+	clear: both;
+	padding: 2% 0;
+}
+
+
+/* -- Pied de page - Footer --
+--------------------------------------*/
+footer#footer {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+3,c4dded+30,b6d6ea+100 */
+background: #f0f9ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #f0f9ff 3%, #c4dded 30%, #b6d6ea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f0f9ff 3%,#c4dded 30%,#b6d6ea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f0f9ff 3%,#c4dded 30%,#b6d6ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#b6d6ea',GradientType=0 ); /* IE6-9 */
+
+	clear: both;
+	width: 100%;
+	border-top: #EFEFEF 2px solid;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	max-width: 1024px;
+	padding: 1.5em 0;
+	border-bottom: 2px groove #444444;
+}
+
+footer#footer .footer-infos {
+    margin-bottom: 10px;
+	min-height: 40px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer#footer .footer-infos span {
+	color: #2e3b5f;
+	font-size: 0.8em;
+}
+
+@media (max-width:768px) {
+
+	footer#footer {width:100%}
+	
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	span.footer-infos-separator {
+		display: none;
+	}
+}
+
+/* -- Elements specifiques PHPboost --
+--------------------------------------*/
+/* --- Compteur de visite --- */
+div#visit-counter {
+position: absolute;
+right: 0;
+bottom : 1em;
+margin-right: 10px;
+font-size: 0.9em;
+color: #F9FCFF;
+text-align: right;
+}
+
+/* --- Barre d'outils --- */
+#actions-links-menu {
+	float:right;
+	margin: 0 5px 5px 5px;
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6d6ea+0,c4dded+60,f0f9ff+100 */
+background: #b6d6ea; /* Old browsers */
+background: -moz-linear-gradient(top,  #b6d6ea 0%, #c4dded 60%, #f0f9ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #b6d6ea 0%,#c4dded 60%,#f0f9ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #b6d6ea 0%,#c4dded 60%,#f0f9ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6d6ea', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
+
+    border: 2px solid #ffffff;
+    height: 33px;
+    padding: 4px;
+	text-indent: 10px;
+	margin: 0px 0px 5px 10px;
+}
+
+nav#breadcrumb ol {
+	list-style: none;
+	margin: 0;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}
+/*##################################
+        Réseaux sociaux            
+####################################*/
+
+#social {
+    height: 55px;
+    margin: auto;
+    padding: 0px;
+    width: 256px;
+}
+
+#social ul {
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#social ul li {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#social ul li a {
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 80%;
+    height: 50px;
+    padding-left: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#social ul li a span {
+	 cursor: pointer;
+	 display: block;
+	 float: left;
+	 height: 50px;
+	 text-align: center;
+}
+
+#social ul li a:hover, #social ul li.active a {
+    
+}
+
+#social ul li a:hover span, #social ul li.active a span {
+    
+}
+
+#fb, #twt, #yt {
+	background:#0d69a3;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+	padding-top: 7px;
+}
+
+.fa-facebook::before, .fa-twitter::before, .fa-youtube::before {
+	font-size: 35px;
+	color: #fff;	 
+}
+
+.fade:hover {
+     opacity: 0.5;
+}
+
+/*======================
+ --- Scroll to Top ---
+=======================*/
+.scroll-to {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	background-color: rgba(196, 221, 237, 0.8);
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+
+#scroll-to-top {
+	right: 25px;
+	bottom: 0;
+	padding: 2px 11px 3px 10px;
+	transition: 0.2s;
+}
+
+.scroll-to i {
+	color: rgba(255, 255, 255, 0.8);
+	transition: 0.2s;
+}
+
+.scroll-to:hover i {
+	color: rgba(21, 125, 161, 1);
+	transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 40px;
+		padding: 5px 8px 8px 8px;
+	}
+
+	.scroll-to i {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
+}
+
+
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 7px 20px;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #c4dded;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 300px);
+		vertical-align: middle;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 5px;
+	}
+
+	.cookiebar-actions {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 5px 0 5px;
+	border-radius: 4px;
+	color: #FEFEFE;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 10px 0 10px;
+	}
+}
+
+.cookiebar-button-understand 		{ background-color: #dddddd; border-color: #8d8d8d; color: #000000; }
+.cookiebar-button-understand:hover 	{ background-color: #dddddd; border-color: #707070;}
+
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000; }
+.cookiebar-button-allowed:hover 		{ background: #000000; }
+
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019; }
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+.cookiebar-more a {color: #222222; }
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0px 0 20px 0px;
+}
+
+footer#cookiebar-change-choice {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
+}
+
+/*======================================
+		Alls Media Queries
+	CSS applique aux écrans PC & GSM 
+========================================*/
+
+
+@media (max-width:768px) {
+	body {background: url(images/bgr.jpg) repeat-x scroll center 107px #b2d0ec;}
+	div#SuperGlobal {width: auto;}	
+	header#header {margin: auto; background:none; height:auto; min-height:0px; margin: auto;width: auto;}
+	div#top-header, div#titre, div#footer_left{display: none;}
+	div#header-gsm {
+		background-color: #b2d0ec;/* Ici vous pouver placez une image si vous le souhaiter . Format 320px par 200px.*/
+		min-height:50px; 
+		text-align:center;
+	}
+	div#sub-header {
+		float: none;
+		margin-right: 0px;
+		margin-top: 0px;
+	background: #000000; /* Old browsers */
+	border-bottom: 1px solid #103480;
+	border-top:none;
+    min-height: 35px;
+    text-align: center;
+	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+	}
+
+	a#site-name {
+    color: #f5f5f5;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 3.5em;
+    text-shadow: none;
+	}
+	
+	span.br-menu {
+		display: inline;
+	}
+
+	div#top-footer {background:rgba(255, 255, 255, 0.7) none repeat scroll 0 0;}	
+
+	footer#footer {
+    background:rgba(0, 0, 0, 0) linear-gradient(to bottom, #f0f9ff 3%, #c4dded 30%, #b6d6ea 100%) repeat scroll 0 0;
+    border-top: 2px solid #ffffff;
+	clear: both;
+	margin: auto;
+	width: 1250px;
+    height: auto;		
+	}
+	div#footer-bis {  height: 1px;}	
+	footer#footer .footer-infos {
+		min-height: 40px;
+		text-align: center;
+		margin-bottom: 0px;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	footer#footer .footer-infos span a{color:#157da1;}
+	footer#footer .footer-infos span a:hover {color:#515c68;}
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #2e3b5f;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+}
+
+@media (min-width:769px) {
+	div#header-gsm{display: none;}
+}

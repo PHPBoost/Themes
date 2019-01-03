@@ -1,0 +1,587 @@
+ /*---------------------------------------------------------
+ * Theme    : Thème Universal-PBT
+ * Par      : EDN | Swan
+ * Date     : 02/02/10
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V3.0 : 02/02/2010 
+ * Date V4.0 : 22/12/2012
+ * Date V5.0 : 06/02/2017
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------
+		design.css
+Contient les conteneurs de mise en page.
+Le design.css permet de mettre en forme votre site web avec le design de votre choix
+--------------------------------------*/
+
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	background:transparent url(images/bg.jpg) no-repeat scroll center center;
+	background-attachment:fixed;
+    font-size:12px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, 'Bitstream Vera Sans', Times, serif;
+    color:#000000;
+	font-size: 1.2em;
+}
+
+
+@media (max-width: 768px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+header#header {
+background: url(images/header.png) no-repeat scroll 0 0 transparent;
+margin: auto;
+}
+
+/* --- Partie superieure du header --- */
+div#top-header {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	margin: auto;
+	min-height: 200px;
+	max-width: 1024px;
+}
+
+div#top-header-content {
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+	div#top-header {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	div#top-header-content {
+		align-self: flex-end;
+		-ms-align-self: flex-end;
+		-webkit-align-self: flex-end;
+	}
+}
+
+/* --- Partie inférieur du header --- */
+div#sub-header {
+	background: transparent url(images/subheader.png) no-repeat scroll center top;
+	min-height: 36px;
+	padding: 0 5px;	
+}
+
+div#sub-header-content{
+	margin: auto;
+	max-width: 1024px;
+}
+
+/* --- Logo et Nom du site web --- */
+div#site-infos {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 1.5em 0 0 1.5em;
+	max-width: 940px;
+	flex: 1 1 auto;
+}
+
+div#site-logo {
+	margin: 0 1em 0 0;
+	width: 60px;
+	height: 60px;
+	background-image: url(images/logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+div#site-name-container {
+	margin: 0.4em 0 0 0;
+}
+
+a#site-name {
+	color: #F9FCFF;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
+}
+
+span#site-slogan {
+	display: block;
+	padding: 0.1em 0 0 0.1em;
+	color: #FFFFFF;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	div#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	div#site-name-container {
+		margin: 1em 0 0 0;
+	}
+
+	a#site-name {
+		font-size: 4em;
+	}
+	
+}
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+div#SuperGlobal {
+    margin: auto;
+    width: 1030px;
+}
+
+div#global {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	margin: 1.5em auto 0 auto;
+	/*padding: 0 10px;*/
+	max-width: 1030px;
+}
+
+div#main {
+	padding: 0 0 10px 0;
+	max-width: 100%;
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+aside#menu-left,
+aside#menu-right {
+	width: 100%;
+}
+
+aside#menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+aside#menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	div#global {
+		min-height: 100vh;
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	div#main {
+		padding: 0 10px;
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	aside#menu-left,
+	aside#menu-right {
+    	width: 200px;
+	}
+
+	aside#menu-left  { 
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+	aside#menu-right { 
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+	
+	#main.main-with-left,
+	#main.main-with-right {
+		width: calc(100% - 200px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+	
+	#main.main-with-left.main-with-right {
+		width: calc(100% - 400px);
+		-ms-flex: 1 0 auto; /*Tricks IE*/
+	}
+}
+
+div#top-footer {
+	padding: 2% 0;
+}
+
+
+/* -- Contenu de la page -- */
+/* ------------------------ */
+
+/* --- Contenu central --- */
+div#main-content {
+	padding: 1.5em 0.8em;
+	background-color: rgba(255,255,255, 0.5);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.8);
+	border-spacing: 1px;
+	border-radius: 5px;
+}
+
+div.block-container {
+	margin-top: 15px;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+div#top-content {
+	margin: 0 0 2% 0;
+	padding: 0.1em 0.8em;
+	background-color: #FFFFFF;
+	border: 1px solid #BEBEBE;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+div#bottom-content {
+	margin: 2% 0 0 0;
+	padding: 0.1em 0.8em;
+	background-color: #FFFFFF;
+	border: 1px solid #BEBEBE;
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+footer#footer {
+background-color: rgba(255,255,255, 0.5);
+margin-bottom: 15px;
+padding: 5px;
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.8);
+border-spacing: 1px;
+border-radius: 5px;
+clear: both;
+width: 100%;
+}
+
+footer#footer .footer-content {
+	margin: 0 auto 0 auto;
+	padding: 1.5em 0;
+	max-width: 1024px;
+}
+
+footer#footer .footer-infos {
+	padding-top: 10px;
+	min-height: 40px;
+	text-align: center;
+}
+
+footer#footer .footer-infos span {
+	color: #000000;
+	font-size: 0.8em;
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visite --- */
+div#visit-counter {
+	position: absolute;
+	right: 0;
+	margin-right: 15px;
+	font-size: 0.9em;
+	color: #E9ECD9;
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	div#visit-counter {
+		top: 100px;
+	}
+}
+
+/* --- Barre de lien rapide --- */
+nav#breadcrumb {
+	background-color: rgba(255,255,255, 0.5);
+	margin: 0 0 10px 0px;
+	text-indent: 10px;	
+	padding: 5px;
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.8);
+	border-spacing: 1px;
+	border-radius: 5px;
+}
+nav#action {
+	margin: 0 0 10px 0px;
+	text-indent: 10px;	
+	padding: 5px;
+	border-spacing: 1px;
+	border-radius: 5px;
+}
+
+nav#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+nav#breadcrumb ol li {
+	display: inline;
+}
+
+nav#breadcrumb ol li:not(.current):after {
+	content: '/';
+	color: #616161;
+}
+
+/*======================
+ --- Scroll to Top ---
+=======================*/
+.scroll-to {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	background-color: rgba(255,255,255, 0.5);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.8);
+	border-radius: 5px;
+}
+
+#scroll-to-top {
+	right: 25px;
+	bottom: 25px;
+	padding: 9px 11px 11px 10px;
+}
+
+.scroll-to i {
+	font-size: 2em;
+	color: rgba(10, 10, 10, 0.8);
+	transition: 0.2s;
+}
+
+.scroll-to:hover i {
+	color: rgba(10, 10, 10, 1);
+	transition: 0.5s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		bottom: 40px;
+		padding: 9px 11px 11px 10px;
+	}
+
+	.scroll-to i {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	#scroll-to-top:hover {
+		padding: 9px 11px 11px 10px;
+		transition: 0.3s;
+	}
+}
+/*======================
+ ---   Cookie Bar    ---
+=======================*/
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 7px 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-bottom: 2px solid #cccccc;
+	font-size: 1em;
+	text-align: center;
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 300px);
+		vertical-align: middle;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 5px;
+	}
+
+	.cookiebar-actions {
+		margin: 15px 0 5px 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 5px 0 5px;
+	border-radius: 4px;
+	color: #FEFEFE;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 10px 0 10px;
+	}
+}
+
+.cookiebar-button-understand 		{ background-color: rgba(0, 0, 0, 0.7); border: medium none; }
+.cookiebar-button-understand:hover 	{ background-color: rgba(255, 255, 255, 0.7); border: medium none; color:#000000;}
+
+.cookiebar-button-allowed 			{ background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); border-color: #000000;}
+.cookiebar-button-allowed:hover 		{ background: #000000; }
+
+.cookiebar-button-declined 			{ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); border-color: #6d0019;}
+.cookiebar-button-declined:hover 	{ background: #AA0000; }
+
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0px 0 20px 0px;
+}
+
+footer#cookiebar-change-choice {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
+}
+/*======================================
+			Alls Media Queries
+		 CSS applique aux ꤲans PC 
+========================================*/
+
+@media (max-width:768px) {
+	div#SuperGlobal {width: auto;}	
+	body {font-size: 1.4em;}
+	
+	header#header {margin: auto; background:none; height:35px; min-height:0px; margin: auto;width: auto;}
+	div#top-header, div#titre, div#footer_left{display: none;}
+	div#header-gsm {
+		min-height:50px; 
+		text-align:center;
+	}
+	div#sub-header {
+		float: none;
+		margin-right: 0px;
+		margin-top: 0px;
+		background: rgba(0, 0, 0, 0.5); 
+		min-height: 35px;
+		text-align: center;
+		box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+	}
+
+	a#site-name-gsm {
+    color: #555555;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 3.5em;
+	}
+
+	aside#menu-left {border-right: none;}
+	aside#menu-right{border-left: none;}	
+	
+	div#top-footer {background:rgba(0, 0, 0, 0.7) none repeat scroll 0 0;}	
+
+	footer#footer {
+    background-color: rgba(0, 0, 0, 0.7);
+	clear: both;
+	margin: auto;
+	width: 1250px;
+    height: auto;
+	border-radius: 0;
+	}
+	div#footer-bis {  height: 1px;}	
+	footer#footer .footer-infos {
+		min-height: 40px;
+		text-align: center;
+		margin-bottom: 0px;
+		padding-top: 10px;
+	}
+	footer#footer {width:100%}
+	footer#footer .footer-infos span a{color:#fefefe;}
+	footer#footer .footer-infos span a:hover {color:#5f3f12;}
+	.footer-infos span {
+    display: block;
+    padding: 0 0 5px;
+	}
+	footer#footer .footer-infos {
+    min-height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+	footer#footer .footer-infos span {
+	color: #eeeeee;
+	font-size: 0.8em;
+}
+	span.footer-infos-separator {
+		display: none;
+	}
+}
+
+@media (min-width:769px) {
+	div#header-gsm{display: none;}
+}

@@ -1,0 +1,58 @@
+/*---------------------------------------------------------
+ * Theme    : RiftNightMare 
+ * Par      : EDN | Swan
+ * Date     : 11/04/2016
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme non compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+
+.newsletter-form {
+    background-color: rgba(0, 19, 40, 0.75);
+    border-radius: 4px;
+    box-shadow: 0 0 10px black, 0 0 0 1px rgba(0, 255, 255, 0.2) inset;
+    display: flex;
+    height: 30px;
+    margin: 20px 25px 10px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.newsletter-title {
+	padding: 7px 15px 0 5px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+ 
+div#newsletter { 
+	float: right;
+	margin: 6px;
+}
+
+div#newsletter button,
+div#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+div#newsletter  .input-element-button input {
+	width: 120px;
+	border-radius: 4px 0 0 4px;
+	font-size: 12px;
+}
+
+div#newsletter  .input-element-button button {
+	margin-left: -5px;
+	border-radius: 0 4px 4px 0;
+	font-size: 12px;
+}

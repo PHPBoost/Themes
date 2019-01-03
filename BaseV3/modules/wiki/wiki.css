@@ -1,0 +1,160 @@
+/*---------------------------------------------------------
+ * Theme    : BaseV3
+ * Par      : PHPBoost.com
+ * Porté par: EDN | Swan
+ * Date     : 12/09/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+.wiki-paragraph-1 {}
+.wiki-paragraph-2 {
+	border-bottom: 2px solid #E53B00; 
+	font-weight:bold;
+}
+.wiki-paragraph-3 {
+	display: inline;
+	margin-left: 45px;
+	margin-bottom: 45px;
+	padding: 2px 5px;
+	font-weight: bold;
+	background: #FFFFFF;
+	border: 1px solid #0578CC;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(5, 120, 204);
+	border-top: 3px solid #0578CC;
+}
+.wiki-paragraph-4 {}
+.wiki-paragraph-5 {}
+
+
+/* wiki-paragraph-2*/ 
+h2.formatter-title { color: #E53B00; font-size: 15px; font-weight: bold;}
+/* wiki-paragraph-3*/ 
+h3.formatter-title { color: #333333; font-size: 14px; font-weight: bold;}
+/* wiki-paragraph-4*/ 
+h4.formatter-title {font-size: 16px;font-style: italic;text-decoration: underline; background:none; border:none;}
+/* wiki-paragraph-5*/ 
+h5.formatter-title {font-size: 14px;font-style: italic;text-decoration: underline; background:none; border:none;}
+/* wiki-paragraph-6*/ 
+h6.formatter-title {font-size: 12px;font-style: italic;text-decoration: underline; background:none; border:none; margin-left: 6rem;}
+
+.wiki-list {
+	margin: 0.5em 0 0 2.6em;
+}
+
+.wiki-list-1 > li {
+	margin: 0.3em 0 0 0;
+}
+
+.wiki-list-1 { list-style-type: upper-roman; 	}
+.wiki-list-2 { list-style-type: decimal; 	}
+.wiki-list-3 { list-style-type: upper-alpha; 	}
+.wiki-list-4 { list-style-type: lower-alpha; 	}
+.wiki-list-5 { list-style-type: lower-greek; 	}
+
+.wiki-button {
+	margin-left: 10px;
+	padding: 4px 2px;
+	width: 145px;
+	height: 20px;
+	background: #A7C7DF;
+	border: 1px solid #6D93B4;
+	color: #EDFFF0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul.no-list {
+	margin: 0 0 0 20px;
+}
+
+ul.no-list a i.fa {
+	width: 18px;
+}
+
+#module-wiki .content .options {
+	float: none;
+	text-align: center;
+}
+
+.wiki-summary {
+	background: #F2F7FB;
+	border-color: #C4CED6;
+	border-top-color: rgb(196, 206, 214);
+	padding: 8px 6px;
+	border-top: 1px solid #CCCCCC;
+	display: inline-block;
+	padding: 6px 12px;
+	max-width: 100%;
+
+	border-radius: 3px;
+}
+
+.wiki-summary-title {
+	font-weight: bold;
+}
+
+.futur-cat-pages {
+	padding-left: 17px;
+}
+
+#article-wiki .content {
+	margin-bottom: 30px;
+}
+
+#article-wiki .content .options {
+	float: none;
+	width: 50%;
+}
+
+.wiki-hits {
+	margin: 8px auto 10px auto;
+	text-align: center;
+}
+
+.wiki-bbcode {
+	margin-bottom: -6px;
+}
+
+.wiki-bbcode .bbcode-containers {
+	border-radius: 0;
+	border-top: none;
+}
+
+.bbcode li.bbcode-elements > a.bbcode-wiki-insert {
+	width: 100%;
+}
+
+.wiki-bbcode.bbcode li:nth-child(3).bbcode-elements > a {
+	padding: 0;
+}
+
+.wiki-tools-container {
+	margin-bottom: 25px;
+}
+
+#wiki-link-container li {
+	margin: 0 3px 0 0;
+}
+
+/* Last articles */
+.last-articles-element-container {
+	padding: 8px 8px 8px 10px;
+	border-width: 1px 1px 0 1px;
+	text-align: left;
+}
+
+.last-articles-element-container:last-child {
+	border-width: 1px 1px 1px 1px;
+}
+
+.last-articles-element i {
+	margin: 0 5px 0 0;	
+}

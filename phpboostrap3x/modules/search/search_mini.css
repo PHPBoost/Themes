@@ -1,0 +1,9 @@
+#mini-search-form {
+	margin: 10px 10px 10px 0;
+}
+
+@media (min-width: 769px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}

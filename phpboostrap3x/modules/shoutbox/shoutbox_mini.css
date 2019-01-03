@@ -1,0 +1,18 @@
+/* -- Conteneur des messages de la shoutbox.*/
+#shoutbox-messages-container {
+	margin: auto;
+	height: 250px;
+	overflow-x: auto;
+	word-wrap: break-word;
+}
+
+#shoutbox-bbcode-container ul {
+	margin: 0;
+	padding: 5px;
+	width: 180px;
+	list-style-type: none;
+}
+
+#shoutbox-bbcode-container ul li {
+	display: inline-block;
+}

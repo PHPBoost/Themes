@@ -1,0 +1,70 @@
+/*---------------------------------------------------------
+ * Theme    : BaseV4
+ * Par      : PHPBoost.com
+ * Porté par: EDN | Swan
+ * Date     : 12/10/2017
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux / ou une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+
+ input[type="search"] {
+	background:url('images/search.png') no-repeat !important;
+	border:none;
+	padding-left:23px;
+	padding-top:3px;
+	font-size:12px;
+	color:#E9ECEF;
+}
+ input[type="search"]:hover {
+	background:url('images/search.png') no-repeat;
+	border:none;	
+}
+ input[type="search"]:focus {
+	background:url('images/search.png') no-repeat;
+	border:none;	
+}
+
+#mini-search-form {
+	position:absolute;
+	margin: 5px 5px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	right:0;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	width: 120px;
+	height: 25px;
+	border-radius: 0;
+}
+
+#mini-search-form.input-element-button button {
+	background: transparent url('images/search_submit.png') no-repeat scroll 0 0;
+	border:none;
+	padding: 7px 10px 7px 10px;
+	height: 25px;
+	border-radius: 0;
+	width: 33px;
+}
+@media (max-width: 768px) {
+	#module-mini-search {
+		left: -9999px;
+		position: absolute;
+		overflow: hidden;
+	}
+}

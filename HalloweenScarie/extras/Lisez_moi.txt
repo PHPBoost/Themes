@@ -1,0 +1,19 @@
+#########################################
+##     				BIENVENUE          ##
+#########################################
+
+---------------- Infos du template --------------------------
+
+
+Vous allez installer le thème : HalloweenScarie
+
+
+----------------  Dossier : extras --------------------------
+
+Vous y trouverez:
+
+- Le head-top avec les png compansant la bannière de fonds.
+
+##############################################
+##	 @micalement Swan : Just For FuN        ##
+##############################################

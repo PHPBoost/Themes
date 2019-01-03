@@ -1,0 +1,66 @@
+/*---------------------------------------------------------
+ * Theme    :  Thème Printemps
+ * Par      : EDN | EnimSay
+ * Date     : 26/12/08
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+  *---------------------------------------------------------
+ * Porté par : EDN | EnimSay
+ * Date V5.1 : 01/03/2018
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+.newsletter-form {
+	margin: 7px 9px 10px 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.newsletter-title {
+	padding: 5px 10px 0 0;
+	font-size: 12px;
+	vertical-align: middle;
+}
+ 
+#newsletter { 
+float: right;
+margin-right: 10px;
+min-height: 35px;
+padding: 2px 4px 2px 4px;
+border-radius: 5px;
+border-top: 1px solid #dddddd;
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+}
+.sub-newsletter {
+	background-image: linear-gradient(to bottom, #e4f5fc 0%,#D2E5EE 50%,#ACDFF6 51%,#A2D3E9 100%);
+	min-height: 35px;
+	margin: 5px 0 5px 0;
+	padding-bottom: 3px;
+	padding-left: 3px;	
+	border-radius: 5px;
+	border-top: 1px solid #dddddd;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+	color: #4679a0;
+}
+
+#newsletter button,
+#newsletter .button {
+	margin-top: 0;
+}
+ 
+.newsletter-link { 
+	margin: 10px 0 0 0;
+}
+
+#newsletter .input-element-button input {
+	width: 120px;
+	font-size: 12px;
+}
+
+#newsletter .input-element-button button {
+	margin-left: -5px;
+	font-size: 12px;
+}

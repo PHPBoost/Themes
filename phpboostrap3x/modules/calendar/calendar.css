@@ -1,0 +1,39 @@
+
+#CalendarAjaxCalendarController_month_field,
+#CalendarAjaxCalendarController_year_field {
+	display: inline-block;
+}
+
+.legend-line {
+	padding: 0 0 8px 0;
+}
+
+.legend-color {
+	font-size: 2em;
+	vertical-align: -1px;
+}
+
+.legend {
+	padding-right: 20px;
+}
+
+#calendar .panel-body {
+	padding: 8px 15px;
+}
+
+.list-group-item.bg-warning {
+    background-color: #fcf8e3;
+}
+
+.event-dates {
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.event-dates div {
+	padding: 10px;
+}
+
+.content-text {
+	margin-bottom: 15px;
+}

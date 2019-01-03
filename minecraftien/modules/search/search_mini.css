@@ -1,0 +1,145 @@
+#mini-search-form {
+	float: right;
+	margin: 40px 20px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	width: 120px;
+	height: 25px;
+	border-radius: 4px 0 0 4px;
+}
+
+#mini-search-form.input-element-button button {
+	margin-left: -5px;
+	padding: 4px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0 4px 4px 0;
+}
+
+.sb-search {
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    width: 0%;
+    min-width: 39px;
+    height: 49px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+}
+
+.sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 99%;
+    height: 40px;
+    margin: 0;
+    z-index: 10;
+    padding: 20px 65px 20px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+ 
+input[type="search"].sb-search-input,
+input[type="search"].sb-search-input:focus {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    color: #FFFFFF;
+}
+.sb-search-input::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+ 
+.sb-search-input:-moz-placeholder {
+    color: #FFFFFF;
+}
+ 
+.sb-search-input::-moz-placeholder {
+    color: #FFFFFF;
+}
+ 
+.sb-search-input:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+.sb-icon-search,
+.sb-search-submit  {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sb-search-submit {
+    background-color: #fff; /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+    color: transparent;
+    color:red;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+.sb-icon-search {
+    color: #fff;
+    z-index: 90;
+    font-size: 18px;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+    content: "";
+}
+
+.sb-search.sb-search-open,
+.no-js .sb-search {
+    width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+    color: #fff;
+    z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+/*    z-index: 90;*/
+}

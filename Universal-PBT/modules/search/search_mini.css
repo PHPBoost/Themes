@@ -1,0 +1,57 @@
+ /*---------------------------------------------------------
+ * Theme    : Thème Universal-PBT
+ * Par      : EDN | Swan
+ * Date     : 02/02/10
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V3.0 : 02/02/2010 
+ * Date V4.0 : 22/12/2012
+ * Date V5.0 : 06/02/2017
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+/* ---      Search      --- */
+/* ------------------------ */
+
+#mini-search-form {
+	float: right;
+	margin: 40px 20px 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	width: 120px;
+	height: 25px;
+	border-radius: 4px 0 0 4px;
+}
+
+#mini-search-form.input-element-button button {
+	background-image:none;
+	background: rgba(255,255,255, 0.5);
+	margin-left: -5px;
+	padding: 4px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0 4px 4px 0;
+}
+#mini-search-form.input-element-button button:hover{
+	background-image:none;
+	background: rgba(255,255,255, 0.7);
+}

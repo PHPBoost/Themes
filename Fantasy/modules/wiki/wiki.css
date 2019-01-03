@@ -1,0 +1,170 @@
+/*---------------------------------------------------------
+ * Theme    : Thème Fantasy
+ * Par      : Toine
+ * Date     : 29/10/2014
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 30/05/2017
+ *---------------------------------------------------------
+ * Thème compatible avec un  menu (droite ou gauche)
+					le choix reste possible sur un menu
+ *----------------------------------------------------------*/
+
+.wiki-paragraph-1 {
+    border-bottom: 2px solid #e9992a;
+    color: #dfdfdf;
+    font-size: 17px;
+    font-weight: bold;
+    margin: auto;
+    padding: 0 5px;
+}
+.wiki-paragraph-2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #e9992a;
+    border-radius: 3px;
+    clear: both;
+    color: #dfdfdf;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 10px 45px;
+    padding: 0 3px;
+}
+.wiki-paragraph-3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #e9992a;
+    border-style: solid;
+    border-width: 1px 3px;
+    color: #dfdfdf;
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 60px;
+    text-indent: 5px;
+}
+.wiki-paragraph-4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #e9992a;
+    border-style: solid;
+    border-width: 1px 3px;
+    color: #dfdfdf;
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 80px;
+    text-indent: 5px;
+}
+.wiki-paragraph-5 {
+    color: #e9992a;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: underline;
+    text-indent: 100px;
+}
+
+.wiki-list-1 { list-style-type: upper-roman; 	}
+.wiki-list-2 { list-style-type: decimal; 		}
+.wiki-list-3 { list-style-type: upper-alpha; 	}
+.wiki-list-4 { list-style-type: lower-alpha; 	}
+.wiki-list-5 { list-style-type: lower-greek; 	}
+
+.wiki-button {
+	margin-left: 10px;
+	padding: 4px 2px;
+	width: 145px;
+	height: 20px;
+	background: #A7C7DF;
+	border: 1px solid #6D93B4;
+	color: #EDFFF0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ol {
+	margin: 0 0 0 25px;
+}
+
+ol.wiki-list-1 > li {
+	margin-top: 5px;
+}
+
+ul.no-list {
+	margin: 0 0 0 20px;
+}
+
+ul.no-list a i.fa {
+	width: 18px;
+}
+
+#module-wiki .content .options {
+	float: none;
+	text-align: center;
+}
+
+.wiki-summary {
+	border: 1px solid #a52a2a ;
+	background:rgba(0, 0, 0, 0.5);
+	border-radius: 3px;	
+    display: inline-block;
+    margin: 5px;
+    max-width: 100%;
+    padding: 6px 12px;
+}
+
+.wiki-summary-title {
+	font-weight: bold;
+}
+
+.futur-cat-pages {
+	padding-left: 17px;
+}
+
+#article-wiki .content {
+	margin-bottom: 30px;
+}
+
+#article-wiki .content .options {
+	float: none;
+	width: 50%;
+}
+
+.wiki-hits {
+	margin: 8px auto 10px auto;
+	text-align: center;
+}
+
+.wiki-bbcode {
+	margin-bottom: -6px;
+}
+
+.wiki-bbcode .bbcode-containers {
+	border-radius: 0;
+	border-top: none;
+}
+
+.wiki-bbcode .bbcode-containers {
+	border-radius: 4px 4px 0 0;
+	border-top: 1px solid #BBBBBB;
+	border-bottom: none;
+}
+
+.bbcode li.bbcode-elements > a.bbcode-wiki-insert {
+	width: 100%;
+}
+
+.wiki-bbcode.bbcode li:nth-child(3).bbcode-elements > a {
+	padding: 0;
+}
+
+.wiki-tools-container {
+	margin-bottom: 25px;
+}
+
+#wiki-link-container li {
+	margin: 0 3px 0 0;
+}

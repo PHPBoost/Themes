@@ -1,0 +1,58 @@
+/*---------------------------------------------------------
+ * Theme    : TSW_Illuminati
+ * Par      : EDN | Swan
+ * Date     : 27/01/2014
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.0 : 13/04/2016
+ * Date V5.1 : 30/05/2017
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+
+#shoutbox-messages-container {
+    height: 150px;
+    margin: auto;
+    overflow: auto;
+    text-align: left;
+    word-wrap: break-word;
+}
+.shout-horizontal {
+    padding-left: 1.5em;
+}
+.shout-spacing {
+    margin: 10px 0;
+}
+#module-mini-shoutbox textarea, #module-mini-shoutbox textarea:valid {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01) inset;
+    width: 90%;
+}
+#module-mini-shoutbox textarea:hover, #module-mini-shoutbox textarea:valid:hover{
+	color: #52b152;
+	border: 1px solid #333333;
+	background: rgba(0,0,0, 0.9);
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.8);
+}
+#module-mini-shoutbox textarea:focus, #module-mini-shoutbox textarea:valid:focus{
+	color: #52b152;
+	border: 1px solid #52b152;
+	background: rgba(0,0,0, 0.9);
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(80,107, 69, 0.4), 0 0 10px rgba(69, 196, 27, 0.8);
+}
+#shoutbox-bbcode-container ul {
+    margin: 0;
+    padding: 0;
+}
+#shoutbox-bbcode-container ul li {
+    border: medium none;
+    display: inline-block;
+}

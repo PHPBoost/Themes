@@ -1,0 +1,48 @@
+/*---------------------------------------------------------
+ * Thème    :  Thème FloralBoost
+ * Par      : EDN | EnimSay
+ * Date V3.0: 11/01/2011
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+  *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date V5.1 : 08/03/2018
+/*--------------------------------------------------------
+ * Thème compatible avec une colonne de menu gauche 
+ *----------------------------------------------------------*/
+
+#mini-search-form {
+	margin: 30px 45px 0 0;
+	opacity: 0.6;
+	vertical-align: middle;
+	white-space: nowrap;
+	position: absolute;
+	right: 0;
+}
+
+@media (max-width: 768px) {
+	#mini-search-form {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+#mini-search-form button,
+#mini-search-form .button {
+	margin-top: 0;
+}
+
+#mini-search-form.input-element-button input {
+	width: 120px;
+	height: 25px;
+	border-radius: 4px 0 0 4px;
+}
+
+#mini-search-form.input-element-button button {
+	margin-left: -5px;
+	padding: 4px 10px 4px 10px;
+	height: 25px;
+	border-radius: 0 4px 4px 0;
+}
