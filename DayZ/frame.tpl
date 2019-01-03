@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{L_XML_LANGUAGE}">
+<html lang="{L_XML_LANGUAGE}"# IF C_OPENGRAPH # prefix="og: http://ogp.me/ns#"# ENDIF #>>
 	<head>
 		<title>{TITLE}</title>
 		<meta charset="UTF-8" />
@@ -7,6 +7,19 @@
 		<meta name="generator" content="PHPBoost" />
 		# IF C_CANONICAL_URL #<link rel="canonical" href="{U_CANONICAL}" /># ENDIF #
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		# IF C_OPENGRAPH #
+			<meta property="og:site_name" content="{SITE_NAME}" />
+			<meta property="og:locale" content="{L_XML_LANGUAGE}" />
+			<meta property="og:title" content="{PAGE_TITLE}" />
+			<meta property="og:type" content="{PAGE_TYPE}" />
+			# IF C_DESCRIPTION #<meta property="og:description" content="{SITE_DESCRIPTION}" /># ENDIF #
+			# IF C_CANONICAL_URL #<meta property="og:url" content="{U_CANONICAL}" /># ENDIF #
+			# IF C_PICTURE_URL #<meta property="og:image" content="{U_PICTURE}" /># ENDIF #
+			# START og_additionnal_properties #
+			<meta property="{og_additionnal_properties.ID}" content="{og_additionnal_properties.VALUE}" />
+			# END og_additionnal_properties #
+		# ENDIF #
 
 		<!-- Theme CSS -->
 		# IF C_CSS_CACHE_ENABLED #
