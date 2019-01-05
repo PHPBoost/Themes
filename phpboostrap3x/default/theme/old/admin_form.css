@@ -218,6 +218,8 @@ legend {
 	text-transform: none;
 }
 
+legend > h1 { font-size: inherit; }
+
 /* --- Elements de saisie --- */
 input[type=text],
 input[type=email],

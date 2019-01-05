@@ -211,6 +211,8 @@ legend {
 	vertical-align: middle;
 	text-transform: uppercase;
 }
+
+legend > h1 { font-size: inherit; }
 /*----- Autres spécifications -----*/
 
 #questions-management{
@@ -867,3 +869,16 @@ div[id*='keyword'] .form-autocompleter-container input {
 .linedwrap .codelines .lineselect {
 	color: red;
 }
+
+.auth-setter {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+

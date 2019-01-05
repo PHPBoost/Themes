@@ -193,6 +193,8 @@ legend {
 	font-size: 1.5em;
 }
 
+legend > h1 { font-size: inherit; }
+
 /* --- Previsualisation --- */
 .xmlhttprequest-preview {
 	padding: 0 2px;
@@ -818,4 +820,17 @@ div.field-required:after {
 .linedwrap .codelines .lineselect {
     color: red;
 }
+
+.auth-setter {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
  

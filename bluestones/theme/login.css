@@ -47,6 +47,8 @@ legend {
 	border-color: #BDE9F2;
 }
 
+legend > h1 { font-size: inherit; }
+
 .form-element label,
 .form-field,
 input { width: 100%; max-width: 100%}

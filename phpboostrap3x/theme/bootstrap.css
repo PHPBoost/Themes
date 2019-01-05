@@ -173,6 +173,7 @@ legend {
   padding: 0;
   border: 0;
 }
+
 textarea {
   overflow: auto;
 }
@@ -2505,6 +2506,9 @@ legend {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
+
+legend > h1 { font-size: inherit; }
+
 label {
   display: inline-block;
   max-width: 100%;
