@@ -17,7 +17,6 @@
  - Mise en forme du contenu
  - Les Icones specifiques PHPBoost de FontAwesome 
  - Systeme d upload
- - social connect
 --------------------------------------*/
 
 
@@ -504,11 +503,37 @@ td.calendar-week {
 
 .notation .star,
 .static-notation .star {
-	padding-right: 5px;
-	color: #E3CF7A;
-	font-size: 14px;
+	position: relative;
+	font-size: 1.5rem;
 	text-decoration: none;
+	color: #E3CF7A;
 }
+
+.notation .star-width {
+	position: absolute;
+	display: inline-block;
+	top:0;
+	left:0;
+}
+
+.notation .star-width:before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	color: #E3CF7A;
+	left: 0;
+	top:0;
+	content:"\f005";
+	display:block;
+	overflow:hidden;
+}
+
+.star-width-0   { width: 0%;   }
+.star-width-10  { width: 30%;  }
+.star-width-25  { width: 41%;  }
+.star-width-50  { width: 50%;  }
+.star-width-75  { width: 65%;  }
+.star-width-90  { width: 78%;  }
+.star-width-100 { width: 100%; }
 
 
 /* -- Les Icones specifiques PHPBoost de FontAwesome -- */
@@ -779,62 +804,3 @@ li.small-block .fa-stack {
 }
 
 
-/* -- social connect -- */
-/* -------------------- */
-a.social-connect {
-	display: inline-block;
-	margin: 10px 0;
-	width: 30px;
-	height: 30px;
-	vertical-align: top;
-	border-radius:4px;
-	color: #DEDEDE;
-	text-align: center;
-}
-
-.horizontal-fieldset a.social-connect {
-	margin: 0;
-	vertical-align: middle;
-}
-
-@media (max-width: 768px) {
-	.horizontal-fieldset a.social-connect {
-		display: block;
-		width: 100%;
-		margin: 5px auto;
-	}
-
-	.horizontal-fieldset a.social-connect i {
-		margin-right: 5px;
-	}
-}
-
-a.social-connect i:before {
-	color: #DFDFDF;
-	transition: 0.2s ease-out;
-}
-
-a.social-connect:hover i:before {
-	color: #EFEFEF;
-	transition: 0.2s ease-out;
-}
-
-a.fb i:before 		{ font-size: 1.9em; }
-a.google i:before 	{ font-size: 1.7em; }
-
-a.fb 		{ padding: 8px 0 0 4px; }
-a.google 	{ padding: 6px 1px 0 0; }
-
-@media (max-width: 768px) {
-	a.fb {
-		padding: 5px 0 0 3px;
-	}
-}
-
-a.fb 		{ background: #3B5998; }
-a.google 	{ background: #D8432E; }	
-a.twitter 	{ background: #5EA9DD; }
-
-a.social-connect span {
-	display: none;
-}
