@@ -585,11 +585,6 @@ li.small-block .fa-stack {
 	width: 50%;
 }
 
-.error,
-.notice,
-.warning,
-.success,
-.question,
 .message-helper {
 	position: relative;
 	display: block;
@@ -603,11 +598,6 @@ li.small-block .fa-stack {
 	overflow: hidden;
 }
 
-.error:before,
-.notice:before,
-.warning:before,
-.success:before,
-.question:before,
 .message-helper:before {
 	position: absolute;
 	left: 6px;
@@ -623,14 +613,14 @@ li.small-block .fa-stack {
 }
 
 
-.error:before    { content: "\f00d"; color:#AA0000;}
-.notice:before   { content: "\f12a"; color:#555555;}
-.warning:before	 { content: "\f071"; color: #aa0000;}
-.success:before	 { content: "\f00c"; color: #478948;}
-.question:before { content: "\f128"; color: #0000FF;}
-.member-only:before { content: "\f070"; color: #222222; }
-.modo-only:before   { content: "\f070"; color: #222222; }
-.admin-only:before  { content: "\f070"; color: #222222; }
+.message-helper.error:before    { content: "\f00d"; color:#AA0000;}
+.message-helper.notice:before   { content: "\f12a"; color:#555555;}
+.message-helper.warning:before	 { content: "\f071"; color: #aa0000;}
+.message-helper.success:before	 { content: "\f00c"; color: #478948;}
+.message-helper.question:before { content: "\f128"; color: #0000FF;}
+.message-helper.member-only:before { content: "\f070"; color: #222222; }
+.message-helper.modo-only:before   { content: "\f070"; color: #222222; }
+.message-helper.admin-only:before  { content: "\f070"; color: #222222; }
 
 
 .error { color:#efefef;}
