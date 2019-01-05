@@ -375,6 +375,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6d6ea', end
 	margin: 0px 0px 5px 10px;
 }
 
+nav#breadcrumb img {
+	vertical-align: middle;
+}
+
 nav#breadcrumb ol {
 	list-style: none;
 	margin: 0;

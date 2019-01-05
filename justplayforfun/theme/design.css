@@ -339,6 +339,10 @@ nav#breadcrumb {
 	text-indent: 10px;
 }
 
+nav#breadcrumb img {
+	vertical-align: middle;
+}
+
 nav#breadcrumb ol {
 	margin: 0;
 	padding: 25px 0 0 0;

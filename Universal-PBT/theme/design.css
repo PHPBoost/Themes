@@ -346,6 +346,10 @@ nav#breadcrumb {
 	border-spacing: 1px;
 	border-radius: 5px;
 }
+
+nav#breadcrumb img {
+	vertical-align: middle;
+}
 nav#action {
 	margin: 0 0 10px 0px;
 	text-indent: 10px;	

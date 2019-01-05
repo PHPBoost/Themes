@@ -329,6 +329,10 @@ nav#breadcrumb {
 	padding: 10px 20px;
 }
 
+nav#breadcrumb img {
+	vertical-align: middle;
+}
+
 nav#breadcrumb ol {
 	list-style: none;
 	margin: 0;

@@ -376,6 +376,9 @@ body {
 	text-indent: 10px;
 }
 
+nav#breadcrumb img {
+	vertical-align: middle;
+}
 #breadcrumb ol {
 	margin: 0;
 	list-style: none;

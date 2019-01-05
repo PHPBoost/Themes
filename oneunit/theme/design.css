@@ -343,6 +343,10 @@ nav#breadcrumb {
 	margin: 0 0 20px 10px;
 	text-indent: 10px;
 }
+
+nav#breadcrumb img {
+	vertical-align: middle;
+}
 nav#breadcrumb a {
 	color: #CC0000;
 	font-weight: bold;

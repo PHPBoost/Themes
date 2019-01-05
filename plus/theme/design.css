@@ -364,6 +364,10 @@ nav#breadcrumb {
     padding: 0 10px;
     max-width: 1200px;
 }
+
+nav#breadcrumb img {
+	vertical-align: middle;
+}
 nav#breadcrumb > ol:before {
     font : normal normal normal 14px/1 FontAwesome;
     content:"\f041";

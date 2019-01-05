@@ -366,6 +366,10 @@ nav#breadcrumb {
 	text-indent: 10px;
 }
 
+nav#breadcrumb img {
+	vertical-align: middle;
+}
+
 nav#breadcrumb ol {
 	margin: 0;
 	list-style: none;
