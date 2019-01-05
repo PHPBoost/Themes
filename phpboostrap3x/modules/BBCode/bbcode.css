@@ -318,6 +318,7 @@ a.wikipedia-link:before {
 	top: 0;
 	left: 0;
 	content: "\f266" ;
-	font-family: fontawesome;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	font-size: 1em;
 }

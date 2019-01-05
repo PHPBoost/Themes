@@ -391,7 +391,8 @@ ul.pagination-block-bis li a.next-page:hover {
 		left: 2px;
 		content: '\f047';
 		color: #FFFFFF;
-		font-family: fontawesome;
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
 	}
 }
 
@@ -868,7 +869,8 @@ div.container-block-absolute > div {
 .menus-block-move-top a:after,
 .menus-block-move-bot a:after {
 	position: absolute;
-	font-family: fontawesome;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	font-size: 2em;
 }
 

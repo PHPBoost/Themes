@@ -88,8 +88,8 @@ ul.option > li a:hover {
 ul.option > li.extend:after {
 	content: "\f0da";
 	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

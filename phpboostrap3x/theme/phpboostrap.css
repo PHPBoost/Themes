@@ -732,7 +732,8 @@ img {max-width: 100%}
 	right: 6px;
 	top: 5px;
 	width: 8px;
-	font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	font-size: 0.8em;
 }
 
@@ -914,7 +915,8 @@ img {max-width: 100%}
 		left: 2px;
 		content: '\f047';
 		color: #FFFFFF;
-		font-family: fontawesome;
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
 	}
 }
 
@@ -1096,8 +1098,8 @@ div.picture-status-constraint:after {
 	display: inline-block;
 	position: absolute;
 	left: 2px;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

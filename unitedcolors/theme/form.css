@@ -307,7 +307,8 @@ input[name$="_minutes"] { width: 50px;  }
 .form-field-checkbox:before {
 	content: '\f00c';
 	font-size: 18px;
-    font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	position: absolute;
 	left: 9px;
     top: 6px;
@@ -657,8 +658,8 @@ div.field-required:after,
 div.picture-status-constraint:after {
 	display: inline-block;
 	position: absolute;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

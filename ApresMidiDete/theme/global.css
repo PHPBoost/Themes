@@ -594,9 +594,8 @@ li.small-block .fa-stack {
 	left: 6px;
 	top: 7px;
 	width: 28px;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	line-height: 1;
 	font-size: 2em;
 	text-align: center;

@@ -753,9 +753,8 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	border-color: #aa0000 #aa0000 #690B00 #690B00;
 	border-radius: 4px;
 	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.05);
-	font-family: FontAwesome;
-	font-style: normal;
-	font-weight: normal;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 	line-height: 1;
 	color: #000000;
 	text-align: center;

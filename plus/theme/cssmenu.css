@@ -772,7 +772,8 @@ footer .cssmenu-static ul ul li:hover > .cssmenu-title 		{ color: #FFFFFF; }
     background-color: #1eb0bc;
     border: 1px solid #1eb0bc;
     border-radius: 4px;
-    font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
     font-style: normal;
     font-weight: normal;
     line-height: 1;

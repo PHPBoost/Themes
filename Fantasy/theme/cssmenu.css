@@ -756,7 +756,8 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: rgba(0, 0, 0, 
     cursor: pointer;
     display: inline-block;
     float: right;
-    font-family: FontAwesome;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
     font-style: normal;
     font-weight: normal;
     line-height: 1;

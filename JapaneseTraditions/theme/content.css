@@ -582,7 +582,8 @@ ul.pagination-block-bis li a.next-page:hover {
 		top: 34%;
 		left: 4px;
 		color: #517BA6;
-		font-family: fontawesome;
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
 	}
 }
 
