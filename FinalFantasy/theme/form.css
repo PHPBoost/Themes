@@ -266,8 +266,8 @@ input[type=color] {
 
 form input:focus:invalid,
 form textarea:focus:invalid,
-form .constraint-status-right input,
-form .constraint-status-right textarea {
+form .constraint-status-error input,
+form .constraint-status-error textarea {
 	border-color: rgba(196, 60, 43, 0.3);
 	box-shadow: 0 0 3px rgba(196, 60, 43, 0.1);
 }

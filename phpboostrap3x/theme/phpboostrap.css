@@ -871,7 +871,10 @@ img {max-width: 100%}
 ============================================================================= */
 
 .sortable-block .sortable-element > .sortable-block {
-	margin-left: 30px;
+	flex: 1 0 calc(100% - 0.618em);
+	-ms-flex: 1 0 calc(100% - 0.618em);
+	-webkit-flex: 1 0 calc(100% - 0.618em);
+	margin: 0 0 0 0.618em;
 }
 
 .sortable-block {
@@ -883,7 +886,21 @@ img {max-width: 100%}
 }
 
 .sortable-block .sortable-element {
-	display: table;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-content: center;
+	-webkit-align-content: center;
+	-ms-align-content: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: center;
+	-ms-flex-wrap: center;
 	margin-bottom: 6px;
 	padding: 0;
 	width: 100%;
@@ -900,9 +917,9 @@ img {max-width: 100%}
 
 @media (min-width: 769px) {
 	.sortable-block .sortable-element .sortable-selector {
-		position: relative;
-		display: table-cell;
-		width: 20px;
+		flex: 0 0 1.309em;
+		-ms-flex: 0 0 1.309em;
+		-webkit-flex: 0 0 1.309em;
 		background-color: #c6abed;
 		opacity: 0.3;
 		transition: opacity 1s;
@@ -910,9 +927,7 @@ img {max-width: 100%}
 	}
 
 	.sortable-selector:after {
-		position: absolute;
-		top: 28%;
-		left: 2px;
+		content: "0b2";
 		content: '\f047';
 		color: #FFFFFF;
 		font-family: 'Font Awesome 5 Free';
@@ -931,7 +946,9 @@ img {max-width: 100%}
 
 @media (min-width: 769px) {
 	.sortable-block .sortable-element .sortable-selector {
-		width: 20px;
+		flex: 0 0 1.309em;
+		-ms-flex: 0 0 1.309em;
+		-webkit-flex: 0 0 1.309em;
 		opacity: .6;
 	}
 
@@ -941,8 +958,11 @@ img {max-width: 100%}
 }
 
 .sortable-block .sortable-title {
-	padding: 8px 5px 5px 10px;
-	background-image: linear-gradient(to bottom, #FFFFFF 50%, #FAFAFA 100%);
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	padding: 0.618em;
+	max-width: calc(100% - 5.2em)
 }
 
 .sortable-block .sortable-title:hover {
@@ -964,9 +984,11 @@ img {max-width: 100%}
 }
 
 .sortable-block .sortable-actions {
-	float: right;
-	padding: 3px 3px;
-	opacity: 0.5;
+	flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	padding: 0.1618em;
+	opacity: 0.2;
 	transition: opacity 0.2s;
 }
 

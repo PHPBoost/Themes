@@ -82,28 +82,185 @@ article footer {
 }
 
 /* --- Icones actions (edition, suppression, etc) --- */
-span.actions {
+.actions {
 	float: right;
 }
 
-
-header span.actions a {
-	font-size: 1.2rem;
+.actions a {
+	display: inline-block;
+	padding: 0 0.456em;
 }
 
+@media (max-width: 768px) {
+	.actions a {
+		padding: 0 0.809em;
+	}
+}
+
+header h2 .actions {
+	font-size: 0.456em;
+}
+
+.actions-menu {
+	position: relative;
+}
+
+.actions-title {
+	position: relative;
+	display: block;
+	padding: 0.309em 0.456em;
+}
+
+@media (max-width: 768px) {
+	.actions-title {
+		position: relative;
+		display: block;
+		padding: 1em 1.309em;
+	}
+}
+
+.actions-menu.opened .fa-actions-menu:before {
+	content: "\f00d";
+}
+
+.actions-submenu {
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	top: 25px;
+	left: -9999px;
+	width: 250px;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.actions-submenu {
+		top: 45px;
+	}
+}
+
+.opened .actions-submenu {
+	left: auto;
+	right: 0;
+}
+
+.actions-title { }
+
+.action {
+	font-size: 1.5rem;
+	padding: 0.309em 0.456em;
+}
+
+@media (max-width: 768px) {
+	.action {
+		padding: 1em 0.618em;
+	}
+}
+
+.action i {
+	text-align: center;
+	width: 20px;
+}
+
+.actions-menu.opened .actions-title {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 5px rgba(54, 100, 147, 0.2);
+}
+.actions-submenu {
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 5px rgba(54, 100, 147, 0.2);
+}
+.action:hover {
+	background-color: rgba(54, 100, 147, 0.2);
+}
+/* -- Elements .more d'un contenu -- */
+/* --------------------------------- */
+
+/* General */
 .more {
-	padding: 10px 5px 0;
-	font-size: 11px;
-	font-size: 1.1rem;
+	padding: 0.618em 0.618em 1.618em;
+	font-size: 0.809em;
+	font-size: 0.809em;
 	font-style: italic;
 }
 
+/* --- Sharing items
+----------------------------------------------------------------------------- */
+
+.more-element-sharing {
+	position: relative;
+	margin: 0.309em 0 0 0;
+	padding: 0;
+}
+
 @media (min-width: 769px) {
-	.more {
-		margin: 0 0.2em 2em 1.2em;
-		padding: 0;
+	.more-element-sharing {
+		margin: 1.309em 0 0.309em 0;
 	}
 }
+
+.sharing-button {
+	display: none;
+}
+
+.sharing-elements-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+@media (min-width: 769px) {
+	.sharing-elements-list {
+		justify-content: flex-start;
+		-ms-flex-pack: flex-start;
+		-webkit-justify-content: flex-start;
+	}
+}
+
+.sharing-element {
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+@media (min-width: 769px) {
+	.sharing-element {
+		margin: 0 0.309em 0.309em 0;
+	}
+}
+
+.sharing-element a {
+	display: block;
+	padding: 0.618em 1.228em;
+	display: block;
+	margin: 0 0.1em 0.309em 0;
+}
+
+
+.sharing-element > a {
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.sharing-element-comments > a { background-color: #CDCDCD; }
+.sharing-element-mail > a     { background-color: #366393; }
+.sharing-element-print > a    { background-color: #999999; }
+.sharing-element-sms > a      { background-color: #999999; }
+
+
 
 /* --- Contenu --- */
 .content {
@@ -249,7 +406,61 @@ header span.actions a {
 }
 
 
-/* ---- Friends content ---- */
+/* --- Gestion des media --- */
+.thumbnail-item {
+	padding: 0.309em 0;
+	display: block;
+}
+
+@media (min-width: 769px) {
+	.thumbnail-item {
+		max-width: 38%;
+		float: left;
+		padding: 0.309em 0.618em 0.309em 0;
+	}
+
+	.columns-3 .thumbnail-item,
+	.columns-4 .thumbnail-item,
+	.columns-5 .thumbnail-item,
+	.columns-6 .thumbnail-item,
+	.columns-7 .thumbnail-item {
+		float: none;
+		max-width: 100%;
+		padding: 0.309em 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.media-content {
+		clear: both;
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+	}
+
+	.media-content object,
+	.media-content embed,
+	.media-content video,
+	.media-content iframe,
+	.media-content .video-player {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (min-width:769px) {
+	.media-content embed,
+	.media-content iframe {
+		width: auto;
+		height: auto;
+	}
+}
+
+
+/* --- Friends content --- */
 .content-friends {
 	border-width: 7px 1px 1px 1px;
 	border-top-color: #103B67;
@@ -518,7 +729,10 @@ ul.pagination-block-bis li a.next-page:hover {
 
 /* --- Systeme de drag&Drop --- */
 .sortable-block .sortable-element > .sortable-block {
-	margin-left: 30px;
+	flex: 1 0 calc(100% - 0.618em);
+	-ms-flex: 1 0 calc(100% - 0.618em);
+	-webkit-flex: 1 0 calc(100% - 0.618em);
+	margin: 0 0 0 0.618em;
 }
 
 .sortable-block {
@@ -531,7 +745,21 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .sortable-block .sortable-element {
-	display: table;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-content: center;
+	-webkit-align-content: center;
+	-ms-align-content: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: center;
+	-ms-flex-wrap: center;
 	margin-bottom: 6px;
 	padding: 0;
 	width: 100%;
@@ -548,19 +776,16 @@ ul.pagination-block-bis li a.next-page:hover {
 
 @media (min-width:769px){ 
 	.sortable-block .sortable-element .sortable-selector {
-		display: table-cell;
-		position: relative;
-		width: 20px;
+		flex: 0 0 1.309em;
+		-ms-flex: 0 0 1.309em;
+		-webkit-flex: 0 0 1.309em;
 		opacity: 0.2;
 		transition: opacity 0.3s;
 		cursor: move;
 	}
 	
 	.sortable-selector:after {
-		position: absolute;
-		content: "\f047";
-		top: 34%;
-		left: 4px;
+		content: "0b2";
 		color: #517BA6;
 		font-family: 'Font Awesome 5 Free';
 		font-weight: 900;
@@ -578,7 +803,11 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .sortable-block .sortable-title {
-	padding: 8px 5px 5px 10px;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	padding: 0.618em;
+	max-width: calc(100% - 5.2em)
 }
 
 .sortable-block .sortable-title:hover {
@@ -606,8 +835,10 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .sortable-block .sortable-actions {
-	float: right;
-	padding: 3px 3px;
+	flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	padding: 0.1618em;
 	opacity: 0.2;
 	transition: opacity 0.2s;
 }
