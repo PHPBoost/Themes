@@ -14,6 +14,10 @@
  * Thème compatible avec une colonne de menu gauche 
  *----------------------------------------------------------*/
 
+#calendar {
+	with: 100%;
+}
+
 div.calendar-content {
 	padding: 6px;
 }

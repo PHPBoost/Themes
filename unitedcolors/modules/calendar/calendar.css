@@ -1,3 +1,7 @@
+#calendar {
+	with: 100%;
+}
+
 div.calendar-content {
 	padding: 6px;
 }

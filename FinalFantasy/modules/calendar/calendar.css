@@ -13,6 +13,10 @@
  * V5.1      : 30/05/2017
 /*--------------------------------------*/
 
+#calendar {
+	with: 100%;
+}
+
 div.calendar-content {
 	padding: 6px;
 }

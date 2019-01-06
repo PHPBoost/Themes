@@ -12,6 +12,10 @@
  * Théme compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
+#calendar {
+	with: 100%;
+}
+
 div.calendar-content {
 	padding: 6px;
 }

@@ -16,6 +16,10 @@
  * le choix reste possible sur une seule colonne de menus.
  *----------------------------------------------------------*/
 
+#calendar {
+	with: 100%;
+}
+
 div.calendar-content {
 	padding: 6px;
 }
