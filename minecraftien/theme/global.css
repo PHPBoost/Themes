@@ -469,6 +469,54 @@ td.calendar-week {
 /* -- Les Icones specifiques PHPBoost de FontAwesome -- */
 /* ---------------------------------------------------- */
 
+/* --- Icones d'annonces --- */
+.fa-announce:before,
+.fa-announce-new:before 		{ content: "\f075"; } /* copy comment */
+.fa-announce-hot:before,
+.fa-announce-new-hot:before 	{ content: "\f086"; } /* copy comments */
+.fa-announce-lock:before,
+.fa-announce-new-lock:before 	{ content: "\f023"; } /* copy lock */
+.fa-announce-post:before,
+.fa-announce-new-post:before 	{ content: "\f071"; } /* copy exclamation-triangle */
+.fa-announce-top:before,
+.fa-announce-new-top:before 	{ content: "\f06a"; } /* copy exclamation-circle */
+
+/* --- Icones de messagerie --- */
+.fa-msg-display:before 			{ content: "\f00c"; } /* copy check */
+.fa-msg-not-display:before 		{ content: "\f00d"; } /* copy times */
+.fa-msg-track:before 			{ content: "\f004"; } /* copy heart */
+.fa-msg-not-track:before 		{ content: "\f004"; } /* copy heart */
+.fa-pm-track:before 			{ content: "\f27a"; } /* copy comment-alt */
+.fa-pm-not-track:before 		{ content: "\f27a"; } /* copy comment-alt */
+.fa-mail-track:before 			{ content: "\f0e0"; } /* copy envelope */
+.fa-mail-not-track:before 		{ content: "\f0e0"; } /* copy envelope */
+.fa-lastview:before 			{ content: "\f017"; } /* copy clock-o */
+.fa-notread:before 				{ content: "\f15c"; } /* copy file-alt, regular fonts */
+.fa-showmymsg:before 			{ content: "\f4ad"; } /* copy comments-dots, regular fonts*/
+
+.fa-notread,
+.fa-lastview,
+.fa-showmymsg {
+	font-weight: 200;
+}
+
+.fa-announce:before,
+.fa-announce-hot:before     { color: #81A4C8; }
+.fa-announce-new:before,
+.fa-announce-new-hot:before { color: #40b73a; }
+
+.fa-msg-display:before      { color: #40b73a; }
+.fa-msg-not-display:before 	{ color: #E0464A; }
+.fa-msg-track:before        { color: #E0464A; }
+.fa-msg-not-track:before    { color: #212121; }
+.fa-pm-track:before         { color: #517BA6; }
+.fa-pm-not-track:before     { color: #212121; }
+.fa-mail-track:before       { color: #517BA6; }
+.fa-mail-not-track:before   { color: #212121; }
+.fa-lastview:before         { color: #353535; }
+.fa-notread:before          { color: #353535; }
+.fa-showmymsg:before        { color: #353535; }
+
 /* --- les couleurs d icones --- */
 .fa-syndication:before { color: #F57900; }
 .fa-success:before     { color: #478948; }
@@ -567,6 +615,63 @@ li.small-block .fa-stack {
 .member-only  { background-color: #FDF9E4; border-color: #FBECCD; }
 .modo-only    { background-color: #FDF9E4; border-color: #FBECCD; }
 .admin-only   { background-color: #FDF9E4; border-color: #FBECCD; }
+
+
+.floating-message-container {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+	top: 0.456em;
+}
+
+.floating-message-container .message-helper {
+	overflow: visible;
+	opacity: 0;
+}
+
+@media (max-width: 768px) {
+	.floating-message-container {
+		width: 100%;
+		top: 1em;
+	}
+	.floating-message-container .message-helper {
+		max-width: 90%;
+		padding: 10px 10px 10px 50px;
+	}
+}
+
+.floating-message-container .fa-close-message {
+	position: absolute;
+	z-index: 1;
+	top: -6px;
+	right: -6px;
+	font-size: 1.5em;
+}
+
+.floating-message-container .fa-close-message:before {
+	content: "\f057";
+}
+
+.floating-message-container .message-helper > a {
+	color: inherit;
+	cursor: pointer;
+}
+
+.floating-message-container .message-helper {
+	background-color: rgba(235, 239, 244, 1);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.floating-message-container .error          { background-color: rgba(249, 218, 219, 1); }
+.floating-message-container .notice         { background-color: rgba(215, 215, 215, 1); }
+.floating-message-container .warning        { background-color: rgba(248, 229, 218, 1); }
+.floating-message-container .success        { background-color: rgba(217, 240, 219, 1); }
+.floating-message-container .question       { background-color: rgba(215, 224, 233, 1); }
+.floating-message-container .member-only    { background-color: rgba(223, 216, 234, 1); }
+.floating-message-container .modo-only      { background-color: rgba(223, 216, 234, 1); }
+.floating-message-container .admin-only     { background-color: rgba(223, 216, 234, 1); }
+
 
 
 /* -- Systeme d Upload -- */
