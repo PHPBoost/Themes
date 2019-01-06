@@ -338,7 +338,7 @@
 .bbcode-icon-strike:before      { content: "\f0cc"; }
 .bbcode-icon-smileys:before     { content: "\f118"; }
 .bbcode-icon-title:before       { content: "\f022"; }
-.bbcode-icon-subtitle:before    { content: "\f096"; }
+.bbcode-icon-subtitle:before    { content: "\f0c8"; }
 .bbcode-icon-style:before       { content: "\f071"; }
 .bbcode-icon-url:before         { content: "\f0ac"; }
 .bbcode-icon-image:before       { content: "\f03e"; }
@@ -362,7 +362,7 @@
 .bbcode-icon-sub:before         { content: "\f12c"; }
 .bbcode-icon-indent:before      { content: "\f03c"; }
 .bbcode-icon-table:before       { content: "\f0ce"; }
-.bbcode-icon-flash:before       { content: "\f01d"; }
+.bbcode-icon-flash:before       { content: "\f144"; }
 .bbcode-icon-movie:before       { content: "\f008"; }
 .bbcode-icon-youtube:before     { content: "\f167"; }
 .bbcode-icon-sound:before       { content: "\f001"; }
@@ -370,12 +370,19 @@
 .bbcode-icon-math:before        { content: "\f136"; }
 .bbcode-icon-html:before        { content: "\f13b"; }
 .bbcode-icon-help:before        { content: "\f059"; }
-.bbcode-icon-upload:before      { content: "\f0ee"; }
-.bbcode-icon-fa:before          { content: "\f024"; }
+.bbcode-icon-upload:before      { content: "\f382"; }
+.bbcode-icon-fa:before          { content: "\f425"; }
 .bbcode-icon-mail:before        { content: "\f0e0"; }
 .bbcode-icon-feed:before        { content: "\f09e"; }
 .bbcode-icon-bgcolor:before     { content: "\f1fc"; }
 
+.bbcode-icon-flash,
+.bbcode-icon-image,
+.bbcode-icon-title,
+.bbcode-icon-smileys,
+.bbcode-icon-subtitle {
+	font-weight: 400;
+}
 /* Icones modifications size or color */
 .bbcode-icon-math:before {
 	font-size: 0.8em;

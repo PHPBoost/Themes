@@ -570,7 +570,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	}
 	
 	.sortable-selector:after {
-		content: "0b2";
+		content: "\f0b2";
 		content: '\f047';
 		color: #FFFFFF;
 		font-family: 'Font Awesome 5 Free';

@@ -736,7 +736,7 @@ background-color: rgba(0, 0, 0, 0.7);
 	}
 	
 	.sortable-selector:after {
-		content: "0b2";
+		content: "\f0b2";
 		color: #ffffff;
 		font-family: 'Font Awesome 5 Free';
 		font-weight: 900;
