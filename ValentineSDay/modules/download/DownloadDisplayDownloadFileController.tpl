@@ -90,6 +90,8 @@
 					# ENDIF #
 				</div>
 				<div itemprop="text">{CONTENTS}</div>
+				<div class="spacer"></div>
+				${ContentSharingActionsMenuService::display()}
 				<div class="decofilecontroller"></div>
 			</div>
 				<div class="spacer"></div>

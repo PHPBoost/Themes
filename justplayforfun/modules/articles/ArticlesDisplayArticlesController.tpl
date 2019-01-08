@@ -38,6 +38,8 @@
 					<h2 class="title page_name">{PAGE_NAME}</h2>
 				# ENDIF #
 					<div itemprop="text">{CONTENTS}</div>
+					<div class="spacer"></div>
+					${ContentSharingActionsMenuService::display()}
 				
 				<div class="more">
 					# IF C_AUTHOR_DISPLAYED #

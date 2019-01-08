@@ -126,7 +126,7 @@
 					<div id="footer_title">
 						<h5 class="sub_title">
 						<!-- debut : modifier l'image et le titre-->
-						<img src="{PATH_TO_ROOT}/templates/{THEME}/images/rss.png" alt="" class="valign_middle" />&nbsp;Les dernières actualités du Blog
+						<i class="fa fa-syndication" aria-hidden="true"></i>&nbsp;Les dernières actualités du Blog
 						<!-- fin : modifier l'image et le titre -->
 						</h5>					
 					</div>

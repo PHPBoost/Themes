@@ -67,6 +67,8 @@
 					</a>
 				# ENDIF #
 					<div itemprop="text">{CONTENTS}</div>
+					<div class="spacer"></div>
+					${ContentSharingActionsMenuService::display()}
 	
 				<hr />
 	

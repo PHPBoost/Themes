@@ -50,6 +50,8 @@
 				# IF C_PICTURE #<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="news-picture" /># ENDIF #
 	
 				<div itemprop="text">{CONTENTS}</div>
+				<div class="spacer"></div>
+				${ContentSharingActionsMenuService::display()}
 			</div>
 			<aside>
 				# IF C_SOURCES #

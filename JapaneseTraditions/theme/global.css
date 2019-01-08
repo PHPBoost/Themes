@@ -54,6 +54,9 @@ a.member { color: #000000; }
 .bkgd-color-visible 		{ background-color: #CCFFCC; }
 .bkgd-color-unvisible 		{ background-color: #FFEE99; }
 .bkgd-color-unaprobed 		{ background-color: #FFCCCC; }
+.bkgd-main  { background-color: #FFFFFF; }
+.bkgd-sub   { background-color: #E1E1E1; }
+.bkgd-title { background-color: #afceed; }
 
 .bkgd-color-fixed 			{ background-color: #7FFF9C; }
 tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
