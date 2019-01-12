@@ -217,7 +217,7 @@ article header h2 {
 
 article header a {
     color: #EFEFEF;
-    font-size: 1em;
+    font-size: 1.4rem
 }
 
 
@@ -254,7 +254,7 @@ article header a {
 
 	article header a {
 		color: #334455;
-		font-size: 1em;
+		font-size: 1.4rem
 	}
 	
 	.forum-table > .forum-announce-topic { padding: -8px !important;}
@@ -802,7 +802,7 @@ footer#forum-bottom  .cssmenu.cssmenu-group.float-left.forum-index a{
 }
 /* -- Taille police menu ========================================================= */
 .cssmenu.cssmenu-group > ul > li > .cssmenu-title {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
 
 .post-new-top { padding-bottom: 10px; }

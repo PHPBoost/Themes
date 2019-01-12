@@ -628,13 +628,13 @@ a.msg-link-pseudo:hover { color: #F2FBFF; }
 .fa-msg-not-display:before 		{ content: "\f00d"; }
 .fa-msg-track:before 			{ content: "\f004"; }
 .fa-msg-not-track:before 		{ content: "\f004"; }
-.fa-pm-track:before 			{ content: "\f0e0"; }
-.fa-pm-not-track:before 		{ content: "\f0e0"; }
-.fa-mail-track:before 			{ content: "\f003"; }
-.fa-mail-not-track:before 		{ content: "\f003"; }
+.fa-pm-track:before 			{ content: "\f27a"; }
+.fa-pm-not-track:before 		{ content: "\f27a"; }
+.fa-mail-track:before 			{ content: "\f0e0"; }
+.fa-mail-not-track:before 		{ content: "\f0e0"; }
 .fa-lastview:before 			{ content: "\f017"; }
-.fa-notread:before 				{ content: "\f0f6"; }
-.fa-showmymsg:before 			{ content: "\f0e6"; }
+.fa-notread:before 				{ content: "\f15c"; }
+.fa-showmymsg:before 			{ content: "\f4ad"; }
 
 /* -- footer ==================================================================== */
 

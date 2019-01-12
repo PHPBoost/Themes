@@ -768,13 +768,13 @@ a.msg-link-pseudo:hover {
 .fa-msg-not-display:before 		{ content: "\f00d"; color: #BA4B49; }
 .fa-msg-track:before 			{ content: "\f004"; color: #E60004; }
 .fa-msg-not-track:before 		{ content: "\f004"; color: #000000; }
-.fa-pm-track:before 			{ content: "\f0e0"; color: #FFFFFF; }
-.fa-pm-not-track:before 		{ content: "\f0e0"; color: #000000; }
-.fa-mail-track:before 			{ content: "\f003"; color: #4372AA; }
-.fa-mail-not-track:before 		{ content: "\f003"; color: #000000; }
+.fa-pm-track:before 			{ content: "\f27a"; color: #FFFFFF; }
+.fa-pm-not-track:before 		{ content: "\f27a"; color: #000000; }
+.fa-mail-track:before 			{ content: "\f0e0"; color: #4372AA; }
+.fa-mail-not-track:before 		{ content: "\f0e0"; color: #000000; }
 .fa-lastview:before 			{ content: "\f017"; color: #6dc922; }
-.fa-notread:before 				{ content: "\f0f6"; color: #eeeeee; }
-.fa-showmymsg:before 			{ content: "\f0e6"; color: #eeeeee; }
+.fa-notread:before 				{ content: "\f15c"; color: #eeeeee; }
+.fa-showmymsg:before 			{ content: "\f4ad"; color: #eeeeee; }
 .fa-globe:before 				{ color: #FFFFFF; }
 .fa-refresh:before 				{ color: #0AC8F2; }
 .fa-eraser:before				{ color: #FA6B7E; }
@@ -799,5 +799,5 @@ footer#forum-bottom .forum-message-options {
 
 /* -- Taille police menu ========================================================= */
 .cssmenu.cssmenu-group > ul > li > .cssmenu-title {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }

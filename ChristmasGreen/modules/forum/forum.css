@@ -189,7 +189,7 @@ article header h2 {
 
 article header a {
 	color: #334455;
-	font-size: 1em;
+	font-size: 1.4rem
 }
 
 article header a.basic-button {
@@ -656,13 +656,13 @@ a.msg-link-pseudo:hover {
 .fa-msg-not-display:before 		{ content: "\f00d"; color: #BA4B49; }
 .fa-msg-track:before 			{ content: "\f004"; color: #BA4B49; }
 .fa-msg-not-track:before 		{ content: "\f004"; color: #000000; }
-.fa-pm-track:before 			{ content: "\f0e0"; color: #4372AA; }
-.fa-pm-not-track:before 		{ content: "\f0e0"; color: #000000; }
-.fa-mail-track:before 			{ content: "\f003"; color: #4372AA; }
-.fa-mail-not-track:before 		{ content: "\f003"; color: #000000; }
+.fa-pm-track:before 			{ content: "\f27a"; color: #4372AA; }
+.fa-pm-not-track:before 		{ content: "\f27a"; color: #000000; }
+.fa-mail-track:before 			{ content: "\f0e0"; color: #4372AA; }
+.fa-mail-not-track:before 		{ content: "\f0e0"; color: #000000; }
 .fa-lastview:before 			{ content: "\f017"; color: #334455; }
-.fa-notread:before 				{ content: "\f0f6"; color: #334455; }
-.fa-showmymsg:before 			{ content: "\f0e6"; color: #334455; }
+.fa-notread:before 				{ content: "\f15c"; color: #334455; }
+.fa-showmymsg:before 			{ content: "\f4ad"; color: #334455; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {
@@ -683,5 +683,5 @@ footer#forum-bottom .forum-message-options {
 
 /* -- Taille police menu ========================================================= */
 .cssmenu.cssmenu-group > ul > li > .cssmenu-title {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }

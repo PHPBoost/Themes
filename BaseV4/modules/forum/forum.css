@@ -200,7 +200,7 @@ article header h2 {
 
 article header a {
 	color: #334455;
-	font-size: 1em;
+	font-size: 1.4rem
 }
 
 article header a.basic-button {
@@ -767,5 +767,5 @@ footer#forum-bottom .forum-message-options {
 ========================================================= */
 
 .cssmenu.cssmenu-group > ul > li > .cssmenu-title {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
