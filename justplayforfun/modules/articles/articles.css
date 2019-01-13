@@ -55,7 +55,7 @@ span.contents + hr {
 	}
 }
 
-.fa-pagebreak:before { content: "\f0f6"; }
+.fa-pagebreak:before { content: "\f477"; }
 
 .articles-footer-container .more {
 	background: #D8D8D8;

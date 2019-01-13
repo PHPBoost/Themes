@@ -1,0 +1,347 @@
+/*
+* Surchargez ce fichier dans votre thème pour personnaliser le module
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+/* -- Profile User -- */
+/* ------------------ */
+ul#profile-container {
+	margin: 2em auto;
+	width: 99%;
+	list-style-type: none;
+	margin-left: -0.456em;
+}
+
+ul#profile-container li {
+	margin: 0.618em 0 0 0.456em;
+	padding: 0.618em;
+	text-align: center;
+}
+
+@media (min-width: 769px) {
+
+	ul#profile-container {
+		text-align: center;
+	}
+
+	ul#profile-container li {
+		width: auto;
+		display: inline-block;
+	}
+
+	.profile-element-title {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.profile-element-title {
+		padding-left: 0.456em;
+	}
+}
+
+.preview-img {
+	max-height: 180px;
+	vertical-align: top;
+}
+
+.user-agreement {
+	width: 90%;
+	max-width: none;
+	max-height: 250px;
+	overflow-y: auto !important;
+}
+
+.user-group-select {
+	margin-bottom: 1.309em;
+}
+
+.user-group-select fieldset {
+	margin: 0;
+}
+
+.user-group-select label {
+	width: auto;
+	vertical-align: middle;
+}
+
+
+/* -- Contribution -- */
+/* ------------------ */
+#module-user-contribution-list hr {
+	margin: 1.309em 0;
+}
+
+.module-contribution-element {
+	float: left;
+	margin: 1.309em 0;
+	text-align: center;
+}
+
+.unprocessed-contribution {
+	margin: auto;
+	width: 300px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.unprocessed-contribution div {
+	float: left;
+	width: 50%;
+}
+
+#module-user-moderation-panel .content {
+	padding-bottom: 75px;
+}
+
+#module-user-moderation-panel .bt td:before {
+	display: none;
+}
+
+#module-user-moderation-panel .bt-content {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.contribution-module-container {
+	float: left;
+	margin: 1.309em 0;
+	text-align: center;
+}
+
+.convers-announce {
+	padding-right: 0;
+}
+
+.convers-title {
+	width: 50%;
+	text-align: left;
+}
+
+table.announce-legend td {
+	width: 33%;
+}
+
+.available-modules-msg {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+
+/* -- Error 403/404 -- */
+/* ------------------- */
+#module-user-error-403 .content,
+#module-user-error-404 .content {
+	text-align: center;
+	font-size: 1.482em;
+}
+
+#module-user-error-403 .fa-warning:before,
+#module-user-error-404 .fa-warning:before {
+	content: "\f071";
+}
+
+#module-user-error-403 .fa-warning,
+#module-user-error-404 .fa-warning {
+	display: block;
+	margin: 0.618em auto 0.309em auto;
+	color: #C19954;
+}
+
+#module-user-error-403 .message-error,
+#module-user-error-404 .message-error {
+	padding: 1.309em 0;
+}
+
+#module-user-error-403 .type-error,
+#module-user-error-404 .type-error {
+	padding: 0.618em 0;
+}
+
+
+	#module-user-group-list header h1 {
+		margin-top: 1.309em;
+		text-align: left;
+	}
+
+	#module-user-group-list > .content {
+		margin: 2em 0;
+	}
+
+/* --   groupe   -- */
+/* ---------------- */
+.group-container {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.groups-list-container > header {
+	text-align: center;
+}
+
+.list-members-container {
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+.list-members-container > header {
+	margin: 0;
+	padding: 0;
+}
+
+.list-members-container > header h2 {
+	font-size: 1.618em;
+}
+
+.list-members-container > .content {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	overflow: hidden;
+	padding: 0;
+	max-height: 0;
+	transition: 0.3s ease;
+}
+
+.list-members-container.selected > .content {
+	max-height: 9999px;
+	padding: 0.456em;
+}
+
+.list-admins-container {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+
+.list-modos-container {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+.list-members-container {
+	order : 4;
+	-ms-flex-order: 4;
+	-webkit-flex-order: 4;
+}
+
+.list-group-container.reorder-top {
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+.list-members-container-action {
+	float: right;
+	font-size: 0.618em;
+}
+
+.list-members-container-action a {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 0.809em;
+}
+
+.list-members-container-action i {
+	vertical-align: middle;
+}
+
+.action-less { display: none; }
+.selected .action-less { display: inline-block; }
+
+.action-more { display: inline-block; }
+.selected .action-more { display: none; }
+
+.group-button {
+	opacity: 0.5;
+	display: inline-block;
+}
+
+.group-button.selected {
+	opacity: 1;
+}
+
+.group-has-img {
+	max-width: 150px;
+}
+
+.user-card,
+.user-card header,
+.user-card .content {
+	margin: 0;
+	padding: 0;
+}
+
+.user-card {
+	border-width: 2px;
+}
+
+@media (min-width: 1370px) {
+	.elements-container > .user-card { width: calc(100% / 3.1); }
+}
+
+@media (min-width: 590px) and (max-width: 1369px) {
+	#module-user-group-list .elements-container,
+	#module-user-groups-list .elements-container {
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+	.elements-container > .user-card { width: calc(100% / 2.3); }
+}
+
+@media (max-width: 591px)  {
+	.elements-container > .user-card { width: calc(100%); }
+}
+
+.user-card .content {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	height: 100%;
+}
+
+.user-card .content:after,
+.user-card .content:before {
+	display: none;
+}
+
+.user-card .avatar-container {
+	margin: 0.809em 0.456em 0.809em 0.456em;
+	flex: 0 0 90px;
+	-ms-flex: 0 0 90px;
+	-webkit-flex: 0 0 90px;
+}
+
+.user-level {
+	margin-top: 1em;
+	padding-left: 0.456em;
+	text-transform: capitalize;
+}
+
+.user-pseudo,
+.user-extended-field {
+	padding-left: 0.456em;
+}
+
+.user-extended-field {
+	font-size: 0.809em;
+	text-align: left;
+}
+
+.infos-container {
+	border-width: 0 0 0 8px;
+	border-style: solid;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	margin: -1px -1px -1px 0;
+}

@@ -4,7 +4,13 @@
 	</header>
 	<div class="content">
 		<p class="center text-strong">{@welcome} {PSEUDO}</p>
-		
+		<p class="center">
+			# IF C_AVATAR_IMG #
+				<img src="{U_AVATAR_IMG}" alt="{@avatar}" />
+			# ELSE #
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/images/no_avatar.png" alt="{@avatar}" />
+			# ENDIF #
+		</p>
 		<ul id="profile-container">
 			<li>
 				<a href="{U_VIEW_PROFILE}" title="${LangLoader::get_message('my_private_profile', 'main')}" class="block-round"><i class="fa fa-user fa-2x"></i></a> 
@@ -16,7 +22,7 @@
 						<i class="fa fa-circle blink fa-circle-alert">
 							<span>{NUMBER_PM}</span>
 						</i>
-						<i class="fa fa-envelope-o fa-stack-2x"></i>
+						<i class="fa fa-envelope fa-stack-2x"></i>
 					</span><br/>
 					# ELSE #
 					<i class="fa fa-envelope-o fa-2x"></i>
@@ -67,7 +73,17 @@
 					# ENDIF #
 				</a>
 			</li>
+
 		</ul>
+		<div class="spacer"></div>
+		# START modules_messages #
+		<div class="block center">
+			<a href="{modules_messages.U_LINK_USER_MSG}">
+				# IF modules_messages.C_IMG_USER_MSG #<i class="{modules_messages.IMG_USER_MSG} fa-2x" aria-hidden="true"></i># ENDIF #
+				<span class="profile-element-title">{modules_messages.NAME_USER_MSG} : {modules_messages.NUMBER_MESSAGES}</span>
+			</a>
+		</div>
+		# END modules_messages #
 		<div class="spacer"></div>
 		{MSG_MBR}
 	</div>
