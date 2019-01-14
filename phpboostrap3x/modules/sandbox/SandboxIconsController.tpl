@@ -72,9 +72,9 @@
 			</div>
 			<p>{@iconfa.howto.html.class.result.i}<i class="fa fa-edit"></i> Edition</p>
 			<div class="code">
-				<pre><span><</span>a class="fa fa-globe" href="http://www.phpboost.com">PHPBoost<<span>/a></span></pre>
+				<pre><span><</span>a class="fa fa-globe" href="https://www.phpboost.com">PHPBoost<<span>/a></span></pre>
 			</div>
-			<p>{@iconfa.howto.html.class.result.a}<a class="fa fa-globe" href="http://www.phpboost.com">PHPBoost</a></p>
+			<p>{@iconfa.howto.html.class.result.a}<a class="fa fa-globe" href="https://www.phpboost.com">PHPBoost</a></p>
 			<p>{@iconfa.howto.html.class.result.all}</p>
 
 			<br />

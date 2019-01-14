@@ -23,7 +23,7 @@
 					<a href="javascript:insert_paragraph(5);" title="{L_EXPLAIN_PARAGRAPH_5}" class="btn btn-default btn-wiki"><img src="{PICTURES_DATA_PATH}/images/bbcode/paragraph5.png" alt="{L_EXPLAIN_PARAGRAPH_5}" id="link5" /></a>
 				</div>
 				<div id="wiki-help-container" class="btn-group btn-group-xs">
-					<a href="http://www.phpboost.com/wiki/" title="{L_HELP_WIKI_TAGS}" class="btn btn-default"><i class="fa bbcode-icon-help"></i></a>
+					<a href="https://www.phpboost.com/wiki/" title="{L_HELP_WIKI_TAGS}" class="btn btn-default"><i class="fa bbcode-icon-help"></i></a>
 				</div>
 			</div>
 		</div>
