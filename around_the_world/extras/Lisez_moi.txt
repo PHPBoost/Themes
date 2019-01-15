@@ -5,16 +5,16 @@
 -------------------------------- Infos du template -----------------------------
 
 
-Vous allez installer le thème : AroundTheWorld
+Vous allez installer le thÃ¨me : AroundTheWorld
 
 
 ----------------------------- Dossier : extras ---------------------------
 
 Vous y trouverez:
 
-- Le PSD du header : il est scindé en deux parties.
+- Le PSD du header : il est scindÃ© en deux parties.
 
------------------------------ Police /font utilisé ---------------------------
+----------------------------- Police /font utilisÃ©e ---------------------------
 
 - Titre: ???
 - Sous-titre: ???

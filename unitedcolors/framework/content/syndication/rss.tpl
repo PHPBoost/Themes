@@ -10,7 +10,7 @@
 		<copyright>(C) 2005-{THIS_YEAR} PHPBoost</copyright>
 		<language>{LANG}</language>
 		<generator>PHPBoost</generator>
-		
+
 		# START item #
 		<item>
 			<title>{item.TITLE}</title>
