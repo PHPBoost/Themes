@@ -136,16 +136,16 @@ ul.pagination-block li a.current-page:hover, ul.pagination-block li a.current-pa
 }
 
 .block {
-	background-color: #FBFDFF;
-	border-color: #366493 #F1F1F1 #F1F1F1 #F1F1F1;
+	background-color: #0E2134;
+	border-color: #366493;
 }
 
 .default-element {
-	border-color: #2F9674 #F1F1F1 #F1F1F1 #F1F1F1;
+	border-color: #2F9674;
 }
 
 .deactivate-element {
-	border-color: #AAAAAA #F1F1F1 #F1F1F1 #F1F1F1;
+	border-color: #AAAAAA;
 }
 
 .explorer h1 {
@@ -698,7 +698,7 @@ div.field-required:after {
 
 /* --- Auto-completion --- */
 .autocomplete-suggestions {
-	border: 1px solid #999999;
+	border-color: #999999;
 	background-color: #FFFFFF;
 }
 
@@ -801,6 +801,18 @@ h4.stitle1 {
 .bbcode-block {
 	border-color: #BDE9F2;
 	background-color: #0E2134;
+}
+
+.bbcode a, .bbcode .fa {
+    color: #63a8e7;
+}
+
+.bbcode-container::after {
+    background-color: transparent;
+}
+
+.bbcode .bbcode-elements > a:hover {
+    background-color: #0E2134;
 }
 
 .color-picker td {
@@ -928,7 +940,7 @@ h3.menu-title {
 
 @media (min-width: 769px) {
 	.themesmanagement {
-		background-color: rgba(255, 255, 255, .5);
+		background-color: #0E2134;
 		color: #4372AA;
 	}
 }
@@ -944,13 +956,13 @@ h3.menu-title {
 
 .menu-block-libelle {
 background-color: #BDE9F2;
-border: #0E2134;
+border-color: #0E2134;
 	color: #0E2A48;
 }
 
 .menus-block-add {
 background-color: #BDE9F2;
-border: #0E2134;
+border-color: #0E2134;
 	color: #0E2A48;
 }
 
@@ -960,7 +972,7 @@ border: #0E2134;
 
 .menus-block-container {
 background-color: #1D3248;
-border: #647689;
+border-color: #647689;
 }
 
 .menus-block-title {
@@ -972,7 +984,7 @@ border: #647689;
 #mod_central, #mod_bottomcentral,
 #mod_topfooter, #mod_footer {
 	/* background-color: #f5f5f5; */
-	border: #647689;
+	border-color: #647689;
 }
 
 /* --- cssmenus --- */

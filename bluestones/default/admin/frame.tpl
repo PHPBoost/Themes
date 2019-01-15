@@ -5,6 +5,9 @@
 		<meta charset="windows-1252" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+		<!-- Modules CSS -->
+		{MODULES_CSS}
+
 		<!-- Theme CSS -->
 		# IF C_CSS_CACHE_ENABLED #
 		<link rel="stylesheet" href="${CSSCacheManager::get_css_path('/templates/default/theme/default.css;/kernel/lib/css/font-awesome/css/font-awesome.css;/kernel/lib/css/font-awesome-animation/css/font-awesome-animation.css;/templates/default/theme/admin_design.css;/templates/default/theme/admin_content.css;/templates/default/theme/admin_cssmenu.css;/templates/default/theme/admin_menus.css;/templates/default/theme/admin_table.css;/templates/default/theme/admin_form.css;/templates/default/theme/admin_global.css;/templates/{THEME}/default/theme/admin_colors.css')}" type="text/css" media="screen, print" />
@@ -21,9 +24,6 @@
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/default/theme/admin_global.css" type="text/css" media="screen, print" />
 		<link rel="stylesheet" href="{PATH_TO_ROOT}/templates/{THEME}/default/theme/admin_colors.css" type="text/css" media="screen, print" />
 		# ENDIF #
-
-		<!-- Modules CSS -->
-		{MODULES_CSS}
 
 		# IF C_FAVICON #
 		<link rel="shortcut icon" href="{FAVICON}" type="{FAVICON_TYPE}" />
