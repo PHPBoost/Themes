@@ -12,17 +12,17 @@
 			<header>
 				<h2>
 					<span itemprop="name">{TITLE}</span>
-					<span class="actions">
-						# IF C_EDIT #
-							<a href="{U_EDIT_ARTICLE}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-						# ENDIF #
-						# IF C_DELETE #
-							<a href="{U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
-						# ENDIF #
-							<a href="{U_PRINT_ARTICLE}" title="${LangLoader::get_message('printable_version', 'main')}" target="blank"><i class="fa fa-print"></i></a>
-					</span>
 				</h2>
-				
+				<span class="actions">
+					# IF C_EDIT #
+						<a href="{U_EDIT_ARTICLE}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+					# ENDIF #
+					# IF C_DELETE #
+						<a href="{U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+					# ENDIF #
+						<a href="{U_PRINT_ARTICLE}" title="${LangLoader::get_message('printable_version', 'main')}" target="blank"><i class="fa fa-print"></i></a>
+				</span>
+
 				<div class="more">
 					# IF C_AUTHOR_DISPLAYED #
 					<i class="fa fa-user" title="${LangLoader::get_message('author', 'common')}"></i>
@@ -39,13 +39,13 @@
 					# ENDIF #
 					&nbsp;|&nbsp;<i class="fa fa-folder" title="${LangLoader::get_message('category', 'categories-common')}"></i>&nbsp;<a itemprop="about" class="small" href="{U_CATEGORY}">{CATEGORY_NAME}</a>
 					# IF C_KEYWORDS #
-					&nbsp;|&nbsp;<i title="${LangLoader::get_message('form.keywords', 'common')}" class="fa fa-tags"></i> 
+					&nbsp;|&nbsp;<i title="${LangLoader::get_message('form.keywords', 'common')}" class="fa fa-tags"></i>
 						# START keywords #
 							<a itemprop="keywords" href="{keywords.URL}">{keywords.NAME}</a># IF keywords.C_SEPARATOR #, # ENDIF #
 						# END keywords #
 					# ENDIF #
 				</div>
-				
+
 				<meta itemprop="url" content="{U_ARTICLE}">
 				<meta itemprop="description" content="${escape(DESCRIPTION)}">
 				<meta itemprop="datePublished" content="# IF NOT C_DIFFERED #{DATE_ISO8601}# ELSE #{PUBLISHING_START_DATE_ISO8601}# ENDIF #">
@@ -69,9 +69,9 @@
 					<div itemprop="text">{CONTENTS}</div>
 					<div class="spacer"></div>
 					${ContentSharingActionsMenuService::display()}
-	
+
 				<hr />
-	
+
 				# IF C_PAGINATION #
 					<div class="pages-pagination right">
 						# IF C_NEXT_PAGE #

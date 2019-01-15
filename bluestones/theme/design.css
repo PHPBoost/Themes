@@ -46,6 +46,7 @@ header#header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	position: relative;
 }
 
 /* --- Partie superieure du header --- */
@@ -82,13 +83,6 @@ div#sub-header {
 	background-color: rgba(25, 35, 45, 0.4);
 	border-bottom: 2px solid #0E2134;
 	position: relative;
-}
-
-@media (min-width: 769px) {
-	div#sub-header {
-		background-color: #2F4154;
-	}
-
 }
 
 div#sub-header-content{

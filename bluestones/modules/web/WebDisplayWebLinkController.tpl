@@ -14,23 +14,23 @@
 			<header>
 				<h2>
 					<span id="name" itemprop="name">{NAME}</span>
-					<span class="actions">
-						# IF C_EDIT #
-							<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-						# ENDIF #
-						# IF C_DELETE #
-							<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
-						# ENDIF #
-					</span>
 				</h2>
-				
+				<span class="actions">
+					# IF C_EDIT #
+						<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+					# ENDIF #
+					# IF C_DELETE #
+						<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+					# ENDIF #
+				</span>
+
 				<meta itemprop="url" content="{U_LINK}">
 				<meta itemprop="description" content="${escape(DESCRIPTION)}" />
 				# IF C_COMMENTS_ENABLED #
 				<meta itemprop="discussionUrl" content="{U_COMMENTS}">
 				<meta itemprop="interactionCount" content="{NUMBER_COMMENTS} UserComments">
 				# ENDIF #
-				
+
 			</header>
 			<div class="content">
 				<div class="options infos">
@@ -81,7 +81,7 @@
 					<img src="{U_PICTURE}" alt="{NAME}" itemprop="image" />
 				</span>
 				# ENDIF #
-								
+
 				<div itemprop="text">{CONTENTS}</div>
 				<div class="spacer"></div>
 				${ContentSharingActionsMenuService::display()}
@@ -92,5 +92,5 @@
 			<footer></footer>
 		</article>
 	</div>
-	<footer></footer>	
+	<footer></footer>
 </section>

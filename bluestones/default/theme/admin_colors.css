@@ -808,9 +808,8 @@ h4.stitle1 {
 }
 
 .blockquote, .code, .hide {
-	background-color: #FAFAFA;
+	background-color: #0E2134;
 	border-color: #DDDDDD;
-	color: #444444;
 }
 
 .formatter-block {

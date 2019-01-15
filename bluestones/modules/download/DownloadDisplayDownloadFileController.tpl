@@ -14,23 +14,23 @@
 			<header>
 				<h2>
 					<span id="name" itemprop="name">{NAME}</span>
-					<span class="actions">
-						# IF C_EDIT #
-							<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-						# ENDIF #
-						# IF C_DELETE #
-							<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
-						# ENDIF #
-					</span>
 				</h2>
-				
+				<span class="actions">
+					# IF C_EDIT #
+						<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+					# ENDIF #
+					# IF C_DELETE #
+						<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+					# ENDIF #
+				</span>
+
 				<meta itemprop="url" content="{U_LINK}">
 				<meta itemprop="description" content="${escape(DESCRIPTION)}" />
 				# IF C_COMMENTS_ENABLED #
 				<meta itemprop="discussionUrl" content="{U_COMMENTS}">
 				<meta itemprop="interactionCount" content="{NUMBER_COMMENTS} UserComments">
 				# ENDIF #
-				
+
 			</header>
 			<div class="content">
 				<div class="options infos">
@@ -44,7 +44,7 @@
 								<a href="{U_DOWNLOAD}" class="basic-button">
 									<i class="fa fa-download"></i> {@download}
 								</a>
-								
+
 								# IF IS_USER_CONNECTED #
 								<a href="{U_DEADLINK}" class="basic-button alt" title="${LangLoader::get_message('deadlink', 'common')}">
 									<i class="fa fa-unlink"></i>
@@ -77,7 +77,7 @@
 							# IF C_AUTHOR_CUSTOM_NAME #
 								{AUTHOR_CUSTOM_NAME}
 							# ELSE #
-								# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #  
+								# IF C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {USER_LEVEL_CLASS}" href="{U_AUTHOR_PROFILE}" # IF C_USER_GROUP_COLOR # style="color:{USER_GROUP_COLOR}" # ENDIF #>{PSEUDO}</a># ELSE #{PSEUDO}# ENDIF #
 							# ENDIF #
 						</span><br/>
 					# ENDIF #
@@ -91,7 +91,7 @@
 						# ENDIF #
 					# ENDIF #
 				</div>
-				
+
 				<div itemprop="text">{CONTENTS}</div>
 				<div class="spacer"></div>
 				${ContentSharingActionsMenuService::display()}

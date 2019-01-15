@@ -11,7 +11,7 @@
 						</div>
 					# ENDIF #
 				</header>
-				
+
 				# IF C_SUB_CATEGORIES #
 				<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{NUMBER_CATS_COLUMNS}# ENDIF #">
 					# START sub_categories_list #
@@ -33,7 +33,7 @@
 				# ELSE #
 					<div class="spacer"></div>
 				# ENDIF #
-				
+
 				<div class="content">
 					# IF C_FILES #
 						<div class="home-filters" id="form">
@@ -59,20 +59,20 @@
 							</select>
 						</div>
 						<div class="spacer"></div>
-	
+
 						# START file #
 							<article id="article-media-{file.ID}" class="module-home# IF file.C_NEW_CONTENT # new-content# ENDIF #">
 								<header>
 									<h2>
 										<a href="{file.U_MEDIA_LINK}">{file.NAME}</a>
-										# IF C_MODO #
-										<span class="actions">
-											<a href="{file.U_ADMIN_UNVISIBLE_MEDIA}" class="fa fa-eye-slash" title="{L_UNAPROBED}"></a>
-											<a href="{file.U_ADMIN_EDIT_MEDIA}" title="${LangLoader::get_message('edit', 'common')}" class="fa fa-edit"></a>
-											<a href="{file.U_ADMIN_DELETE_MEDIA}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-delete" data-confirmation="delete-element"></a>
-										</span>
-										# ENDIF #
 									</h2>
+									# IF C_MODO #
+									<span class="actions">
+										<a href="{file.U_ADMIN_UNVISIBLE_MEDIA}" class="fa fa-eye-slash" title="{L_UNAPROBED}"></a>
+										<a href="{file.U_ADMIN_EDIT_MEDIA}" title="${LangLoader::get_message('edit', 'common')}" class="fa fa-edit"></a>
+										<a href="{file.U_ADMIN_DELETE_MEDIA}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-delete" data-confirmation="delete-element"></a>
+									</span>
+									# ENDIF #
 								</header>
 								<div class="home-more">
 									{L_BY} {file.POSTER}
@@ -100,13 +100,13 @@
 						# END file #
 					</div>
 					# ENDIF #
-	
+
 					# IF C_DISPLAY_NO_FILE_MSG #
 					<div class="content">
 						<div class="notice">${LangLoader::get_message('no_item_now', 'common')}</div>
 					</div>
 					# ENDIF #
-				
+
 				<footer># IF C_PAGINATION #<span class="center"># INCLUDE PAGINATION #</span># ENDIF #</footer>
 			</section>
 		# ENDIF #
@@ -122,7 +122,7 @@
 				<article id="article-media-{ID}" class="article-media# IF C_NEW_CONTENT # new-content# ENDIF #">
 					<header>
 						<h2>
-							{NAME} 
+							{NAME}
 							<span class="actions">
 								# IF C_DISPLAY_COMMENTS #
 									<a href="{U_COM}"><i class="fa fa-comments-o"></i> {L_COM}</a>
@@ -136,7 +136,7 @@
 						</h2>
 					</header>
 					<div class="content">
-					
+
 						<div class="options infos">
 							<h6>{L_MEDIA_INFOS}</h6>
 								<span class="text-strong">{L_DATE} : </span><span>{DATE}</span><br/>
@@ -146,16 +146,16 @@
 							<div class="center text-strong">{KERNEL_NOTATION}</div>
 							# ENDIF #
 						</div>
-						
+
 						<div class="media-desc">
 							{CONTENTS}
 						</div>
 						<div class="spacer"></div>
-						
+
 						<div class="media-content">
 							# INCLUDE media_format #
 						</div>
-		
+
 						# IF C_DISPLAY_COMMENTS #
 						{COMMENTS}
 						# ENDIF #

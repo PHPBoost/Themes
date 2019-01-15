@@ -4,15 +4,15 @@
 			<a href="${relative_url(SyndicationUrlBuilder::rss('web', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
 			# IF C_PENDING #{@web.pending}# ELSE #{@module_title}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller"></i></a># ENDIF ## ENDIF #
 		</h1>
-		
+
 		# IF C_CATEGORY_DESCRIPTION #
 		<div class="cat-description">
 			{CATEGORY_DESCRIPTION}
 		</div>
 		# ENDIF #
-		
+
 	</header>
-	
+
 	# IF C_SUB_CATEGORIES #
 	<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{NUMBER_CATS_COLUMNS}# ENDIF #">
 		# START sub_categories_list #
@@ -34,7 +34,7 @@
 	# ELSE #
 		# IF NOT C_CATEGORY_DISPLAYED_TABLE #<div class="spacer"></div># ENDIF #
 	# ENDIF #
-	
+
 	<div class="content">
 	# IF C_WEBLINKS #
 		# IF C_MORE_THAN_ONE_WEBLINK #
@@ -99,11 +99,11 @@
 			# START weblinks #
 			# IF C_CATEGORY_DISPLAYED_SUMMARY #
 			<article id="article-web-{weblinks.ID}" class="module-home# IF weblinks.C_IS_PARTNER # content-friends# ENDIF ## IF weblinks.C_IS_PRIVILEGED_PARTNER # content-privileged-friends# ENDIF ## IF weblinks.C_NEW_CONTENT # new-content# ENDIF#" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-							
+
 				<a href="{weblinks.U_LINK}" title="{weblinks.NAME}" class="picture-link">
 					<div class="home-picture" # IF weblinks.C_HAS_PARTNER_PICTURE #style="background-image: url({weblinks.U_PARTNER_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
 				</a>
-				
+
 				<div class="home-more">
 					<i class="fa fa-eye" title="{weblinks.L_VISITED_TIMES}"></i>
 					<span title="{weblinks.L_VISITED_TIMES}">{weblinks.NUMBER_VIEWS}</span>
@@ -116,16 +116,16 @@
 					# ENDIF #
 					<div class="spacer"></div>
 				</div>
-					
+
 				<header>
 					<h2 class="# IF weblinks.C_IS_PARTNER # web-partner# ENDIF ## IF weblinks.C_IS_PRIVILEGED_PARTNER # web-privileged-partner# ENDIF #">
-						<span class="actions">
-							# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-							# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
-						</span>
 						<a href="{weblinks.U_LINK}" itemprop="name">{weblinks.NAME}</a>
 					</h2>
-					
+					<span class="actions">
+						# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
+						# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+					</span>
+
 					<meta itemprop="url" content="{weblinks.U_LINK}">
 					<meta itemprop="description" content="${escape(weblinks.DESCRIPTION)}"/>
 					# IF C_COMMENTS_ENABLED #
@@ -136,20 +136,20 @@
 					<div class="content">
 						{weblinks.DESCRIPTION}# IF weblinks.C_READ_MORE #... <a href="{weblinks.U_LINK}" class="read-more">[${LangLoader::get_message('read-more', 'common')}]</a># ENDIF #
 					</div>
-				
+
 				<footer></footer>
 			</article>
 			# ELSE #
 			<article id="article-web-{weblinks.ID}" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 				<header>
 					<h2 class="# IF weblinks.C_IS_PARTNER # web-partner# ENDIF ## IF weblinks.C_IS_PRIVILEGED_PARTNER # web-privileged-partner# ENDIF #">
-						<span class="actions">
-							# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-							# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
-						</span>
 						<a href="{weblinks.U_LINK}" itemprop="name">{weblinks.NAME}</a>
 					</h2>
-					
+					<span class="actions">
+						# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
+						# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+					</span>
+
 					<meta itemprop="url" content="{weblinks.U_LINK}">
 					<meta itemprop="description" content="${escape(weblinks.DESCRIPTION)}"/>
 					# IF C_COMMENTS_ENABLED #
@@ -207,7 +207,7 @@
 
 						<div itemprop="text">{weblinks.CONTENTS}</div>
 					</div>
-				
+
 				<footer></footer>
 			</article>
 			# ENDIF #

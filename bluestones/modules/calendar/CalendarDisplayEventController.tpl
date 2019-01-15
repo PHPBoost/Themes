@@ -13,15 +13,15 @@
 			<header>
 				<h2>
 					<span itemprop="name">{TITLE}</span>
-					<span class="actions">
-						# IF C_EDIT #
-							<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-						# ENDIF #
-						# IF C_DELETE #
-							<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-delete"></i></a>
-						# ENDIF #
-					</span>
 				</h2>
+				<span class="actions">
+					# IF C_EDIT #
+						<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+					# ENDIF #
+					# IF C_DELETE #
+						<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-delete"></i></a>
+					# ENDIF #
+				</span>
 
 				<a itemprop="url" href="{U_LINK}"></a>
 			</header>

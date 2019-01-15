@@ -11,16 +11,16 @@
 							<h2>
 								<a href="{event.U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
 								<a href="{event.U_LINK}"><span itemprop="name">{event.TITLE}</span></a>
-								<span class="actions">
-									# IF C_COMMENTS_ENABLED #<a href="{event.U_COMMENTS}"><i class="fa fa-comments-o"></i> {event.L_COMMENTS}</a># ENDIF #
-									# IF event.C_EDIT #
-										<a href="{event.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-									# ENDIF #
-									# IF event.C_DELETE #
-										<a href="{event.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT event.C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-delete"></i></a>
-									# ENDIF #
-								</span>
 							</h2>
+							<span class="actions">
+								# IF C_COMMENTS_ENABLED #<a href="{event.U_COMMENTS}"><i class="fa fa-comments-o"></i> {event.L_COMMENTS}</a># ENDIF #
+								# IF event.C_EDIT #
+									<a href="{event.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+								# ENDIF #
+								# IF event.C_DELETE #
+									<a href="{event.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT event.C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-delete"></i></a>
+								# ENDIF #
+							</span>
 
 							<a itemprop="url" href="{event.U_LINK}"></a>
 						</header>
@@ -78,14 +78,14 @@
 										# ENDIF #
 										# IF event.C_REGISTRATION_CLOSED #<span class="small text-italic">{@calendar.labels.registration_closed}</span># ENDIF #
 									# ENDIF #
-	
+
 									<div class="spacer"></div>
 									<div class="event-display-author">
 										{@calendar.labels.created_by} : # IF event.C_AUTHOR_EXIST #<a itemprop="author" href="{event.U_AUTHOR_PROFILE}" class="{event.AUTHOR_LEVEL_CLASS}" # IF event.C_AUTHOR_GROUP_COLOR # style="color:{event.AUTHOR_GROUP_COLOR}" # ENDIF #>{event.AUTHOR}</a># ELSE #{event.AUTHOR}# ENDIF #
 									</div>
 								</div>
 								<div itemprop="text">{event.CONTENTS}</div>
-								
+
 							</div>
 						</div>
 						<footer></footer>

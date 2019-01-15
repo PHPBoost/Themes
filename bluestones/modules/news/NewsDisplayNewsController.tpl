@@ -14,16 +14,16 @@
 			<header>
 				<h2>
 					<span itemprop="name">{NAME}</span>
-					<span class="actions">
-						# IF C_EDIT #
-							<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-						# ENDIF #
-						# IF C_DELETE #
-							<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
-						# ENDIF #
-					</span>
 				</h2>
-	
+				<span class="actions">
+					# IF C_EDIT #
+						<a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+					# ENDIF #
+					# IF C_DELETE #
+						<a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+					# ENDIF #
+				</span>
+
 				<div class="more">
 					# IF C_AUTHOR_DISPLAYED #
 						${LangLoader::get_message('by', 'common')}
@@ -38,14 +38,14 @@
 					# IF C_COMMENTS_ENABLED #- # IF C_COMMENTS # {NUMBER_COMMENTS} # ENDIF # {L_COMMENTS}# ENDIF #
 					# IF C_NB_VIEW_ENABLED #- <span title="{NUMBER_VIEW} {@news.view}"><i class="fa fa-eye"></i> {NUMBER_VIEW}</span># ENDIF #
 				</div>
-	
+
 				<meta itemprop="url" content="{U_LINK}">
 				<meta itemprop="description" content="${escape(DESCRIPTION)}" />
 				# IF C_COMMENTS_ENABLED #
 				<meta itemprop="discussionUrl" content="{U_COMMENTS}">
 				<meta itemprop="interactionCount" content="{NUMBER_COMMENTS} UserComments">
 				# ENDIF #
-	
+
 			</header>
 			<div class="content">
 				# IF C_PICTURE #
@@ -53,7 +53,7 @@
 						<img itemprop="thumbnailUrl" src="{U_PICTURE}" alt="{NAME}" title="{NAME}" class="news-picture right" />
 					</a>
 				# ENDIF #
-	
+
 				<div itemprop="text">{CONTENTS}</div>
 				<div class="spacer"></div>
 				${ContentSharingActionsMenuService::display()}
@@ -67,7 +67,7 @@
 					# END sources #
 				</div>
 				# ENDIF #
-	
+
 				# IF C_KEYWORDS #
 				<div id="news-tags-container">
 					<span class="news-tags-title"><i class="fa fa-tags"></i> ${LangLoader::get_message('form.keywords', 'common')}</span> :
@@ -76,7 +76,7 @@
 						# END keywords #
 				</div>
 				# ENDIF #
-	
+
 				# IF C_SUGGESTED_NEWS #
 					<div id="news-suggested-container">
 						<span class="news-suggested-title"><i class="fa fa-lightbulb-o"></i> ${LangLoader::get_message('suggestions', 'common')} :</span>
@@ -87,9 +87,9 @@
 						</ul>
 					</div>
 				# ENDIF #
-	
+
 				<hr class="news-separator">
-	
+
 				# IF C_NEWS_NAVIGATION_LINKS #
 				<div class="navigation-link">
 					# IF C_PREVIOUS_NEWS #
@@ -105,7 +105,7 @@
 					<div class="spacer"></div>
 				</div>
 				# ENDIF #
-	
+
 				# INCLUDE COMMENTS #
 			</aside>
 			<footer></footer>

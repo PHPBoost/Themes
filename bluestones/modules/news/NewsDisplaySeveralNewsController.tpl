@@ -15,31 +15,31 @@
 		# START news #
 		# IF C_DISPLAY_BLOCK_TYPE #
 			<article id="article-news-{news.ID}" class="module-home# IF news.C_TOP_LIST # top-list# ENDIF ## IF news.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-				<header>					
+				<header>
 					<div class="home-cat">
 						<a itemprop="about" href="{news.U_CATEGORY}" title="{news.CATEGORY_NAME}">{news.CATEGORY_NAME}</a>
 					</div>
-						
+
 					<a href="{news.U_LINK}" title="{news.NAME}" class="picture-link">
 						<div class="home-picture news-picture" # IF news.C_PICTURE #style="background-image: url({news.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
-					</a>	
+					</a>
 
 					<div class="home-more">
 						# IF C_COMMENTS_ENABLED #<span class="float-right"><i class="fa fa-comments-o"></i> # IF news.C_COMMENTS # ({news.NUMBER_COMMENTS})# ELSE #(0)# ENDIF #</span># ENDIF #
 						<time datetime="# IF NOT news.C_DIFFERED #{news.DATE_ISO8601}# ELSE #{news.DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT news.C_DIFFERED #{news.DATE}# ELSE #{news.DIFFERED_START_DATE}# ENDIF #</time>
 					</div>
-					
+
 					<h2>
 						<a href="{news.U_LINK}"><span itemprop="name">{news.NAME}</span></a>
-						<span class="actions">
-							# IF news.C_EDIT #
-								<a href="{news.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-							# ENDIF #
-							# IF news.C_DELETE #
-								<a href="{news.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
-							# ENDIF #
-						</span>
 					</h2>
+					<span class="actions">
+						# IF news.C_EDIT #
+							<a href="{news.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+						# ENDIF #
+						# IF news.C_DELETE #
+							<a href="{news.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+						# ENDIF #
+					</span>
 
 					<meta itemprop="url" content="{news.U_LINK}">
 					<meta itemprop="description" content="${escape(news.DESCRIPTION)}"/>
@@ -57,9 +57,9 @@
 				<footer></footer>
 			</article>
 			# ELSE #
-			<article id="article-news-{news.ID}" class="module-home-list" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">		
+			<article id="article-news-{news.ID}" class="module-home-list" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 				# IF news.C_PICTURE #<a href="{news.U_LINK}" class="news-picture"><img itemprop="thumbnailUrl" src="{news.U_PICTURE}" alt="{news.NAME}" title="{news.NAME}" /> </a># ENDIF #
-			
+
 				<header>
 					<h2>
 						<a href="{news.U_LINK}"><span itemprop="name">{news.NAME}</span></a>

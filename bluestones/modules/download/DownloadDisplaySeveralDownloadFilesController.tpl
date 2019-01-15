@@ -10,7 +10,7 @@
 			</div>
 		# ENDIF #
 	</header>
-	
+
 	# IF C_SUB_CATEGORIES #
 	<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{NUMBER_CATS_COLUMNS}# ENDIF #">
 		# START sub_categories_list #
@@ -32,7 +32,7 @@
 	# ELSE #
 		# IF NOT C_CATEGORY_DISPLAYED_TABLE #<div class="spacer"></div># ENDIF #
 	# ENDIF #
-	
+
 	<div class="content elements-container">
 	# IF C_FILES #
 		# IF C_MORE_THAN_ONE_FILE #
@@ -77,7 +77,7 @@
 						# IF C_NB_VIEW_ENABLED #
 						<td>
 							{downloadfiles.NUMBER_VIEW}
-						</td>							
+						</td>
 						# ENDIF #
 						# IF C_NOTATION_ENABLED #
 						<td>
@@ -107,11 +107,11 @@
 			# START downloadfiles #
 			# IF C_CATEGORY_DISPLAYED_SUMMARY #
 			<article id="article-download-{downloadfiles.ID}" class="module-home block# IF downloadfiles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-				
+
 				<a href="{downloadfiles.U_LINK}" title="{downloadfiles.NAME}" class="picture-link">
 					<div class="home-picture" # IF downloadfiles.C_PICTURE #style="background-image: url({downloadfiles.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
-				</a>			
-			
+				</a>
+
 				<div class="home-more">
 					<i class="fa fa-download" title="{downloadfiles.L_DOWNLOADED_TIMES}"></i>
 					<span title="{downloadfiles.L_DOWNLOADED_TIMES}">{downloadfiles.NUMBER_DOWNLOADS}</span>
@@ -120,7 +120,7 @@
 						# IF downloadfiles.C_COMMENTS # {downloadfiles.NUMBER_COMMENTS} # ENDIF # {downloadfiles.L_COMMENTS}
 					# ENDIF #
 					# IF downloadfiles.C_KEYWORDS #
-						| <i class="fa fa-tags" title="${LangLoader::get_message('form.keywords', 'common')}"></i> 
+						| <i class="fa fa-tags" title="${LangLoader::get_message('form.keywords', 'common')}"></i>
 						# START downloadfiles.keywords #
 							<a itemprop="keywords" href="{downloadfiles.keywords.URL}">{downloadfiles.keywords.NAME}</a>
 							# IF downloadfiles.keywords.C_SEPARATOR #, # ENDIF #
@@ -131,16 +131,16 @@
 					# ENDIF #
 					<div class="spacer"></div>
 				</div>
-				
+
 				<header>
 					<h2>
-						<span class="actions">
-							# IF downloadfiles.C_EDIT #<a href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-							# IF downloadfiles.C_DELETE #<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
-						</span>
 						<a href="{downloadfiles.U_LINK}" itemprop="name">{downloadfiles.NAME}</a>
 					</h2>
-					
+					<span class="actions">
+						# IF downloadfiles.C_EDIT #<a href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
+						# IF downloadfiles.C_DELETE #<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+					</span>
+
 					<meta itemprop="url" content="{downloadfiles.U_LINK}">
 					<meta itemprop="description" content="${escape(downloadfiles.DESCRIPTION)}"/>
 					# IF C_COMMENTS_ENABLED #
@@ -152,7 +152,7 @@
 						{downloadfiles.DESCRIPTION}# IF downloadfiles.C_READ_MORE #... <a href="{downloadfiles.U_LINK}" class="read-more">[${LangLoader::get_message('read-more', 'common')}]</a># ENDIF #
 						<div class="spacer"></div>
 					</div>
-				
+
 				<footer></footer>
 			</article>
 			# ELSE #
@@ -165,7 +165,7 @@
 						</span>
 						<a href="{downloadfiles.U_LINK}" itemprop="name">{downloadfiles.NAME}</a>
 					</h2>
-					
+
 					<meta itemprop="url" content="{downloadfiles.U_LINK}">
 					<meta itemprop="description" content="${escape(downloadfiles.DESCRIPTION)}"/>
 					# IF C_COMMENTS_ENABLED #
@@ -212,7 +212,7 @@
 									# IF downloadfiles.C_AUTHOR_CUSTOM_NAME #
 										{downloadfiles.AUTHOR_CUSTOM_NAME}
 									# ELSE #
-										# IF downloadfiles.C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {downloadfiles.USER_LEVEL_CLASS}" href="{downloadfiles.U_AUTHOR_PROFILE}" # IF downloadfiles.C_USER_GROUP_COLOR # style="color:{downloadfiles.USER_GROUP_COLOR}" # ENDIF #>{downloadfiles.PSEUDO}</a># ELSE #{downloadfiles.PSEUDO}# ENDIF #  
+										# IF downloadfiles.C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="small {downloadfiles.USER_LEVEL_CLASS}" href="{downloadfiles.U_AUTHOR_PROFILE}" # IF downloadfiles.C_USER_GROUP_COLOR # style="color:{downloadfiles.USER_GROUP_COLOR}" # ENDIF #>{downloadfiles.PSEUDO}</a># ELSE #{downloadfiles.PSEUDO}# ENDIF #
 									# ENDIF #
 								</span><br/>
 							# ENDIF #
@@ -226,10 +226,10 @@
 								# ENDIF #
 							# ENDIF #
 						</div>
-						
+
 						<div itemprop="text">{downloadfiles.CONTENTS}</div>
 					</div>
-				
+
 				<footer></footer>
 			</article>
 			# ENDIF #
