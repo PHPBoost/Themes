@@ -90,7 +90,7 @@
 
 /* -- Classes Items -- */
 /* --------------------*/
-.cssmenu-horizontal {display:inline-block;}
+.cssmenu-horizontal {display: table}
 
 #sub-header .cssmenu-horizontal > ul > li > .cssmenu-title {
     line-height: 32px;
