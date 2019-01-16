@@ -21,37 +21,38 @@
 		});
 	-->
 	</script>
-	<script>
-		<!--
-		function open_submenu(myid)
-		{
-			jQuery('#' + myid).toggleClass('active');
-		}
-		-->
-	</script>
 # IF C_VERTICAL #
 	<form action="{U_FORM_VALID}" onsubmit="return check_search_mini_form_post();" method="post">
 		<div id="mini-search-form" class="input-element-button">
 			<input type="search" id="TxTMiniSearched" name="q" value="{TEXT_SEARCHED}" placeholder="{L_SEARCH}...">
 			<input type="hidden" id="search-token" name="token" value="{TOKEN}">
-			<button type="submit" name="search_submit"><i class="fa fa-search"></i></button>
+			<button type="submit" name="search_submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span></button>
 		</div>
 		<a href="{U_ADVANCED_SEARCH}" class="small">{L_ADVANCED_SEARCH}</a>
 	</form>
 # ELSE #
-	<div id="search-menu" class="horizontal-fieldset">
-		<a href="" class="js-menu-button" onclick="open_submenu('search-menu');return false;" title="{L_SEARCH}"><i class="fa fa-search"></i></a>
+	<div id="search-menu" class="search-container horizontal-fieldset">
+		<a href="" class="search-button" aria-label="{L_SEARCH}"><i class="fa fa-search" aria-hidden="true"></i></a>
 		<div class="search-content">
+			<i class="close-search fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('close', 'main')}</span>
 			<form action="{U_FORM_VALID}" onsubmit="return check_search_mini_form_post();" method="post">
 				<div id="mini-search-form" class="input-element-button">
 					<input type="search" id="TxTMiniSearched" name="q" value="{TEXT_SEARCHED}" placeholder="{L_SEARCH}...">
 					<input type="hidden" id="search-token" name="token" value="{TOKEN}">
-					<button class="search-submit" type="submit" name="search_submit"><i class="fa fa-search"></i></button>
+					<button class="search-submit" type="submit" name="search_submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span></button>
 				</div>
 				<a href="{U_ADVANCED_SEARCH}" class="advanced-search">{L_ADVANCED_SEARCH}</a>
 			</form>
 		</div>
 	</div>
-	
+	<script>
+		<!--
+		jQuery('.search-button').opensubmenu({
+			osmTarget: '.search-container',
+			osmCloseExcept: '.search-content *',
+			osmCloseButton: '.close-search',
+		});
+		-->
+	</script>
 # ENDIF #
 </div>

@@ -17,7 +17,7 @@
 	background-color: #2F4154;
 }
 
-#connect-menu.horizontal-fieldset .js-menu-button {
+#connect-menu.horizontal-fieldset .connect-button {
 	display: inline-block;
 	line-height: 50px;
 	padding: 0 20px;
@@ -55,7 +55,8 @@
 	max-width: 520px;
 }
 
-#connect-menu.active.horizontal-fieldset div.connect-content {
+/* #connect-menu.active.horizontal-fieldset div.connect-content */
+#connect-menu.opened.horizontal-fieldset div.connect-content {
 	z-index: 200;
 	top: calc(100% + 2px);
 	opacity: 1;
@@ -64,6 +65,14 @@
 	padding: 10px;
 	margin: auto;
 	max-width: 1024px;
+}
+
+#connect-menu .close-connect {
+	position: absolute;
+	color: #ffffff;
+	top: 5px;
+	left: 5px;
+	cursor: pointer;
 }
 
 #connect-menu.horizontal-fieldset div.connect-content ul {
@@ -113,4 +122,8 @@
 
 #connect-menu.horizontal-fieldset button.submit-register {
 	background-color: #2F4154;
+}
+
+#connect-menu .vertical-fieldset {
+	margin: 0;
 }

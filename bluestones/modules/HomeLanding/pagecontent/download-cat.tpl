@@ -1,11 +1,11 @@
 
-<article id="last_download_cat" style="order: {DOWNLOAD_CAT_POSITION}; -webkit-order: {DOWNLOAD_CAT_POSITION}; -ms-flex-order: {DOWNLOAD_CAT_POSITION}">
+<article id="download-cat" style="order: {DOWNLOAD_CAT_POSITION}; -webkit-order: {DOWNLOAD_CAT_POSITION}; -ms-flex-order: {DOWNLOAD_CAT_POSITION}">
 	<header>
 		<h2>
 			${Langloader::get_message('last.download.cat', 'common', 'HomeLanding')} {CATEGORY_NAME}
 		</h2>
 		<span class="actions">
-			<a href="{PATH_TO_ROOT}/download" title="${Langloader::get_message('link.to.download', 'common', 'HomeLanding')}">
+			<a href="{PATH_TO_ROOT}/download">
 				${Langloader::get_message('link.to.download', 'common', 'HomeLanding')}
 			</a>
 		</span>
@@ -20,16 +20,16 @@
 		<div class="module-home" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 
 			<div class="home-cat">
-				<a itemprop="about" href="{item.U_CATEGORY}" title="{item.CATEGORY_NAME}">{item.CATEGORY_NAME}</a>
+				<a itemprop="about" href="{item.U_CATEGORY}">{item.CATEGORY_NAME}</a>
 			</div>
 
-			<a href="{item.U_LINK}" title="{item.NAME}" class="picture-link">
+			<a href="{item.U_LINK}" class="picture-link">
 				<div class="home-picture" # IF item.C_PICTURE #style="background-image: url({item.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
 			</a>
 
 			<div class="home-more">
-				<span class="float-left"><i class="fa fa-clock-o"></i> {item.DATE} </span>
-				<span class="float-right"><i class="fa fa-download"></i> {item.NUMBER_DOWNLOADS} </span>
+				<span class="float-left"><i class="fa fa-clock-o" aria-hidden="true"></i> {item.DATE} </span>
+				<span class="float-right"><i class="fa fa-download" aria-hidden="true"></i> {item.NUMBER_DOWNLOADS} </span>
 			</div>
 
 			<h3>

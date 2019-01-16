@@ -10,7 +10,7 @@
 			}
 			else
 			{
-				document.getElementById('pics_max').innerHTML = '';	
+				document.getElementById('pics_max').innerHTML = '';
 				pics_displayed = 0;
 			}
 		}
@@ -47,22 +47,22 @@
 			}
 			else
 			{
-				document.getElementById('img' + id_file).innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+				document.getElementById('img' + id_file).innerHTML = '<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>';
 
 				data = "id_file=" + id_file + "&name=" + name.replace(/&/g, "%26") + "&previous_name=" + previous_cut_name.replace(/&/g, "%26");
 				var xhr_object = xmlhttprequest_init('{PATH_TO_ROOT}/gallery/xmlhttprequest.php?token={TOKEN}&rename_pics=1');
-				xhr_object.onreadystatechange = function() 
+				xhr_object.onreadystatechange = function()
 				{
 					if( xhr_object.readyState == 4 && xhr_object.status == 200 && xhr_object.responseText != '0' )
 					{
 						document.getElementById('fi' + id_file).style.display = 'none';
 						document.getElementById('fi_' + id_file).style.display = 'inline';
 						document.getElementById('fi_' + id_file).innerHTML = xhr_object.responseText;
-						
+
 						html_protected_name = name.replace(/\'/g, "\\\'").replace(/\"/g, "&quot;");
 						html_protected_name2 = xhr_object.responseText.replace(/\'/g, "\\\'").replace(/\"/g, "&quot;");
-						
-						document.getElementById('fihref' + id_file).innerHTML = '<a href="javascript:display_rename_file(\'' + id_file + '\', \'' + html_protected_name + '\', \'' + html_protected_name2 + '\');" class="basic-button" title="{L_EDIT}"><i class="fa fa-edit"></i></a>';
+
+						document.getElementById('fihref' + id_file).innerHTML = '<a href="javascript:display_rename_file(\'' + id_file + '\', \'' + html_protected_name + '\', \'' + html_protected_name2 + '\');" class="basic-button" aria-label="{L_EDIT}"><i class="fa fa-edit" aria-hidden="true"></i></a>';
 						document.getElementById('img' + id_file).innerHTML = '';
 					}
 					else if( xhr_object.readyState == 4 && xhr_object.responseText == '0' )
@@ -73,14 +73,14 @@
 		}
 		function pics_aprob(id_file, aprob)
 		{
-			document.getElementById('img' + id_file).innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+			document.getElementById('img' + id_file).innerHTML = '<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>';
 
 			data = 'id_file=' + id_file;
 			var xhr_object = xmlhttprequest_init('{PATH_TO_ROOT}/gallery/xmlhttprequest.php?token={TOKEN}&aprob_pics=1');
-			xhr_object.onreadystatechange = function() 
+			xhr_object.onreadystatechange = function()
 			{
 				if( xhr_object.readyState == 4 && xhr_object.status == 200 && xhr_object.responseText != '-1' )
-				{	
+				{
 					var img_aprob, title_aprob;
 					if( xhr_object.responseText == 0 )
 					{
@@ -92,7 +92,7 @@
 						img_aprob = 'fa-eye';
 						title_aprob = '{L_APROB}';
 					}
-					
+
 					document.getElementById('img' + id_file).innerHTML = '';
 					if( document.getElementById('img_aprob' + id_file) )
 					{
@@ -110,19 +110,19 @@
 			}
 			xmlhttprequest_sender(xhr_object, data);
 		}
-		
+
 		var delay = 2000; //Délai après lequel le bloc est automatiquement masqué après le départ de la souris.
 		var timeout;
 		var displayed = false;
 		var previous = '';
 		var started = false;
-		
+
 		//Affiche le bloc.
 		function pics_display_block(divID)
 		{
 			if( timeout )
 				clearTimeout(timeout);
-			
+
 			if( document.getElementById(previous) )
 			{
 				document.getElementById(previous).style.display = 'none';
@@ -144,7 +144,7 @@
 			else if( started )
 				timeout = setTimeout('pics_display_block()', delay);
 		}
-		
+
 		{ARRAY_JS}
 		var start_thumb = {START_THUMB};
 		//Miniatures défilantes.
@@ -158,8 +158,8 @@
 					if( start_thumb == 0 )
 						document.getElementById('display_left').innerHTML = '';
 					else
-						document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')"><i class="fa fa-arrow-left fa-2x"></i></a>';
-					document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')"><i class="fa fa-arrow-right fa-2x"></i></a>';
+						document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')" aria-label="${escapejs(LangLoader::get_message('previous', 'common'))}"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a>';
+					document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')" aria-label="${escapejs(LangLoader::get_message('next', 'common'))}"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a>';
 				}
 				else
 					return;
@@ -172,26 +172,26 @@
 					if( start_thumb == ({MAX_START} + 1) )
 						document.getElementById('display_right').innerHTML = '';
 					else
-						document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')"><i class="fa fa-arrow-right fa-2x"></i></a>';
-					document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')"><i class="fa fa-arrow-left fa-2x"></i></a>';
+						document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')" aria-label="${escapejs(LangLoader::get_message('next', 'common'))}"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a>';
+					document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')" aria-label="${escapejs(LangLoader::get_message('previous', 'common'))}"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a>';
 				}
 				else
 					return;
 			}
-			
+
 			var j = 0;
 			for(var i = 0; i <= {NBR_PICS}; i++)
 			{
-				if( document.getElementById('thumb' + i) ) 
+				if( document.getElementById('thumb' + i) )
 				{
 					var key_left = start_thumb + j;
 					var key_right = start_thumb + j;
 					if( direction == 'left' && array_pics[key_left] )
-					{	
+					{
 						document.getElementById('thumb' + i).innerHTML = '<a href="' + array_pics[key_left]['link'] + '"><img src="{PATH_TO_ROOT}/gallery/pics/thumbnails/' + array_pics[key_left]['path'] + '" alt="' + array_pics[key_left]['path'] + '" /></a>';
 						j++;
 					}
-					else if( direction == 'right' && array_pics[key_right] ) 
+					else if( direction == 'right' && array_pics[key_right] )
 					{
 						document.getElementById('thumb' + i).innerHTML = '<a href="' + array_pics[key_right]['link'] + '"><img src="{PATH_TO_ROOT}/gallery/pics/thumbnails/' + array_pics[key_right]['path'] + '" alt="' + array_pics[key_right]['path'] + '" /></a>';
 						j++;
@@ -229,34 +229,34 @@
 			}
 		}
 		-->
-		</script> 
+		</script>
 
 		# INCLUDE message_helper #
 		<div class="spacer"></div>
-		
+
 		<section id="module-gallery">
 			<header>
 				<menu id="cssmenu-galleryfilter" class="cssmenu cssmenu-right cssmenu-actionslinks cssmenu-tools">
 					<ul class="level-0 hidden">
-						<li><a class="cssmenu-title"><i class="fa fa-eye"></i> {L_DISPLAY}</a>
+						<li><a class="cssmenu-title"><i class="fa fa-eye" aria-hidden="true"></i> {L_DISPLAY}</a>
 							<ul class="level-1">
-								<li><a href="{U_BEST_VIEWS}" class="cssmenu-title"><i class="fa fa-eye"></i> {L_BEST_VIEWS}</a></li>
-								# IF C_NOTATION_ENABLED #<li><a href="{U_BEST_NOTES}" class="cssmenu-title"><i class="fa fa-star-half-empty"></i> {L_BEST_NOTES}</a></li># ENDIF #
+								<li><a href="{U_BEST_VIEWS}" class="cssmenu-title"><i class="fa fa-eye" aria-hidden="true"></i> {L_BEST_VIEWS}</a></li>
+								# IF C_NOTATION_ENABLED #<li><a href="{U_BEST_NOTES}" class="cssmenu-title"><i class="fa fa-star-half-empty" aria-hidden="true"></i> {L_BEST_NOTES}</a></li># ENDIF #
 							</ul>
 						</li>
-						<li><a class="cssmenu-title"><i class="fa fa-sort"></i> {L_ORDER_BY}</a>
+						<li><a class="cssmenu-title"><i class="fa fa-sort" aria-hidden="true"></i> {L_ORDER_BY}</a>
 							<ul class="level-1">
-								<li><a href="{U_ORDER_BY_NAME}" class="cssmenu-title"><i class="fa fa-tag"></i> {L_NAME}</a></li>
-								<li><a href="{U_ORDER_BY_DATE}" class="cssmenu-title"><i class="fa fa-clock-o"></i> {L_DATE}</a></li>
-								<li><a href="{U_ORDER_BY_VIEWS}" class="cssmenu-title"><i class="fa fa-eye"></i> {L_VIEWS}</a></li>
-								# IF C_NOTATION_ENABLED #<li><a href="{U_ORDER_BY_NOTES}" class="cssmenu-title"><i class="fa fa-star-half-empty"></i> {L_NOTES}</a></li># ENDIF #
-								<li><a href="{U_ORDER_BY_COM}" class="cssmenu-title"><i class="fa fa-comments-o"></i> {L_COM}</a></li>
+								<li><a href="{U_ORDER_BY_NAME}" class="cssmenu-title"><i class="fa fa-tag" aria-hidden="true"></i> {L_NAME}</a></li>
+								<li><a href="{U_ORDER_BY_DATE}" class="cssmenu-title"><i class="fa fa-clock-o" aria-hidden="true"></i> {L_DATE}</a></li>
+								<li><a href="{U_ORDER_BY_VIEWS}" class="cssmenu-title"><i class="fa fa-eye" aria-hidden="true"></i> {L_VIEWS}</a></li>
+								# IF C_NOTATION_ENABLED #<li><a href="{U_ORDER_BY_NOTES}" class="cssmenu-title"><i class="fa fa-star-half-empty" aria-hidden="true"></i> {L_NOTES}</a></li># ENDIF #
+								<li><a href="{U_ORDER_BY_COM}" class="cssmenu-title"><i class="fa fa-comments-o" aria-hidden="true"></i> {L_COM}</a></li>
 							</ul>
 						</li>
-						<li><a class="cssmenu-title"><i class="fa fa-sort-alpha-asc"></i> {L_DIRECTION}</a>
+						<li><a class="cssmenu-title"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i> {L_DIRECTION}</a>
 							<ul class="level-1">
-								<li><a href="{U_ASC}" class="cssmenu-title"><i class="fa fa-sort-amount-asc"></i> {L_ASC}</a></li>
-								<li><a href="{U_DESC}" class="cssmenu-title"><i class="fa fa-sort-amount-desc"></i> {L_DESC}</a></li>
+								<li><a href="{U_ASC}" class="cssmenu-title"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i> {L_ASC}</a></li>
+								<li><a href="{U_DESC}" class="cssmenu-title"><i class="fa fa-sort-amount-desc" aria-hidden="true"></i> {L_DESC}</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -272,8 +272,8 @@
 					});
 				</script>
 				<h1>
-					<a href="${relative_url(SyndicationUrlBuilder::rss('gallery', CAT_ID))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
-					{GALLERY} # IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller"></i></a># ENDIF #
+					<a href="${relative_url(SyndicationUrlBuilder::rss('gallery', CAT_ID))}" class="fa fa-syndication" aria-label="${LangLoader::get_message('syndication', 'common')}"></a>
+					{GALLERY} # IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller" aria-hidden="true"></i></a># ENDIF #
 				</h1>
 
 				# IF C_CATEGORY_DESCRIPTION #
@@ -282,11 +282,11 @@
 					</div>
 				# ENDIF #
 			</header>
-			
+
 			# IF C_SUB_CATEGORIES #
 			<div class="subcat-container">
 				# START sub_categories_list #
-				<a itemprop="about" href="{sub_categories_list.U_CATEGORY}" title="{sub_categories_list.CATEGORY_NAME}" itemprop="thumbnailUrl">
+				<a itemprop="about" href="{sub_categories_list.U_CATEGORY}" aria-label="{sub_categories_list.CATEGORY_NAME}" itemprop="thumbnailUrl">
 					<div class="thumbnail" data-title="{sub_categories_list.CATEGORY_NAME}" data-description="{sub_categories_list.PICTURES_NUMBER}">
 						<div class="cat-picture" # IF sub_categories_list.C_CATEGORY_IMAGE #style="background-image: url({sub_categories_list.CATEGORY_IMAGE});"# ENDIF #></div>
 					</div>
@@ -298,7 +298,7 @@
 			# ELSE #
 				<div class="spacer"></div>
 			# ENDIF #
-			
+
 			<div class="content">
 				# IF C_GALLERY_PICS #
 				<article id="article-gallery-{ID}" class="article-gallery article-several">
@@ -307,7 +307,7 @@
 					</header>
 					<div class="content">
 						<p class="center" id="pics_max"></p>
-						
+
 						# IF C_GALLERY_PICS_MAX #
 							<p class="pics-max"><a href="{U_IMG_MAX}" data-lightbox="formatter"><img src="{U_IMG_MAX}" alt="{CLEARED_NAME}" /></a></p>
 							<div class="options">
@@ -332,8 +332,8 @@
 										<div class="text-strong">{KERNEL_NOTATION}</div><br/>
 									# ENDIF #
 									# IF C_GALLERY_PICS_MODO #
-									<span id="fihref{ID}"><a href="javascript:display_rename_file('{ID}', '{RENAME}', '{RENAME_CUT}');" class="basic-button" title="{L_EDIT}"><i class="fa fa-edit"></i></a></span>
-									
+									<span id="fihref{ID}"><a href="javascript:display_rename_file('{ID}', '{RENAME}', '{RENAME_CUT}');" class="basic-button" aria-label="{L_EDIT}"><i class="fa fa-edit" aria-hidden="true"></i></a></span>
+
 									<div id="move{ID}" class="move-pics-container">
 										<div class="bbcode-block move-pics-block" onmouseover="pics_hide_block({ID}, 1);" onmouseout="pics_hide_block({ID}, 0);">
 											<div>{L_MOVETO} :</div>
@@ -342,11 +342,11 @@
 											</select>
 										</div>
 									</div>
-									<a href="javascript:pics_display_block({ID});" onmouseover="pics_hide_block({ID}, 1);" onmouseout="pics_hide_block({ID}, 0);" class="basic-button" title="{L_MOVETO}"><i class="fa fa-move"></i></a>
+									<a href="javascript:pics_display_block({ID});" onmouseover="pics_hide_block({ID}, 1);" onmouseout="pics_hide_block({ID}, 0);" class="basic-button" aria-label="{L_MOVETO}"><i class="fa fa-move" aria-hidden="true"></i></a>
 
-									<a href="javascript:pics_aprob({ID});" class="basic-button" title="{L_APROB_IMG}"><i id="img_aprob{ID}" class="{IMG_APROB}"></i></a>
+									<a href="javascript:pics_aprob({ID});" class="basic-button" aria-label="{L_APROB_IMG}"><i id="img_aprob{ID}" class="{IMG_APROB}" aria-hidden="true"></i></a>
 									<span id="img{ID}"></span>
-									<a href="{U_DEL}" title="{L_DELETE}" class="basic-button alt" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+									<a href="{U_DEL}" aria-label="{L_DELETE}" class="basic-button alt" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a>
 									# ENDIF #
 								</div>
 							</div>
@@ -366,33 +366,33 @@
 								<tbody>
 									<tr>
 										<td>
-											<span id="display_left"># IF C_LEFT_THUMBNAILS #<a href="javascript:display_thumbnails('left')"><i class="fa fa-arrow-left fa-2x"></i></a># ENDIF #</span>
+											<span id="display_left"># IF C_LEFT_THUMBNAILS #<a href="javascript:display_thumbnails('left')" aria-label="${LangLoader::get_message('previous', 'common')}"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a># ENDIF #</span>
 										</td>
 
 										# START list_preview_pics #
-											<td class="center" style="height:{list_preview_pics.HEIGHT}px"><span id="thumb{list_preview_pics.ID}"><a href="{list_preview_pics.URL}" title="{list_preview_pics.NAME}"><img src="pics/thumbnails/{list_preview_pics.PATH}" alt="{list_preview_pics.NAME}" /></a></span></td>
+											<td class="center" style="height:{list_preview_pics.HEIGHT}px"><span id="thumb{list_preview_pics.ID}"><a href="{list_preview_pics.URL}"><img src="pics/thumbnails/{list_preview_pics.PATH}" alt="{list_preview_pics.NAME}" /></a></span></td>
 										# END list_preview_pics #
 
 										<td>
-											<span id="display_right"># IF C_RIGHT_THUMBNAILS #<a href="javascript:display_thumbnails('right')"><i class="fa fa-arrow-right fa-2x"></i></a># ENDIF #</span>
+											<span id="display_right"># IF C_RIGHT_THUMBNAILS #<a href="javascript:display_thumbnails('right')" aria-label="${LangLoader::get_message('next', 'common')}"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a># ENDIF #</span>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 							{COMMENTS}
 						# ENDIF #
-						
+
 						<table class="table-pics">
 							<tbody>
 							# START pics_list #
 								# IF pics_list.C_OPEN_TR #<tr># ENDIF #
 								<td class="valign-bottom# IF pics_list.C_NEW_CONTENT # new-content# ENDIF #" style="width:{COLUMN_WIDTH_PICS}%;">
 									<div id="pics{pics_list.ID}" class="thumbnails-list-container">
-										<a class="small" href="{pics_list.U_DISPLAY}" title="{pics_list.NAME}" onclick="{pics_list.ONCLICK}" # IF NOT pics_list.ONCLICK # data-lightbox="formatter"# ENDIF #><img src="{pics_list.U_PICTURE}" title="{pics_list.NAME}" alt="{pics_list.NAME}" class="gallery-img" /></a>
+										<a class="small" href="{pics_list.U_DISPLAY}" onclick="{pics_list.ONCLICK}" # IF NOT pics_list.ONCLICK # data-lightbox="formatter"# ENDIF #><img src="{pics_list.U_PICTURE}" alt="{pics_list.NAME}" class="gallery-img" /></a>
 									</div>
-									
+
 									<div class="spacer"></div>
-									
+
 									<div class="smaller">
 										# IF C_PICTURE_NAME_DISPLAYED #<a class="small" href="{pics_list.U_PICTURE_LINK}"><span id="fi_{pics_list.ID}">{pics_list.NAME}</span></a># ELSE #<span id="fi_{pics_list.ID}"></span># ENDIF # <span id="fi{pics_list.ID}"></span>
 										# IF C_AUTHOR_DISPLAYED #
@@ -412,11 +412,11 @@
 										{pics_list.KERNEL_NOTATION}
 										# ENDIF #
 									</div>
-									
+
 									<div class="actions-container">
 										# IF C_GALLERY_MODO #
-										<span id="fihref{pics_list.ID}"><a href="javascript:display_rename_file('{pics_list.ID}', '{pics_list.RENAME}', '{pics_list.RENAME_CUT}');" title="{L_EDIT}" class="fa fa-edit"></a></span>
-										<a href="{pics_list.U_DEL}" title="{L_DELETE}" class="fa fa-delete" data-confirmation="delete-element"></a>
+										<span id="fihref{pics_list.ID}"><a href="javascript:display_rename_file('{pics_list.ID}', '{pics_list.RENAME}', '{pics_list.RENAME_CUT}');" aria-label="{L_EDIT}"><i class="fa fa-edit" aria-hidden="true"></i></a></span>
+										<a href="{pics_list.U_DEL}" aria-label="{L_DELETE}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a>
 										<div id="move{pics_list.ID}" class="move-pics-container">
 											<div class="bbcode-block move-pics-block" onmouseover="pics_hide_block({pics_list.ID}, 1);" onmouseout="pics_hide_block({pics_list.ID}, 0);">
 												<div>{L_MOVETO} :</div>
@@ -425,9 +425,9 @@
 												</select>
 											</div>
 										</div>
-										<a href="javascript:pics_display_block({pics_list.ID});" onmouseover="pics_hide_block({pics_list.ID}, 1);" onmouseout="pics_hide_block({pics_list.ID}, 0);" class="fa fa-move" title="{L_MOVETO}"></a>
-										
-										<a id="img_aprob{pics_list.ID}" href="javascript:pics_aprob({pics_list.ID});" class="# IF pics_list.C_IMG_APROB #fa fa-eye-slash# ELSE #fa fa-eye# ENDIF #" title="{pics_list.L_APROB_IMG}"></a>
+										<a href="javascript:pics_display_block({pics_list.ID});" onmouseover="pics_hide_block({pics_list.ID}, 1);" onmouseout="pics_hide_block({pics_list.ID}, 0);" aria-label="{L_MOVETO}"><i class="fa fa-move" aria-hidden="true"></i></a>
+
+										<a id="img_aprob{pics_list.ID}" href="javascript:pics_aprob({pics_list.ID});" aria-label="{pics_list.L_APROB_IMG}"><i class="# IF pics_list.C_IMG_APROB #fa fa-eye-slash# ELSE #fa fa-eye# ENDIF #" aria-hidden="true"></i></a>
 										&nbsp;<span id="img{ID}"></span>
 										# ENDIF #
 										<span id="img{pics_list.ID}"></span>
@@ -435,7 +435,7 @@
 								</td>
 								# IF pics_list.C_CLOSE_TR #</tr># ENDIF #
 							# END pics_list #
-							
+
 							# START end_table #
 								<td class="td-end" style="width:{end_table.COLUMN_WIDTH_PICS}%">&nbsp;</td>
 								# IF end_table.C_DISPLAY_TR_END #</tr># ENDIF #
@@ -455,7 +455,7 @@
 					<footer></footer>
 				</article>
 				# ENDIF #
-					
+
 				<p class="nbr-total-pics smaller">{L_TOTAL_IMG}</p>
 			</div>
 			<footer>

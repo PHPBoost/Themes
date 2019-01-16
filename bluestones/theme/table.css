@@ -1,10 +1,13 @@
-/* --------------------------------------
-		table.css
-Contient les elements pour l'affichage des tableaux HTML et responsive.
- - Affichage des tableaux basic
- - Table responsive basictable.js
---------------------------------------*/
-
+/**
+ * Contient les elements pour l'affichage des tableaux HTML et responsive.
+ * Affichage des tableaux basic
+ * Table responsive basictable.js
+ * @copyright 	&copy; 2005-2019 PHPBoost
+ * @license 	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      Sebastien LARTIGUE <babsolune@phpboost.com>
+ * @version   	PHPBoost 5.2 - last update: 2019 01 16
+ * @since   	PHPBoost 5.0 - 2016 12 08
+*/
 
 /* -- Affichage des tableaux basic -- */
 /* --------------------------------- */
@@ -17,16 +20,15 @@ table {
 /* --- Entete du tableau --- */
 table caption {
 	margin: 5px 0 5px 20px;
-	border-bottom: 1px solid #D1D2D5;
-	color: #757679;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 	font-size: 13px;
 	text-align: left;
 }
 
 table thead th {
 	padding: 8px;
-	background-color: #2F4154;
-	color: #BDE9F2;
 	text-align: center;
 	font-weight: 300;
 	text-transform: uppercase
@@ -35,18 +37,12 @@ table thead th {
 /* --- Contenu du tableau --- */
 table tbody td {
 	padding: 8px;
-	background-color: #F2FBFC;
 	text-align: center;
-}
-
-tr:nth-child(even) td {
-	background-color: #FFFFFF;
 }
 
 /* --- Pied de tableau --- */
 table tfoot tr th {
 	padding: 8px;
-	background-color: rgba(189, 233, 242, 0.4);
 }
 
 table tfoot tr th:only-child {
@@ -57,9 +53,6 @@ table tfoot tr th * {
 	vertical-align: middle;
 }
 
-table tfoot tr th a {
-	color: #676A74;
-}
 table tfoot tr th select {
 	padding: 2px 5px;
 }
@@ -67,8 +60,6 @@ table tfoot tr th select {
 /* --- Patch thead tableaux formates --- */
 table.formatter-table th.formatter-table-head {
 	padding: 8px;
-	background-color: #2F4154;
-	color: #F2F2F2;
 	font-size: 1.1em;
 	text-align: center;
 	font-weight: 300;
@@ -107,14 +98,12 @@ table.mini td a {
 
 /* --- Pagination footer tableaux --- */
 table tfoot nav.pagination a {
-	color: #8B8D90;
 	text-decoration: none;
 	padding: 3px 3px;
 
 }
 
 table tfoot nav.pagination a span.current-page {
-	color: #CED0D0;
 	text-decoration: none;
 }
 

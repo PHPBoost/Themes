@@ -1,8 +1,8 @@
 <section id="module-download">
 	<header>
 		<h1>
-			<a href="${relative_url(SyndicationUrlBuilder::rss('download', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
-			# IF C_PENDING #{@download.pending}# ELSE #{@module_title}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller"></i></a># ENDIF ## ENDIF #
+			<a href="${relative_url(SyndicationUrlBuilder::rss('download', ID_CAT))}" aria-label="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication" aria-hidden="true"></i></a>
+			# IF C_PENDING #{@download.pending}# ELSE #{@module_title}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller" aria-hidden="true"></i></a># ENDIF ## ENDIF #
 		</h1>
 		# IF C_CATEGORY_DESCRIPTION #
 			<div class="cat-description">
@@ -92,10 +92,10 @@
 						# IF C_MODERATION #
 						<td>
 							# IF downloadfiles.C_EDIT #
-								<a href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+								<a href="{downloadfiles.U_EDIT}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a>
 							# ENDIF #
 							# IF downloadfiles.C_DELETE #
-								<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+								<a href="{downloadfiles.U_DELETE}" aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a>
 							# ENDIF #
 						</td>
 						# ENDIF #
@@ -106,21 +106,20 @@
 		# ELSE #
 			# START downloadfiles #
 			# IF C_CATEGORY_DISPLAYED_SUMMARY #
-			<article id="article-download-{downloadfiles.ID}" class="module-home block# IF downloadfiles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+			<article id="article-download-{downloadfiles.ID}" class="module-home# IF downloadfiles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 
-				<a href="{downloadfiles.U_LINK}" title="{downloadfiles.NAME}" class="picture-link">
+				<a href="{downloadfiles.U_LINK}" class="picture-link">
 					<div class="home-picture" # IF downloadfiles.C_PICTURE #style="background-image: url({downloadfiles.U_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
 				</a>
 
 				<div class="home-more">
-					<i class="fa fa-download" title="{downloadfiles.L_DOWNLOADED_TIMES}"></i>
-					<span title="{downloadfiles.L_DOWNLOADED_TIMES}">{downloadfiles.NUMBER_DOWNLOADS}</span>
+					<i class="fa fa-download" aria-hidden="true"></i> {downloadfiles.NUMBER_DOWNLOADS} <span class="sr-only">{downloadfiles.L_DOWNLOADED_TIMES}</span>
 					# IF C_COMMENTS_ENABLED #
-						| <i class="fa fa-comment" title="${LangLoader::get_message('comments', 'comments-common')}"></i>
+						| <i class="fa fa-comment" aria-hidden="true"></i><span class="sr-only">${LangLoader::get_message('comments', 'comments-common')}</span>
 						# IF downloadfiles.C_COMMENTS # {downloadfiles.NUMBER_COMMENTS} # ENDIF # {downloadfiles.L_COMMENTS}
 					# ENDIF #
 					# IF downloadfiles.C_KEYWORDS #
-						| <i class="fa fa-tags" title="${LangLoader::get_message('form.keywords', 'common')}"></i>
+						| <i class="fa fa-tags" aria-hidden="true"></i><span class="sr-only">${LangLoader::get_message('form.keywords', 'common')}</span>
 						# START downloadfiles.keywords #
 							<a itemprop="keywords" href="{downloadfiles.keywords.URL}">{downloadfiles.keywords.NAME}</a>
 							# IF downloadfiles.keywords.C_SEPARATOR #, # ENDIF #
@@ -137,8 +136,8 @@
 						<a href="{downloadfiles.U_LINK}" itemprop="name">{downloadfiles.NAME}</a>
 					</h2>
 					<span class="actions">
-						# IF downloadfiles.C_EDIT #<a href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-						# IF downloadfiles.C_DELETE #<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+						# IF downloadfiles.C_EDIT #<a href="{downloadfiles.U_EDIT}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a># ENDIF #
+						# IF downloadfiles.C_DELETE #<a href="{downloadfiles.U_DELETE}" aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a># ENDIF #
 					</span>
 
 					<meta itemprop="url" content="{downloadfiles.U_LINK}">
@@ -160,8 +159,8 @@
 				<header>
 					<h2>
 						<span class="actions">
-							# IF downloadfiles.C_EDIT #<a href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-							# IF downloadfiles.C_DELETE #<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+							# IF downloadfiles.C_EDIT #<a href="{downloadfiles.U_EDIT}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a># ENDIF #
+							# IF downloadfiles.C_DELETE #<a href="{downloadfiles.U_DELETE}" aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a># ENDIF #
 						</span>
 						<a href="{downloadfiles.U_LINK}" itemprop="name">{downloadfiles.NAME}</a>
 					</h2>
@@ -182,11 +181,11 @@
 								# ENDIF #
 								# IF downloadfiles.C_VISIBLE #
 									<a href="{downloadfiles.U_DOWNLOAD}" class="basic-button">
-										<i class="fa fa-download"></i> {@download}
+										<i class="fa fa-download" aria-hidden="true"></i> {@download}
 									</a>
 									# IF IS_USER_CONNECTED #
-									<a href="{downloadfiles.U_DEADLINK}" class="basic-button alt" title="${LangLoader::get_message('deadlink', 'common')}">
-										<i class="fa fa-unlink"></i>
+									<a href="{downloadfiles.U_DEADLINK}" class="basic-button alt" aria-label="${LangLoader::get_message('deadlink', 'common')}">
+										<i class="fa fa-unlink" aria-hidden="true"></i>
 									</a>
 									# ENDIF #
 								# ENDIF #
@@ -196,7 +195,7 @@
 							<span class="text-strong">${LangLoader::get_message('form.date.creation', 'common')} : </span><span><time datetime="# IF NOT downloadfiles.C_DIFFERED #{downloadfiles.DATE_ISO8601}# ELSE #{downloadfiles.DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT downloadfiles.C_DIFFERED #{downloadfiles.DATE}# ELSE #{downloadfiles.DIFFERED_START_DATE}# ENDIF #</time></span><br/>
 							# IF downloadfiles.C_UPDATED_DATE #<span class="text-strong">${LangLoader::get_message('form.date.update', 'common')} : </span><span><time datetime="{downloadfiles.UPDATED_DATE_ISO8601}" itemprop="dateModified">{downloadfiles.UPDATED_DATE}</time></span><br/># ENDIF #
 							<span class="text-strong">{@downloads_number} : </span><span>{downloadfiles.NUMBER_DOWNLOADS}</span><br/>
-							# IF C_NB_VIEW_ENABLED #<span class="text-strong">{@download.number.view} : </span><span title="{downloadfiles.NUMBER_VIEW} {@download.view}">{downloadfiles.NUMBER_VIEW}</span><br/># ENDIF #
+							# IF C_NB_VIEW_ENABLED #<span class="text-strong">{@download.number.view} : </span><span>{downloadfiles.NUMBER_VIEW}</span><br/># ENDIF #
 							# IF NOT C_CATEGORY #<span class="text-strong">${LangLoader::get_message('category', 'categories-common')} : </span><span><a itemprop="about" class="small" href="{downloadfiles.U_CATEGORY}">{downloadfiles.CATEGORY_NAME}</a></span><br/># ENDIF #
 							# IF downloadfiles.C_KEYWORDS #
 								<span class="text-strong">${LangLoader::get_message('form.keywords', 'common')} : </span>

@@ -1,17 +1,12 @@
-/*--------------------------------------
-		design.css
-Contient les conteneurs de mise en page.
-Le design.css permet de mettre en forme votre site web avec le design de votre choix
---------------------------------------*/
-
-/* --- Colors --- */
-/* -- bleu 1: #0E2134 - #1D3248 // #2F4154 // #455A6F - #647689 - #b8c1cb
- * -- bleu 2: // #1E73BE // #63a8e7
- * -- bleu 3: // #BDE9F2 // #D7F2F7 - #E5F6FA - #F2FBFC
- * -- orange 1:	// #FA9C0A //
- * -- orange 2: // #E6481D //
- * -- vert : #81d742
- **/
+/**
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ * @copyright 	&copy; 2005-2019 PHPBoost
+ * @license 	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      Sebastien LARTIGUE <babsolune@phpboost.com>
+ * @version   	PHPBoost 5.2 - last update: 2019 01 16
+ * @since   	PHPBoost 5.0 - 2016 12 08
+*/
 
 /* -- Elements HTML generiques specifique au theme -- */
 /* -------------------------------------------------- */
@@ -19,16 +14,13 @@ html {
 	font-size: 100%;
 	font-size: 10px;
 }
-a {outline: none;}
 
 body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	background-color: #FFFFFF;
-	color: #2F4154;
 	font-size: 1.4em;
-	font-family: "Trebuchet MS", Verdana, 'Bitstream Vera Sans', Times, serif;
+	font-family: 'Open sans', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -39,18 +31,15 @@ body {
 
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
-header#header {
+#header {
 	margin: auto;
-	color: #F2F2F2;
-	background-image: url(images/header.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	position: relative;
 }
 
 /* --- Partie superieure du header --- */
-div#top-header {
+#top-header {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -58,40 +47,33 @@ div#top-header {
 	-ms-flex-direction: column;
 	-webkit-flex-direction: column;
 	min-height: 150px;
-	background-color: rgba(25, 35, 45, 0.4);
 }
 
-div#top-header-content {
+#top-header-content {
 	flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
 	-webkit-flex: 1 1 auto;
 }
 
 @media (min-width: 768px) {
-
-	div#top-header {
-		min-height: 300px;
-	}
-
-	div#top-header-content {
-		text-align: center;
-	}
+	#top-header { min-height: 300px; }
+	#top-header-content { text-align: center; }
 }
 
 /* --- Partie inferieur du header --- */
-div#sub-header {
-	background-color: rgba(25, 35, 45, 0.4);
-	border-bottom: 2px solid #0E2134;
-	position: relative;
+#sub-header {
+	border-width: 0 0 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 
-div#sub-header-content{
+#sub-header-content{
 	margin: auto;
 	max-width: 1024px;
 }
 
 /* --- Logo et Nom du site web --- */
-div#site-infos {
+#site-infos {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -100,11 +82,10 @@ div#site-infos {
 	flex: 1 1 auto;
 }
 
-div#site-logo {
+#site-logo {
 	margin: 0 1em 0 0;
 	width: 60px;
 	height: 60px;
-	background-image: url('images/logo.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -113,37 +94,32 @@ div#site-logo {
 	-webkit-flex: 0 0 auto;
 }
 
-div#site-name-container {
+#site-name-container {
 	margin: 0.4em 0 0 0;
 }
 
-a#site-name {
-	color: #FFFFFF;
+#site-name {
 	font-size: 2em;
 	font-weight: bold;
 	line-height: 1em;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-	text-shadow: 0 0 0 rgb(0, 0, 0), 1px 0 0 rgb(0, 0, 0), 2px 0 0.1px rgba(0, 0, 0, 0.1), 2px 0 0.1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(0, 0, 0, .1);
 }
 
-a#site-name:hover {color: #2F4154}
-
-span#site-slogan {
+#site-slogan {
 	display: block;
 	padding: 0.1em 0 0 0.1em;
-	color: #FFFFFF;
 	font-size: 1em;
 	letter-spacing: 0.1em;
 }
 
 @media (min-width: 769px) {
-	div#site-logo {
+	#site-logo {
 		width: 90px;
 		height: 90px;
 	}
 
-	a#site-name {
+	#site-name {
 		font-size: 4em;
 	}
 
@@ -151,7 +127,7 @@ span#site-slogan {
 
 /* -- Conteneur global du site -- */
 /* ------------------------------ */
-div#global {
+#global {
 	display: flex;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -162,7 +138,7 @@ div#global {
 	max-width: 1074px;
 }
 
-div#main {
+#main {
 	max-width: 100%;
 	order : 1;
 	-ms-flex-order: 1;
@@ -170,31 +146,31 @@ div#main {
 	padding: 0 25px;
 }
 
-aside#menu-left,
-aside#menu-right {
+#menu-left,
+#menu-right {
 	width: 100%;
 }
 
-aside#menu-left  {
+#menu-left  {
 	order : 2;
 	-ms-flex-order: 2;
 	-webkit-flex-order: 2;
 }
-aside#menu-right {
+#menu-right {
 	order : 3;
 	-ms-flex-order: 3;
 	-webkit-flex-order: 3;
 }
 
 @media (min-width: 769px) {
-	div#global {
+	#global {
 		min-height: 100vh;
 		flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
 	}
 
-	div#main {
+	#main {
 		order : 2;
 		-ms-flex-order: 2;
 		-webkit-flex-order: 2;
@@ -202,24 +178,28 @@ aside#menu-right {
 		-ms-flex: 1 0 100%;
 	}
 
-	aside#menu-left,
-	aside#menu-right {
+	#menu-left,
+	#menu-right {
     	width: 30%;
 		padding: 0 25px;
 	}
 
-	aside#menu-left  {
+	#menu-left  {
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
-		border-right: 1px solid #d9d9d9;
+		border-width: 0 1px 0 0;
+		border-style: solid;
+		border-color: transparent;
 	}
 
-	aside#menu-right {
+	#menu-right {
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
-		border-left: 1px solid #d9d9d9;
+		border-width: 0 0 0 1px;
+		border-style: solid;
+		border-color: transparent;
 	}
 
 	#main.main-with-left,
@@ -234,84 +214,74 @@ aside#menu-right {
 	}
 }
 
-div#top-footer {
+#top-footer {
 	padding: 2% 0;
 }
 
 
-/* -- Contenu de la page -- */
-/* ------------------------ */
-
-/* --- Contenu central --- */
-div#main-content {
-}
-
-div.block-container {
-	margin-top: 15px;
-}
-
-div#top-header div.block-container {
-	display: inline-block;
-	margin: 0 25px 0 0;
-	max-width: 30%;
-	vertical-align: top;
-}
-
-div#top-header div.block-container h5 {
-	padding: 5px 10px;
-	background: #0E2134;
-}
-
-div#top-header div.block-contents div,
-div#top-header div.block-contents ul {
-	text-align: left;
-	background-color: rgba(0, 0, 0, 0.2);
-	padding: 5px;
-}
-
-div#top-header div.block-contents div a,
-div#top-header div.block-contents ul a { color: #BDE9F2; }
+/* -- Contenu de la page
+----------------------------------------------------------------------------- */
 
 /* --- Emplacement au dessus et en dessous du contenu de la page --- */
-div#top-content {
+#top-content {
 	margin: 0 0 2% 0;
 	padding: 0.1em 0.8em;
+	position: relative;
 }
-
-/* --- Emplacement au dessus du pied de page --- */
-div#bottom-content {
+#bottom-content {
 	margin: 2% 0 0 0;
 	padding: 0.1em 0.8em;
+	position: relative;
 }
 
+/* -- Gestion des débordements d'élément flottant dans les emplacement horizontaux -- */
+#top-header,
+#sub-header,
+#top-content,
+#bottom-content,
+#top-footer,
+#footer {
+	position: relative;
+}
 
-/* -- Pied de page - Footer -- */
-/* --------------------------- */
-footer#footer {
-	width: 100%;
-	background-color: #2F4154;
-	border-top: #0E2134 2px solid;
+#top-header:after,
+#sub-header:after,
+#top-content:after,
+#bottom-content:after,
+#top-footer:after,
+#footer:after {
+	content: '';
+	display: block;
 	clear: both;
 }
 
-footer#footer a 		{ color: #BDE9F2; }
-footer#footer a:hover 	{ color: #1E73BE; }
 
-footer#footer .footer-content {
+/* -- Pied de page - Footer
+----------------------------------------------------------------------------- */
+#footer {
+	width: 100%;
+	clear: both;
+	border-width: 5px 0 0;
+	border-style: solid;
+	border-color: transparent;
+}
+
+#footer .footer-content {
 	margin: 0 auto 0 auto;
 	padding: 1.5em 0;
 	max-width: 1024px;
-	border-bottom: 2px groove #444444;
+	border-width: 2px;
+	border-style: groove;
+	border-color: transparent;
 }
 
-footer#footer .footer-infos {
-	padding-top: 10px;
+#footer .footer-infos {
+	padding: 10px;
 	min-height: 40px;
 	text-align: center;
 }
 
-footer#footer .footer-infos span {
-	color: #FFFFFF;
+#footer .footer-infos span {
 	font-size: 0.8em;
 }
 
@@ -320,43 +290,41 @@ footer#footer .footer-infos span {
 /* ----------------------------------- */
 
 /* --- Compteur de visite --- */
-div#visit-counter {
+#visit-counter {
 	position: absolute;
 	right: 0;
 	margin-right: 15px;
 	font-size: 0.9em;
-	color: #E9ECD9;
 	text-align: right;
 }
 
 @media (min-width: 769px) {
-	div#visit-counter {
-		top: 100px;
+	#visit-counter {
+		top: 10px;
 	}
 }
 
 /* --- Barre de lien rapide --- */
-nav#breadcrumb {
+#breadcrumb {
 	margin: 0 0 20px 10px;
 	text-indent: 10px;
 }
 
-nav#breadcrumb img {
+#breadcrumb img {
 	vertical-align: middle;
 }
 
-nav#breadcrumb ol {
+#breadcrumb ol {
 	margin: 0;
 	list-style: none;
 }
 
-nav#breadcrumb ol li {
+#breadcrumb ol li {
 	display: inline;
 }
 
-nav#breadcrumb ol li:not(.current):after {
+#breadcrumb ol li:not(.current):after {
 	content: '/';
-	color: #616161;
 }
 
 /* --- Scroll to Top --- */
@@ -364,7 +332,6 @@ nav#breadcrumb ol li:not(.current):after {
 	position: fixed;
 	z-index: 10;
 	display: none;
-	background-color: rgba(15, 15, 16, 0.8);
 }
 
 #scroll-to-top {
@@ -375,12 +342,10 @@ nav#breadcrumb ol li:not(.current):after {
 
 .scroll-to i {
 	font-size: 2em;
-	color: rgba(255, 255, 255, 0.8);
 	transition: 0.2s;
 }
 
 .scroll-to:hover i {
-	color: rgba(255, 255, 255, 1);
 	transition: 0.5s;
 }
 
@@ -392,10 +357,11 @@ nav#breadcrumb ol li:not(.current):after {
 	right: 0;
 	top: 0;
 	padding: 7px 20px;
-	background-color: #F2F2F2;
-	border-bottom: 1px solid #E2E2E2;
 	font-size: 0.9em;
 	text-align: center;
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .cookiebar-container.fixed {
@@ -432,7 +398,6 @@ nav#breadcrumb ol li:not(.current):after {
 .cookiebar-button {
 	margin: 0 5px 0 5px;
 	border-radius: 4px;
-	color: #FEFEFE;
 }
 
 @media (max-width: 768px) {
@@ -440,15 +405,6 @@ nav#breadcrumb ol li:not(.current):after {
 		margin: 0 10px 0 10px;
 	}
 }
-
-.cookiebar-button-understand 		{ background-color: #337AB7; border-color: #2E6DA4; }
-.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
-
-.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
-.cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
-
-.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
-.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
 
 @media (max-width: 468px) {
 	.cookiebar-more {
@@ -467,7 +423,7 @@ nav#breadcrumb ol li:not(.current):after {
 	margin: 0px 0 20px 0px;
 }
 
-footer#cookiebar-change-choice {
+#cookiebar-change-choice {
 	margin-top: 10px;
 	text-align: center;
 }

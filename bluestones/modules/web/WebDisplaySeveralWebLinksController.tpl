@@ -1,8 +1,8 @@
 <section id="module-web">
 	<header>
 		<h1>
-			<a href="${relative_url(SyndicationUrlBuilder::rss('web', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
-			# IF C_PENDING #{@web.pending}# ELSE #{@module_title}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller"></i></a># ENDIF ## ENDIF #
+			<a href="${relative_url(SyndicationUrlBuilder::rss('web', ID_CAT))}" aria-label="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication" aria-hidden="true"></i></a>
+			# IF C_PENDING #{@web.pending}# ELSE #{@module_title}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller" aria-hidden="true"></i></a># ENDIF ## ENDIF #
 		</h1>
 
 		# IF C_CATEGORY_DESCRIPTION #
@@ -84,10 +84,10 @@
 						# IF C_MODERATE #
 						<td>
 							# IF weblinks.C_EDIT #
-							<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+							<a href="{weblinks.U_EDIT}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a>
 							# ENDIF #
 							# IF weblinks.C_DELETE #
-							<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+							<a href="{weblinks.U_DELETE}" aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a>
 							# ENDIF #
 						</td>
 						# ENDIF #
@@ -100,16 +100,16 @@
 			# IF C_CATEGORY_DISPLAYED_SUMMARY #
 			<article id="article-web-{weblinks.ID}" class="module-home# IF weblinks.C_IS_PARTNER # content-friends# ENDIF ## IF weblinks.C_IS_PRIVILEGED_PARTNER # content-privileged-friends# ENDIF ## IF weblinks.C_NEW_CONTENT # new-content# ENDIF#" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 
-				<a href="{weblinks.U_LINK}" title="{weblinks.NAME}" class="picture-link">
+				<a href="{weblinks.U_LINK}" class="picture-link">
 					<div class="home-picture" # IF weblinks.C_HAS_PARTNER_PICTURE #style="background-image: url({weblinks.U_PARTNER_PICTURE})"# ENDIF # itemprop="thumbnailUrl"></div>
 				</a>
 
 				<div class="home-more">
-					<i class="fa fa-eye" title="{weblinks.L_VISITED_TIMES}"></i>
-					<span title="{weblinks.L_VISITED_TIMES}">{weblinks.NUMBER_VIEWS}</span>
+					<i class="fa fa-eye" aria-hidden="true"></i> <span>{weblinks.NUMBER_VIEWS}</span> <span class="sr-only">${LangLoader::get_message('views', 'main')}</span>
+
 					# IF C_COMMENTS_ENABLED #
-						&nbsp; <i class="fa fa-comment" title="${LangLoader::get_message('comments', 'comments-common')}"></i>
-						# IF weblinks.C_COMMENTS # {weblinks.NUMBER_COMMENTS}# ELSE #(0) # ENDIF #
+						&nbsp; <i class="fa fa-comment" aria-hidden="true"></i>
+						# IF weblinks.C_COMMENTS # {weblinks.NUMBER_COMMENTS}# ELSE #(0) # ENDIF #  <span class="sr-only">${LangLoader::get_message('comments', 'comments-common')}</span>
 					# ENDIF #
 					# IF C_NOTATION_ENABLED #
 						<span class="float-right">{weblinks.STATIC_NOTATION}</span>
@@ -122,8 +122,8 @@
 						<a href="{weblinks.U_LINK}" itemprop="name">{weblinks.NAME}</a>
 					</h2>
 					<span class="actions">
-						# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-						# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+						# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a># ENDIF #
+						# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a># ENDIF #
 					</span>
 
 					<meta itemprop="url" content="{weblinks.U_LINK}">
@@ -146,8 +146,8 @@
 						<a href="{weblinks.U_LINK}" itemprop="name">{weblinks.NAME}</a>
 					</h2>
 					<span class="actions">
-						# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-						# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+						# IF weblinks.C_EDIT #<a href="{weblinks.U_EDIT}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a># ENDIF #
+						# IF weblinks.C_DELETE #<a href="{weblinks.U_DELETE}" aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a># ENDIF #
 					</span>
 
 					<meta itemprop="url" content="{weblinks.U_LINK}">
@@ -170,11 +170,11 @@
 								# ENDIF #
 								# IF weblinks.C_VISIBLE #
 									<a href="{weblinks.U_VISIT}" class="basic-button">
-										<i class="fa fa-globe"></i> {@visit}
+										<i class="fa fa-globe" aria-hidden="true"></i> {@visit}
 									</a>
 									# IF IS_USER_CONNECTED #
-									<a href="{weblinks.U_DEADLINK}" class="basic-button alt" title="${LangLoader::get_message('deadlink', 'common')}">
-										<i class="fa fa-unlink"></i>
+									<a href="{weblinks.U_DEADLINK}" class="basic-button alt" aria-label="${LangLoader::get_message('deadlink', 'common')}">
+										<i class="fa fa-unlink" aria-hidden="true"></i>
 									</a>
 									# ENDIF #
 								# ENDIF #

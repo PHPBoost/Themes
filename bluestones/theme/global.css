@@ -1,52 +1,28 @@
-/* -------------------------------------
-		global.css
- Contient les classes globales au site, peuvent etre utilisees partout.
- - Mise en forme du texte
- - Mise en forme du contenu
- - Les Icones specifiques PHPBoost de FontAwesome
- - Systeme d upload
---------------------------------------*/
-
+/**
+ * Contient les classes globales au site, peuvent etre utilisees partout.
+ * Mise en forme du texte
+ * Mise en forme du contenu
+ * Les Icones specifiques PHPBoost de FontAwesome
+ * Systeme d upload
+ * @copyright 	&copy; 2005-2019 PHPBoost
+ * @license 	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      Sebastien LARTIGUE <babsolune@phpboost.com>
+ * @version   	PHPBoost 5.2 - last update: 2019 01 16
+ * @since   	PHPBoost 5.0 - 2016 12 08
+*/
 
 /* -- La mise en forme du texte -- */
 /* ------------------------------- */
 
 /* --- Les liens du site --- */
 a {
-	color: #1E73BE;
 	text-decoration: none;
 	transition: 0.3s;
 }
 
 a:hover {
-	color: #0E2134;
 	transition: 0.3s;
 }
-
-/* --- Couleur des liens --- */
-a.admin  { color: #FFA34F; }
-a.modo   { color: #006699; }
-a.member { color: #000000; }
-
-/* --- Couleur de texte --- */
-.color-alert 		{ color: #B22222; }
-.color-notavailable { color: #B22222; }
-.color-available 	{ color: #008000; }
-.color-unknown 		{ color: #004b80; }
-
-.bkgd-color-visible 		{ background-color: #CCFFCC; }
-.bkgd-color-unvisible 		{ background-color: #FFEE99; }
-.bkgd-color-unaprobed 		{ background-color: #FFCCCC; }
-.bkgd-main  { background-color: #2F4154; }
-.bkgd-sub   { background-color: #006699; }
-.bkgd-title { background-color: #006699; }
-
-.bkgd-color-fixed 			{ background-color: #7FFF9C; }
-tr td.bkgd-color-fixed 		{ background-color: #7FFF9C; }
-.bkgd-color-processing 		{ background-color: #FFD86F; }
-tr td.bkgd-color-processing { background-color: #FFD86F; }
-.bkgd-color-unknown 		{ background-color: #FF796F; }
-tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
 
 /* --- Tailles de polices --- */
 .smaller { font-size: 0.7em; }
@@ -72,11 +48,11 @@ h1, h2, h3, h4, h5, h6 {
 .formatter-title {
 	display: inline-block;
 	margin: 0.5rem 0;
-	border-top: 1px solid #BDE9F2;
-	border-bottom: 1px solid #BDE9F2;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
-h2.formatter-title {  }
 h3.formatter-title { margin-left: 1.5rem; }
 h4.formatter-title { margin-left: 3rem; }
 h5.formatter-title { margin-left: 5rem; }
@@ -100,9 +76,10 @@ h5.formatter-title { margin-left: 5rem; }
 
 .calendar-block {
 	position: absolute;
-	border: 1px solid #999999;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 	z-index: 10;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
 }
 
@@ -118,7 +95,6 @@ h5.formatter-title { margin-left: 5rem; }
 }
 
 .calendar-block .date-select-container {
-	background-color: #F5F5F5;
 	padding: 2px 0;
 	border-radius: 3px 3px 0 0;
 }
@@ -131,11 +107,6 @@ h5.formatter-title { margin-left: 5rem; }
 .calendar-block .date-select-next {
 	float: right;
 	margin: 1px 4px 0 4px;
-}
-
-.calendar-block .date-select-next i,
-.calendar-block .date-select-previous i {
-	color: #666666;
 }
 
 .calendar-block .date-select-content {
@@ -170,12 +141,12 @@ h5.formatter-title { margin-left: 5rem; }
 }
 
 .calendar-block .date-picker thead tr th {
-	border-top: 1px solid #CCCCCC;
 	padding: 5px 0;
 	border-radius: 0;
-	background-color: #FFFFFF;
 	font-weight: bold;
-	color: #666666;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .calendar-block .date-picker tbody tr:last-child {
@@ -189,18 +160,6 @@ h5.formatter-title { margin-left: 5rem; }
 
 .calendar-block .date-picker tbody td:first-child { border-left: none;  }
 .calendar-block .date-picker tbody td:last-child  { border-right: none; }
-
-.calendar-block .date-picker tbody td.calendar-none		{ background-color: #FFFFFF; }
-.calendar-block .date-picker tbody td.calendar-today 	{ background-color: #0E2134; }
-.calendar-block .date-picker tbody td.calendar-event 	{ background-color: #0E2134; }
-.calendar-block .date-picker tbody td.calendar-weekend 	{ background-color: #BDE9F2; }
-
-
-/* --- les blocs bbcode --- */
-.bbcode-block {
-	background-color: #FFFFFF;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
 
 /* --- Le selecteur de couleur --- */
 .color-picker {
@@ -230,17 +189,20 @@ h5.formatter-title { margin-left: 5rem; }
     display: block;
     margin: auto;
     width: 93%;
-    color: #444444;
 }
+
 .formatter-container .formatter-title {
     font-weight: bold;
 }
+
 .formatter-content {
     margin: 0;
     padding: 8px;
-    background-color: #FAFAFA;
-    border: 1px solid #DDDDDD;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
+
 .formatter-hide .formatter-content {
     height: 0;
     max-height: 0;
@@ -251,6 +213,7 @@ h5.formatter-title { margin-left: 5rem; }
     transition: transform 0.15s linear;
     transform-origin: 50% 0;
 }
+
 .formatter-show .formatter-content,
 .formatter-hide.no-js:hover .formatter-content {
     height: auto;
@@ -260,59 +223,66 @@ h5.formatter-title { margin-left: 5rem; }
     visibility: visible;
     transform: scaleY(1);
 }
+
 .formatter-hide .formatter-hide-message {
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
     display: block;
     font-style: italic;
     font-weight: normal;
     font-size: 0.8em;
-    color: #BBBBBB;
     padding: 4px 8px;
     width: 100%;
     margin: 0 auto 0 auto;
-    background-color: #FDFDFD;
-    border: 1px solid #EEEEEE;
     cursor: pointer;
 }
+
 .formatter-show .formatter-hide-message {
     display: none;
 }
+
 .formatter-hide-close-button {
     position: absolute;
     display: none;
     top: 1em;
     right: 0;
-    color: #BBBBBB;
     font-size: 0.8em;
     font-style: italic;
     cursor: pointer;
     transition: all 0.3s linear;
 }
+
 .formatter-hide-close-button-txt {
     padding: 0 0 0 3px;
 }
+
 .formatter-show .formatter-hide-close-button {
     display: block;
 }
+
 .formatter-hide-close-button:hover {
-    color: #444444;
     transition: all 0.3s linear;
 }
+
 .formatter-code .formatter-title {
     margin: 1rem 0 0.5rem 0;
 }
+
 .formatter-code .formatter-content {
     overflow: auto;
     max-height: 500px;
 }
+
 .copy-code {
     float: right;
     padding: 1.2rem 0.5rem 0 0;
-    color: #BBBBBB;
     font-size: 0.8em;
     font-style: italic;
     cursor: copy;
     transition: all 0.3s linear;
 }
+
 .copy-code-txt {
     padding: 0 0 0 3px;
 }
@@ -330,7 +300,9 @@ h5.formatter-title { margin-left: 5rem; }
 	display: block;
 	margin: 5px 20px;
 	padding: 5px;
-	border: 1px solid #C4CED6;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 	overflow: hidden;
 }
 
@@ -367,10 +339,10 @@ h5.formatter-title { margin-left: 5rem; }
 	padding: 2px;
 	min-height: 40px;
 	width: 100px;
-	background-color: #FFFFFF;
-	border: 1px solid #CCCCCC;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 	border-radius: 4px;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01);
 	overflow: auto;
 }
 
@@ -378,9 +350,6 @@ h5.formatter-title { margin-left: 5rem; }
 .progressbar-container {
 	position: relative;
 	margin: 4px 0 10px;
-	background-color: #1E73BE;
-	box-shadow: inset 0 1px 2px rgba(47, 65, 84, 0.4);
-	color: #BDE9F2;
 }
 
 .progressbar-container .progressbar-infos {
@@ -393,7 +362,6 @@ h5.formatter-title { margin-left: 5rem; }
 
 .progressbar {
 	border-radius: 3px 0 0 3px;
-	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .progressbar[style*="100"] {
@@ -402,7 +370,6 @@ h5.formatter-title { margin-left: 5rem; }
 
 .progressbar-container .progressbar {
 	height: 13px;
-	background-color: #2F4154;
 	transition: width .6s ease;
 }
 
@@ -417,7 +384,6 @@ h5.formatter-title { margin-left: 5rem; }
 	position: relative;
 	font-size: 1.5rem;
 	text-decoration: none;
-	color: #E3CF7A;
 }
 
 .notation .star-width {
@@ -430,7 +396,6 @@ h5.formatter-title { margin-left: 5rem; }
 .notation .star-width:before {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
-	color: #E3CF7A;
 	left: 0;
 	top:0;
 	content:"\f005";
@@ -481,38 +446,6 @@ h5.formatter-title { margin-left: 5rem; }
 	font-weight: 200;
 }
 
-.fa-announce:before,
-.fa-announce-hot:before     { color: #81A4C8; }
-.fa-announce-new:before,
-.fa-announce-new-hot:before { color: #40b73a; }
-
-.fa-msg-display:before      { color: #40b73a; }
-.fa-msg-not-display:before 	{ color: #E0464A; }
-.fa-msg-track:before        { color: #E0464A; }
-.fa-msg-not-track:before    { color: #212121; }
-.fa-pm-track:before         { color: #517BA6; }
-.fa-pm-not-track:before     { color: #212121; }
-.fa-mail-track:before       { color: #517BA6; }
-.fa-mail-not-track:before   { color: #212121; }
-.fa-lastview:before         { color: #353535; }
-.fa-notread:before          { color: #353535; }
-.fa-showmymsg:before        { color: #353535; }
-
-/* --- les couleurs d icones --- */
-.fa-syndication:before { color: #F57900; }
-.fa-success:before     { color: #478948; }
-.fa-forbidden:before   { color: #BA4B49; }
-.fa-error:before       { color: #BA4B49; }
-.fa-warning:before     { color: #C19954; }
-.fa-ban:before         { color: #BA4B49; }
-.fa-unban:before       { color: #478948; }
-.fa-male:before        { color: #8DC3E9; }
-.fa-female:before      { color: #F49CC4; }
-.fa-online:before      { color: #52D132; }
-.fa-offline:before     { color: #E05759; }
-.fa-trend-up:before    { color: #478948; }
-.fa-trend-down:before  { color: #BA4B49; }
-
 /* --- Les alertes --- */
 li.small-block .fa-stack {
 	height: 2.34em;
@@ -524,7 +457,6 @@ li.small-block .fa-stack {
 	top: -3px;
 	left: 20px;
 	font-size: 1.32em;
-	color: #BA4B49;
 }
 
 .fa-circle-alert span {
@@ -533,7 +465,6 @@ li.small-block .fa-stack {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
-	color: #FFFFFF;
 	font-size: 0.7em;
 	text-align: center;
 }
@@ -581,25 +512,6 @@ li.small-block .fa-stack {
 .message-helper.modo-only:before   { content: "\f071"; }
 .message-helper.admin-only:before  { content: "\f071"; }
 
-.error, .error:before       { color: #E6481D; }
-.notice, .notice:before     { color: #2F4154; }
-.warning, .warning:before   { color: #FA9C0A; }
-.success, .success:before   { color: #81d742; }
-.question, .question:before { color: #3B88AE; }
-.question a					{ color: #2F4154; }
-.member-only, .member-only:before   { color: #C19954; }
-.modo-only, .modo-only:before       { color: #C19954; }
-.admin-only, .admin-only:before     { color: #C19954; }
-
-.error    { background-color: #F3DFDF; border-color: #E6481D; outline-color: #E6481D; }
-.notice   { background-color: #F0F0F0; border-color: #2F4154; outline-color: #2F4154; }
-.warning  { background-color: #FDF9E4; border-color: #FA9C0A; outline-color: #FA9C0A; }
-.success  { background-color: #E0F1D9; border-color: #81d742; outline-color: #81d742; }
-.question { background-color: #DAEEF8; border-color: #1E73BE; outline-color: #1E73BE; }
-.member-only  { background-color: #FDF9E4; border-color: #FBECCD; }
-.modo-only    { background-color: #FDF9E4; border-color: #FBECCD; }
-.admin-only   { background-color: #FDF9E4; border-color: #FBECCD; }
-
 .floating-message-container {
 	position: fixed;
 	left: 50%;
@@ -645,22 +557,6 @@ li.small-block .fa-stack {
 	cursor: pointer;
 }
 
-.floating-message-container .message-helper {
-	background-color: rgba(235, 239, 244, 1);
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.floating-message-container .error          { background-color: rgba(249, 218, 219, 1); }
-.floating-message-container .notice         { background-color: rgba(215, 215, 215, 1); }
-.floating-message-container .warning        { background-color: rgba(248, 229, 218, 1); }
-.floating-message-container .success        { background-color: rgba(217, 240, 219, 1); }
-.floating-message-container .question       { background-color: rgba(215, 224, 233, 1); }
-.floating-message-container .member-only    { background-color: rgba(223, 216, 234, 1); }
-.floating-message-container .modo-only      { background-color: rgba(223, 216, 234, 1); }
-.floating-message-container .admin-only     { background-color: rgba(223, 216, 234, 1); }
-
-
-
 /* -- Systeme d Upload -- */
 /* ---------------------- */
 #module-user-upload {
@@ -670,10 +566,10 @@ li.small-block .fa-stack {
 .upload-address-bar {
 	margin: 0 25px;
 	padding: 6px;
-	background-color: #FAFAFA;
-	border: 1px solid #DDDDDD;
 	border-radius: 3px;
-	color: #444444;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .upload-address-bar-links {
@@ -706,8 +602,9 @@ li.small-block .fa-stack {
 	line-height: 50px;
 	width: 180px;
 	text-align: center;
-	border: 1px solid #366493;
-	background-color: #aec7e1;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .upload-repertory-controls {
@@ -746,7 +643,9 @@ li.small-block .fa-stack {
 	width: 100%;
 	line-height: 100px;
 	text-align: center;
-	border: 1px solid #d9d9d9;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .upload-file-controls {
@@ -759,10 +658,6 @@ li.small-block .fa-stack {
 	display: inline-block;
 	text-align: center;
 	padding: 3px 0;
-}
-
-.upload-recent-file {
-	color: #BA4B49;
 }
 
 .upload-input-bbcode {
@@ -788,8 +683,9 @@ li.small-block .fa-stack {
 
 /* --- Deplacement des fichiers --- */
 .upload-selected-cat {
-	background-color: #F5FBFF;
-	border: 1px solid #2C5169;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .upload-elements-move-to,

@@ -1,8 +1,8 @@
 <section id="module-articles">
 	<header>
 		<h1>
-			<a href="${relative_url(SyndicationUrlBuilder::rss('articles', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
-			# IF C_PENDING #{@articles.pending_articles}# ELSE #{@articles}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller"></i></a># ENDIF ## ENDIF #
+			<a href="${relative_url(SyndicationUrlBuilder::rss('articles', ID_CAT))}" aria-label="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication" aria-hidden="true"></i></a>
+			# IF C_PENDING #{@articles.pending_articles}# ELSE #{@articles}# IF NOT C_ROOT_CATEGORY # - {CATEGORY_NAME}# ENDIF ## ENDIF # # IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}"  aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller" aria-hidden="true"></i></a># ENDIF ## ENDIF #
 		</h1>
 		# IF C_CATEGORY_DESCRIPTION #
 			<div class="cat-description">
@@ -49,15 +49,15 @@
 		<div class="content elements-container# IF C_SEVERAL_COLUMNS # columns-{NUMBER_COLUMNS}# ENDIF#">
 			# START articles #
 				# IF C_MOSAIC #
-				<article id="article-articles-{articles.ID}" class="module-home block# IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+				<article id="article-articles-{articles.ID}" class="module-home# IF articles.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 					<header>
 
-						<a href="{articles.U_ARTICLE}" title="{articles.TITLE}" itemprop="thumbnailUrl" class="picture-link">
+						<a href="{articles.U_ARTICLE}"  aria-label="{articles.TITLE}" itemprop="thumbnailUrl" class="picture-link">
 							<div class="home-picture" # IF articles.C_HAS_PICTURE #style="background-image: url({articles.PICTURE})"# ENDIF #></div>
 						</a>
 
 						<div class="home-more">
-						# IF C_COMMENTS_ENABLED #<span class="float-right"><i class="fa fa-comments-o"></i> # IF articles.C_COMMENTS # ({articles.NUMBER_COMMENTS})# ELSE #(0)# ENDIF #</span># ENDIF #
+						# IF C_COMMENTS_ENABLED #<span class="float-right"><i class="fa fa-comments-o" aria-hidden="true"></i> # IF articles.C_COMMENTS # ({articles.NUMBER_COMMENTS})# ELSE #(0)# ENDIF #</span># ENDIF #
 							<time datetime="# IF NOT articles.C_DIFFERED #{articles.DATE_ISO8601}# ELSE #{articles.PUBLISHING_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished"># IF NOT articles.C_DIFFERED #{articles.DATE}# ELSE #{articles.PUBLISHING_START_DATE}# ENDIF #</time>
 						</div>
 
@@ -66,10 +66,10 @@
 						</h2>
 						<span class="actions">
 							# IF articles.C_EDIT #
-								<a href="{articles.U_EDIT_ARTICLE}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+								<a href="{articles.U_EDIT_ARTICLE}"  aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a>
 							# ENDIF #
 							# IF articles.C_DELETE #
-								<a href="{articles.U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+								<a href="{articles.U_DELETE_ARTICLE}"  aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a>
 							# ENDIF #
 						</span>
 
@@ -89,7 +89,7 @@
 				# ELSE #
 				<article id="article-articles-{articles.ID}" class="module-home-list" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 
-					<a href="{articles.U_ARTICLE}" title="{articles.TITLE}" class="picture-link">
+					<a href="{articles.U_ARTICLE}"  aria-label="{articles.TITLE}" class="picture-link">
 						<div class="home-picture-list" # IF articles.C_HAS_PICTURE #style="background-image: url({articles.PICTURE})"# ENDIF # itemprop="thumbnailUrl""></div>
 					</a>
 
@@ -98,10 +98,10 @@
 							<a itemprop="url" href="{articles.U_ARTICLE}"><span itemprop="name">{articles.TITLE}</span></a>
 							<span class="actions">
 								# IF articles.C_EDIT #
-									<a href="{articles.U_EDIT_ARTICLE}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
+									<a href="{articles.U_EDIT_ARTICLE}"  aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a>
 								# ENDIF #
 								# IF articles.C_DELETE #
-									<a href="{articles.U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+									<a href="{articles.U_DELETE_ARTICLE}"  aria-label="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete" aria-hidden="true"></i></a>
 								# ENDIF #
 							</span>
 						</h2>

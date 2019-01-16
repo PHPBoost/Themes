@@ -572,14 +572,12 @@ optgroup {
 
 .form-field-checkbox [type="checkbox"]:not(:checked) + label:after,
 .form-field-checkbox [type="checkbox"]:checked + label:after {
-	background-color: #C1C1C1;
-	background-image: linear-gradient(to right, #c1c1c1 20%, rgba(255, 255, 255, 0.1) 80%);
+	background-color: #E6481D;
 }
 
 .form-field-checkbox [type="checkbox"]:checked + label:after {
-	background-color: #62B0FF;
+	background-color: #81d742;
 	color: #EEEEEE;
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 20%, #62B0FF 80%);
 }
 
 .form-field-radio [type="radio"]:not(:checked) + label:before,
