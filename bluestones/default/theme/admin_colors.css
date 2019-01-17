@@ -801,17 +801,9 @@ h4.stitle1 {
 	background-color: #0E2134;
 }
 
-.bbcode a, .bbcode .fa {
-    color: #63a8e7;
-}
-
-.bbcode-container::after {
-    background-color: transparent;
-}
-
-.bbcode .bbcode-elements > a:hover {
-    background-color: #0E2134;
-}
+.bbcode a, .bbcode .fa { color: #63a8e7; }
+.bbcode-container::after { background-color: transparent; }
+.bbcode .bbcode-elements > a:hover { background-color: #0E2134; }
 
 .color-picker td {
 	border-color: #F3F3F3;

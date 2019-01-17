@@ -17,15 +17,15 @@
 		</div>
 		# ENDIF #
 		<div class="str3 str_wrap">
-			# START web_items #
-					<a href="{web_items.U_LINK}">
-						# IF web_items.C_HAS_PARTNER_PICTURE #
-							<img class="item-picture" src="{web_items.U_PARTNER_PICTURE}" alt="{web_items.NAME}" itemprop="image" />
+			# START item #
+					<a href="{item.U_LINK}">
+						# IF item.C_HAS_PARTNER_PICTURE #
+							<img class="item-picture" src="{item.U_PARTNER_PICTURE}" alt="{item.NAME}" itemprop="image" />
 						# ELSE #
-							{web_items.NAME}
+							{item.NAME}
 						# ENDIF #
 					</a>
-			# END web_items #
+			# END item #
 		</div>
 	</div>
 	<footer></footer>
