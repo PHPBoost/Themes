@@ -1,5 +1,5 @@
 		# INCLUDE forum_top #
-		
+
 		<script>
 		<!--
 		function check_form_post(){
@@ -36,7 +36,7 @@
 				this.max_field_p = (nbr_field == 0) ? 5 : nbr_field;
 			else
 				this.max_field_p++;
-			
+
 			if( this.max_field_p < 20 )
 			{
 				if( this.max_field_p == 19 )
@@ -44,7 +44,7 @@
 					if( document.getElementById('add_poll_field_link') )
 						document.getElementById('add_poll_field_link').innerHTML = '';
 				}
-				document.getElementById('add_poll_field' + this.max_field_p).innerHTML += '<label><input type="text" name="a' + this.max_field_p + '" value="" /></label><br><span id="add_poll_field' + (this.max_field_p + 1) + '"></span>';
+				document.getElementById('add_poll_field' + this.max_field_p).innerHTML += '<label><input type="text" name="a' + this.max_field_p + '" value="" /></label><span class="field-description" id="add_poll_field' + (this.max_field_p + 1) + '"></span>';
 			}
 		}
 		function XMLHttpRequest_change_statut()
@@ -52,7 +52,7 @@
 			var idtopic = {IDTOPIC};
 			if( document.getElementById('forum_change_img') )
 				document.getElementById('forum_change_img').innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
-			
+
 			var xhr_object = xmlhttprequest_init('{PATH_TO_ROOT}/forum/xmlhttprequest.php?token={TOKEN}&msg_d=' + idtopic);
 			xhr_object.onreadystatechange = function()
 			{
@@ -68,55 +68,17 @@
 		}
 		-->
 		</script>
-		<article itemscope="itemscope" itemtype="http://schema.org/Creativework" id="article-forum-post">
+		<article itemscope="itemscope" itemtype="http://schema.org/Creativework" id="article-forum-post" class="forum-contents">
+			<header class="sr-only">
+				<h2>
+					<a href="{U_FORUM_CAT}">{FORUM_CAT}</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{U_TITLE_T}">{L_NEW_SUBJECT}</a> <span class="small"><em>{DESC}</em></span>
+				</h2>
+			</header>
 
 			<div class="content">
 				<form action="{U_ACTION}" method="post" onsubmit="return check_form_post();">
 					# INCLUDE message_helper #
 
-					# IF C_FORUM_PREVIEW_MSG #
-					<div class="module-position">
-						<div class="module-top-l"></div>
-						<div class="module-top-r"></div>
-						<div class="module-top">
-							<span class="float-left">{L_PREVIEW}</span>
-							<span class="float-right"></span>&nbsp;
-						</div>
-					</div>
-					<div class="msg-position">
-						<div class="msg-container">
-							<div class="msg-pseudo-mbr"></div>
-							<div class="msg-top-row">
-								<div class="float-left"><i class="fa fa-hand-o-right"></i> {DATE}</div>
-								<div class="float-right"><i class="fa fa-quote-right"></i></div>
-							</div>
-							<div class="msg-contents-container">
-								<div class="msg-info-mbr">
-								</div>
-								<div class="msg-contents">
-									<div class="msg-contents-overflow">
-										{CONTENTS_PREVIEW}
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="msg-sign">
-							<hr />
-							<span class="float-left">
-								<span class="basic-button smaller">MP</span>
-							</span>
-							<span class="float-left">
-							</span>&nbsp;
-						</div>
-					</div>
-					<div class="msg-position">
-						<div class="msg-bottom-l"></div>
-						<div class="msg-bottom-r"></div>
-						<div class="msg-bottom">&nbsp;</div>
-					</div>
-					<br /><br />
-					# ENDIF #
-					
 					<div class="fieldset-content">
 						<p class="center">{L_REQUIRE}</p>
 						<fieldset>
@@ -158,7 +120,7 @@
 							# ENDIF #
 						</fieldset>
 
-						<fieldset>	
+						<fieldset>
 							<legend>{L_POLL}</legend>
 							<p id="hidepoll_link" class="center"><a title="{L_OPEN_MENU_POLL}" href="" onclick="hide_poll('hidepoll');return false;">{L_OPEN_MENU_POLL}</a></p>
 							<div id="hidepoll">
@@ -170,7 +132,7 @@
 									<label for="poll_type">{L_POLL_TYPE}</label>
 									<div class="form-field">
 										<label><input type="radio" name="poll_type" id="poll_type" value="0" {SELECTED_SIMPLE}> {L_SINGLE}</label>
-										<label><input type="radio" name="poll_type" value="1" {SELECTED_MULTIPLE}> {L_MULTIPLE}</label>	
+										<label><input type="radio" name="poll_type" value="1" {SELECTED_MULTIPLE}> {L_MULTIPLE}</label>
 									</div>
 								</div>
 								# IF C_DELETE_POLL #
@@ -183,13 +145,13 @@
 									<label>{L_ANSWERS}</label>
 									<div class="form-field">
 										# START answers_poll #
-										<label><input type="text" name="a{answers_poll.ID}" value="{answers_poll.ANSWER}" /> <em>{answers_poll.NBR_VOTES} {answers_poll.L_VOTES}</em></label><br>
+										<label><input type="text" name="a{answers_poll.ID}" value="{answers_poll.ANSWER}" /> <em>{answers_poll.NBR_VOTES} {answers_poll.L_VOTES}</em></label>
 										# END answers_poll #
 										<span id="add_poll_field{NBR_POLL_FIELD}"></span>
-										
+
 										<p class="center" id="add_poll_field_link">
 											# IF C_ADD_POLL_FIELD #
-											<a title="${LangLoader::get_message('add', 'common')}" href="" onclick="add_poll_field({NBR_POLL_FIELD});return false;"><i class="fa fa-plus"></i></a>
+											<a aria-label="${LangLoader::get_message('add', 'common')}" href="" onclick="add_poll_field({NBR_POLL_FIELD});return false;"><i class="fa fa-plus" aria-hidden="true" title="${LangLoader::get_message('add', 'common')}"></i></a>
 											# ENDIF #
 										</p>
 									</div>
@@ -204,7 +166,7 @@
 							-->
 							</script>
 						</fieldset>
-						
+
 						<fieldset class="fieldset-submit">
 						<legend>{L_SUBMIT}</legend>
 							<input type="hidden" name="idm" value="{IDM}">
@@ -212,17 +174,21 @@
 							<button type="submit" name="post_topic" value="true" class="submit">{L_SUBMIT}</button>
 							<button onclick="XMLHttpRequest_preview();" type="button">{L_PREVIEW}</button>
 							<button type="reset" value="true">{L_RESET}</button>
-						
+
 							# IF C_DISPLAY_MSG #
-							<br /><br /><br />
-							<span id="forum_change_statut">
-								<a href="" onclick="XMLHttpRequest_change_statut();return false;" id="forum_change_img">{ICON_DISPLAY_MSG}</a> <a href="" onclick="XMLHttpRequest_change_statut();return false;"><span id="forum_change_msg">{L_EXPLAIN_DISPLAY_MSG_DEFAULT}</span></a>
-							</span>
+								<p>
+									<span id="forum_change_statut">
+										<a href="" onclick="XMLHttpRequest_change_statut();return false;" id="forum_change_img"># IF C_ICON_DISPLAY_MSG #<i class="{ICON_DISPLAY_MSG}" aria-hidden="true"></i># ENDIF #</a> <a href="" onclick="XMLHttpRequest_change_statut();return false;"><span id="forum_change_msg">{L_EXPLAIN_DISPLAY_MSG_DEFAULT}</span></a>
+									</span>
+								</p>
 							# ENDIF #
 						</fieldset>
 					</div>
 				</form>
 			</div>
+			<footer class="footer-forum sr-only">
+				<a href="{U_FORUM_CAT}">{FORUM_CAT}</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{U_TITLE_T}">{L_NEW_SUBJECT}</a> <span class="small"><em>{DESC}</em></span>
+			</footer>
 		</article>
-		
+
 		# INCLUDE forum_bottom #

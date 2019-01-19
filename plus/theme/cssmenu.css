@@ -652,7 +652,8 @@ footer .cssmenu-static > ul > li > .cssmenu-title 			{ color: #DDDDDD; }
 
 header .cssmenu li:hover > .cssmenu-title 					{ color: #1eb0bc; }
 .cssmenu.cssmenu-vertical li:hover > .cssmenu-title 		{ color: #1eb0bc; }
-#main .cssmenu li:hover > .cssmenu-title 					{ color: #fff; background-color: #1eb0bc;}
+#main .cssmenu li:hover > .cssmenu-title 					{ background-color: #1eb0bc; }
+#main .cssmenu li:hover > .cssmenu-title a                  { color: #fff; text-decoration: none;}
 
 @media (min-width: 769px) {
     #main .cssmenu-horizontal > ul > li:hover  				{ background-color: #F9F9F9; }
@@ -775,7 +776,6 @@ footer .cssmenu-static ul ul li:hover > .cssmenu-title 		{ color: #FFFFFF; }
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
     font-style: normal;
-    font-weight: normal;
     line-height: 1;
     color: #fff;
     text-align: center;

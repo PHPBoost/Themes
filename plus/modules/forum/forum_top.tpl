@@ -79,6 +79,5 @@
 		</script>
 <section id="module-forum">
 	<header id="forum-top">
-		
 		<h1>{FORUM_NAME}</h1>
 	</header>

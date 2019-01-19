@@ -56,19 +56,21 @@ header#forum-top .forum-links {
     display: none;
 }
 
-#module-forum header h2 a.fa-syndication {
+#module-forum header h2 a.syndication-container {
     background-color: #ddd;
-    padding:8px;
+    padding: 6px 6px 6px 6px;
     margin-right:10px;
+    display: inline-block;
 }
 
+#module-forum header span.actions,
 #module-forum header h2 span.float-right {
     background-color: #ddd;
-    padding:7px 7px 7px 7px;
-    height:32px;
+    padding:6px 7px 7px 7px;
+    height:31px;
 }
 
-#module-forum header h2 span.float-right ul.pagination{
+#module-forum header h2 span.actions ul.pagination{
     margin-right:8px;
     border-right:1px solid #e7e7e7;
 }
@@ -766,7 +768,7 @@ footer#forum-bottom .forum-message-options {
 
 /* -- Taille police menu ========================================================= */
 .cssmenu.cssmenu-group > ul > li > .cssmenu-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* Tableaux */
