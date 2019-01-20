@@ -1,9 +1,17 @@
 
 /* horizontal */
 #search-menu.horizontal-fieldset {
-	float: right;
 	margin: 0;
-	background-color: #0E2134;
+}
+
+#search-menu.horizontal-fieldset .search-top {
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	#search-menu.horizontal-fieldset .search-top {
+		background-color: #0E2134;
+	}
 }
 
 #search-menu.horizontal-fieldset .search-button {

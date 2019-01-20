@@ -102,7 +102,9 @@
 # ELSE #
 	# IF C_USER_NOTCONNECTED #
 		<div id="connect-menu" class="connect-container horizontal-fieldset">
-			<a href="" class="connect-button" aria-label="{@connection}"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+			<div class="connect-top">
+				<a href="" class="connect-button" aria-label="{@connection}"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+			</div>
 			<div class="connect-content not-connected">
 				<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('close', 'main')}</span>
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
@@ -129,13 +131,15 @@
 			</div>
 		</div>
 	# ELSE #
-		<div id="connect-menu" class="connect-container horizontal-fieldset">
-			<a href="" class="connect-button" aria-label="{@dashboard}">
-				# IF IS_ADMIN #<i class="fa fa-user-tie" aria-hidden="true"></i># ELSE #<i class="fa fa-user" aria-hidden="true"></i># ENDIF #
-				# IF C_UNREAD_CONTRIBUTION # <span class="blink c-alert c-contrib"><i class="fa fa-file-text fa-fw" aria-hidden="true"></i></span><span class="sr-only">{NUMBER_UNREAD_CONTRIBUTIONS}</span># ENDIF #
-				# IF C_HAS_PM # <span class="blink c-alert c-pm"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span><span class="sr-only">{L_NBR_PM}</span># ENDIF #
-				# IF C_UNREAD_ALERT # <span class="blink c-alert c-admin"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i></span><span class="sr-only">{NUMBER_UNREAD_ALERTS}</span># ENDIF #
-			</a>
+		<div id="connect-menu" class="connect-container horizontal-fieldset float-right">
+			<div class="connect-top">
+				<a href="" class="connect-button" aria-label="{@dashboard}">
+					# IF IS_ADMIN #<i class="fa fa-user-tie" aria-hidden="true"></i># ELSE #<i class="fa fa-user" aria-hidden="true"></i># ENDIF #
+					# IF C_UNREAD_CONTRIBUTION # <span class="blink c-alert c-contrib"><i class="fa fa-file-text fa-fw" aria-hidden="true"></i></span><span class="sr-only">{NUMBER_UNREAD_CONTRIBUTIONS}</span># ENDIF #
+					# IF C_HAS_PM # <span class="blink c-alert c-pm"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span><span class="sr-only">{L_NBR_PM}</span># ENDIF #
+					# IF C_UNREAD_ALERT # <span class="blink c-alert c-admin"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i></span><span class="sr-only">{NUMBER_UNREAD_ALERTS}</span># ENDIF #
+				</a>
+			</div>
 			<div class="connect-content">
 				<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('close', 'main')}</span>
 				<ul>

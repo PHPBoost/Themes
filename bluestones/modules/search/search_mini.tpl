@@ -31,8 +31,10 @@
 		<a href="{U_ADVANCED_SEARCH}" class="small">{L_ADVANCED_SEARCH}</a>
 	</form>
 # ELSE #
-	<div id="search-menu" class="search-container horizontal-fieldset">
-		<a href="" class="search-button" aria-label="{L_SEARCH}"><i class="fa fa-search" aria-hidden="true"></i></a>
+	<div id="search-menu" class="search-container horizontal-fieldset float-right">
+		<div class="search-top">
+			<a href="" class="search-button" aria-label="{L_SEARCH}"><i class="fa fa-search" aria-hidden="true"></i></a>
+		</div>
 		<div class="search-content">
 			<i class="close-search fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('close', 'main')}</span>
 			<form action="{U_FORM_VALID}" onsubmit="return check_search_mini_form_post();" method="post">

@@ -12,9 +12,17 @@
 
 /* horizontal */
 #connect-menu.horizontal-fieldset {
-	float: right;
 	margin: 0;
-	background-color: #2F4154;
+}
+
+#connect-menu.horizontal-fieldset .connect-top {
+	text-align: right;
+}
+
+@media (min-width: 769px) {
+	#connect-menu.horizontal-fieldset .connect-top {
+		background-color: #2F4154;
+	}
 }
 
 #connect-menu.horizontal-fieldset .connect-button {
