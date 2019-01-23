@@ -21,7 +21,7 @@ FormFieldPossibleValues.prototype = {
 			jQuery('<input/> ', {type : 'text', id : 'field_name_' + id, name : 'field_name_' + id, placeholder : '{@field.name}'}).appendTo('#' + id);
 			jQuery('#field_name_' + id).after(' ');
 			
-			jQuery('<a/> ', {href : 'javascript:FormFieldPossibleValues.delete_field('+ this.integer +');', id : 'delete_' + id, 'title' : "${LangLoader::get_message('delete', 'common')}", class : 'fa fa-delete'}).appendTo('#' + id);
+			jQuery('<a/> ', {href : 'javascript:FormFieldPossibleValues.delete_field('+ this.integer +');', id : 'delete_' + id, 'title' : "${LangLoader::get_message('delete', 'common')}", class : 'fa fa-trash-alt'}).appendTo('#' + id);
 			
 			this.integer++;
 		}
@@ -50,7 +50,7 @@ var FormFieldPossibleValues = new FormFieldPossibleValues();
 			<label for="field_is_default_${escape(HTML_ID)}_{fieldelements.ID}"></label>
 		</div>
 		<input type="text" name="field_name_${escape(HTML_ID)}_{fieldelements.ID}" id="field_name_${escape(HTML_ID)}_{fieldelements.ID}" value="{fieldelements.TITLE}" placeholder="{@field.name}"/>
-		<a href="javascript:FormFieldPossibleValues.delete_field({fieldelements.ID});" id="delete_${escape(HTML_ID)}_{fieldelements.ID}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-delete" data-confirmation="delete-element"></a>
+		<a href="javascript:FormFieldPossibleValues.delete_field({fieldelements.ID});" id="delete_${escape(HTML_ID)}_{fieldelements.ID}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 	</div>
 # END fieldelements #
 </div>

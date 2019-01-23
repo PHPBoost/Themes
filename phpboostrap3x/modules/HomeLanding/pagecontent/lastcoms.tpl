@@ -17,7 +17,7 @@
 			<h4 class="list-group-item-heading">
 				{lastcoms_items.CONTENTS}# IF lastcoms_items.C_READ_MORE #... [${LangLoader::get_message('read-more', 'common')}]# ENDIF #
 			</h4>
-			<p class="list-group-item-text"># IF lastcoms_items.C_AUTHOR_EXIST #{lastcoms_items.PSEUDO}# ENDIF # # IF C_MODULE_NAME #${Langloader::get_message('in.modules', 'common', 'HomeLanding')} {lastcoms_items.MODULE_NAME}# ENDIF # ({lastcoms_items.DATE}) <i class="fa fa-hand-o-right"></i></p>
+			<p class="list-group-item-text"># IF lastcoms_items.C_AUTHOR_EXIST #{lastcoms_items.PSEUDO}# ENDIF # # IF C_MODULE_NAME #${Langloader::get_message('in.modules', 'common', 'HomeLanding')} {lastcoms_items.MODULE_NAME}# ENDIF # ({lastcoms_items.DATE}) <i class="fa fa-hand-point-right "></i></p>
 		</a>
 		# END lastcoms_items #
 

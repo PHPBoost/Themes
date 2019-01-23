@@ -2,7 +2,7 @@
 			<header>
 				<div class="pull-right text-right mr-btn">
 					<a href="${relative_url(SyndicationUrlBuilder::rss('wiki'))}" title="${LangLoader::get_message('syndication', 'common')}" class="btn btn-warning btn-xs">
-						<i class="fa fa-syndication"></i>
+						<i class="fa fa-rss"></i>
 					</a>
 				</div>
 				<h1>
@@ -38,7 +38,7 @@
 						<thead>
 							<tr>
 								<th colspan="2">
-									# IF last_articles.C_ARTICLES #<a href="${relative_url(SyndicationUrlBuilder::rss('wiki'))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a> # ENDIF #<strong><em>{last_articles.L_ARTICLES}</em></strong>
+									# IF last_articles.C_ARTICLES #<a href="${relative_url(SyndicationUrlBuilder::rss('wiki'))}" class="fa fa-rss" title="${LangLoader::get_message('syndication', 'common')}"></a> # ENDIF #<strong><em>{last_articles.L_ARTICLES}</em></strong>
 								</th>
 							</tr>
 						</thead>

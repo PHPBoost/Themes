@@ -49,7 +49,7 @@
 				</div>
 				<div class="col-sm-4">
 					<ul class="list-group">
-						<li class="list-group-item active"><i class="fa fa-fw fa-picture-o"></i> {L_CUSTOMIZE_SITE}</li>
+						<li class="list-group-item active"><i class="fa fa-fw fa-image"></i> {L_CUSTOMIZE_SITE}</li>
 						<li class="list-group-item"><a href="${relative_url(AdminThemeUrlBuilder::add_theme())}" title="{L_ADD_TEMPLATE}">{L_ADD_TEMPLATE}</a></li>
 						<li class="list-group-item"><a href="{PATH_TO_ROOT}/admin/menus" title="{L_MENUS_MANAGEMENT}">{L_MENUS_MANAGEMENT}</a></li>
 						# IF C_MODULE_CUSTOMIZATION_INSTALLED #
@@ -95,7 +95,7 @@
 								# START comments_list #
 								<li class="list-group-item">
 									<a class="pull-right label label-info" href="{comments_list.U_LINK}">
-										<i class="fa fa-hand-o-right"></i>
+										<i class="fa fa-hand-point-right "></i>
 									</a>
 									<small>{L_BY} {comments_list.U_PSEUDO} : {comments_list.CONTENT}</small>
 								</li>
@@ -177,7 +177,7 @@
 						</div>
 					</form>
 
-					<div class="col-sm-12">
+					<div class="col-sm-12 form-group-advises">
 						# INCLUDE ADVISES #
 					</div>
 

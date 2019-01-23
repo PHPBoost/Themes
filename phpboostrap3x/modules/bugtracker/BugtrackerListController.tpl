@@ -113,7 +113,7 @@
 						<a href="{bug.U_CHANGE_STATUS}" title="{@actions.change_status}"><i class="fa fa-gears"></i></a>
 						<a href="{bug.U_HISTORY}" title="{@actions.history}"><i class="fa fa-history"></i></a>
 						<a href="{bug.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-						<a href="{bug.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"><i class="fa fa-delete"></i></a>
+						<a href="{bug.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"><i class="fa fa-trash-alt"></i></a>
 					</td>
 					# ENDIF #
 				</tr>

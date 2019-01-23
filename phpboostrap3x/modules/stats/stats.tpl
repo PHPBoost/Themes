@@ -32,7 +32,7 @@
 						</li>
 						<li>
 							<a href="{PATH_TO_ROOT}/stats/stats{U_STATS_PAGES}#stats" title="{L_PAGES}">
-								<i class="fa fa-file-o"></i> <span class="visible-xs">{L_PAGES}</span>
+								<i class="fa fa-file"></i> <span class="visible-xs">{L_PAGES}</span>
 							</a>
 						</li>
 						<li>
@@ -47,12 +47,12 @@
 						</li>
 						<li>
 							<a href="{PATH_TO_ROOT}/stats/stats{U_STATS_LANG}#stats" title="{L_LANG}">
-								<i class="fa fa-flag-o"></i> <span class="visible-xs">{L_LANG}</span>
+								<i class="fas fa-flag"></i> <span class="visible-xs">{L_LANG}</span>
 							</a>
 						</li>
 						<li>
 							<a href="{PATH_TO_ROOT}/stats/stats{U_STATS_REFERER}#stats" title="{L_REFERER}">
-								<i class="fa fa-share-square-o"></i> <span class="visible-xs">{L_REFERER}</span>
+								<i class="fa fa-share-square"></i> <span class="visible-xs">{L_REFERER}</span>
 							</a>
 						</li>
 						<li>

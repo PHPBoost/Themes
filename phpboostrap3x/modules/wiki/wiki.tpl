@@ -2,7 +2,7 @@
 			<header>
 				<div class="pull-right text-right mr-btn">
 					<a href="${relative_url(SyndicationUrlBuilder::rss('wiki', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}" class="btn btn-warning btn-xs">
-						<i class="fa fa-syndication"></i>
+						<i class="fa fa-rss"></i>
 					</a>
 				</div>
 				<h1>
@@ -20,7 +20,7 @@
 					<div class="w33 mb15">
 					{redirect.REDIRECTED}
 						# START redirect.remove_redirection #
-							<a href="{redirect.remove_redirection.U_REMOVE_REDIRECTION}" title="{redirect.remove_redirection.L_REMOVE_REDIRECTION}" class="fa fa-delete" data-confirmation="{redirect.remove_redirection.L_ALERT_REMOVE_REDIRECTION}"></a>
+							<a href="{redirect.remove_redirection.U_REMOVE_REDIRECTION}" title="{redirect.remove_redirection.L_REMOVE_REDIRECTION}" class="fa fa-trash-alt" data-confirmation="{redirect.remove_redirection.L_ALERT_REMOVE_REDIRECTION}"></a>
 						# END redirect.remove_redirection #
 					</div>
 					<div class="clearfix"></div>
@@ -63,7 +63,7 @@
 					<ul class="list-group">
 						<li class="list-group-item active">
 							<a class="btn btn-warning btn-xs pull-right text-right" href="${relative_url(SyndicationUrlBuilder::rss('wiki'))}" title="${LangLoader::get_message('syndication', 'common')}">
-								<i class="fa fa-syndication"></i>
+								<i class="fa fa-rss"></i>
 							</a>
 							{L_SUB_ARTICLES}
 						</li>

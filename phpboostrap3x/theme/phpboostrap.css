@@ -292,6 +292,7 @@ code {display: block;}
 .items-filters .form-group,
 .items-filters .form-control {
     margin-bottom: 0;
+    min-width: 200px;
 }
 
 .items-filters [class*="col-"] {
@@ -307,11 +308,55 @@ code {display: block;}
 }
 
 /* --- Forms --- */
+form .fieldset-inset .col-sm-3,
+form .fieldset-inset .col-sm-3.full-field,
+.form-group-advises .form-group.col-sm-3 {
+    width: 100%;
+}
+
 @media (min-width:768px) {
     .form-inline .input-group > .form-control.date-picker {
         width: auto;
     }
+
+    form .fieldset-inset .col-sm-3,
+    form .fieldset-inset .col-sm-3.half-field,
+    form .fieldset-inset .col-sm-3.third-field {
+        width: 50%;
+    }
 }
+
+@media (min-width: 1024px) {
+    form .fieldset-inset .col-sm-3 {
+        width: 25%;
+    }
+
+    form .fieldset-inset .col-sm-3.third-field {
+        width: calc(100% / 3);
+    }
+
+    form .fieldset-inset .col-sm-3.half-field {
+        width: 50%;
+    }
+}
+
+#main-content form .fieldset-inset .col-sm-3 {
+    width: 100%;
+}
+
+.input-group-textarea textarea{
+    min-height: 68px;
+}
+
+@media (max-width: 769px) {
+    .input-group-textarea textarea {width: 100%}
+    .input-group-textarea textarea,
+    .form-horizontal .input-group-textarea .form-group {
+        margin: 15px auto 0;
+    }
+}
+
+
 
 fieldset.fieldset-submit {
     text-align: center;
@@ -412,7 +457,8 @@ select[multiple], select[size] {
 /* --- BBCode styles
 ============================================================================= */
 
-.bbcode a.fa {
+.bbcode a.fa,
+.bbcode a.fab {
     color: #333333;
 }
 
@@ -924,11 +970,11 @@ img {max-width: 100%}
 		opacity: 0.3;
 		transition: opacity 1s;
 		cursor: move;
+        padding: 0.0809em;
 	}
 
 	.sortable-selector:after {
 		content: "\f0b2";
-		content: '\f047';
 		color: #FFFFFF;
 		font-family: 'Font Awesome 5 Free';
 		font-weight: 900;
@@ -962,8 +1008,10 @@ img {max-width: 100%}
 	-ms-flex: 1 1 auto;
 	-webkit-flex: 1 1 auto;
 	padding: 0.618em;
-	max-width: calc(100% - 5.2em)
 }
+
+#modules_list .sortable-title {padding: 0 0 0 0.618em;}
+#modules_list select, .input-group, .btn-group { margin-bottom: 0; }
 
 .sortable-block .sortable-title:hover {
 	background-image: linear-gradient(to bottom, #FFFFFF 25%, #F2F5F8 100%);
@@ -1420,3 +1468,13 @@ div.field-required:after {
     background-color: #FFFFFF;
     padding: 10px 15px;
 }
+
+.xmlhttprequest-preview {
+    min-height: 250px;
+    clear: both;
+}
+
+hr {clear: both;}
+
+.fa-success:before { content: '\f00c'; color: green}
+.fa-error:before { content: '\f00d'; color: red}

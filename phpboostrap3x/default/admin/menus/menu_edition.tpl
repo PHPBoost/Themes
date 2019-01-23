@@ -28,7 +28,7 @@
 				<input class="form-control menu-control" placeholder="{L_IMAGE}" type="text" value="{RELATIVE_IMG}" id="menu_element_{ID}_image" name="menu_element_{ID}_image" onblur="image_preview(this,menu_element_{ID}_image_preview)">
 				<div class="input-group-btn">
 					<a class="btn btn-info" href="" title="{L_MORE}" id="menu_element_{ID}_more_image" onclick="toggleProperties({ID});return false;"><i class="fa fa-cog"></i></a>
-					<a class="btn btn-danger" href="" title="{L_DELETE}" id="menu_element_{ID}_delete_image" style="cursor:pointer;" onclick="deleteElement('menu_element_{ID}');return false;"><i class="fa fa-delete"></i></a>
+					<a class="btn btn-danger" href="" title="{L_DELETE}" id="menu_element_{ID}_delete_image" style="cursor:pointer;" onclick="deleteElement('menu_element_{ID}');return false;"><i class="fa fa-trash-alt"></i></a>
 				</div>
 			</div>
 			<script>
@@ -76,7 +76,7 @@
 				<input class="form-control menu-control" placeholder="{L_IMAGE}" type="text" value="{RELATIVE_IMG}" id="menu_element_{ID}_image" name="menu_element_{ID}_image" onblur="image_preview(this,menu_element_{ID}_image_preview)">
 				<div class="input-group-btn">
 					<a class="btn btn-info" href="" title="{L_MORE}" id="menu_element_{ID}_more_image" onclick="toggleProperties({ID});return false;"><i class="fa fa-cog"></i></a>
-					<a class="btn btn-danger" href="" title="{L_DELETE}" id="menu_element_{ID}_delete_image" style="cursor:pointer;" onclick="deleteElement('menu_element_{ID}');return false;"><i class="fa fa-delete"></i></a>
+					<a class="btn btn-danger" href="" title="{L_DELETE}" id="menu_element_{ID}_delete_image" style="cursor:pointer;" onclick="deleteElement('menu_element_{ID}');return false;"><i class="fa fa-trash-alt"></i></a>
 				</div>
 			</div>
 		</div>

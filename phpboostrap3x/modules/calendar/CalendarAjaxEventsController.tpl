@@ -9,14 +9,14 @@
 						<header>
 							<div class="pull-right text-right">
 								<div class="btn-group btn-group-xs">
-									# IF C_COMMENTS_ENABLED #<a class="btn btn-info" href="{event.U_COMMENTS}"><i class="fa fa-comments-o"></i> {event.L_COMMENTS}</a># ENDIF #
+									# IF C_COMMENTS_ENABLED #<a class="btn btn-info" href="{event.U_COMMENTS}"><i class="fa fa-comments"></i> {event.L_COMMENTS}</a># ENDIF #
 									# IF event.C_EDIT #
 										<a class="btn btn-info" href="{event.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 									# ENDIF #
 									# IF event.C_DELETE #
-										<a class="btn btn-danger" href="{event.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT event.C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-delete"></i></a>
+										<a class="btn btn-danger" href="{event.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT event.C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-trash-alt"></i></a>
 									# ENDIF #
-									<a class="btn btn-warning" href="{event.U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
+									<a class="btn btn-warning" href="{event.U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i></a>
 								</div>
 
 							</div>

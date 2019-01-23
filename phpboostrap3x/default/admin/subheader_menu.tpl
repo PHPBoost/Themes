@@ -20,11 +20,11 @@
 						<ul class="level-2">
 							<li><a href="${relative_url(AdminConfigUrlBuilder::general_config())}" title="{L_CONFIG_GENERAL}"><i class="fa fa-fw fa-cog"></i>{L_CONFIG_GENERAL}</a></li>
 							<li><a href="${relative_url(AdminConfigUrlBuilder::advanced_config())}" title="{L_CONFIG_ADVANCED}"><i class="fa fa-fw fa-cogs"></i>{L_CONFIG_ADVANCED}</a></li>
-							<li><a href="${relative_url(AdminConfigUrlBuilder::mail_config())}" title="{L_MAIL_CONFIG}"><i class="fa fa-fw fa-envelope-o"></i>{L_MAIL_CONFIG}</a></li>
+							<li><a href="${relative_url(AdminConfigUrlBuilder::mail_config())}" title="{L_MAIL_CONFIG}"><i class="fa fa-fw fa-envelope"></i>{L_MAIL_CONFIG}</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="${relative_url(AdminThemeUrlBuilder::list_installed_theme())}" title="{L_THEMES}"><i class="fa fa-fw fa-picture-o"></i>{L_THEMES}</a>
+						<a href="${relative_url(AdminThemeUrlBuilder::list_installed_theme())}" title="{L_THEMES}"><i class="fa fa-fw fa-image"></i>{L_THEMES}</a>
 						<ul class="level-2">
 							<li><a href="${relative_url(AdminThemeUrlBuilder::list_installed_theme())}" title="{L_MANAGEMENT}"><i class="fa fa-fw fa-cog"></i>{L_MANAGEMENT}</a></li>
 							<li><a href="${relative_url(AdminThemeUrlBuilder::add_theme())}" title="{L_ADD}"><i class="fa fa-fw fa-plus"></i>{L_ADD}</a></li>
@@ -42,11 +42,11 @@
 						<ul class="level-2">
 							<li><a href="{PATH_TO_ROOT}/admin/updates/updates.php?type=kernel" title="{L_KERNEL}"><i class="fa fa-fw fa-cog"></i>{L_KERNEL}</a></li>
 							<li><a href="{PATH_TO_ROOT}/admin/updates/updates.php?type=module" title="{L_MODULES}"><i class="fa fa-fw fa-cubes"></i>{L_MODULES}</a></li>
-							<li><a href="{PATH_TO_ROOT}/admin/updates/updates.php?type=template" title="{L_THEMES}"><i class="fa fa-fw fa-picture-o"></i>{L_THEMES}</a></li>
+							<li><a href="{PATH_TO_ROOT}/admin/updates/updates.php?type=template" title="{L_THEMES}"><i class="fa fa-fw fa-image"></i>{L_THEMES}</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="${relative_url(AdminMaintainUrlBuilder::maintain())}" title="{L_MAINTAIN}"><i class="fa fa-fw fa-clock-o"></i>{L_MAINTAIN}</a>
+						<a href="${relative_url(AdminMaintainUrlBuilder::maintain())}" title="{L_MAINTAIN}"><i class="fa fa-fw fa-clock"></i>{L_MAINTAIN}</a>
 					</li>
 					<li>
 						<a href="{PATH_TO_ROOT}/admin/admin_alerts.php" title="{L_ADMINISTRATOR_ALERTS}"><i class="fa fa-fw fa-bell"></i> {L_ADMINISTRATOR_ALERTS}</a>
@@ -76,11 +76,11 @@
 				</div>
 				<ul class="submenu">
 					<li>
-						<a href="${relative_url(AdminCacheUrlBuilder::clear_cache())}" title="{L_CACHE}"><i class="fa fa-fw fa-refresh"></i>{L_CACHE}</a>
+						<a href="${relative_url(AdminCacheUrlBuilder::clear_cache())}" title="{L_CACHE}"><i class="fa fa-fw fa-sync-alt"></i>{L_CACHE}</a>
 						<ul class="level-2">
-							<li><a href="${relative_url(AdminCacheUrlBuilder::clear_cache())}" title="{L_CACHE}"><i class="fa fa-fw fa-refresh"></i>{L_CACHE}</a></li>
+							<li><a href="${relative_url(AdminCacheUrlBuilder::clear_cache())}" title="{L_CACHE}"><i class="fa fa-fw fa-sync-alt"></i>{L_CACHE}</a></li>
 							<li><a href="${relative_url(AdminCacheUrlBuilder::clear_syndication_cache())}" title="{L_SYNDICATION_CACHE}"><i class="fa fa-fw fa-rss"></i>{L_SYNDICATION_CACHE}</a></li>
-							<li><a href="${relative_url(AdminCacheUrlBuilder::clear_css_cache())}" title="{L_CSS_CACHE_CONFIG}"><i class="fa fa-fw fa-css3"></i>{L_CSS_CACHE_CONFIG}</a></li>
+							<li><a href="${relative_url(AdminCacheUrlBuilder::clear_css_cache())}" title="{L_CSS_CACHE_CONFIG}"><i class="fab fa-fw fa-css3"></i>{L_CSS_CACHE_CONFIG}</a></li>
 							<li><a href="${relative_url(AdminCacheUrlBuilder::configuration())}" title="{L_CONFIGURATION}"><i class="fa fa-fw fa-cogs"></i>{L_CONFIGURATION}</a></li>
 						</ul>
 					</li>
@@ -153,7 +153,7 @@
 			</div>
 		</li>
 		<li class="admin-li">
-			<a href="#openmodal-{L_CONTENT}" title="{L_CONTENT}"><i class="fa fa-fw fa-square-o"></i><span>{L_CONTENT}</span></a>
+			<a href="#openmodal-{L_CONTENT}" title="{L_CONTENT}"><i class="fa fa-fw fa-square"></i><span>{L_CONTENT}</span></a>
 			<div id="openmodal-{L_CONTENT}" class="cssmenu-modal">
 				<a href="#closemodal" title="${LangLoader::get_message('close_menu', 'admin')}" class="close"><span>x</span></a>
 				<div class="next-menu">
@@ -168,33 +168,33 @@
 				</div>
 				<ul class="submenu">
 					<li>
-						<a href="${relative_url(AdminContentUrlBuilder::content_configuration())}" title="{L_CONTENT_CONFIG}"><i class="fa fa-fw fa-square-o"></i>{L_CONTENT_CONFIG}</a>
+						<a href="${relative_url(AdminContentUrlBuilder::content_configuration())}" title="{L_CONTENT_CONFIG}"><i class="fa fa-fw fa-square"></i>{L_CONTENT_CONFIG}</a>
 					</li>
 					<li>
 						<a href="{PATH_TO_ROOT}/admin/menus/menus.php" title="{L_MENUS}"><i class="fa fa-fw fa-list-ul"></i>{L_MENUS}</a>
 						<ul class="level-2">
 							<li><a href="{PATH_TO_ROOT}/admin/menus/menus.php" title="{L_MANAGEMENT}"><i class="fa fa-fw fa-cog"></i>{L_MANAGEMENT}</a></li>
 							<li><a href="{PATH_TO_ROOT}/admin/menus/links.php" title="{L_ADD_LINKS_MENU}"><i class="fa fa-fw fa-list-ul"></i>{L_ADD_LINKS_MENU}</a></li>
-							<li><a href="{PATH_TO_ROOT}/admin/menus/content.php" title="{L_ADD_CONTENT_MENU}"><i class="fa fa-fw fa-file-o"></i>{L_ADD_CONTENT_MENU}</a></li>
+							<li><a href="{PATH_TO_ROOT}/admin/menus/content.php" title="{L_ADD_CONTENT_MENU}"><i class="fa fa-fw fa-file"></i>{L_ADD_CONTENT_MENU}</a></li>
 							<li><a href="{PATH_TO_ROOT}/admin/menus/feed.php" title="{L_ADD_FEED_MENU}"><i class="fa fa-fw fa-rss"></i>{L_ADD_FEED_MENU}</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="{PATH_TO_ROOT}/admin/admin_files.php" title="{L_FILES}"><i class="fa fa-fw fa-file-text-o"></i>{L_FILES}</a>
+						<a href="{PATH_TO_ROOT}/admin/admin_files.php" title="{L_FILES}"><i class="fa fa-fw fa-file"></i>{L_FILES}</a>
 						<ul class="level-2">
 							<li><a href="{PATH_TO_ROOT}/admin/admin_files.php" title="{L_MANAGEMENT}"><i class="fa fa-fw fa-cog"></i>{L_MANAGEMENT}</a></li>
 							<li><a href="${relative_url(AdminFilesUrlBuilder::configuration())}" title="{L_CONFIGURATION}"><i class="fa fa-cogs"></i>{L_CONFIGURATION}</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="${relative_url(UserUrlBuilder::comments())}" title="{L_COMMENTS}"><i class="fa fa-fw fa-comment-o"></i>{L_COMMENTS}</a>
+						<a href="${relative_url(UserUrlBuilder::comments())}" title="{L_COMMENTS}"><i class="fa fa-fw fa-comment"></i>{L_COMMENTS}</a>
 						<ul class="level-2">
 							<li><a href="${relative_url(UserUrlBuilder::comments())}" title="{L_MANAGEMENT}"><i class="fa fa-fw fa-cog"></i>{L_MANAGEMENT}</a></li>
 							<li><a href="{PATH_TO_ROOT}/admin/content/?url=/comments/config/" title="{L_CONFIGURATION}"><i class="fa fa-fw fa-cogs"></i>{L_CONFIGURATION}</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="${relative_url(AdminSmileysUrlBuilder::management())}" title="{L_SMILEY}"><i class="fa fa-fw fa-smile-o"></i>{L_SMILEY}</a>
+						<a href="${relative_url(AdminSmileysUrlBuilder::management())}" title="{L_SMILEY}"><i class="fa fa-fw fa-smile"></i>{L_SMILEY}</a>
 						<ul class="level-2">
 							<li><a href="${relative_url(AdminSmileysUrlBuilder::management())}" title="{L_MANAGEMENT}"><i class="fa fa-fw fa-cog"></i>{L_MANAGEMENT}</a></li>
 							<li><a href="${relative_url(AdminSmileysUrlBuilder::add())}" title="{L_ADD}"><i class="fa fa-fw fa-plus"></i>{L_ADD}</a></li>
@@ -228,7 +228,7 @@
 						<ul class="level-2">
 							<li><a href="${relative_url(AdminModulesUrlBuilder::list_installed_modules())}" title="{L_MANAGEMENT}"><i class="fa fa-fw fa-cog"></i>{L_MANAGEMENT}</a></li>
 							<li><a href="${relative_url(AdminModulesUrlBuilder::add_module())}" title="{L_ADD}"><i class="fa fa-fw fa-plus"></i>{L_ADD}</a></li>
-							<li><a href="${relative_url(AdminModulesUrlBuilder::update_module())}" title="{L_UPDATES}"><i class="fa fa-fw fa-level-up"></i>{L_UPDATES}</a></li>
+							<li><a href="${relative_url(AdminModulesUrlBuilder::update_module())}" title="{L_UPDATES}"><i class="fa fa-fw fa-level-up-alt"></i>{L_UPDATES}</a></li>
 						</ul>
 					</li>
 					# IF C_ADMIN_LINKS_6 #

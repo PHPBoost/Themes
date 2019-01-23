@@ -13,7 +13,7 @@
 			<input type="text" name="${escape(NAME)}" id="${escape(HTML_ID)}" value="{VALUE}" class="form-control ${escape(CLASS)}"# IF C_DISABLED # disabled="disabled"# ENDIF ## IF C_READONLY # readonly="readonly"# ENDIF #/>
 			# IF C_AUTH_UPLOAD #
 			<div class="input-group-addon">
-				<a title="${LangLoader::get_message('files_management', 'main')}" href="" class="fa fa-cloud-upload" onclick="window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&amp;fd=${escape(NAME)}&amp;parse=true&amp;no_path=true', '', 'height=512,width=768,resizable=yes,scrollbars=yes');return false;"></a>
+				<a title="${LangLoader::get_message('files_management', 'main')}" href="" class="fa fa-cloud-upload-alt" onclick="window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&amp;fd=${escape(NAME)}&amp;parse=true&amp;no_path=true', '', 'height=512,width=768,resizable=yes,scrollbars=yes');return false;"></a>
 			</div>
 			# ENDIF #
 		</div>

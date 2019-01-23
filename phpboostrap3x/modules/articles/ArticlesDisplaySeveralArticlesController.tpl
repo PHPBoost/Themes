@@ -8,7 +8,7 @@
 						<i class="fa fa-edit"></i>
 					</a>
 					# ENDIF #
-					<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('articles', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i> </a>
+					<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('articles', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i> </a>
 				</div>
 			</div>
 		# ENDIF #
@@ -94,7 +94,7 @@
 										<a class="btn btn-info" href="{articles.U_EDIT_ARTICLE}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 									# ENDIF #
 									# IF articles.C_DELETE #
-										<a class="btn btn-danger" href="{articles.U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+										<a class="btn btn-danger" href="{articles.U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 									# ENDIF #
 								</div>
 
@@ -147,7 +147,7 @@
 									<a href="{articles.U_EDIT_ARTICLE}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-fw fa-edit"></i></a>
 								# ENDIF #
 								# IF articles.C_DELETE #
-									<a href="{articles.U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-fw fa-delete"></i></a>
+									<a href="{articles.U_DELETE_ARTICLE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-fw fa-trash-alt"></i></a>
 								# ENDIF #
 							</small>
 							<h3>

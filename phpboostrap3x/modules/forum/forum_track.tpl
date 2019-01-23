@@ -81,7 +81,7 @@
 									<input type="checkbox" id="d{topics.INCR}" name="d{topics.ID}">
 								</td>
 								<td class="forum-last-topic">
-									<a href={topics.LAST_MSG_URL} title="{topics.TITLE}"><i class="fa fa-hand-o-right"></i></a> ${LangLoader::get_message('on', 'main')} {topics.LAST_MSG_DATE_FULL}
+									<a href={topics.LAST_MSG_URL} title="{topics.TITLE}"><i class="fa fa-hand-point-right "></i></a> ${LangLoader::get_message('on', 'main')} {topics.LAST_MSG_DATE_FULL}
 									<br />
 									${LangLoader::get_message('by', 'main')}
 									# IF topics.C_LAST_MSG_GUEST #

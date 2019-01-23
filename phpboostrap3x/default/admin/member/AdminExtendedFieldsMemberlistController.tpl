@@ -105,7 +105,7 @@ jQuery(document).ready(function() {
 </script>
 # INCLUDE MSG #
 <form action="{REWRITED_SCRIPT}" method="post" onsubmit="ExtendedFields.serialize_sortable();">
-	<fieldset id="management_extended_fields">
+	<fieldset id="management_extended_fields col-sm-6">
 		<legend>{@fields.management}</legend>
 		<div class="fieldset-inset">
 			<ul id="lists" class="sortable-block">
@@ -125,7 +125,7 @@ jQuery(document).ready(function() {
 									# ENDIF #
 									<a class="btn btn-info" href="{list_extended_fields.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 									# IF NOT list_extended_fields.C_FREEZE #
-									<a class="btn btn-danger" href="" onclick="return false;" title="${LangLoader::get_message('delete', 'common')}" id="delete-{list_extended_fields.ID}"><i class="fa fa-delete"></i></a>
+									<a class="btn btn-danger" href="" onclick="return false;" title="${LangLoader::get_message('delete', 'common')}" id="delete-{list_extended_fields.ID}"><i class="fa fa-trash-alt"></i></a>
 									# ELSE #
 									&nbsp;
 									# ENDIF #

@@ -14,7 +14,7 @@
 					'<option value="{modules.ID}">{modules.ID}</option>' +
 					# END modules #
 					'</select> <input class="form-control filter-control" type="text" name="f' + new_id + '" id="f' + new_id + '" value="">' +
-					' <span class="input-group-btn"><a href="javascript:delete_filter(' + new_id + ');" class="btn btn-danger"><i class="fa fa-delete"></i></a></span></div>' +
+					' <span class="input-group-btn"><a href="javascript:delete_filter(' + new_id + ');" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a></span></div>' +
 					'<span id="add_filter' + new_id + '"></span>';
 			}
 			function delete_filter(id) {
@@ -46,7 +46,7 @@
 						<input type="text" name="f{filters.ID}" id="f{filters.ID}" class="form-control filter-control" value="{filters.FILTER}">
 						<span class="input-group-btn">
 							<a href="javascript:delete_filter({filters.ID});" class="btn btn-danger">
-								<i class="fa fa-delete"></i>
+								<i class="fa fa-trash-alt"></i>
 							</a>
 						</span>
 					</div>

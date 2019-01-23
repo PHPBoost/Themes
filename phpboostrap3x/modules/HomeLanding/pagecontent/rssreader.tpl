@@ -14,7 +14,7 @@
 			
 			<li>
 				<a href="{rssreader.LINK_FEED}" title="{rssreader.TITLE_FEED}" target="_blank">
-					<i class="fa fa-hand-o-right"></i> 
+					<i class="fa fa-hand-point-right "></i> 
 						{rssreader.TITLE_FEED}
 				</a> - <span class="small">{rssreader.DATE_FEED}</span>
 				<p>

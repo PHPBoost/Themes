@@ -16,7 +16,7 @@
 	<form action="{REWRITED_SCRIPT}" method="get" class="form-group">
 		<div class="input-group">
 			<span class="input-group-addon">
-				<i class="fa fa-picture-o"></i>
+				<i class="fa fa-image"></i>
 			</span>
 			<select class="form-control" name="switchtheme" onchange="document.location = '?switchtheme=' + this.options[this.selectedIndex].value;">
 			# START themes #

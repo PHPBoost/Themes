@@ -44,7 +44,7 @@
 									<a class="btn btn-info" href="{quotes.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 								# ENDIF #
 								# IF quotes.C_DELETE #
-									<a class="btn btn-danger" href="{quotes.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+									<a class="btn btn-danger" href="{quotes.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 								# ENDIF #
 							</div>
 						</div>

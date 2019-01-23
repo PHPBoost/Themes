@@ -26,7 +26,7 @@
 								<i class="fa fa-fw fa-edit"></i>
 							</a>
 							<a href="{comments.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" class="btn btn-danger" data-confirmation="delete-element">
-								<i class="fa fa-fw fa-delete"></i>
+								<i class="fa fa-fw fa-trash-alt"></i>
 							</a>
 						</div>
 					</div>

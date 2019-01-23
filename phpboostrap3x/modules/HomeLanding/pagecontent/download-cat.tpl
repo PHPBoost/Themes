@@ -31,7 +31,7 @@
 				</h4>
 				<div class="well well-sm">
 					<i class="fa fa-user"></i> # IF item.C_AUTHOR_EXIST #<a itemprop="author" rel="author" class="{item.USER_LEVEL_CLASS}" href="{item.U_AUTHOR_PROFILE}"# IF item.C_USER_GROUP_COLOR # style="{item.USER_GROUP_COLOR}"# ENDIF #>{item.PSEUDO}</a># ELSE #{item.PSEUDO}# ENDIF # -
-					<i class="fa fa-clock-o"></i> {item.DATE} - <i class="fa fa-download"></i> {item.NUMBER_DOWNLOADS}
+					<i class="fa fa-clock"></i> {item.DATE} - <i class="fa fa-download"></i> {item.NUMBER_DOWNLOADS}
 				</div>
 				<p>
 					<div itemprop="text"># IF item.C_DESCRIPTION #{item.DESCRIPTION}# ELSE #{item.CONTENTS}# ENDIF ## IF item.C_READ_MORE #... <a href="{item.U_LINK}">[${LangLoader::get_message('read-more', 'common')}]</a># ENDIF #</div>

@@ -2,7 +2,7 @@
 <section id="module-bugtracker" class="row">
 	<header>
 		<h1>
-			# IF C_SYNDICATION #<a href="# IF C_UNSOLVED #{U_SYNDICATION_UNSOLVED}# ELSE #{U_SYNDICATION_SOLVED}# ENDIF #" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a># ENDIF #
+			# IF C_SYNDICATION #<a href="# IF C_UNSOLVED #{U_SYNDICATION_UNSOLVED}# ELSE #{U_SYNDICATION_SOLVED}# ENDIF #" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i></a># ENDIF #
 			{TITLE}
 		</h1>
 	</header>

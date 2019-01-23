@@ -199,7 +199,7 @@
 											<i class="fa fa-edit"></i>
 										</a>
 										<a href="pm.php?del={pm.msg.ID}&amp;token={TOKEN}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element">
-											<i class="fa fa-delete"></i>
+											<i class="fa fa-trash-alt"></i>
 										</a>
 										# ENDIF #
 									</div>

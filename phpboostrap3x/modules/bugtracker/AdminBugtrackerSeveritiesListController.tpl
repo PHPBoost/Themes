@@ -34,7 +34,7 @@
 	<tfoot>
 	<tr>
 		<td colspan="3">
-			<a href="{LINK_DELETE_DEFAULT}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i> {@labels.del_default_value}</a>
+			<a href="{LINK_DELETE_DEFAULT}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i> {@labels.del_default_value}</a>
 		</td>
 	</tr>
 	</tfoot>

@@ -160,7 +160,7 @@
 				{
 					if( xhr_object.responseText > 0 )
 					{
-						document.getElementById('new-folder' + divid).innerHTML = '<div class="panel panel-pbt"><div class="panel-heading form-group"><span id="f' + xhr_object.responseText + '"><a href="upload.php?f=' + xhr_object.responseText + '{POPUP}">' + name + '</a></span></div><div class="panel-body text-center"><a href="upload.php?f=' + xhr_object.responseText + '{POPUP}"><i class="fa fa-folder fa-2x"></i></a></div><ul class="list-group"><li class="list-group-item"><span id="fhref' + xhr_object.responseText + '"><a href="javascript:display_rename_folder(\'' + xhr_object.responseText + '\', \'' + name.replace(/\'/g, "\\\'") + '\', \'' + name.replace(/\'/g, "\\\'") + '\');" class="fa fa-edit"></a></span>&nbsp;<span><a href="upload.php?delf=' + xhr_object.responseText + '&amp;f={FOLDER_ID}&amp;token={TOKEN}{POPUP}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a></span>&nbsp;<span><a href="upload.php?movefd=' + xhr_object.responseText + '&amp;f={FOLDER_ID}{POPUP}" title="{L_MOVETO}" class="fa fa-move"></a></span><span id="img' + xhr_object.responseText + '"></span></li></ul></div>';
+						document.getElementById('new-folder' + divid).innerHTML = '<div class="panel panel-pbt"><div class="panel-heading form-group"><span id="f' + xhr_object.responseText + '"><a href="upload.php?f=' + xhr_object.responseText + '{POPUP}">' + name + '</a></span></div><div class="panel-body text-center"><a href="upload.php?f=' + xhr_object.responseText + '{POPUP}"><i class="fa fa-folder fa-2x"></i></a></div><ul class="list-group"><li class="list-group-item"><span id="fhref' + xhr_object.responseText + '"><a href="javascript:display_rename_folder(\'' + xhr_object.responseText + '\', \'' + name.replace(/\'/g, "\\\'") + '\', \'' + name.replace(/\'/g, "\\\'") + '\');" class="fa fa-edit"></a></span>&nbsp;<span><a href="upload.php?delf=' + xhr_object.responseText + '&amp;f={FOLDER_ID}&amp;token={TOKEN}{POPUP}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a></span>&nbsp;<span><a href="upload.php?movefd=' + xhr_object.responseText + '&amp;f={FOLDER_ID}{POPUP}" title="{L_MOVETO}" class="fa fa-move"></a></span><span id="img' + xhr_object.responseText + '"></span></li></ul></div>';
 						var total_folder = document.getElementById('total-folder').innerHTML;
 						total_folder++;
 						document.getElementById('total-folder').innerHTML = total_folder;
@@ -306,7 +306,7 @@
 	-->
 	</script>
 
-	<section id="module-user-upload" class="col-sm-12">
+	<section id="module-user-upload" class="row">
 		<header>
 			<h1>{L_FILES_ACTION}</h1>
 		</header>
@@ -370,7 +370,7 @@
 										<li class="list-group-item">
 											{folder.RENAME_FOLDER}
 											<span>
-												<a href="upload.php?delf={folder.ID}&amp;f={FOLDER_ID}&amp;token={TOKEN}{POPUP}" title="{folder.L_TYPE_DEL_FOLDER}"  class="fa fa-delete" data-confirmation="delete-element"></a>
+												<a href="upload.php?delf={folder.ID}&amp;f={FOLDER_ID}&amp;token={TOKEN}{POPUP}" title="{folder.L_TYPE_DEL_FOLDER}"  class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 											</span>
 											<span>
 												<a href="upload{folder.U_MOVE}" title="{L_MOVETO}" class="fa fa-move"></a>
@@ -411,7 +411,7 @@
 										<div class="btn-group btn-group-xs">
 											<span class="btn btn-info">{files.RENAME_FILE}</span>
 											<a href="upload.php?del={files.ID}&amp;f={FOLDER_ID}&amp;token={TOKEN}{POPUP}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element">
-												<i class="fa fa-delete"></i>
+												<i class="fa fa-trash-alt"></i>
 											</a>
 											<a href="upload{files.U_MOVE}" title="{L_MOVETO}" class="btn btn-info">
 												<i class="fa fa-move"></i>

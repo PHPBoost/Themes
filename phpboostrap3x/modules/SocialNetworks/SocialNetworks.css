@@ -1,0 +1,179 @@
+/* -- Sharing Elements -- */
+/* -------------------- */
+.more-element-sharing {
+	position: relative;
+	margin: 0.309em 0 0 0;
+	padding: 0;
+}
+
+@media (min-width: 769px) {
+	.more-element-sharing {
+		margin: 1.309em 0 0.309em 0;
+	}
+}
+
+.sharing-button {
+	display: none;
+}
+
+.sharing-elements-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+@media (min-width: 769px) {
+	.sharing-elements-list {
+		justify-content: flex-start;
+		-ms-flex-pack: flex-start;
+		-webkit-justify-content: flex-start;
+	}
+}
+
+.sharing-element {
+	flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+}
+
+@media (min-width: 769px) {
+	.sharing-element {
+		margin: 0 0.309em 0.309em 0;
+	}
+}
+
+.sharing-element a {
+	display: block;
+	padding: 0.618em 1.228em;
+	display: block;
+	margin: 0 0.1em 0.309em 0;
+}
+
+/* -- Social Connect -- */
+/* -------------------- */
+a.social-connect {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.309em;
+	text-align: center;
+	font-size: 0.618em;
+}
+
+@media (max-width: 468px) {
+	a.social-connect.login-page {
+		display: block;
+	}
+}
+
+a.social-connect.login-page {
+	margin: 0.809em 0;
+}
+
+.horizontal-fieldset a.social-connect {
+	margin: 0;
+	vertical-align: middle;
+}
+
+a.social-connect i:before {
+	transition: 0.2s ease-out;
+}
+
+a.social-connect:hover i:before {
+	transition: 0.2s ease-out;
+}
+
+span.social-connect i:before { font-size: 1.618em; }
+span.social-connect { padding: 1em 1.618em; }
+
+a.social-connect i:before { font-size: 1.618em; }
+
+a.social-connect { padding: 1em 1.618em; }
+
+a.social-connect span {
+	display: none;
+}
+
+.social-connect { color: #DEDEDE; }
+
+.social-connect i:before       { color: #DFDFDF; }
+.social-connect:hover i:before { color: #EFEFEF; }
+
+/* -- Social Share -- */
+/* ------------------ */
+.social-element > a {
+	color: #FFFFFF;
+}
+
+/* -- Color Social network -- */
+/* -------------------------- */
+.blogger    { background-color: #f57d00; }
+.discord    { background-color: #7289DA; }
+.facebook   { background-color: #3b5998; }
+.flickr     { background-color: #f40083; }
+.github     { background-color: #24292E; }
+.googleplus { background-color: #DD4b39; }
+.google     { background-color: #4285f4; }
+.instagram  { background-color: #c32aa3; }
+.line       { background-color: #00b900; }
+.linkedin   { background-color: #0077B5; }
+.pinterest  { background-color: #BD081C; }
+.reddit     { background-color: #FF4500; }
+.skype      { background-color: #00AFF0; }
+.slack      { background-color: #4d394b; }
+.snapchat   { background-color: #FFFC00; }
+.soundcloud { background-color: #FF8800; }
+.spotify    { background-color: #1ed760; }
+.steam      { background-color: #171A21; }
+.telegram   { background-color: #0088CC; }
+.tumblr     { background-color: #35465d; }
+.twitch     { background-color: #6441A4; }
+.twitter    { background-color: #1da1f2; }
+.viadeo     { background-color: #f07355; }
+.viber      { background-color: #675CA8; }
+.wechat     { background-color: #7BB32E; }
+.whatsapp   { background-color: #25D366; }
+.yahoo      { background-color: #430297; }
+.youtube    { background-color: #ff0000; }
+.mail    	{ background-color: #563D7C; }
+.print    	{ background-color: #563D7C; }
+
+
+/* -- Configuration -- */
+/* -------------------------- */
+.social-networks-list-container .sortable-title { padding: 8px 0.309em 12px 10px; }
+.social-networks-list-container .sortable-title > span {
+	font-size: .6em;
+	font-weight: normal;
+}
+
+.social-networks-menu {
+	font-size: 1.228em;
+	margin-bottom: 1.618em;
+	vertical-align: top;
+}
+
+@media (min-width: 769px) {
+	.social-networks-menu {
+		width: calc(99%/2);
+		display: inline-block;
+		padding-right: 2.618em;
+	}
+}
+
+.social-networks-menu:first-child {  }
+/* --- Mini Module
+--------------------------------- */
+#module-mini-social-networks {}

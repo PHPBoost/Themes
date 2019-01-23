@@ -7,7 +7,7 @@
 				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="wiki-module-actionslinks">
 					# IF C_ACTIV_COM #
 						<li>
-							<a href="{U_COM}"><i class="fa fa-comments-o"></i> {L_COM}</a>
+							<a href="{U_COM}"><i class="fa fa-comments"></i> {L_COM}</a>
 						</li>
 					# ENDIF #
 					<li>
@@ -39,7 +39,7 @@
 						# IF C_DELETE #
 						<li>
 							<a href="{U_DELETE}" title="{L_DELETE}" data-confirmation="delete-element">
-								<i class="fa fa-delete"></i> {L_DELETE}
+								<i class="fa fa-trash-alt"></i> {L_DELETE}
 							</a>
 						</li>
 						# ENDIF #

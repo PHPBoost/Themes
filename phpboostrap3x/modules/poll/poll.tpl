@@ -47,7 +47,7 @@
 								<i class="fa fa-edit"></i>
 							</a>
 							<a href="{PATH_TO_ROOT}/poll/admin_poll.php?delete=1&amp;id={IDPOLL}&amp;token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="btn btn-danger" data-confirmation="delete-element">
-								<i class="fa fa-delete"></i>
+								<i class="fa fa-trash-alt"></i>
 							</a>
 						</div>
 					</div>
@@ -129,7 +129,7 @@
 									<i class="fa fa-edit"></i>
 								</a>
 								<a href="{PATH_TO_ROOT}/poll/admin_poll.php?delete=1&amp;id={list.ID}&amp;token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="btn btn-danger" data-confirmation="delete-element">
-									<i class="fa fa-delete"></i>
+									<i class="fa fa-trash-alt"></i>
 								</a>
 							</div>
 						</div>

@@ -71,7 +71,7 @@ function addSubElement(menu_element_id) {
 	jQuery('<div/>', {id : 'menu_element_' + id + '_actions', class : 'input-group-btn'}).appendTo('#input_group_' + id);
 	jQuery('<a/>', {class : 'btn btn-info', id : 'menu_element_' + id + '_more_image', title : {JL_MORE}, onclick: 'toggleProperties(' + id + ');return false;'}).html('<i class="fa fa-cog"></i>').appendTo('#menu_element_' + id + '_actions');
 	jQuery('#menu_element_' + id + '_actions').append(' ');
-	jQuery('<a/>', {class : 'btn btn-danger', id : 'menu_element_' + id + '_delete_image', title : {JL_DELETE}, onclick: 'deleteElement(\'menu_element_' + id + '\');return false;'}).html('<i class="fa fa-delete"></i>').appendTo('#menu_element_' + id + '_actions');
+	jQuery('<a/>', {class : 'btn btn-danger', id : 'menu_element_' + id + '_delete_image', title : {JL_DELETE}, onclick: 'deleteElement(\'menu_element_' + id + '\');return false;'}).html('<i class="fa fa-trash-alt"></i>').appendTo('#menu_element_' + id + '_actions');
 
 	jQuery('<span/>', {id : 'menu_element_' + id + '_image_preview_span', class : 'preview'}).appendTo('#menu_title_' + id);
 	jQuery('<img/>', {id : 'menu_element_' + id + '_image_preview'}).appendTo('#menu_element_' + id + '_image_preview_span');
@@ -113,7 +113,7 @@ function addSubMenu(menu_element_id) {
 	jQuery('<div/>', {id : 'menu_element_' + id + '_actions', class : 'input-group-btn'}).appendTo('#input_group_' + id);
 	jQuery('<a/>', {class : 'btn btn-info', id : 'menu_element_' + id + '_more_image', title : {JL_MORE}, onclick: 'toggleProperties(' + id + ');return false;'}).html('<i class="fa fa-cog"></i>').appendTo('#menu_element_' + id + '_actions');
 	jQuery('#menu_element_' + id + '_actions').append(' ');
-	jQuery('<a/>', {class : 'btn btn-danger', id : 'menu_element_' + id + '_delete_image', title : {JL_DELETE}, onclick: 'deleteElement(\'menu_element_' + id + '\');return false;'}).html('<i class="fa fa-delete"></i>').appendTo('#menu_element_' + id + '_actions');
+	jQuery('<a/>', {class : 'btn btn-danger', id : 'menu_element_' + id + '_delete_image', title : {JL_DELETE}, onclick: 'deleteElement(\'menu_element_' + id + '\');return false;'}).html('<i class="fa fa-trash-alt"></i>').appendTo('#menu_element_' + id + '_actions');
 
 	jQuery('<span/>', {id : 'menu_element_' + id + '_image_preview_span', class : 'preview'}).appendTo('#menu_title_' + id);
 	jQuery('<img/>', {id : 'menu_element_' + id + '_image_preview'}).appendTo('#menu_element_' + id + '_image_preview_span');

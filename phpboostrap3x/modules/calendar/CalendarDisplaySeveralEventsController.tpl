@@ -3,7 +3,7 @@
 <section id="module-calendar">
 	<header>
 		<div class="pull-right text-right">
-			<a class="btn btn-warning btn-xs" href="${relative_url(SyndicationUrlBuilder::rss('calendar'))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
+			<a class="btn btn-warning btn-xs" href="${relative_url(SyndicationUrlBuilder::rss('calendar'))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i></a>
 		</div>
 		<h1>
 			{@module_title}

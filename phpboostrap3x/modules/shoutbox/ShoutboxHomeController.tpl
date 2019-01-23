@@ -30,11 +30,11 @@
 								<a class="btn btn-info" href="{messages.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 								# ENDIF #
 								# IF messages.C_DELETE #
-								<a class="btn btn-danger" href="{messages.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+								<a class="btn btn-danger" href="{messages.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 								# ENDIF #
 							</div>
 							<div class="btn-group btn-group-xs">
-								<a class="btn btn-info" href="{messages.U_ANCHOR}"><i class="fa fa-hand-o-right"></i></a>
+								<a class="btn btn-info" href="{messages.U_ANCHOR}"><i class="fa fa-hand-point-right "></i></a>
 								<span class="btn btn-default">
 									${LangLoader::get_message('the', 'common')} {messages.DATE}
 								</span>

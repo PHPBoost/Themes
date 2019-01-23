@@ -19,8 +19,8 @@
 					</div>
 					<div class="col-sm-8">
 						<div class="btn-group btn-group-xs">
-							<span class="btn btn-default"><i class="fa fa-clock-o"></i> {forum_items.DATE}</span>
-							<span class="btn btn-info"><i class="fa fa-file-o"></i> <a href="{forum_items.U_MESSAGE}">{forum_items.MESSAGE}</a></span>
+							<span class="btn btn-default"><i class="fa fa-clock"></i> {forum_items.DATE}</span>
+							<span class="btn btn-info"><i class="fa fa-file"></i> <a href="{forum_items.U_MESSAGE}">{forum_items.MESSAGE}</a></span>
 						</div>
 					</div>
 				</div>

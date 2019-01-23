@@ -62,7 +62,7 @@ function toggle_filters_table() {
 			# IF C_SAVED_FILTERS #
 			# START filters #
 			<p id="filter{filters.ID}">
-				<a href="" title="${LangLoader::get_message('delete', 'common')}" onclick="delete_filter('{filters.ID}'); return false;"><i class="fa fa-delete"></i></a> <a href="{filters.LINK_FILTER}">{filters.FILTER}</a>
+				<a href="" title="${LangLoader::get_message('delete', 'common')}" onclick="delete_filter('{filters.ID}'); return false;"><i class="fa fa-trash-alt"></i></a> <a href="{filters.LINK_FILTER}">{filters.FILTER}</a>
 			</p>
 			# END filters #
 			# ENDIF #

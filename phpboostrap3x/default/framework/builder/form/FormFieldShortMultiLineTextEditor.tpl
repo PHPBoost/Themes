@@ -1,4 +1,4 @@
-<div id="${escape(HTML_ID)}_field" class="form-element# IF C_REQUIRED_AND_HAS_VALUE # constraint-status-right# ENDIF #"# IF C_HIDDEN # style="display:none;"# ENDIF #>
+<div id="${escape(HTML_ID)}_field" class="col-sm-12 form-element# IF C_REQUIRED_AND_HAS_VALUE # constraint-status-right# ENDIF #"# IF C_HIDDEN # style="display:none;"# ENDIF #>
 	<label class="control-label" for="${escape(HTML_ID)}">
 		{LABEL}
 		# IF C_DESCRIPTION #<small class="help-block">{DESCRIPTION}</small># ENDIF #

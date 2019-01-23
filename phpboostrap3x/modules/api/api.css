@@ -1,0 +1,1117 @@
+/* --- PHPBoost
+------------------------------------------------------------------------------*/
+.code {height: auto;}
+
+.content {
+	text-align: left;
+}
+
+.numbers, .code {
+	font-size: 0.809em
+}
+
+#inside-global {
+	clear: both;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+#inside-main       {
+	order : 1;
+	-ms-flex-order: 1;
+	-webkit-flex-order: 1;
+}
+
+#inside-menu-left  {
+	order : 2;
+	-ms-flex-order: 2;
+	-webkit-flex-order: 2;
+}
+
+#inside-menu-right {
+	order : 3;
+	-ms-flex-order: 3;
+	-webkit-flex-order: 3;
+}
+
+@media (min-width: 769px) {
+	#inside-global {
+		flex-direction: row;
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	#inside-menu-left  {
+		order : 1;
+		-ms-flex-order: 1;
+		-webkit-flex-order: 1;
+	}
+
+	#inside-menu-right {
+		order : 3;
+		-ms-flex-order: 3;
+		-webkit-flex-order: 3;
+	}
+
+	#inside-main {
+		order : 2;
+		-ms-flex-order: 2;
+		-webkit-flex-order: 2;
+		flex: 1 0 auto;
+		-ms-flex: 1 0 100%;
+	}
+
+	#inside-main.main-with-left,
+	#inside-main.main-with-right,
+	#inside-main.main-with-left.main-with-right { -ms-flex: 1 0 auto; }
+}
+
+#inside-main {
+	width: 100%;
+}
+
+#inside-menu-left,
+#inside-menu-right {
+	width: 100%;
+}
+
+@media (min-width: 769px) {
+
+	#inside-menu-left { margin-right: 1.618em; }
+	#inside-menu-right { margin-left: 1.618em; }
+
+	#inside-menu-left,
+	#inside-menu-right {
+		width: calc(100% / 13 * 3.5);
+	}
+
+	#inside-menu-left.narrow-menu-left { margin-right: 0.809em; }
+	#inside-menu-right.narrow-menu-right { margin-left: 0.809em; }
+
+	#inside-menu-left.narrow-menu-left,
+	#inside-menu-right.narrow-menu-right {
+		width: calc(100% / 13 * 2.5);
+	}
+
+	#inside-main { padding: 0 0 1.618em; }
+
+	#inside-main.main-with-left,
+	#inside-main.main-with-right {
+		width: calc(100% - ((100% / 13 * 5)));
+	}
+
+	#inside-main.main-with-left.main-with-right {
+		width: calc(100% - ((100% / 13 * 8)));
+	}
+}
+
+#inside-breadcrumb {
+	padding: 0.618em;
+	font-size: 0.809em;
+}
+
+#inside-breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+#inside-breadcrumb li {
+	display: inline;
+}
+
+#inside-breadcrumb li:not(.current):after {
+	content: '/';
+}
+
+/* --- PHPBoost + Apigen
+------------------------------------------------------------------------------*/
+#inside-search {text-align: right;}
+
+.active .cssmenu-title { background-color: rgba(54, 100, 147, 0.2)}
+
+.responsive-table,
+.code-capsule {
+	clear: both;
+	overflow: hidden;
+	overflow-x: auto;
+}
+
+table caption {
+	margin: 0.809em 0 0;
+	padding: 0.228em 0.809em;
+	border-width: 1px;
+	background-color: rgba(54, 100, 147, 0.2);
+	font-size: 1.8em;
+	position: relative;
+}
+
+table caption.switchable:after {
+	position: absolute;
+	content: '\003c   \003e';
+	top: 50%;
+	right: 0.1618em;
+	transform: translateY(-50%) rotate(90deg);
+	cursor: pointer;
+}
+
+.ellipsis p {
+	max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis p { margin: 0; }
+
+/* --- Apigen
+------------------------------------------------------------------------------*/
+var {
+	font-weight: bold;
+	font-style: normal;
+	color: #ca8a04;
+}
+
+pre {
+	margin: 0;
+}
+
+code a b {
+	color: #000000;
+}
+
+.deprecated {
+	text-decoration: line-through;
+	opacity: .5;
+	color: #e71818;
+}
+
+.invalid {
+	color: #e71818;
+}
+
+.hidden {
+	display: none;
+}
+
+#inside-menu-left #groups span:hover {
+	background-position: -12px 0;
+}
+
+#inside-menu-left #groups span.collapsed {
+	background-position: 0 -12px;
+}
+
+#inside-menu-left #groups span.collapsed:hover {
+	background-position: -12px -12px;
+}
+
+#inside-menu-left #groups ul.collapsed {
+	display: none;
+}
+
+/* Right side */
+#right {
+	overflow: auto;
+	margin-left: 275px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	right: 0;
+}
+
+#rightInner {
+	max-width: 1000px;
+	min-width: 350px;
+}
+
+/* Search */
+#search {
+	float: right;
+	margin: 3px 8px;
+}
+
+#search input.text {
+	padding: 3px 5px;
+	width: 250px;
+}
+
+/* Autocomplete */
+.ac_results {
+	padding: 0;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	font: 12px 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+	line-height: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.ac_results li strong {
+	color: #000000;
+}
+
+.ac_odd {
+	background-color: #eeeeee;
+}
+
+.ac_over {
+	background-color: #006aeb;
+	color: #ffffff;
+}
+
+.ac_results li.ac_over strong {
+	color: #ffffff;
+}
+
+/* Navigation */
+#navigation {
+	padding: 3px 8px;
+	background-color: #f6f6f4;
+	height: 26px;
+}
+
+#navigation ul {
+	list-style: none;
+	margin: 0 8px 4px 0;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+}
+
+#navigation ul + ul {
+	border-left: 1px solid #000000;
+	padding-left: 8px;
+}
+
+#navigation ul li {
+	float: left;
+	margin: 2px;
+	padding: 0 3px;
+	font-family: Verdana, 'Geneva CE', lucida, sans-serif;
+	color: #808080;
+}
+
+#navigation ul li.active {
+	background-color: #053368;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#navigation ul li a {
+	color: #000000;
+	font-weight: bold;
+	padding: 0;
+}
+
+#navigation ul li span {
+	float: left;
+	padding: 0 3px;
+}
+
+#navigation ul li a:hover span, #navigation ul li a:active span, #navigation ul li a:focus span {
+	background-color: #006aeb;
+}
+
+/* Content */
+.content {
+	clear: both;
+	padding: 5px 15px;
+}
+
+.description pre {
+	padding: .6em;
+	background: #fcfcf7;
+}
+
+.infos-options b {
+	width: 80px;
+	display: inline-block;
+	font-weight: 600;
+}
+
+@media (min-width: 769px) {
+	.content > .infos {
+		max-width: 50%;
+	}
+}
+
+
+.content > .description {
+	padding: 1px 8px;
+	margin: 0 0 1.2em 0;
+}
+
+.content > .description pre {
+	margin: .5em 0;
+}
+
+dl.tree {
+	margin: 1.2em 0;
+}
+
+dl.tree dd {
+	margin: 0;
+	padding: 0;
+}
+
+.summary td:first-child,
+table tbody td {
+	text-align: left;
+}
+
+.summary td hr {
+	margin: 3px -10px;
+}
+
+#packages.summary td:first-child, #namespaces.summary td:first-child, .inherited.summary td:first-child, .used.summary td:first-child {
+	text-align: left;
+}
+
+.summary .description pre {
+	border: .5em solid #ecede5;
+}
+
+.summary .description p {
+	margin: 0;
+}
+
+.summary .description p + p, .summary .description ul {
+	margin: 3px 0 0 0;
+}
+
+.summary .description.detailed h4 {
+	margin-top: 3px;
+}
+
+.summary dl {
+	margin: 0;
+}
+
+.summary dd {
+	margin: 0 0 0 25px;
+}
+
+.name, .attributes {
+	white-space: nowrap;
+}
+
+.value code {
+	white-space: pre-wrap;
+}
+
+td.name, td.attributes {
+	width: 1%;
+}
+
+td.attributes {
+	width: 1%;
+}
+
+.class .methods .name, .class .properties .name, .class .constants .name {
+	width: auto;
+	white-space: normal;
+}
+
+.class .methods .name > div > code span, .function .value > code {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.class .methods td.name > div, .class td.value > div {
+	position: relative;
+	padding-right: 1em;
+}
+
+.anchor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+}
+
+.list {
+	margin: 0 0 5px 25px;
+}
+
+div.invalid {
+	padding: 10px;
+}
+
+/* Footer */
+#apigen-footer {
+	clear: both;
+	text-align: center;
+	padding: 20px 0 0;
+	margin: 3em 0 0;
+	height: 90px;
+}
+
+/* Tree */
+div.tree ul {
+	list-style: none;
+	background: url('../framework/resources/tree-vertical.png') left repeat-y;
+	padding: 0;
+	margin-left: 20px;
+}
+
+div.tree li {
+	margin: 0;
+	padding: 0;
+}
+
+div.tree div {
+	padding-left: 30px;
+}
+
+div.tree div.notlast {
+	background: url('../framework/resources/tree-hasnext.png') left 10px no-repeat;
+}
+
+div.tree div.last {
+	background: url('../framework/resources/tree-last.png') left -240px no-repeat;
+}
+
+div.tree li.last {
+	background: url('../framework/resources/tree-cleaner.png') left center repeat-y;
+}
+
+div.tree span.padding {
+	padding-left: 15px;
+}
+
+/* Source code */
+.php-keyword1 {
+	color: #e71818;
+	font-weight: bold;
+}
+
+.php-keyword2 {
+	font-weight: bold;
+}
+
+.php-var {
+	color: #d59401;
+	font-weight: bold;
+}
+
+.php-num {
+	color: #cd0673;
+}
+
+.php-quote {
+	color: #008000;
+}
+
+.php-comment {
+	color: #929292;
+}
+
+.xlang {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+pre.numbers {
+	float: left;
+}
+
+span.l {
+	display: block;
+	white-space: pre;
+}
+
+span.l.selected {
+	background: #f6f6f4;
+}
+
+span.l a {
+	color: #333333;
+}
+
+span.l a:hover, div.l a:active, div.l a:focus {
+	background: transparent;
+	color: #333333 !important;
+}
+
+span.l .php-var a {
+	color: #d59401;
+}
+
+span.l .php-var a:hover, span.l .php-var a:active, span.l .php-var a:focus {
+	color: #d59401 !important;
+}
+
+span.l a.l {
+	padding-left: 2px;
+	color: #c0c0c0;
+}
+
+span.l a.l:hover, span.l a.l:active, span.l a.l:focus {
+	background: transparent;
+	color: #c0c0c0 !important;
+}
+
+#rightInner.medium #navigation {
+	height: 52px;
+}
+
+#rightInner.medium #navigation ul:first-child + ul {
+	clear: left;
+	border: none;
+	padding: 0;
+}
+
+#rightInner.medium .name, #rightInner.medium .attributes {
+	white-space: normal;
+}
+
+#rightInner.small #search {
+	float: left;
+}
+
+#rightInner.small #navigation {
+	height: 78px;
+}
+
+#rightInner.small #navigation ul:first-child {
+	clear: both;
+}
+
+/* --------------------------------------
+		cssmenu.css
+Contient les elements associes aux menus
+-------------------------------------- */
+
+/* --- Module-mini --- */
+/* ------------------- */
+.cssmenu-content .module-mini-contents {
+	padding: 0;
+}
+
+
+/* -- Classes generales cssmenu -- */
+/* ------------------------------- */
+.cssmenu {
+	font-size: 0;
+}
+
+.cssmenu,
+.cssmenu ul,
+.cssmenu li {
+	position: relative;
+	margin: 0;
+	list-style: none;
+	line-height: normal;
+	left: auto;
+	display: block;
+}
+
+.cssmenu:after,
+.cssmenu > ul:after {
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: "";
+	line-height: 0;
+	clear: both;
+}
+
+.cssmenu-img {
+	display: none;
+}
+
+@media (min-width: 769px) {
+	.cssmenu-img {
+		display: inline-block;
+		margin-left: 1.309rem;
+	}
+
+	.cssmenu .menu-with-img {
+		display: inline-block;
+	}
+
+	.module-mini-top img {
+		margin: 0 0.309em 0 0;
+	}
+}
+
+.cssmenu li:hover > .cssmenu-title {
+	text-decoration: none;
+}
+
+.cssmenu-title {
+	padding: 0.456em 1.618em 0.456em 0.618em;
+	font-size: 1.482rem;
+	white-space: normal;
+	font-weight: 400;
+	text-align: left;
+	display: block;
+}
+
+@media (min-width: 769px) {
+	.cssmenu-title {
+		white-space: nowrap;
+	}
+	.cssmenu-vertical > ul > li > .cssmenu-title {
+		white-space: normal;
+	}
+}
+
+.cssmenu-title img {
+	display: inline-block;
+	margin-right: 0.1618em;
+}
+
+
+/* -- Classes Items -- */
+/* --------------------*/
+.cssmenu-horizontal > ul > li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cssmenu-vertical li,
+.cssmenu-actionslinks li {
+	display: block;
+}
+
+/* --- Indicateur de sous menu --- */
+.cssmenu-horizontal > ul > li >.cssmenu-title {
+	padding: 0.618em 1.618em 0.618em 0.618em;
+}
+
+.cssmenu-right li.has-sub > .cssmenu-title {
+	padding-left: 1.618em;
+}
+
+.cssmenu ul li.has-sub > .cssmenu-title:after,
+.cssmenu-right ul li.has-sub > .cssmenu-title:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1rem;
+	top: 50%;
+	transform: translateY(-40%);
+}
+
+.cssmenu ul li.has-sub > .cssmenu-title:after {
+	right: 1em;
+	content: '\f067';
+	transition: 0.2s;
+}
+
+.cssmenu-right ul li.has-sub > .cssmenu-title:after {
+	content: '';
+}
+
+.cssmenu-right ul li.has-sub > .cssmenu-title:before {
+	left: 1em;
+	content: '\f067';
+}
+
+.cssmenu ul li.has-sub:hover > .cssmenu-title:after {
+	content: '\f068';
+	transition: 0.2s;
+}
+
+.cssmenu-right ul li.has-sub:hover > .cssmenu-title:after {
+	content: '';
+}
+
+.cssmenu-right ul li.has-sub:hover > .cssmenu-title:before {
+	content: '\f068';
+}
+
+/* --- Position des sous menu --- */
+.cssmenu ul ul {
+	position: absolute;
+	left: -9999px;
+	z-index: 10;
+}
+
+.cssmenu li:hover > ul                      { left: auto ;            }
+.cssmenu-horizontal li:hover > ul           { left: 0;     top: 100%; }
+.cssmenu-horizontal ul ul li:hover > ul,
+.cssmenu-left li:hover > ul                 { left: 100% ; top: 0;    }
+.cssmenu-right li:hover > ul                { right: 100%; top: 0;    }
+.cssmenu-left.cssmenu-static li:hover > ul  { left: 0;     top: 0;    }
+.cssmenu-right.cssmenu-static li:hover > ul { right: 0;    top: 0;    }
+.cssmenu-actionslinks li:hover > ul         { right: 0;    top: 100%; }
+.cssmenu-actionslinks ul li:hover > ul      { right: 100%; top: 0;    }
+.cssmenu ul ul ul                           {              top: 0;    }
+
+.small-screen li:hover > ul                 { left: 0;                }
+.cssmenu-right.small-screen li:hover > ul   { right: 0;               }
+.cssmenu-left.small-screen li:hover > ul    { left: 0;                }
+
+/* --- Decommenter pour déplier le dernier item de rang 1 vers la gauche pour un menu horizontal --- */
+/*
+.cssmenu-horizontal > ul > li:hover:last-child > ul {
+	left: auto;
+	right: 0;
+}
+
+.cssmenu-horizontal > ul > li:hover:last-child > ul li:hover > ul {
+	left: auto;
+	right: 100%;
+}
+*/
+
+/* -- Small screens - change the viewprot limit in /templates/default/framework/menus/link.tpl -- */
+/* ---------------------------------------------------------------------------------------------- */
+.small-screen,
+.small-screen ul,
+.small-screen ul li {
+	display: block;
+	width: 100%;
+}
+
+.cssmenu-actionslinks.small-screen ul {
+	top: 100%;
+}
+
+.cssmenu.small-screen ul ul,
+.small-screen ul ul ul {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	border: none;
+}
+
+.cssmenu.small-screen ul ul,
+.small-screen ul ul ul,
+.cssmenu-vertical.small-screen .cssmenu-title {
+	text-align: left;
+}
+
+.cssmenu-horizontal.small-screen ul ul li:hover > ul,
+.cssmenu-left.small-screen li:hover > ul {
+    top: 0;
+	left: 0;
+}
+
+.close {
+	left: -9999px !important;
+	height: 0;
+	overflow: hidden;
+}
+
+.small-screen ul li .cssmenu-title,
+.small-screen ul ul li .cssmenu-title,
+.cssmenu-actionslinks.small-screen ul li .cssmenu-title {
+	padding: 0.309em 0.618em;
+	width: 100%;
+}
+
+.small-screen ul ul li .cssmenu-title  {
+	padding-left: 1em;
+}
+
+.small-screen ul ul ul li .cssmenu-title,
+.cssmenu-actionslinks.small-screen ul li ul li ul li .cssmenu-title  {
+	padding-left: 1.618em;
+}
+
+.small-screen ul ul ul ul li .cssmenu-title {
+	padding-left: 2em;
+}
+
+.small-screen ul ul ul ul ul li .cssmenu-title {
+	padding-left: 2.618em;
+}
+
+/* --- Responsive button --- */
+.menu-button {
+	display: none;
+	position: relative;
+	font-size: 1.482rem;
+}
+
+.small-screen .menu-button,
+.cssmenu-actionslinks .menu-button {
+	display: block;
+	padding: 0.618em 1.618em 0.618em 0.618em;
+	text-transform: uppercase;
+	font-weight: 400;
+	cursor: pointer;
+	font-size: 1.309rem;
+	text-align: left;
+}
+
+.small-screen .menu-button:after {
+	position: absolute;
+	padding: 0.618em;
+	display: inline-block;
+	content: '\f0c9';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1.482rem;
+	right: 0;
+	top: 0;
+}
+
+.small-screen .menu-button.menu-opened:after {
+	content: '\f00d';
+}
+
+/* --- Responsive submenu button --- */
+.cssmenu.small-screen ul li.has-sub > .cssmenu-title:after,
+.cssmenu-right.small-screen ul li.has-sub > .cssmenu-title:before {
+	display: none;
+}
+
+.small-screen .submenu-button {
+	position: absolute;
+	z-index: 99;
+	right: 0;
+	top: 0;
+	display: block;
+	cursor: pointer;
+}
+
+.small-screen .submenu-button:after {
+	position: absolute;
+	display: block;
+	content: '\f0d7';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1.482rem;
+	right: 0;
+	top: 0;
+	padding: 0.618em;
+}
+
+.small-screen ul ul .submenu-button:after {
+	top: 0.309em;
+	font-size: 1.306rem;
+	padding: 0.456em;
+}
+
+.small-screen .submenu-button.submenu-opened:after { content: '\f0d8'}
+
+
+/* -- Cssmenu-actionslinks variant -- */
+/* ---------------------------------- */
+.cssmenu-actionslinks {
+	float: right;
+	margin: 0.809rem 0.809rem 2.809rem 3.618rem;
+}
+
+.cssmenu-actionslinks .menu-button {
+	display: block;
+}
+
+.cssmenu-actionslinks .menu-button:after {
+	position: absolute;
+	display: block;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 1.482rem;
+	content: "\f013";
+	top: 0;
+	right: 0;
+	padding: 0.228em 0.618em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+.cssmenu-actionslinks:hover .menu-button:after {
+	border-bottom-width: 0;
+}
+
+.cssmenu-actionslinks ul {
+	position: absolute;
+	z-index: 10;
+	top: 2.309rem;
+	min-width: 200px;
+	left: -9999px;
+}
+
+.cssmenu-actionslinks .menu-button:hover + ul,
+.cssmenu-actionslinks .menu-button + ul:hover {
+	left: auto;
+	right: -1px;
+}
+
+@media (min-width: 769px) {
+	.cssmenu-actionslinks .menu-button {
+		font-size: 0;
+		z-index: 9;
+	}
+}
+
+/* --- Cssmenu-actionslinks small-screen variant --- */
+.cssmenu-actionslinks.small-screen {
+	margin: 0;
+	float: none;
+}
+
+.cssmenu-actionslinks.small-screen .menu-button:after {
+	content: '\f0c9';
+	border-width: 0;
+	padding: 0.618em;
+}
+
+.cssmenu-actionslinks.small-screen .menu-button.menu-opened:after {
+	content: '\f00d';
+}
+
+.cssmenu-actionslinks.small-screen .menu-button:hover + ul,
+.cssmenu-actionslinks.small-screen .menu-button + ul:hover {
+	left: -9999px;
+	right: 0;
+}
+
+.cssmenu-actionslinks.small-screen .menu-button + ul.open,
+.cssmenu-actionslinks.small-screen .menu-button + ul:hover.open {
+	left: auto;
+	position: relative;
+	width: 100%;
+}
+
+.cssmenu-actionslinks.small-screen.cssmenu-right .cssmenu-title {
+	text-align: left;
+}
+
+.cssmenu-actionslinks.small-screen ul ul .cssmenu-title {
+	padding-left: 0.618em;
+}
+
+.cssmenu-actionslinks.small-screen ul li.has-sub > .submenu-button,
+.cssmenu-actionslinks.small-screen ul li.has-sub > .cssmenu-title  {
+	display: none;
+}
+
+
+/* -- Cssmenu-tools variant small-screen -- */
+/* ---------------------------------------- */
+.cssmenu-tools.small-screen {
+	height: auto;
+}
+
+.cssmenu-tools.small-screen li.has-sub > a,
+.cssmenu-tools.small-screen li.has-sub > .submenu-button {
+	display: block;
+}
+
+.cssmenu-tools .menu-button:after {
+	content: "\f0c9";
+}
+
+
+/* -- Cssmenu-group variant -- */
+/* --------------------------- */
+.cssmenu-group {
+	text-align: center;
+	margin-bottom: 1.618rem;
+}
+
+.cssmenu-group li {
+	display: inline-block;
+}
+
+.cssmenu-group .cssmenu-title {
+	font-size: 1.309rem;
+	padding: 0.309em;
+	border-width: 1px 0 1px 1px;
+	border-style: solid;
+	border-color: transparent;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.cssmenu-group li:last-child .cssmenu-title {
+	border-right-width: 1px;
+}
+
+/* --- Variante cssmenu-group small-screen --- */
+.cssmenu-group.small-screen ul li .cssmenu-title {
+	padding: 0.309em 0.618em;
+}
+
+
+/* -- Variantes cssmenu-statique -- */
+/* -------------------------------- */
+.cssmenu-static > ul > li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cssmenu-static > ul > li > .cssmenu-title {
+	text-align: center;
+}
+
+.cssmenu-static ul li.has-sub > .cssmenu-title:after,
+.cssmenu-static ul li.has-sub > .cssmenu-title:before {
+	display: none;
+}
+
+.cssmenu-static > ul > li {
+	padding: 0 0.618em;
+}
+
+.cssmenu-static > ul > li > .cssmenu-title {
+	margin: 0 0 0.618em 0;
+	font-size: 1.618rem;
+	font-weight: bold;
+}
+
+.cssmenu-static ul ul {
+	position: relative;
+	left: 0;
+	z-index: 0;
+}
+
+.cssmenu-static ul ul > li > .cssmenu-title {
+	padding: 0.228em 1.618em 0.228em 0.618em;
+}
+
+.cssmenu-static ul ul ul > li > .cssmenu-title {
+	padding: 0.228em 1.618em;
+}
+
+
+/* --- Variante Static small-screen --- */
+.cssmenu-static.small-screen > ul > li > .cssmenu-title {
+    text-align: left;
+	margin: 0;
+}
+
+.cssmenu-static.small-screen .submenu-button:after { content: '\f0d8'}
+.cssmenu-static.small-screen .submenu-button.submenu-opened:after { content: '\f0d7'}
+
+.cssmenu ul {
+	margin-block-start: 0;
+    margin-block-end: 0;
+	padding-inline-start: 0
+}
+.cssmenu ul ul {
+	background-color: #fff;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.15)
+}

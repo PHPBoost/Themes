@@ -5,7 +5,7 @@
 			<a class="btn btn-primary" href="" title="${LangLoader::get_message('position.move_up', 'common')}" id="move-up-{ID}" onclick="return false;"><i class="fa fa-arrow-up"></i></a>
 			<a class="btn btn-primary" href="" title="${LangLoader::get_message('position.move_down', 'common')}" id="move-down-{ID}" onclick="return false;"><i class="fa fa-arrow-down"></i></a>
 			<a class="btn btn-info" href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-			<a class="btn btn-danger" href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="{DELETE_CONFIRMATION_MESSAGE}"><i class="fa fa-delete"></i></a>
+			<a class="btn btn-danger" href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="{DELETE_CONFIRMATION_MESSAGE}"><i class="fa fa-trash-alt"></i></a>
 		</div>
 	</div>
 	<div class="sortable-title">

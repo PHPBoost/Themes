@@ -8,7 +8,7 @@
 		<li><a href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}" class="cssmenu-title"><i class="fa fa-edit"></i></a></li>
 	# ENDIF #
 	# IF C_DELETE_BUG #
-		<li><a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" class="cssmenu-title"><i class="fa fa-delete"></i></a></li>
+		<li><a href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" class="cssmenu-title"><i class="fa fa-trash-alt"></i></a></li>
 	# ENDIF #
 </ul>
 

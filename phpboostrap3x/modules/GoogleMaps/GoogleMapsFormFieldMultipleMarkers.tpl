@@ -33,7 +33,7 @@ GoogleMapsFormFieldMultipleMarkers.prototype = {
 			jQuery('<span/>', {class : 'input-group-btn', id : 'input-group-btn-' + id}).appendTo('#input-group-' + id);
 			jQuery('#input-group-' + id).append(' ');
 
-			jQuery('<a/> ', {class : 'btn btn-danger', href : 'javascript:GoogleMapsFormFieldMultipleMarkers.delete('+ this.integer +');', title : "${LangLoader::get_message('delete', 'common')}"}).html('<i class="fa fa-delete"></i>').appendTo('#input-group-btn-' + id);
+			jQuery('<a/> ', {class : 'btn btn-danger', href : 'javascript:GoogleMapsFormFieldMultipleMarkers.delete('+ this.integer +');', title : "${LangLoader::get_message('delete', 'common')}"}).html('<i class="fa fa-trash-alt"></i>').appendTo('#input-group-btn-' + id);
 
 			jQuery('<input/> ', {type : 'hidden', id : 'latitude-' + id, name : 'latitude-' + id}).appendTo('#field-' + id);
 			jQuery('<input/> ', {type : 'hidden', id : 'longitude-' + id, name : 'longitude-' + id}).appendTo('#field-' + id);
@@ -71,7 +71,7 @@ var GoogleMapsFormFieldMultipleMarkers = new GoogleMapsFormFieldMultipleMarkers(
 				<span class="input-group-addon"><i class="fa fw fa-map-marker"></i></span>
 				<input type="text" name="name-${escape(HTML_ID)}-{fieldelements.ID}" id="name-${escape(HTML_ID)}-{fieldelements.ID}" value="{fieldelements.MARKER_NAME}" placeholder="{@form.marker.name}" class="form-control multiple-markers marker-name# IF C_READONLY # low-opacity# ENDIF ## IF C_CLASS # ${escape(CLASS)}# ENDIF #" # IF C_DISABLED # disabled="disabled" # ENDIF # />
 				<span class="input-group-btn" id="input-group-btn-${escape(HTML_ID)}-{fieldelements.ID}">
-					<a class="btn btn-danger" href="javascript:GoogleMapsFormFieldMultipleMarkers.delete({fieldelements.ID});" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+					<a class="btn btn-danger" href="javascript:GoogleMapsFormFieldMultipleMarkers.delete({fieldelements.ID});" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 				</span>
 			</div>
 			<input type="hidden" id="latitude-${escape(HTML_ID)}-{fieldelements.ID}" name="latitude-${escape(HTML_ID)}-{fieldelements.ID}" value="{fieldelements.LATITUDE}" />

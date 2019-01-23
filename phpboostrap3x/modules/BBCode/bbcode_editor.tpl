@@ -243,7 +243,7 @@ function XMLHttpRequest_preview(field)
 
 		<div id="bbcode-container-fa" class="btn-group btn-group-xs  bbcode-container-more">
 			<a href="" onclick="{DISABLED_FA}bb_display_block('12', '{FIELD}');return false;" onmouseover="{DISABLED_FA}bb_hide_block('12', '{FIELD}', 1);" onmouseout="bb_hide_block('12', '{FIELD}', 0);" class="btn btn-default bbcode-hover{AUTH_FA}" title="{@bb_fa}">
-				<i class="fa fa-fw bbcode-icon-fa"></i>
+				<i class="fab fa-fw bbcode-icon-fa"></i>
 			</a>
 			<div id="bb-block12{FIELD}" class="bbcode-block-container" style="display:none;">
 				<ul class="bbcode-block bbcode-block-fa" onmouseover="bb_hide_block('12', '{FIELD}', 1);" onmouseout="bb_hide_block('12', '{FIELD}', 0);">
@@ -341,7 +341,7 @@ function XMLHttpRequest_preview(field)
 			</span>
 
 			<span class="btn btn-default">
-				<a href="" class="fa fa-fw bbcode-icon-youtube{AUTH_YOUTUBE}" onclick="{DISABLED_YOUTUBE}insertbbcode('[youtube]', '[/youtube]', '{FIELD}');return false;" title="{@bb_youtube}"></a>
+				<a href="" class="fab fa-fw bbcode-icon-youtube{AUTH_YOUTUBE}" onclick="{DISABLED_YOUTUBE}insertbbcode('[youtube]', '[/youtube]', '{FIELD}');return false;" title="{@bb_youtube}"></a>
 			</span>
 
 			<span class="btn btn-default">
@@ -395,11 +395,11 @@ function XMLHttpRequest_preview(field)
 			</div>
 
 			<span class="btn btn-default">
-				<a href="" class="fa fa-fw bbcode-icon-math{AUTH_MATH}" onclick="{DISABLED_MATH}insertbbcode('[math]', '[/math]', '{FIELD}');return false;" title="{@bb_math}"></a>
+				<a href="" class="fab fa-fw bbcode-icon-math{AUTH_MATH}" onclick="{DISABLED_MATH}insertbbcode('[math]', '[/math]', '{FIELD}');return false;" title="{@bb_math}"></a>
 			</span>
 
 			<span class="btn btn-default">
-				<a href="" class="fa fa-fw bbcode-icon-html{AUTH_HTML}" onclick="{DISABLED_HTML}insertbbcode('[html]', '[/html]', '{FIELD}');return false;" title="{@bb_html}"></a>
+				<a href="" class="fab fa-fw bbcode-icon-html{AUTH_HTML}" onclick="{DISABLED_HTML}insertbbcode('[html]', '[/html]', '{FIELD}');return false;" title="{@bb_html}"></a>
 			</span>
 		</div>
 

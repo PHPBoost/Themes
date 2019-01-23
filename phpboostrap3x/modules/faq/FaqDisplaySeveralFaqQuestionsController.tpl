@@ -166,7 +166,7 @@ jQuery(document).ready(function() {
 				# ENDIF #
 				# ENDIF #
    				<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('faq', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}">
-					<i class="fa fa-syndication"></i>
+					<i class="fa fa-rss"></i>
 				</a>
 			</div>
 		</div>
@@ -258,7 +258,7 @@ jQuery(document).ready(function() {
 									<a class="btn btn-primary" href="" title="${LangLoader::get_message('position.move_down', 'common')}" id="move-down-{questions.ID}" onclick="return false;"><i class="fa fa-arrow-down"></i></a>
 									# ENDIF #
 									<a class="btn btn-info" href="{questions.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
-									<a class="btn btn-danger" href="" onclick="return false;" title="${LangLoader::get_message('delete', 'common')}" id="delete-{questions.ID}"><i class="fa fa-delete"></i></a>
+									<a class="btn btn-danger" href="" onclick="return false;" title="${LangLoader::get_message('delete', 'common')}" id="delete-{questions.ID}"><i class="fa fa-trash-alt"></i></a>
 								</div>
 
 							</div>
@@ -315,7 +315,7 @@ jQuery(document).ready(function() {
 								<a class="btn btn-info" href="{questions.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 								# ENDIF #
 								# IF questions.C_DELETE #
-								<a class="btn btn-danger" href="" onclick="delete_question({questions.ID});return false;" title="${LangLoader::get_message('delete', 'common')}"><i class="fa fa-delete"></i></a>
+								<a class="btn btn-danger" href="" onclick="delete_question({questions.ID});return false;" title="${LangLoader::get_message('delete', 'common')}"><i class="fa fa-trash-alt"></i></a>
 								# ENDIF #
 							</div>
 

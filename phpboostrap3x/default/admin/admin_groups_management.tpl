@@ -13,7 +13,7 @@
 		</nav>
 
 		<div id="admin-contents">
-			<fieldset class="fieldset-content">
+			<fieldset class="fieldset-content col-sm-6">
 				<legend>{L_GROUPS_MANAGEMENT}</legend>
 				<div class="fieldset-inset">
 					<div class="table-responsive">
@@ -47,7 +47,7 @@
 										<a href="admin_groups.php?id={group.ID}" title="{L_UPDATE}" class="fa fa-edit"></a>
 									</td>
 									<td>
-										<a href="admin_groups.php?del=1&amp;id={group.ID}&amp;token={TOKEN}" title="{L_DELETE}" class="fa fa-delete" data-confirmation="delete-element"></a>
+										<a href="admin_groups.php?del=1&amp;id={group.ID}&amp;token={TOKEN}" title="{L_DELETE}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 									</td>
 								</tr>
 								# END group #

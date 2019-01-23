@@ -11,7 +11,7 @@
 			<article itemscope="itemscope" itemtype="http://schema.org/Creativework" id="article-forum-subforum">
 				<header>
 					<h2>
-						<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
+						<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-rss" title="${LangLoader::get_message('syndication', 'common')}"></a>
 						&nbsp;&nbsp;<strong>{L_SUBFORUMS}</strong>
 					</h2>
 				</header>
@@ -75,7 +75,7 @@
 					<div class="pull-right text-right">
 						<div class="btn-group btn-group-xs">
 							<span class="btn btn-warning">
-								<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
+								<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-rss" title="${LangLoader::get_message('syndication', 'common')}"></a>
 							</span>
 							# IF IDCAT #
 							<span class="btn btn-info">
@@ -86,7 +86,9 @@
 						# IF C_PAGINATION # # INCLUDE PAGINATION # # ENDIF #
 					</div>
 				<h2>
-					{U_FORUM_CAT}
+					# START syndication_cats #
+					<a href="{syndication_cats.LINK}">{syndication_cats.LABEL}</a># IF syndication_cats.C_DISPLAY_RAQUO # &raquo; # ENDIF #
+					# END syndication_cats #
 					# IF C_POST_NEW_SUBJECT #
 					<a href="{U_POST_NEW_SUBJECT}" class="btn btn-info btn-sm">{L_POST_NEW_SUBJECT}</a>
 					# ENDIF #
@@ -150,7 +152,7 @@
 							{topics.VUS}
 						</td>
 						<td class="forum-last-topic">
-							<a href={topics.LAST_MSG_URL} title="{topics.TITLE}"><i class="fa fa-hand-o-right"></i></a> ${LangLoader::get_message('on', 'main')} {topics.LAST_MSG_DATE_FULL}
+							<a href={topics.LAST_MSG_URL} title="{topics.TITLE}"><i class="fa fa-hand-point-right "></i></a> ${LangLoader::get_message('on', 'main')} {topics.LAST_MSG_DATE_FULL}
 							<br />
 							${LangLoader::get_message('by', 'main')}
 							# IF topics.C_LAST_MSG_GUEST #
@@ -174,7 +176,7 @@
 						<tr>
 							<th colspan="7">
 								<div class="pull-left">
-									<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a> {U_FORUM_CAT}
+									<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-rss" title="${LangLoader::get_message('syndication', 'common')}"></a> {U_FORUM_CAT}
 									# IF C_POST_NEW_SUBJECT #
 										 <a href="{U_POST_NEW_SUBJECT}" class="btn btn-info btn-sm" title="{L_POST_NEW_SUBJECT}">{L_POST_NEW_SUBJECT}</a>
 									# ENDIF #

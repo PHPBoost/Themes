@@ -106,7 +106,7 @@
 									<input type="text" class="form-control" id="poster" name="poster" value="{POSTER}" />
 									<div class="input-group-addon">
 										# IF C_AUTH_UPLOAD #
-											<a title="${LangLoader::get_message('files_management', 'main')}" href="" class="fa fa-cloud-upload" onclick="window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&amp;fd=poster&amp;parse=true&amp;no_path=true', '', 'height=500,width=720,resizable=yes,scrollbars=yes');return false;"></a>
+											<a title="${LangLoader::get_message('files_management', 'main')}" href="" class="fa fa-cloud-upload-alt" onclick="window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&amp;fd=poster&amp;parse=true&amp;no_path=true', '', 'height=500,width=720,resizable=yes,scrollbars=yes');return false;"></a>
 										# ENDIF #
 									</div>
 								</div>

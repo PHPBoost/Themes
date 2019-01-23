@@ -5,12 +5,18 @@
 </style>
     <div class="mb15" id="slider" style="order: {CAROUSEL_POSITION}; -webkit-order: {CAROUSEL_POSITION}; -ms-flex-order: {CAROUSEL_POSITION}">
 		<ul class="slides">
-            # START carousel #
-			<li class="slide">
-                # IF carousel.DESCRIPTION #<p class="slideCaption">{carousel.DESCRIPTION}</p># ENDIF #
-                <img class="slideImage" src="{PATH_TO_ROOT}{carousel.URL}" alt="{carousel.PICTURE_TITLE}" />
-            </li>
-            # END carousel #
+			# START item #
+				<li class="slide"# IF C_CAROUSEL_CROPPED # style="padding-bottom: calc(100% / {NB_DOTS} / 2); background-image: url({item.PICTURE_URL})"# ENDIF #>
+					# IF item.DESCRIPTION #
+						<p class="slideCaption">
+							# IF item.LINK #<a class="slideLink" href="{item.LINK}"># ENDIF #
+								{item.DESCRIPTION}
+							# IF item.LINK #</a># ENDIF #
+						</p>
+					# ENDIF #
+					# IF NOT C_CAROUSEL_CROPPED #<img class="slideImage" src="{item.PICTURE_URL}" alt="{item.PICTURE_URL}" /># ENDIF #
+				</li>
+			# END item #
         </ul>
     </div>
 

@@ -89,7 +89,7 @@
 			</div>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<i class="fa fa-fw fa-profil"></i>
+					<i class="fa fa-fw fa-tachometer-alt"></i>
 					<a href="${relative_url(UserUrlBuilder::home_profile())}"> {@dashboard}</a>
 				</li>
 				<li class="list-group-item">
@@ -104,16 +104,16 @@
 				# ENDIF #
 				# IF C_MODERATOR_AUTH #
 				<li class="list-group-item">
-					<i class="fa fa-fw fa-legal"></i>
+					<i class="fa fa-fw fa-gavel"></i>
 					<a href="${relative_url(UserUrlBuilder::moderation_panel())}"> {L_MODO_PANEL}</a>
 				</li>
 				# ENDIF #
 				<li class="list-group-item">
-					<i class="fa fa-fw fa-file-text# IF C_UNREAD_CONTRIBUTION # blink# ENDIF #"></i>
+					<i class="fa fa-fw fa-file# IF C_UNREAD_CONTRIBUTION # blink# ENDIF #"></i>
 					<a href="${relative_url(UserUrlBuilder::contribution_panel())}"> {L_CONTRIBUTION_PANEL}# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # <span class="pad blink bg-primary">{NUMBER_UNREAD_CONTRIBUTIONS}</span># ENDIF #</a>
 				</li>
 				<li class="list-group-item">
-					<i class="fa fa-fw fa-sign-out"></i>
+					<i class="fa fa-fw fa-sign-out-alt"></i>
 					<a href="${relative_url(UserUrlBuilder::disconnect())}"> {@disconnect}</a>
 				</li>
 			</ul>
@@ -197,7 +197,7 @@
 			<ul class="nav navbar-nav">
 				<li>
 					<a href="${relative_url(UserUrlBuilder::home_profile())}">
-						<i class="fa fa-fw fa-profil"></i> {@dashboard}
+						<i class="fa fa-fw fa-tachometer-alt"></i> {@dashboard}
 					</a>
 				</li>
 				<li>
@@ -215,18 +215,18 @@
 				# IF C_MODERATOR_AUTH #
 				<li>
 					<a href="${relative_url(UserUrlBuilder::moderation_panel())}">
-						<i class="fa fa-fw fa-legal"></i> {L_MODO_PANEL}
+						<i class="fa fa-fw fa-gavel"></i> {L_MODO_PANEL}
 					</a>
 				</li>
 				# ENDIF #
 				<li>
 					<a href="${relative_url(UserUrlBuilder::contribution_panel())}">
-						<i class="fa fa-fw fa-file-text# IF C_UNREAD_CONTRIBUTION # text-primary# ENDIF #"></i> {L_CONTRIBUTION_PANEL}# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # <span class="pad blink bg-primary">{NUMBER_UNREAD_CONTRIBUTIONS}</span># ENDIF #
+						<i class="fa fa-fw fa-file# IF C_UNREAD_CONTRIBUTION # text-primary# ENDIF #"></i> {L_CONTRIBUTION_PANEL}# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION # <span class="pad blink bg-primary">{NUMBER_UNREAD_CONTRIBUTIONS}</span># ENDIF #
 					</a>
 				</li>
 				<li>
 					<a href="${relative_url(UserUrlBuilder::disconnect())}">
-						<i class="fa fa-fw fa-sign-out"></i> {@disconnect}
+						<i class="fa fa-fw fa-sign-out-alt"></i> {@disconnect}
 					</a>
 				</li>
 			</ul>

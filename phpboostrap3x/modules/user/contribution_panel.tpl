@@ -175,7 +175,7 @@
 						<i class="fa fa-edit"></i>
 					</a>
 				<a href="{U_DELETE}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element">
-					<i class="fa fa-delete"></i>
+					<i class="fa fa-trash-alt"></i>
 				</a>
 				</div>
 

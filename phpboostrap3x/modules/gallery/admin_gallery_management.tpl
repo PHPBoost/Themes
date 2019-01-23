@@ -333,7 +333,7 @@
 										<td colspan="2" class="small">
 											&nbsp;&nbsp;&nbsp;<span id="fihref{pics.pics_max.ID}"><a href="javascript:display_rename_file('{pics.pics_max.ID}', '{pics.pics_max.RENAME}', '{pics.pics_max.RENAME_CUT}');" title="{L_EDIT}" class="fa fa-edit"></a>
 
-											<a href="gallery.php?del={pics.pics_max.ID}&amp;cat={pics.pics_max.ID_CATEGORY}&amp;token={pics.pics_max.TOKEN}" title="{L_DELETE}" class="fa fa-delete" data-confirmation="delete-element"></a>
+											<a href="gallery.php?del={pics.pics_max.ID}&amp;cat={pics.pics_max.ID_CATEGORY}&amp;token={pics.pics_max.TOKEN}" title="{L_DELETE}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 
 											<div id="move{pics.pics_max.ID}" class="move-pics-container">
 												<div class="bbcode-block move-pics-block" onmouseover="pics_hide_block({pics.pics_max.ID}, 1);" onmouseout="pics_hide_block({pics.pics_max.ID}, 0);">
@@ -414,7 +414,7 @@
 												<div class="actions-container">
 													<span id="fihref{pics.list.ID}"><a href="javascript:display_rename_file('{pics.list.ID}', '{pics.list.PROTECTED_TITLE}', '{pics.list.PROTECTED_NAME}');" title="${LangLoader::get_message('edit', 'common')}" class="fa fa-edit"></a></span>
 
-													<a href="admin_gallery.php?del={pics.list.ID}&amp;token={TOKEN}&amp;cat={CAT_ID}" title="{L_DELETE}" class="fa fa-delete" data-confirmation="delete-element"></a>
+													<a href="admin_gallery.php?del={pics.list.ID}&amp;token={TOKEN}&amp;cat={CAT_ID}" title="{L_DELETE}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 
 													<div id="move{pics.list.ID}" class="move-pics-container">
 														<div class="bbcode-block move-pics-block" onmouseover="pics_hide_block({pics.list.ID}, 1);" onmouseout="pics_hide_block({pics.list.ID}, 0);">

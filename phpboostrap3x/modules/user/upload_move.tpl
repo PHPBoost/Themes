@@ -8,9 +8,9 @@
 	}
 	-->
 	</script>
-	<section id="module-user-upload-move" class="col-sm-12">
+	<section id="module-user-upload-move" class="row">
 		<header><h1>{L_FILES_MANAGEMENT}</h1></header>
-		<div class="">
+		<div class="col-sm-12">
 			<div class="well well-sm">
 				<a href="upload.php?root=1{POPUP}"><i class="fa fa-home"></i> {L_ROOT}</a>{URL}
 			</div>

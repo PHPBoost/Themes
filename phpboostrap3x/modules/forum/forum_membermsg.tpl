@@ -31,7 +31,7 @@
 							</div>
 							<div class="btn-group btn-group-xs">
 								<span class="btn btn-info">
-									<span id="m{list.ID}"></span><a href="{PATH_TO_ROOT}/forum/topic{list.U_VARS_ANCRE}#m{list.ID}" title="{list.DATE}"><i class="fa fa-hand-o-right"></i></a>
+									<span id="m{list.ID}"></span><a href="{PATH_TO_ROOT}/forum/topic{list.U_VARS_ANCRE}#m{list.ID}" title="{list.DATE}"><i class="fa fa-hand-point-right "></i></a>
 								</span>
 								<span class="btn btn-default">
 									{list.DATE}

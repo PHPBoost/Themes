@@ -23,7 +23,7 @@
 				<div class="pull-right text-right">
 					<div class="btn-group btn-group-xs">
 						<span class="btn btn-warning">
-							<a href="${relative_url(SyndicationUrlBuilder::rss('forum',forums_list.cats.IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
+							<a href="${relative_url(SyndicationUrlBuilder::rss('forum',forums_list.cats.IDCAT))}" class="fa fa-rss" title="${LangLoader::get_message('syndication', 'common')}"></a>
 						</span>
 						# IF C_DISPLAY_UNREAD_DETAILS #
 						<span class="btn btn-info">
@@ -85,7 +85,7 @@
 								</a>
 								<div class="clearfix"></div>
 								<span class="last-topic-date">
-									<a href="{forums_list.subcats.U_LAST_MSG}" title=""><i class="fa fa-hand-o-right"></i></a> ${LangLoader::get_message('on', 'main')} {forums_list.subcats.LAST_MSG_DATE_FULL}
+									<a href="{forums_list.subcats.U_LAST_MSG}" title=""><i class="fa fa-hand-point-right "></i></a> ${LangLoader::get_message('on', 'main')} {forums_list.subcats.LAST_MSG_DATE_FULL}
 								</span>
 								<div class="clearfix"></div>
 								<span class="last-topic-user">

@@ -1,0 +1,38 @@
+/**
+ * Couleurs du thème
+ * @copyright 	&copy; 2005-2019 PHPBoost
+ * @license 	https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      Sebastien LARTIGUE <babsolune@phpboost.com>
+ * @version   	PHPBoost 5.2 - last update: 2019 01 16
+ * @since   	PHPBoost 5.2 - 2019 01 16
+*/
+
+/* --- Colors phpboostrap3x --- */
+/**
+ * lightest: #c6abed
+ * lighter:  #b59cd9
+ * light:    #7753ac
+ * main:     #563D7C
+ * dark:     #322449
+*/
+
+/* -- design.css
+----------------------------------------------------------------------------- */
+
+/* -- content.css
+----------------------------------------------------------------------------- */
+
+/* -- table.css
+----------------------------------------------------------------------------- */
+
+/* -- form.css
+----------------------------------------------------------------------------- */
+
+/* -- global.css
+----------------------------------------------------------------------------- */
+.bkgd-main  { background-color: #322449; }
+.bkgd-sub   { background-color: #7753ac; }
+.bkgd-title { background-color: #c6abed; }
+
+/* -- cssmenus.css
+----------------------------------------------------------------------------- */

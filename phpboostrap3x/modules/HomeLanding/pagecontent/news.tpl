@@ -27,7 +27,7 @@
 								<a class="btn btn-info" href="{news_items.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 							# ENDIF #
 							# IF news_items.C_DELETE #
-								<a class="btn btn-danger" href="{news_items.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+								<a class="btn btn-danger" href="{news_items.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 							# ENDIF #
 						</div>
 					</div>

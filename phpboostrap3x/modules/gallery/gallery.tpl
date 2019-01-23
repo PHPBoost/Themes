@@ -248,7 +248,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li><a href="{U_BEST_VIEWS}"><i class="fa fa-eye"></i> {L_BEST_VIEWS}</a></li>
-								# IF C_NOTATION_ENABLED #<li><a href="{U_BEST_NOTES}"><i class="fa fa-star-half-empty"></i> {L_BEST_NOTES}</a></li># ENDIF #
+								# IF C_NOTATION_ENABLED #<li><a href="{U_BEST_NOTES}"><i class="fa fa-star-half-alt "></i> {L_BEST_NOTES}</a></li># ENDIF #
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -257,13 +257,13 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li><a href="{U_ORDER_BY_NAME}"><i class="fa fa-tag"></i> {L_NAME}</a></li>
-								<li><a href="{U_ORDER_BY_DATE}"><i class="fa fa-clock-o"></i> {L_DATE}</a></li>
+								<li><a href="{U_ORDER_BY_DATE}"><i class="fa fa-clock"></i> {L_DATE}</a></li>
 								<li><a href="{U_ORDER_BY_VIEWS}"><i class="fa fa-eye"></i> {L_VIEWS}</a></li>
 								# IF C_NOTATION_ENABLED #
-								<li><a href="{U_ORDER_BY_NOTES}"><i class="fa fa-star-half-empty"></i> {L_NOTES}</a></li>
+								<li><a href="{U_ORDER_BY_NOTES}"><i class="fa fa-star-half-alt "></i> {L_NOTES}</a></li>
 								# ENDIF #
 								# IF C_COMMENTS_ENABLED #
-								<li><a href="{U_ORDER_BY_COM}"><i class="fa fa-comments-o"></i> {L_COM}</a></li># ENDIF #
+								<li><a href="{U_ORDER_BY_COM}"><i class="fa fa-comments"></i> {L_COM}</a></li># ENDIF #
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -271,8 +271,8 @@
 								<span class="caret"></span> {L_DIRECTION}
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="{U_ASC}"><i class="fa fa-sort-amount-asc"></i> {L_ASC}</a></li>
-								<li><a href="{U_DESC}"><i class="fa fa-sort-amount-desc"></i> {L_DESC}</a></li>
+								<li><a href="{U_ASC}"><i class="fa fa-sort-amount-down"></i> {L_ASC}</a></li>
+								<li><a href="{U_DESC}"><i class="fa fa-sort-amount-up"></i> {L_DESC}</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -283,7 +283,7 @@
 						<div class="btn-group btn-group-xs">
 							# IF IS_ADMIN #<a class="btn btn-info" href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
 							<a href="${relative_url(SyndicationUrlBuilder::rss('gallery', CAT_ID))}" class="btn btn-warning" title="${LangLoader::get_message('syndication', 'common')}">
-								<i class="fa fa-syndication"></i>
+								<i class="fa fa-rss"></i>
 							</a>
 						</div>
 					</div>
@@ -355,7 +355,7 @@
 								<li class="list-group-item">
 									<div class="btn-group btn-group-xs">
 										<span id="fihref{ID}" class="btn btn-info"><a href="javascript:display_rename_file('{ID}', '{RENAME}', '{RENAME_CUT}');" title="{L_EDIT}"><i class="fa fa-edit"></i></a></span>
-										<a href="{U_DEL}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+										<a href="{U_DEL}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 										<div id="move{ID}" class="move-pics-container">
 											<div class="bbcode-block move-pics-block" onmouseover="pics_hide_block({ID}, 1);" onmouseout="pics_hide_block({ID}, 0);">
 												<div>{L_MOVETO} :</div>
@@ -453,7 +453,7 @@
 											</a>
 										</span>
 										<a href="{pics_list.U_DEL}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element">
-											<i class="fa fa-delete"></i>
+											<i class="fa fa-trash-alt"></i>
 										</a>
 										<div id="move{pics_list.ID}" class="move-pics-container">
 											<div class="bbcode-block move-pics-block" onmouseover="pics_hide_block({pics_list.ID}, 1);" onmouseout="pics_hide_block({pics_list.ID}, 0);">

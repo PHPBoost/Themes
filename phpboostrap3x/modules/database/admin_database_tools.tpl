@@ -53,7 +53,7 @@
 				</li>
 				<li>
 					<a style="color:red;" href="admin_database_tools.php?table={TABLE_NAME}&amp;action=drop&amp;token={TOKEN}" data-confirmation="delete-element">
-						<i class="fa fa-fw fa-delete"></i> {L_DELETE}
+						<i class="fa fa-fw fa-trash-alt"></i> {L_DELETE}
 					</a>
 				</li>
 			</ul>

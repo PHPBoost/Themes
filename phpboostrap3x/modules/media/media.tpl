@@ -4,7 +4,7 @@
 					<div class="pull-right text-right">
 						<div class="btn-group btn-group-xs">
 							# IF IS_ADMIN #<a class="btn btn-info" href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-							<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('media', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
+							<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('media', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i></a>
 						</div>
 
 					</div>
@@ -88,7 +88,7 @@
 												<i class="fa fa-edit"></i>
 											</a>
 											<a href="{file.U_ADMIN_DELETE_MEDIA}" title="${LangLoader::get_message('delete', 'common')}" class="btn btn-danger" data-confirmation="delete-element">
-												<i class="fa fa-delete"></i>
+												<i class="fa fa-trash-alt"></i>
 											</a>
 										</div>
 										# ENDIF #
@@ -163,7 +163,7 @@
 							<div class="btn-group btn-group-xs">
 								# IF C_DISPLAY_COMMENTS #
 									<a class="btn btn-info" href="{U_COM}">
-										<i class="fa fa-comments-o"></i> {L_COM}
+										<i class="fa fa-comments"></i> {L_COM}
 									</a>
 								# ENDIF #
 								# IF C_MODO #
@@ -174,7 +174,7 @@
 										<i class="fa fa-edit"></i>
 									</a>
 									<a href="{U_DELETE_MEDIA}" title="${LangLoader::get_message('delete', 'common')}" class="btn btn-danger" data-confirmation="delete-element">
-										<i class="fa fa-delete"></i>
+										<i class="fa fa-trash-alt"></i>
 									</a>
 								# ENDIF #
 							</div>

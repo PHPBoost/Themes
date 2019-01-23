@@ -16,7 +16,7 @@
 </nav>
 
 <div id="admin-contents">
-	
+
 	<fieldset>
 		<legend>${LangLoader::get_message('administration', 'admin-links-common')}</legend>
 		<div class="fieldset-inset">
@@ -36,13 +36,13 @@
 					</li>
 					<li>
 						<a href="${relative_url(AdminMaintainUrlBuilder::maintain())}">
-							<i class="fa fa-clock-o fa-2x"></i>
+							<i class="fa fa-clock fa-2x"></i>
 							<p>{@tools.maintain}</p>
 						</a>
 					</li>
 					<li>
 						<a href="${relative_url(AdminThemeUrlBuilder::list_installed_theme())}">
-							<i class="fa fa-picture-o fa-2x"></i>
+							<i class="fa fa-image fa-2x"></i>
 							<p>{@administration.themes}</p>
 						</a>
 					</li>
@@ -96,7 +96,7 @@
 					</li>
 					<li>
 						<a href="${relative_url(AdminContentUrlBuilder::content_configuration())}">
-							<i class="fa fa-square-o fa-2x"></i>
+							<i class="fa fa-square fa-2x"></i>
 							<p>{@content}</p>
 						</a>
 					</li>
@@ -108,19 +108,19 @@
 					</li>
 					<li>
 						<a href="{PATH_TO_ROOT}/admin/admin_files.php">
-							<i class="fa fa-file-o fa-2x"></i>
+							<i class="fa fa-file fa-2x"></i>
 							<p>{@content.files}</p>
 						</a>
 					</li>
 					<li>
 						<a href="${relative_url(UserUrlBuilder::comments())}">
-							<i class="fa fa-comment-o fa-2x"></i>
+							<i class="fa fa-comment fa-2x"></i>
 							<p>{@content.comments}</p>
 						</a>
 					</li>
 					<li>
 						<a href="${relative_url(AdminSmileysUrlBuilder::management())}">
-							<i class="fa fa-smile-o fa-2x"></i>
+							<i class="fa fa-smile fa-2x"></i>
 							<p>{@administration.smileys}</p>
 						</a>
 					</li>
@@ -128,7 +128,7 @@
 			</nav>
 		</div>
 	</fieldset>
-	
+
 	<fieldset>
 		<legend>{@modules}</legend>
 		<div class="fieldset-inset">
@@ -152,5 +152,5 @@
 			</nav>
 		</div>
 	</fieldset>
-	
+
 </div>

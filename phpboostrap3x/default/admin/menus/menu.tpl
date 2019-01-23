@@ -20,7 +20,7 @@
 			# ENDIF #
 			# IF C_DEL #
 				<a href="{U_DELETE}" title="{L_DEL}" class="btn btn-danger" data-confirmation="delete-element">
-					<i class="fa fa-delete"></i>
+					<i class="fa fa-trash-alt"></i>
 				</a>
 			# ENDIF #
 			<a class="# IF C_MENU_ACTIVATED #btn btn-success# ELSE #btn btn-danger# ENDIF #" href="menus.php?action={ACTIV}&amp;id={IDMENU}&amp;token={TOKEN}#m{IDMENU}" title="# IF C_MENU_ACTIVATED #{L_UNACTIVATE}# ELSE #{L_ACTIVATE}# ENDIF #">

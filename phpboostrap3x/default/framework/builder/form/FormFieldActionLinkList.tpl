@@ -1,4 +1,4 @@
-<div id="${escape(HTML_ID)}" class="form-field-action-link"# IF C_HIDDEN # style="display:none;"# ENDIF #>
+<div id="${escape(HTML_ID)}" class="col-sm-12"# IF C_HIDDEN # style="display:none;"# ENDIF #>
 	<ul class="list-group">
 		# START action #
 		<li class="list-group-item text-center">

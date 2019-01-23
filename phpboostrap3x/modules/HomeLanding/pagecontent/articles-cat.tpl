@@ -1,5 +1,5 @@
 
-<article class="mb15" id="last_articles_cat" style="order: {ARTICLES_CAT_POSITION}; -webkit-order: {ARTICLES_CAT_POSITION}; -ms-flex-order: {ARTICLES_CAT_POSITION}">
+<article class="mb15" id="articles-cat" style="order: {ARTICLES_CAT_POSITION}; -webkit-order: {ARTICLES_CAT_POSITION}; -ms-flex-order: {ARTICLES_CAT_POSITION}">
 	<header>
 		<div class="pull-right text-right">
 			<a class="btn btn-pbt btn-xs" href="{PATH_TO_ROOT}/articles" title="${Langloader::get_message('link.to.articles', 'common', 'HomeLanding')}">
@@ -33,7 +33,7 @@
 					# IF item.C_AUTHOR_DISPLAYED #
 					<i class="fa fa-user"></i> # IF item.C_AUTHOR_EXIST #<a itemprop="author" class="{item.USER_LEVEL_CLASS}" href="{item.U_AUTHOR}"# IF item.C_USER_GROUP_COLOR # style="{item.USER_GROUP_COLOR}"# ENDIF #>{item.PSEUDO}</a># ELSE #{item.PSEUDO}# ENDIF # -
 					# ENDIF #
-					<i class="fa fa-clock-o"></i> <time datetime="{item.DATE_ISO8601}" itemprop="datePublished">{item.DATE_SHORT}</time> - <i class="fa fa-eye"></i> {item.NUMBER_VIEW}
+					<i class="fa fa-clock"></i> <time datetime="{item.DATE_ISO8601}" itemprop="datePublished">{item.DATE_SHORT}</time> - <i class="fa fa-eye"></i> {item.NUMBER_VIEW}
 				</div>
 				<p>
 					<div itemprop="text"># IF item.C_DESCRIPTION #{item.DESCRIPTION}# ELSE #{item.CONTENTS}# ENDIF ## IF item.C_READ_MORE #... <a href="{item.U_ARTICLE}">[${LangLoader::get_message('read-more', 'common')}]</a># ENDIF #</div>

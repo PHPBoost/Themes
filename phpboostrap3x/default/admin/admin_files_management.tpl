@@ -103,7 +103,7 @@
 					{
 						if( xhr_object.responseText > 0 )
 						{
-							document.getElementById('new-folder' + divid).innerHTML = '<div class="panel panel-pbt"><div class="panel-heading form-group"> <span id="f' + xhr_object.responseText + '"><a href="admin_files.php?f=' + xhr_object.responseText + '" class="com">' + name + '</a></span></div><div class="panel-body text-center"><a href="admin_files.php?f=' + xhr_object.responseText + '"><i class="fa fa-folder fa-2x"></i></a></div><ul class="list-group"><li class="list-group-item"><span id="fhref' + xhr_object.responseText + '"><span id="fihref' + xhr_object.responseText + '"><a href="javascript:display_rename_folder(\'' + xhr_object.responseText + '\', \'' + name.replace(/\'/g, "\\\'") + '\', \'' + name.replace(/\'/g, "\\\'") + '\');" class="fa fa-edit"></a></span></span> <a href="admin_files.php?delf=' + xhr_object.responseText + '&amp;f={FOLDER_ID}" class="fa fa-delete" data-confirmation="delete-element"></a> <a href="admin_files.php?movefd=' + xhr_object.responseText + '&amp;f={FOLDER_ID}&amp;fm=' + user_id + '" title="{L_MOVETO}" class="fa fa-move"></a> <span id="img' + xhr_object.responseText + '"></span></li></ul></div>';
+							document.getElementById('new-folder' + divid).innerHTML = '<div class="panel panel-pbt"><div class="panel-heading form-group"> <span id="f' + xhr_object.responseText + '"><a href="admin_files.php?f=' + xhr_object.responseText + '" class="com">' + name + '</a></span></div><div class="panel-body text-center"><a href="admin_files.php?f=' + xhr_object.responseText + '"><i class="fa fa-folder fa-2x"></i></a></div><ul class="list-group"><li class="list-group-item"><span id="fhref' + xhr_object.responseText + '"><span id="fihref' + xhr_object.responseText + '"><a href="javascript:display_rename_folder(\'' + xhr_object.responseText + '\', \'' + name.replace(/\'/g, "\\\'") + '\', \'' + name.replace(/\'/g, "\\\'") + '\');" class="fa fa-edit"></a></span></span> <a href="admin_files.php?delf=' + xhr_object.responseText + '&amp;f={FOLDER_ID}" class="fa fa-trash-alt" data-confirmation="delete-element"></a> <a href="admin_files.php?movefd=' + xhr_object.responseText + '&amp;f={FOLDER_ID}&amp;fm=' + user_id + '" title="{L_MOVETO}" class="fa fa-move"></a> <span id="img' + xhr_object.responseText + '"></span></li></ul></div>';
 							var total_folder = document.getElementById('total-folder').innerHTML;
 							total_folder++;
 							document.getElementById('total-folder').innerHTML = total_folder;
@@ -279,7 +279,7 @@
 				</a>
 			</div>
 
-			<fieldset class="upload-elements-container">
+			<fieldset class="upload-elements-container col-sm-6">
 				<legend>{L_FOLDER_CONTENT}</legend>
 				<div class="fieldset-inset">
 					# IF C_EMPTY_FOLDER #
@@ -300,7 +300,7 @@
 											<li class="list-group-item">
 												<div class="btn-group btn-group-xs">
 													<span class="btn btn-info">{folder.RENAME_FOLDER}</span>
-													# IF NOT folder.C_MEMBERS_FOLDER #<a class="btn btn-danger" href="admin_files.php?{folder.DEL_TYPE}={folder.ID}&amp;f={FOLDER_ID}&amp;token={TOKEN}{FOLDERM_ID}" title="{folder.L_TYPE_DEL_FOLDER}" data-confirmation="# IF folder.C_MEMBER_FOLDER #{L_CONFIRM_EMPTY_FOLDER}# ELSE #delete-element# ENDIF #"><i class="fa fa-delete"></i></a># ENDIF #
+													# IF NOT folder.C_MEMBERS_FOLDER #<a class="btn btn-danger" href="admin_files.php?{folder.DEL_TYPE}={folder.ID}&amp;f={FOLDER_ID}&amp;token={TOKEN}{FOLDERM_ID}" title="{folder.L_TYPE_DEL_FOLDER}" data-confirmation="# IF folder.C_MEMBER_FOLDER #{L_CONFIRM_EMPTY_FOLDER}# ELSE #delete-element# ENDIF #"><i class="fa fa-trash-alt"></i></a># ENDIF #
 													# IF folder.C_TYPEFOLDER #<a class="btn btn-info" href="admin_files{folder.U_MOVE}" title="{L_MOVETO}"><i class="fa fa-move"></i></a># ENDIF #
 												</div>
 												<span id="img{folder.ID}"></span>
@@ -337,7 +337,7 @@
 											<div class="btn-group btn-group-xs">
 												<spa class="btn btn-info">{files.RENAME_FILE}</spa>
 												<a href="admin_files.php?del={files.ID}&amp;f={FOLDER_ID}&amp;token={TOKEN}{POPUP}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element">
-													<i class="fa fa-delete"></i>
+													<i class="fa fa-trash-alt"></i>
 												</a>
 												<a href="admin_files{files.U_MOVE}" title="{L_MOVETO}" class="btn btn-info">
 													<i class="fa fa-move"></i>

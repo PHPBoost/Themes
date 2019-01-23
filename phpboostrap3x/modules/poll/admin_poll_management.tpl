@@ -74,7 +74,7 @@
 										<i class="fa fa-edit"></i>
 									</a>
 									<a href="admin_poll.php?delete=1&amp;id={questions.IDPOLL}&amp;token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="btn btn-danger" data-confirmation="delete-element">
-										<i class="fa fa-delete"></i>
+										<i class="fa fa-trash-alt"></i>
 									</a>
 								</div>
 

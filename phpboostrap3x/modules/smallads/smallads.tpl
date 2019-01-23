@@ -9,7 +9,7 @@
 					<a href="{PATH_TO_ROOT}/smallads/smallads{item.URL_EDIT}" title="${LangLoader::get_message('edit', 'common')}" class="fa fa-edit"></a>
 				# ENDIF #
 				# IF item.C_DELETE #
-					<a href="{PATH_TO_ROOT}/smallads/smallads{item.URL_DELETE}&token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-delete" data-confirmation="delete-element"></a>
+					<a href="{PATH_TO_ROOT}/smallads/smallads{item.URL_DELETE}&token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 				# ENDIF #
 			</span>
 		</h1>
@@ -134,7 +134,7 @@
 								<a href="{PATH_TO_ROOT}/smallads/smallads{item.URL_EDIT}" title="${LangLoader::get_message('edit', 'common')}" class="fa fa-edit"></a>
 							# ENDIF #
 							# IF item.C_DELETE #
-								<a href="{PATH_TO_ROOT}/smallads/smallads{item.URL_DELETE}&token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-delete" data-confirmation="delete-element"></a>
+								<a href="{PATH_TO_ROOT}/smallads/smallads{item.URL_DELETE}&token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 							# ENDIF #
 						</p>
 						# IF NOT item.C_DB_APPROVED #
@@ -324,7 +324,7 @@
 					# IF C_PICTURE #
 					<div style="float:left">
 						<a href="{DB_PICTURE}" data-lightbox="formatter"><img src="{DB_PICTURE}" /></a>
-						<a href="{PATH_TO_ROOT}/smallads/smallads.php?delete_picture={ID}&token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-delete" data-confirmation="delete-element"></a>
+						<a href="{PATH_TO_ROOT}/smallads/smallads.php?delete_picture={ID}&token={TOKEN}" title="${LangLoader::get_message('delete', 'common')}" class="fa fa-trash-alt" data-confirmation="delete-element"></a>
 					</div>
 					# ENDIF #
 					<label><input type="file" id="smallads_picture" name="smallads_picture" value="" accept="image/jpeg,image/png,image/gif" /></label>

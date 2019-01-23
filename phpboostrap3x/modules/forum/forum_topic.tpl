@@ -127,7 +127,7 @@
 					# IF C_PAGINATION # # INCLUDE PAGINATION # # ENDIF #
 					<div class="btn-group btn-group-xs">
 						<span class="btn btn-warning">
-							<a href="${relative_url(SyndicationUrlBuilder::rss('forum',ID))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
+							<a href="${relative_url(SyndicationUrlBuilder::rss('forum',ID))}" class="fa fa-rss" title="${LangLoader::get_message('syndication', 'common')}"></a>
 						</span>
 						# IF C_FORUM_MODERATOR #
 							# IF C_FORUM_LOCK_TOPIC #
@@ -140,7 +140,7 @@
 							</span>
 							# ENDIF #
 							<span class="btn btn-info">
-								<a href="move{U_TOPIC_MOVE}" title="{L_TOPIC_MOVE}" class="fa fa-move" data-confirmation="{L_ALERT_MOVE_TOPIC}"></a>
+								<a href="move{U_TOPIC_MOVE}" title="{L_TOPIC_MOVE}" class="fa fa-share" data-confirmation="{L_ALERT_MOVE_TOPIC}"></a>
 							</span>
 						# ENDIF #
 					</div>
@@ -243,10 +243,10 @@
 												# IF msg.C_FORUM_MSG_DEL #
 													# IF msg.C_FORUM_MSG_DEL_MSG #
 												<a href="action{msg.U_FORUM_MSG_DEL}" title="{L_DELETE}" id="dimgnojs{msg.ID}" class="btn btn-danger">
-													<i class="fa fa-delete"></i>
+													<i class="fa fa-trash-alt"></i>
 												</a>
 												<a onclick="del_msg('{msg.ID}');" id="dimg{msg.ID}" title="{L_DELETE}" class="btn btn-danger del-msg">
-													<i class="fa fa-delete"></i>
+													<i class="fa fa-trash-alt"></i>
 												</a>
 												<script>
 												<!--
@@ -256,7 +256,7 @@
 												</script>
 													# ELSE #
 												<a href="action{msg.U_FORUM_MSG_DEL}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="{L_ALERT_DELETE_TOPIC}">
-													<i class="fa fa-delete"></i>
+													<i class="fa fa-trash-alt"></i>
 												</a>
 													# ENDIF #
 												# ENDIF #
@@ -274,9 +274,9 @@
 											</div>
 										</div>
 										<div class="btn-group btn-group-xs">
-											<a class="btn btn-info" href="topic{msg.U_VARS_ANCRE}#m{msg.ID}" title="{msg.FORUM_MSG_DATE}"><i class="fa fa-hand-o-right"></i></a>
+											<a class="btn btn-info" href="topic{msg.U_VARS_ANCRE}#m{msg.ID}" title="{msg.TOPIC_DATE_FULL}"><i class="fa fa-hand-point-right "></i></a>
 											<span class="btn btn-default">
-												{msg.FORUM_MSG_DATE}
+												{msg.TOPIC_DATE_FULL}
 											</span>
 										</div>
 									</div>
@@ -286,24 +286,38 @@
 								<div class="col-sm-4">
 									<div class="text-center">
 										<div class="mb5">
-											{msg.USER_AVATAR}
+											<img src="# IF msg.C_USER_AVATAR #{msg.U_USER_AVATAR}# ELSE #{msg.U_DEFAULT_AVATAR}# ENDIF #" alt="${LangLoader::get_message('avatar', 'user-common')}" />
 										</div>
 									</div>
 									<ul class="list-group">
 										<li class="list-group-item">
-											{msg.USER_RANK}
+											# IF msg.C_USER_RANK #<p class="center">{msg.USER_RANK}</p># ELSE #<p class="center">${LangLoader::get_message('banned', 'user-common')}</p># ENDIF #
 										</li>
 										<li class="list-group-item">
-											{msg.USER_IMG_ASSOC}
+											# IF msg.C_USER_IMG_ASSOC #<p class="center"><img src="{msg.USER_IMG_ASSOC}" alt="${LangLoader::get_message('rank', 'main')}" title="${LangLoader::get_message('rank', 'main')}" /></p> # ENDIF #
 										</li>
 										<li class="list-group-item">
-											{msg.USER_GROUP}
+											# IF msg.C_USER_GROUPS #
+												<p class="center">
+													# START msg.usergroups #
+														# IF msg.usergroups.C_IMG_USERGROUP #
+														<a href="{msg.usergroups.U_USERGROUP}" class="user-group user-group-img group-{msg.usergroups.USERGROUP_ID} "# IF msg.usergroups.C_USERGROUP_COLOR # style="color: {msg.usergroups.USERGROUP_COLOR}"# ENDIF #><img src="{PATH_TO_ROOT}/images/group/{msg.usergroups.U_IMG_USERGROUP}" alt="{msg.usergroups.USERGROUP_NAME}" title="{msg.usergroups.USERGROUP_NAME}" /></a>
+														# ELSE #
+														{msg.usergroups.L_USER_GROUP} : <a href="{msg.usergroups.U_USERGROUP}" class="user-group group-{msg.usergroups.USERGROUP_ID}"# IF msg.usergroups.C_USERGROUP_COLOR # style="color: {msg.usergroups.USERGROUP_COLOR}"# ENDIF #>{msg.usergroups.USERGROUP_NAME}</a>
+														# ENDIF #
+													# END msg.usergroups #
+												</p>
+											# ENDIF #
 										</li>
 										<li class="list-group-item">
-											{msg.USER_DATE}
+											# IF msg.C_IS_USER #${LangLoader::get_message('registered_on', 'main')} : {msg.USER_REGISTERED_DATE_FULL}# ENDIF #
 										</li>
 										<li class="list-group-item">
-											{msg.USER_MSG}
+											# IF msg.C_USER_MSG #
+												<a href="{msg.U_USER_MSG}">${LangLoader::get_message('message_s', 'main')}</a>: {msg.USER_MSG}
+											# ELSE #
+												# IF msg.C_IS_USER # <a href="{msg.U_USER_MEMBERMG}">${LangLoader::get_message('message', 'main')}</a> : 0# ELSE #${LangLoader::get_message('message', 'main')} : 0# ENDIF #
+											# ENDIF #
 										</li>
 									</ul>
 								</div>
@@ -344,7 +358,7 @@
 									<div class="btn-group btn-group-xs">
 										<span class="btn btn-default">{msg.USER_WARNING}%</span>
 										<a href="moderation_forum{msg.U_FORUM_WARNING}" title="{L_WARNING_MANAGEMENT}" class="btn btn-warning">
-											<i class="fa fa-warning"></i>
+											<i class="fa fa-exclamation-triangle"></i>
 										</a>
 										<a href="moderation_forum{msg.U_FORUM_PUNISHEMENT}" title="{L_PUNISHMENT_MANAGEMENT}" class="btn btn-danger">
 											<i class="fa fa-lock"></i>
@@ -364,7 +378,7 @@
 					# IF C_PAGINATION # # INCLUDE PAGINATION # # ENDIF #
 					<div class="btn-group btn-group-xs">
 						<a href="${relative_url(SyndicationUrlBuilder::rss('forum',ID))}" class="btn btn-warning" title="${LangLoader::get_message('syndication', 'common')}">
-							<i class="fa fa-syndication"></i>
+							<i class="fa fa-rss"></i>
 						</a>
 						# IF C_FORUM_MODERATOR #
 							# IF C_FORUM_LOCK_TOPIC #
@@ -378,7 +392,7 @@
 							# ENDIF #
 
 						<a href="move{U_TOPIC_MOVE}" title="{L_TOPIC_MOVE}" class="btn btn-info" data-confirmation="{L_ALERT_MOVE_TOPIC}">
-							<i class="fa fa-move"></i>
+							<i class="fa fa-share"></i>
 						</a>
 						# ENDIF #
 					</div>

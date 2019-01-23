@@ -40,7 +40,7 @@
 								</li>
 								<li>
 									<a href="admin_stats.php?pages=1#stats" title="{L_PAGES}">
-										<i class="fa fa-file-o"></i>
+										<i class="fas fa-file"></i>
 									</a>
 								</li>
 								<li>
@@ -55,12 +55,12 @@
 								</li>
 								<li>
 									<a href="admin_stats.php?lang=1#stats" title="{L_LANG}">
-										<i class="fa fa-flag-o"></i>
+										<i class="fas fa-flag"></i>
 									</a>
 								</li>
 								<li>
 									<a href="admin_stats.php?referer=1#stats" title="{L_REFERER}">
-										<i class="fa fa-share-square-o"></i>
+										<i class="fas fa-share-square"></i>
 									</a>
 								</li>
 								<li>

@@ -7,7 +7,7 @@
 						<a class="btn btn-info" href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 					# ENDIF #
 				# ENDIF #
-				<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('download', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
+				<a class="btn btn-warning" href="${relative_url(SyndicationUrlBuilder::rss('download', ID_CAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i></a>
 			</div>
 		</div>
 		<h1>
@@ -118,7 +118,7 @@
 									<a href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 								# ENDIF #
 								# IF downloadfiles.C_DELETE #
-									<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a>
+									<a href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>
 								# ENDIF #
 							</td>
 							# ENDIF #
@@ -135,7 +135,7 @@
 						<div class="pull-right text-right">
 							<div class="btn-group btn-group-xs">
 								# IF downloadfiles.C_EDIT #<a class="btn btn-info" href="{downloadfiles.U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-								# IF downloadfiles.C_DELETE #<a class="btn btn-danger" href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-delete"></i></a># ENDIF #
+								# IF downloadfiles.C_DELETE #<a class="btn btn-danger" href="{downloadfiles.U_DELETE}" title="${LangLoader::get_message('delete', 'common')}" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a># ENDIF #
 							</div>
 
 						</div>

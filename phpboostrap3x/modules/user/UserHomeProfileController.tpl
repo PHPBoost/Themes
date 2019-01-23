@@ -18,12 +18,12 @@
 				<a href="{U_USER_PM}">
 					# IF C_HAS_PM #
 					<p>
-						<i class="fa fa-envelope-o fa-2x"></i>
+						<i class="fa fa-envelope fa-2x"></i>
 						<span class="pad blink bg-pbt">{NUMBER_PM}</span>
 					</p>
 					# ELSE #
 					<p>
-						<i class="fa fa-envelope-o fa-2x"></i>
+						<i class="fa fa-envelope fa-2x"></i>
 					</p>
 					# END IF #
 					${LangLoader::get_message('private_message', 'main')}
@@ -33,7 +33,7 @@
 			<div class="col-sm-4 mb15">
 				<a href="{U_UPLOAD}">
 					<p>
-						<i class="fa fa-cloud-upload fa-2x"></i>
+						<i class="fa fa-cloud-upload-alt fa-2x"></i>
 					</p>
 					${LangLoader::get_message('files_management', 'main')}
 				</a>
@@ -70,12 +70,12 @@
 				<a href="{U_CONTRIBUTION_PANEL}">
 					# IF C_KNOWN_NUMBER_OF_UNREAD_CONTRIBUTION #
 					<p>
-						<i class="fa fa-file-text-o fa-2x"></i>
+						<i class="fa fa-file fa-2x"></i>
 						<span class="pad blink bg-primary">{NUMBER_UNREAD_CONTRIBUTIONS}</span>
 					</p>
 					# ELSE #
 					<p>
-						<i class="fa fa-file-text-o fa-2x"></i>
+						<i class="fa fa-file fa-2x"></i>
 					</p>
 					# ENDIF #
 					${LangLoader::get_message('contribution_panel', 'main')}

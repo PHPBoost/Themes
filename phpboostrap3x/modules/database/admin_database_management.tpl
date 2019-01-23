@@ -213,7 +213,7 @@
 				</li>
 				<li>
 					<a style="color:red;" href="admin_database_tools.php?table={TABLE_NAME}&amp;action=drop&amp;token={TOKEN}" data-confirmation="delete-element">
-						<i class="fa fa-fw fa-delete"></i> {L_DELETE}
+						<i class="fa fa-fw fa-trash-alt"></i> {L_DELETE}
 					</a>
 				</li>
 			</ul>
@@ -433,7 +433,7 @@
 											<i class="fa fa-download"></i>
 										</a>
 										<a href="admin_database.php?action=restore&amp;del={file.FILE_NAME}&amp;token={TOKEN}" title="{L_DELETE}" class="btn btn-danger" data-confirmation="delete-element">
-											<i class="fa fa-delete"></i>
+											<i class="fa fa-trash-alt"></i>
 										</a>
 									</div>
 

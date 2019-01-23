@@ -22,7 +22,7 @@
 					<div class="media-content">
 						<div class="poster-img" style="background-image: url({media_swf.POSTER})">
 							<div class="player-icon">
-								<i class="fa fa-play-circle-o fa-4x"></i>
+								<i class="fa fa-play-circlefa-4x"></i>
 							</div>
 						</div>
 					</div>
@@ -58,7 +58,7 @@
 					<div class="media-content">
 						<div class="poster-img" style="background-image: url({media_mp4.POSTER})">
 							<div class="player-icon">
-								<i class="fa fa-play-circle-o fa-4x"></i>
+								<i class="fa fa-play-circlefa-4x"></i>
 							</div>
 						</div>
 					</div>

@@ -3,7 +3,7 @@
 		<div class="pull-right text-right">
 			<div class="btn-group btn-group-xs">
 				# IF IS_ADMIN #<a class="btn btn-info" href="{U_EDIT_CATEGORY}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a># ENDIF #
-				<a class="btn btn-warning" href="{U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
+				<a class="btn btn-warning" href="{U_SYNDICATION}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-rss"></i></a>
 			</div>
 
 		</div>
@@ -23,7 +23,7 @@
 							<a class="btn btn-info" href="{U_EDIT}" title="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit"></i></a>
 						# ENDIF #
 						# IF C_DELETE #
-							<a class="btn btn-danger" href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-delete"></i></a>
+							<a class="btn btn-danger" href="{U_DELETE}" title="${LangLoader::get_message('delete', 'common')}"# IF NOT C_BELONGS_TO_A_SERIE # data-confirmation="delete-element"# ENDIF #><i class="fa fa-trash-alt"></i></a>
 						# ENDIF #
 					</div>
 

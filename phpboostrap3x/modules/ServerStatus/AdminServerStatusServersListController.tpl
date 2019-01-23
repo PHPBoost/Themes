@@ -109,7 +109,7 @@ jQuery(document).ready(function() {
 							<a href="" title="{@admin.config.servers.move_down}" id="move-down-{servers.ID}" onclick="return false;"><i class="fa fa-arrow-down"></i></a>
 							# ENDIF #
 							<a href="{servers.U_EDIT}" title="{@admin.config.servers.action.edit_server}"><i class="fa fa-edit"></i></a>
-							<a href="" onclick="return false;" title="{@admin.config.servers.delete_server}" id="delete-{servers.ID}"><i class="fa fa-delete"></i></a>
+							<a href="" onclick="return false;" title="{@admin.config.servers.delete_server}" id="delete-{servers.ID}"><i class="fa fa-trash-alt"></i></a>
 							<a href="" onclick="return false;" id="change-display-{servers.ID}"><i # IF servers.C_DISPLAY #class="fa fa-eye" title="{@server.display}"# ELSE #class="fa fa-eye-slash" title="{@server.not_display}"# ENDIF #></i></a>
 						</div>
 					</div>
