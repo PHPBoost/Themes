@@ -4,7 +4,7 @@
 		<input class="form-control" type="text" name="mail_newsletter" value="{USER_MAIL}" placeholder="${LangLoader::get_message('email', 'user-common')}">
 		<input type="hidden" name="token" value="{TOKEN}">
 		<span class="input-group-btn">
-			<button class="btn btn-pbt" type="submit" value="true"><i class="fa fa-envelope-o"></i></button>
+			<button class="btn btn-pbt" type="submit" value="true"><i class="fa fa-envelope"></i></button>
 		</span>
 	</div>
 	<label><input type="radio" name="subscribe" value="subscribe" checked="checked"> {@newsletter.subscribe_newsletters}</label>
@@ -22,7 +22,7 @@
 			<input type="hidden" name="subscribe" value="subscribe">
 			<input type="hidden" name="token" value="{TOKEN}">
 			<span class="input-group-btn">
-				<button type="submit" class="btn btn-pbt"><i class="fa fa-envelope-o"></i></button>
+				<button type="submit" class="btn btn-pbt"><i class="fa fa-envelope"></i></button>
 			</span>
 		</div>
 	</form>
