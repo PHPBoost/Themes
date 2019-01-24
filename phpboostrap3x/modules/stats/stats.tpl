@@ -489,7 +489,7 @@
 			if ( document.getElementById('url' + divid).style.display != 'none' )
 			{
 				jQuery('#url' + divid).fadeToggle();
-				document.getElementById('img-url-' + divid).className = 'fa fa-plus-square-o';
+				document.getElementById('img-url-' + divid).className = 'fa fa-plus-square';
 			}
 			else
 			{
@@ -514,7 +514,7 @@
 						jQuery('#url' + divid).fadeToggle();
 						document.getElementById('url' + divid).innerHTML = xhr_object.responseText;
 						document.getElementById('load' + divid).innerHTML = '';
-						document.getElementById('img-url-' + divid).className = 'fa fa-minus-square-o';
+						document.getElementById('img-url-' + divid).className = 'fa fa-minus-square';
 					}
 					else if ( xhr_object.readyState == 4 && xhr_object.responseText == '' )
 						document.getElementById('load' + divid).innerHTML = '';
@@ -554,7 +554,7 @@
 						# START referer_list #
 						<tr>
 							<td>
-								<a class="fa fa-plus-square-o" style="cursor: pointer;" onclick="XMLHttpRequest_referer({referer_list.ID})" id="img-url-{referer_list.ID}"></a> <span class="smaller">({referer_list.NBR_LINKS})</span> <a href="{referer_list.URL}">{referer_list.URL}</a>	<span id="load{referer_list.ID}"></span>
+								<a class="fa fa-plus-square" style="cursor: pointer;" onclick="XMLHttpRequest_referer({referer_list.ID})" id="img-url-{referer_list.ID}"></a> <span class="smaller">({referer_list.NBR_LINKS})</span> <a href="{referer_list.URL}">{referer_list.URL}</a>	<span id="load{referer_list.ID}"></span>
 							</td>
 							<td>
 								{referer_list.TOTAL_VISIT}
@@ -606,7 +606,7 @@
 			if ( document.getElementById('url' + divid).style.display != 'none' )
 			{
 				jQuery('#url' + divid).fadeToggle();
-				document.getElementById('img-url-' + divid).className = 'fa fa-plus-square-o';
+				document.getElementById('img-url-' + divid).className = 'fa fa-plus-square';
 			}
 			else
 			{
@@ -619,7 +619,7 @@
 						jQuery('#url' + divid).fadeToggle();
 						document.getElementById('url' + divid).innerHTML = xhr_object.responseText;
 						document.getElementById('load' + divid).innerHTML = '';
-						document.getElementById('img-url-' + divid).className = 'fa fa-minus-square-o';
+						document.getElementById('img-url-' + divid).className = 'fa fa-minus-square';
 					}
 					else if ( xhr_object.readyState == 4 && xhr_object.responseText == '' )
 						document.getElementById('load' + divid).innerHTML = '';
@@ -659,7 +659,7 @@
 						# START keyword_list #
 						<tr>
 							<td>
-								<a class="fa fa-plus-square-o" style="cursor: pointer;" onclick="XMLHttpRequest_referer({keyword_list.ID})" id="img-url-{keyword_list.ID}"></a> <span class="smaller">({keyword_list.NBR_LINKS})</span> {keyword_list.KEYWORD} <span id="load{keyword_list.ID}"></span>
+								<a class="fa fa-plus-square" style="cursor: pointer;" onclick="XMLHttpRequest_referer({keyword_list.ID})" id="img-url-{keyword_list.ID}"></a> <span class="smaller">({keyword_list.NBR_LINKS})</span> {keyword_list.KEYWORD} <span id="load{keyword_list.ID}"></span>
 							</td>
 							<td>
 								{keyword_list.TOTAL_VISIT}

@@ -420,6 +420,17 @@ select[multiple], select[size] {
     min-height: 150px;
 }
 
+.form-field-checkbox {
+    border-width: 0 1px 0 0;
+    border-color: #cccccc;
+    border-style: solid;
+}
+
+[id*="_separator_field"] {
+    clear: both;
+    width: 100% !important;
+}
+
 /* --- Menus --- */
 .nav-tabs.nav-justified {
     margin-bottom: 15px;

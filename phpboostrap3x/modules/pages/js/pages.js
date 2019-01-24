@@ -30,7 +30,7 @@ function show_pages_cat_contents(id_cat, display_select_link)
 					document.getElementById("cat-" + id_cat).innerHTML = xhr_object.responseText;
 					document.getElementById("img-folder-" + id_cat).className = 'fa fa-folder-open';
 					if( document.getElementById("img-subfolder-" + id_cat) )
-						document.getElementById("img-subfolder-" + id_cat).className = 'fa fa-minus-square-o';
+						document.getElementById("img-subfolder-" + id_cat).className = 'fa fa-minus-square';
 					cat_status[id_cat] = 1;
 				}
 			}
@@ -43,7 +43,7 @@ function show_pages_cat_contents(id_cat, display_select_link)
 			document.getElementById("cat-" + id_cat).style.display = 'block';
 			document.getElementById("img-folder-" + id_cat).className = 'fa fa-folder-open';
 			if( document.getElementById("img-subfolder-" + id_cat) )
-				document.getElementById("img-subfolder-" + id_cat).className = 'fa fa-minus-square-o';
+				document.getElementById("img-subfolder-" + id_cat).className = 'fa fa-minus-square';
 			cat_status[id_cat] = 1;
 		}
 		else
@@ -51,7 +51,7 @@ function show_pages_cat_contents(id_cat, display_select_link)
 			document.getElementById("cat-" + id_cat).style.display = 'none';
 			document.getElementById("img-folder-" + id_cat).className = 'fa fa-folder';
 			if( document.getElementById("img-subfolder-" + id_cat) )
-				document.getElementById("img-subfolder-" + id_cat).className = 'fa fa-plus-square-o';
+				document.getElementById("img-subfolder-" + id_cat).className = 'fa fa-plus-square';
 			cat_status[id_cat] = 0;
 		}
 	}

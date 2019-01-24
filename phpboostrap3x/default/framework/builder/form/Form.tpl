@@ -1,11 +1,14 @@
 # IF C_VALIDATION_ERROR #
-<div class="alert alert-danger">
-	<span class="text-strong">{TITLE_VALIDATION_ERROR_MESSAGE} : </span> <br /><br />
-	# START validation_error_messages #
-		- {validation_error_messages.ERROR_MESSAGE}<br />
-	# END validation_error_messages #
-</div>
-
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="alert alert-danger">
+				<span class="text-strong">{TITLE_VALIDATION_ERROR_MESSAGE} : </span> <br /><br />
+				# START validation_error_messages #
+					- {validation_error_messages.ERROR_MESSAGE}<br />
+				# END validation_error_messages #
+			</div>
+		</div>
+	</div>
 # ENDIF #
 
 # IF C_JS_NOT_ALREADY_INCLUDED #
@@ -23,7 +26,7 @@ jQuery(document).ready(function() {
 </script>
 
 
-<form id="${HTML_ID}" # IF C_TARGET #action="${TARGET}"# ENDIF # method="${METHOD}" onsubmit="return HTMLForms.get('${HTML_ID}').validate();" class="form-horizontal ${FORMCLASS}">
+<form id="${HTML_ID}" # IF C_TARGET #action="${TARGET}"# ENDIF # method="${METHOD}" onsubmit="return HTMLForms.get('${HTML_ID}').validate();" class="form-horizontal ${FORMCLASS} row">
 	# IF C_HAS_REQUIRED_FIELDS #
 	<p class="text-center">{L_REQUIRED_FIELDS}</p>
 	# ENDIF #
