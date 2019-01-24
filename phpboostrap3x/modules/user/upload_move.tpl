@@ -8,7 +8,7 @@
 	}
 	-->
 	</script>
-	<section id="module-user-upload-move" class="row">
+	<section id="module-user-upload-move">
 		<header><h1>{L_FILES_MANAGEMENT}</h1></header>
 		<div class="col-sm-12">
 			<div class="well well-sm">

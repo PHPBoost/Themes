@@ -1489,3 +1489,55 @@ hr {clear: both;}
 
 .fa-success:before { content: '\f00c'; color: green}
 .fa-error:before { content: '\f00d'; color: red}
+
+.fa-upload-audio:before { /* copie fa-file-audio-o */
+  content: "\f1c7"; }
+.fa-upload-exec:before { /* copie fa-cog */
+  content: "\f013"; }
+.fa-upload-html:before { /* copie fa-html5 */
+  content: "\f13b"; }
+.fa-upload-css:before { /* copie fa-css3 */
+  content: "\f38b"; }
+.fa-upload-pdf:before { /* copie fa-file-pdf-o */
+  content: "\f1c1"; }
+.fa-upload-picture:before { /* copie fa-file-picture-o*/
+  content: "\f1c5"; }
+.fa-upload-script:before { /* copie fa-fa-code-o */
+  content: "\f1c9"; }
+.fa-upload-text:before { /* copie fa-file-text-o */
+  content: "\f0f6"; }
+.fa-upload-video:before { /* copie fa-file-video-o */
+  content: "\f1c8"; }
+.fa-upload-zip:before { /* copie fa-file-zip-o */
+  content: "\f1c6"; }
+.fa-upload-other:before { /* copie fa-file-o */
+  content: "\f016"; }
+.fa-upload-sheet:before { /* copie fa-file-excel-o */
+  content: "\f1c3"; }
+.fa-upload-slide:before { /* copie fa-file-powerpoint-o */
+  content: "\f1c4"; }
+.fa-upload-doc:before { /* copie fa-file-word-o */
+  content: "\f1c2"; }
+
+.fa-upload-img.fa-upload-exec {
+font-family: 'Font Awesome 5 Free';
+font-weight: 900; }
+
+ .fa-upload-img.fa-upload-audio,
+ .fa-upload-img.fa-upload-pdf,
+ .fa-upload-img.fa-upload-picture,
+ .fa-upload-img.fa-upload-script,
+ .fa-upload-img.fa-upload-text,
+ .fa-upload-img.fa-upload-video,
+ .fa-upload-img.fa-upload-zip,
+ .fa-upload-img.fa-upload-other,
+ .fa-upload-img.fa-upload-sheet,
+ .fa-upload-img.fa-upload-slide,
+ .fa-upload-img.fa-upload-doc {
+   font-family: 'Font Awesome 5 Free';
+   font-weight: 400; }
+
+ .fa-upload-img.fa-upload-html,
+ .fa-upload-img.fa-upload-css {
+   font-family: 'Font Awesome 5 Brands';
+ }

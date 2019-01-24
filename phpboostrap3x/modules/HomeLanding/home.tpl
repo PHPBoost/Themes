@@ -3,6 +3,8 @@
 		<h1>{MODULE_TITLE}</h1>
 	</header>
 
+	# INCLUDE ONEPAGE_MENU #
+
 	# INCLUDE CAROUSEL #
 
 	# IF C_EDITO_ENABLED #

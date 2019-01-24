@@ -1,5 +1,5 @@
 
-<article class="mb15" id="last_web" style="order: {WEB_POSITION}; -webkit-order: {WEB_POSITION}; -ms-flex-order: {WEB_POSITION}">
+<article class="mb15" id="web" style="order: {WEB_POSITION}; -webkit-order: {WEB_POSITION}; -ms-flex-order: {WEB_POSITION}">
 	<header>
 		<div class="pull-right text-right">
 			<a class="btn btn-pbt btn-xs" href="{PATH_TO_ROOT}/web" title="${Langloader::get_message('link.to.web', 'common', 'HomeLanding')}">
@@ -11,19 +11,19 @@
 		</h2>
 	</header>
 	<div class="row grid-columns">
-	# START web_items #
+	# START item #
 
 		<div class="col-sm-6 col-md-3">
-			<a href="{web_items.U_LINK}" title="{web_items.NAME}" class="thumbnail">
-				# IF web_items.C_HAS_PARTNER_PICTURE #
-					<img class="item-picture" src="{web_items.U_PARTNER_PICTURE}" alt="{web_items.NAME}" />
+			<a href="{item.U_LINK}" title="{item.NAME}" class="thumbnail">
+				# IF item.C_HAS_PARTNER_PICTURE #
+					<img class="item-picture" src="{item.U_PARTNER_PICTURE}" alt="{item.NAME}" />
 				# ELSE #
-					{web_items.NAME}
+					{item.NAME}
 				# ENDIF #
 			</a>
 		</div>
 
-	# END web_items #
+	# END item #
 	</div>
 	<footer></footer>
 </article>

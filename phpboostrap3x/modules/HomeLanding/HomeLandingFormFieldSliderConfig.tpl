@@ -11,7 +11,7 @@ HomeLandingFormFieldSliderConfig.prototype = {
 		if (this.integer <= this.max_input) {
 			var id = this.id_input + '_' + this.integer;
 
-			jQuery('<div/>', {'id' : id, class : 'input-group-textarea row'}).appendTo('#input_fields_' + this.id_input);
+			jQuery('<div/>', {'id' : id, class : 'input-group-textarea mb15'}).appendTo('#input_fields_' + this.id_input);
 
 				jQuery('<textarea/> ', {id : 'field_description_' + id, name : 'field_description_' + id, class : 'form-group col-sm-6', placeholder : ${escapejs(@admin.form.description)}}).appendTo('#' + id);
 				jQuery('#' + id).append(' ');
@@ -19,13 +19,16 @@ HomeLandingFormFieldSliderConfig.prototype = {
 				jQuery('<div/> ', {class : 'input-group col-sm-6', id : 'input-group_' + id}).appendTo('#' + id);
 				jQuery('#' + id).append(' ');
 
-				jQuery('<input/> ', {type : 'text', id : 'field_url_' + id, name : 'field_url_' + id, class : 'form-control', placeholder : ${escapejs(@admin.form.link.url)}}).appendTo('#input-group_' + id);
+				jQuery('<input/> ', {type : 'text', id : 'field_link_' + id, name : 'field_link_' + id, class : 'form-control', placeholder : ${escapejs(@admin.form.link.url)}}).appendTo('#input-group_' + id);
+				jQuery('#' + id).append(' ');
+
+				jQuery('<input/> ', {type : 'text', id : 'field_picture_url_' + id, name : 'field_picture_url_' + id, class : 'form-control', placeholder : ${escapejs(@admin.form.picture.url)}}).appendTo('#input-group_' + id);
 				jQuery('#' + id).append(' ');
 
 				jQuery('<span/> ', {class : 'input-group-addon', id : 'input-btn_' + id}).appendTo('#input-group_' + id);
 				jQuery('#' + id).append(' ');
 
-				jQuery('<a/> ', {href : '', title : ${escapejs(@admin.form.upload)}, class : 'btn btn-primary', onclick : "window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&fd=field_url_" + id + "&parse=true&no_path=true', '', 'height=500,width=720,resizable=yes,scrollbars=yes');return false;"}).html('<i class="fa fa-cloud-upload-alt"></i>').appendTo('#input-btn_' + id);
+				jQuery('<a/> ', {href : '', title : ${escapejs(@admin.form.upload)}, class : 'btn btn-primary', onclick : "window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&fd=field_link_" + id + "&parse=true&no_path=true', '', 'height=500,width=720,resizable=yes,scrollbars=yes');return false;"}).html('<i class="fa fa-cloud-upload-alt"></i>').appendTo('#input-btn_' + id);
 				jQuery('#' + id).append(' ');
 
 				jQuery('<a/> ', {class : 'btn btn-danger', href : 'javascript:HomeLandingFormFieldSliderConfig.delete_field('+ this.integer +');'}).html('<i class="fa fa-trash-alt"></i>').appendTo('#input-btn_' + id);
@@ -52,13 +55,13 @@ var HomeLandingFormFieldSliderConfig = new HomeLandingFormFieldSliderConfig();
 
 <div id="input_fields_${escape(ID)}">
 # START fieldelements #
-	<div id="${escape(ID)}_{fieldelements.ID}" class="input-group-textarea row">
+	<div id="${escape(ID)}_{fieldelements.ID}" class="input-group-textarea mb15">
 		<textarea name="field_description_${escape(ID)}_{fieldelements.ID}" id="field_description_${escape(ID)}_{fieldelements.ID}" class="form-group col-sm-6" placeholder="{@admin.form.description}">{fieldelements.DESCRIPTION}</textarea>
 		<div class="input-group col-sm-6" id="input-group_${escape(ID)}_{fieldelements.ID}">
 			<input type="text" name="field_link_${escape(ID)}_{fieldelements.ID}" id="field_link_${escape(ID)}_{fieldelements.ID}" value="{fieldelements.LINK}" placeholder="{@admin.form.link.url}" class="form-control"/>
 			<input type="text" name="field_picture_url_${escape(ID)}_{fieldelements.ID}" id="field_picture_url_${escape(ID)}_{fieldelements.ID}" value="{fieldelements.PICTURE_URL}" placeholder="{@admin.form.picture.url}" class="form-control"/>
 			<span class="input-group-addon" id="input-btn_${escape(ID)}_{fieldelements.ID}">
-				<a title="${LangLoader::get_message('files_management', 'main')}" href="" class="btn btn-primary" onclick="window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&fd=field_url_${escape(ID)}_{fieldelements.ID}&parse=true&no_path=true', '', 'height=500,width=720,resizable=yes,scrollbars=yes');return false;">
+				<a title="${LangLoader::get_message('files_management', 'main')}" href="" class="btn btn-primary" onclick="window.open('{PATH_TO_ROOT}/user/upload.php?popup=1&fd=field_link_${escape(ID)}_{fieldelements.ID}&parse=true&no_path=true', '', 'height=500,width=800,resizable=yes,scrollbars=yes');return false;">
 					<i class="fa fa-cloud-upload-alt"></i>
 				</a>
 				<a href="javascript:HomeLandingFormFieldSliderConfig.delete_field({fieldelements.ID});" class="btn btn-danger" data-confirmation="delete-element"><i class="fa fa-trash-alt"></i></a>

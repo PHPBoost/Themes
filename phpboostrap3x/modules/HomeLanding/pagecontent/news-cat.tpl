@@ -1,5 +1,5 @@
 
-<article class="mb15" id="last_news_cat" style="order: {NEWS_CAT_POSITION}; -webkit-order: {NEWS_CAT_POSITION}; -ms-flex-order: {NEWS_CAT_POSITION}">
+<article class="mb15" id="news-cat" style="order: {NEWS_CAT_POSITION}; -webkit-order: {NEWS_CAT_POSITION}; -ms-flex-order: {NEWS_CAT_POSITION}">
 	<header>
 		<div class="pull-right text-right">
 			<a class="btn btn-pbt btn-xs" href="{PATH_TO_ROOT}/news" title="${Langloader::get_message('link.to.news', 'common', 'HomeLanding')}">

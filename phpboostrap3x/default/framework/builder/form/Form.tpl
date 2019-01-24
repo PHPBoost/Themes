@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
 </script>
 
 
-<form id="${HTML_ID}" # IF C_TARGET #action="${TARGET}"# ENDIF # method="${METHOD}" onsubmit="return HTMLForms.get('${HTML_ID}').validate();" class="form-horizontal ${FORMCLASS} row">
+<form id="${HTML_ID}" # IF C_TARGET #action="${TARGET}"# ENDIF # method="${METHOD}" onsubmit="return HTMLForms.get('${HTML_ID}').validate();" class="form-horizontal ${FORMCLASS}">
 	# IF C_HAS_REQUIRED_FIELDS #
 	<p class="text-center">{L_REQUIRED_FIELDS}</p>
 	# ENDIF #

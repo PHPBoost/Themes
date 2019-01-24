@@ -1,5 +1,5 @@
 
-<article class="mb15" id="last-media" style="order: {MEDIA_POSITION}; -webkit-order: {MEDIA_POSITION}; -ms-flex-order: {MEDIA_POSITION}">
+<article class="mb15" id="media" style="order: {MEDIA_POSITION}; -webkit-order: {MEDIA_POSITION}; -ms-flex-order: {MEDIA_POSITION}">
 	<header>
 		<div class="pull-right text-right">
 			<a class="btn btn-pbt btn-xs" href="{PATH_TO_ROOT}/media" title="${Langloader::get_message('link.to.media', 'common', 'HomeLanding')}">

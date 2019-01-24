@@ -1,5 +1,5 @@
 
-<article class="mb15" id="last_download_cat" style="order: {DOWNLOAD_CAT_POSITION}; -webkit-order: {DOWNLOAD_CAT_POSITION}; -ms-flex-order: {DOWNLOAD_CAT_POSITION}">
+<article class="mb15" id="download-cat" style="order: {DOWNLOAD_CAT_POSITION}; -webkit-order: {DOWNLOAD_CAT_POSITION}; -ms-flex-order: {DOWNLOAD_CAT_POSITION}">
 	<header>
 		<h2>
 			<div class="pull-right text-right">

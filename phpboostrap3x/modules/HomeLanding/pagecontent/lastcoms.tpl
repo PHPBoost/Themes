@@ -1,5 +1,5 @@
 
-<article class="mb15" id="last_coms" style="order: {LASTCOMS_POSITION}; -webkit-order: {LASTCOMS_POSITION}; -ms-flex-order: {LASTCOMS_POSITION}">
+<article class="mb15" id="lastcoms" style="order: {LASTCOMS_POSITION}; -webkit-order: {LASTCOMS_POSITION}; -ms-flex-order: {LASTCOMS_POSITION}">
 	<header>
 		<h2>
 			${Langloader::get_message('last.comments', 'common', 'HomeLanding')}
@@ -12,14 +12,14 @@
 		</p>
 		# ENDIF #
 
-		# START lastcoms_items #
-		<a href="{lastcoms_items.U_LINK}" class="list-group-item">
+		# START item #
+		<a href="{item.U_LINK}" class="list-group-item">
 			<h4 class="list-group-item-heading">
-				{lastcoms_items.CONTENTS}# IF lastcoms_items.C_READ_MORE #... [${LangLoader::get_message('read-more', 'common')}]# ENDIF #
+				{item.CONTENTS}# IF item.C_READ_MORE #... [${LangLoader::get_message('read-more', 'common')}]# ENDIF #
 			</h4>
-			<p class="list-group-item-text"># IF lastcoms_items.C_AUTHOR_EXIST #{lastcoms_items.PSEUDO}# ENDIF # # IF C_MODULE_NAME #${Langloader::get_message('in.modules', 'common', 'HomeLanding')} {lastcoms_items.MODULE_NAME}# ENDIF # ({lastcoms_items.DATE}) <i class="fa fa-hand-point-right "></i></p>
+			<p class="list-group-item-text"># IF item.C_AUTHOR_EXIST #{item.PSEUDO}# ENDIF # # IF C_MODULE_NAME #${Langloader::get_message('in.modules', 'common', 'HomeLanding')} {item.MODULE_NAME}# ENDIF # ({item.DATE}) <i class="fa fa-hand-point-right "></i></p>
 		</a>
-		# END lastcoms_items #
+		# END item #
 
 	</div>
 	<footer></footer>

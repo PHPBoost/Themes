@@ -1,5 +1,5 @@
 
-<article class="mb15" id="home_contact" style="order: {CONTACT_POSITION}; -webkit-order: {CONTACT_POSITION}; -ms-flex-order: {CONTACT_POSITION}">
+<article class="mb15" id="contact" style="order: {CONTACT_POSITION}; -webkit-order: {CONTACT_POSITION}; -ms-flex-order: {CONTACT_POSITION}">
 	<header>
 		<div class="pull-right text-right">
 			<a class="btn btn-pbt btn-xs" href="{PATH_TO_ROOT}/contact" title="${Langloader::get_message('link.to.contact', 'common', 'HomeLanding')}">
@@ -17,7 +17,7 @@
 			# ELSE #
 				# INCLUDE CONTACT_FORM #
 			# ENDIF #
-		</div>		
+		</div>
 	</div>
 	<footer></footer>
 </article>

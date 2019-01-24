@@ -140,7 +140,15 @@
 												# START user #
 												<tr>
 													<td>
-														{user.USER}
+														# IF user.C_ROBOT #
+															<span class="{user.LEVEL_CLASS}">{user.PSEUDO}</span>
+														# ELSE #
+															# IF user.C_VISITOR #
+																{user.PSEUDO}
+															# ELSE #
+																<a href="{user.U_PROFILE}" class="{user.LEVEL_CLASS}" # IF user.C_GROUP_COLOR # style="color:{user.GROUP_COLOR}" # ENDIF #>{user.PSEUDO}</a>
+															# ENDIF #
+														# ENDIF #
 													</td>
 													<td>
 														{user.USER_IP}

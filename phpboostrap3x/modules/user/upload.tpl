@@ -306,7 +306,7 @@
 	-->
 	</script>
 
-	<section id="module-user-upload" class="row">
+	<section id="module-user-upload">
 		<header>
 			<h1>{L_FILES_ACTION}</h1>
 		</header>
@@ -350,7 +350,7 @@
 
 			<legend>{L_FOLDER_CONTENT}</legend>
 
-			<div class="row">
+			<div class="col-sm-12">
 
 				# IF C_EMPTY_FOLDER #
 					<div id="empty-folder" class="alert alert-notice">{L_EMPTY_FOLDER}</div>
@@ -414,7 +414,7 @@
 												<i class="fa fa-trash-alt"></i>
 											</a>
 											<a href="upload{files.U_MOVE}" title="{L_MOVETO}" class="btn btn-info">
-												<i class="fa fa-move"></i>
+												<i class="fa fa-share"></i>
 											</a>
 											<span class="btn btn-primary">{files.INSERT}</span>
 										</div>

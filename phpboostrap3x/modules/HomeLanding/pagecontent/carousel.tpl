@@ -3,7 +3,7 @@
 	#dotsNavigation { left: calc(50% - (20px * {NB_DOTS})); }
     #imagesNavigation { left: calc(50% - (40px * {NB_DOTS})); }
 </style>
-    <div class="mb15" id="slider" style="order: {CAROUSEL_POSITION}; -webkit-order: {CAROUSEL_POSITION}; -ms-flex-order: {CAROUSEL_POSITION}">
+    <div class="mb15" id="pbt-slider" style="order: {CAROUSEL_POSITION}; -webkit-order: {CAROUSEL_POSITION}; -ms-flex-order: {CAROUSEL_POSITION}">
 		<ul class="slides">
 			# START item #
 				<li class="slide"# IF C_CAROUSEL_CROPPED # style="padding-bottom: calc(100% / {NB_DOTS} / 2); background-image: url({item.PICTURE_URL})"# ENDIF #>
@@ -37,7 +37,7 @@
                 }, options);
 
                 //Classes et id des conteneurs
-                var $slider = $('#slider'),
+                var $slider = $('#pbt-slider'),
                     $slideContainer = $slider.find('.slides'),
                     $slide = $slideContainer.find('.slide');
 
@@ -237,6 +237,6 @@
     </script>
     <script>
         <!---
-        $( "#slider" ).simpleSlider();
+        $( "#pbt-slider" ).simpleSlider();
         -->
     </script>
