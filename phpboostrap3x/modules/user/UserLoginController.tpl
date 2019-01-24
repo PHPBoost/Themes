@@ -86,8 +86,10 @@
 		# ENDIF #
 
 		<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url('{HEADER_LOGO}');"# ENDIF #></div>
-		# INCLUDE ERROR_MESSAGE #		
-		# INCLUDE LOGIN_FORM #
+		# INCLUDE ERROR_MESSAGE #
+		<div class="login-form">
+			# INCLUDE LOGIN_FORM #
+		</div>
 	</div>
 
 # ENDIF #
