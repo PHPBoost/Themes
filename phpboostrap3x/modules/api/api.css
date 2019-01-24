@@ -673,6 +673,11 @@ Contient les elements associes aux menus
 	.cssmenu-title {
 		white-space: nowrap;
 	}
+
+	#admin-link .cssmenu-title {
+		white-space: normal;
+	}
+
 	.cssmenu-vertical > ul > li > .cssmenu-title {
 		white-space: normal;
 	}

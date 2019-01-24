@@ -74,24 +74,24 @@
 						</div>
 					</div>
 
-						<div class="form-group">
-							<label class="control-label col-sm-4" for="category">${LangLoader::get_message('form.category', 'common')}</label>
-							<div class="col-sm-8">
+						<div class="form-group col-sm-6">
+							<label class="control-label col-sm-12" for="category">${LangLoader::get_message('form.category', 'common')}</label>
+							<div class="col-sm-12">
 								<select class="form-control" name="idcat_post" id="category">
 									{CATEGORIES}
 								</select>
 							</div>
 						</div>
-						<div class="form-group">
-							<label class="control-label col-sm-4" for="name">{L_NAME}</label>
-							<div class="col-sm-8"><input class="form-control" type="text" name="name" id="name"></div>
+						<div class="form-group col-sm-6">
+							<label class="control-label col-sm-12" for="name">{L_NAME}</label>
+							<div class="col-sm-12"><input class="form-control" type="text" name="name" id="name"></div>
 						</div>
-						<div class="form-group">
+						<div class="form-group col-sm-12">
 							<label class="col-sm-4" for="gallery">{L_UPLOAD_IMG}</label>
 							<div class="col-sm-8">
 								<div class="row">
-									<div class="col-sm-8"><input type="file" name="gallery" id="gallery"></div>
-									<div class="col-sm-4 text-right">
+									<div class="col-sm-6"><input type="file" name="gallery" id="gallery"></div>
+									<div class="col-sm-6">
 										<input type="hidden" name="max_file_size" value="2000000">
 										<input type="hidden" name="token" value="{TOKEN}">
 										<button type="submit" name="" value="true" class="btn btn-primary">{L_UPLOAD_IMG}</button>
