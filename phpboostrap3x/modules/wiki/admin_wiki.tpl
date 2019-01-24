@@ -22,8 +22,8 @@
                     </div>
                 </div>
                 <div class="form-group col-sm-3">
-                    <label class="col-sm-12" for="hits_counter">{L_HITS_COUNTER}</label>
-                    <div class="col-sm-12">
+                    <label class="col-sm-10" for="hits_counter">{L_HITS_COUNTER}</label>
+                    <div class="col-sm-2 form-field-checkbox">
                         <label for="hits_counter">
                             <input type="checkbox" name="hits_counter" id="hits_counter" {HITS_SELECTED} />
                         </label>
