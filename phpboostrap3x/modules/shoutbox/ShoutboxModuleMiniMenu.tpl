@@ -109,12 +109,12 @@ function shoutbox_refresh_messages_box() {
 <form action="#" method="post" class="form-group">
 	<div class="shout-form-container shout-pseudo-container">
 		# IF NOT C_MEMBER #
-		<div class="text-center mtb5">
-			<label for="shout-pseudo"><small class="label label-info">${LangLoader::get_message('form.name', 'common')}</small></label>
-			<input type="text" name="shout-pseudo" id="shout-pseudo" class="form-control" value="${LangLoader::get_message('visitor', 'user-common')}">
-		</div>
+			<div class="text-center mtb5">
+				<label for="shout-pseudo"><small class="label label-info">${LangLoader::get_message('form.name', 'common')}</small></label>
+				<input type="text" name="shout-pseudo" id="shout-pseudo" class="form-control" value="${LangLoader::get_message('visitor', 'user-common')}">
+			</div>
 		# ELSE #
-		<input type="hidden" name="shout-pseudo" id="shout-pseudo" class="form-control" value="{SHOUTBOX_PSEUDO}">
+			<input type="hidden" name="shout-pseudo" id="shout-pseudo" class="form-control" value="{SHOUTBOX_PSEUDO}">
 		# ENDIF #
 	</div>
 	<div class="text-center">
@@ -123,22 +123,22 @@ function shoutbox_refresh_messages_box() {
 	</div>
 	<div id="shoutbox-bbcode-container" class="text-center">
 		# IF C_DISPLAY_SHOUT_BBCODE #
-		<div class="btn-group btn-group-sm">
-			<a href="javascript:bb_display_block('1', 'shout-contents');" onmouseover="bb_hide_block('1', 'shout-contents', 1);" onmouseout="bb_hide_block('1', 'shout-contents', 0);" class="btn btn-default fa bbcode-icon-smileys" title="${LangLoader::get_message('bb_smileys', 'common', 'BBCode')}"></a>
-			<div class="bbcode-block-container" style="display:none;" id="bb-block1shout-contents">
-				<ul class="bbcode-block block-smileys" onmouseover="bb_hide_block('1', 'shout-contents', 1);" onmouseout="bb_hide_block('1', 'shout-contents', 0);">
-					# START smileys #
-					<li>
-						<a href="" onclick="insertbbcode('{smileys.CODE}', 'smile', 'shout-contents');return false;" class="bbcode-hover" title="{smileys.CODE}"><img src="{smileys.URL}" alt="{smileys.CODE}"></a>
-					</li>
-					# END smileys #
-				</ul>
+			<div class="btn-group btn-group-sm">
+				<a href="javascript:bb_display_block('1', 'shout-contents');" onmouseover="bb_hide_block('1', 'shout-contents', 1);" onmouseout="bb_hide_block('1', 'shout-contents', 0);" class="btn btn-default fa bbcode-icon-smileys" title="${LangLoader::get_message('bb_smileys', 'common', 'BBCode')}"></a>
+				<div class="bbcode-block-container" style="display:none;" id="bb-block1shout-contents">
+					<ul class="bbcode-block block-smileys" onmouseover="bb_hide_block('1', 'shout-contents', 1);" onmouseout="bb_hide_block('1', 'shout-contents', 0);">
+						# START smileys #
+						<li>
+							<a href="" onclick="insertbbcode('{smileys.CODE}', 'smile', 'shout-contents');return false;" class="bbcode-hover" title="{smileys.CODE}"><img src="{smileys.URL}" alt="{smileys.CODE}"></a>
+						</li>
+						# END smileys #
+					</ul>
+				</div>
+				<a href="" class="btn btn-default # IF C_BOLD_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_BOLD_DISABLED #insertbbcode('[b]', '[/b]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_bold', 'common', 'BBCode')}"><i class="fa fa-fw bbcode-icon-bold"></i></a>
+				<a href="" class="btn btn-default # IF C_ITALIC_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_ITALIC_DISABLED #insertbbcode('[i]', '[/i]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_italic', 'common', 'BBCode')}"><i class="fa fa-fw bbcode-icon-italic"></i></a>
+				<a href="" class="btn btn-default # IF C_UNDERLINE_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_UNDERLINE_DISABLED #insertbbcode('[u]', '[/u]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_underline', 'common', 'BBCode')}"><i class="fa fa-fw bbcode-icon-underline"></i></a>
+				<a href="" class="btn btn-default # IF C_STRIKE_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_STRIKE_DISABLED #insertbbcode('[s]', '[/s]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_strike', 'common', 'BBCode')}"><i class="fa fa-fw bbcode-icon-strike"></i></a>
 			</div>
-			<a href="" class="btn btn-default fa bbcode-icon-bold# IF C_BOLD_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_BOLD_DISABLED #insertbbcode('[b]', '[/b]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_bold', 'common', 'BBCode')}"></a>
-			<a href="" class="btn btn-default fa bbcode-icon-italic# IF C_ITALIC_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_ITALIC_DISABLED #insertbbcode('[i]', '[/i]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_italic', 'common', 'BBCode')}"></a>
-			<a href="" class="btn btn-default fa bbcode-icon-underline# IF C_UNDERLINE_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_UNDERLINE_DISABLED #insertbbcode('[u]', '[/u]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_underline', 'common', 'BBCode')}"></a>
-			<a href="" class="btn btn-default fa bbcode-icon-strike# IF C_STRIKE_DISABLED # icon-disabled# ENDIF #" onclick="# IF NOT C_STRIKE_DISABLED #insertbbcode('[s]', '[/s]', 'shout-contents');# ENDIF #return false;" title="${LangLoader::get_message('bb_strike', 'common', 'BBCode')}"></a>
-		</div>
 		# ENDIF #
 	</div>
 	<div class="text-center">

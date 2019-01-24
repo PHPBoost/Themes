@@ -9,7 +9,7 @@
                     title="${LangLoader::get_message('delete', 'common')}"
                     id="delete_{messages.ID}"
                     class="btn btn-danger">
-                    <i class="fa fa-remove"></i>
+                    <i class="fa fa-times"></i>
                 </a>
                 # ENDIF #
                 # IF C_DISPLAY_DATE #
