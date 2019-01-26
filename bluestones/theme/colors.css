@@ -281,6 +281,20 @@ i.message-announce-new {
 	color: #4372AA;
 }
 
+.actions-menu.opened .actions-title {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 5px rgba(54, 100, 147, 0.2);
+}
+
+.actions-submenu {
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 5px rgba(54, 100, 147, 0.2);
+}
+
+.action:hover {
+	background-color: rgba(54, 100, 147, 0.2);
+}
+
 /* -- table.css
 ----------------------------------------------------------------------------- */
 table caption {
