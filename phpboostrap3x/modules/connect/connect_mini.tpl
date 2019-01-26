@@ -136,18 +136,9 @@
 				</div>
 
 				# IF C_USER_REGISTER #
-
-					# IF C_FB_AUTH_ENABLED #
-					<div class="navbar-form navbar-right">
-						<a class="btn btn-primary" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i></a>
-					</div>
-					# ENDIF #
-
-					# IF C_GOOGLE_AUTH_ENABLED #
-					<div class="navbar-form navbar-right">
-						<a class="btn btn-danger" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus"></i></a>
-					</div>
-					# ENDIF #
+				# START external_auth #
+					<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+				# END external_auth #
 				<div class="navbar-form navbar-right">
 					<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
 						<div class="form-group">

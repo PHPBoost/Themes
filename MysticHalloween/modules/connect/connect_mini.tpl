@@ -71,16 +71,9 @@
 						<input type="hidden" name="token" value="{TOKEN}">
 					</form>
 					# ENDIF #
-					# IF C_FB_AUTH_ENABLED #
-					<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}">
-						<i class="fa fa-facebook"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span>
-					</a>
-					# ENDIF #
-					# IF C_GOOGLE_AUTH_ENABLED #
-					<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}">
-						<i class="fa fa-google-plus"></i><span>${LangLoader::get_message('google-connect', 'user-common')}</span>
-					</a>
-					# ENDIF #
+					# START external_auth #
+						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+					# END external_auth #
 				</div>
 				# ENDIF #
 				<div class="forget-pass-container">

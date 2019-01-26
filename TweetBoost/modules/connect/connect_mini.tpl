@@ -46,12 +46,9 @@
 					# IF C_USER_REGISTER #
 						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
 						<br />
-						# IF C_FB_AUTH_ENABLED #
-						<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook-square biggest"></i></a>
-						# IF C_GOOGLE_AUTH_ENABLED #
-						# ENDIF #
-						<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus-square biggest"></i></a>
-						# ENDIF #
+						# START external_auth #
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						# END external_auth #
 					# ENDIF #
 					<br />
 					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> ${LangLoader::get_message('forget-password', 'user-common')}</a>
@@ -121,12 +118,10 @@
 						<button type="submit" name="register" value="true" class="submit">{@register}</button>
 						<input type="hidden" name="token" value="{TOKEN}">
 					</form>
-					# IF C_FB_AUTH_ENABLED #
-					<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook-square biggest"></i><span>&nbsp; ${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
-					# ENDIF #
-					# IF C_GOOGLE_AUTH_ENABLED #
-					<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus-square biggest"></i><span>&nbsp; ${LangLoader::get_message('google-connect', 'user-common')}</span></a>
-					# ENDIF #
+				# START external_auth #
+					<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+				# END external_auth #
+
 				# ENDIF #
 				<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">${LangLoader::get_message('forget-password', 'user-common')}</a>
 			</div>
@@ -203,12 +198,9 @@
 								# IF C_USER_REGISTER #
 									<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
 									<br />
-									# IF C_FB_AUTH_ENABLED #
-									<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook-square biggest"></i></a>
-									# IF C_GOOGLE_AUTH_ENABLED #
-									# ENDIF #
-									<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus-square biggest"></i></a>
-									# ENDIF #
+									# START external_auth #
+										<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+									# END external_auth #
 								# ENDIF #
 								<br />
 								<a class="small" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle"></i> ${LangLoader::get_message('forget-password', 'user-common')}</a>
