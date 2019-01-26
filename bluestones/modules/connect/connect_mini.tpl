@@ -38,12 +38,9 @@
 					# IF C_USER_REGISTER #
 						<a href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket" aria-hidden="true"></i> {@register}</a>
 						<br />
-						# IF C_FB_AUTH_ENABLED #
-						<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}"><i class="fa fa-facebook" aria-hidden="true"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
-						# ENDIF #
-						# IF C_GOOGLE_AUTH_ENABLED #
-						<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}"><i class="fa fa-google-plus" aria-hidden="true"></i><span>${LangLoader::get_message('google-connect', 'user-common')}</span></a>
-						# ENDIF #
+						# START external_auth #
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						# END external_auth #
 					# ENDIF #
 					<br />
 					<a class="forgot-pass" href="${relative_url(UserUrlBuilder::forget_password())}"><i class="fa fa-question-circle" aria-hidden="true"></i> ${LangLoader::get_message('forget-password', 'user-common')}</a>
@@ -120,12 +117,9 @@
 						<button type="submit" name="register" value="true" class="submit-register"><i class="fa fa-pencil" aria-hidden="true"></i> {@register}</button>
 						<input type="hidden" name="token" value="{TOKEN}">
 					</form>
-					# IF C_FB_AUTH_ENABLED #
-					<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}"><i class="fa fa-facebook" aria-hidden="true"></i><span>${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
-					# ENDIF #
-					# IF C_GOOGLE_AUTH_ENABLED #
-					<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}"><i class="fa fa-google-plus" aria-hidden="true"></i><span>${LangLoader::get_message('google-connect', 'user-common')}</span></a>
-					# ENDIF #
+					# START external_auth #
+						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+					# END external_auth #
 				# ENDIF #
 				<a class="forgot-pass basic-button alt" href="${relative_url(UserUrlBuilder::forget_password())}">${LangLoader::get_message('forget-password', 'user-common')}</a>
 			</div>

@@ -1,6 +1,6 @@
 /* --------------------------------------
 		content.css
-Contient les elements : 
+Contient les elements :
  - conteneurs generaux, elements de module,
  - pagination des pages,
  - exploreur de categorie,
@@ -17,7 +17,7 @@ Contient les elements :
 section,
 article {
 	width: 100%;
-	margin: 0 auto;	
+	margin: 0 auto;
 	vertical-align: top;
 }
 
@@ -54,13 +54,13 @@ section > header h1 {
 article header {
 	background: rgba(0, 0, 0, 0.5);
 	padding: 8px;
-	margin: 20px 0 0;	
+	margin: 20px 0 0;
 }
 
 @media (min-width: 769px){
 	article header {
 		padding: 14px;
-		margin: 0 0 20px;	
+		margin: 0 0 20px;
 	}
 }
 
@@ -78,7 +78,7 @@ article header h3 {
 	section header,
 	article header {
 		margin: 0 0 1em 0;
-	}	
+	}
 }
 
 /* --- Titre d'un bas de page --- */
@@ -96,13 +96,7 @@ article header h3 {
 
 .actions a {
 	display: inline-block;
-	padding: 0 0.456em;
-}
-
-@media (max-width: 768px) {
-	.actions a {
-		padding: 0 0.809em;
-	}
+	padding: 0.256em 0.456em;
 }
 
 header h2 .actions {
@@ -135,24 +129,16 @@ header h2 .actions {
 	position: absolute;
 	list-style: none;
 	padding: 0;
-	top: 25px;
+	top: 100%;
 	left: -9999px;
 	width: 250px;
 	z-index: 1;
-}
-
-@media (max-width: 768px) {
-	.actions-submenu {
-		top: 45px;
-	}
 }
 
 .opened .actions-submenu {
 	left: auto;
 	right: 0;
 }
-
-.actions-title { }
 
 .action {
 	font-size: 1.5rem;
@@ -168,18 +154,6 @@ header h2 .actions {
 .action i {
 	text-align: center;
 	width: 20px;
-}
-
-.actions-menu.opened .actions-title {
-	background-color: #FFFFFF;
-	box-shadow: 0 0 5px rgba(54, 100, 147, 0.2);
-}
-.actions-submenu {
-	background-color: #FFFFFF;
-	box-shadow: 0 4px 5px rgba(54, 100, 147, 0.2);
-}
-.action:hover {
-	background-color: rgba(54, 100, 147, 0.2);
 }
 /* -- Elements .more d'un contenu -- */
 /* --------------------------------- */
@@ -406,21 +380,21 @@ header h2 .actions {
 		flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
-		margin-left: -5px; /* @{gutter} */ 
+		margin-left: -5px; /* @{gutter} */
 	}
 
-	.block { 
-		margin-left: 5px; /* @{gutter} */ 
+	.block {
+		margin-left: 5px; /* @{gutter} */
 		width: 100%;
-	} 
-	
-	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */ 
+	}
+
+	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */
 	.columns-3 .block { width: calc(100% / 3 - 5px); }
 	.columns-4 .block { width: calc(100% / 4 - 5px); }
 	.columns-5 .block { width: calc(100% / 5 - 5px); }
 	.columns-6 .block { width: calc(100% / 6 - 5px); }
 	.columns-7 .block { width: calc(100% / 7 - 5px); }
-	
+
 	.block-xlarge { width: 100%!important; } /* Extension du bloc sur une ligne complète */
 }
 
@@ -429,7 +403,7 @@ header h2 .actions {
 	.block {
 		margin-bottom: 5px;
 		width: 100%;
-	}	
+	}
 }
 
 /* --- Gestion des media --- */
@@ -747,7 +721,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	border-color: #517BA6;
 	border-style: solid;
 	border-width: 0 0 0 3px;
-	transition: all 0.2s;	
+	transition: all 0.2s;
 }
 
 .sortable-block .sortable-element:hover {
@@ -755,7 +729,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	transition: all 0.2s;
 }
 
-@media (min-width:769px){ 
+@media (min-width:769px){
 	.sortable-block .sortable-element .sortable-selector {
 		flex: 0 0 1.309em;
 		-ms-flex: 0 0 1.309em;
@@ -764,7 +738,7 @@ ul.pagination-block-bis li a.next-page:hover {
 		transition: opacity 0.3s;
 		cursor: move;
 	}
-	
+
 	.sortable-selector:after {
 		content: "\f0b2";
 		color: #517BA6;
@@ -905,7 +879,7 @@ body.dragging * {
 	clear: both;
 }
 
-#comments-list > header { 
+#comments-list > header {
 	display:none;
 }
 
@@ -1028,7 +1002,7 @@ body.dragging * {
 		display: block;
 		width: 0;
 	}
-	
+
 	.message-message::after {
 		content: "";
 		top: auto;
@@ -1072,7 +1046,7 @@ i.message-announce-new {
 }
 
 
-/* -- Le maintenance -- */ 
+/* -- Le maintenance -- */
 /* -------------------- */
 #maintain {
 	margin: 10px 0;

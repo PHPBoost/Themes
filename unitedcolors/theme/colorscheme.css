@@ -2,7 +2,7 @@
  *
  *          contient les classes de couleurs
  *
- *                  couleurs principales : #22273D #394165 #366393
+ *                  couleurs principales : #22273D #394165 #366493
  *
  *                  couleurs secondaires :
  *
@@ -11,21 +11,22 @@
  *                      orange :    #DD7430
  *                      rouge :     #c43827
  *                      violet :    #A769BC
- *                      
+ *
  * ======================================================================= */
 
 /* --- design =========================================================================================== */
 
 body {
     background-color: #394165;
+	color:rgba(255, 255, 255, .4);
 }
 
-header#header,
+#header,
 #main,
-aside#menu-left,
-aside#menu-right,
+#menu-left,
+#menu-right,
 #top-footer,
-footer#footer {
+#footer {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -39,6 +40,24 @@ footer#footer {
 #lightcase-case[data-type="video"] .lightcase-content {
 	background-color: #22273D;
 }
+
+.cookiebar-container {
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.cookiebar-button {
+	color: #FEFEFE;
+}
+
+.cookiebar-button-understand 		{ background-color: #337AB7; border-color: #2E6DA4; }
+.cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
+
+.cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
+.cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
+
+.cookiebar-button-declined 			{ background-color: #E84E40; border-color: #CE271A; }
+.cookiebar-button-declined:hover 	{ background-color: #CE271A; }
 
 /* --- content =========================================================================================== */
 
@@ -55,35 +74,43 @@ article header,
 	background-color: rgba(0, 0, 0, .2);
 }
 
+.actions-menu .actions-title {
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.actions-submenu {
+	background-color: #394165;
+}
+
 /* --- table --- */
 
 
 /* --- cssmenu --- */
-header#header .cssmenu > ul > li > .cssmenu-title 					{ color: rgba(255, 255, 255, .6); }
-header#header .cssmenu > ul > li:hover > .cssmenu-title 			{ color: rgba(255, 255, 255, 1); }
+#header .cssmenu > ul > li > .cssmenu-title 					{ color: rgba(255, 255, 255, .6); }
+#header .cssmenu > ul > li:hover > .cssmenu-title 			{ color: rgba(255, 255, 255, 1); }
 
-header#header .cssmenu ul ul li .cssmenu-title						{ background-color: transparent; }
+#header .cssmenu ul ul li .cssmenu-title						{ background-color: transparent; }
 
 
-header#header .cssmenu > ul > li:nth-child(5n+1) > .cssmenu-title 	{ border-bottom: 5px solid #29AED7; }
-header#header .cssmenu > ul > li:nth-child(5n+1):hover > .cssmenu-title,
-header#header .cssmenu > ul > li:nth-child(5n+1) ul 				{ background-color: 	   #29AED7; }
+#header .cssmenu > ul > li:nth-child(5n+1) > .cssmenu-title 	{ border-bottom: 5px solid #29AED7; }
+#header .cssmenu > ul > li:nth-child(5n+1):hover > .cssmenu-title,
+#header .cssmenu > ul > li:nth-child(5n+1) ul 				{ background-color: 	   #29AED7; }
 
-header#header .cssmenu > ul > li:nth-child(5n+2) > .cssmenu-title 	{ border-bottom: 5px solid #00BC9E; }
-header#header .cssmenu > ul > li:nth-child(5n+2):hover > .cssmenu-title,
-header#header .cssmenu > ul > li:nth-child(5n+2) ul 				{ background-color: 	   #00BC9E; }
+#header .cssmenu > ul > li:nth-child(5n+2) > .cssmenu-title 	{ border-bottom: 5px solid #00BC9E; }
+#header .cssmenu > ul > li:nth-child(5n+2):hover > .cssmenu-title,
+#header .cssmenu > ul > li:nth-child(5n+2) ul 				{ background-color: 	   #00BC9E; }
 
-header#header .cssmenu > ul > li:nth-child(5n+3) > .cssmenu-title 	{ border-bottom: 5px solid #DD7430; }
-header#header .cssmenu > ul > li:nth-child(5n+3):hover > .cssmenu-title,
-header#header .cssmenu > ul > li:nth-child(5n+3) ul 				{ background-color: 	   #DD7430; }
+#header .cssmenu > ul > li:nth-child(5n+3) > .cssmenu-title 	{ border-bottom: 5px solid #DD7430; }
+#header .cssmenu > ul > li:nth-child(5n+3):hover > .cssmenu-title,
+#header .cssmenu > ul > li:nth-child(5n+3) ul 				{ background-color: 	   #DD7430; }
 
-header#header .cssmenu > ul > li:nth-child(5n+4) > .cssmenu-title 	{ border-bottom: 5px solid #c43827; }
-header#header .cssmenu > ul > li:nth-child(5n+4):hover > .cssmenu-title,
-header#header .cssmenu > ul > li:nth-child(5n+4) ul 				{ background-color: 	   #c43827; }
+#header .cssmenu > ul > li:nth-child(5n+4) > .cssmenu-title 	{ border-bottom: 5px solid #c43827; }
+#header .cssmenu > ul > li:nth-child(5n+4):hover > .cssmenu-title,
+#header .cssmenu > ul > li:nth-child(5n+4) ul 				{ background-color: 	   #c43827; }
 
-header#header .cssmenu > ul > li:nth-child(5n+5) > .cssmenu-title 	{ border-bottom: 5px solid #A769BC; }
-header#header .cssmenu > ul > li:nth-child(5n+5):hover > .cssmenu-title,
-header#header .cssmenu > ul > li:nth-child(5n+5) ul 				{ background-color: 	   #A769BC; }
+#header .cssmenu > ul > li:nth-child(5n+5) > .cssmenu-title 	{ border-bottom: 5px solid #A769BC; }
+#header .cssmenu > ul > li:nth-child(5n+5):hover > .cssmenu-title,
+#header .cssmenu > ul > li:nth-child(5n+5) ul 				{ background-color: 	   #A769BC; }
 
 #main .cssmenu.cssmenu-actionslinks.small-screen .menu-button {
     color: transparent;
@@ -95,7 +122,7 @@ header#header .cssmenu > ul > li:nth-child(5n+5) ul 				{ background-color: 	   
 /* --- Personnalisation de l'indicateur de sous-Menu --- */
 
 .cssmenu li.has-sub > .cssmenu-title:after,
-.cssmenu li.has-sub > .cssmenu-title:before, 		 	
+.cssmenu li.has-sub > .cssmenu-title:before,
 .cssmenu-vertical li.has-sub > .cssmenu-title:after,
 .cssmenu-vertical li.has-sub > .cssmenu-title:before { background-color: rgba(255, 255, 255, .7); }
 
@@ -111,7 +138,7 @@ header#header .cssmenu > ul > li:nth-child(5n+5) ul 				{ background-color: 	   
 
 /* --- Bouton de formulaire --- */
 button.submit {
-	background-color: #366393;
+	background-color: #366493;
 }
 
 button.submit:hover {
@@ -184,6 +211,10 @@ a.member { color: #A769BC; }
 	background-color: #00BC9E;
 }
 
+.bkgd-main {background-color: #394165;}
+.bkgd-sub {background-color: #22273D;}
+.bkgd-title {background-color: #366493;}
+
 .error, .error:before       { color: #c43827; }
 .notice, .notice:before     { color: #A769BC; }
 .warning, .warning:before   { color: #DD7430; }
@@ -219,7 +250,7 @@ a.member { color: #A769BC; }
 
 /* --- Calendar --- */
 #module-mini-calendar .module-mini-top,
-section#module-calendar > header h1 {
+section#module-calendar > header {
     background-color: #00BC9E;
 }
 
@@ -229,46 +260,43 @@ tbody td.calendar-other   {  }
 tbody td.calendar-weekend { background: #A769BC; }
 
 /* --- connect --- */
-ul.connect-content, 
+ul.connect-content,
 div.connect-content {
 	background-color: #22273D;
 }
 
 /* --- Contact --- */
-section#module-contact > header h1 {
-    background-color: #366393;
+#module-contact > header {
+    background-color: #366493;
 }
 
 /* --- Download --- */
 #module-mini-download .module-mini-top,
-section#module-download > header h1 {
+#module-download > header {
     background-color: #A769BC;
 }
 
-
 /* --- Faq --- */
 #module-mini-faq .module-mini-top,
-section#module-faq > header h1 {
+#module-faq > header {
     background-color: #29AED7;
 }
 
 /* --- Gallery --- */
 #module-mini-gallery .module-mini-top,
-section#module-gallery > header h1 {
+#module-gallery > header {
     background-color: #DD7430;
 }
-
 
 /* --- Guestbook --- */
 #module-mini-guestbook .module-mini-top,
-section#module-guestbook > header h1 {
+#module-guestbook > header {
     background-color: #DD7430;
 }
 
-
 /* --- Forum --- */
-section#module-forum > header h1 {
-    background-color: #366393;
+#module-forum > header {
+    background-color: #366493;
 }
 
 .fa-announce:before,
@@ -280,13 +308,13 @@ section#module-forum > header h1 {
 .fa-eraser:before               { color: #A769BC; }
 .fa-globe:before                { color: #29AED7; }
 .fa-msg-display:before 			{ color: #00BC9E; }
-.fa-msg-not-display:before 		{ color: #366393; }
+.fa-msg-not-display:before 		{ color: #366493; }
 .fa-msg-track:before 			{ color: #c43827; }
 .fa-msg-not-track:before 		{ color: #22273D; }
 .fa-pm-track:before 			{ color: #29AED7; }
-.fa-pm-not-track:before 		{ color: #366393; }
+.fa-pm-not-track:before 		{ color: #366493; }
 .fa-mail-track:before 			{ color: #A769BC; }
-.fa-mail-not-track:before 		{ color: #366393; }
+.fa-mail-not-track:before 		{ color: #366493; }
 .fa-lastview:before 			{ color: #00BC9E; }
 .fa-notread:before 				{ color: #DD7430; }
 
@@ -324,7 +352,7 @@ section#module-stats > header h1 {
 }
 
 section#module-user-upload > header h1 {
-    background-color: #366393;
+    background-color: #366493;
 }
 
 .fa-cloud-upload {

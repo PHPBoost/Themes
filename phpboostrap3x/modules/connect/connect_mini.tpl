@@ -61,24 +61,9 @@
 						<span class="input-group-addon"><i class="fa fa-fw fa-ticket"></i></span>
 						<a href="${relative_url(UserUrlBuilder::registration())}" class="btn btn-info form-control"> {@register}</a>
 					</div>
-
-					# IF C_FB_AUTH_ENABLED #
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-fw fa-facebook"></i></span>
-						<a class="btn btn-primary form-control small" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}">
-							<span>${LangLoader::get_message('facebook-connect', 'user-common')}</span>
-						</a>
-					</div>
-					# ENDIF #
-
-					# IF C_GOOGLE_AUTH_ENABLED #
-					<div class="input-group">
-						<span class="input-group-addon"><i class="fa fa-fw fa-google-plus"></i></span>
-						<a class="btn btn-danger form-control small" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}">
-							<span>${LangLoader::get_message('google-connect', 'user-common')}</span>
-						</a>
-					</div>
-					# ENDIF #
+					# START external_auth #
+						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+					# END external_auth #
 				# ENDIF #
 			</div>
 		</div>

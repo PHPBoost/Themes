@@ -28,7 +28,7 @@
 		</div>
 		<div class="spacer"></div>
 	</header>
-	
+
 	<nav id="breadcrumb" itemprop="breadcrumb">
 		<ol>
 			<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -47,7 +47,7 @@
 	</nav>
 
 	<div id="global">
-		
+
 		# IF C_VISIT_COUNTER #
 		<div id="visit-counter" class="hidden-small-screens">
 			<div class="visit-counter-total">
@@ -62,7 +62,7 @@
 		# ENDIF #
 
 		# IF C_MENUS_LEFT_CONTENT #
-		<aside id="menu-left" class="# IF C_MENUS_RIGHT_CONTENT #left-with-right# ENDIF #">
+		<aside id="menu-left"# IF C_MENUS_RIGHT_CONTENT # class="narrow-menu-left"# ENDIF #>
 			# START menus_left #
 			{menus_left.MENU}
 			# END menus_left #
@@ -95,7 +95,7 @@
 		</div>
 
 		# IF C_MENUS_RIGHT_CONTENT #
-		<aside id="menu-right" class="# IF C_MENUS_LEFT_CONTENT #right-with-left# ENDIF #">
+		<aside id="menu-right"# IF C_MENUS_LEFT_CONTENT # class="narrow-menu-right"# ENDIF #>
 			# START menus_right #
 			{menus_right.MENU}
 			# END menus_right #
