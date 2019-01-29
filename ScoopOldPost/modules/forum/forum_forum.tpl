@@ -11,8 +11,7 @@
 			<article itemscope="itemscope" itemtype="http://schema.org/Creativework" id="article-forum-subforum" class="forum-contents">
 				<header>
 					<h2>
-						<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" title="${LangLoader::get_message('syndication', 'common')}"><i class="fa fa-syndication"></i></a>
-						&nbsp;<strong>{L_SUBFORUMS}</strong>
+						<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}"><i class="fa fa-syndication" aria-hidden="true"></i><span class="sr-only">${LangLoader::get_message('syndication', 'common')}</span></a>
 					</h2>
 				</header>
 				<div class="content">
@@ -89,7 +88,7 @@
 					# IF C_PAGINATION # # INCLUDE PAGINATION # # ENDIF #
 				</span>
 				<h2>
-					<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}" class="fa fa-syndication" title="${LangLoader::get_message('syndication', 'common')}"></a>
+					<a href="${relative_url(SyndicationUrlBuilder::rss('forum',IDCAT))}"><i class="fa fa-syndication"></i><span class="sr-only">${LangLoader::get_message('syndication', 'common')}</span></a>
 					# START syndication_cats #
 					<a href="{syndication_cats.LINK}">{syndication_cats.LABEL}</a># IF syndication_cats.C_DISPLAY_RAQUO # &raquo; # ENDIF #
 					# END syndication_cats #
@@ -97,7 +96,7 @@
 			</header>
 
 			# IF C_POST_NEW_SUBJECT #
-			<a href="{U_POST_NEW_SUBJECT}" class="basic-button">{L_POST_NEW_SUBJECT}</a>
+			<i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{U_POST_NEW_SUBJECT}" class="basic-button">{L_POST_NEW_SUBJECT}</a>
 			# ENDIF #
 
 			<div class="content">
@@ -191,7 +190,6 @@
 									# START syndication_cats #
 										<a href="{syndication_cats.LINK}">{syndication_cats.LABEL}</a># IF syndication_cats.C_DISPLAY_RAQUO # &raquo; # ENDIF #
 									# END syndication_cats #
-
 								</div>
 								# IF C_PAGINATION #<span class="float-right"># INCLUDE PAGINATION #</span># ENDIF #
 							</th>
@@ -199,7 +197,7 @@
 					</tfoot>
 				</table>
 				# IF C_POST_NEW_SUBJECT #
-				<a href="{U_POST_NEW_SUBJECT}" class="basic-button" title="{L_POST_NEW_SUBJECT}">{L_POST_NEW_SUBJECT}</a>
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="{U_POST_NEW_SUBJECT}" class="basic-button" title="{L_POST_NEW_SUBJECT}">{L_POST_NEW_SUBJECT}</a>
 				# ENDIF #
 			</div>
 		</article>

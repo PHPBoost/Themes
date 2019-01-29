@@ -820,4 +820,36 @@ li.small-block .fa-stack {
 	padding: 0 0 0 17px;
 }
 
+/* --- Editor color Container --- */
+.bdr-color-op20 { border-color: rgba(204, 204, 204, 1); }
+.constraint-status-error .bdr-color-op20 {  border-color: rgba(196, 60, 43, 0.3); }
+.constraint-status-right .bdr-color-op20 {  border-color: rgba(71, 137, 72, 0.3); }
 
+.bkgd-color-op10 { background-color: rgba(245, 245, 245, 0.1); }
+.bkgd-color-op20 { background-color: rgba(245, 245, 245, 0.2); }
+.bkgd-color-op40 { background-color: rgba(245, 245, 245, 0.4); }
+
+@media (max-width: 768px) {
+	.bkgd-color-op10-sc { background-color: rgba(245, 245, 245, 0.1); }
+	.bkgd-color-op20-sc { background-color: rgba(245, 245, 245, 0.2); }
+	.bkgd-color-op40-sc { background-color: rgba(245, 245, 245, 0.4); }
+}
+
+.bkgd-color-op20-hover li:hover,
+.bkgd-color-op20-hover a:hover { background-color: rgba(245, 245, 245, 0.2); }
+
+@media (min-width: 769px) {
+	.dlt-color-op20-after:after { background-color: rgba(245, 245, 245, 0.2); }
+}
+
+.block-submenu-color {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0.618em rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 769px) {
+	.arrow-submenu-color:after {
+		border-color: transparent;
+		border-bottom-color: #FFFFFF;
+	}
+}
