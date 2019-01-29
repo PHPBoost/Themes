@@ -589,6 +589,13 @@ a.member { color: #000000; }
 .bkgd-color-visible 		{ background-color: #CCFFCC; }
 .bkgd-color-unvisible 		{ background-color: #FFEE99; }
 .bkgd-color-unaprobed 		{ background-color: #FFCCCC; }
+
+.bkgd-main,
+.bkgd-sub,
+.bkgd-title {
+	color: #FFFFFF;
+}
+
 .bkgd-main  { background-color: #2F4154; }
 .bkgd-sub   { background-color: #006699; }
 .bkgd-title { background-color: #1D3248; }

@@ -14,7 +14,7 @@
 				{menus_header.MENU}
 				# END menus_header #
 			# ENDIF #
-			</div>			
+			</div>
 		</div>
 		<div id="sub-header" class="sticky">
 			<div id="sub-header-content">
@@ -38,14 +38,6 @@
 		</div>
 		# ENDIF #
 
-		# IF C_MENUS_LEFT_CONTENT #
-		<aside id="menu-left">
-			# START menus_left #
-			{menus_left.MENU}
-			# END menus_left #
-		</aside>
-		# ENDIF #
-
 		# IF C_MENUS_RIGHT_CONTENT #
 		<aside id="menu-right">
 			# START menus_right #
@@ -54,7 +46,7 @@
 		</aside>
 		# ENDIF #
 
-		<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT # main-with-right# ENDIF #" role="main">
+		<div id="main" class="# IF C_MENUS_RIGHT_CONTENT #main-with-right# ENDIF #" role="main">
 			# IF C_MENUS_TOPCENTRAL_CONTENT #
 			<div id="top-content">
 				# START menus_top_central #
@@ -126,10 +118,8 @@
 				</a>
 			</span>
 			# IF C_DISPLAY_AUTHOR_THEME #
-			<span>
-				| {L_THEME} {L_THEME_NAME} {L_BY}
-				<a href="{U_THEME_AUTHOR_LINK}"><img src="{PATH_TO_ROOT}/templates/{THEME}/images/logo-labsoweb-footer.png" alt="logo pbt" /> {L_THEME_AUTHOR}</a>
-			</span>
+			<span class="footer-infos-separator"> | </span>
+			<span class="footer-infos-template-author">{L_THEME} {L_THEME_NAME} {L_BY} <i class="fa fa-sld-sld sld"></i> <a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 			# ENDIF #
 			# IF C_DISPLAY_BENCH #
 			<span>

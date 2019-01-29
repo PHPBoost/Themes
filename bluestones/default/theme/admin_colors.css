@@ -18,11 +18,11 @@ body {
     color: #b8c1cb;
 }
 
-header#header-admin {
+#header-admin {
 	background: #0E2134;
 }
 
-a#site-name {
+#site-name {
 	color: #647689;
     text-shadow: 0 0 0 rgb(0,0,0), 1px 0 0 rgb(-255,-255,-255),2px 0 1px rgba(0,0,0,0.1),2px 0 1px rgba(0,0,0,0.2),0 0 1px rgba(0,0,0,.1);
 }
@@ -31,12 +31,12 @@ a#site-name {
 	color: #FF6600;
 }
 
-footer#footer {
+#footer {
 	background-color: #0E2134;
 	border-color: #647689;
 }
 
-footer#footer span {
+#footer span {
 	color: #FFFFFF;
 }
 
@@ -66,6 +66,11 @@ footer#footer span {
     #      #   #  #  ##    #    #      #  ##    #
     #####  #####  #   #    #    #####  #   #    #
 ----------------------------------------------------------------------------- */
+.not-compatible .admin-element-menu-title {
+    background-color: #E84E40;
+	border-color: #CE271A;
+}
+
 section header h1,
 article header h1 {
 	border-color: #0E2134;
@@ -103,7 +108,7 @@ article header h3 {
 .sharing-element-print > a    { background-color: #999999; }
 .sharing-element-sms > a      { background-color: #999999; }
 
-ul.pagination-block li a {
+.pagination-block li a {
 	background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0.18) 0%, rgba(56, 56, 56, 0.10) 100%);
 	background-color: #F9F9F9;
 	border-color:#CCCCCC;
@@ -113,24 +118,24 @@ ul.pagination-block li a {
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-ul.pagination-block li a:hover {
+.pagination-block li a:hover {
 	background-color: #FDFDFD;
 	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-ul.pagination-block li a:active {
+.pagination-block li a:active {
 	background-color: #F1F1F1;
 	border-color: #DDDDDD;
 	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.05);
 }
 
-ul.pagination-block li a.current-page {
+.pagination-block li a.current-page {
 	background-color: #3B6B9F;
 	border-color: #366393;
 	color: #FEFEFE;
 }
 
-ul.pagination-block li a.current-page:hover, ul.pagination-block li a.current-page:hover {
+.pagination-block li .current-page:hover, .pagination-block li .current-page:hover {
 	background-color: #366393;
 	border-color: #315A86;
 }

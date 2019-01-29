@@ -16,33 +16,35 @@
 			${LangLoader::get_message('no.web.item', 'common', 'HomeLanding')}
 		</div>
 		# ENDIF #
-		<div class="str3 str_wrap">
-			# START item #
-					<a href="{item.U_LINK}">
-						# IF item.C_HAS_PARTNER_PICTURE #
-							<img class="item-picture" src="{item.U_PARTNER_PICTURE}" alt="{item.NAME}" itemprop="image" />
-						# ELSE #
-							{item.NAME}
-						# ENDIF #
-					</a>
-			# END item #
+		<div id="web-partners">
+			<ul class="item-wrap">
+				# START item #
+					<li class="item">
+						<a class="" href="{item.U_LINK}">
+							# IF item.C_HAS_PARTNER_PICTURE #
+								<img class="item-picture" src="{item.U_PARTNER_PICTURE}" alt="{item.NAME}" itemprop="image" />
+							# ELSE #
+								{item.NAME}
+							# ENDIF #
+						</a>
+					</li>
+				# END item #
+			</ul>
 		</div>
+
 	</div>
 	<footer></footer>
 </article>
 
-<script src="{PATH_TO_ROOT}/templates/{THEME}/modules/HomeLanding/js/jquery.liMarquee.js"></script>
+<script src="{PATH_TO_ROOT}/templates/{THEME}/modules/HomeLanding/js/grouploop.js"></script>
 <script>
-jQuery(window).load(function() {
-
-	jQuery('.str3').liMarquee({
-		direction: 'left',
-		loop:-1,
-		scrolldelay: 0,
-		scrollamount:80,
-		circular: true,
-		drag: true
+	jQuery('#web-partners').grouploop({
+		velocity: 2,
+		forward: false,
+		childWrapper: ".item-wrap",
+		childNode: ".item",
+		pauseOnHover: true,
+		stickFirstItem: false,
+		complete: null
 	});
-
-})
 </script>

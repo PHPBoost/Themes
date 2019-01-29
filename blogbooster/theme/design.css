@@ -1,0 +1,404 @@
+/**
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ * @copyright 	&copy; 2005-2019 PHPBoost - https://www.phpboost.com
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      PHPBoost [contact@phpboost.com]
+ * @version   	PHPBoost 5.2 - last update: 2019 01 25
+ * @since   	PHPBoost 4.0 - 2013 08 26
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+ * @link        http://www.labsoweb.fr
+*/
+
+/* -- Elements HTML generiques specifique au theme -- */
+/* -------------------------------------------------- */
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	font-size: 1.456em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+@media (min-width: 769px) {
+	body {
+		font-size: 1.618em;
+	}
+}
+
+/* -- Gestion de la taille du site -- */
+/* ---------------------------------- */
+
+#header:after,
+#top-header:after,
+#sub-header:after,
+#global:after,
+#main-content:after,
+#footer:after,
+fieldset:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#header,
+#top-header,
+#sub-header,
+#top-content,
+#bottom-content,
+#global,
+#footer {
+	width: 100%;
+	position: relative;
+}
+
+@media (min-width: 769px)  {
+	#top-header,
+	#sub-header,
+	#global {
+		margin: auto;
+	}
+
+	#top-header,
+	#sub-header,
+	#global {
+		width: 768px;
+	}
+
+	#top-header { min-height: 200px;}
+}
+
+@media (min-width: 1025px) { #top-header, #sub-header, #global { width: 1024px; } }
+@media (min-width: 1367px) { #top-header, #sub-header, #global { width: 1280px; } }
+
+
+/* -- En-tete de page - Header -- */
+/* ------------------------------ */
+#header,
+#sub-header,
+#top-header {
+	padding: 0;
+}
+
+#sub-header {
+	padding: 0 15px;
+}
+
+/* --- Partie inferieur du header --- */
+#site-logo {
+	width: 60px;
+	height: 60px;
+	background-image: url(images/logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#site-name-container {
+	margin: 0.2em 0 0 0.809em;
+}
+
+#site-name {
+	font-family: 'Special Elite', cursive,'Open Sans', sans-serif;
+	font-size: 1.618em;
+	display: block;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#site-slogan {
+	display: block;
+	padding: 0.3236em 0 0 0.1618em;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+	#site-logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	#site-name-container {
+		margin: 0 0 0 1.618em;
+	}
+
+	#site-name {
+		font-size: 4.236em;
+		line-height: 1.2em;
+	}
+
+	#site-slogan {
+		font-size: 1em;
+		padding: 0.1em 0 0 0.1618em;
+	}
+}
+
+
+/* -- Conteneur global du site -- */
+/* ------------------------------ */
+#main {
+	width: 100%;
+	position: relative;
+	padding-bottom: 250px;
+}
+
+
+#menu-right {
+	width: 100%;
+}
+
+@media (min-width: 769px) {
+
+	#menu-right {
+		width: calc(100% / 13 * 3.5);
+	}
+
+	#menu-right.narrow-menu-right {
+		width: calc(100% / 13 * 2.5);
+	}
+
+	#main.main-with-right {
+		width: calc(100% - ((100% / 13 * 5)));
+	}
+}
+
+#top-footer {
+	padding: 0.809em;
+}
+
+.block-container {
+	margin-top: 1em;
+}
+
+/* --- Emplacement au dessus et en dessous du contenu de la page --- */
+#top-content {
+	margin: 0 0 1.618em 0;
+}
+
+/* --- Emplacement au dessus du pied de page --- */
+#bottom-content {
+	margin: 1.618em 0 0;
+}
+
+
+/* -- Pied de page - Footer -- */
+/* --------------------------- */
+#footer {
+	clear: both;
+	border-width: 4px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+	padding: 0 0 1.618em;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer-content {
+	margin: 0 auto 0 auto;
+	padding: 0.809em;
+}
+
+.footer-infos {
+	margin: auto;
+	padding: 0.809em;
+	min-height: 40px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+	text-align: center;
+}
+
+.footer-infos span {
+	font-size: 0.8em;
+	display: block;
+}
+
+.footer-infos span.footer-infos-separator {
+	display: none;
+}
+
+@media (min-width: 769px) {
+	.footer-infos span,
+	.footer-infos span.footer-infos-separator {
+		display: inline-block;
+	}
+
+	.footer-infos {
+		padding: 0.618em 0 0;
+	}
+}
+
+
+/* -- Elements specifiques PHPboost -- */
+/* ----------------------------------- */
+
+/* --- Compteur de visites --- */
+#visit-counter {
+	position: absolute;
+	right: 10%;
+	top : 10%;
+	font-size: 0.9em;
+	text-align: right;
+}
+
+/* --- Barre de lien rapide --- */
+#breadcrumb {
+	padding: 0.618em;
+	font-size: 0.809em;
+}
+
+#breadcrumb ol {
+	margin: 0;
+	list-style: none;
+}
+
+#breadcrumb li {
+	display: inline;
+}
+
+#breadcrumb li:not(.current):after {
+	content: '/';
+}
+
+/* --- Scroll to Top --- */
+.scroll-to {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	cursor: pointer;
+}
+
+#scroll-to-top {
+	right: 0;
+	bottom: 0.618em;
+	padding: 0.618em 0.809em;
+}
+
+#scroll-to-top,
+.scroll-to i {
+	transition: 0.2s;
+}
+
+#scroll-to-top:hover,
+.scroll-to:hover i {
+	transition: 0.3s;
+}
+
+@media (min-width: 769px) {
+	#scroll-to-top {
+		right: 0.618em;
+	}
+
+	.scroll-to i {
+		font-size: 1.618em;
+	}
+}
+
+/* --- Cookie Bar --- */
+.cookiebar-container {
+	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0.456em 1.309em;
+	font-size: 0.809em;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-container {
+		position: fixed;
+		top: auto;
+		bottom: 0;
+		padding: 1.309em 1.309em 0.456em 1.309em;
+		margin: 1em 0.456em;
+		border-style: solid;
+		border-width: 1px;
+		font-size: 1em;
+	}
+}
+
+.cookiebar-container.fixed {
+	position: fixed;
+}
+
+.cookiebar-content {
+	text-align: justify;
+}
+
+@media (min-width: 769px) {
+	.cookiebar-content {
+		display: inline-block;
+		max-width: calc(100% - 400px);
+		vertical-align: top;
+	}
+
+	.cookiebar-actions {
+		display: inline-block;
+		width: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cookiebar-content {
+		margin-bottom: 0.309em;
+	}
+
+	.cookiebar-actions {
+		margin: 1em 0 0.309em 0;
+	}
+}
+
+.cookiebar-button {
+	margin: 0 0.309em;
+}
+
+@media (max-width: 768px) {
+	.cookiebar-button {
+		margin: 0 0.618em;
+	}
+}
+
+@media (max-width: 468px) {
+	.cookiebar-more {
+		display: block;
+		margin: 0.618em 0 0.309em 0;
+	}
+}
+
+.aboutcookie-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: bold
+}
+
+.aboutcookie-title + p {
+	margin: 0 0 1.309 0;
+}
+
+#cookiebar-change-choice {
+	margin-top: 0.618em;
+	text-align: center;
+}
+
+.cookiebar-change-choice-link {
+	text-align: center;
+}
+
+/* --- Search engines --- */
+.robot {
+	font-size: 0.9em;
+	font-weight: bold;
+}

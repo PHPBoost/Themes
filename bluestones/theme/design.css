@@ -40,19 +40,7 @@ body {
 
 /* --- Partie superieure du header --- */
 #top-header {
-	display: flex;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	flex-direction: column;
-	-ms-flex-direction: column;
-	-webkit-flex-direction: column;
 	min-height: 150px;
-}
-
-#top-header-content {
-	flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	-webkit-flex: 1 1 auto;
 }
 
 @media (min-width: 768px) {
@@ -74,9 +62,6 @@ body {
 
 /* --- Logo et Nom du site web --- */
 #site-infos {
-	display: flex;
-	display: -ms-flexbox;
-	display: -webkit-flex;
 	padding: 1.5em 0 0 1.5em;
 	width: 100%;
 	flex: 1 1 auto;
@@ -89,9 +74,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	flex: 0 0 auto;
-	-ms-flex: 0 0 auto;
-	-webkit-flex: 0 0 auto;
 }
 
 #site-name-container {
@@ -128,89 +110,37 @@ body {
 /* -- Conteneur global du site -- */
 /* ------------------------------ */
 #global {
-	display: flex;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	flex-direction: column;
-	-ms-flex-direction: column;
-	-webkit-flex-direction: column;
 	margin: 2em auto 0 ;
 	max-width: 1074px;
 }
 
 #main {
 	max-width: 100%;
-	order : 1;
-	-ms-flex-order: 1;
-	-webkit-flex-order: 1;
 	padding: 0 25px;
 }
 
-#menu-left,
 #menu-right {
 	width: 100%;
-}
-
-#menu-left  {
-	order : 2;
-	-ms-flex-order: 2;
-	-webkit-flex-order: 2;
-}
-#menu-right {
-	order : 3;
-	-ms-flex-order: 3;
-	-webkit-flex-order: 3;
 }
 
 @media (min-width: 769px) {
 	#global {
 		min-height: 100vh;
-		flex-direction: row;
-		-ms-flex-direction: row;
-		-webkit-flex-direction: row;
 	}
 
-	#main {
-		order : 2;
-		-ms-flex-order: 2;
-		-webkit-flex-order: 2;
-		flex: 1 0 auto;
-		-ms-flex: 1 0 100%;
-	}
-
-	#menu-left,
 	#menu-right {
     	width: 30%;
 		padding: 0 25px;
 	}
 
-	#menu-left  {
-		order : 1;
-		-ms-flex-order: 1;
-		-webkit-flex-order: 1;
-		border-width: 0 1px 0 0;
-		border-style: solid;
-		border-color: transparent;
-	}
-
 	#menu-right {
-		order : 3;
-		-ms-flex-order: 3;
-		-webkit-flex-order: 3;
 		border-width: 0 0 0 1px;
 		border-style: solid;
 		border-color: transparent;
 	}
 
-	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 30%);
-		-ms-flex: 1 0 auto; /*Tricks IE*/
-	}
-
-	#main.main-with-left.main-with-right {
-		width: calc(100% - 40%);
-		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
 }
 

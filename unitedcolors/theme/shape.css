@@ -1,12 +1,13 @@
-/* -------------------------------------
-		shape.css
- Contient la structure des emplacements propre à PHPBoost.
- - Structure des emplacements
- - Structure des éléments
-------------------------------------- */
-
-/* -- Structure des emplacements -- */
-/* -------------------------------- */
+/**
+ * Défini la structure des emplacements propre à PHPBoost
+ * @copyright 	&copy; 2005-2019 PHPBoost - https://www.phpboost.com
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      PHPBoost [contact@phpboost.com]
+ * @version   	PHPBoost 5.2 - last update: 2019 01 28
+ * @since   	PHPBoost 5.1 - 2019 01 25
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+ * @link        http://www.labsoweb.fr
+*/
 
 /* --- Partie superieure du header --- */
 #top-header {
@@ -29,12 +30,6 @@
 		flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
-	}
-
-	#top-header-content {
-		align-self: flex-end;
-		-ms-align-self: flex-end;
-		-webkit-align-self: flex-end;
 	}
 }
 
@@ -110,9 +105,9 @@
 	align-content: flex-start;
 	-ms-flex-line-pack: start;
 	-webkit-align-content: flex-start;
-	justify-content: space-around;
-	-ms-flex-pack: distribute;
-	-webkit-justify-content: space-around;
+	justify-content: space-between;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
 	clear: both;
 }
 

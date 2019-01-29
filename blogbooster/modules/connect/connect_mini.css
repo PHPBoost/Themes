@@ -1,0 +1,62 @@
+/**
+ * Contient les elements pour l'affichage du mini connect
+ * @copyright 	&copy; 2005-2019 PHPBoost - https://www.phpboost.com
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      PHPBoost [contact@phpboost.com]
+ * @version   	PHPBoost 5.2 - last update: 2019 01 25
+ * @since   	PHPBoost 5.1 - 2019 01 24
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+ * @link        http://www.labsoweb.fr
+*/
+
+.connect-content {
+	margin: auto;
+	padding-top: 3px;
+	list-style-type: none;
+}
+
+.connect-register i { vertical-align: -1px; }
+
+/** ----------------------------------------------------------------------------
+                        If placed in horizontal
+------------------------------------------------------------------------------*/
+#module-connect .horizontal-fieldset {
+	text-align: right;
+	margin: 0 10px 0 0;
+}
+#module-connect .horizontal-fieldset form { display: inline-block; }
+
+#module-connect .horizontal-fieldset .connect-content li {
+	display: inline-block;
+	margin-right: 10px;
+}
+#module-connect .horizontal-fieldset .connect-content li:last-child { margin-right: 0px; }
+
+#module-connect .horizontal-fieldset ul li,
+#module-connect .horizontal-fieldset ul li a { color: #FFFFFF; transition: color 0.5s ease-in 0s; }
+#module-connect .horizontal-fieldset ul li a:hover { color: #bbbbbb; transition: color 0.5s ease-in 0s; }
+#module-connect .horizontal-fieldset ul li > i{ vertical-align: 0px; }
+
+/** -- If placed in sub-header
+------------------------------------------------------------------------------*/
+#sub-header-content #module-connect {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+/** ----------------------------------------------------------------------------
+                        If placed in vertical
+------------------------------------------------------------------------------*/
+#module-connect .vertical-fieldset { margin: 0px; }
+
+#module-connect .vertical-fieldset form { margin-bottom: 10px; }
+#module-connect .vertical-fieldset .form-element label,
+#module-connect .vertical-fieldset .form-element label input { width: 100%; }
+
+#module-connect .vertical-fieldset .connect-content li > i{
+	width: 18px;
+	text-align: center;
+}
+
+#module-connect .vertical-fieldset button { margin: 5px 0px; }

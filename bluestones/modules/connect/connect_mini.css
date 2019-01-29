@@ -63,7 +63,12 @@
 	max-width: 520px;
 }
 
-/* #connect-menu.active.horizontal-fieldset div.connect-content */
+#top-footer #connect-menu.horizontal-fieldset div.connect-content,
+#footer #connect-menu.horizontal-fieldset div.connect-content {
+	top: auto;
+	bottom: calc(100% + 100px);
+}
+
 #connect-menu.opened.horizontal-fieldset div.connect-content {
 	z-index: 200;
 	top: calc(100% + 2px);
@@ -73,6 +78,11 @@
 	padding: 10px;
 	margin: auto;
 	max-width: 1024px;
+}
+
+#top-footer #connect-menu.opened.horizontal-fieldset div.connect-content,
+#footer #connect-menu.opened.horizontal-fieldset div.connect-content {
+	bottom: 100%
 }
 
 #connect-menu .close-connect {

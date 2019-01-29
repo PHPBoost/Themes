@@ -70,28 +70,33 @@
 		# ENDIF #
 
 		<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT # main-with-right# ENDIF #" role="main">
-			# IF C_MENUS_TOPCENTRAL_CONTENT #
-			<div id="top-content">
-				# START menus_top_central #
-				{menus_top_central.MENU}
-				# END menus_top_central #
-			</div>
-			<div class="spacer"></div>
-			# ENDIF #
 
 			<div id="main-content" itemprop="mainContentOfPage">
-				# INCLUDE ACTIONS_MENU #
-				# INCLUDE KERNEL_MESSAGE #
+
+			# INCLUDE ACTIONS_MENU #
+			# INCLUDE KERNEL_MESSAGE #
+
+				# IF C_MENUS_TOPCENTRAL_CONTENT #
+					<div id="top-content">
+						# START menus_top_central #
+						{menus_top_central.MENU}
+						# END menus_top_central #
+					</div>
+					<div class="spacer"></div>
+				# ENDIF #
+
 				{CONTENT}
+
+				# IF C_MENUS_BOTTOM_CENTRAL_CONTENT #
+					<div id="bottom-content">
+						# START menus_bottom_central #
+						{menus_bottom_central.MENU}
+						# END menus_bottom_central #
+					</div>
+				# ENDIF #
 			</div>
 
-			# IF C_MENUS_BOTTOM_CENTRAL_CONTENT #
-			<div id="bottom-content">
-				# START menus_bottom_central #
-				{menus_bottom_central.MENU}
-				# END menus_bottom_central #
-			</div>
-			# ENDIF #
+
 		</div>
 
 		# IF C_MENUS_RIGHT_CONTENT #
@@ -131,15 +136,13 @@
 			</span>
 			# IF C_DISPLAY_BENCH #
 			<span>
-				&nbsp;|&nbsp;
+			<span class="footer-infos-separator"> | </span>
 				{L_ACHIEVED} {BENCH}{L_UNIT_SECOND} - {REQ} {L_REQ} - {MEMORY_USED}
 			</span>
 			# ENDIF #
 			# IF C_DISPLAY_AUTHOR_THEME #
-			<span>
-				| {L_THEME} {L_THEME_NAME} {L_BY}
-				<a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a>
-			</span>
+			<span class="footer-infos-separator"> | </span>
+			<span class="footer-infos-template-author">{L_THEME} {L_THEME_NAME} {L_BY} <i class="fa fa-sld-sld sld"></i> <a href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 			# ENDIF #
 		</div>
 

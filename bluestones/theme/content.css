@@ -1200,3 +1200,15 @@ div#message-maintain > div {
 div#release {
 	margin-top: 20px;
 }
+
+/* hack homelanding */
+[id*="web-partners"] {
+    overflow: hidden;
+    display: block;
+    margin: 0;
+}
+
+[id*="web-partners"] .item-wrap {
+      transform: translateX(0px);
+      width: 2000%;
+}

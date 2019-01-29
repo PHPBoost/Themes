@@ -1,9 +1,13 @@
-/*--------------------------------------
-		design.css
-Contient les conteneurs de mise en page.
-Le design.css permet de mettre en forme votre site web avec le design de votre choix
---------------------------------------*/
-
+/**
+ * Défini les conteneurs de mise en page.
+ * @copyright 	&copy; 2005-2019 PHPBoost - https://www.phpboost.com
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      PHPBoost [contact@phpboost.com]
+ * @version   	PHPBoost 5.2 - last update: 2019 01 28
+ * @since   	PHPBoost 4.1 - 2015 04 15
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+ * @link        http://www.labsoweb.fr
+*/
 
 /* -- Elements HTML generiques specifique au theme -- */
 /* -------------------------------------------------- */
@@ -152,12 +156,12 @@ body {
 
 	#main.main-with-left,
 	#main.main-with-right {
-		width: calc(100% - 300px);
+		width: calc(100% - 320px);
 		margin: 0 20px 0 0;
 	}
 
 	#main.main-with-left.main-with-right {
-		width: calc(100% - 500px);
+		width: calc(100% - 540px);
 	}
 }
 
@@ -190,12 +194,13 @@ body {
 /* --------------------------- */
 
 #top-footer {
-	padding: 2% 0;
+	padding: 20px;
 }
 
 #footer {
 	clear: both;
 	width: 100%;
+	padding: 20px;
 }
 
 #footer .footer-content {
@@ -228,32 +233,6 @@ body {
 	font-size: 0.9em;
 	color: #F9FCFF;
 	text-align: right;
-}
-
-/* --- Barre d'outils --- */
-[class*="cssmenu-actionslinks"] {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: auto;
-}
-
-[class*="cssmenu-tools"] {
-	top: 0;
-	right: 40px;
-}
-
-@media (min-width:769px){
-	[class*="cssmenu-actionslinks"] {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-	}
-
-	[class*="cssmenu-tools"] {
-		top: 10px;
-		right: 60px;
-	}
 }
 
 /* --- Barre de lien rapide --- */

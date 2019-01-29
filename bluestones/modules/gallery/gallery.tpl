@@ -236,7 +236,7 @@
 
 		<section id="module-gallery">
 			<header>
-				<menu id="cssmenu-galleryfilter" class="cssmenu cssmenu-right cssmenu-actionslinks cssmenu-tools">
+				<nav id="cssmenu-galleryfilter" class="cssmenu cssmenu-right cssmenu-actionslinks cssmenu-tools">
 					<ul class="level-0 hidden">
 						<li><a class="cssmenu-title"><i class="fa fa-eye" aria-hidden="true"></i> {L_DISPLAY}</a>
 							<ul class="level-1">
@@ -260,7 +260,7 @@
 							</ul>
 						</li>
 					</ul>
-				</menu>
+				</nav>
 				<script>
 					jQuery("#cssmenu-galleryfilter").menumaker({
 						title: "${LangLoader::get_message('sort_options', 'common')}",
@@ -271,26 +271,35 @@
 						jQuery("#cssmenu-galleryfilter ul").removeClass('hidden');
 					});
 				</script>
-				<h1>
+				<div class="cat-actions">
 					<a href="${relative_url(SyndicationUrlBuilder::rss('gallery', CAT_ID))}" class="fa fa-syndication" aria-label="${LangLoader::get_message('syndication', 'common')}"></a>
-					{GALLERY} # IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit smaller" aria-hidden="true"></i></a># ENDIF #
+					# IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" aria-label="${LangLoader::get_message('edit', 'common')}"><i class="fa fa-edit" aria-hidden="true"></i></a># ENDIF #
+				</div>
+				<h1>
+					{GALLERY}
 				</h1>
-
-				# IF C_CATEGORY_DESCRIPTION #
-					<div class="cat-description">
-						{CATEGORY_DESCRIPTION}
-					</div>
-				# ENDIF #
 			</header>
 
+			# IF C_CATEGORY_DESCRIPTION #
+				<div class="cat-description">
+					{CATEGORY_DESCRIPTION}
+				</div>
+			# ENDIF #
+
 			# IF C_SUB_CATEGORIES #
-			<div class="subcat-container">
+			<div class="subcat-container elements-container# IF C_SEVERAL_CATS_COLUMNS # columns-{COLUMNS_NUMBER}# ENDIF #">
 				# START sub_categories_list #
-				<a itemprop="about" href="{sub_categories_list.U_CATEGORY}" aria-label="{sub_categories_list.CATEGORY_NAME}" itemprop="thumbnailUrl">
-					<div class="thumbnail" data-title="{sub_categories_list.CATEGORY_NAME}" data-description="{sub_categories_list.PICTURES_NUMBER}">
-						<div class="cat-picture" # IF sub_categories_list.C_CATEGORY_IMAGE #style="background-image: url({sub_categories_list.CATEGORY_IMAGE});"# ENDIF #></div>
+					<div class="subcat-element block">
+						<div class="subcat-content">
+							# IF sub_categories_list.C_CATEGORY_IMAGE #
+								<a class="subcat-thumbnail" itemprop="about" href="{sub_categories_list.U_CATEGORY}" title="{sub_categories_list.CATEGORY_NAME}">
+									<img itemprop="thumbnailUrl" src="{sub_categories_list.CATEGORY_IMAGE}" alt="{sub_categories_list.CATEGORY_NAME}" />
+								</a>
+							# ENDIF #
+							<a class="subcat-title" itemprop="about" href="{sub_categories_list.U_CATEGORY}">{sub_categories_list.CATEGORY_NAME}</a>
+							<span class="subcat-options">{sub_categories_list.PICTURES_NUMBER}</span>
+						</div>
 					</div>
-				</a>
 				# END sub_categories_list #
 				<div class="spacer"></div>
 			</div>
@@ -309,11 +318,11 @@
 						<p class="center" id="pics_max"></p>
 
 						# IF C_GALLERY_PICS_MAX #
-							<p class="pics-max"><a href="{U_IMG_MAX}" data-lightbox="formatter"><img src="{U_IMG_MAX}" alt="{CLEARED_NAME}" /></a></p>
+							<p class="pics-max"><a href="{U_IMG_MAX}" data-lightbox="formatter"><img src="{U_IMG_MAX}" alt="{NAME}" /></a></p>
 							<div class="options">
 								<h6>{L_INFORMATIONS}</h6>
 								# IF C_TITLE_ENABLED #
-								<span class="text-strong">{L_NAME} : </span><span><span id="fi_{ID}">{NAME}</span> <span id="fi{ID}"></span></span><br/>
+								<span class="infos-options">{L_NAME} : </span><span><span id="fi_{ID}">{NAME}</span> <span id="fi{ID}"></span></span><br/>
 								# ENDIF #
 								# IF C_AUTHOR_DISPLAYED #
 								<span class="text-strong">{L_POSTOR} : </span><span># IF C_POSTOR_EXIST #<a class="small {POSTOR_LEVEL_CLASS}"# IF C_POSTOR_GROUP_COLOR # style="color:{POSTOR_GROUP_COLOR}"# ENDIF # href="{U_POSTOR_PROFILE}">{POSTOR}</a># ELSE #${LangLoader::get_message('guest', 'main')}# ENDIF #</span><br/>

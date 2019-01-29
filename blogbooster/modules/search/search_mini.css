@@ -1,0 +1,210 @@
+/**
+ * Contient les elements pour l'affichage du mini search
+ * @copyright 	&copy; 2005-2019 PHPBoost - https://www.phpboost.com
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @author      PHPBoost [contact@phpboost.com]
+ * @version   	PHPBoost 5.2 - last update: 2019 01 25
+ * @since   	PHPBoost 5.1 - 2019 01 24
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+ * @link        http://www.labsoweb.fr
+*/
+
+/** ----------------------------------------------------------------------------
+                        If placed in horizontal
+------------------------------------------------------------------------------*/
+.search-tab {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.search-tab-btn {
+	padding: 5px 15px;
+}
+
+.search-tab form {
+	padding: 0 15px;
+}
+
+/** -- If placed in sub-header
+------------------------------------------------------------------------------*/
+
+@media (min-width: 769px) {
+	#sub-header .search-tab {
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 50px;
+		height: 40px;
+		overflow: hidden;
+		transition: width 0.3s ease 0.3s, height 0.3s ease;
+	}
+
+	#sub-header .search-tab form button {
+		margin: 0;
+		vertical-align: top;
+	}
+
+	#sub-header .search-tab-btn {
+		border-radius: 5px 5px 0 0;
+		border-width: 2px 2px 0 2px;
+		border-style: solid;
+		border-color: #FFFFFF;
+	}
+
+	#sub-header .search-tab form {
+		border-width: 0 2px 2px 2px;
+		border-style: solid;
+		border-color: #FFFFFF;
+		height: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s
+	}
+
+	#sub-header .search-tab.opened {
+		width: 318px;
+		height: 90px;
+		transition: width 0.3s ease, height 0.3s ease 0.3s;
+	}
+
+	#sub-header .search-tab.opened form {
+		padding: 5px 15px;
+		height: 45px;
+		opacity: 1;
+		transition: height 0.3s ease, opacity 0.3s ease 0.3s, padding 0.3s ease 0.3s;
+	}
+}
+
+/** -- If placed in top-header
+------------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+	#top-header .search-tab {
+		position: absolute;
+		top: -2px;
+		right: 0;
+		width: 50px;
+		height: 40px;
+		overflow: hidden;
+		transition: width 0.3s ease 0.3s, height 0.3s ease;
+	}
+
+	#top-header .search-tab form button {
+		margin: 0;
+		vertical-align: top;
+	}
+
+	#top-header .search-tab-btn {
+		border-radius: 5px
+		border-width: 2px;
+		border-style: solid;
+		border-color: #FFFFFF;
+		height: 41px;
+	}
+
+	#top-header .search-btn-title {
+		opacity: 0;
+	}
+
+	#top-header .search-tab form {
+		border-width: 0 2px 2px 2px;
+		border-style: solid;
+		border-color: #FFFFFF;
+		height: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s
+	}
+
+	#top-header .search-tab.opened {
+		width: 318px;
+		height: 90px;
+		transition: width 0.3s ease, height 0.3s ease 0.3s;
+	}
+
+	#top-header .search-tab.opened  .search-tab-btn {
+		transition: 0.3s ease
+	}
+
+	#top-header .search-tab.opened .search-btn-title {
+		opacity: 1;
+		transition: 03.s ease 0.3s
+	}
+
+	#top-header .search-tab.opened form {
+		padding: 5px 15px;
+		opacity: 1;
+		transition: height 0.3s ease, width 0.3s ease, opacity 0.3s ease 0.3s, padding 0.3s ease 0.3s;
+	}
+}
+
+/** -- If placed in bottom-content
+------------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+	#bottom-content .search-tab {
+		position: absolute;
+		top: -15px;
+		left: 10px;
+		width: 50px;
+		height: 40px;
+		overflow: hidden;
+		transition: width 0.3s ease 0.3s, height 0.3s ease;
+		box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
+	}
+
+	#bottom-content .search-tab form button {
+		margin: 0;
+		vertical-align: top;
+	}
+
+	#bottom-content .search-tab-btn {
+		border-radius: 5px;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #FFFFFF;
+		color: #FFFFFF;
+		height: 41px;
+	}
+
+	#bottom-content .search-btn-title {
+		opacity: 0;
+	}
+
+	#bottom-content .search-tab form {
+		border-width: 0 2px 2px 2px;
+		border-style: solid;
+		border-color: #FFFFFF;
+		height: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s
+	}
+
+	#bottom-content .search-tab.opened {
+		width: 318px;
+		height: 90px;
+		transition: width 0.3s ease, height 0.3s ease 0.3s;
+	}
+
+	#bottom-content .search-tab.opened  .search-tab-btn {
+		transition: 0.3s ease
+	}
+
+	#bottom-content .search-tab.opened .search-btn-title {
+		opacity: 1;
+		transition: 03.s ease 0.3s
+	}
+
+	#bottom-content .search-tab.opened form{
+		padding: 5px 15px;
+		opacity: 1;
+		transition: height 0.3s ease, width 0.3s ease, opacity 0.3s ease 0.3s, padding 0.3s ease 0.3s;
+	}
+}
+
+/** ----------------------------------------------------------------------------
+                        If placed in vertical
+------------------------------------------------------------------------------*/
+#module-mini-search-form .module-mini-top {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+##module-mini-search-form .module-mini-container {
+	background-color: #2b568d;
+}

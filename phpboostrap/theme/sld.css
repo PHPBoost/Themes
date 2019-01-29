@@ -1,0 +1,50 @@
+/**
+ * @copyright 	&copy; 2005-2019 Icomoon - PHPBoost
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @license 	Icomoon - see license of each pack at https://icomoon.io/app/#/select/library
+ * @author      Icomoon <https://icomoon.io/#contact>
+ * @link        https://icomoon.io/app/#/select
+ * @version   	PHPBoost 5.2 - last update: 2019 01 25
+ * @since   	PHPBoost 5.1 - 2019 01 24
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+ * @link        http://www.labsoweb.fr
+*/
+
+@font-face {
+  font-family: 'labsofont';
+  src:  url('fonts/labsofont.eot?44ttt4');
+  src:  url('fonts/labsofont.eot?44ttt4#iefix') format('embedded-opentype'),
+    url('fonts/labsofont.ttf?44ttt4') format('truetype'),
+    url('fonts/labsofont.woff?44ttt4') format('woff'),
+    url('fonts/labsofont.svg?44ttt4#labsofont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sld {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'labsofont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-sld-labsoweb:before {
+  content: "\e100";
+}
+.fa-sld-sld:before {
+  content: "\e100";
+}
+.fa-sld-labsoweb-alt:before {
+  content: "\e101";
+}
+.fa-sld-sld-alt:before {
+  content: "\e101";
+}

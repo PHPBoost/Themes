@@ -1,3 +1,15 @@
+/**
+ * Permet d'afficher le logo labsoweb sous forme d'icone en html ou en bbcode
+ * @copyright 	&copy; 2005-2019 Icomoon - PHPBoost
+ * @license 	PHPBoost - https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL-3.0
+ * @license 	Icomoon - see license of each pack at https://icomoon.io/app/#/select/library
+ * @author      Icomoon <https://icomoon.io/#contact>
+ * @link        https://icomoon.io/app/#/select
+ * @version   	PHPBoost 5.2 - last update: 2019 01 25
+ * @since   	PHPBoost 5.2 - 2019 01 25
+ * @contributor Sebastien LARTIGUE [babsolune@phpboost.com]
+*/
+
 @font-face {
   font-family: 'labsofont';
   src:  url('fonts/labsofont.eot?44ttt4');
