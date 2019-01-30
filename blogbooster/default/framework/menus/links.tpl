@@ -36,17 +36,7 @@
 			<div class="module-mini-bottom hidden-small-screens"></div>
 		</div>
 		<script>
-			jQuery('\#links-menu-{ID} .module-mini-top').on('click',function() {
-				jQuery('\#links-menu-{ID} .module-mini-top').parent().toggleClass('opened');
-				if(jQuery('\#links-menu-{ID}').hasClass('opened')) {
-					value = jQuery('\#links-menu-{ID} .module-mini-contents').innerHeight();
-					openedHeight = (value + 60);
-				}
-				else
-					openedHeight = 60;
-
-				jQuery('\#links-menu-{ID}').css('height', openedHeight+'px');
-			});
+			jQuery('#links-menu-{ID}').swapMini();
 		</script>
 		# ENDIF #
 		<script>jQuery("#cssmenu-${escape(ID)}").menumaker({ title: "{TITLE}", format: "multitoggle", breakpoint: 768# IF C_MENU_STATIC #, static: true# ENDIF # }); </script>

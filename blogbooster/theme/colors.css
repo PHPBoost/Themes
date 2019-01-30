@@ -532,7 +532,10 @@ tbody td.calendar-today     { border-color: #81A4C8; }
 tbody td.calendar-weekend   { background-color: rgba(0, 0, 0, 0.1); }
 
 #header .bkgd-main a,
-#header .bkgd-main {color: #777777;}
+#header .bkgd-main,
+.bkgd-main,
+.bkgd-sub,
+.bkgd-title	 {color: #777777;}
 .bkgd-main	{ background-color: #FFFFFF; }
 .bkgd-sub   { background-color: #E1E1E1; }
 .bkgd-title	{ background-color: #afceed; }
