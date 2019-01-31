@@ -28,21 +28,17 @@
 
 #module-connect .horizontal-fieldset .connect-content li {
 	display: inline-block;
-	margin-right: 10px;
 }
+
 #module-connect .horizontal-fieldset .connect-content li:last-child { margin-right: 0px; }
 
 #module-connect .horizontal-fieldset ul li,
-#module-connect .horizontal-fieldset ul li a { color: #FFFFFF; transition: color 0.5s ease-in 0s; }
-#module-connect .horizontal-fieldset ul li a:hover { color: #bbbbbb; transition: color 0.5s ease-in 0s; }
-#module-connect .horizontal-fieldset ul li > i{ vertical-align: 0px; }
-
-/** -- If placed in sub-header
-------------------------------------------------------------------------------*/
-#sub-header-content #module-connect {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
+#module-connect .horizontal-fieldset ul li > i{
+	vertical-align: 0px;
+}
+#module-connect .horizontal-fieldset ul li > a{
+	display: block;
+	padding: 0.618em 0.309em;
 }
 
 /** ----------------------------------------------------------------------------

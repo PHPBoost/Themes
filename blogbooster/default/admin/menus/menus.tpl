@@ -438,7 +438,6 @@ function createSortableMenu()
 			<input type="hidden" name="token" value="{TOKEN}">
 		</div>
 	</div> <!-- admin-contents -->
-
 	<script>
 	<!--
 	jQuery(document).ready(function() {

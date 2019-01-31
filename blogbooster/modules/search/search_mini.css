@@ -13,8 +13,8 @@
                         If placed in horizontal
 ------------------------------------------------------------------------------*/
 .search-tab {
-	background-color: #FFFFFF;
 	border-radius: 5px;
+	background-color: #FFFFFF;
 }
 
 .search-tab-btn {
@@ -25,53 +25,70 @@
 	padding: 0 15px;
 }
 
+.search-tab form button,
+.search-tab form input {
+	vertical-align: top;
+	margin: 0.618em;
+}
+
 /** -- If placed in sub-header
 ------------------------------------------------------------------------------*/
 
 @media (min-width: 769px) {
 	#sub-header .search-tab {
-		position: absolute;
-		bottom: -2px;
-		left: 0;
-		width: 50px;
-		height: 40px;
-		overflow: hidden;
-		transition: width 0.3s ease 0.3s, height 0.3s ease;
-	}
-
-	#sub-header .search-tab form button {
-		margin: 0;
-		vertical-align: top;
+		border-radius: 5px 5px 0 0;
+		width: 300px;
+		position: relative;
+		margin: 0 0.456em;
 	}
 
 	#sub-header .search-tab-btn {
-		border-radius: 5px 5px 0 0;
-		border-width: 2px 2px 0 2px;
+		border-radius: 5px;
+		border-width: 2px;
 		border-style: solid;
 		border-color: #FFFFFF;
 	}
 
-	#sub-header .search-tab form {
+	#sub-header .search-tab form  {
+		border-radius: 0 0 5px 5px;
+		padding: 0 0.309em;
 		border-width: 0 2px 2px 2px;
 		border-style: solid;
+		background-color: #FFFFFF;
 		border-color: #FFFFFF;
-		height: 0;
+		position: absolute;
+		z-index: 50;
 		opacity: 0;
-		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s
+		visibility: hidden;
+		top: 150%;
+		width: 100%;
+		transition: all 0.3s ease;
 	}
 
-	#sub-header .search-tab.opened {
-		width: 318px;
-		height: 90px;
-		transition: width 0.3s ease, height 0.3s ease 0.3s;
+	.search-tab form button,
+	.search-tab form input {
+		margin: 0;
 	}
 
-	#sub-header .search-tab.opened form {
-		padding: 5px 15px;
-		height: 45px;
+	#sub-header .search-tab form input {
+		max-width: 178px;
+	}
+
+	#sub-header .search-tab.opened form  {
+		padding: 0.309em;
+		top: calc(100% - 5px);
 		opacity: 1;
-		transition: height 0.3s ease, opacity 0.3s ease 0.3s, padding 0.3s ease 0.3s;
+		visibility: visible;
+		transition: all 0.3s ease;
 	}
+}
+
+@media (min-width: 1025px) {
+
+	#sub-header .search-tab form input {
+		max-width: 100%;
+	}
+
 }
 
 /** -- If placed in top-header
@@ -84,6 +101,7 @@
 		width: 50px;
 		height: 40px;
 		overflow: hidden;
+		z-index: 50;
 		transition: width 0.3s ease 0.3s, height 0.3s ease;
 	}
 

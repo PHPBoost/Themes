@@ -86,13 +86,8 @@ fieldset:after {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 #header,
-#sub-header,
 #top-header {
 	padding: 0;
-}
-
-#sub-header {
-	padding: 0 15px;
 }
 
 /* --- Partie inferieur du header --- */
@@ -180,11 +175,6 @@ fieldset:after {
 
 .block-container {
 	margin-top: 1em;
-}
-
-/* --- Emplacement au dessus et en dessous du contenu de la page --- */
-#top-content {
-	margin: 0 0 1.618em 0;
 }
 
 /* --- Emplacement au dessus du pied de page --- */

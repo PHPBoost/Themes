@@ -94,7 +94,6 @@
 /* --------------------*/
 .cssmenu-horizontal {
 	display: table;
-	margin: auto;
 }
 
 .cssmenu-horizontal > ul > li {
