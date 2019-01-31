@@ -91,7 +91,7 @@
 	# IF C_USER_NOTCONNECTED #
 	<div id="module-connect">
 		<div class="horizontal-fieldset">
-		<ul class="connect-content">
+			<ul class="connect-content">
 				<li>
 					<a href="${relative_url(UserUrlBuilder::connect())}" aria-label="{@connection}"><i class="fa fa-sign-in" aria-hidden="true"></i> </a>&nbsp;
 				</li>
@@ -109,7 +109,6 @@
 				# END external_auth #
 			# ENDIF #
             </ul>
-            </div>
 		</div>
 	</div>
 	# ELSE #
