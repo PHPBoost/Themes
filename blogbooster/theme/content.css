@@ -24,7 +24,7 @@ article {
 }
 
 section header {
-	padding: 10px 55px 0 0;
+	padding: 10px 55px 10px 10px;
 }
 
 article header {
@@ -55,6 +55,10 @@ article header h3 {
 }
 
 /* Icones avec les actions (edition, suppression, etc) */
+.cat-actions {
+	text-align: right;
+}
+
 .actions {
     float: right;
     margin-left: 15px;
