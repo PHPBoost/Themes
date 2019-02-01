@@ -38,15 +38,23 @@
 		</div>
 		# ENDIF #
 
+		# IF C_MENUS_LEFT_CONTENT #
+		<aside id="menu-left"# IF C_MENUS_RIGHT_CONTENT # class="disabled-column"# ENDIF #>
+			# START menus_left #
+			{menus_left.MENU}
+			# END menus_left #
+		</aside>
+		# ENDIF #
+
 		# IF C_MENUS_RIGHT_CONTENT #
-		<aside id="menu-right">
+		<aside id="menu-right"# IF C_MENUS_LEFT_CONTENT # class="disabled-column"# ENDIF #>
 			# START menus_right #
 			{menus_right.MENU}
 			# END menus_right #
 		</aside>
 		# ENDIF #
 
-		<div id="main" class="# IF C_MENUS_RIGHT_CONTENT #main-with-right# ENDIF #" role="main">
+		<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT #main-with-right# ENDIF #" role="main">
 			# IF C_MENUS_TOPCENTRAL_CONTENT #
 			<div id="top-content">
 				# START menus_top_central #

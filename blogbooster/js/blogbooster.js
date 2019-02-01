@@ -10,3 +10,7 @@ $.fn.swapMini = function() {
         jQuery(this).parent().css('height', openedHeight+'px');
     });
 };
+
+footer = jQuery('#footer').innerHeight();
+jQuery('#footer').css('height', footer+'px');
+jQuery('#main').css('padding-bottom', footer+'px')

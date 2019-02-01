@@ -582,6 +582,17 @@ body.dragging * {
     right: 10px;
 }
 
+/* horizontal */
+
+.block-container {
+	margin-top: 1em;
+}
+
+.block-container img {
+	max-width: 150px;
+}
+
+
 /* -- Messages postes par les membres -- */
 /* ------------------------------------- */
 #comments-list {

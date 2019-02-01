@@ -114,11 +114,16 @@ body {
 	max-width: 1074px;
 }
 
+.disabled-column {
+	display: none;
+}
+
 #main {
 	max-width: 100%;
 	padding: 0 25px;
 }
 
+#menu-left,
 #menu-right {
 	width: 100%;
 }
@@ -128,9 +133,16 @@ body {
 		min-height: 100vh;
 	}
 
+	#menu-left,
 	#menu-right {
     	width: 30%;
 		padding: 0 25px;
+	}
+
+	#menu-left {
+		border-width: 0 1px 0 0;
+		border-style: solid;
+		border-color: transparent;
 	}
 
 	#menu-right {
@@ -139,6 +151,7 @@ body {
 		border-color: transparent;
 	}
 
+	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 30%);
 	}

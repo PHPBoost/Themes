@@ -204,7 +204,7 @@ function createSortableMenu()
 								</div>
 								<p class="menu-block-libelle">
 									<span class="form-field-checkbox-mini">
-										<input id="left_column_enabled" onclick="minimize_container(this, 'left')" type="checkbox" name="left_column_enabled" disabled="disabled" />
+										<input id="left_column_enabled" onclick="minimize_container(this, 'left')" type="checkbox" name="left_column_enabled" {CHECKED_LEFT_COLUMN} />
 										<label for="left_column_enabled"></label>
 									</span>
 									{L_LEFT_MENU}
@@ -214,7 +214,7 @@ function createSortableMenu()
 								</p>
 							</div>
 						</div>
-						<div id="mod_left" style="background-color: red;">
+						<div id="mod_left"# IF NOT C_RIGHT_COLUMN # style="background-color: red;"# ENDIF ## IF C_LEFT_COLUMN ## IF C_RIGHT_COLUMN # style=" background-color: red"# ENDIF ## ENDIF #>
 							<hr />
 							# START mod_left #
 								{mod_left.MENU}
@@ -243,13 +243,13 @@ function createSortableMenu()
 									</div>
 									<p class="menu-block-libelle">
 										<span class="form-field-checkbox-mini">
-											<input id="top_central_enabled" onclick="minimize_container(this, 'topcentral')" type="checkbox" name="top_central_enabled" {CHECKED_TOP_CENTRAL_COLUMN} />
+											<input id="top_central_enabled" onclick="minimize_container(this, 'topcentral')" type="checkbox" name="top_central_enabled" CHECKED_TOP_CENTRAL_COLUMN />
 											<label for="top_central_enabled"></label>
 										</span>
 										{L_TOP_CENTRAL_MENU}
 									</p>
 									<p class="menus-block-add" onclick="menu_display_block('addmenu4');" onmouseover="menu_hide_block('addmenu4', 1);" onmouseout="menu_hide_block('addmenu4', 0);">
-										<i class="fa fa-plus" aria-hidden="true"></i> {L_ADD_MENU}
+										<span hidden><i class="fa fa-plus" aria-hidden="true"></i> {L_ADD_MENU}</span>
 									</p>
 								</div>
 							</div>
@@ -345,7 +345,7 @@ function createSortableMenu()
 								</p>
 							</div>
 						</div>
-						<div id="mod_right">
+						<div id="mod_right"# IF NOT C_LEFT_COLUMN # style=" background-color: red"# ENDIF ## IF C_RIGHT_COLUMN ## IF C_LEFT_COLUMN # style=" background-color: red"# ENDIF ## ENDIF #>
 							<hr />
 							# START mod_right #
 								{mod_right.MENU}
@@ -438,7 +438,6 @@ function createSortableMenu()
 			<input type="hidden" name="token" value="{TOKEN}">
 		</div>
 	</div> <!-- admin-contents -->
-
 	<script>
 	<!--
 	jQuery(document).ready(function() {
