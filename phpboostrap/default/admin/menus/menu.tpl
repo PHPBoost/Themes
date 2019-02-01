@@ -11,7 +11,7 @@
 			</a>
 			# ENDIF #
 			<a href="" class="btn btn-pbt" title="${LangLoader::get_message('move', 'admin')}" onclick="return false;">
-				<i class="fa fa-arrows"></i>
+				<i class="fa fa-arrows-alt"></i>
 			</a>
 			# IF C_EDIT #
 				<a href="{U_EDIT}" title="{L_EDIT}" class="btn btn-info">

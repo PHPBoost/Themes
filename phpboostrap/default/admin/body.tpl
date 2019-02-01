@@ -19,7 +19,7 @@
 				</li>
 				<li>
 					<a href="${relative_url(UserUrlBuilder::disconnect())}" title="{L_DISCONNECT}">
-						<i class="fa fa-fw fa-sign-out"></i> <span>{L_DISCONNECT}</span>
+						<i class="fa fa-fw fa-sign-out-alt"></i> <span>{L_DISCONNECT}</span>
 					</a>
 				</li>
 			</ul>
@@ -37,7 +37,7 @@
 						<span>{L_ADMIN_MAIN_MENU}</span>
 					</h3>
 					# INCLUDE subheader_menu #
-				</div>	
+				</div>
 
 				<div id="support-pbt">
 					<nav>
@@ -67,22 +67,22 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div id="global">
-		
+
 		<div id="admin-main">
 			# INCLUDE KERNEL_MESSAGE #
 			{CONTENT}
 		</div>
-		
+
 		<footer id="footer">
 			<span>
 				{L_POWERED_BY} <a class="powered-by" href="https://www.phpboost.com" title="PHPBoost">PHPBoost</a> {L_PHPBOOST_RIGHT}
-			</span>	
+			</span>
 			# IF C_DISPLAY_BENCH #
 				<span>
 				{L_ACHIEVED} {BENCH}{L_UNIT_SECOND} - {REQ} {L_REQ} - {MEMORY_USED}
-				</span>	
+				</span>
 			# ENDIF #
 			# IF C_DISPLAY_AUTHOR_THEME #
 				<span>
@@ -90,5 +90,5 @@
 				</span>
 			# ENDIF #
 		</footer>
-		
+
 	</div>
