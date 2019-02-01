@@ -3,7 +3,7 @@
 # INCLUDE UPLOAD_FORM #
 <form action="{REWRITED_SCRIPT}" method="post" class="fieldset-content">
 	<input type="hidden" name="token" value="{TOKEN}">
-	<section id="upgrade-modules-container" class="admin-elements-container modules-elements-container upgrade-elements-container">
+	<section id="upgrade-modules-container">
 		<header><h1>{@modules.updates_available}</h1></header>
 		# IF C_UPDATES #
 		<div class="row grid-columns">

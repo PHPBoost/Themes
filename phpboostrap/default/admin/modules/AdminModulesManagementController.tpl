@@ -9,7 +9,7 @@
 		<header><h1>{@modules.installed_modules}</h1></header>
 		<div class="row grid-columns">
 			# START modules_installed #
-			<div class="col-md-6 col-lg-4# IF modules_installed.C_IS_ACTIVATED # activate-element# ELSE # deactivate-element# ENDIF ## IF NOT modules_installed.C_COMPATIBLE # not-compatible# ENDIF #">
+			<div class="col-md-6 col-lg-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<div class="row">
@@ -28,7 +28,7 @@
 									# ENDIF #
 									<div class="input-group-btn" role="group">
 										<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-											class="btn dropdown-toggle # IF modules_installed.C_COMPATIBLE ## IF modules_installed.C_IS_ACTIVATED #btn-success# ELSE #btn-warning# ENDIF ## ELSE #btn-danger# ENDIF #">
+											class="btn dropdown-toggle# IF modules_installed.C_COMPATIBLE ## IF modules_installed.C_IS_ACTIVATED # btn-success# ELSE # btn-warning# ENDIF ## ELSE # btn-danger# ENDIF #">
 											# IF modules_installed.C_COMPATIBLE #
 												# IF modules_installed.C_IS_ACTIVATED #
 													${LangLoader::get_message('actions', 'admin-common')}

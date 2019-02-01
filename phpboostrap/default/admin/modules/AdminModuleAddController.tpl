@@ -8,7 +8,7 @@
 		# IF C_MODULE_AVAILABLE #
 		<div class="row grid-columns">
 			# START modules_not_installed #
-				<div class="col-md-6 col-lg-4# IF NOT modules_not_installed.C_COMPATIBLE # not-compatible# ENDIF #">
+				<div class="col-md-6 col-lg-4">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<div class="row">
