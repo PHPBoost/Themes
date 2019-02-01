@@ -85,7 +85,6 @@
 		</div>
 		<footer>
 			<fieldset class="fieldset-submit">
-				<legend>{L_SUBMIT}</legend>
 				<button type="submit" class="btn btn-primary" name="update_langs_configuration" value="true">${LangLoader::get_message('save.authorizations', 'admin-common')}</button>
 				<input type="hidden" name="token" value="{TOKEN}">
 				<input type="hidden" name="update" value="true">

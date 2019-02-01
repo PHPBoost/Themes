@@ -113,7 +113,7 @@ jQuery(document).ready(function() {
 							<a href="" onclick="return false;" id="change-display-{servers.ID}"><i # IF servers.C_DISPLAY #class="fa fa-eye" title="{@server.display}"# ELSE #class="fa fa-eye-slash" title="{@server.not_display}"# ENDIF #></i></a>
 						</div>
 					</div>
-					<div class="spacer"></div>
+					<div class="clearfix"></div>
 					<script>
 					<!--
 					jQuery(document).ready(function() {

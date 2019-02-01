@@ -102,7 +102,7 @@
 		<p style="margin-top:1.5em"><button class="button" onclick="view_not_approved()" value="true">{L_LIST_NOT_APPROVED}</button></p>
 		# ENDIF #
 		<hr style="margin-top:10px;" />
-			<div class="spacer">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
 		
 		# IF NOT C_NB_SMALLADS #
 			<div class="center">
@@ -122,7 +122,7 @@
 					# END mode_options #
 				</select>
 			</div>
-			<div class="spacer">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
 
 			# START item #
 				<div id="smallads_{item.ID}" class="block-container" style="margin-bottom:20px;">
@@ -160,7 +160,7 @@
 						<span style="float:left;">
 							{item.USER} {item.USER_PM} {item.USER_MAIL}
 						</span>
-						<div class="spacer"></div>
+						<div class="clearfix"></div>
 					</div>
 				</div>
 			# END item #

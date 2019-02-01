@@ -7,7 +7,7 @@
 			<span class="smaller">{ADDRESS}:{PORT}</span>
 			# ENDIF #
 			# IF C_DESCRIPTION #
-			<div class="spacer">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
 			{DESCRIPTION}
 			# ENDIF #
 		</td>

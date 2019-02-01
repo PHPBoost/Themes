@@ -67,7 +67,7 @@
 				<h3 class="title page_name">{PAGE_NAME}</h3>
 			# ENDIF #
 				<div itemprop="text">{CONTENTS}</div>
-				<div class="spacer"></div>
+				<div class="clearfix"></div>
 				${ContentSharingActionsMenuService::display()}
 
 			<hr />

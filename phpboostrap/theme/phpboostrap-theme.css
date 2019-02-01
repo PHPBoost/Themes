@@ -236,3 +236,7 @@ fieldset[disabled] .btn-pbt {
 .warning a {
     color: #66512c;
 }
+
+.btn-share a {
+    color: #FFFFFF;
+}

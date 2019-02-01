@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		# END sub_categories_list #
-		<div class="spacer"></div>
+		<div class="clearfix"></div>
 	</div>
 	# IF C_SUBCATEGORIES_PAGINATION ## INCLUDE SUBCATEGORIES_PAGINATION ## ENDIF #
 	# ENDIF #
@@ -54,7 +54,7 @@
 
 				<div class="content">
 					<p itemprop="text">{quotes.QUOTE}</p>
-					<div class="spacer"></div>
+					<div class="clearfix"></div>
 					<div class="left text-strong"><a href="{quotes.U_AUTHOR_LINK}" class="small">{quotes.AUTHOR}</a></div>
 				</div>
 				<footer></footer>

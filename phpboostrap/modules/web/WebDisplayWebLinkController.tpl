@@ -45,7 +45,7 @@
 				</span>
 				# ENDIF #
 				<div itemprop="text">{CONTENTS}</div>
-				<div class="spacer"></div>
+				<div class="clearfix"></div>
 				${ContentSharingActionsMenuService::display()}
 			</div>
 
