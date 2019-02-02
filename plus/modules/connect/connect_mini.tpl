@@ -17,15 +17,6 @@
 	-->
 	</script>
 # ENDIF #
-<script>
-	<!--
-	function open_submenu(myid)
-	{
-		jQuery('#' + myid).toggleClass('active');
-	}
-	-->
-</script>
-
 
 # IF C_VERTICAL #
 	# IF C_USER_NOTCONNECTED #
@@ -102,7 +93,7 @@
 	# IF C_USER_NOTCONNECTED #
 	<div id="connect-menu" class="not-connected">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{@connection}"><i class="fa fa-sign-in"></i> {@connection}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu','active');return false;" title="{@connection}"><i class="fa fa-sign-in"></i> {@connection}</a>
 			<div class="connect-content">
 				<form action="{U_CONNECT}" method="post" onsubmit="return check_connect();">
 					<input type="text" id="login" name="login" title="{@login}" placeholder="{@login}" class="connect-form">
@@ -128,7 +119,7 @@
 	# ELSE #
 	<div id="connect-menu" class="connected">
 		<div class="horizontal-fieldset">
-			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu');return false;" title="{@dashboard}"><i class="fa fa-bars"></i> {@dashboard}</a>
+			<a href="" class="js-menu-button" onclick="open_submenu('connect-menu','active');return false;" title="{@dashboard}"><i class="fa fa-bars"></i> {@dashboard}</a>
 			<ul class="connect-content">
 				<li>
 					<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small" title="{L_PRIVATE_PROFIL}"><i class="fa fa-user"></i> <span class="user-span">{L_PRIVATE_PROFIL}</span></a>

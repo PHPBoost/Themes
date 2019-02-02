@@ -177,8 +177,11 @@ div.connect-register i {
 	}
 
 	#connect-menu .horizontal-fieldset a {
-		color: #FFF;
 		text-decoration: none;
+	}
+
+	#connect-menu .horizontal-fieldset .connect-content a {
+		color: #FFF;
 	}
 
 	#connect-menu div.horizontal-fieldset span {
