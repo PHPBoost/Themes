@@ -1545,3 +1545,46 @@ hr {clear: both;}
 .login-form .col-sm-3 {
     width: 100% !important;
 }
+
+
+.fa.fa-star-empty::before {
+    content: "\f005";
+}
+
+.notation,
+.static-notation {
+	display: inline-block;
+}
+
+.notation .star,
+.static-notation .star {
+	position: relative;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.notation .star-width {
+	position: absolute;
+	display: inline-block;
+	top:0;
+	left:0;
+}
+
+.notation .star-width:before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	color: #E3CF7A;
+	left: 0;
+	top:0;
+	content:"\f005";
+	display:block;
+	overflow:hidden;
+}
+
+.star-width-0   { width: 0%;   }
+.star-width-10  { width: 30%;  }
+.star-width-25  { width: 41%;  }
+.star-width-50  { width: 50%;  }
+.star-width-75  { width: 65%;  }
+.star-width-90  { width: 78%;  }
+.star-width-100 { width: 100%; }
