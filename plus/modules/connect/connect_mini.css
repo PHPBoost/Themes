@@ -180,7 +180,8 @@ div.connect-register i {
 		text-decoration: none;
 	}
 
-	#connect-menu .horizontal-fieldset .connect-content a {
+	#connect-menu .horizontal-fieldset .connect-content a 
+	{
 		color: #FFF;
 	}
 
