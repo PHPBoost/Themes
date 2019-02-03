@@ -117,12 +117,9 @@
 						<button type="submit" name="register" value="true" class="submit">{@register}</button>
 						<input type="hidden" name="token" value="{TOKEN}">
 					</form><br />
-					# IF C_FB_AUTH_ENABLED #
-					<a class="social-connect fb" href="${relative_url(UserUrlBuilder::connect('fb'))}" title="${LangLoader::get_message('facebook-connect', 'user-common')}"><i class="fa fa-facebook"></i><span>&nbsp; ${LangLoader::get_message('facebook-connect', 'user-common')}</span></a>
-					# ENDIF #
-					# IF C_GOOGLE_AUTH_ENABLED #
-					<a class="social-connect google" href="${relative_url(UserUrlBuilder::connect('google'))}" title="${LangLoader::get_message('google-connect', 'user-common')}"><i class="fa fa-google-plus"></i><span>&nbsp; ${LangLoader::get_message('google-connect', 'user-common')}</span></a>
-					# ENDIF #<br />
+					# START external_auth #
+    				<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+					# END external_auth #<br />
 				# ENDIF #
 				<a class="small" href="${relative_url(UserUrlBuilder::forget_password())}">${LangLoader::get_message('forget-password', 'user-common')}</a>
 			</div>
