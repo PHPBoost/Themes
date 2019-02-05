@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 03/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -87,7 +87,7 @@ h5 { font-size: 1.8rem; }
 h6 { font-size: 1.4rem; }
 
 
-h2, h2 a{ 
+h2, h2 a{
     color: #3b5998;
     display: inline;
     font-size: 22px;
@@ -102,7 +102,7 @@ h2 a:hover {
 }
 .cats h2 , .files h2 { font-size: 1.4rem; }
 .message-moderate a:hover{ color:#000000; text-decoration:none;}
-	
+
 @media (max-width:768px) {
 h5 { font-size: 2rem;}
 }
@@ -114,12 +114,12 @@ h5 { font-size: 2rem;}
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {    
+h2.formatter-title {
 	border-bottom: 2px solid #3b5998;
-    color: #3b5998; 
+    color: #3b5998;
 	width:98%;
 }
-	
+
 h3.formatter-title {
     background: #efefef none repeat scroll 0 0;
     border: 1px solid #dddddd;
@@ -147,7 +147,7 @@ h5.formatter-title {
     background: #efefef none repeat scroll 0 0;
     color: #3b5998;
     display: inline;
-	font-weight: normal;	
+	font-weight: normal;
     border-color: #dddddd;
     border-image: none;
     border-style: solid;
@@ -437,8 +437,6 @@ hr { background: #222222 none repeat scroll 0 0;}
     font-family: monospace;
     font-size: 14px;
     font-weight: normal;	
-
-}
 }
 
 .formatter-fieldset {
@@ -961,5 +959,3 @@ div#release {
 .upload-root-cat {
 	padding: 0 0 0 17px;
 }
-
-

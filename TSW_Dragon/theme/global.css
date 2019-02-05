@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Theme    : TSW_Dragon 
+ * Theme    : TSW_Dragon
  * Par      : EDN | Swan
  * Date     : 27/01/2014
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
   *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -87,7 +87,7 @@ h4 { font-size: 18px; color:#17a961;}
 h5 { font-size: 17px; color:#2fe2d3;}
 h6 { font-size: 16px; color:#FFFFFF;}
 
-h2 a{ 
+h2 a{
     color: #ffffff;
     text-shadow: 1px 1px 0 #000;
     font-size: 14px;
@@ -100,7 +100,7 @@ h2 a:hover {
 
 .cats h2 , .files h2 { font-size: 1.4rem; }
 .message-moderate a:hover{ color:#000000; text-decoration:none;}
-	
+
 @media (max-width:768px) {
 
 	h5 { font-size: 2rem;}
@@ -115,13 +115,13 @@ h2 a:hover {
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {  
+h2.formatter-title {
     border-bottom: 2px solid #159500;
     color: #00ce2c;
     font-size: 18px;
     width: 98%;
 }
-	
+
 h3.formatter-title {
 	color: #00ce2c;
     font-size: 16px;
@@ -424,9 +424,7 @@ hr { background: #222222 none repeat scroll 0 0;}
     padding: 5px;
     font-family: monospace;
     font-size: 14px;
-    font-weight: normal;	
-
-}
+    font-weight: normal;
 }
 
 .formatter-fieldset {
@@ -709,8 +707,8 @@ li.small-block .fa-stack {
 
 .error, .notice, .warning, .success, .question, .member-only, .modo-only, .admin-only { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);}
 
-.error { background-color: #d92e00; border-color: #AA0000; }			
-.notice { background-color: #ACA899; border-color: #444444; }		
+.error { background-color: #d92e00; border-color: #AA0000; }
+.notice { background-color: #ACA899; border-color: #444444; }
 .warning { background-color: #FF9900; border-color: #FF5500; }
 .success { background-color: #8AC77F; border-color: #3C8500; }
 .question { background-color: #5798F2; border-color: #000EAB; }
@@ -951,5 +949,3 @@ div#release {
 .upload-root-cat {
 	padding: 0 0 0 17px;
 }
-
-

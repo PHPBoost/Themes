@@ -3,7 +3,7 @@
  * Par      : Toine
  * Date     : 29/10/2014
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
@@ -18,7 +18,7 @@
  Contient les classes globales au site, peuvent etre utilisees partout.
  - Mise en forme du texte
  - Mise en forme du contenu
- - Les Icones specifiques PHPBoost de FontAwesome 
+ - Les Icones specifiques PHPBoost de FontAwesome
  - Systeme d upload
 --------------------------------------*/
 
@@ -39,7 +39,7 @@ a:hover {
 
 /* --- Couleur des liens --- */
 a.admin  { color: #FFA34F; }
-a.modo   { color: ##008800; }
+a.modo   { color: #008800; }
 a.member { color: #000000; }
 
 /* --- Couleur de texte --- */
@@ -676,8 +676,8 @@ li.small-block .fa-stack {
 
 .error, .notice, .warning, .success, .question, .member-only, .modo-only, .admin-only { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);}
 
-.error { background-color: #d92e00; border-color: #AA0000; }			
-.notice { background-color: #ACA899; border-color: #444444; }		
+.error { background-color: #d92e00; border-color: #AA0000; }
+.notice { background-color: #ACA899; border-color: #444444; }
 .warning { background-color: #FF9900; border-color: #FF5500; }
 .success { background-color: #8AC77F; border-color: #3C8500; }
 .question { background-color: #5798F2; border-color: #000EAB; }
@@ -900,5 +900,3 @@ li.small-block .fa-stack {
 .upload-root-cat {
 	padding: 0 0 0 17px;
 }
-
-

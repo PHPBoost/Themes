@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 11/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -15,11 +15,11 @@
 
 
 /*---------------------------------------------------------
- * Theme    : RiftNightMare 
+ * Theme    : RiftNightMare
  * Par      : EDN | Swan
  * Date     : 11/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -75,15 +75,15 @@ background:none;
 border: none;
 }
 
-section#module-calendar, section#module-contact,section#module-download,  
-section#module-faq, section#module-gallery, section#module-guestbook, section#module-media , 
-section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list, 
+section#module-calendar, section#module-contact,section#module-download,
+section#module-faq, section#module-gallery, section#module-guestbook, section#module-media ,
+section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list,
 section#module-user-moderation, section#module-user-profile, section#module-user-pm, section#module-user-upload, section#module-user-upload-move,
 section#module-web, section#module-wiki{
 	background:none;
 	border: none;
 }
-	
+
 /* CSS applique aux tablettes */
 @media ( min-width: 769px ) {
 	section,
@@ -91,17 +91,17 @@ section#module-web, section#module-wiki{
 		width: 100%;
 		/*margin: 1em auto;*/
 	}
-	
-	
-	section#module-calendar, section#module-contact,section#module-download,  
-	section#module-faq, section#module-gallery, section#module-guestbook, section#module-media , 
-	section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list, 
+
+
+	section#module-calendar, section#module-contact,section#module-download,
+	section#module-faq, section#module-gallery, section#module-guestbook, section#module-media ,
+	section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list,
 	section#module-user-moderation, section#module-user-profile, section#module-user-pm, section#module-user-upload, section#module-user-upload-move,
 	section#module-web, section#module-wiki{
 		background:none;
 		border: none;
 	}
-	
+
 	div#main.main-with-left.main-with-right section .content {
 		padding: 0 5px;
 	}
@@ -455,21 +455,21 @@ article footer {
 		flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
-		margin-left: -5px; /* @{gutter} */ 
+		margin-left: -5px; /* @{gutter} */
 	}
 
-	.block { 
-		margin-left: 5px; /* @{gutter} */ 
+	.block {
+		margin-left: 5px; /* @{gutter} */
 		width: 100%;
-	} 
-	
-	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */ 
+	}
+
+	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */
 	.columns-3 .block { width: calc(100% / 3 - 5px); }
 	.columns-4 .block { width: calc(100% / 4 - 5px); }
 	.columns-5 .block { width: calc(100% / 5 - 5px); }
 	.columns-6 .block { width: calc(100% / 6 - 5px); }
 	.columns-7 .block { width: calc(100% / 7 - 5px); }
-	
+
 	.block-xlarge { width: 100%!important; } /* Extension du bloc sur une ligne complète */
 }
 
@@ -478,7 +478,7 @@ article footer {
 	.block {
 		margin-bottom: 5px;
 		width: 100%;
-	}	
+	}
 }
 
 /* --- Gestion des media --- */
@@ -942,7 +942,7 @@ button:active,.button-active {
 	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0px 2px rgba(0, 0, 0, 0.05);
 }
 
-	
+
 /* --- Petit bouton --- */
 
 button.small,.button-small {
@@ -954,10 +954,10 @@ button.small,.button-small {
 
 button.submit {
 	color: #e8e8e8;
-	background-image: linear-gradient(to bottom,  rgba(125, 126, 125) 0%, rgba(14, 14, 14,) 100%);
+	background-image: linear-gradient(to bottom,  rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
 	border: 1px solid #5c569e;
 }
- 
+
 
 /* --- Bouton basic --- */
 
@@ -1655,7 +1655,7 @@ div.field-required:after {
 	border-color: #517BA6;
 	border-style: solid;
 	border-width: 0 0 0 3px;
-	transition: all 0.2s;	
+	transition: all 0.2s;
 }
 
 .sortable-block .sortable-element:hover {
@@ -1663,7 +1663,7 @@ div.field-required:after {
 	transition: all 0.2s;
 }
 
-@media (min-width:769px){ 
+@media (min-width:769px){
 	.sortable-block .sortable-element .sortable-selector {
 		flex: 0 0 1.309em;
 		-ms-flex: 0 0 1.309em;
@@ -1672,7 +1672,7 @@ div.field-required:after {
 		transition: opacity 0.3s;
 		cursor: move;
 	}
-	
+
 	.sortable-selector:after {
 		content: "\f0b2";
 		color: #517BA6;
@@ -1785,7 +1785,7 @@ body.dragging * {
 	margin:0px 11px 10px;
 	border-spacing: 1px;
 	clear: both;
-    padding: 5px;	
+    padding: 5px;
 }
 
 .module-mini-top {
@@ -1805,7 +1805,7 @@ aside#menu-left .module-mini-container .sub-title  {
 }
 
 
-	
+
 @media (max-width:768px) {
 	aside#menu-right .module-mini-container .sub-title,
 	aside#menu-left .module-mini-container .sub-title {
@@ -1951,7 +1951,7 @@ i.message-announce-new {
 }
 
 
-/* -- Le maintenance -- */ 
+/* -- Le maintenance -- */
 /* -------------------- */
 #maintain {
 	margin: 10px 0;
@@ -2050,4 +2050,3 @@ div[id*='keyword'] .form-autocompleter-container input {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-

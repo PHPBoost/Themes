@@ -3,7 +3,7 @@
  * Par      : Toine
  * Date     : 29/10/2014
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
@@ -89,7 +89,7 @@ div#top-header-content {
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 	}
-	
+
 	div#top-header-content {
 		align-self: flex-end;
 		-ms-align-self: flex-end;
@@ -173,7 +173,7 @@ span#site-slogan {
 	a#site-name {
 		font-size: 4em;
 	}
-	
+
 }
 
 /* -- Conteneur global du site -- */
@@ -236,23 +236,23 @@ aside#menu-right {
     	width: 200px;
 	}
 
-	aside#menu-left  { 
+	aside#menu-left  {
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 	}
-	aside#menu-right { 
+	aside#menu-right {
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 	}
-	
+
 	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 200px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
-	
+
 	#main.main-with-left.main-with-right {
 		width: calc(100% - 400px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/

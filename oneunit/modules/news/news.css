@@ -10,7 +10,7 @@
 	font-weight: bold;
 }
 
-.news-separator { 
+.news-separator {
 	margin: 20px auto 20px auto;
 	width: 70%;
 }
@@ -81,5 +81,3 @@
 .article-news .content {
 	padding: 2em;
 }
-
-.article-news footer .more {

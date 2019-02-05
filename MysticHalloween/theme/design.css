@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 12/10/2017
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
 /*--------------------------------------------------------
  * Thème compatible avec deux / ou une seule colonne de menus.
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-	background: #20232C url(images/bg1.jpg) repeat scroll 0 0; 
+	background: #20232C url(images/bg1.jpg) repeat scroll 0 0;
 	position: relative;
 	height: auto;
 	min-height: 100%;
@@ -96,7 +96,7 @@ body {
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 	}
-	
+
 	#top-header-content {
 		align-self: flex-end;
 		-ms-align-self: flex-end;
@@ -117,7 +117,7 @@ body {
 	margin: auto;
 }
 
-#sub-header, #sub-header a { 
+#sub-header, #sub-header a {
 	color: #1ECC85;
 	font-weight: normal;
 }
@@ -126,7 +126,7 @@ body {
 	color: #000000;
 	text-shadow: 1px 0 0 #e349ff, -1px 0 0 #e349ff, 0 1px 0 #e349ff, 0 -1px 0 #e349ff, 1px 1px #e349ff, -1px -1px 0 #e349ff, 1px -1px 0 #e349ff, -1px 1px 0 #e349ff, 2px 1px 4px rgba(0, 0, 0, 0.7);
 }
-	
+
 /* --- Logo et Nom du site web --- */
 #site-infos {
 	display: flex;
@@ -165,7 +165,7 @@ body {
 	font-weight: bold;
 	line-height: 1em;
 	letter-spacing: 0.02em;
-	text-decoration: none;			 
+	text-decoration: none;
 	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -190,18 +190,18 @@ body {
 	#site-name {
 		font-size: 4em;
 	}
-	
+
 }
 
 /* -- Conteneur global du site -- */
 /* ------------------------------ */
 #global-master{
-	background-color: #20232C; 
+	background-color: #20232C;
 	border-width: 0 1px 1px 1px;
 	border-style: solid;
 	border-color: #000000;
 	margin: 0 auto 0 auto;
-	padding: 0;	
+	padding: 0;
 	box-shadow: 0px 5px 10px rgba(30, 204, 133, 0.5);
 }
 
@@ -264,23 +264,23 @@ body {
 		width: 200px;
 	}
 
-	#menu-left  { 
+	#menu-left  {
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 	}
-	#menu-right { 
+	#menu-right {
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 	}
-	
+
 	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 200px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
-	
+
 	#main.main-with-left.main-with-right {
 		width: calc(100% - 400px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
@@ -454,7 +454,7 @@ nav#breadcrumb img {
 	}
 }
 
-/* --   Cookie Bar  -- */ 
+/* --   Cookie Bar  -- */
 /* ------------------- */
 .cookiebar-container {
 	z-index: 100;
@@ -512,7 +512,7 @@ nav#breadcrumb img {
 }
 
 .cookiebar-button-understand 		{ background-color: #1F4C45; border-color: #178055; }
-.cookiebar-button-understand:hover 	{ background-color: ##1F4C45; }
+.cookiebar-button-understand:hover 	{ background-color: #1F4C45; }
 
 .cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
 .cookiebar-button-allowed:hover 	{ background-color: #4CAE4C; }
@@ -563,7 +563,7 @@ nav#breadcrumb img {
 @media (max-width: 768px) {
 
 	#sub-header { min-height: 40px; padding-top: 0px;}
-	.halloween {display:none;}	
+	.halloween {display:none;}
 	.clear-scroll { visibility: hidden; }
-		
+
 }

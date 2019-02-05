@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 27/01/2014
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
   *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -63,15 +63,15 @@ background:none;
 border: none;
 }
 
-section#module-calendar, section#module-contact,section#module-download,  
-section#module-faq, section#module-gallery, section#module-guestbook, section#module-media , 
-section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list, 
+section#module-calendar, section#module-contact,section#module-download,
+section#module-faq, section#module-gallery, section#module-guestbook, section#module-media ,
+section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list,
 section#module-user-moderation, section#module-user-profile, section#module-user-pm, section#module-user-upload, section#module-user-upload-move,
 section#module-web, section#module-wiki{
 	background:none;
 	border: none;
 }
-	
+
 /* CSS applique aux tablettes */
 @media ( min-width: 769px ) {
 	section,
@@ -79,17 +79,17 @@ section#module-web, section#module-wiki{
 		width: 100%;
 		/*margin: 1em auto;*/
 	}
-	
-	
-	section#module-calendar, section#module-contact,section#module-download,  
-	section#module-faq, section#module-gallery, section#module-guestbook, section#module-media , 
-	section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list, 
+
+
+	section#module-calendar, section#module-contact,section#module-download,
+	section#module-faq, section#module-gallery, section#module-guestbook, section#module-media ,
+	section#module-search,  section#module-shoutbox, section#module-user-contrib, section#module-user-error, section#module-user-list,
 	section#module-user-moderation, section#module-user-profile, section#module-user-pm, section#module-user-upload, section#module-user-upload-move,
 	section#module-web, section#module-wiki{
 		background:none;
 		border: none;
 	}
-	
+
 	div#main.main-with-left.main-with-right section .content {
 		padding: 0 5px;
 	}
@@ -448,21 +448,21 @@ article footer {
 		flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
-		margin-left: -5px; /* @{gutter} */ 
+		margin-left: -5px; /* @{gutter} */
 	}
 
-	.block { 
-		margin-left: 5px; /* @{gutter} */ 
+	.block {
+		margin-left: 5px; /* @{gutter} */
 		width: 100%;
-	} 
-	
-	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */ 
+	}
+
+	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */
 	.columns-3 .block { width: calc(100% / 3 - 5px); }
 	.columns-4 .block { width: calc(100% / 4 - 5px); }
 	.columns-5 .block { width: calc(100% / 5 - 5px); }
 	.columns-6 .block { width: calc(100% / 6 - 5px); }
 	.columns-7 .block { width: calc(100% / 7 - 5px); }
-	
+
 	.block-xlarge { width: 100%!important; } /* Extension du bloc sur une ligne complète */
 }
 
@@ -536,7 +536,7 @@ article footer {
 	.block {
 		margin-bottom: 5px;
 		width: 100%;
-	}	
+	}
 }
 
 /* --- Pagination des pages --- */
@@ -934,7 +934,7 @@ button:active,.button-active {
 	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0px 2px rgba(0, 0, 0, 0.05);
 }
 
-	
+
 /* --- Petit bouton --- */
 
 button.small,.button-small {
@@ -949,7 +949,7 @@ button.submit {
     background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
 	border: 1px solid #000000;
 }
- 
+
 
 /* --- Bouton basic --- */
 
@@ -1099,7 +1099,7 @@ textarea:focus,
 select:focus {
 	color: #ffffff;
 	border: 1px solid #74C5F2;
-	background: rgba(0,0,0, 0.9); none repeat scroll 0 0;
+	background: rgba(0,0,0, 0.9) none repeat scroll 0 0;
 	outline: 0;
 	box-shadow: inset 0 1px 1px rgba(116, 197, 242, 0.4), 0 0 10px rgba(27, 193, 196, 0.8);
 }
@@ -1113,7 +1113,7 @@ form input:focus:invalid,
 form textarea:focus:invalid,
 form .constraint-status-error input,
 form .constraint-status-error textarea {
-	/*border-color: 1px solid #5c569e;
+    /*border-color: 1px solid #5c569e;
     box-shadow: 0 1px 1px rgba(0, 96, 255, 0.4) inset, 0 0 10px rgba(0, 96, 255, 0.8);*/
 }
 
@@ -1121,8 +1121,8 @@ form input:focus:valid,
 form textarea:focus:valid,
 form .constraint-status-right input,
 form .constraint-status-right textarea {
-border-color: 1px solid #5c569e;
-	box-shadow: inset 0 1px 1px rgba(116, 197, 242, 0.4), 0 0 10px rgba(27, 193, 196, 0.8);
+    border: 1px solid #5c569e;
+    box-shadow: inset 0 1px 1px rgba(116, 197, 242, 0.4), 0 0 10px rgba(27, 193, 196, 0.8);
 }
 
 input.field-smaller { width: 29px;  }
@@ -1647,7 +1647,7 @@ div.field-required:after {
 	border-color: #517BA6;
 	border-style: solid;
 	border-width: 0 0 0 3px;
-	transition: all 0.2s;	
+	transition: all 0.2s;
 }
 
 .sortable-block .sortable-element:hover {
@@ -1655,7 +1655,7 @@ div.field-required:after {
 	transition: all 0.2s;
 }
 
-@media (min-width:769px){ 
+@media (min-width:769px){
 	.sortable-block .sortable-element .sortable-selector {
 		flex: 0 0 1.309em;
 		-ms-flex: 0 0 1.309em;
@@ -1664,7 +1664,7 @@ div.field-required:after {
 		transition: opacity 0.3s;
 		cursor: move;
 	}
-	
+
 	.sortable-selector:after {
 		content: "\f0b2";
 		color: #517BA6;
@@ -1774,7 +1774,7 @@ body.dragging * {
 	margin:0px 11px 10px;
 	border-spacing: 1px;
 	clear: both;
-    padding: 5px;	
+    padding: 5px;
 }
 
 .module-mini-top {
@@ -1795,7 +1795,7 @@ aside#menu-left .module-mini-container h3 a  {
 }
 
 
-	
+
 @media (max-width:768px) {
 	aside#menu-right .module-mini-container h5,
 	aside#menu-right .module-mini-container h3 a,
@@ -1941,7 +1941,7 @@ i.message-announce-new {
 }
 
 
-/* -- Le maintenance -- */ 
+/* -- Le maintenance -- */
 /* -------------------- */
 #maintain {
 	margin: 10px 0;
@@ -2040,4 +2040,3 @@ div[id*='keyword'] .form-autocompleter-container input {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-

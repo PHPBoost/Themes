@@ -3,7 +3,7 @@
  * Par      : Toine
  * Date     : 29/10/2014
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
@@ -35,7 +35,7 @@
 	font-weight: bold;
 }
 
-.news-separator { 
+.news-separator {
 	margin: 20px auto 20px auto;
 	width: 70%;
 }
@@ -55,7 +55,7 @@
 
 @media (max-width:768px) {
 	section, section#module-news{
-		background-color: none
+		background-color: transparent;
 		box-shadow: none;
 		position: relative;
 		margin: 0 auto;
@@ -71,7 +71,7 @@
 		margin: 0 auto;
 		width: 98%;
 		vertical-align: top;
-		padding-bottom:15px;		
+		padding-bottom:15px;
 		}
 
 }

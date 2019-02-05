@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 03/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
    *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -11,7 +11,7 @@
  * Date V5.1 : 30/05/2017
 /*--------------------------------------------------------
 		cssmenu.css
-Contient les elements associes aux menus 
+Contient les elements associes aux menus
 -----------------------------------------*/
 
 
@@ -103,7 +103,7 @@ header .cssmenu { display: inline-block; }
 #top-header .cssmenu ul > li:last-child > .cssmenu-title  				{ border-radius: 0 0 5px 5px; }
 #top-header .cssmenu ul > li.has-sub:first-child:hover > .cssmenu-title { border-radius: 0 0 0 0;     }
 #top-header .cssmenu ul > li.has-sub:last-child:hover > .cssmenu-title  { border-radius: 0 0 0;       }
-	
+
 .cssmenu.small-screen {
 	width: 100%;
 }
@@ -352,7 +352,7 @@ aside .cssmenu-right.cssmenu-static li:hover > ul 	{ right: 0;		top: 0;		}
 	display: inline-block;
 	float: none;
 }
-@media only (min-width: 769px) {
+@media (min-width: 769px) {
 	.cssmenu-group > ul > li {
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%,rgba(56, 56, 56, 0.18) 100%);
 		background-color: #FFFFFF;
@@ -456,7 +456,7 @@ footer .cssmenu.cssmenu-static > ul > li:last-child,
 
 .cssmenu.cssmenu-static > ul > li > .cssmenu-title {
 	margin: 0 0 20px 0;
-	padding-bottom: 5px;	
+	padding-bottom: 5px;
 	border-bottom: 1px solid #25466C;
 	font-size: 17px;
 	font-weight: bold;
@@ -530,7 +530,7 @@ footer .cssmenu.cssmenu-static > ul > li:last-child,
 	height: 0;
 }
 
-.cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:after,  
+.cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:after,
 .cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:before {
 	display: none;
 }
@@ -639,7 +639,7 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 #main .cssmenu ul ul li .cssmenu-title 						{ color: #333333; }
 .cssmenu.cssmenu-vertical ul ul li .cssmenu-title  			{ color: #333333; }
 .cssmenu-actionslinks li ul li .cssmenu-title    			{ color: #666666; }
-aside .cssmenu-static li ul li .cssmenu-title, 
+aside .cssmenu-static li ul li .cssmenu-title,
 #top-footer .cssmenu-static li ul li .cssmenu-title 		{ color: #666666; }
 
 .cssmenu ul ul li:hover > .cssmenu-title					{ color: #333333; }
@@ -698,7 +698,7 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	color: #444444;
 }
 
-.cssmenu.small-screen .menu-button:after, 
+.cssmenu.small-screen .menu-button:after,
 .cssmenu.small-screen .menu-button:before {
 	position: absolute;
 	display: block;
@@ -744,7 +744,7 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	float: right;
 	position: relative;
 	display: inline-block;
-	padding: 4px 12px 4px 12px;	
+	padding: 4px 12px 4px 12px;
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%,rgba(56,56, 56, 0.18) 100%);
 	background-color: #FFFFFF;
 	border: 1px solid #999999;

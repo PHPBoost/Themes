@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 11/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -371,7 +371,7 @@ nav#breadcrumb ol li:not(.current):after {
 #menus ul li a {
 	background: url(images/btn.png) no-repeat scroll 0 0 transparent;
 	transition-property: color;
-	transition-duration: 1s;	
+	transition-duration: 1s;
     color: #fff;
     float: left;
     font-family: "Cinzel Decorative",Georgia,cursive;
@@ -406,7 +406,7 @@ text-align:center;
     text-shadow: 0 2px rgba(0, 0, 0, 0.5);
 	width:250px
 }
-#menus ul li a:hover span, #menus ul li.active a span {    
+#menus ul li a:hover span, #menus ul li.active a span {
 }
 .actu {
     padding-left: 19px;
@@ -681,11 +681,11 @@ footer#cookiebar-change-choice {
 
 .cookiebar-change-choice-link {
 	text-align: center;
-} 
+}
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC 
+		 CSS applique aux écrans PC
 ========================================*/
 
 @media ( min-width: 769px ) {
@@ -726,10 +726,10 @@ footer#cookiebar-change-choice {
 
 	body {font-size: 1.4em;}
 	header#header {margin: auto;}
-	
+
 	div#top-header, div#top-header-content,
 	#menus, nav#breadcrumb {display: none;}
-	
+
 	div#header-gsm {background-color:#222222; height:50px; padding-top: 10px; text-align:center;}
 	div#sub-header { border: none;background-color:#000000;}
 	a#site-name-gsm {
@@ -746,22 +746,22 @@ footer#cookiebar-change-choice {
 		max-width: 1250px;
 		-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
+		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
 	}
 	div#sous-global {
-		background-color: # faf6ee;
+		background-color: #faf6ee;
 		margin: auto;
 		padding: 0 10px;
 	}
 	#nav, #slideshow , .fadein {display: none;}
-	
+
 	footer#footer {
-		background: #3b3b3b; 
+		background: #3b3b3b;
 		border-top: 1px solid #222222;
 		clear: both;
 		margin: auto;
 		width: 1250px;
-   height: auto;		
+   height: auto;
 	}
 	footer#footer .footer-infos {
 		min-height: 40px;
@@ -769,7 +769,7 @@ footer#cookiebar-change-choice {
 		padding-top: 10px;
 	}
 	footer#footer {width:100%}
-	
+
 	.footer-infos span {
     display: block;
     padding: 0 0 5px;
@@ -786,7 +786,7 @@ footer#cookiebar-change-choice {
 	span.footer-infos-separator {
 		display: none;
 	}
-	
+
    #social, .corp-logo{display: none;}
 }
 
@@ -809,7 +809,7 @@ footer#cookiebar-change-choice {
 	.nav-item {
 		width:100%;
 		float:none;
-		list-style: none outside none;		
+		list-style: none outside none;
 	}
 	.nav-item > a {
 		padding:15px;

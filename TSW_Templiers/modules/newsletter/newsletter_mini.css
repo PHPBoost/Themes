@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Theme    : TSW_Templiers 
+ * Theme    : TSW_Templiers
  * Par      : EDN | Swan
  * Date     : 27/01/2014
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
   *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -18,7 +18,7 @@
 .newsletter-form {
     background:#803d3d none repeat scroll 0 0;
     border-radius: 3px;
-    border-radius:1px solid #222222
+    border:1px solid #222222;
     display: flex;
     height: 25px;
     margin: 20px 25px 10px 0;
@@ -31,8 +31,8 @@
 	font-size: 12px;
 	vertical-align: middle;
 }
- 
-div#newsletter { 
+
+div#newsletter {
 	float: right;
 	margin: 6px;
 }
@@ -41,8 +41,8 @@ div#newsletter button,
 div#newsletter .button {
 	margin-top: 0;
 }
- 
-.newsletter-link { 
+
+.newsletter-link {
 	margin: 10px 0 0 0;
 }
 

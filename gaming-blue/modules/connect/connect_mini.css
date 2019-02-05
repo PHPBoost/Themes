@@ -143,7 +143,7 @@ a.social-connect {
 
 @media (min-width: 769px) {
 	.masqued{position:absolute; top:-9999px; left: -9999px;}
-	.horizontal .connect-element a 	{ 
+	.horizontal .connect-element a 	{
 		border: 2px solid #339FA1;
 		padding: 10px;
 		border-radius: 50%;
@@ -166,8 +166,8 @@ a.social-connect {
 
 @media (max-width: 768px) {
 
-	.masqued{position:absolute, top:-9999px; left: -9999px;}
-	
+	.masqued{ position:absolute; top: -9999px; left: -9999px;}
+
 	.horizontal .connect-containers,
 	.horizontal .connect-containers label {
 		text-align: center;

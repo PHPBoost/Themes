@@ -1,6 +1,6 @@
 /* --------------------------------------
 		cssmenu.css
-Contient les elements associes aux menus 
+Contient les elements associes aux menus
 -----------------------------------------*/
 
 
@@ -93,7 +93,7 @@ header .cssmenu-horizontal { float: right; }
 #top-header .cssmenu ul > li:last-child > .cssmenu-title  				{}
 #top-header .cssmenu ul > li.has-sub:first-child:hover > .cssmenu-title { border-radius: 0 0 0 0;     }
 #top-header .cssmenu ul > li.has-sub:last-child:hover > .cssmenu-title  { border-radius: 0 0 0;       }
-	
+
 .cssmenu.small-screen {
 	width: 100%;
 }
@@ -444,7 +444,7 @@ footer .cssmenu.cssmenu-static > ul > li:last-child,
 
 .cssmenu.cssmenu-static > ul > li > .cssmenu-title {
 	margin: 0 0 20px 0;
-	padding-bottom: 5px;	
+	padding-bottom: 5px;
 	border-bottom: 1px solid #25466C;
 	font-size: 17px;
 	font-weight: bold;
@@ -518,7 +518,7 @@ footer .cssmenu.cssmenu-static > ul > li:last-child,
 	height: 0;
 }
 
-.cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:after,  
+.cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:after,
 .cssmenu.small-screen ul ul li.has-sub > .cssmenu-title:before {
 	display: none;
 }
@@ -606,16 +606,16 @@ header .cssmenu-vertical ul ul li .cssmenu-title,
 /* -------------------------------- */
 
 /* --- Niveau 1 --- */
-header .cssmenu > ul > li > .cssmenu-title { 
-	color: #DDDDDD; 
+header .cssmenu > ul > li > .cssmenu-title {
+	color: #DDDDDD;
 	padding: 16px;
 	font-size: 16px;
 }
 
-header .cssmenu > ul > li > .cssmenu-title:hover { 
-	border-bottom: 2px solid #7ca133; */
+header .cssmenu > ul > li > .cssmenu-title:hover {
+	border-bottom: 2px solid #7ca133;
 }
-aside#menu-right .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title { 
+aside#menu-right .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title {
     color: #DDD;
     font-size: 14px;
     height: 34px;
@@ -625,7 +625,7 @@ aside#menu-right .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-aside#menu-left .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title { 
+aside#menu-left .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title {
     color: #DDD;
     font-size: 14px;
     height: 34px;
@@ -636,7 +636,7 @@ aside#menu-left .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title {
 }
 
 aside#menu-left .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title:hover,
-aside#menu-right .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title:hover { 
+aside#menu-right .cssmenu.cssmenu-vertical > ul > li > .cssmenu-title:hover {
 	border-bottom: 2px solid #7ca133;
 	color: #FFF;
 }
@@ -660,7 +660,7 @@ header .cssmenu li:hover > .cssmenu-title 					{ color: #FFFFFF; }
 #main .cssmenu ul ul li .cssmenu-title 						{ color: #333333; }
 .cssmenu.cssmenu-vertical ul ul li .cssmenu-title  			{ color: #333333; }
 .cssmenu-actionslinks li ul li .cssmenu-title    			{ color: #666666; }
-aside .cssmenu-static li ul li .cssmenu-title, 
+aside .cssmenu-static li ul li .cssmenu-title,
 #top-footer .cssmenu-static li ul li .cssmenu-title 		{ color: #666666; }
 
 .cssmenu ul ul li:hover > .cssmenu-title					{ color: #333333; }
@@ -719,7 +719,7 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	color: #444444;
 }
 
-.cssmenu.small-screen .menu-button:after, 
+.cssmenu.small-screen .menu-button:after,
 .cssmenu.small-screen .menu-button:before {
 	position: absolute;
 	display: block;
@@ -765,7 +765,7 @@ header .cssmenu ul ul li .cssmenu-title							{ background-color: #333333;	}
 	float: right;
 	position: relative;
 	display: inline-block;
-	padding: 4px 12px 4px 12px;	
+	padding: 4px 12px 4px 12px;
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%,rgba(56,56, 56, 0.18) 100%);
 	background-color: #FFFFFF;
 	border: 1px solid #999999;
