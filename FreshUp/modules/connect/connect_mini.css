@@ -1,0 +1,264 @@
+/*---------------------------------------------------------
+ * Theme    : FreshUp
+ * Par      : EDN | Swan
+ * Date     : 11/01/2019
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+/* -- Connected & not-connected --*/
+#module-connect .horizontal-fieldset {
+	margin: 0;
+}
+
+#sub-header #module-connect {
+	min-height: 35px;
+}
+
+#sub-header #module-connect .connect-contents {
+	padding-top: 3px;
+}
+
+.connect-register a > i,
+.connect-element a > i,
+.forget-pass-container a > i {
+	vertical-align: 0;
+}
+
+#module-connect a > span {
+	margin: 0 0 0 5px;
+}
+
+.js-menu-button {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.js-menu-button {
+		display: inline-block;
+		padding: 5px 10px 5px 12px;
+	}
+
+	.js-menu-button span {
+		padding: 0 0 0 7px;
+	}
+}
+
+/* -- not-connected --*/
+.connect-register-container form {
+	display: inline-block;
+}
+
+.connect-register a.fb {
+	padding: 6px 0 0 4px;
+}
+
+a.social-connect {
+	margin: -2px 0;
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+	.connect-input-container label,
+	.connect-input-container label > span,
+	.connect-input-container button {
+		display: block;
+	}
+
+	.connect-register-container {
+		margin: 0.5em 0.6em 0.5em 0.6em;
+	}
+
+	.forget-pass-container {
+		margin: 0 0.6em 0.5em 0.6em;
+	}
+
+	.connect-input-container button {
+		margin: 5px 0 0 0;
+	}
+
+	.active.not-connected.horizontal .connect-containers {
+		height: 300px;
+	}
+
+	.module-mini-contents.connect-contents,
+	.connect-contents label,
+	.connect-contents button {
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+
+	.connect-contents button {
+		display: inline-block;
+		margin: 10px 0 10px 0;
+	}
+}
+
+@media (min-width: 769px) {
+	.connect-input-container,
+	.connect-register-container,
+	.forget-pass-container {
+		display: inline-block;
+	}
+
+	.horizontal-fieldset.connect-input-container label > span {
+		display: none;
+	}
+
+	.vertical-fieldset form label {
+		margin-bottom: 10px;
+	}
+
+	.module-mini-contents .connect-register-container a {
+		display: inline-block;
+	}
+	.module-mini-contents .connect-register {
+		padding: 5px 0 0 0;
+	}
+
+	.module-mini-contents .forget-pass-container {
+		display: block;
+		margin: 10px;
+	}
+
+	.connect-register a.fb {
+		padding: 7px 0 0 4px;
+	}
+
+}
+
+/* -- connected -- */
+.connect-elements-container {
+	margin: 0;
+	padding: 0;
+}
+
+.connect-element {
+	list-style-type: none;
+}
+
+.connect-element a {
+	display: block;
+	margin: 0 10px 0 0;
+}
+
+.horizontal .connect-element a 	{ padding: 7px 0 7px 0; }
+.vertical .connect-element a 	{ padding: 5px 0 5px 0; }
+
+@media (min-width: 769px) {
+	.horizontal .connect-contents {
+		text-align: center;
+	}
+
+	.connected .vertical .connect-contents {
+		text-align: left;
+	}
+
+	.horizontal .connect-element {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 768px) {
+	.horizontal .connect-containers,
+	.horizontal .connect-containers label {
+		text-align: center;
+	}
+
+	.horizontal .connect-containers label {
+		display: block;
+	}
+
+	.horizontal .connect-elements-container,
+	.horizontal .connect-containers {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+		padding: 0 0 0 12px;
+	}
+
+	.active.horizontal .connect-elements-container,
+	.active.horizontal .connect-containers {
+		position: relative;
+		z-index: 200;
+		width: 100%;
+		transition: height 0.3s;
+	}
+
+	.active.horizontal .connect-elements-container {
+		height: 190px;
+	}
+
+	.vertical .connect-element a {
+		padding: 9px 0 9px 0;
+		margin: 3px 0 3px 0;
+	}
+}
+/*---####### Divers #######---*/
+.connect-elements-container.edn { text-align: left !important; }
+.form-element.edn-form > label{ text-align: center; }
+
+/* ######################################
+/*	 affichage du message de bienvenue 
+/*#######################################*/
+#edn-wellcome {
+    min-height: 170px;
+}
+
+#wellcome {
+	background: #7da630;
+	height:110px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+/* ###### non connecté ###### */
+
+#connect-logo {
+	background: #efefef url(../../images/no_avatar.png) no-repeat scroll center center;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 50%;
+	border: 5px solid #ffffff;	
+}
+.connect-mess {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 12px;
+	text-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+}
+
+/* ###### Connecté ###### */
+
+.connect-welcome {
+	color: #555555;
+	font-style: Italic;
+	padding: 7px 10px 0 5px;
+	height: 28px;
+	z-index: 11;
+}
+
+.connect-welcome .modo,
+.connect-welcome .admin,
+.connect-welcome .member {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+	text-transform: capitalize;
+}
+
+#connect-avatar {
+	background: #efefef;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 50%;
+	border: 5px solid #ffffff;	
+}

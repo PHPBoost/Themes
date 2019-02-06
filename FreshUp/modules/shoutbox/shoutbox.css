@@ -1,0 +1,19 @@
+/*---------------------------------------------------------
+ * Theme    : FreshUp
+ * Par      : EDN | Swan
+ * Date     : 11/01/2019
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+#module-shoutbox .message > header {
+	display: none;
+}
+
+.shoutbox-message-container {
+    margin-bottom: 0.4em;
+}

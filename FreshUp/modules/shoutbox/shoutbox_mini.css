@@ -1,0 +1,83 @@
+/*---------------------------------------------------------
+ * Theme    : FreshUp
+ * Par      : EDN | Swan
+ * Date     : 11/01/2019
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+/*--------------------------------------------------------
+ * Théme compatible avec deux menus (droite et gauche)
+ * le choix reste possible sur une seule colonne de menus.
+ *----------------------------------------------------------*/
+
+/* --------------------------------------
+		shoutbox.css
+--------------------------------------*/
+
+/* -- Conteneur des messages de la shoutbox.*/
+#module-mini-shoutbox {
+background: transparent url(images/bg.png) no-repeat scroll center top;
+position:relative;
+z-index:100
+}
+@media (max-width: 769px) {
+	#module-mini-shoutbox {
+		background: linear-gradient(to bottom,#ffffff 10%,#f9b6f9 22%,#f7c0f7 99%);
+		border-radius:5px;
+		z-index:100
+	}
+}
+
+#module-mini-shoutbox > .module-mini-top { border-bottom:none;}
+#module-mini-shoutbox > .module-mini-top > h5 {color: #FFFFFF;}
+
+#shoutbox-messages-container {
+	color: #222222;	
+    height: 300px;
+    margin: 12px auto auto;
+    overflow: auto;
+    overflow-wrap: break-word;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+
+.shout-horizontal {
+	padding-left: 1.5em;
+}
+
+.shout-spacing {
+	margin: 10px 0 10px 0;
+}
+
+#module-mini-shoutbox textarea,
+#module-mini-shoutbox textarea:valid {
+    border-color: #555;
+    box-shadow: 0 3px 3px 1px #444444;
+    width: 90%;
+}
+
+#shoutbox-bbcode-container ul {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+#shoutbox-bbcode-container ul li {
+	display: inline-block;
+	border: none;
+}
+
+.shoutbox-message-container {
+    margin-bottom: 0.4em;
+}
+
+.shout_date {
+   font-size: 10px;
+   font-weight: normal;
+}
+
+textarea#shout-contents {background:#efefef;}
+
+#shoutbox-bbcode-container > p > a {color:#9400D3;}
