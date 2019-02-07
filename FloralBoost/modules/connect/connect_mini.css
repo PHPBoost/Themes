@@ -87,7 +87,7 @@ a.social-connect {
 		margin: 5px 0 0 0;
 	}
 
-	.active.not-connected.horizontal .connect-containers {
+	.active-connect.not-connected.horizontal .connect-containers {
 		height: 300px;
 	}
 
@@ -187,8 +187,8 @@ a.social-connect {
 		padding: 0 0 0 12px;
 	}
 
-	.active.horizontal .connect-elements-container,
-	.active.horizontal .connect-containers {
+	.active-connect.horizontal .connect-elements-container,
+	.active-connect.horizontal .connect-containers {
 		background: #000000;
 		position: relative;
 		z-index: 200;
@@ -196,7 +196,7 @@ a.social-connect {
 		transition: height 0.3s;
 	}
 
-	.active.horizontal .connect-elements-container {
+	.active-connect.horizontal .connect-elements-container {
 		height: 190px;
 		background: #000;
 	}
