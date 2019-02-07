@@ -420,7 +420,7 @@ nav#breadcrumb ol li:not(.current):after {
     padding: 0;
 }
 #social ul li a {
-    color: #ffffff;
+    color: #ffffff !important;
     display: block;
     float: left;
     font-size: 80%;
@@ -448,7 +448,7 @@ text-align:center;
 	width:50px;
 }
 
-.fa-facebook:before, .fa-twitter:before, .fa-youtube:before {font-size:35px;}
+.fa-facebook-f:before, .fa-twitter:before, .fa-youtube:before {font-size:35px;}
 
 .fade:hover {
   opacity: 0.5;

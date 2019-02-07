@@ -416,7 +416,7 @@ nav#breadcrumb ol li:not(.current):after {
 }
 
 #social ul li a {
-    color: #ffffff;
+    color: #ffffff !important;
     display: block;
     float: left;
     font-size: 80%;
@@ -450,7 +450,7 @@ nav#breadcrumb ol li:not(.current):after {
 	padding-top: 7px;
 }
 
-.fa-facebook::before, .fa-twitter::before, .fa-youtube::before {
+.fa-facebook-f:before, .fa-twitter:before, .fa-youtube:before {
 	font-size: 35px;
 	color: #fff;	 
 }

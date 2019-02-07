@@ -143,11 +143,17 @@
 	background-color: #F3F3F3;
 	border: 1px solid #AAAAAA;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	width: 250px;
 }
 
 .bbcode-block a {
 	cursor: pointer;
 	text-decoration: none;
+}
+
+ul.block-smileys li {
+    list-style-type: none !important;
+    display: inline-block;
 }
 
 @media (max-width: 768px) {

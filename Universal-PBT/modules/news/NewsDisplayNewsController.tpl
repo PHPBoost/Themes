@@ -44,13 +44,13 @@
 				<hr />
 				<span class"utils-icon-share-fb">
 				<a href="javascript:void(0);" onclick="Javascript:window.open('https://facebook.com/sharer/sharer.php?u='+document.URL,'_blank','top=50,left=50,width=626,height=436,scrollbars=no');" title="Partager la news">
-				<i class="fa fa-facebook-square fa-2x"></i>
+				<i class="fab fa-facebook-square fa-2x"></i>
 				</a>
 				</span>
 							
 				<span class ="utils-icon-share-twitter">
 				<a href="javascript:void(0);" onclick="Javascript:window.open('https://twitter.com/intent/tweet?text=Petit%20partage%20%3A&url='+document.URL,'_blank','top=50,left=50,width=626,height=436,scrollbars=no');" title="Partager la news">
-				<i class="fa fa-twitter-square fa-2x"></i>
+				<i class="fab fa-twitter-square fa-2x"></i>
 				</a>
 				</span> 
 

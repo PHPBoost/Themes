@@ -132,9 +132,9 @@
 		<div class="footer-infos">
 			<div id="social">
 				<ul>   
-					<li><a href="#" target="_blank"><span><div id="fb" class="fade"><i class="fa fa-facebook"></i></div></span></a></li>
-					<li><a href="#" target="_blank"><span><div id="twt" class="fade"><i class="fa fa-twitter"></i></div></span></a></li>
-					<li><a href="#" target="_blank"><span><div id="yt" class="fade"><i class="fa fa-youtube"></i></div></span></a></li>
+					<li><a href="#" target="_blank"><span><div id="fb" class="fade"><i class="fab fa-facebook-f"></i></div></span></a></li>
+					<li><a href="#" target="_blank"><span><div id="twt" class="fade"><i class="fab fa-twitter"></i></div></span></a></li>
+					<li><a href="#" target="_blank"><span><div id="yt" class="fade"><i class="fab fa-youtube"></i></div></span></a></li>
 				</ul>
 			</div>	
 			<span class="cms">
