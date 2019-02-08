@@ -156,6 +156,11 @@
 	text-decoration: none;
 }
 
+ul.block-smileys li {
+    list-style-type: none !important;
+    display: inline-block;
+}
+
 @media (max-width: 768px) {
 	.bbcode-block-container {
 		top: 0;

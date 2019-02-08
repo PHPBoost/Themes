@@ -1793,10 +1793,13 @@ body.dragging * {
 		padding: 1em 0;
 	}
 }
+
 .module-mini-container .sub-title {
 	display: block;
-	font-weight: bold;
-	color: #ff0000;
+	color: #777C85;
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 2px;
 }
 
 .module-mini-contents {
