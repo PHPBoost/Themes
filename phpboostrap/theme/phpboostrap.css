@@ -382,6 +382,10 @@ select,
     margin-bottom: 15px;
 }
 
+.form-field-select select {
+    margin: 0;
+}
+
 .list-group select,
 .list-group .input-group,
 .list-group .btn-group {
@@ -1172,8 +1176,8 @@ input + .text-status-constraint {
 	border-right: 8px solid transparent;
 }
 
-div.field-required:after,
-div.picture-status-constraint:after {
+.field-required:after,
+.picture-status-constraint:after {
 	display: inline-block;
 	position: absolute;
 	left: 2px;
@@ -1184,12 +1188,17 @@ div.picture-status-constraint:after {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-div.field-required:after {
-	top: 2px;
+.field-required:after {
+	top: 50%;
+    transform: translateY(-50%);
 	opacity: 0.6;
 	color: #C43C35;
 	font-size: 0.8rem;
 	content: "\f069";
+}
+
+.multiline-textarea.field-required:after {
+    left: -15px;
 }
 
 .form-field-date.field-required:after,
@@ -1238,29 +1247,29 @@ div.field-required:after {
 	padding-right: 2px;
 }
 
-.form-element-date .constraint-status-error div.field-required:after,
-.form-element-date .constraint-status-right div.field-required:after {
-	right: 10px;
-}
-
 .form-field-textarea.field-required:after,
 .constraint-status-right .form-field-textarea.field-required:after,
 .constraint-status-right .form-field-textarea.field-required:after {
 	top: 45%;
 }
 
-.constraint-status-right div.field-required:after {
+.constraint-status-right .field-required:after {
 	content: " ";
 }
 
-.constraint-status-right div.form-field-checkbox.picture-status-constraint:after {
+.constraint-status-right .form-field-checkbox.picture-status-constraint:after {
 	top: 0;
 }
 
-.constraint-status-right div.picture-status-constraint:after {
+.constraint-status-right .picture-status-constraint:after {
 	opacity: 1;
 	font-size: 1.3rem;
-	top: 2px;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+.constraint-status-right .multiline-textarea.picture-status-constraint:after {
+    left: -15px;
 }
 
 .constraint-status-error .form-field-textarea .picture-status-constraint:after,
@@ -1268,7 +1277,7 @@ div.field-required:after {
 	top: 40%;
 }
 
-.constraint-status-right div.picture-status-constraint:after {
+.constraint-status-right .picture-status-constraint:after {
 	content: "\f00c";
 	color: #57A957;
 }
@@ -1285,12 +1294,6 @@ div.field-required:after {
 .constraint-status-right .form-field-multi-select select {
 	border-color: rgba(71, 137, 72, 0.3);
 	box-shadow: 0 0 5px rgba(71, 137, 72, 0.1);
-}
-
-.form-field-radio-button.field-required:after,
-.form-field-multiple-checkbox.field-required:after {
-	top: 4px;
-	right: -16px;
 }
 
 .form-field-radio {

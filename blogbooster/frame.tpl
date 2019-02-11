@@ -53,7 +53,6 @@
 
 	<body itemscope="itemscope" itemtype="http://schema.org/WebPage">
 		# INCLUDE BODY #
-		<script src="{PATH_TO_ROOT}/templates/{THEME}/js/blogbooster.js"></script>
 		# INCLUDE JS_BOTTOM #
 	</body>
 </html>

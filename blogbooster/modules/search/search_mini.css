@@ -128,7 +128,7 @@
 		border-color: #FFFFFF;
 		height: 0;
 		opacity: 0;
-		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s
+		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s;
 	}
 
 	#top-header .search-tab.opened {
@@ -143,7 +143,7 @@
 
 	#top-header .search-tab.opened .search-btn-title {
 		opacity: 1;
-		transition: 0.3s ease 0.3s;
+		transition: 03.s ease 0.3s;
 	}
 
 	#top-header .search-tab.opened form {
@@ -191,7 +191,7 @@
 		border-color: #FFFFFF;
 		height: 0;
 		opacity: 0;
-		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s
+		transition: opacity 0.3s ease, height 0.3s ease 0.3s, padding 0.3s ease 0.3s;
 	}
 
 	#bottom-content .search-tab.opened {
@@ -206,7 +206,7 @@
 
 	#bottom-content .search-tab.opened .search-btn-title {
 		opacity: 1;
-		transition: 0.3s ease 0.3s;
+		transition: 03.s ease 0.3s;
 	}
 
 	#bottom-content .search-tab.opened form{

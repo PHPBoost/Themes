@@ -95,19 +95,16 @@
 				<li>
 					<a href="${relative_url(UserUrlBuilder::connect())}" aria-label="{@connection}"><i class="fa fa-sign-in" aria-hidden="true"></i> </a>&nbsp;
 				</li>
-				<li>
-					<a href="{PATH_TO_ROOT}/search" aria-label="Recherche"><i class="fa fa-search" aria-hidden="true"></i> </a>&nbsp;
-				</li>
-			# IF C_USER_REGISTER #
-				<li>
-					<a href="${relative_url(UserUrlBuilder::registration())}" aria-label="{@register}"><i class="fa fa-plus" aria-hidden="true"></i> </a>&nbsp;
-				</li>
-				# START external_auth #
+				# IF C_USER_REGISTER #
 					<li>
-						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						<a href="${relative_url(UserUrlBuilder::registration())}" aria-label="{@register}"><i class="fa fa-plus" aria-hidden="true"></i> </a>&nbsp;
 					</li>
-				# END external_auth #
-			# ENDIF #
+					# START external_auth #
+						<li>
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						</li>
+					# END external_auth #
+				# ENDIF #
             </ul>
 		</div>
 	</div>

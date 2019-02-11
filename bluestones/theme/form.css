@@ -217,6 +217,24 @@ input[name$="_minutes"] { width: 50px;  }
 	margin: 0 1em 1.5em 1em;
 }
 
+.form-field-datetime .label-time {
+	width: 18%;
+	position: relative;
+	display: inline-block;
+}
+
+.form-field-datetime .label-time input {
+	padding: 0.309em;
+	width: 100%;
+}
+
+.label-time:after {
+	position: absolute;
+	bottom: 18%;
+	left: 103%;
+	content: attr(data-time);
+}
+
 @media (max-width: 768px) {
 	.form-element,
 	.form-element-textarea {
