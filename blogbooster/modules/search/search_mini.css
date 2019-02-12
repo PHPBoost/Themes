@@ -206,7 +206,7 @@
 
 	#bottom-content .search-tab.opened .search-btn-title {
 		opacity: 1;
-		transition: 03.s ease 0.3s;
+		transition: 0.3s ease 0.3s;
 	}
 
 	#bottom-content .search-tab.opened form{
