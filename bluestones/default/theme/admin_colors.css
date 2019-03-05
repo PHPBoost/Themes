@@ -768,6 +768,13 @@ tr td.bkgd-color-processing { background-color: #FFD86F; }
 .bkgd-color-unknown 		{ background-color: #FF796F; }
 tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
 
+.alert-very-low-priority  { background-color: #1E73BE; border-color: #1E73BE; color: #84dcf7; }
+.alert-low-priority       { background-color: #81d742; border-color: #81d742; color: #196f2d; }
+.alert-medium-priority    { background-color: #fae90a; border-color: #fae90a; color: #dd9f00; }
+.alert-high-priority      { background-color: #FA9C0A; border-color: #FA9C0A; color: #b03b00; }
+.alert-very-high-priority { background-color: #E6481D; border-color: #E6481D; color: #f99e9e; }
+td.alert-priority         { border-color: #676A74;}
+
 h3.title1, h3.title2 {
 	border-color: #366393;
 }

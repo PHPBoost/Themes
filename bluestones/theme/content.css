@@ -229,6 +229,12 @@ article footer {
 }
 
 /* --- Contenu --- */
+.content::after, .content::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .content {
 	text-align: justify;
 }
@@ -664,6 +670,10 @@ ul.pagination-block-bis li a.next-page:hover {
 		width: 100%;
 		margin: 0 0 10px;
 	}
+}
+
+.infos-options {
+	display: block;
 }
 
 /* -- Gestion des categories -- */

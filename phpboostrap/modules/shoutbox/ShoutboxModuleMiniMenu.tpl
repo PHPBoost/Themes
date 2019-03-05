@@ -68,7 +68,7 @@ function shoutbox_delete_message(id_message)
 				} else {
 					alert("{@error.message.delete}");
 				}
-				jQuery('#shoutbox-refresh').html('<i class="fa fa-refresh"></i>');
+				jQuery('#shoutbox-refresh').html('<i class="fa fa-sync"></i>');
 			},
 			error: function(e){
 				alert(${escapejs(LangLoader::get_message('csrf_invalid_token', 'status-messages-common'))});
@@ -89,12 +89,12 @@ function shoutbox_refresh_messages_box() {
 		success: function(returnData){
 			jQuery('#shoutbox-messages-container').html(returnData);
 
-			jQuery('#shoutbox-refresh').html('<i class="fa fa-refresh"></i>');
+			jQuery('#shoutbox-refresh').html('<i class="fa fa-sync"></i>');
 		},
 		error: function(e){
 			jQuery('#shoutbox-messages-container').html(e.responseText);
 
-			jQuery('#shoutbox-refresh').html('<i class="fa fa-refresh"></i>');
+			jQuery('#shoutbox-refresh').html('<i class="fa fa-sync"></i>');
 		}
 	});
 }
@@ -145,7 +145,7 @@ function shoutbox_refresh_messages_box() {
 		<div class="btn-group m5">
 			<button onclick="shoutbox_add_message();" class="btn btn-primary" type="button">${LangLoader::get_message('submit', 'main')}</button>
 			<input type="hidden" name="token" value="{TOKEN}">
-			<a class="btn btn-info" href="" onclick="shoutbox_refresh_messages_box();return false;" id="shoutbox-refresh" title="${LangLoader::get_message('refresh', 'main')}"><i class="fa fa-refresh"></i></a>
+			<a class="btn btn-info" href="" onclick="shoutbox_refresh_messages_box();return false;" id="shoutbox-refresh" title="${LangLoader::get_message('refresh', 'main')}"><i class="fa fa-sync"></i></a>
 		</div>
 	</div>
 </form>
@@ -154,7 +154,7 @@ function shoutbox_refresh_messages_box() {
 	<div class="clearfix"></div>
 	<span class="alert alert-warning">{@error.post.unauthorized}</span>
 	<p class="text-center">
-		<a class="btn btn-info" href="" onclick="shoutbox_refresh_messages_box();return false;" id="shoutbox-refresh" title="${LangLoader::get_message('refresh', 'main')}"><i class="fa fa-refresh"></i></a>
+		<a class="btn btn-info" href="" onclick="shoutbox_refresh_messages_box();return false;" id="shoutbox-refresh" title="${LangLoader::get_message('refresh', 'main')}"><i class="fa fa-sync"></i></a>
 	</p>
 	# ENDIF #
 # ENDIF #
