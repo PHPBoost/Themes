@@ -158,8 +158,8 @@
 					if( start_thumb == 0 )
 						document.getElementById('display_left').innerHTML = '';
 					else
-						document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')" aria-label="${escapejs(LangLoader::get_message('previous', 'common'))}"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a>';
-					document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')" aria-label="${escapejs(LangLoader::get_message('next', 'common'))}"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a>';
+						document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')" aria-label="previous"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a>';
+					document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')" aria-label="next"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a>';
 				}
 				else
 					return;
@@ -172,8 +172,8 @@
 					if( start_thumb == ({MAX_START} + 1) )
 						document.getElementById('display_right').innerHTML = '';
 					else
-						document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')" aria-label="${escapejs(LangLoader::get_message('next', 'common'))}"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a>';
-					document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')" aria-label="${escapejs(LangLoader::get_message('previous', 'common'))}"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a>';
+						document.getElementById('display_right').innerHTML = '<a href="javascript:display_thumbnails(\'right\')" aria-label="next"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></a>';
+					document.getElementById('display_left').innerHTML = '<a href="javascript:display_thumbnails(\'left\')" aria-label="previous"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></a>';
 				}
 				else
 					return;
