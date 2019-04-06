@@ -15,10 +15,10 @@
 		<nav  class="nav">
 				<ul class="nav-list">
 					<li class="nav-item">
-						<a href="?=about">Accueil</a>
+						<a href="{PATH_TO_ROOT}/">Accueil</a>
 					</li>	
 					<li class="nav-item">
-						<a href="?=about">News</a>
+						<a href="{PATH_TO_ROOT}/news/">News</a>
 					</li>
 					<li class="nav-item">
 						<a href="?=home">Divers</a>
@@ -78,28 +78,6 @@
 	
 </div>
 			
-<div id="banner" class="banner" >
-	<nav>
-		<div id="sub-header">
-			<div id="sub-header-content">
-			# IF C_MENUS_SUB_HEADER_CONTENT #
-				# START menus_sub_header #
-				{menus_sub_header.MENU}
-				# END menus_sub_header #
-			# ENDIF #
-			</div>
-			<div class="spacer"></div>
-		</div>
-	</nav>	
-	  
-	 <div class="ribbon">
-		<h4>
-			<div class="ouvert"><a href="#banner" id="open-menu"><i class="fa fa-heart"></i></a></div>
-			<div class="fermer"><a href="#" id="close-menu"><i class="fa fa-heart-o"></i></a></div>
-		</h4>
-	 </div>
-</div>	
-
 	<header id="header">
 		<div id="top-header">
 			<div id="top-header-content">
@@ -112,7 +90,18 @@
 		</div>
 		<div class="spacer"></div>
 	</header>
-
+	
+	<div id="sub-header">
+		<div id="sub-header-content">
+		# IF C_MENUS_SUB_HEADER_CONTENT #
+			# START menus_sub_header #
+			{menus_sub_header.MENU}
+			# END menus_sub_header #
+		# ENDIF #
+		</div>
+		<div class="spacer"></div>
+	</div>
+		
 	<div id="global">
 		# IF C_MENUS_LEFT_CONTENT #
 		<aside id="menu-left">

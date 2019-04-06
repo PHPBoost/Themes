@@ -710,7 +710,6 @@ li.small-block .fa-stack {
 .floating-message-container .admin-only     { background-color: rgba(223, 216, 234, 1); }
 
 
-
 /* -- Systeme d Upload -- */
 /* ---------------------- */
 #module-user-upload {
@@ -725,6 +724,8 @@ li.small-block .fa-stack {
 	border-radius: 3px;
 	color: #444444;
 }
+
+.upload-address-bar a{	color: #444444 !important;}
 
 .upload-address-bar-links {
 	float: right;
@@ -864,4 +865,40 @@ li.small-block .fa-stack {
 	padding: 0 0 0 17px;
 }
 
+/* -- 		color 			 -- */
+/* ---------------------------- */
+.bkgd-main  { background-color: #FFFFFF; }
+.bkgd-sub   { background-color: #E1E1E1; }
+.bkgd-title { background-color: #afceed; }
 
+/* -- Editor color Container -- */
+/* ---------------------------- */
+.bdr-color-op20 { border-color: rgba(54, 100, 147, 0.2); }
+.constraint-status-error .bdr-color-op20 {  border-color: rgba(196, 60, 43, 1); }
+.constraint-status-right .bdr-color-op20 {  border-color: rgba(71, 137, 72, 1); }
+.bkgd-color-op10 { background-color: #555; }
+.bkgd-color-op20 { background-color: #555; }
+.bkgd-color-op40 { background-color: #555; }
+
+@media (max-width: 768px) {
+    .bkgd-color-op10-sc { background-color: #555; }
+    .bkgd-color-op20-sc { background-color: #555; }
+    .bkgd-color-op40-sc { background-color: #555; }
+}
+
+.bkgd-color-op20-hover li:hover,
+.bkgd-color-op20-hover a:hover { background-color: #333; }
+
+@media (min-width: 769px) {
+    .dlt-color-op20-after:after { background-color: #555; }
+}
+.block-submenu-color {
+    background-color: #000000;
+    box-shadow: 0 0 0.618em rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 769px) {
+    .arrow-submenu-color:after {
+        border-color: transparent;
+        border-bottom-color: #FFFFFF;
+    }
+}

@@ -103,7 +103,7 @@ article footer {
 
 .actions a {
 	display: inline-block;
-	padding: 0 0.456em;
+	padding: 0 0.2em;
 }
 
 @media (max-width: 768px) {
@@ -113,7 +113,7 @@ article footer {
 }
 
 header h2 .actions {
-	font-size: 0.456em;
+	font-size: 1em;
 }
 
 .actions-menu {
@@ -704,7 +704,12 @@ ul.pagination-block-bis li a.next-page:hover {
 	}
 }
 
+.infos-options {
+	display: block;
+}
 
+.poll-question-mini-container label { padding:10px 0 0 0;}
+ 
 /* -- Gestion des categories -- */
 /* ---------------------------- */
 .cat-description {

@@ -552,3 +552,37 @@ footer#cookiebar-change-choice {
 @media (min-width:769px) {
 	div#header-gsm{display: none;}
 }
+
+/* ====================
+/*    -- Autres ---
+=====================*/
+.connect-register a > i,
+.connect-element a > i,
+.forget-pass-container a > i {
+	color: #ffffff;
+	vertical-align: 0;
+}
+
+#module-connect a > span {
+	color: #ffffff;
+	margin: 0 0 0 0.309em;
+}
+
+@media (min-width: 768px) {
+	.connect-element {
+		padding-left: 10px;
+		font-size: 12px;
+	}
+}
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.js-menu-button { font-size: 12px; padding-top: 10px;}
+	.horizontal .connect-element a { color: #FFFFFF;}
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container { background-color: rgba(0, 0, 0, 0.8);  margin-top: 10px; }
+	
+}

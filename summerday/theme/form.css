@@ -236,19 +236,62 @@ select:focus {
 	border-color: #232323;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01), 0 0 6px rgba(0, 0, 0, 0.2);
 	outline: 0;
-	color: #F8A230;
+	color: #efefef;
 }
 
-input[type=color] {
+[type=color] {
 	padding: 0 2px 0 2px;
 	width: 25px;
+}
+
+.field-smaller 	{ width: 29px;  }
+.field-small   	{ width: 77px;  }
+.field-large   	{ width: 200px; }
+.field-xlarge 	{ width: 250px; }
+
+.form-field-date,
+.form-field-datetime {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.form-field-date .input-date {
+	width: 80%;
+}
+
+.form-field-datetime .input-date {
+	width: 40%;
+}
+
+.form-field-datetime .label-time {
+	width: 18%;
+	position: relative;
+	display: inline-block;
+}
+
+.form-field-datetime .label-time input {
+	padding: 0.309em;
+	width: 100%;
+}
+
+.label-time:after {
+	position: absolute;
+	bottom: 18%;
+	left: 103%;
+	content: attr(data-time);
 }
 
 form input:focus:invalid,
 form textarea:focus:invalid,
 form .constraint-status-error input,
 form .constraint-status-error textarea {
-	color: rgba(196, 60, 43, 0.9);
 	box-shadow: 0 0 3px rgba(196, 60, 43, 0.1);
 }
 
@@ -256,14 +299,8 @@ form input:focus:valid,
 form textarea:focus:valid,
 form .constraint-status-right input,
 form .constraint-status-right textarea {
-	color: rgba(71, 137, 72, 0.9);
 	box-shadow: 0 0 5px rgba(71, 137, 72, 0.1);
 }
-
-input.field-smaller 	{ width: 29px;  }
-input.field-small   	{ width: 77px;  }
-input.field-large   	{ width: 200px; }
-input.field-xlarge 		{ width: 250px; }
 
 input.input-date 		{ width: 100px; }
 input.input-hours 		{ width: 50px;  }

@@ -71,7 +71,7 @@ body {
 /* -- En-tete de page - Header -- */
 /* ------------------------------ */
 #header {
-	background-color: rgba(0,0,0,0.5) ;
+	background: rgba(0,0,0,0.5) url(images/slide/001.png) no-repeat scroll 0 0;
 	margin: auto;
 }
 
@@ -85,8 +85,9 @@ body {
 	-ms-flex-direction: row;
 	-webkit-flex-direction: row;
 	margin: auto;
-	min-height: 139px;
+	min-height:400px;
 	border-color: #E1E1E1;
+	background: rgba(0,0,0,0.5) url(images/slide/001.png) no-repeat scroll 0 0;
 	border-width: 0 1px 0 1px;
 	border-style: solid;
 }
@@ -149,40 +150,43 @@ body {
 }
 
 #site-name-container {
-	margin: 0.4em 0 0 0;
+	margin: 0.2em 0 0 0.809em;
 }
 
 #site-name {
-	color: #FFFFFF; 
-	font-size: 3em;
-	font-weight: bold;
-	line-height: 1em;
-	letter-spacing: 0.02em;
+	color:#ffffff;
+	font-size: 1.618em;
+	display: block;
+	font-weight: 400;
 	text-decoration: none;
 }
 
 #site-slogan {
-	color: #EFEFEF;
 	display: block;
-	padding: 0.1em 0 0 0.1em;
-	font-size: 1em;
+	padding: 0.3236em 0 0 0.1618em;
+	font-size: 0.8em;
 	letter-spacing: 0.1em;
 }
 
 @media (min-width: 769px) {
 	#site-logo {
-		width: 322px;
-		height: 240px;
+    width: 320px;
+    height: 240px;
 	}
 
 	#site-name-container {
-		margin: 1em 0 0 0;
+		margin: 6em 0 0 0;
 	}
 
 	#site-name {
-		font-size: 4em;
+		font-size: 3.236em;
+		line-height: 1.2em;
 	}
-	
+
+	#site-slogan {
+		font-size: 1em;
+		padding: 0.1em 0 0 0.1618em;
+	}
 }
 
 /* -- Conteneur global du site -- */
@@ -520,100 +524,6 @@ content: '::'; color: #000000;
 .cookiebar-change-choice-link {
 	text-align: center;
 }
-/*============================
-*		Le Slider Jssor
-=============================*/
-#jssor_1{
-	position:relative;
-	margin:0 auto;
-	top:0px;
-	left:0px;
-	width:1300px;
-	height:500px;
-	overflow:hidden;
-	visibility:hidden;
-}
-.jssorl-009-spin{
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:100%;
-	text-align:center;
-	background-color:rgba(0,0,0,0.7);
-}
-
-/* jssor slider loading skin spin css */
-.jssorl-009-spin img {
-	margin-top:-19px;
-	position:relative;
-	top:50%;
-	width:38px;
-	height:38px;
-	animation-name: jssorl-009-spin;
-	animation-duration: 1.6s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-
-@keyframes jssorl-009-spin {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-/* IMAGES1 */
-.jssorl-data {cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;}
-.jssorl-logo {position:absolute;top:20px;left:30px;width:480px;height:130px;z-index:0;padding:5px;box-sizing:border-box;}
-.jssorl-name {position:absolute;top:400px;width:100%;height:100px;z-index:0;background-color:rgba(0,0,0, 0.7);font-size:1em;color:#efefef;line-height:25px;padding:5px;box-sizing:border-box;}
-/* IMAGES 2*/
-.jssorl-news {position:absolute;top:20px;left:70px;width:335px;height:430px;z-index:0;background:transparent url(images/infobox.png) no-repeat scroll 0 0 ;padding:5px;box-sizing:border-box;}
-.actus {padding:5px;}
-.jssorl-actus {position:absolute;top:450px;width:100%;height:50px;z-index:0;background-color:rgba(0,0,0, 0.7);font-size:1em;color:#ffffff;line-height:25px;padding:5px;box-sizing:border-box;}
-.jssorl-logo1 {position:absolute;top:100px;right:50px;width:480px;height:130px;z-index:0;padding:5px;box-sizing:border-box;}
-/* IMAGES 3*/
-.jssorl-coms{position:absolute;top:30px;left:30px;width:480px;height:130px;z-index:0;background-color:rgba(0,0,0, 0.7);font-size:40px;font-weight:100;color:#efefef;line-height:60px;padding:5px;box-sizing:border-box;}
-
-
-.jssorb032 {position:absolute;}
-.jssorb032 .i {position:absolute;cursor:pointer;}
-.jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
-.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
-.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
-.jssorb032 .i.idn {opacity:.3;}
-
-.jssora051 {display:block;position:absolute;cursor:pointer;}
-.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-.jssora051:hover {opacity:.8;}
-.jssora051.jssora051dn {opacity:.5;}
-.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-
-
-/*============================
-*	Les flux RSS Slider
-=============================*/
-
-.jssorl-news .rss-feed {
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-	margin-left: 20px;	
-}
-
-.jssorl-news .rss-feed  > li {
-	background: transparent url(images/li.png) no-repeat scroll 0 center;
-	vertical-align: text-top;
-	margin: auto auto auto -15px;
-	height: 20px;
-	padding-left: 15px;
-}
-
-.jssorl-news .rss-feed  > li  span.smaller { font-size: 1em;}
-.jssorl-news .rss-feed  > li  a { color:#04A3E6;}
 
 /*============================
 *	Autres
@@ -626,11 +536,11 @@ sur le mini-module Meilleurs téléchargements*/
 }
 
 .ghost {
-background: transparent url(images/ghost.png) no-repeat scroll 0 0;
-z-index: 11;
-width: 251px;
-height: 232px;
-position: absolute;
-left: 10px;
-margin-top: -130px;
+	background: transparent url(images/ghost.png) no-repeat scroll 0 0;
+	z-index: 11;
+	width: 251px;
+	height: 232px;
+	position: absolute;
+	left: 10px;
+	margin-top: -144px;
 }

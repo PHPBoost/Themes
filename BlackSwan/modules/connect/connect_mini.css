@@ -1,0 +1,222 @@
+/*
+* Surchargez ce fichier dans votre thème pour personnaliser le module
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+
+/* -- Connected & not-connected --*/
+#module-connect .horizontal-fieldset {
+	margin: 0;
+}
+
+#module-connect .horizontal-fieldset label {
+	padding: 0 0 0.9em;
+}
+
+#module-connect .horizontal-fieldset button {
+	margin: 0.309em;
+}
+
+.connect-register a > i,
+.connect-element a > i,
+.forget-pass-container a > i {
+	vertical-align: 0;
+}
+
+#module-connect a > span {
+	margin: 0 0 0 5px;
+}
+
+
+.js-menu-button {
+	display: inline-block;
+	padding: 0.309em 0.809em;
+}
+
+.js-menu-button span {
+	padding: 0 0 0 0.456em;
+}
+
+@media (min-width: 768px) {
+	.js-menu-button {
+		display: none;
+	}
+}
+
+/* -- not-connected --*/
+@media (min-width: 469px) {
+	.connect-register-container form {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 768px) {
+	.connect-input-container label,
+	.connect-input-container label > span,
+	.connect-input-container button {
+		display: block;
+	}
+
+	.connect-register-container {
+		margin: 0 0 0.618em 0;
+	}
+
+	.forget-pass-container {
+		margin: 0 0.6em 0.5em 0.6em;
+	}
+
+	.connect-input-container button {
+		margin: 0.309em 0 0 0;
+	}
+
+	.active-connect.not-connected.horizontal .connect-containers {
+		height: 300px;
+		padding: 0;
+	}
+
+	.module-mini-contents.connect-contents,
+	.connect-contents label,
+	.connect-contents button {
+		text-align: center;
+	}
+
+	.connect-contents button {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 769px) {
+	.connect-input-container,
+	.connect-register-container,
+	.forget-pass-container {
+		display: inline-block;
+	}
+
+	.horizontal-fieldset.connect-input-container label > span {
+		display: none;
+	}
+
+	.vertical-fieldset form label {
+		margin-bottom: 0.618em;
+	}
+
+	.module-mini-contents .connect-register-container a {
+		display: inline-block;
+	}
+	.module-mini-contents .connect-register {
+		padding: 0.309em 0 0 0;
+	}
+
+	.module-mini-contents .forget-pass-container {
+		display: block;
+		margin: 0.618em;
+	}
+
+	.connect-register a.facebook {
+		padding: 0.456em 0 0 0.228em;
+	}
+
+}
+
+/* -- connected -- */
+.connect-elements-container {
+	margin: 0;
+	padding: 0;
+}
+
+.module-mini-contents.connect-contents .connect-elements-container {
+	text-align: left;
+	display: table;
+	margin: auto;
+}
+
+@media (min-width: 769px) {
+	.module-mini-contents.connect-contents .connect-elements-container {
+		margin: 0;
+	}
+}
+
+.connect-element {
+	list-style-type: none;
+}
+
+.connect-element a {
+	display: block;
+	font-size: 1em;
+}
+
+.horizontal .connect-element a 	{ padding: 0.456em 0 0.456em 0.456em; }
+.vertical .connect-element a 	{ padding: 0.309em 0; }
+
+@media (min-width: 769px) {
+	.horizontal .connect-contents {
+		text-align: center;
+	}
+
+	.connected .vertical .connect-contents {
+		text-align: left;
+	}
+
+	.horizontal .connect-element {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 768px) {
+	.horizontal .connect-containers,
+	.horizontal .connect-containers label {
+		text-align: center;
+	}
+
+	.horizontal .connect-containers label {
+		display: block;
+	}
+
+	.horizontal .connect-elements-container,
+	.horizontal .connect-containers {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+		padding: 0 0 0 0.809em;
+	}
+
+	.active-connect.horizontal .connect-elements-container,
+	.active-connect.horizontal .connect-containers {
+		position: relative;
+		z-index: 200;
+		width: 100%;
+		transition: height 0.3s;
+	}
+
+	.active-connect.horizontal .connect-elements-container {
+		height: 210px;
+	}
+}
+/* ====================
+/*    -- Autres ---
+=====================*/
+
+@media (min-width: 768px) {
+	.connect-element {
+		padding-left: 10px;
+		font-size:10px;
+	}
+}
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	
+	.connect-register a > i,
+	.connect-element a > i,
+	.forget-pass-container a > i { color: #ffffff; }
+
+	#module-connect a > span { color: #ffffff; ;}
+	.js-menu-button { padding: 0.8em 0 0 0 !important; }
+	.connect-input-container label, .connect-input-container label > span, .connect-input-container button { color: #fff;}
+	.active-connect.horizontal .connect-elements-container { padding-top: 10px; }
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container { background-color:#000000;  padding-top: 10px; }
+}

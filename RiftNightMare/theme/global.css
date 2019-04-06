@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Theme    : RiftNightMare
+ * Theme    : RiftNightMare 
  * Par      : EDN | Swan
  * Date     : 11/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
   *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -90,23 +90,23 @@ h5 { font-size: 17px; color:#2fe2d3; font-family: "Cinzel Decorative",Georgia,cu
 h6 { font-size: 16px; font-family: "Cinzel Decorative",Georgia,cursive;}
 
 
-h2 a{
+h2 a{ 
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 20px;
 	color: #aa8dff;
     line-height: 24px;
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000; 
 }
 h2 a:hover {
     font-family: "Cinzel Decorative",Georgia,cursive;
     font-size: 20px;
     line-height: 24px;
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000; 
 }
 
 .cats h2 , .files h2 { font-size: 1.4rem; }
 .message-moderate a:hover{ color:#000000; text-decoration:none;}
-
+	
 @media (max-width:768px) {
 
 	h5 { font-size: 2rem;}
@@ -121,11 +121,11 @@ h2 a:hover {
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {
+h2.formatter-title {    
 	border-bottom: 2px solid #aa8dff;
-    color: #aa8dff;
+    color: #aa8dff;  
 }
-
+	
 h3.formatter-title {
     color: #2fe23c;
     font-family: "Cinzel Decorative",Georgia,cursive;
@@ -431,7 +431,9 @@ hr { background: #222222 none repeat scroll 0 0;}
     padding: 5px;
     font-family: monospace;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: normal;	
+
+}
 }
 
 .formatter-fieldset {
@@ -714,8 +716,8 @@ li.small-block .fa-stack {
 
 .error, .notice, .warning, .success, .question, .member-only, .modo-only, .admin-only { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);}
 
-.error { background-color: #d92e00; border-color: #AA0000; }
-.notice { background-color: #ACA899; border-color: #444444; }
+.error { background-color: #d92e00; border-color: #AA0000; }			
+.notice { background-color: #ACA899; border-color: #444444; }		
 .warning { background-color: #FF9900; border-color: #FF5500; }
 .success { background-color: #8AC77F; border-color: #3C8500; }
 .question { background-color: #5798F2; border-color: #000EAB; }
@@ -956,3 +958,5 @@ div#release {
 .upload-root-cat {
 	padding: 0 0 0 17px;
 }
+
+

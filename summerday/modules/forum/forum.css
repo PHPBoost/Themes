@@ -77,7 +77,10 @@ header .forum-links .cssmenu .menu-button.menu-opened:before {
 	background: none;
 	border: none;
 }
-
+.forum-table a {
+    color: #000;
+    text-decoration: none;
+}
 /* -- details des pages ============================================================== */
 
 /* --- pagination --- */
@@ -343,7 +346,7 @@ a.forum-link-cat {
 	height: auto;
 	overflow: hidden;
 	clear: both;
-	color: #262626;
+	color: #efefef;
 }
 
 .forum-online-select-cat {
@@ -648,15 +651,18 @@ a.msg-link-pseudo:hover {
 
 .fa-msg-display:before 			{ content: "\f00c"; color: #478948; }
 .fa-msg-not-display:before 		{ content: "\f00d"; color: #BA4B49; }
-.fa-msg-track:before 			{ content: "\f004"; color: #BA4B49; }
+.fa-msg-track:before 			{ content: "\f004"; color: #ff0000; }
 .fa-msg-not-track:before 		{ content: "\f004"; color: #000000; }
 .fa-pm-track:before 			{ content: "\f27a"; color: #4372AA; }
 .fa-pm-not-track:before 		{ content: "\f27a"; color: #000000; }
 .fa-mail-track:before 			{ content: "\f0e0"; color: #4372AA; }
 .fa-mail-not-track:before 		{ content: "\f0e0"; color: #000000; }
-.fa-lastview:before 			{ content: "\f017"; color: #334455; }
-.fa-notread:before 				{ content: "\f15c"; color: #334455; }
-.fa-showmymsg:before 			{ content: "\f4ad"; color: #334455; }
+.fa-lastview:before 			{ content: "\f017"; color: #efefef; }
+.fa-notread:before 				{ content: "\f15c"; color: #efefef; }
+.fa-showmymsg:before 			{ content: "\f4ad"; color: #efefef; }
+
+#nbr_unread_topics_top,.fa.fa-refresh:before, 
+.fa-eraser:before, .fa-home:before { color: #efefef; }
 
 /* -- footer ==================================================================== */
 footer#forum-bottom {
@@ -681,5 +687,5 @@ footer#forum-bottom .forum-message-options {
 }
 
 #main .cssmenu > ul > li > .cssmenu-title a {
-	color: #262626;
+	color: #efefef;
 }

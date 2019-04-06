@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 31/03/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -81,9 +81,9 @@ tr td.bkgd-color-unknown 	{ background-color: #FF796F; }
 .biggest { font-size: 2.0em; }
 
 /* --- Les titres (balise h) --- */
-h1 {
-font-family: monospace;
-font-size: 2.2rem;
+h1 {     
+font-family: monospace; 
+font-size: 2.2rem;     
 font-weight: normal;
 text-shadow: 1px 1px 0 #000; }
 h2 { font-size: 2.0rem; }
@@ -92,14 +92,14 @@ h4 { font-size: 1.8rem; }
 h5 { font-size: 1.3rem; }
 h6 { font-size: 1.4rem; }
 
-h1 a{
+h1 a{ 
     color: #ffffff;
 	line-height:2;
     display: inline;
     font-family: monospace;
     font-size: 12px;
     font-weight: normal;
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000; 
 }
 h1 a:hover {
 color: #ff0000;
@@ -107,7 +107,7 @@ color: #ff0000;
     font-family: monospace;
     font-size: 12px;
     font-weight: normal;
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000; 
 	text-decoration: underline;
 }
 section header a:hover {
@@ -117,11 +117,11 @@ section header a:hover {
     font-family: monospace;
    /* font-size: 30px;*/
     font-weight: normal;
-    text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000; 
 }
 .cats h2 , .files h2 { font-size: 1.4rem; }
 .message-moderate a:hover{ color:#000000; text-decoration:none;}
-
+	
 @media (max-width:768px) {
 
 	h5 { font-size: 2rem;}
@@ -136,11 +136,11 @@ section header a:hover {
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {
+h2.formatter-title {    
 	border-bottom: 2px solid #aa0000;
-    color: #ff0000;
+    color: #ff0000;  
 }
-
+	
 h3.formatter-title {
     background: #000000 none repeat scroll 0 0;
     border: 1px solid #aa0000;
@@ -458,6 +458,8 @@ hr { background: #222222 none repeat scroll 0 0;}
     font-family: monospace;
     font-size: 14px;
     font-weight: normal;	
+
+}
 }
 
 .formatter-fieldset {
@@ -740,8 +742,8 @@ li.small-block .fa-stack {
 
 .error, .notice, .warning, .success, .question, .member-only, .modo-only, .admin-only { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);}
 
-.error { background-color: #d92e00; border-color: #AA0000; }
-.notice { background-color: #ACA899; border-color: #444444; }
+.error { background-color: #d92e00; border-color: #AA0000; }			
+.notice { background-color: #ACA899; border-color: #444444; }		
 .warning { background-color: #FF9900; border-color: #FF5500; }
 .success { background-color: #8AC77F; border-color: #3C8500; }
 .question { background-color: #5798F2; border-color: #000EAB; }
@@ -976,3 +978,5 @@ div#release {
 .upload-root-cat {
 	padding: 0 0 0 17px;
 }
+
+

@@ -516,7 +516,11 @@ footer#cookiebar-change-choice {
 			Alls Media Queries
 		 CSS applique aux ꤲans PC 
 ========================================*/
-
+@media (min-width:768px) {
+	.horizontal .connect-contents {
+		padding-top: 5px !important;
+	}
+}
 @media (max-width:768px) {
 	div#SuperGlobal {width: auto;}	
 	body {font-size: 1.4em;}

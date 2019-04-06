@@ -502,8 +502,8 @@ footer#cookiebar-change-choice {
 		float: none;
 		margin-right: 0px;
 		margin-top: 0px;
-	background: #000000; /* Old browsers */
-	border-bottom: 1px solid #103480;
+	background-color: #ded7c2;
+	border-bottom: 1px solid #685535;
     min-height: 35px;
     text-align: center;
 	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);

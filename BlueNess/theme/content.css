@@ -710,6 +710,12 @@ ul.pagination-block-bis li a.next-page:hover {
 	}
 }
 
+.infos-options {
+	display: block;
+}
+
+.poll-question-mini-container label { padding:10px 0 0 0;}
+ 
 /* -- Gestion des categories -- */
 /* ---------------------------- */
 .cat-description {
@@ -1110,10 +1116,10 @@ article .message-user-infos .message-user-group {
 	.message-container {
 		position: relative;
 		min-height: 80px;
-		background-color: #ECEFFA;
-		border: 1px solid #D6DEE7;
+		background-color: rgba(0, 0, 0, 0.3);
+		border: 1px solid rgba(0, 0, 0, 0.5);
 		border-radius: 4px;
-		color: #333333;
+		color: #efefef;
 	}
 
 	.message-message {

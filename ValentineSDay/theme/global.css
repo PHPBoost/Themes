@@ -34,7 +34,9 @@ a {
 }
 
 aside#menu-left a, aside#menu-right  a  {color: #888888;}
+aside#menu-left #module-mini-social-networks a, aside#menu-right #module-mini-social-networks a{ color: #ffffff;}
 aside#menu-left .menu-vertical-0 a,aside#menu-right .menu-vertical-0  a{color:#df5799;}
+
 
 a:hover, aside#menu-left a:hover, aside#menu-right  a:hover{
 	color: #e90a77;

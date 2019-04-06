@@ -68,7 +68,7 @@
 
 	<div id="sub-header">
 	<div class="sub-container">
-		<a  href="{PATH_TO_ROOT}/contact/" alt="Nous contacter ..." ><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/tweetboost.png" title="logotype">@TweetBoost</a>
+		<a href="{PATH_TO_ROOT}/contact/" alt="Nous contacter ..." ><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/tweetboost.png" title="logotype"></a> <a  class="sub-tweet" href="{PATH_TO_ROOT}/contact/" alt="Nous contacter ..." >@TweetBoost</a>
 	</div>
 		# IF C_MENUS_SUB_HEADER_CONTENT #
 			# START menus_sub_header #

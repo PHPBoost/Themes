@@ -603,3 +603,19 @@ footer#cookiebar-change-choice {
 @media (min-width:769px) {
 	div#header-gsm{display: none;}
 }
+/* ====================
+/*    -- Autres ---
+=====================*/
+
+.connect-containers {
+    margin: 5px 0 0 0;
+}
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container { background-color:#c2dec3;  margin-top: 10px; }

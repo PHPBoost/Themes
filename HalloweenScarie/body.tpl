@@ -76,7 +76,7 @@
 						# START link_bread_crumb #
 						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
 							<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
-								<span itemprop="title"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/breadcrumb.png" alt="" class="valign_middle" /> {link_bread_crumb.TITLE}</span>
+								<span itemprop="title">{link_bread_crumb.TITLE}</span>
 							</a>
 						</li>
 						# END link_bread_crumb #

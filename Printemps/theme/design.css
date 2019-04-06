@@ -3,7 +3,7 @@
  * Par      : EDN | EnimSay
  * Date     : 26/12/08
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  * Contient les conteneurs de mise en page.
  * Le design.css permet de mettre en forme votre site web avec le design de votre choix
@@ -72,7 +72,7 @@ div#top-header-content {
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 	}
-
+	
 	div#top-header-content {
 		align-self: flex-end;
 		-ms-align-self: flex-end;
@@ -98,10 +98,10 @@ div#sub-header {
 	max-width: 1250px;
 	margin: auto;
 	border-radius: 5px;
-	border-top:1px solid #dddddd;
+	border-top:1px solid #dddddd;	
 	box-shadow:
 	0px 2px 2px 0px rgba(0, 0, 0, 0.5),
-	0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+	0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;	
 }
 
 div#sub-header-content{
@@ -171,7 +171,7 @@ span#site-slogan {
 	a#site-name {
 		font-size: 4em;
 	}
-
+	
 }
 
 /* -- Conteneur global du site -- */
@@ -236,23 +236,23 @@ aside#menu-right {
     	width: 250px;
 	}
 
-	aside#menu-left  {
+	aside#menu-left  { 
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 	}
-	aside#menu-right {
+	aside#menu-right { 
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 	}
-
+	
 	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 250px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
-
+	
 	#main.main-with-left.main-with-right {
 		width: calc(100% - 500px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
@@ -366,7 +366,7 @@ nav#breadcrumb ol li:not(.current):after {
 	z-index: 10;
 	display: none;
 	background-color: rgba(15, 15, 16, 0.8);
-	border-radius: 12px;
+	border-radius: 12px;	
 }
 
 #scroll-to-top {
@@ -497,7 +497,7 @@ footer#cookiebar-change-choice {
 
 .cookiebar-change-choice-link {
 	text-align: center;
-}
+} 
 
 /*======================
  ---   Autres   ---
@@ -508,7 +508,7 @@ footer#cookiebar-change-choice {
     background-image: linear-gradient(to bottom, #e4f5fc 0%,#D2E5EE 50%,#ACDFF6 51%,#A2D3E9 100%);
 }
 
-.effet-shadow {
+.effet-shadow: {
 -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
@@ -516,14 +516,14 @@ footer#cookiebar-change-choice {
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC
+		 CSS applique aux écrans PC 
 ========================================*/
 
 @media (max-width:768px) {
 
 	body {font-size: 1.4em;}
-
-	div#SuperGlobal {width: auto;}
+	
+	div#SuperGlobal {width: auto;}	
 
 	div#top-header{
 		background: url(images/mn-logo.png) no-repeat scroll left 50px transparent;
@@ -540,9 +540,9 @@ footer#cookiebar-change-choice {
 		min-height: 35px;
 		text-align: center;
 	}
-
+	
 	.sub-container{display: none;}
-
+	
 	a#site-name {
 		color: #DDDDDD;
 		font-size: 2em;
@@ -551,35 +551,35 @@ footer#cookiebar-change-choice {
 		line-height: 1.5em;
 		text-shadow:none;
 	}
-
+	
 	aside#menu-left {border-right: none;}
-	aside#menu-right{border-left: none;}
-
+	aside#menu-right{border-left: none;}	
+	
 
 	footer#footer {
 		clear: both;
 		margin: auto;
 		width: 1250px;
-		height: auto;
+		height: auto;		
 	}
-
+	
 	footer#footer .footer-infos {
 		min-height: 150px;
 		text-align: center;
 		padding-top: 60px;
 	}
-
+	
 	footer#footer {width:100%}
 
 	.footer-infos span {
 		display: block;
 		padding: 0 0 5px;
 	}
-
+	
 	span.footer-infos-separator {
 		display: none;
 	}
-
+	
 	#prim-nav{display: none;}
 }
 

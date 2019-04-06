@@ -3,7 +3,7 @@
  * Par      : Striker,Jiraya & EDN | Swan
  * Date     : 31/03/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -65,8 +65,8 @@ background: -webkit-linear-gradient(top, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91
 background: -o-linear-gradient(top, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* IE10+ */
 background: linear-gradient(to bottom, #a91315 0%,#9b3a30 37%,#9b392e 64%,#a91315 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a91315', endColorstr='#a91315',GradientType=0 ); /* IE6-9 */
-
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a91315', endColorstr='#a91315',GradientType=0 ); /* IE6-9 */	
+	
     border: 2px solid #400203;
     min-height: 35px;
     text-align: center;
@@ -142,7 +142,7 @@ div#global {
     max-width: 1250px;
 	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
 }
 div#sous-global {
     background: transparent url(images/global.png) repeat-y scroll center 0;
@@ -295,7 +295,7 @@ a.blackbar:hover {
     background: url(images/blackbar.jpg) repeat-x scroll right -116px rgba(0, 0, 0, 0);
     color: #000000;
 	text-decoration: none;
-}
+} 
 
 
 /*======================================
@@ -437,7 +437,7 @@ div#gobottom a {
     float: left;
     height: 80px;
     opacity: 0.3;
-    width: 80px;
+    width: 80px;	
 }
 
 /*======================
@@ -498,7 +498,7 @@ div#gobottom a {
 	}
 }
 
-.cookiebar-button-understand 		{ background-color: #337AB7; border: medium none; }
+.cookiebar-button-understand 		{ background-color: #337AB7; border-color: medium none; }
 .cookiebar-button-understand:hover 	{ background-color: #2E6DA4; }
 
 .cookiebar-button-allowed 			{ background-color: #5CB85C; border-color: #4CAE4C; }
@@ -535,7 +535,7 @@ footer#cookiebar-change-choice {
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC
+		 CSS applique aux écrans PC 
 ========================================*/
 
 @media ( min-width: 769px ) {
@@ -595,22 +595,31 @@ footer#cookiebar-change-choice {
 		max-width: 1250px;
 		-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
 	}
 	div#sous-global {
-		background-color: #faf6ee;
+		background-color: # faf6ee;
 		margin: auto;
 		padding: 0 10px;
 	}
 	footer#footer {
-		background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+		background: #7d7e7d; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTBlMGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-8 */
 		border-left: 1px solid #fff;
 		border-right: 1px solid #fff;
 		border-top: 1px solid #222222;
 		clear: both;
 		margin: auto;
 		width: 1250px;
-   height: auto;
+   height: auto;		
 	}
 	footer#footer .footer-infos {
 		min-height: 40px;
@@ -618,7 +627,7 @@ footer#cookiebar-change-choice {
 		padding-top: 10px;
 	}
 	footer#footer {width:100%}
-
+	
 	.footer-infos span {
     display: block;
     padding: 0 0 5px;
@@ -657,7 +666,7 @@ footer#cookiebar-change-choice {
 	.nav-item {
 		width:100%;
 		float:none;
-		list-style: none outside none;
+		list-style: none outside none;		
 	}
 	.nav-item > a {
 		padding:15px;

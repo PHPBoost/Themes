@@ -672,6 +672,12 @@ ul.pagination-block-bis li a.next-page:hover {
 	margin-left: 20px;
 }
 
+.infos-options {
+	display: block;
+}
+
+.poll-question-mini-container label { padding:10px 0 0 0;}
+ 
 /* -- Affichage des tableaux HTML --
 --------------------------------------*/
 table {

@@ -86,8 +86,8 @@ div#top-header-content {
 /* --- Partie inférieur du header --- */
 div#sub-header {
 	background: transparent url(images/subheader.png) no-repeat scroll center top;
-	min-height: 36px;
-	padding: 2px 5px;	
+	min-height: 60px;
+	padding: 12px 5px;
 }
 
 div#sub-header-content{

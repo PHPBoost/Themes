@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 03/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -34,7 +34,7 @@ html {
 
 body {
     background:#e9eaee none repeat scroll 0 0;
-    color: #000000;
+    color: #00000;
     font-family: "verdana","Lucida Sans Unicode",Verdana,"Bitstream Vera Sans",Times,serif;
     font-size: 12px;
 	position: relative;
@@ -175,7 +175,7 @@ aside#menu-right {
     border-style: solid;
     border-width: 1px;
 
-}
+}   
 
 /* -- Contenu de la page --
 --------------------------------------*/
@@ -333,9 +333,9 @@ nav#breadcrumb ol li:not(.current):after {
 }
 .MNnav-item a {
     background: #fff none repeat scroll 0 0;
-    border-left: 1px solid #e9eaed;
+    border-left: 1px solid #e9eaed;	
 	/*border-bottom:1px solid #dddddd;*/
-
+	
     color: #3b5998;
 	display:block;
 	padding:18px 20px;
@@ -568,7 +568,7 @@ footer#cookiebar-change-choice {
 }
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC
+		 CSS applique aux écrans PC 
 ========================================*/
 
 @media ( min-width: 769px ) {
@@ -620,7 +620,7 @@ footer#cookiebar-change-choice {
     line-height: 1.5em;
 	}
 	div#sous-global {
-		background-color: #faf6ee;
+		background-color: # faf6ee;
 		margin: auto;
 		padding: 0 10px;
 	}
@@ -634,7 +634,7 @@ footer#cookiebar-change-choice {
 		clear: both;
 		margin: auto;
 		width: 1250px;
-   height: auto;
+   height: auto;		
 	}
 	footer#footer .footer-infos {
 		min-height: 40px;
@@ -642,7 +642,7 @@ footer#cookiebar-change-choice {
 		padding-top: 10px;
 	}
 	footer#footer {width:100%}
-
+	
 	.footer-infos span {
     display: block;
     padding: 0 0 5px;
@@ -668,7 +668,7 @@ footer#cookiebar-change-choice {
 
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-
+	
 /* EDN MNNAV Original */
 	#prim-nav{
 		background:none;
@@ -681,7 +681,7 @@ footer#cookiebar-change-choice {
 
 	section#navbook {
 		background: #3d3d3b none repeat scroll 0 0;
-		border-right:none;
+		border-right:none;		
 		/*height: auto;*/
 		margin: auto auto auto -1px;
 		padding: 0;
@@ -712,7 +712,7 @@ footer#cookiebar-change-choice {
 	.MNnav-item {
 		width:100%;
 		float:none;
-		list-style: none outside none;
+		list-style: none outside none;		
 	}
 	.MNnav-item > a {
 		padding:15px;

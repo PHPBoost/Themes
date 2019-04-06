@@ -190,10 +190,10 @@ input[type=file],
 textarea,
 select {
 	padding: 4px 18px 4px 6px;
-    background: none;
+    background: #222222 !important;
     border: none;
     border-bottom: 2px solid rgb(210, 210, 210);
-    color: #555555;
+    color: #777777;
 }
 
 input[type=text]:hover,
@@ -210,7 +210,7 @@ select:hover {
  	background: none;
     border: none;
     border-bottom: 2px solid rgb(51, 159, 161);
-	color: #333333;
+	color: #efefef;
 }
 
 input[type=text]:active,
@@ -227,7 +227,7 @@ select:active {
  	background: none;
     border: none;
     border-bottom: 2px solid rgb(51, 159, 161);
-	color: #333333;
+	color: #efefef;
 }
 
 input[type=text]:focus,
@@ -243,12 +243,56 @@ textarea:focus,
 select:focus {
 	border-bottom: 2px solid rgb(51, 159, 161);
 	outline: 0;
-	color: #222222;
+	color: #efefef;
 }
 
 input[type=color] {
 	padding: 0 2px 0 2px;
 	width: 25px;
+}
+
+.field-smaller 	{ width: 29px;  }
+.field-small   	{ width: 77px;  }
+.field-large   	{ width: 200px; }
+.field-xlarge 	{ width: 250px; }
+
+.form-field-date,
+.form-field-datetime {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.form-field-date .input-date {
+	width: 80%;
+}
+
+.form-field-datetime .input-date {
+	width: 40%;
+}
+
+.form-field-datetime .label-time {
+	width: 18%;
+	position: relative;
+	display: inline-block;
+}
+
+.form-field-datetime .label-time input {
+	padding: 0.309em;
+	width: 100%;
+}
+
+.label-time:after {
+	position: absolute;
+	bottom: 18%;
+	left: 103%;
+	content: attr(data-time);
 }
 
 form input:focus:invalid,
@@ -264,11 +308,6 @@ form .constraint-status-right input,
 form .constraint-status-right textarea {
 	border-color: rgb(51, 159, 161);
 }
-
-input.field-smaller 	{ width: 29px;  }
-input.field-small   	{ width: 77px;  }
-input.field-large   	{ width: 200px; }
-input.field-xlarge 		{ width: 250px; }
 
 input.input-date 		{ width: 100px; }
 input.input-hours 		{ width: 50px;  }

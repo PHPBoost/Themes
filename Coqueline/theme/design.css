@@ -611,3 +611,27 @@ footer#cookiebar-change-choice {
 @media (min-width:769px) {
 	div#header-gsm{display: none;}
 }
+/* ====================
+/*    -- Autres ---
+=====================*/
+
+@media (min-width: 768px) {
+	.connect-element {
+		padding-left: 10px;
+		font-size: 12px;
+	}
+}
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+
+	#module-connect .horizontal-fieldset { margin: 1.309em 0 !important;}
+	.js-menu-button { font-size: 1.1em; padding-top: 10px !important;}
+	
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container { background-color: #dcc1dc;}
+	
+}

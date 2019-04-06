@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 03/04/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
    *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -91,7 +91,7 @@ h4 { font-size: 1.9rem; }
 h5 { font-size: 1.8rem; }
 h6 { font-size: 1.3rem; }
 
-h2, h2 a{
+h2, h2 a{ 
     color: #222222;
     display: inline;
     font-size: 22px;
@@ -106,7 +106,7 @@ h2 a:hover {
 }
 .cats h2 , .files h2 { color: #292f33;font-size: 1.4rem; }
 .message-moderate a:hover{ color: #292f33; text-decoration:none;}
-
+	
 @media (max-width:768px) {
 h5 { font-size: 2rem;}
 }
@@ -118,11 +118,11 @@ h5 { font-size: 2rem;}
 	margin: 0.5rem 0;
 }
 
-h2.formatter-title {
+h2.formatter-title {    
 	border-bottom: 2px solid  #5ab7ed;
-    color: #000000;
+    color: #000000;  
 }
-
+	
 h3.formatter-title {
     background: #efefef none repeat scroll 0 0;
     border: 2px solid #1da1f2;
@@ -133,7 +133,7 @@ h3.formatter-title {
     margin-left: 1.5rem;
     padding: 2px 5px;
  }
-h4.formatter-title {
+h4.formatter-title { 
     background: #efefef none repeat scroll 0 0;
     border: 2px solid #1da1f2;
     color: #222222;
@@ -439,6 +439,8 @@ hr { background: #bbbbbb none repeat scroll 0 0;}
     font-family: monospace;
     font-size: 14px;
     font-weight: normal;	
+
+}
 }
 
 .formatter-fieldset {
@@ -936,3 +938,5 @@ div#release {
 .upload-root-cat {
 	padding: 0 0 0 17px;
 }
+
+

@@ -1,3 +1,17 @@
+/*---------------------------------------------------------
+ * Theme    : Thème AroundTheWorld
+ * Par      : Grenouille
+ * Date     : 27/01/13
+ * Site web :  http://easy-design.net/
+ * Commentaire ou autre de l'auteur 
+ # Merci de ne pas toucher au entête des fichiers CSS.
+ * Contient les conteneurs de mise en page.
+ * Le design.css permet de mettre en forme votre site web avec le design de votre choix
+ *---------------------------------------------------------
+ * Porté par : EDN | Swan
+ * Date      : 11/03/2017
+ *---------------------------------------------------------*/
+
 /* -- Connected & not-connected --*/
 #module-connect .horizontal-fieldset {
 	margin: 0;
@@ -14,15 +28,17 @@
 .connect-register a > i,
 .connect-element a > i,
 .forget-pass-container a > i {
-	color: #EFEFEF;
+	color: #445766;
 	vertical-align: 0;
 }
 
 #module-connect a > span {
+	color: ##f7f8f5;
 	margin: 0 0 0 5px;
 }
 
 .js-menu-button {
+	color:#f7f8f5;
 	display: none;
 }
 
@@ -142,7 +158,7 @@ a.social-connect {
 .connect-element a:hover {color: #ffffff;}
 
 
-.horizontal .connect-element a 	{ padding: 7px 0 7px 0; }
+.horizontal .connect-element a 	{ padding: 7px 0 7px 0; color: #445766;}
 .vertical .connect-element a 	{ padding: 5px 0 5px 0; }
 
 @media (min-width: 769px) {

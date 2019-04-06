@@ -3,7 +3,7 @@
  * Par      : EDN | Swan
  * Date     : 12/11/2017
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
 /*--------------------------------------------------------
  * Thème compatible avec deux / ou une seule colonne de menus.
@@ -38,6 +38,8 @@ table caption {
 table thead th,
 .table-head {
 	padding: 8px;
+	/*	background: #1f4c45;
+	border-top: 1px solid #000000;*/
 	background: #000000;
 	border-top: 1px solid #000000;
 	color: #ff670f;

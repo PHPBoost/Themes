@@ -1,0 +1,185 @@
+ 
+/* -- Affichage des tableaux HTML --
+--------------------------------------*/
+table {
+    background-color: rgba(0, 19, 40, 0.75);
+    border-spacing: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 10px black, 0 0 0 1px rgba(0, 255, 255, 0.2) inset;
+	width: 100%;
+	padding: 0px;
+	margin: 8px 0px;
+	border-spacing: 0;
+}
+
+/* --- Entete du tableau --- */
+table caption {
+	color: #757679;
+	font-size: 13px;
+	text-align: left;
+	margin: 5px 0 5px 20px;
+	border-bottom: 1px solid #D1D2D5;
+}
+
+table thead th {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    color: #2fe23c;
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+}
+
+table thead th:first-child {
+	border-top-left-radius: 3px;
+}
+table thead th:last-child {
+	border-top-right-radius: 3px;
+}
+
+table thead th a {
+	color: #E5E6E6;
+}
+table thead th a:hover {
+	color: #FFFFFF;
+}
+
+/* --- Contenu du tableau --- */
+table tbody td {
+ background: rgba(34, 34, 34, 0.7) none repeat scroll 0 0;
+    border-left: 1px solid #001328;
+    border-top: 1px solid #001328;
+    color: #efefef;
+    padding: 8px;
+    text-align: center;
+}
+table tbody td:hover, table tbody tr:nth-child(even) td:hover {
+    background: rgba(60, 60, 60, 0.7) none repeat scroll 0 0;
+}
+
+table tbody tr:nth-child(even) td {
+ background: rgba(34, 34, 34, 0.7) none repeat scroll 0 0;
+}
+table tbody tr:last-child td {
+	border-bottom: 1px solid #001328;
+}
+table tbody tr td:last-child {
+	border-right: 1px solid #001328;
+}
+
+table tbody tr.no-separator td {
+	border-top: none;
+}
+
+table tbody tr td.no-separator {
+	border-left: none;
+}
+table tbody tr td.no-separator:first-child {
+	border-left: 1px solid #D1D2D4;
+}
+.forum-poll-table td {
+    text-align: left;
+}
+/* --- Pied de tableau --- */
+table tfoot tr th {
+	background-color: #000000;
+    color: #efefef;
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+	padding: 8px;
+	border-bottom: 1px solid #000;
+}
+
+table tfoot tr th:first-child {
+	border-left:1px solid #000;
+	border-bottom-left-radius: 3px;
+}
+table tfoot tr th:last-child {
+	border-right: 1px solid #000;
+	border-bottom-right-radius: 3px;
+}
+table tfoot tr th:only-child {
+	text-align: right;
+}
+
+table tfoot tr th * {
+	vertical-align: middle;
+}
+
+table tfoot tr th a {
+	color: #efefef;
+}
+table tfoot tr th select {
+	padding: 2px 5px;
+}
+
+/* --- Patch thead tableaux formates --- */
+table.formatter-table th.formatter-table-head {
+	padding: 8px;
+	background-color: #4D4C50;
+	color: #E5E6E6;
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: normal;
+}
+table.formatter-table th.formatter-table-head:first-child {
+	border-top-left-radius: 3px;
+}
+table.formatter-table th.formatter-table-head:last-child {
+	border-top-right-radius: 3px;
+}
+
+table.formatter-table th.formatter-table-head a {
+	color: #E5E6E6;
+}
+table.formatter-table th.formatter-table-head a:hover {
+	color: #FFFFFF;
+}
+
+table.formatter-table th.formatter-table-head p {
+	margin-bottom: 0px;
+}
+
+.col-smaller { width: 3em;  }
+.col-small   { width: 6em;  }
+.col-large   { width: 9em;  }
+.col-larger  { width: 12em; }
+.col-xlarge  { width: 15em; }
+
+/* --- mini tableaux --- */
+table.mini th,
+table.mini td {
+	padding: 3px 1px;
+	font-size: 11px;
+}
+
+table.mini th a,
+table.mini td a {
+	font-size: 11px;
+}
+
+/* --- Pagination footer tableaux --- */
+table tfoot nav.pagination a {
+	color: #8B8D90;
+	text-decoration: none;
+	padding: 3px 3px;
+
+}
+
+table tfoot nav.pagination a span.current-page {
+	color: #CED0D0;
+	text-decoration: none;
+}
+
+/* --- Affichage des tableaux responsive sur les petits écrans --- */
+
+@media ( max-width: 768px ) {
+	table thead th,
+	table tbody td,
+	table tfoot tr th {
+		padding: 4px;
+		font-size: .9em;
+	}
+}

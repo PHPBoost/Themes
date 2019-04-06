@@ -717,6 +717,11 @@ ul.pagination-block-bis li a.next-page:hover {
 	}
 }
 
+.infos-options {
+	display: block;
+}
+
+.poll-question-mini-container label { padding:10px 0 0 0;}
 
 /* -- Gestion des categories -- */
 /* ---------------------------- */
@@ -959,6 +964,8 @@ body.dragging * {
     background: transparent url(images/mini-container-bottom.png) no-repeat scroll center top;
     height: 30px;
 }
+
+#module-mini-download .module-mini-top .sub-title {font-size: 23px;}
 
 
 /* -- Messages postes par les membres -- */

@@ -1,19 +1,7 @@
-/*---------------------------------------------------------
- * Theme    : Thème Cameleon
- * Par      : EnymSay
- * Date     : 31/05/2017
- * Site web :  http://easy-design.net/ | https://www.phpboost.com/
- * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
- * Contient les conteneurs de mise en page.
- * Le design.css permet de mettre en forme votre site web avec le design de votre choix
- *---------------------------------------------------------
- * Modifié par : EDN | Swan
- * Date      : 31/05/2017
- *---------------------------------------------------------
- * Thème compatible avec un  menu (droite ou gauche)
-					le choix reste possible sur un menu
- *----------------------------------------------------------*/
+/*
+* Surchargez ce fichier dans votre thème pour personnaliser le module
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
 
 
 /* -- Connected & not-connected --*/
@@ -21,12 +9,12 @@
 	margin: 0;
 }
 
-#sub-header #module-connect {
-	min-height: 35px;
+#module-connect .horizontal-fieldset label {
+	padding: 0 0 0.9em;
 }
 
-#sub-header #module-connect .connect-contents {
-	padding-top: 3px;
+#module-connect .horizontal-fieldset button {
+	margin: 0.309em;
 }
 
 .connect-register a > i,
@@ -41,34 +29,27 @@
 	margin: 0 0 0 5px;
 }
 
+
 .js-menu-button {
-	display: none;
+	display: inline-block;
+	padding: 0.309em 0.809em;
 }
 
-@media (max-width: 768px) {
-	.js-menu-button {
-		display: inline-block;
-		padding: 5px 10px 5px 12px;
-		font-size: 1em;
-	}
+.js-menu-button span {
+	padding: 0 0 0 0.456em;
+}
 
-	.js-menu-button span {
-		padding: 0 0 0 7px;
+@media (min-width: 768px) {
+	.js-menu-button {
+		display: none;
 	}
 }
 
 /* -- not-connected --*/
-.connect-register-container form {
-	display: inline-block;
-}
-
-.connect-register a.fb {
-	padding: 6px 0 0 4px;
-}
-
-a.social-connect {
-	margin: -2px 0;
-	vertical-align: middle;
+@media (min-width: 469px) {
+	.connect-register-container form {
+		display: inline-block;
+	}
 }
 
 @media (max-width: 768px) {
@@ -79,7 +60,7 @@ a.social-connect {
 	}
 
 	.connect-register-container {
-		margin: 0.5em 0.6em 0.5em 0.6em;
+		margin: 0 0 0.618em 0;
 	}
 
 	.forget-pass-container {
@@ -87,23 +68,22 @@ a.social-connect {
 	}
 
 	.connect-input-container button {
-		margin: 5px 0 0 0;
+		margin: 0.309em 0 0 0;
 	}
 
 	.active-connect.not-connected.horizontal .connect-containers {
-		height: 300px;
+		height: 320px;
+		padding: 0;
 	}
 
 	.module-mini-contents.connect-contents,
 	.connect-contents label,
 	.connect-contents button {
 		text-align: center;
-		margin: 0 0 5px 0;
 	}
 
 	.connect-contents button {
 		display: inline-block;
-		margin: 10px 0 10px 0;
 	}
 }
 
@@ -119,23 +99,23 @@ a.social-connect {
 	}
 
 	.vertical-fieldset form label {
-		margin-bottom: 10px;
+		margin-bottom: 0.618em;
 	}
 
 	.module-mini-contents .connect-register-container a {
 		display: inline-block;
 	}
 	.module-mini-contents .connect-register {
-		padding: 5px 0 0 0;
+		padding: 0.309em 0 0 0;
 	}
 
 	.module-mini-contents .forget-pass-container {
 		display: block;
-		margin: 10px;
+		margin: 0.618em;
 	}
 
-	.connect-register a.fb {
-		padding: 7px 0 0 4px;
+	.connect-register a.facebook {
+		padding: 0.456em 0 0 0.228em;
 	}
 
 }
@@ -146,17 +126,29 @@ a.social-connect {
 	padding: 0;
 }
 
+.module-mini-contents.connect-contents .connect-elements-container {
+	text-align: left;
+	display: table;
+	margin: auto;
+}
+
+@media (min-width: 769px) {
+	.module-mini-contents.connect-contents .connect-elements-container {
+		margin: 0;
+	}
+}
+
 .connect-element {
 	list-style-type: none;
 }
 
 .connect-element a {
 	display: block;
-	margin: 0 10px 0 0;
+	font-size: 1em;
 }
 
-.horizontal .connect-element a 	{ padding: 7px 0 7px 0; }
-.vertical .connect-element a 	{ padding: 5px 0 5px 0; }
+.horizontal .connect-element a 	{ padding: 0.456em 0 0.456em 0.456em; }
+.vertical .connect-element a 	{ padding: 0.309em 0; }
 
 @media (min-width: 769px) {
 	.horizontal .connect-contents {
@@ -187,7 +179,7 @@ a.social-connect {
 		height: 0;
 		overflow: hidden;
 		transition: height 0.3s;
-		padding: 0 0 0 12px;
+		padding: 0 0 0 0.809em;
 	}
 
 	.active-connect.horizontal .connect-elements-container,
@@ -199,12 +191,28 @@ a.social-connect {
 	}
 
 	.active-connect.horizontal .connect-elements-container {
-		height: 190px;
-		background-color: rgba(237,211,160,1);
+		height: 210px;
 	}
+}
+/* ====================
+/*    -- Autres ---
+=====================*/
 
-	.vertical .connect-element a {
-		padding: 9px 0 9px 0;
-		margin: 3px 0 3px 0;
+@media (min-width: 768px) {
+	.connect-element {
+		padding-left: 10px;
+		font-size: 12px;
 	}
+}
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.js-menu-button { font-size: 12px; padding-top: 10px;}
+	.horizontal .connect-element a { color: #FFFFFF;}
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container { background-color: rgba(255, 255, 255, 0.8);  margin-top: 10px; }
+	
 }

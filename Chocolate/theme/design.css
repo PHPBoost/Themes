@@ -505,7 +505,7 @@ footer#cookiebar-change-choice {
  ---   Autres & modules   ---
 ===========================*/
 
-.effet-shadow {
+.effet-shadow: {
 -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
@@ -591,4 +591,26 @@ footer#cookiebar-change-choice {
 
 @media (min-width:769px) {
 	div#header-gsm{display: none;}
+}
+
+/* ====================
+/*    -- Autres ---
+=====================*/
+
+@media (min-width: 768px) {
+	.connect-element {
+		padding-left: 10px;
+		font-size: 12px;
+	}
+}
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.js-menu-button { font-size: 12px; padding-top: 10px;}
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container {  margin-top: 10px; }
+	
 }

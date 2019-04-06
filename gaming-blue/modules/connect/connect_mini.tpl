@@ -17,14 +17,7 @@
 	-->
 	</script>
 # ENDIF #
-<script>
-	<!--
-	function open_submenu(myid)
-	{
-		jQuery('#' + myid).toggleClass('active');
-	}
-	-->
-</script>
+
 
 <div id="module-connect" class="connect-menu# IF C_USER_NOTCONNECTED # not-connected# ELSE # connected# ENDIF## IF C_VERTICAL # module-mini-container vertical# ELSE # horizontal# ENDIF #">
 	# IF C_USER_NOTCONNECTED #
@@ -36,7 +29,7 @@
 		<div class="module-mini-contents connect-contents">
 		# ELSE #
 		<div class="connect-contents">
-			<a href="" class="js-menu-button" onclick="open_submenu('module-connect');return false;"><i class="fa fa-sign-in"></i><span>{@connection}</span></a>
+			<a href="" class="js-menu-button" onclick="open_submenu('module-connect', 'active-connect');return false;"><i class="fa fa-sign-in" aria-hidden="true"></i><span>{@connection}</span></a>
 		# ENDIF #
 			<div class="connect-containers">
 				<div class="connect-input-container# IF C_VERTICAL # vertical-fieldset# ELSE # horizontal-fieldset# ENDIF #" >
@@ -98,8 +91,8 @@
 		# ELSE # 
 		<div class="connect-contents">
 		<style type="text/css"> #site-infos{display: none !important;}</style>
-		<a href="" class="js-menu-button" onclick="open_submenu('module-connect');return false;" title="{@dashboard}">
-				<i class="fa fa-bars # IF NUMBER_TOTAL_ALERT # blink alert# ENDIF #"></i><span class="masqued">{L_PRIVATE_PROFIL}</span>
+			<a href="" class="js-menu-button" onclick="open_submenu('module-connect', 'active-connect');return false;" title="{@dashboard}">
+				<i class="fa fa-bars # IF NUMBER_TOTAL_ALERT # blink alert# ENDIF #" aria-hidden="true"></i><span>{L_PRIVATE_PROFIL}</span>
 			</a>
 		# ENDIF #
 			<ul class="connect-elements-container">

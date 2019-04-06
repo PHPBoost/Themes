@@ -599,7 +599,7 @@ td.calendar-week {
 .fa-showmymsg:before        { color: #353535; }
 
 /* --- les couleurs d icones --- */
-.fa-syndication:before { color: #267482; font-size: 2em; }
+.fa-syndication:before { color: #267482; font-size: 1.2em; }
 .fa-success:before     { color: #478948; }
 .fa-forbidden:before   { color: #BA4B49; }
 .fa-error:before       { color: #BA4B49; }

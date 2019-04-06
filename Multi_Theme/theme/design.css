@@ -4,7 +4,7 @@
  * Porté en V5.0.XX : 01/04/2016
  * Porté en V5.1.XX : 30/05/2017
  * Site web :  http://news-manga.com | http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -72,14 +72,14 @@ div#top-header-content{
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 	}
-
+	
 	div#top-header-content {
 		align-self: flex-end;
 		-ms-align-self: flex-end;
 		-webkit-align-self: flex-end;
 	}
 }
-/* --- paramètres slideshow ---
+/* --- paramètres slideshow --- 
 * base : https://codepen.io/SitePoint/pen/YqmjRj/
 --------------------------------------------------*/
 
@@ -110,7 +110,7 @@ a.prev, a.next {
   top: 35%;
   z-index: 999;
   display: block;
-  font-size: 30px;
+  font-size: 30px;  
   padding: 25px 10px;
   width: auto;
   height: auto;
@@ -143,9 +143,9 @@ background: -webkit-linear-gradient(top,  #fcfdff 0%,#e6ebee 50%,#d7dee3 51%,#f2
 background: linear-gradient(to bottom,  #fcfdff 0%,#e6ebee 50%,#d7dee3 51%,#f2f5f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdff', endColorstr='#f2f5f6',GradientType=0 ); /* IE6-9 */
 
-
+	
     border-top: 2px solid #bccad3;
-    border-bottom: 2px solid #bccad3;
+    border-bottom: 2px solid #bccad3;	
     min-height: 35px;
     text-align: center;
 }
@@ -270,23 +270,23 @@ aside#menu-right {
     	width: 180px;
 	}
 
-	aside#menu-left  {
+	aside#menu-left  { 
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 	}
-	aside#menu-right {
+	aside#menu-right { 
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 	}
-
+	
 	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 200px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
-
+	
 	#main.main-with-left.main-with-right {
 		width: calc(100% - 360px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
@@ -425,7 +425,7 @@ nav#breadcrumb ol li:not(.current):after {
 @media (min-width: 768px) {
 	.MNnav {
 		display:inline-block;
-	}
+	}	
 }
 
 .MNnav-list {
@@ -445,7 +445,7 @@ nav#breadcrumb ol li:not(.current):after {
 	padding:15px 20px;
 
 }
-.MNnav-item > a:hover {
+.MNnav-item > a:hover { 
     background: rgba(0, 0, 0, 0) url(images/silverbar.jpg) repeat-x scroll right -116px;
     color: #2f404d;
     text-decoration: none;
@@ -535,7 +535,7 @@ div#menugo {
     top: 0px;
     right: 26px;
 }
-div#gotop {
+div#gotop {    
     display: block;
     position: fixed;
     top: 110px;
@@ -548,7 +548,7 @@ div#gotop a {
     font-size:30px;
     padding:25px 10px;
     opacity: 0.3;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;    
 }
 div#gobottom {
     display: block;
@@ -664,7 +664,7 @@ footer#cookiebar-change-choice {
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC
+		 CSS applique aux écrans PC 
 ========================================*/
 
 @media ( min-width: 769px ) {
@@ -710,6 +710,7 @@ footer#cookiebar-change-choice {
 		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 		height: 70%;
 		margin: auto;
+		min-height: auto;
 	}
 
 	div#visit-counter,
@@ -717,7 +718,7 @@ footer#cookiebar-change-choice {
 	a.prev, a.next,
 	div#top-header-content,
 	div#slider{display: none;}
-
+	
 	div#header-gsm {background-color:#222222; height:50px; text-align:center;}
 	div#sub-header {background:#222222 none repeat scroll 0 0;border: none;}
 	a#site-name-gsm {
@@ -734,10 +735,10 @@ footer#cookiebar-change-choice {
 		max-width: 1000px;
 		-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.75);	
 	}
 	div#sous-global {
-		background-color: #faf6ee;
+		background-color: # faf6ee;
 		margin: auto;
 		padding: 0 10px;
 	}
@@ -759,7 +760,7 @@ footer#cookiebar-change-choice {
 		clear: both;
 		margin: auto;
 		width: 1000px;
-   height: auto;
+   height: auto;		
 	}
 	footer#footer .footer-infos {
 		min-height: 40px;
@@ -767,7 +768,7 @@ footer#cookiebar-change-choice {
 		padding-top: 10px;
 	}
 	footer#footer {width:100%}
-
+	
 	.footer-infos span {
     display: block;
     padding: 0 0 5px;
@@ -792,7 +793,7 @@ footer#cookiebar-change-choice {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-
+	
 /* EDN MNNAV Original */
 	#prim-nav{
 		background:none;
@@ -805,7 +806,7 @@ footer#cookiebar-change-choice {
 
 	section#navbook {
 		background: #3d3d3b none repeat scroll 0 0;
-		border-right:none;
+		border-right:none;		
 		/*height: auto;*/
 		margin: auto auto auto -1px;
 		padding: 0;
@@ -836,7 +837,7 @@ footer#cookiebar-change-choice {
 	.MNnav-item {
 		width:100%;
 		float:none;
-		list-style: none outside none;
+		list-style: none outside none;		
 	}
 	.MNnav-item > a {
 		padding:15px;
@@ -883,3 +884,4 @@ footer#cookiebar-change-choice {
 @media (max-width:768px) {
 	div#menugo {display: none;}
 }
+

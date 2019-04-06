@@ -322,3 +322,18 @@ div.connect-register i {
 	}
 
 }
+
+/* ====================
+/*    -- Autres ---
+=====================*/
+
+@media (min-width: 768px) {
+	.connect-containers {
+		text-align: right;
+		padding:4px 10px 0 0;
+	}
+}
+
+#connected-menu ul.connect-content li {
+    line-height: 1.6;
+}

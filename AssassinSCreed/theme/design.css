@@ -801,3 +801,19 @@ footer#cookiebar-change-choice {
 @media (max-width:768px) {
 	div#menugo {display: none;}
 }
+
+/* ====================
+/*    -- Autres ---
+=====================*/
+
+
+.horizontal .connect-element a {
+    padding: 7px 0 7px 0;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.connect-containers { margin: 5px 0 0 0;}
+	.active-connect.not-connected.horizontal .connect-containers,
+	.connect-elements-container { background-color:#efefef; border-bottom:1px solid #222222; margin-top: 10px; }
+}

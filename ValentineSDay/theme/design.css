@@ -3,11 +3,11 @@
  * Par      : EDN | Swan
  * Date     : 08/05/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur
+ * Commentaire ou autre de l'auteur 
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Porté par : EDN | Swan
- * Date V5.0 : 08/05/2016
+ * Date V5.2 : 08/05/2016
  * Date V5.1 : 30/05/2017
 /*--------------------------------------------------------
  * Théme non compatible avec deux menus (droite et gauche)
@@ -75,7 +75,7 @@ div#top-header-content {
 		-ms-flex-direction: column;
 		-webkit-flex-direction: column;
 	}
-
+	
 	div#top-header-content {
 		align-self: flex-end;
 		-ms-align-self: flex-end;
@@ -85,7 +85,16 @@ div#top-header-content {
 
 /* --- Partie inferieur du header --- */
 div#sub-header {
+	
+	background-color: #f393c1;
+	border: 2px solid #ffffff;
 	min-height: 35px;
+	font-family: "Euphoria Script",cursive;
+	font-size: 1.7em;
+	margin: 1.5em auto 0 auto;
+	max-width: 1080px;
+	border-radius: 5px;
+
 }
 
 div#sub-header-content{
@@ -198,23 +207,23 @@ aside#menu-right {
     	width: 300px;
 	}
 
-	aside#menu-left  {
+	aside#menu-left  { 
 		order : 1;
 		-ms-flex-order: 1;
 		-webkit-flex-order: 1;
 	}
-	aside#menu-right {
+	aside#menu-right { 
 		order : 3;
 		-ms-flex-order: 3;
 		-webkit-flex-order: 3;
 	}
-
+	
 	#main.main-with-left,
 	#main.main-with-right {
 		width: calc(100% - 300px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
 	}
-
+	
 	#main.main-with-left.main-with-right {
 		width: calc(100% - 400px);
 		-ms-flex: 1 0 auto; /*Tricks IE*/
@@ -268,7 +277,7 @@ footer#footer {
 
     height: 86px;
     padding-top: 26px;
-
+	
 }
 
 footer#footer .footer-content {
@@ -329,76 +338,6 @@ nav#breadcrumb ol li:not(.current):after {
 	color: #616161;
 }
 
-/*###############################
-		Menu Bar nav haut
-	CSS3 Slide Down / Up Menu
-#################################*/
-
-.banner {
-    font-family: Georgia,serif;
-    font-size: 16px;
-    background: none repeat scroll 0 0 #ffcde6;
-    border-bottom: 2px solid pink;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: -40px;
-    transition: all 1s ease 0s;
-	z-index:10
-}
-.banner:target {
-    top: 0;
-    transition: all 1s ease 0s;
-}
-.banner:target a#open-menu {
-    display: none;
-}
-.banner:target a#close-menu {
-    display: block;
-}
-.banner a#close-menu {
-    display: none;
-}
-#banner nav li {
-    display: inline;
-    list-style-type: none;
-    position: relative;
-}
-.banner  a {
-    color: #df5799;
-    text-decoration: none;
-    font-family: "Euphoria Script",cursive;
-    font-size: 23px;
-}
-.ribbon {
-    position: absolute;
-    top: 0;
-}
-.ribbon h4 {
-    background: url(images/bouton-menu-haut.png) no-repeat scroll 0 0 transparent;
-    height: 50px;
-    margin-top: 37px;
-    padding-top: 0;
-    position: relative;
-    text-align: center;
-    width: 100px;
-}
-.ribbon h4 a {
-    color: #eeeeee;
-}
-.ribbon h4 a#open-menu:before {
-    content: " ";
-    font-size: 1.5em;
-    font-weight: bold;
-}
-.ribbon h4 a#close-menu:before {
-    content: " ";
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.ouvert, .fermer{}
-
 /* ##############################
 		 Social buttons
 #################################*/
@@ -448,7 +387,7 @@ text-align:center;
 	width:50px;
 }
 
-.fa-facebook-f:before, .fa-twitter:before, .fa-youtube:before {font-size:35px;}
+footer .fa-facebook-f:before, footer .fa-twitter:before, footer .fa-youtube:before {font-size:35px;}
 
 .fade:hover {
   opacity: 0.5;
@@ -465,7 +404,7 @@ text-align:center;
 /*======================================
 		Todd Motto Labs -
 		Flaunt JS Navigation
-		Adapté pour phpboost 5.0
+		Adapté pour phpboost 5.2
 		URL: www.toddmotto.com
 ========================================*/
 
@@ -720,7 +659,7 @@ footer#cookiebar-change-choice {
 
 /*======================================
 			Alls Media Queries
-		 CSS applique aux écrans PC
+		 CSS applique aux écrans PC 
 ========================================*/
 
 @media ( min-width: 769px ) {
@@ -737,7 +676,7 @@ footer#cookiebar-change-choice {
 	a#site-name {
 		font-size: 4em;
 	}
-
+	
 	/* --- Menu gauche --- */
 	aside#menu-left {
 		float: left;
@@ -780,12 +719,12 @@ footer#cookiebar-change-choice {
 
 	body {background:none;font-size: 1.4em;}
 	header#header {height: 5px;background:none; margin: auto; width:auto;}
-
-	div#top-header, div#top-header-content,
+	
+	div#sub-header, div#top-header, div#top-header-content,
 	#menus, nav#breadcrumb {display: none;}
-
+	
 	div#header-gsm {background-color:#f393c1; height:50px; padding-top: 10px; text-align:center;}
-	div#sub-header {background-color:#222222; border: medium none; height: 61px; padding:0px;}
+	
 	a#site-name {
     color: #f9fcff;
     font-size: 2em;
@@ -798,14 +737,14 @@ footer#cookiebar-change-choice {
 		max-width: 1250px;
 	}
 	div#sous-global {
-		background-color: #faf6ee;
+		background-color: # faf6ee;
 		margin: auto;
 		padding: 0 10px;
 	}
 	#nav, #slideshow , .fadein {display: none;}
-
+	
 	footer#footer {
-		background: #3b3b3b;
+		background: #3b3b3b; 
 		border-top: 1px solid #df5799;
 		clear: both;
 		margin: auto;
@@ -820,7 +759,7 @@ footer#cookiebar-change-choice {
 		padding-top: 10px;
 	}
 	footer#footer {width:100%}
-
+	
 	.footer-infos span {
     display: block;
     padding: 0 0 5px;
@@ -859,7 +798,7 @@ footer#cookiebar-change-choice {
 	.nav-item {
 		width:100%;
 		float:none;
-		list-style: none outside none;
+		list-style: none outside none;		
 	}
 	.nav-item > a {
 		padding:15px;
