@@ -618,4 +618,7 @@ footer#cookiebar-change-choice {
 @media (max-width: 768px) {
 
 	.active-connect.not-connected.horizontal .connect-containers,
-	.connect-elements-container { background-color:#c2dec3;  margin-top: 10px; }
+	.connect-elements-container {
+     background-color:#c2dec3;
+     margin-top: 10px; }
+}

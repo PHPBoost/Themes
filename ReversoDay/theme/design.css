@@ -531,8 +531,9 @@ hr {
 /* ------- Connect ----------
 
 #module-connect.not-connected {
-    background-color: rgba(0,0,0, 0.8);*/
-}
+    background-color: rgba(0,0,0, 0.8);
+}*/
+
 /* ------- Bbcode ----------*/
 
 .bbcode { border: 1px solid #CCCCCC !important; }

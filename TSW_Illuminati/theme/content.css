@@ -1105,7 +1105,7 @@ textarea:focus,
 select:focus {
 	color: #ffffff;
 	border: 1px solid #74C5F2;
-	background: rgba(0,0,0, 0.9); none repeat scroll 0 0;
+	background-color: rgba(0,0,0, 0.9);
 	outline: 0;
 	box-shadow: inset 0 1px 1px rgba(116, 197, 242, 0.4), 0 0 10px rgba(27, 193, 196, 0.8);
 }

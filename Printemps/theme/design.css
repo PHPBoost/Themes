@@ -508,7 +508,7 @@ footer#cookiebar-change-choice {
     background-image: linear-gradient(to bottom, #e4f5fc 0%,#D2E5EE 50%,#ACDFF6 51%,#A2D3E9 100%);
 }
 
-.effet-shadow: {
+.effet-shadow {
 -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     box-shadow: 0 0 20px rgba(0,0,0,0.8);

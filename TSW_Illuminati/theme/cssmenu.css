@@ -357,7 +357,7 @@ aside .cssmenu-right.cssmenu-static li:hover > ul 	{ right: 0;		top: 0;		}
 	display: inline-block;
 	float: none;
 }
-@media only (min-width: 769px) {
+@media (min-width: 769px) {
 	.cssmenu-group > ul > li {
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%,rgba(56, 56, 56, 0.18) 100%);
 		background-color: #FFFFFF;
