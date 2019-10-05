@@ -35,11 +35,13 @@
 					<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 				</form>
 				<div class="connect-register">
-					# IF C_USER_REGISTER #
-						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket" aria-hidden="true"></i> {@register}</a>
-						<br />
+					# IF C_DISPLAY_REGISTER_CONTAINER #
+						# IF C_USER_REGISTER #
+							<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket" aria-hidden="true"></i> {@register}</a>
+							<br />
+						# ENDIF #
 						# START external_auth #
-							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
 						# END external_auth #
 					# ENDIF #
 					<br />

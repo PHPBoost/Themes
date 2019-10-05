@@ -46,7 +46,7 @@
 							<span class="connect-mess">Bienvenue</span>
 						</div>
 						<br>
-						<div id="connect-logo"></div>	
+						<div id="connect-logo"></div>
 					</div>
 				</div>
 					<br>
@@ -68,23 +68,24 @@
 						<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 					</form>
 				</div>
-				
-				# IF C_USER_REGISTER #
-				<div class="connect-register-container">
-					# IF C_VERTICAL #
-					<a class="connect-register small" href="${relative_url(UserUrlBuilder::registration())}">
-						<i class="fa fa-ticket"></i><span>{@register}</span>
-					</a>
-					# ELSE #
-					<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
-						<button type="submit" name="register" value="true" class="submit">{@register}</button>
-						<input type="hidden" name="token" value="{TOKEN}">
-					</form>
-					# ENDIF #
-				# START external_auth #
-					<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
-				# END external_auth #
-				</div>
+				# IF C_DISPLAY_REGISTER_CONTAINER #
+					<div class="connect-register-container">
+						# IF C_USER_REGISTER #
+							# IF C_VERTICAL #
+							<a class="connect-register small" href="${relative_url(UserUrlBuilder::registration())}">
+								<i class="fa fa-ticket"></i><span>{@register}</span>
+							</a>
+							# ELSE #
+							<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
+								<button type="submit" name="register" value="true" class="submit">{@register}</button>
+								<input type="hidden" name="token" value="{TOKEN}">
+							</form>
+							# ENDIF #
+						# ENDIF #
+						# START external_auth #
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						# END external_auth #
+					</div>
 				# ENDIF #
 				<div class="forget-pass-container">
 					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">
@@ -95,7 +96,7 @@
 		</div>
 		# IF C_VERTICAL #
 		<div class="module-mini-bottom">
-		</div> 
+		</div>
 		# ENDIF #
 
 	# ELSE # <!-- User Connected -->
@@ -105,7 +106,7 @@
 			<div class="sub-title">Bienvenue</div>
 		</div>
 		<div class="module-mini-contents connect-contents">
-		# ELSE # 
+		# ELSE #
 		<div class="connect-contents">
 			<a href="" class="js-menu-button" onclick="open_submenu('module-connect');return false;" title="{@dashboard}">
 				<i class="fa fa-bars # IF NUMBER_TOTAL_ALERT # blink alert# ENDIF #"></i><span>{L_PRIVATE_PROFIL}</span>
@@ -121,7 +122,7 @@
 						<img src="{U_AVATAR_IMG}" alt="avatar" title="Avatar" />
 					</div>
 				</div>
-			</div>	
+			</div>
 			<br>
 			<ul class="connect-elements-container edn">
 				<li class="connect-element connect-profil">

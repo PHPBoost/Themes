@@ -50,18 +50,18 @@
 						<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 					</form>
 				</div>
-
-				# IF C_USER_REGISTER #
-				<div class="connect-register-container">
-
-					<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
-						<button type="submit" name="register" value="true" class="submit">{@register}</button>
-						<input type="hidden" name="token" value="{TOKEN}">
-					</form>
-					# START external_auth #
-						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
-					# END external_auth #
-				</div>
+				# IF C_DISPLAY_REGISTER_CONTAINER #
+					<div class="connect-register-container">
+						# IF C_USER_REGISTER #
+							<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
+								<button type="submit" name="register" value="true" class="submit">{@register}</button>
+								<input type="hidden" name="token" value="{TOKEN}">
+							</form>
+						# ENDIF #
+						# START external_auth #
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						# END external_auth #
+					</div>
 				# ENDIF #
 				<div class="forget-pass-container">
 					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">

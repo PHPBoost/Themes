@@ -34,23 +34,27 @@
 				<div class="dropdownWrapper">
 					<div class="dropdownLabel"> <a href="{PATH_TO_ROOT}/user/login" class="login-connect">Se connecter</a></div>
 				</div>
-				<div class="dropdownWrapper">
-					<div class="dropdownLabel"> <a href="{PATH_TO_ROOT}/user/registration/" class="login-connect">S'inscrire</a></div>
-				</div>
+				# IF C_DISPLAY_REGISTER_CONTAINER #
+					# IF C_USER_REGISTER #
+						<div class="dropdownWrapper">
+							<div class="dropdownLabel"> <a href="{PATH_TO_ROOT}/user/registration/" class="login-connect">S'inscrire</a></div>
+						</div>
+					# ENDIF #
+				# ENDIF #
 				<div class="dropdownWrapper">
 					<div class="dropdownLabel"> <a href="${relative_url(UserUrlBuilder::forget_password())}" class="login-connect">Mot de passe oublié</a></div>
 				</div>
 				<!-- My Memu : fin -->
-				
-				# IF C_USER_REGISTER #
+
+				# IF C_DISPLAY_REGISTER_CONTAINER #
 					# START external_auth #
-						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
 					# END external_auth #
 				# ENDIF #
 			</div>
 		</div>
 		# IF C_VERTICAL #
-		
+
 		<div class="module-mini-bottom">
 		</div>
 		# ENDIF #
@@ -84,8 +88,8 @@
 									</div>
 								<ul class="connect-content">
 									<li>
-										
-									</li>							
+
+									</li>
 									<li>
 										<i class="fa fa-user"></i>
 										<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PRIVATE_PROFIL}</a>
@@ -125,10 +129,10 @@
 				<div class="module-mini-bottom">
 				</div>
 				# ENDIF #
-				
+
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	# ENDIF #
 </div>

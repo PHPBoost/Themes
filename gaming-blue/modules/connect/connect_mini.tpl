@@ -51,23 +51,25 @@
 						<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 					</form>
 				</div>
-				
-				# IF C_USER_REGISTER #
-				<div class="connect-register-container">
-					# IF C_VERTICAL #
-					<a class="connect-register small" href="${relative_url(UserUrlBuilder::registration())}">
-						<i class="fa fa-ticket"></i><span>{@register}</span>
-					</a>
-					# ELSE #
-					<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
-						<button type="submit" name="register" value="true" class="submit">{@register}</button>
-						<input type="hidden" name="token" value="{TOKEN}">
-					</form>
-					# ENDIF #
-					# START external_auth #
-						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
-					# END external_auth #
-				</div>
+
+				# IF C_DISPLAY_REGISTER_CONTAINER #
+					<div class="connect-register-container">
+						# IF C_USER_REGISTER #
+							# IF C_VERTICAL #
+							<a class="connect-register small" href="${relative_url(UserUrlBuilder::registration())}">
+								<i class="fa fa-ticket"></i><span>{@register}</span>
+							</a>
+							# ELSE #
+							<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
+								<button type="submit" name="register" value="true" class="submit">{@register}</button>
+								<input type="hidden" name="token" value="{TOKEN}">
+							</form>
+							# ENDIF #
+						# ENDIF #
+						# START external_auth #
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						# END external_auth #
+					</div>
 				# ENDIF #
 				<div class="forget-pass-container">
 					<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">
@@ -78,17 +80,17 @@
 		</div>
 		# IF C_VERTICAL #
 		<div class="module-mini-bottom">
-		</div> 
+		</div>
 		# ENDIF #
 
 	# ELSE # <!-- User Connected -->
 
-		# IF C_VERTICAL #	
+		# IF C_VERTICAL #
 		<div class="module-mini-top">
 			<div class="sub-title">{L_PRIVATE_PROFIL}</div>
 		</div>
 		<div class="module-mini-contents connect-contents">
-		# ELSE # 
+		# ELSE #
 		<div class="connect-contents">
 		<style type="text/css"> #site-infos{display: none !important;}</style>
 			<a href="" class="js-menu-button" onclick="open_submenu('module-connect', 'active-connect');return false;" title="{@dashboard}">

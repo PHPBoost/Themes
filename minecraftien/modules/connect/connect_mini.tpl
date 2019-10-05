@@ -43,11 +43,13 @@
 					<button type="submit" name="authenticate" value="internal" class="submit">{@connection}</button>
 				</form>
 				<div class="connect-register">
-					# IF C_USER_REGISTER #
-						<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
-						<br />
+					# IF C_DISPLAY_REGISTER_CONTAINER #
+						# IF C_USER_REGISTER #
+							<a class="small" href="${relative_url(UserUrlBuilder::registration())}"><i class="fa fa-ticket"></i> {@register}</a>
+							<br />
+						# ENDIF #
 						# START external_auth #
-							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+							<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
 						# END external_auth #
 					# ENDIF #
 					<br />
@@ -66,8 +68,8 @@
 				<ul class="connect-content">
 				<li class="has-sub"><span class="submenu-button"></span>
 				<a href="#" title="Animée" class="cssmenu-title">{@dashboard}</a>
-				 
-				<ul class="level-1"> 
+
+				<ul class="level-1">
 					<li>
 						<i class="fa fa-user"></i>
 						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="small"> {L_PRIVATE_PROFIL}</a>
@@ -109,11 +111,12 @@
 	<nav id="cssmenu-015" class="cssmenu">
 				<ul class="level-0">
 				<li><a href="${relative_url(UserUrlBuilder::connect())}" title="" class="cssmenu-title">Se connecter</a></li>
-				# IF C_USER_REGISTER #
-				<li><a href="${relative_url(UserUrlBuilder::registration())}" title="" class="cssmenu-title">{@register}</a></li>
-					
+				# IF C_DISPLAY_REGISTER_CONTAINER #
+					# IF C_USER_REGISTER #
+					<li><a href="${relative_url(UserUrlBuilder::registration())}" title="" class="cssmenu-title">{@register}</a></li>
+					# ENDIF #
 					# START external_auth #
-						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+						<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
 					# END external_auth #
 				# ENDIF #
 			</ul>
@@ -123,7 +126,7 @@
 		<ul class="level-0">
 			<li class="has-sub"><span class="submenu-button"></span>
 				<a href="#" title="" class="cssmenu-title"><i class="fa fa-bars # IF NUMBER_TOTAL_ALERT # blink alert# ENDIF #"></i> <span>{@dashboard}</span></a>
-				<ul class="level-1"> 
+				<ul class="level-1">
 					<li>
 						<a href="${relative_url(UserUrlBuilder::home_profile())}" class="cssmenu-title"><i class="fa fa-user"></i> {L_PRIVATE_PROFIL}</a>
 					</li>

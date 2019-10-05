@@ -41,13 +41,15 @@
 				<input type="hidden" name="token" value="{TOKEN}">
 				<button type="submit" name="authenticate" value="internal" class="submit small">{@connection}</button>
 			</form>
-			# IF C_USER_REGISTER #
-				<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
-					<button type="submit" name="register" value="true" class="submit small">{@register}</button>
-					<input type="hidden" name="token" value="{TOKEN}">
-				</form>
+			# IF C_DISPLAY_REGISTER_CONTAINER #
+				# IF C_USER_REGISTER #
+					<form action="${relative_url(UserUrlBuilder::registration())}" method="post">
+						<button type="submit" name="register" value="true" class="submit small">{@register}</button>
+						<input type="hidden" name="token" value="{TOKEN}">
+					</form>
+				# ENDIF #
 				# START external_auth #
-					<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+					<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
 				# END external_auth #
 			# ENDIF #
 			<a class="forgot-pass small" href="${relative_url(UserUrlBuilder::forget_password())}">${LangLoader::get_message('forget-password', 'user-common')}</a>
