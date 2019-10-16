@@ -3,7 +3,9 @@
 	# INCLUDE LOGIN_FORM #
 	<div class="text-center">
 		# IF C_REGISTRATION_ENABLED #
-		<a href="{U_REGISTER}"><i class="fa fa-ticket"></i> {@registration}</a><br />
+			<a href="{U_REGISTER}"><i class="fa fa-ticket"></i> {@registration}</a><br />
+		# ENDIF #
+		# IF C_DISPLAY_EXTERNAL_AUTHENTICATION #
 			# START external_auth #
 				<a class="{external_auth.CSS_CLASS}" href="{external_auth.U_CONNECT}" title="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
 			# END external_auth #
