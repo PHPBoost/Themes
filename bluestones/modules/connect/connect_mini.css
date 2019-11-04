@@ -128,10 +128,10 @@
 #connect-menu.horizontal-fieldset button.submit-connect,
 #connect-menu.horizontal-fieldset button.submit-register,
 #connect-menu.horizontal-fieldset a.alt {
-	width: 160px;
 	border: none;
 	margin: 5px auto;
 	color: #F2F2F2;
+	padding: 0.4em 0.618em 0.5em;
 }
 
 #connect-menu.horizontal-fieldset button.submit-connect {
