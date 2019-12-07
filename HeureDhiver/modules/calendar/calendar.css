@@ -1,12 +1,12 @@
 /*---------------------------------------------------------
- * Theme    :  HeureDhiver 
+ * Theme    :  HeureDhiver
  * Par      : EDN | Swan
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ * Commentaire ou autre de l'auteur
+ # Merci de ne pas toucher au entï¿½te des fichiers CSS.
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * Thï¿½me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
@@ -89,7 +89,7 @@ table tbody tr td.calendar-weekend { background-color: #FFE3B6; }
 table tbody tr th.column-title {
 	width: 28%;
 }
-
+ 
 /* Affichage du mini calendrier dans une colonne */
 #module-mini-calendar .calendar-top-container {
 	padding: 2px;

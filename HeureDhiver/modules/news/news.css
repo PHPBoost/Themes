@@ -4,9 +4,9 @@
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entï¿½te des fichiers CSS.
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * ThÃ¨me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
@@ -31,5 +31,5 @@
 .navigation-link-next 		{ float: right; }
 
 .navigation-link-previous i { margin-right: 5px; }
-.navigation-link-next i 	{ margin-left: 5px;  }
+.navigation-link-next i 	{ margin-left: 5px;  } 
 

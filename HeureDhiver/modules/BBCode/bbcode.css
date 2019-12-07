@@ -4,14 +4,14 @@
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entï¿½te des fichiers CSS.
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * Thï¿½me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
 /** BBcode **/
-.bbcode {
+.bbcode { 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100 */
 background: #89D3FF; /* Old browsers */
 background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */

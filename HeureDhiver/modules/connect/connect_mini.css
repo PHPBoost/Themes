@@ -4,13 +4,13 @@
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
  * Commentaire ou autre de l'auteur 
- # Merci de ne pas toucher au entête des fichiers CSS.
+ # Merci de ne pas toucher au entï¿½te des fichiers CSS.
  *---------------------------------------------------------
- * Théme non compatible avec deux menus (droite et gauche)
+ * Thï¿½me non compatible avec deux menus (droite et gauche)
 					le choix reste possible sur un menu
  *----------------------------------------------------------*/
 
-#connect-menu div.horizontal-fieldset {
+#connect-menu div.horizontal-fieldset { 
 	padding: 2px 8px 2px 2px;
 }
 
