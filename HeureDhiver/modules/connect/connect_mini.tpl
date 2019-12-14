@@ -73,7 +73,7 @@
 					</li>
 					<li>
 						<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>
-						<a href="{U_USER_PM}" class="small"> <span>{L_PM_PANEL}</span># IF C_HAS_PM #<span class="blink">({NUMBER_PM})</span># ENDIF #</a>
+						<a href="{U_USER_PM}" class="small"> {L_PM_PANEL}# IF C_HAS_PM #<span class="blink">({NUMBER_PM})</span># ENDIF #</a>
 					</li>
 					# IF C_ADMIN_AUTH #
 					<li>
@@ -142,7 +142,7 @@
 				</li>
 				<li>
 					<i class="fa fa-envelope# IF C_HAS_PM # blink# ENDIF #"></i>
-					<a href="{U_USER_PM}" class="small"> <span>{L_PM_PANEL}</span># IF C_HAS_PM #<span class="blink">({NUMBER_PM})</span># ENDIF #</a>
+					<a href="{U_USER_PM}" class="small"> {L_PM_PANEL}# IF C_HAS_PM #<span class="blink">({NUMBER_PM})</span># ENDIF #</a>
 				</li>
 				# IF C_ADMIN_AUTH #
 				<li>

@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Theme    :  HeureDhiver 
+ * Theme    :  HeureDhiver
  * Par      : EDN | Swan
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au entête des fichiers CSS.
  *---------------------------------------------------------
  * Porté par : EDN | Swan
@@ -14,7 +14,7 @@
  *----------------------------------------------------------*/
 /* --------------------------------------
 		content.css
-Contient les elements : 
+Contient les elements :
  - conteneurs generaux, elements de module,
  - pagination des pages,
  - exploreur de categorie,
@@ -77,7 +77,7 @@ article header h2 {
 section header h3,
 article header h3 {
 	margin-left: 15px;
-color: #267482;
+	color: #267482;
 	border-bottom: 2px solid #267482;
 }
 
@@ -85,7 +85,7 @@ color: #267482;
 	section header,
 	article header {
 		margin: 0 0 1em 0;
-	}	
+	}
 }
 
 /* --- Titre d'un bas de page --- */
@@ -102,6 +102,11 @@ article footer {
 }
 
 /* --- Icones actions (edition, suppression, etc) --- */
+.cat-actions {
+	padding: 10px;
+	text-align: right;
+}
+
 .actions {
 	float: right;
 }
@@ -391,21 +396,21 @@ header h2 .actions {
 		flex-direction: row;
 		-ms-flex-direction: row;
 		-webkit-flex-direction: row;
-		margin-left: -5px; /* @{gutter} */ 
+		margin-left: -5px; /* @{gutter} */
 	}
 
-	.block { 
-		margin-left: 5px; /* @{gutter} */ 
+	.block {
+		margin-left: 5px; /* @{gutter} */
 		width: 100%;
-	} 
-	
-	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */ 
+	}
+
+	.columns-2 .block { width: calc(100% / 2 - 5px); } /* calc(100% / @{number} - @{gutter}); */
 	.columns-3 .block { width: calc(100% / 3 - 5px); }
 	.columns-4 .block { width: calc(100% / 4 - 5px); }
 	.columns-5 .block { width: calc(100% / 5 - 5px); }
 	.columns-6 .block { width: calc(100% / 6 - 5px); }
 	.columns-7 .block { width: calc(100% / 7 - 5px); }
-	
+
 	.block-xlarge { width: 100%!important; } /* Extension du bloc sur une ligne complète */
 }
 
@@ -414,7 +419,7 @@ header h2 .actions {
 	.block {
 		margin-bottom: 5px;
 		width: 100%;
-	}	
+	}
 }
 
 
@@ -708,7 +713,7 @@ ul.pagination-block-bis li a.next-page:hover {
 }
 
 .poll-question-mini-container label { padding:10px 0 0 0;}
- 
+
 /* -- Gestion des categories -- */
 /* ---------------------------- */
 .cat-description {
@@ -787,7 +792,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	background-color: #FFFFFF;
 	border: 1px solid #D6DEE7;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-	transition: box-shadow 0.2s;	
+	transition: box-shadow 0.2s;
 }
 
 .sortable-block .sortable-element:hover {
@@ -795,7 +800,7 @@ ul.pagination-block-bis li a.next-page:hover {
 	box-shadow: 0 0 5px #EAEAEA;
 }
 
-@media (min-width:769px){ 
+@media (min-width:769px){
 	.sortable-block .sortable-element .sortable-selector {
 		flex: 0 0 1.309em;
 		-ms-flex: 0 0 1.309em;
@@ -805,7 +810,7 @@ ul.pagination-block-bis li a.next-page:hover {
 		transition: opacity 1s;
 		cursor: move;
 	}
-	
+
 	.sortable-selector:after {
 		content: "\f0b2";
 		color: #FFFFFF;
@@ -944,7 +949,7 @@ body.dragging * {
 	clear: both;
 }
 
-#comments-list > header { 
+#comments-list > header {
 	display: none;
 }
 
@@ -980,7 +985,7 @@ body.dragging * {
 }
 
 .message-user-infos {
-	float: left;	
+	float: left;
 	width: 120px;
 	text-align: center;
 }
@@ -1019,7 +1024,7 @@ body.dragging * {
 	width: 0;
 	border-width: 14px 24px 14px 0;
 	border-color: transparent #D1EDFF;
-	border-style: solid;	
+	border-style: solid;
 }
 
 .message-avatar {
@@ -1074,7 +1079,7 @@ article .message-user-infos .message-user-group {
 	.message-pseudo {
 		padding: 20px 10px 0 15px;
 	}
-	
+
 	.message-user-infos img {
 		position: absolute;
 		top: 20px;
@@ -1128,7 +1133,7 @@ article .message-user-infos .message-user-group {
 		color: #222222;
 		text-decoration: none;
 	}
-	
+
 	.message-user-infos {
 		width: auto;
 	}
@@ -1172,7 +1177,7 @@ article .message-user-infos .message-user-group {
 		border-bottom-color: #D6DEE7;
 		border-style: solid;
 	}
-	
+
 	.message-message::after {
 		top: auto;
 		bottom: 100%;
@@ -1215,7 +1220,7 @@ i.message-announce-new {
 }
 
 
-/* -- Le maintenance -- */ 
+/* -- Le maintenance -- */
 /* -------------------- */
 #maintain {
 	margin: 10px 0;

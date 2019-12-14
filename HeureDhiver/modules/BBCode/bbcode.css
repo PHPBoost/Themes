@@ -1,9 +1,9 @@
 /*---------------------------------------------------------
- * Theme    :  HeureDhiver 
+ * Theme    :  HeureDhiver
  * Par      : EDN | Swan
  * Date     : 30/07/2016
  * Site web :  http://easy-design.net/
- * Commentaire ou autre de l'auteur 
+ * Commentaire ou autre de l'auteur
  # Merci de ne pas toucher au ent�te des fichiers CSS.
  *---------------------------------------------------------
  * Th�me non compatible avec deux menus (droite et gauche)
@@ -11,7 +11,7 @@
  *----------------------------------------------------------*/
 
 /** BBcode **/
-.bbcode { 
+.bbcode {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100 */
 background: #89D3FF; /* Old browsers */
 background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
@@ -123,17 +123,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', end
 
 .bbcode-block-container {
 	position: absolute;
-	bottom: 0;
+	top: calc(100% + 10px);
 	margin: 0;
 	padding: 0;
 	z-index: 10;
+	background-color: #c7eafe;
+	border: 1px solid #63cfe2;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .bbcode-block-container:before {
 	position: absolute;
 	top: -8px;
 	left: 8px;
-	border-bottom: 9px solid #AAAAAA;
+	border-bottom: 9px solid #63cfe2;
 	border-left: 9px solid transparent;
 	border-right: 9px solid transparent;
 	content: " ";
@@ -143,24 +146,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', end
 	position: absolute;
 	left: 9px;
 	top: -7px;
-	border-bottom: 8px solid rgba(250, 250, 250, 1);
+	border-bottom: 8px solid #c7eafe;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	content: " ";
 }
 
-.block-smileys {
+.bbcode-block-smileys {
 	width: 150px;
 	height: 150px;
 	padding: 2px 0px 2px 3px;
 	overflow-y: scroll;
+	margin: 0;
+
 }
 
-.block-smileys li {
+.bbcode-block-smileys li {
 	display: inline-block;
 }
 
-.block-smileys li a {
+.bbcode-block-smileys li a {
 	display: block;
 }
 
@@ -173,9 +178,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', end
 .bbcode-block-list li,
 .bbcode-block-list li a {
 	display: block;
-	padding: 2px 0 2px 4px;
 	cursor: pointer;
 	text-align: left;
+}
+
+.bbcode-block-list li {
+	padding: 2px 4px;
 }
 
 .bbcode-block-code {
