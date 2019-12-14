@@ -881,7 +881,7 @@
 			</authors>
 			<description>Version 5.0 Around The World theme</description>
 			<whatsnew>
-				<new type="new">Update for PHPBoost v5.0</new>
+				<new type="feature">Update for PHPBoost v5.0</new>
 			</whatsnew>
 		</version>
 		<version num="5.0.0" language="french" localized_language="Francais" name="Around The World" priority="low" security-update="false" pubdate="2017/03/15">
@@ -893,7 +893,7 @@
 			</authors>
 			<description>Version 5.0 du theme Around The World</description>
 			<whatsnew>
-				<new type="new">Mise à jour pour PHPBoost V5.0</new>
+				<new type="feature">Mise à jour pour PHPBoost V5.0</new>
 			</whatsnew>
 		</version>
 	</app>
@@ -1689,6 +1689,19 @@
 		</version>
 	</app>
 	<app id="HeureDhiver" type="template">
+		<version num="5.2.1" language="english" localized_language="English" name="HeureDhiver" priority="low" security-update="false" pubdate="2019/12/14">
+			<compatibility min="5.2" />
+			<download url="https://dl.phpboost.com/5.2/templates/HeureDhiver/HeureDhiver.zip">HeureDhiver template</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.2.1 HeureDhiver template</description>
+			<whatsnew>
+				<new type="bug">UTF-8 encoding files in modules folder</new>
+				<new type="bug">lang variables in connect-mini.tpl</new>
+				<new type="bug">css for bbcode block containers</new>
+			</whatsnew>
+		</version>
 		<version num="5.0.0" language="english" localized_language="English" name="HeureDhiver" priority="low" security-update="false" pubdate="2016/07/31">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/HeureDhiver/HeureDhiver.zip">HeureDhiver template</download>
@@ -1703,6 +1716,19 @@
 		<version num="5.0.0" language="french" localized_language="Francais" name="HeureDhiver" priority="low" security-update="false" pubdate="2016/07/31">
 			<compatibility min="5.0" />
 			<download url="https://dl.phpboost.com/5.0/templates/HeureDhiver/HeureDhiver.zip">Theme HeureDhiver</download>
+			<authors>
+				<author name="EDN" email="contact@easy-design.net" />
+			</authors>
+			<description>Version 5.2.1 du theme HeureDhiver</description>
+			<whatsnew>
+				<new type="bug">Encodage des fichiers du module en UTF-8</new>
+				<new type="bug">Variables de langue dans connect-mini.tpl</new>
+				<new type="bug">CSS du BBCode</new>
+			</whatsnew>
+		</version>
+		<version num="5.2.1" language="french" localized_language="Francais" name="HeureDhiver" priority="low" security-update="false" pubdate="2019/12/14">
+			<compatibility min="5.2" />
+			<download url="https://dl.phpboost.com/5.2/templates/HeureDhiver/HeureDhiver.zip">Theme HeureDhiver</download>
 			<authors>
 				<author name="EDN" email="contact@easy-design.net" />
 			</authors>
