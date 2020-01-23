@@ -51,18 +51,20 @@
 						<div id="menu-mess">
 							# INCLUDE ACTIONS_MENU #
 							<nav id="breadcrumb" itemprop="breadcrumb">
-								<ol>
-									<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-										<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
-											<span itemprop="title">{L_INDEX}</span>
+								<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+									<li itemprop="itemListElement" itemscope itemtype="http://data-vocabulary.org/ListItem">
+										<a href="{START_PAGE}" itemprop="item">
+											<span itemprop="name">${LangLoader::get_message('home', 'main')}</span>
+											<meta itemprop="position" content="1" />
 										</a>
 									</li>
 									# START link_bread_crumb #
-									<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
-										<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
-											<span itemprop="title"><img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/breadcrumb.png" alt="" class="valign_middle" /> {link_bread_crumb.TITLE}</span>
-										</a>
-									</li>
+										<li itemprop="itemListElement" itemscope itemtype="http://data-vocabulary.org/ListItem" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
+											<a href="{link_bread_crumb.URL}" itemprop="item">
+												<span itemprop="name">{link_bread_crumb.TITLE}</span>
+												<meta itemprop="position" content="{link_bread_crumb.POSITION}" />
+											</a>
+										</li>
 									# END link_bread_crumb #
 								</ol>
 							</nav>

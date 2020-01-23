@@ -46,22 +46,24 @@
 		# ENDIF #
 
 		<div id="main" class="# IF C_MENUS_LEFT_CONTENT #main-with-left# ENDIF ## IF C_MENUS_RIGHT_CONTENT # main-with-right# ENDIF #" role="main">
-				<nav id="breadcrumb" itemprop="breadcrumb">
-					<ol>
-						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-							<a href="{START_PAGE}" title="{L_INDEX}" itemprop="url">
-								<span itemprop="title">{L_INDEX}</span>
+			<nav id="breadcrumb" itemprop="breadcrumb">
+				<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="http://data-vocabulary.org/ListItem">
+						<a href="{START_PAGE}" itemprop="item">
+							<span itemprop="name">${LangLoader::get_message('home', 'main')}</span>
+							<meta itemprop="position" content="1" />
+						</a>
+					</li>
+					# START link_bread_crumb #
+						<li itemprop="itemListElement" itemscope itemtype="http://data-vocabulary.org/ListItem" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
+							<a href="{link_bread_crumb.URL}" itemprop="item">
+								<span itemprop="name">{link_bread_crumb.TITLE}</span>
+								<meta itemprop="position" content="{link_bread_crumb.POSITION}" />
 							</a>
 						</li>
-						# START link_bread_crumb #
-						<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
-							<a href="{link_bread_crumb.URL}" title="{link_bread_crumb.TITLE}" itemprop="url">
-								<span itemprop="title">{link_bread_crumb.TITLE}</span>
-							</a>
-						</li>
-						# END link_bread_crumb #
-					</ol>
-				</nav>		
+					# END link_bread_crumb #
+				</ol>
+			</nav>
 			# IF C_MENUS_TOPCENTRAL_CONTENT #
 			<div id="top-content">
 				# START menus_top_central #
