@@ -113,7 +113,7 @@
 	<div class="links-vertical">
 		<a id="scroll-to-top" class="links-vertical-element" title="ScrollToTop"><i class="fa fa-arrow-up"></i></a>
 		<a class="links-vertical-element" title="Accueil" href="{PATH_TO_ROOT}"><i class="fa fa-home"></i></a>
-		<a class="links-vertical-element" title="Accueil" href="{PATH_TO_ROOT}/news"><i class="fa fa-newspaper-o"></i></a>
+		<a class="links-vertical-element" title="Accueil" href="{PATH_TO_ROOT}/news"><i class="far fa-newspaper"></i></a>
 		<a class="links-vertical-element" title="Accueil" href="{PATH_TO_ROOT}/forum"><i class="fa fa-comments-o"></i></a>	
 		<a id="scroll-to-bottom" class="links-vertical-element" title="ScrollToBottom"><i class="fa fa-arrow-down"></i></a>
 	</div>

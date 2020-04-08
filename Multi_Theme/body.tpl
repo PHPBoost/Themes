@@ -55,7 +55,7 @@
 									<a href="?=about"><i class="fa fa-home"></i> Accueil</a>
 								</li>	
 								<li class="MNnav-item">
-									<a href="?=home"><i class="fa fa-newspaper-o"></i> Promenades</a>
+									<a href="?=home"><i class="far fa-newspaper"></i> Promenades</a>
 									<ul  class="MNnav-submenu">
 										<li class="MNnav-submenu-item">
 											<a href="?=submenu-1">Trajets 1</a>
@@ -95,7 +95,7 @@
 									<a href="?=about"><i class="fa fa-medkit"></i> F.A.Q</a>
 								</li>						
 								<li class="MNnav-item">
-									<a href="?=about"><i class="fa fa-newspaper-o"></i> News</a>
+									<a href="?=about"><i class="far fa-newspaper"></i> News</a>
 								</li>
 								<li class="MNnav-item">
 									<a href="?=testimonials"><i class="fa fa-desktop"></i> Photos</a>

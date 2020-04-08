@@ -27,7 +27,7 @@
 
 		<div id="blackbarnav">
 			<a href="./index.php" class="blackbar"><i class="fa fa-home"></i> Accueil</a>
-			<a href="{PATH_TO_ROOT}/news/index.php" class="blackbar"><i class="fa fa-newspaper-o"></i> News</a>
+			<a href="{PATH_TO_ROOT}/news/index.php" class="blackbar"><i class="far fa-newspaper"></i> News</a>
 			<a href="{PATH_TO_ROOT}/articles/index.php" class="blackbar"><i class="fa fa-rss"></i> Blog</a>
 			<a href="{PATH_TO_ROOT}/wiki/wiki.php" class="blackbar"><i class="fa fa-file-text-o"></i> Tutoriels</a>
 			<a href="{PATH_TO_ROOT}/faq/index.php" class="blackbar"><i class="fa fa-bars"></i> Divers</a>
