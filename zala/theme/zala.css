@@ -1,0 +1,47 @@
+.bbcode-bar { border-color: var(--bdr-alt) !important; }
+
+.progressbar-container { color: var(--txt-alt); }
+
+legend {
+    border-color: var(--bdr-alt);
+    border-bottom-width: 2px;
+}
+
+.formatter-content { border-color: var(--bdr-alt); }
+
+thead th, .formatter-table .formatter-table-head {
+    background-color: var(--bgc-alt);
+    color: var(--txt-main);
+    border-color: var(--bdr-alt);
+}
+
+thead th a, .formatter-table .formatter-table-head a { color: var(--txt-alt); }
+
+select[multiple] option:checked, .selected-option a { background-image: linear-gradient(0deg, var(--bgc-main) 0%, var(--bgc-main) 100%); }
+
+.grouped-element { border-color: var(--bdr-alt); }
+
+.button.submit, .submit { color: var(--bgc-main); }
+
+.cell-tile .cell > [class*="cell-"] {
+    background-color: rgba(var(--darken), 0.2);
+    border-color: var(--bdr-alt);
+}
+
+.cell-mini .cell > [class*="cell-"] { background-color: transparent; }
+
+.cell-mini .cell > .cell-header {
+    background-color: rgba(var(--darken), 0.2);
+    border-color: var(--bdr-alt);
+}
+
+.cssmenu:not(.cssmenu-static) ul ul,
+.cssmenu-actionslinks > ul {
+    background-color: var(--bgc-alt);
+    border-color: var(--bdr-alt);
+}
+
+
+.cell-mini select:not(.grouped-element) {
+    width: 100%;
+}
