@@ -1,0 +1,32 @@
+/* cell */
+.cell-mini .cell-header { text-transform: uppercase; }
+
+/* content */
+#visit-counter { top: 1.618em; }
+
+/* cssmenu */
+#sub-header .cssmenu { float: left; }
+#sub-header .cssmenu > ul > li > .cssmenu-title { line-height: 3.309rem; }
+
+/* inputs */
+[type=text],
+[type=email],
+[type=url],
+[type=number],
+[type=color],
+[type=tel],
+[type=search],
+[type=password],
+[type=file],
+textarea,
+select { border-width: 0 0 2px; }
+
+/* message-helper */
+.message-helper { outline-style: double; }
+
+/* sticky-menu */
+.sticky-menu { top: 50px; }
+
+/* modules */
+/* HomeLanding */
+#cssmenu-anchors { margin-bottom: 1.618em; }
