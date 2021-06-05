@@ -14,7 +14,6 @@
 #module-connect .cell-list li:hover { background-color: transparent; }
 
 @media (min-width: 769px) {
-
 	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
 
 	#module-connect .cell-list .connect-container li { padding: 0.309em; }
@@ -35,6 +34,10 @@
 	text-decoration: none;
 	background-image: linear-gradient(rgba(var(--darken), 0.3), rgba(var(--darken), 0.3));
 }
+
+.cell-list .connect-inner ul li.li-stretch { padding: 0.618em; }
+
+.connect-inner ul { flex: 1 1 auto; }
 
 #module-connect .administrator {
 	color: var(--star-tone);

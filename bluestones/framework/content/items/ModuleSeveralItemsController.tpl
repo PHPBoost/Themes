@@ -1,9 +1,9 @@
 <section id="module-{MODULE_ID}">
 	<header class="section-header">
 		<div class="controls align-right">
-			# IF C_SYNDICATION #<a href="{U_SYNDICATION}" aria-label="{@syndication}"><i class="fa fa-rss warning" aria-hidden="true"></i></a># ENDIF #
+			# IF C_SYNDICATION #<a class="offload" href="{U_SYNDICATION}" aria-label="{@common.syndication}"><i class="fa fa-rss warning" aria-hidden="true"></i></a># ENDIF #
 			# IF NOT C_ROOT_CATEGORY #{MODULE_NAME}# ENDIF #
-			# IF C_CATEGORY ## IF IS_ADMIN #<a href="{U_EDIT_CATEGORY}" aria-label="{@edit}"><i class="far fa-edit" aria-hidden="true"></i></a># ENDIF ## ENDIF #
+			# IF C_CATEGORY ## IF IS_ADMIN #<a class="offload" href="{U_EDIT_CATEGORY}" aria-label="{@common.edit}"><i class="far fa-edit" aria-hidden="true"></i></a># ENDIF ## ENDIF #
 		</div>
 		<h1>
 			# IF C_PENDING #
@@ -35,7 +35,7 @@
 						# START sub_categories_list #
 							<div class="cell category-{sub_categories_list.CATEGORY_ID}" itemscope>
 								<div class="cell-header">
-									<h5 class="cell-name" itemprop="about"><a href="{sub_categories_list.U_CATEGORY}">{sub_categories_list.CATEGORY_NAME}</a></h5>
+									<h5 class="cell-name" itemprop="about"><a class="offload" href="{sub_categories_list.U_CATEGORY}">{sub_categories_list.CATEGORY_NAME}</a></h5>
 									<span class="small pinned notice" aria-label="{sub_categories_list.ITEMS_NUMBER} # IF sub_categories_list.C_SEVERAL_ITEMS #{@items}# ELSE #{@item}# ENDIF #">
 										{sub_categories_list.ITEMS_NUMBER}
 									</span>
@@ -44,8 +44,8 @@
 									<div class="cell-body">
 										<div class="cell-thumbnail cell-landscape cell-center">
 											<img itemprop="thumbnailUrl" src="{sub_categories_list.U_CATEGORY_THUMBNAIL}" alt="{sub_categories_list.CATEGORY_NAME}" />
-											<a class="cell-thumbnail-caption" itemprop="about" href="{sub_categories_list.U_CATEGORY}">
-												${LangLoader::get_message('see.category', 'categories-common')}
+											<a class="cell-thumbnail-caption offload" itemprop="about" href="{sub_categories_list.U_CATEGORY}">
+												{@common.see.category}
 											</a>
 										</div>
 									</div>
@@ -75,63 +75,63 @@
 						<table class="table">
 							<thead>
 								<tr>
-									<th>${TextHelper::ucfirst(@form.title)}</th>
+									<th>{@common.title}</th>
 									# IF NOT C_MEMBER_ITEMS #
 										# IF C_AUTHOR_DISPLAYED #
-											<th aria-label="${TextHelper::ucfirst(@author)}">
+											<th aria-label="{@common.author}">
 												<i class="far fa-fw fa-user hidden-small-screens" aria-hidden="true"></i>
-												<span class="hidden-large-screens">${TextHelper::ucfirst(@author)}</span>
+												<span class="hidden-large-screens">{@common.author}</span>
 											</th>
 										# ENDIF #
 									# ENDIF #
 									# IF C_ENABLED_DATE #
-										<th class="col-small" aria-label="{@form.date.creation}">
+										<th class="col-small" aria-label="{@common.creation.date}">
 											<i class="far fa-fw fa-calendar-check hidden-small-screens" aria-hidden="true"></i>
-											<span class="hidden-large-screens">{@form.date.creation}</span>
+											<span class="hidden-large-screens">{@common.creation.date}</span>
 										</th>
 									# ENDIF #
 									# IF C_ENABLED_CATEGORIES #
-										<th class="col-small" arai-label="${LangLoader::get_message('category', 'categories-common')}">
+										<th class="col-small" arai-label="{@category.category}">
 											<i class="far fa-fw fa-folder hidden-small-screens" aria-hidden="true"></i>
-											<span class="hidden-large-screens">${LangLoader::get_message('category', 'categories-common')}</span>
+											<span class="hidden-large-screens">{@common.category}</span>
 										</th>
 									# ENDIF #
 									# IF NOT C_PENDING #
 										# IF C_ENABLED_VIEWS #
-											<th class="col-small" aria-label="${TextHelper::ucfirst(@views)}">
+											<th class="col-small" aria-label="{@common.views.number}">
 												<i class="fa fa-fw fa-eye hidden-small-screens" aria-hidden="true"></i>
-												<span class="hidden-large-screens">${TextHelper::ucfirst(@views)}</span>
+												<span class="hidden-large-screens">{@common.views.number}</span>
 											</th>
 										# ENDIF #
 										# IF C_ENABLED_VISITS #
-											<th class="col-small" aria-label="${TextHelper::ucfirst(@visits)}">
+											<th class="col-small" aria-label="{@common.visits.number}">
 												<i class="fa fa-fw fa-share-square hidden-small-screens" aria-hidden="true"></i>
-												<span class="hidden-large-screens">${TextHelper::ucfirst(@visits)}</span>
+												<span class="hidden-large-screens">{@common.visits.number}</span>
 											</th>
 										# ENDIF #
 										# IF C_ENABLED_DOWNLOADS #
-											<th class="col-small" aria-label="${TextHelper::ucfirst(@downloads)}">
+											<th class="col-small" aria-label="{@common.downloads.number}">
 												<i class="fa fa-fw fa-dowload hidden-small-screens" aria-hidden="true"></i>
-												<span class="hidden-large-screens">${TextHelper::ucfirst(@downloads)}</span>
+												<span class="hidden-large-screens">{@common.downloads.number}</span>
 											</th>
 										# ENDIF #
 										# IF C_ENABLED_NOTATION #
-											<th class="col-small" aria-label="${TextHelper::ucfirst(@note)}">
+											<th class="col-small" aria-label="{@common.note}">
 												<i class="far fa-fw fa-star hidden-small-screens" aria-hidden="true"></i>
-												<span class="hidden-large-screens">${TextHelper::ucfirst(@note)}</span>
+												<span class="hidden-large-screens">{@common.note}</span>
 											</th>
 										# ENDIF #
 										# IF C_ENABLED_COMMENTS #
-											<th class="col-small" aria-label="${LangLoader::get_message('comments', 'comments-common')}">
+											<th class="col-small" aria-label="{@comment.comments}">
 												<i class="far fa-fw fa-comments hidden-small-screens" aria-hidden="true"></i>
-												<span class="hidden-large-screens">${LangLoader::get_message('comments', 'comments-common')}</span>
+												<span class="hidden-large-screens">{@comment.comments}</span>
 											</th>
 										# ENDIF #
 									# ENDIF #
 									# IF C_CONTROLS #
-										<th class="col-small" aria-label="{@moderation}">
+										<th class="col-small" aria-label="{@common.moderation}">
 											<i class="fa fa-fw fa-gavel hidden-small-screens" aria-hidden="true"></i>
-											<span class="hidden-large-screens">{@moderation}</span>
+											<span class="hidden-large-screens">{@common.moderation}</span>
 										</th>
 									# ENDIF #
 								</tr>
@@ -140,7 +140,7 @@
 								# START items #
 									<tr class="category-{items.CATEGORY_ID}# IF items.C_PRIME_ITEM # prime-item# ENDIF #">
 										<td>
-											<a href="{items.U_ITEM}" itemprop="name"# IF items.C_NEW_CONTENT # class="new-content"# ENDIF#>{items.TITLE}</a>
+											<a class="offload" href="{items.U_ITEM}" itemprop="name"# IF items.C_NEW_CONTENT # class="new-content"# ENDIF#>{items.TITLE}</a>
 										</td>
 										# IF NOT C_MEMBER_ITEMS #
 											# IF C_AUTHOR_DISPLAYED #
@@ -148,8 +148,8 @@
 													# IF items.C_AUTHOR_CUSTOM_NAME #
 														<span class="pinned">{items.AUTHOR_CUSTOM_NAME}</span>
 													# ELSE #
-														# IF items.C_AUTHOR_EXIST #
-															<a itemprop="author" href="{items.U_AUTHOR}" class="pinned# IF C_AUTHOR_GROUP_COLOR # {items.AUTHOR_GROUP_COLOR}# ELSE # {items.AUTHOR_LEVEL_CLASS}# ENDIF #">
+														# IF items.C_AUTHOR_EXISTS #
+															<a class="offload" itemprop="author" href="{items.U_AUTHOR}" class="pinned# IF C_AUTHOR_GROUP_COLOR # {items.AUTHOR_GROUP_COLOR}# ELSE # {items.AUTHOR_LEVEL_CLASS}# ENDIF #">
 																{items.AUTHOR_DISPLAY_NAME}
 															</a>
 														# ELSE #
@@ -165,7 +165,7 @@
 													# IF items.C_DEFFERED_PUBLISHING #{items.DEFFERED_PUBLISHING_START_DATE}# ELSE #{items.DATE}# ENDIF #
 												</time>
 												# IF items.C_HAS_UPDATE_DATE #
-													<time class="pinned notice small text-italic" aria-label="{@form.date.update}"datetime="{items.UPDATE_DATE_ISO8601}" itemprop="dateModified">
+													<time class="pinned notice small text-italic" aria-label="{@common.last.update}"datetime="{items.UPDATE_DATE_ISO8601}" itemprop="dateModified">
 														{items.UPDATE_DATE}
 													</time>
 												# ENDIF #
@@ -173,7 +173,7 @@
 										# ENDIF #
 										# IF C_ENABLED_CATEGORIES #
 											<td>
-												<a itemprop="about" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a>
+												<a class="offload" itemprop="about" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a>
 											</td>
 										# ENDIF #
 										# IF NOT C_PENDING #
@@ -189,7 +189,7 @@
 											# ENDIF #
 											# IF C_ENABLED_DOWNLOADS #
 												<td class="col-small">
-													{items.DOWNLOADS_NUMBER} # IF items.C_SEVERAL_DOWNLOADS #{@downloads}# ELSE #{@download}# ENDIF #
+													{items.DOWNLOADS_NUMBER}
 												</td>
 											# ENDIF #
 											# IF C_ENABLED_NOTATION #
@@ -205,8 +205,8 @@
 										# ENDIF #
 										# IF items.C_CONTROLS #
 											<td class="controls">
-												# IF items.C_EDIT #<a href="{items.U_EDIT}" aria-label="{@edit}"><i class="far fa-fw fa-edit" aria-hidden="true"></i></a># ENDIF #
-												# IF items.C_DELETE #<a href="{items.U_DELETE}" data-confirmation="delete-element" aria-label="{@delete}"><i class="far fa-fw fa-trash-alt" aria-hidden="true"></i></a># ENDIF #
+												# IF items.C_EDIT #<a class="offload" href="{items.U_EDIT}" aria-label="{@common.edit}"><i class="far fa-fw fa-edit" aria-hidden="true"></i></a># ENDIF #
+												# IF items.C_DELETE #<a href="{items.U_DELETE}" data-confirmation="delete-element" aria-label="{@common.delete}"><i class="far fa-fw fa-trash-alt" aria-hidden="true"></i></a># ENDIF #
 											</td>
 										# ENDIF #
 									</tr>
@@ -222,7 +222,7 @@
 									# IF C_ENABLED_CATEGORIES #
 										# IF items.C_HAS_CATEGORY #
 											# IF NOT items.C_ROOT_CATEGORY #
-												<a class="cell-category" itemprop="about" href="{items.U_CATEGORY}"><i class="far fa-folder" aria-hidden="true"></i> {items.CATEGORY_NAME}</a>
+												<a class="offload" class="cell-category" itemprop="about" href="{items.U_CATEGORY}"><i class="far fa-folder" aria-hidden="true"></i> {items.CATEGORY_NAME}</a>
 											# ENDIF #
 										# ENDIF #
 									# ENDIF #
@@ -236,17 +236,17 @@
 											<div class="cell-thumbnail-caption">
 												<div class="cell-list">
 													<ul>
-														<li><a class="" href="{items.U_ITEM}"><i class="fa fa-share" aria-hidden="true"></i> {@see.details}</a></li>
+														<li><a class="offload" class="" href="{items.U_ITEM}"><i class="fa fa-share" aria-hidden="true"></i> {@common.see.details}</a></li>
 														# IF NOT C_PENDING #
 															# IF C_ENABLED_VIEWS #
-																<li role="contentinfo" aria-label="{items.VIEWS_NUMBER} # IF items.C_SEVERAL_VIEWS #{@views}# ELSE #{@view}# ENDIF #"><i class="fa fa-eye" aria-hidden="true"></i> {items.VIEWS_NUMBER}</li>
+																<li role="contentinfo">{items.VIEWS_NUMBER} # IF items.C_SEVERAL_VIEWS #{@common.views}# ELSE #{@common.view}# ENDIF #</li>
 															# ENDIF #
 															# IF C_ENABLED_VISITS #
-																<li>{items.VISITS_NUMBER} # IF C_SEVERAL_VISITS #{@visits}# ELSE #{@visit}# ENDIF #</li>
+																<li>{items.VISITS_NUMBER} # IF C_SEVERAL_VISITS #{@common.visits}# ELSE #{@common.visit}# ENDIF #</li>
 															# ENDIF #
 															# IF C_ENABLED_DOWNLOADS #
 																<li>
-																	{items.DOWNLOADS_NUMBER} # IF C_SEVERAL_DOWNLOADS #{@downloads}# ELSE #{@download}# ENDIF #
+																	{items.DOWNLOADS_NUMBER} # IF C_SEVERAL_DOWNLOADS #{@common.downloads}# ELSE #{@common.download}# ENDIF #
 																</li>
 															# ENDIF #
 															# IF C_ENABLED_NOTATION #
@@ -258,8 +258,8 @@
 														# ENDIF #
 														# IF items.C_CONTROLS #
 															<li class="li-stretch">
-																# IF items.C_EDIT #<a href="{items.U_EDIT}" aria-label="{@edit}"><i class="far fa-fw fa-edit" aria-hidden="true"></i></a># ENDIF #
-																# IF items.C_DELETE #<a href="{items.U_DELETE}" data-confirmation="delete-element" aria-label="{@delete}"><i class="far fa-fw fa-trash-alt" aria-hidden="true"></i></a># ENDIF #
+																# IF items.C_EDIT #<a class="offload" href="{items.U_EDIT}" aria-label="{@common.edit}"><i class="far fa-fw fa-edit" aria-hidden="true"></i></a># ENDIF #
+																# IF items.C_DELETE #<a href="{items.U_DELETE}" data-confirmation="delete-element" aria-label="{@common.delete}"><i class="far fa-fw fa-trash-alt" aria-hidden="true"></i></a># ENDIF #
 															</li>
 														# ENDIF #
 
@@ -274,7 +274,7 @@
 										<div class="cell-infos">
 											<div class="more">
 												# IF C_ENABLED_DATE #
-													<span class="pinned" aria-label="{@form.date.creation}">
+													<span class="pinned" aria-label="{@common.creation.date}">
 														<i class="far fa-calendar-alt" aria-hidden="true"></i>
 														<time datetime="# IF items.C_DEFFERED_PUBLISHING #{items.DEFFERED_PUBLISHING_START_DATE_ISO8601}# ELSE #{items.DATE_ISO8601}# ENDIF #" itemprop="datePublished">
 															# IF items.C_DEFFERED_PUBLISHING #
@@ -287,7 +287,7 @@
 												# ENDIF #
 												# IF C_ENABLED_UPDATE_DATE #
 													# IF items.C_HAS_UPDATE_DATE #
-														<span class="pinned" aria-label="{@form.date.update}">
+														<span class="pinned" aria-label="{@common.last.update}">
 															<i class="far fa-calendar-plus" aria-hidden="true"></i>
 															<time datetime="{items.UPDATE_DATE_ISO8601}" itemprop="dateModified">
 																{items.UPDATE_DATE}
@@ -301,14 +301,14 @@
 													# IF C_AUTHOR_DISPLAYED #
 														<i class="far fa-user"></i>
 														# IF items.C_AUTHOR_CUSTOM_NAME #
-															<span aria-label="{@author}" itemprop="author" class="pinned">{items.AUTHOR_CUSTOM_NAME}</span>
+															<span aria-label="{@common.author}" itemprop="author" class="pinned">{items.AUTHOR_CUSTOM_NAME}</span>
 														# ELSE #
 															# IF items.C_AUTHOR_EXIST #
-																<a aria-label="{@author}" itemprop="author" href="{items.U_AUTHOR}" class="pinned# IF C_AUTHOR_GROUP_COLOR # {items.AUTHOR_GROUP_COLOR}# ELSE # {items.AUTHOR_LEVEL_CLASS}# ENDIF #">
+																<a class="offload" aria-label="{@author}" itemprop="author" href="{items.U_AUTHOR}" class="pinned# IF C_AUTHOR_GROUP_COLOR # {items.AUTHOR_GROUP_COLOR}# ELSE # {items.AUTHOR_LEVEL_CLASS}# ENDIF #">
 																	{items.AUTHOR_DISPLAY_NAME}
 																</a>
 															# ELSE #
-																<span aria-label="{@author}" itemprop="author" class="pinned">{items.AUTHOR_DISPLAY_NAME}</span>
+																<span aria-label="{@common.author}" itemprop="author" class="pinned">{items.AUTHOR_DISPLAY_NAME}</span>
 															# ENDIF #
 														# ENDIF #
 													# ENDIF #
@@ -317,7 +317,7 @@
 										</div>
 									</div>
 									<header class="cell-header">
-										<h2 class="cell-name"><a href="{items.U_ITEM}" itemprop="name">{items.TITLE}</a></h2>
+										<h2 class="cell-name"><a class="offload" href="{items.U_ITEM}" itemprop="name">{items.TITLE}</a></h2>
 									</header>
 									<div class="cell-body">
 										<div class="cell-content">
@@ -325,11 +325,11 @@
 												<div class="cell-infos">
 													<span></span>
 													<span>
-														<a href="{items.U_VISIT}" class="button submit small">
-															<i class="fa fa-globe" aria-hidden="true"></i> {@go.website}
+														<a class="offload" href="{items.U_VISIT}" class="button submit small">
+															<i class="fa fa-globe" aria-hidden="true"></i> {@common.visit}
 														</a>
 														# IF IS_USER_CONNECTED #
-															<a href="{items.U_DEADLINK}" data-confirmation="{@deadlink.confirmation}" class="button bgc-full warning small" aria-label="{@deadlink}">
+															<a href="{items.U_DEADLINK}" data-confirmation="{@contribution.dead.link.confirmation}" class="button bgc-full warning small" aria-label="{@contribution.dead.link}">
 																<i class="fa fa-unlink" aria-hidden="true"></i>
 															</a>
 														# ENDIF #
@@ -341,10 +341,10 @@
 													<span></span>
 													<span>
 														<a href="{items.U_DOWNLOAD}" class="button submit small">
-															<i class="fa fa-dowload" aria-hidden="true"></i> {@go.download}
+															<i class="fa fa-dowload" aria-hidden="true"></i> {@common.download}
 														</a>
 														# IF IS_USER_CONNECTED #
-															<a href="{items.U_DEADLINK}" data-confirmation="{@deadlink.confirmation}" class="button bgc-full warning small" aria-label="{@deadlink}">
+															<a href="{items.U_DEADLINK}" data-confirmation="{@contribution.dead.link.confirmation}" class="button bgc-full warning small" aria-label="{@contribution.dead.link}">
 																<i class="fa fa-unlink" aria-hidden="true"></i>
 															</a>
 														# ENDIF #
@@ -356,24 +356,24 @@
 													{items.CONTENT}
 												# ELSE #
 													{items.SUMMARY}
-													# IF items.C_READ_MORE # <a href="{items.U_ITEM}" class="read-more">[{@read.more}]</a># ENDIF #
+													# IF items.C_READ_MORE # <a class="offload" href="{items.U_ITEM}" class="read-more">[{@common.read.more}]</a># ENDIF #
 												# ENDIF #
 											</div>
 										</div>
 									</div>
 									# IF items.C_KEYWORDS #
 										<div class="tags-container">
-											<span class="text-strong"><i class="fa fa-tags" aria-hidden="true"></i> {@form.keywords}</span> :
+											<span class="text-strong"><i class="fa fa-tags" aria-hidden="true"></i> {@common.keywords}</span> :
 											# START items.keywords #
-												<a itemprop="keywords" href="{items.keywords.URL}" class="pinned question">{items.keywords.NAME}</a>
+												<a class="offload" itemprop="keywords" href="{items.keywords.URL}" class="pinned question">{items.keywords.NAME}</a>
 											# END items.keywords #
 										</div>
 									# ENDIF #
 									# IF items.C_SOURCES #
 										<div class="sources-container">
-											<span class="text-strong"><i class="fa fa-map-signs" aria-hidden="true"></i> {@form.sources}</span> :
+											<span class="text-strong"><i class="fa fa-map-signs" aria-hidden="true"></i> {@common.sources}</span> :
 											# START items.sources #
-												<a itemprop="isBasedOnUrl" href="{items.sources.URL}" class="pinned question" rel="nofollow">{items.sources.NAME}</a># IF items.sources.C_SEPARATOR ## ENDIF #
+												<a class="offload" itemprop="isBasedOnUrl" href="{items.sources.URL}" class="pinned question" rel="nofollow">{items.sources.NAME}</a># IF items.sources.C_SEPARATOR ## ENDIF #
 											# END items.sources #
 										</div>
 									# ENDIF #
