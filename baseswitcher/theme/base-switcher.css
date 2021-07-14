@@ -1,0 +1,130 @@
+.base-switcher {
+	position: absolute;
+	top: 0.618em;
+	right: 0.618em;
+	z-index: 200;
+}
+
+.base-switcher span {
+    padding: 0.309em 0.456em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+	cursor: pointer;
+}
+
+span.base-switcher-light {
+    background-color:var(--visitor-tone);
+    color: var(--star-light);
+}
+
+span.base-switcher-dark {
+    background-color: rgba(var(--darken), 1);
+    color: rgba(var(--lighten), 1);
+}
+
+@media (min-width: 769px) {
+	.base-switcher {
+		position: fixed;
+		top: 50%;
+		left: 0.618em;
+		right: auto;
+		transform: translateY(-50%);
+	}
+
+	.base-switcher span {
+	    display: block;
+		margin-bottom: 0.228em;
+	}
+}
+
+/* --- Dark theme --- */
+/* sticky-menu */
+[data-theme="dark"] .sticky-menu > nav > ul > li > a.cssmenu-title { color: var(--main-light); }
+[data-theme="dark"] .sticky-menu > nav > ul > li > li:hover > a.cssmenu-title { color: var(--main-tone); }
+
+/* BBCode */
+[data-theme="dark"] .bbcode-bar { border-color: var(--bdr-alt) !important; }
+
+[data-theme="dark"] .bbcode-button       { color: var(--main-light); }
+[data-theme="dark"] .bbcode-button:hover { color: var(--main-dark) }
+
+/* Progressbar */
+[data-theme="dark"] .progressbar-container { color: var(--txt-alt); }
+
+/* Form */
+[data-theme="dark"] legend {
+    border-color: var(--bdr-alt);
+    border-bottom-width: 2px;
+}
+
+/* Content */
+[data-theme="dark"] .formatter-content {
+    background-color: rgba(var(--darken), 0.1);
+    border-color: var(--main-light);
+}
+
+/* Prism */
+[data-theme="dark"] code[class*="language-"],
+[data-theme="dark"] pre[class*="language-"] {
+    text-shadow: 0 1px rgba(var(--lighten), 0);
+	color: var(--txt-alt);
+}
+
+[data-theme="dark"] :not(pre) > code[class*="language-"],
+[data-theme="dark"] pre[class*="language-"],
+[data-theme="dark"] .token.operator,
+[data-theme="dark"] .token.entity,
+[data-theme="dark"] .token.url,
+[data-theme="dark"] .language-css .token.string,
+[data-theme="dark"] .style .token.string {
+    background-color: rgba(var(--lighten), 0);
+}
+
+[data-theme="dark"] .copy-code-content {
+    border-style: none;
+}
+
+/* Table */
+[data-theme="dark"] table.date-picker,
+[data-theme="dark"] .date-select-nav { background-color: var(--main-dark); }
+
+[data-theme="dark"] thead th,
+[data-theme="dark"] .formatter-table .formatter-table-head {
+    background-color: var(--bgc-alt);
+    color: var(--txt-main);
+    border-color: var(--bdr-alt);
+}
+
+[data-theme="dark"] thead th a,
+[data-theme="dark"] .formatter-table .formatter-table-head a { color: var(--txt-alt); }
+
+/* Inputs */
+[data-theme="dark"] select[multiple] option:checked,
+[data-theme="dark"] .selected-option a { background-image: linear-gradient(0deg, var(--bgc-main) 0%, var(--bgc-main) 100%); }
+
+[data-theme="dark"] .grouped-element { border-color: var(--bdr-alt); }
+
+/* Cell */
+[data-theme="dark"] .cell-tile .cell > [class*="cell-"] {
+    background-color: rgba(var(--darken), 0.2);
+    border-color: var(--bdr-alt);
+}
+
+[data-theme="dark"] .cell-mini .cell > [class*="cell-"] { background-color: transparent; }
+
+[data-theme="dark"] .cell-mini .cell > .cell-header {
+    background-color: rgba(var(--darken), 0.2);
+    border-color: var(--bdr-alt);
+}
+
+[data-theme="dark"] .cell-mini select:not(.grouped-element) {
+    width: 100%;
+}
+
+/* Cssmenu */
+[data-theme="dark"] .cssmenu:not(.cssmenu-static) ul ul,
+[data-theme="dark"] .cssmenu-actionslinks > ul {
+    background-color: var(--main-dark);
+    border-color: var(--bdr-alt);
+}
