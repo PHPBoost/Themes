@@ -26,10 +26,10 @@
 /* .main - .link-color */
     --main-rgb-d: 32, 58, 84;
     --main-dark:  #203A54;
-    --main-rgb-t: 50, 100, 147;
-    --main-tone:  #BCD9F5;
-    --main-rgb-l: 83, 145, 193;
-    --main-light: #5391C0;
+    --main-rgb-t: 83, 145, 193;
+    --main-tone: #5391C0;
+    --main-rgb-l: 50, 100, 147;
+    --main-light:  #BCD9F5;
 
 /* .logo */
     --logo-rgb-d: 1, 72, 119;

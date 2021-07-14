@@ -419,8 +419,6 @@
 	</footer>
 </section>
 
-<script src="{PATH_TO_ROOT}/smallads/templates/js/listorder.min.js"></script>
-
 <script>
 	jQuery('document').ready(function(){
 		// listorder
