@@ -54,8 +54,8 @@
 		</div>
 		# INCLUDE JS_BOTTOM #
 		<div class="base-switcher">
-			<span class="base-switcher-toggle base-switcher-light"><i class="fa fa-fw fa-sun"></i></span>
-			<span class="base-switcher-toggle base-switcher-dark"><i class="fa fa-fw fa-moon"></i></span>
+			<span class="base-switcher-toggle base-switcher-light" aria-label="{@common.light.mode}"><i class="fa fa-fw fa-sun"></i></span>
+			<span class="base-switcher-toggle base-switcher-dark" aria-label="{@common.dark.mode}"><i class="fa fa-fw fa-moon"></i></span>
 		</div>
 	</body>
 </html>
