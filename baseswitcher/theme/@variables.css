@@ -8,12 +8,15 @@
     --txt-rgb-m: 85, 85, 85;
     --txt-main:  #555555;
     --txt-rgb-a: 255, 255, 255;
-    --txt-alt:   #FFFFFF;
+    --txt-alt:   #313131;
 
     --ant-rgb-m: 255, 255, 255;
     --ant-main:  #FFFFFF;
     --ant-rgb-a: 236, 242, 249;
     --ant-alt:   #ECF2F8;
+
+    --button-rgb: 236, 242, 249;
+    --button:     #ECF2F8;
 
     --bgc-rgb-m: 255, 255, 255;
     --bgc-main:  #FFFFFF;
@@ -161,6 +164,14 @@
     --main-tone: #5391C0;
     --main-rgb-l: 50, 100, 147;
     --main-light:  #BCD9F5;
+
+/* .custom-author */
+    --custom-author-rgb-d: 128, 68, 33;
+    --custom-author-dark:  #804421;
+    --custom-author-rgb-t: 80, 52, 44;
+    --custom-author-tone:  #AE5D2D;
+    --custom-author-rgb-l: 214, 113, 52;
+    --custom-author-light: #D67134;
 
 /* .administrator */
     --administrator-rgb-d: 207, 167, 8;

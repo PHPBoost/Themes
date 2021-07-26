@@ -67,7 +67,7 @@ table tbody tr.prime-item td,
 /* --- Options --- */
 .options {
 	background-color: var(--bgc-alt);
-	color: var(--ant-main);
+	color: var(--txt-main);
 	border-color: var(--bdr-main);
 }
 
@@ -782,7 +782,7 @@ a.wikipedia-link { border-bottom-color: var(--main-tone); }
 .bgc.administrator { background-color: rgba(var(--administrator-rgb-t), 0.2); }
 
 .bgc-full,
-.bgc-full:hover	{ color: var(--ant-main) !important; }
+.bgc-full:hover	{ color: var(--button) !important; }
 
 .bgc-full a,
 .bgc-full:hover a { color: rgba(var(--ant-rgb-m), 0.5) !important; }

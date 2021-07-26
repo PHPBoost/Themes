@@ -38,6 +38,9 @@ span.base-switcher-dark {
 	}
 }
 
+/* Content */
+.bgc-full { font-weight: 500; }
+
 /* --- Dark theme --- */
 /* sticky-menu */
 [data-theme="dark"] .sticky-menu > nav > ul > li > a.cssmenu-title { color: var(--main-light); }
