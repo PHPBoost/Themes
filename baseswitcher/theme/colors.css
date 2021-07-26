@@ -367,12 +367,12 @@ table caption { border-color: var(--bdr-main); }
 thead th,
 .formatter-table .formatter-table-head {
 	background-color: var(--main-tone);
-	color: var(--txt-alt);
+	color: var(--ant-alt);
 	border-color: var(--main-tone);
 }
 
 thead th a,
-.formatter-table .formatter-table-head a { color: var(--txt-alt); }
+.formatter-table .formatter-table-head a { color: var(--ant-alt); }
 
 td,
 .bordered-table td { border-color: var(--bdr-main); }

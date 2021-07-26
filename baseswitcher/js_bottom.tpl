@@ -112,31 +112,30 @@
 			}
 	});
 
-// baseswitcher theme -------------------------------------------------------- |
-
-	// theme switch mode
-		var selectedTheme = localStorage.getItem('theme');
-		if(selectedTheme)
-			jQuery('body').attr('data-theme', selectedTheme);
-		else
-			jQuery('body').attr('data-theme', 'light');
-
-		jQuery('.base-switcher-toggle').on('click', function(e) {
-			e.preventDefault();
-			if(jQuery(this).hasClass('base-switcher-dark')) {
-				jQuery('body').attr('data-theme', 'dark');
-				localStorage.setItem('theme', 'dark');
-			}
-			else {
-				jQuery('body').attr('data-theme', 'light');
-				localStorage.setItem('theme', 'light');
-			}
-		});
-
-// baseswitcher theme -------------------------------------------------------- |
-
 // Display the page only when it's loaded
 	jQuery(window).ready(function() {
+
+	// baseswitcher theme -------------------------------------------------------- |
+
+		// theme switch mode
+			var selectedTheme = localStorage.getItem('theme');
+			if(selectedTheme)
+				jQuery('body').attr('data-theme', selectedTheme);
+			else
+				jQuery('body').attr('data-theme', 'light');
+
+			jQuery('.base-switcher-toggle').on('click', function() {
+				if(jQuery(this).hasClass('base-switcher-dark')) {
+					jQuery('body').attr('data-theme', 'dark');
+					localStorage.setItem('theme', 'dark');
+				}
+				else {
+					jQuery('body').attr('data-theme', 'light');
+					localStorage.setItem('theme', 'light');
+				}
+			});
+
+	// baseswitcher theme -------------------------------------------------------- |
   		jQuery('.content-preloader').animate({opacity: 1}, 300);
 	});
 </script>
