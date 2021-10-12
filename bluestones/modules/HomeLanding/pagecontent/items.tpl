@@ -84,7 +84,7 @@
 											<div class="cell-thumbnail-caption">
 												<div class="cell-list">
 													<ul>
-														<li><a class="offload" href="{items.U_ITEM}"># IF items.C_READ_MORE #[@common.read.more]# ELSE #<i class="fa fa-eye"></i># ENDIF #</a></li>
+														<li><a class="offload" href="{items.U_ITEM}"># IF items.C_READ_MORE #[{@common.read.more}]# ELSE #<i class="fa fa-eye"></i># ENDIF #</a></li>
 														# IF C_VIEWS_NUMBER #<li aria-label="{items.VIEWS_NUMBER} # IF items.C_SEVERAL_VIEWS #{@common.views}# ELSE #{@common.view}# ENDIF #"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> {items.VIEWS_NUMBER}# ENDIF #</li>
 														<li></li>
 														# IF items.C_CONTROLS #

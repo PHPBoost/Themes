@@ -42,6 +42,7 @@ body {
 	#header { padding: 0; }
 
 	#top-header,
+	#inner-header,
 	#sub-header-content,
 	#global,
 	#footer {
@@ -50,16 +51,19 @@ body {
 	}
 
 	#top-header,
+	#inner-header,
 	#sub-header-content,
 	#global,
 	#footer { width: 768px; }
 }
 
-@media (min-width: 1025px) { #top-header, #sub-header-content, #global, #footer { width: 1024px; } }
-@media (min-width: 1367px) { #top-header, #sub-header-content, #global, #footer { width: 1280px; } }
+@media (min-width: 1025px) { #top-header, #inner-header, #sub-header-content, #global, #footer { width: 1024px; } }
+@media (min-width: 1367px) { #top-header, #inner-header, #sub-header-content, #global, #footer { width: 1280px; } }
 
 #top-header-content::before,
 #top-header-content::after,
+#inner-header-content::before,
+#inner-header-content::after,
 #sub-header-content::before,
 #sub-header-content::after,
 #top-content::before,
@@ -82,17 +86,17 @@ body {
 	background-position: center;
 }
 
-#top-header {
+#inner-header {
 	min-height: 150px;
 	display: flex;
 	flex-direction: column;
 }
 
-#top-header-content { flex: 1 1 auto; }
+#inner-header-content { flex: 1 1 auto; }
 
 @media (min-width: 768px) {
-	#top-header { min-height: 300px; }
-	#top-header-content { text-align: center; }
+	#inner-header { min-height: 300px; }
+	#inner-header-content { text-align: center; }
 }
 
 #site-infos {
@@ -134,9 +138,9 @@ body {
 }
 
 @media (min-width: 769px) {
-	#top-header { flex-direction: row; }
+	#inner-header { flex-direction: row; }
 
-	#top-header-content { align-self: flex-end; }
+	#inner-header-content { align-self: flex-end; }
 
 	#site-logo {
 		width: 90px;

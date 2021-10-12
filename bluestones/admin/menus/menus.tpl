@@ -57,6 +57,7 @@
 
 // Sortable drag and drop
 	var menusContainerList = new Array(
+		'mod_topheader',
 		'mod_header',
 		'mod_subheader',
 		'mod_left',
@@ -91,7 +92,7 @@
 				handle: '.fa-arrows-alt',
 				group: 'menus',
 				placeholder: '<div class="dropzone">' + ${escapejs(@common.drop.here)} + '</div>',
-				containerSelector: '#mod_header, #mod_subheader, #mod_left, #mod_right, #mod_topcentral, #mod_central, #mod_bottomcentral, #mod_topfooter, #mod_footer',
+				containerSelector: '#mod_topheader, #mod_header, #mod_subheader, #mod_left, #mod_right, #mod_topcentral, #mod_central, #mod_bottomcentral, #mod_topfooter, #mod_footer',
 				itemSelector: 'div.menus-block-container'
 			});
 		}
@@ -114,6 +115,43 @@
 	<div id="admin-contents">
 		<div class="menusmanagement">
 			<div id="container-top-header">
+				<div class="container-block">
+					<p class="menu-block-libelle mini-checkbox flex-between">
+						<span>
+							<span class="form-field-checkbox">
+								<label class="checkbox" for="top_header_enabled">
+									<input id="top_header_enabled" onclick="minimize_container(this, 'topheader')" type="checkbox" name="top_header_enabled" {CHECKED_TOP_HEADER_COLUMN} />
+									<span>&nbsp;</span>
+								</label>
+							</span>
+							<span class="text-strong">{@menu.top.header}</span>
+						</span>
+						<span class="pinned notice">{TOP_HEADER_MENUS_NUMBER}</span>
+					</p>
+					<p class="menus-block-add" onclick="menu_display_block('addmenu9');" onmouseover="menu_hide_block('addmenu9', 1);" onmouseout="menu_hide_block('addmenu9', 0);">
+						<i class="fa fa-plus" aria-hidden="true"></i> {@menu.add.menu}
+					</p>
+					<div class="container-block-absolute" id="moveaddmenu9">
+						<div onmouseover="menu_hide_block('addmenu9', 1);" onmouseout="menu_hide_block('addmenu9', 0);">
+							<p class="menus-block-add menus-block-add-links">
+								<a href="{PATH_TO_ROOT}/admin/menus/links.php?s=1" class="small">{@menu.links.menu}</a>
+							</p>
+							<p class="menus-block-add menus-block-add-links">
+								<a href="{PATH_TO_ROOT}/admin/menus/content.php?s=1" class="small">{@menu.content.menu}</a>
+							</p>
+							<p class="menus-block-add menus-block-add-links">
+								<a href="{PATH_TO_ROOT}/admin/menus/feed.php?s=1" class="small">{@menu.feed.menu}</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="mod_topheader" class="menus-block-list">
+					# START mod_topheader #
+						{mod_topheader.MENU}
+					# END mod_topheader #
+				</div>
+			</div>
+			<div id="container-inner-header">
 				<div class="container-block">
 					<p class="menu-block-libelle mini-checkbox flex-between">
 						<span>
@@ -432,7 +470,7 @@
 		</div>
 
 		<div id="valid-position-menus">
-			<button type="submit" class="button bgc-full success big" name="valid" value="true"><i class="far fa-fw fa-check-square"></i> {@menu.validated.position}</button>
+			<button type="submit" class="button bgc-full link-color big" name="valid" value="true"><i class="far fa-fw fa-square"></i> {@menu.position}</button>
 			<input type="hidden" name="theme" value="{THEME_NAME}">
 			<input type="hidden" name="token" value="{TOKEN}">
 		</div>
@@ -442,32 +480,51 @@
 		jQuery(document).ready(function() {
 			createSortableMenu();
 
-			// Change validation button on moving menus
-			function checkForChanges(){
-				var thisId,
-					initPrevSibling,
-					newPrevSibling;
-				if(jQuery( '.menus-block-container' ).hasClass('dragged'))
-				{
-					thisId = jQuery('.menus-block-container.dragged').attr('id')
-					initPrevSibling = jQuery('.menus-block-container.dragged').prev().attr('id');
-					if(typeof initPrevSibling === 'undefined') initPrevSibling = 'initPrev';
-					jQuery('#' + thisId).on('mouseup', function() {
-						newPrevSibling = jQuery(this).siblings('.dropzone').prev().attr('id');
-						if(typeof newPrevSibling === 'undefined') newPrevSibling = 'newPrev';
-						if(newPrevSibling != initPrevSibling && newPrevSibling != thisId)
-					    	jQuery('#valid-position-menus button').addClass('warning').removeClass('success').html('<i class="far fa-fw fa-square"></i> {@menu.valid.position}');
-					});
+			// Change validation button status when save
+			let menusUrl = window.location.hash;
+			if(menusUrl != '') {
+				jQuery('#valid-position-menus button')
+					.addClass('success')
+					.html('<i class="far fa-fw fa-check-square"></i> {@menu.validated.position}');
+				if (performance.navigation.type == performance.navigation.TYPE_RELOAD) { // back to init status on reloading page
+				  	history.pushState('', '', ' ');
+					jQuery('#valid-position-menus button')
+						.removeClass('success')
+						.html('<i class="far fa-fw fa-square"></i> {@menu.position}');
 				}
-			    else
-			        setTimeout(checkForChanges, 3);
 			}
-			jQuery(checkForChanges);
+
+			// Change validation button on moving
+			jQuery('.menus-block-container').each(function() {
+				let $this = jQuery(this),
+					thisId = $this.attr('id'),
+					thisParent = $this.parent().attr('id'),
+					thisPrev = $this.prev().attr('id'),
+					thisPos = thisParent + '-' + thisPrev;
+				$this.on('mouseup', function() {
+						$this.addClass('plop');
+					if($this.hasClass('dragged')) {
+						let newParent = $this.closest('.menusmanagement').find('.dropzone').parent().attr('id'),
+							newPrev = $this.siblings('.dropzone').prev().attr('id'),
+							newPos = newParent + '-' + newPrev;
+						if(newPos != thisPos && newPrev != thisId)
+							jQuery('#valid-position-menus button')
+								.addClass('warning')
+								.html('<i class="far fa-fw fa-square"></i> {@menu.valid.position}');
+					}
+				});
+			});
 
 			// Change validation button on changing checkboxes status
 			jQuery('[type="checkbox"]').on('change', function(){
-				jQuery('#valid-position-menus button').addClass('warning').removeClass('success').html('<i class="far fa-fw fa-square"></i> {@menu.valid.position}');
-			})
+				jQuery('#valid-position-menus button').addClass('warning').html('<i class="far fa-fw fa-square"></i> {@menu.valid.position}');
+			});
+
+			// opacity for unchecked block on page loading
+			jQuery('.container-block').each(function(){
+				let cb = jQuery(this).find('[type="checkbox"]');
+				if(!cb.is(':checked')) jQuery(this).next().css('opacity', 0.5);
+			});
 		});
 	</script>
 </form>
