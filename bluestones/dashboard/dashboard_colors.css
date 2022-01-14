@@ -87,6 +87,11 @@ table thead th a { color: var(--txt-alt); }
 	border-color: var(--main-tone);
 }
 
+.button.submit:hover, .submit:hover {
+  	background-color: var(--main-light);
+  	color: var(--main-tone);
+}
+
 @media (min-width: 769px) {
 	.form-element { border-color: var(--bdr-main); }
 }
