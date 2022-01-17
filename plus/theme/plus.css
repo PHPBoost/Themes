@@ -14,6 +14,13 @@
     #head-banner { height: 210px; }
 }
 
+#site-name {
+    color: var(--txt-main);
+    font-weight: bold;
+}
+
+#site-name:hover { color: var(--main-tone); }
+
 #top-header,
 .breadcrumb-container {
     background-color: var(--main-tone);
@@ -25,11 +32,6 @@
 
 #top-header a:hover,
 .breadcrumb-container a:hover { color: var(--txt-main); }
-
-#top-header .button.submit, .submit {
-    border-left-width: 0;
-    border-color: var(--txt-alt);
-}
 
 #sub-header-content .cssmenu-horizontal { margin: auto; }
 

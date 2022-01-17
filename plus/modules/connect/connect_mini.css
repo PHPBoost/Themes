@@ -5,6 +5,8 @@
 
 #module-connect  #login { cursor: help; }
 
+#module-connect  .stacked { text-shadow: 0 0 2px rgba(var(--darken), 0.5)}
+
 #module-connect .social-connect { display: inline-block; }
 
 #module-connect .js-menu-button {
@@ -74,11 +76,22 @@
 		height: auto;
 	}
 
+	#top-header #module-connect {
+		width: auto;
+		display: inline-block;
+	}
+
+	#top-header #module-connect.user-not-connected .cell-list .connect-container li { padding: 0; }
+
+	#top-header #module-connect.user-not-connected .cell-list .connect-container li .button { background-color: transparent; }
+
+	#top-header #module-connect .cell-list-inline ul { justify-content: flex-start; }
+
 	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
 
 	#module-connect .cell-list .connect-container li { padding: 0.309em 0.809em; }
 
-	#module-connect .connect-container-horizontal li { border-right: 2px solid var(--main-tone); }
-	
-	#module-connect .connect-container-horizontal li:last-child { border-right: none; }
+	#module-connect.user-connected .connect-container-horizontal li { border-right: 2px solid var(--main-tone); }
+
+	#module-connect.user-connected .connect-container-horizontal li:last-child { border-right: none; }
 }

@@ -60,6 +60,16 @@ body {
 /* --- Header --------------------------------------------------------------- */
 #header { position: relative; }
 
+#top-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 769px) {
+    #top-header-content { flex-direction: row; }
+}
+
 #inner-header {
 	display: flex;
 	flex-direction: column;

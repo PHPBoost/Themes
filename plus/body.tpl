@@ -3,7 +3,7 @@
 <header id="header">
 	<div id="top-header">
 		# IF C_MENUS_TOP_HEADER_CONTENT #
-			<div id="top-header-content" class="content-wrapper">
+			<div id="top-header-content">
 				# START menus_top_header #
 					{menus_top_header.MENU}
 				# END menus_top_header #

@@ -16,7 +16,7 @@
 	</script>
 # ENDIF #
 
-<div id="module-connect" class="cell-mini# IF C_VERTICAL # cell-tile cell-mini-vertical# ENDIF #">
+<div id="module-connect" class="cell-mini# IF C_VERTICAL # cell-tile cell-mini-vertical# ENDIF ## IF IS_USER_CONNECTED # user-connected# ELSE # user-not-connected# ENDIF #">
 	<div class="cell">
 		# IF NOT IS_USER_CONNECTED #
 			# IF C_VERTICAL #
@@ -65,11 +65,11 @@
 									<a href="${relative_url(UserUrlBuilder::registration())}" class="button submit small offload">{@user.sign.up}</a>
 								</li>
 							# ENDIF #
-							<li# IF C_VERTICAL # class="li-stretch"# ENDIF #>
-								# START external_auth #
+							# START external_auth #
+								<li# IF C_VERTICAL # class="li-stretch"# ENDIF #>
 									<a class="{external_auth.CSS_CLASS} offload" href="{external_auth.U_SIGN_IN}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
-								# END external_auth #
-							</li>
+								</li>
+							# END external_auth #
 						# ENDIF #
 						<li class="align-center">
 							<a class="button smaller offload" href="${relative_url(UserUrlBuilder::forget_password())}">
