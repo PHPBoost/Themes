@@ -52,7 +52,10 @@ body {
 
 /* --- Prime item --- */
 table tbody tr.prime-item td,
-.prime-item { background-color: var(--bgc-alt);}
+.prime-item {
+	background-color: var(--bgc-alt);
+	color: var(--txt-alt);
+}
 
 /* --- Pagination --- */
 .pagination-item a { border-color: var(--bdr-main); }
