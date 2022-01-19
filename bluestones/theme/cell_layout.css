@@ -148,13 +148,15 @@
 
 .cell-layout .cell-primary { position: relative; }
 
-.cell-category {
+.item-category {
 	position: absolute;
 	left: 0.618em;
 	transform: translateY(-30%);
 	z-index: 2;
 	padding: 0.309em 0.618em;
 }
+
+.cell-row .item-category { top: -0.618em; }
 
 @media (min-width: 769px) {
 	.cell-layout.cell-row .cell { flex-direction: row; }

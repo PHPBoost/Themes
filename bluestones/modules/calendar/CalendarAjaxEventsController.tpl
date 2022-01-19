@@ -78,7 +78,7 @@
 				<article itemscope="itemscope" itemtype="https://schema.org/Event" id="calendar-item-{items.ID}" class="calendar-item several-items category-{items.CATEGORY_ID} cell# IF items.C_NEW_CONTENT # new-content# ENDIF #">
 					<div class="cell-primary">
 						# IF NOT items.C_ROOT_CATEGORY #
-							<div class="cell-category pinned-category">
+							<div class="item-category pinned-category">
 								<span class="pinned-category" data-color-surround="{items.CATEGORY_COLOR}"><a class="offload" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a></span>
 							</div>
 						# ENDIF #

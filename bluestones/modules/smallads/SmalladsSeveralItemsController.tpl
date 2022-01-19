@@ -269,7 +269,7 @@
 						# START items #
 							<article data-listorder-item id="smallads-items-{items.ID}" class="smallads-item several-items category-{items.ID_CATEGORY} cell# IF items.C_COMPLETED# completed-smallad bgc error# ENDIF ## IF items.C_NEW_CONTENT # new-content# ENDIF #" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
 								<div class="cell-primary">
-									# IF C_ROOT_CATEGORY #<a class="cell-category" itemprop="about" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a># ENDIF #
+									# IF C_ROOT_CATEGORY #<a class="item-category" itemprop="about" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a># ENDIF #
 									<div class="cell-body">
 										<div class="cell-thumbnail cell-landscape cell-center">
 											# IF items.C_HAS_THUMBNAIL #

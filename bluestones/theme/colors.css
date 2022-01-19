@@ -767,17 +767,17 @@ a.cell-thumbnail-caption {
 
 .cell-layout .cell-thumbnail-caption a:hover { color: var(--main-tone); }
 
-.cell-category:not(.pinned-category) {
+.item-category:not(.pinned-category) {
 	background-color: var(--bgc-alt);
 	color: var(--main-light);
 }
 
-.cell-category.pinned-category {
+.item-category.pinned-category {
 	background-color: var(--bgc-main);
 	color: var(--main-tone);
 }
 
-.cell-category:hover { var(--main-tone); }
+.item-category:hover { var(--main-tone); }
 
 
 /* --- Colors classes --------------------------------------------------------------- */

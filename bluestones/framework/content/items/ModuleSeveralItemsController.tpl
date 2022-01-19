@@ -222,7 +222,7 @@
 									# IF C_ENABLED_CATEGORIES #
 										# IF items.C_HAS_CATEGORY #
 											# IF NOT items.C_ROOT_CATEGORY #
-												<a class="offload" class="cell-category" itemprop="about" href="{items.U_CATEGORY}"><i class="far fa-folder" aria-hidden="true"></i> {items.CATEGORY_NAME}</a>
+												<a class="offload item-category" itemprop="about" href="{items.U_CATEGORY}"><i class="far fa-folder" aria-hidden="true"></i> {items.CATEGORY_NAME}</a>
 											# ENDIF #
 										# ENDIF #
 									# ENDIF #
@@ -274,7 +274,7 @@
 										<div class="cell-infos">
 											<div class="more">
 												# IF C_ENABLED_DATE #
-													<span class="pinned" aria-label="{@common.creation.date}">
+													<span class="pinned item-creation-date" aria-label="{@common.creation.date}">
 														<i class="far fa-calendar-alt" aria-hidden="true"></i>
 														<time datetime="# IF items.C_DEFFERED_PUBLISHING #{items.DEFFERED_PUBLISHING_START_DATE_ISO8601}# ELSE #{items.DATE_ISO8601}# ENDIF #" itemprop="datePublished">
 															# IF items.C_DEFFERED_PUBLISHING #
@@ -287,7 +287,7 @@
 												# ENDIF #
 												# IF C_ENABLED_UPDATE_DATE #
 													# IF items.C_HAS_UPDATE_DATE #
-														<span class="pinned" aria-label="{@common.last.update}">
+														<span class="pinned item-modified-date" aria-label="{@common.last.update}">
 															<i class="far fa-calendar-plus" aria-hidden="true"></i>
 															<time datetime="{items.UPDATE_DATE_ISO8601}" itemprop="dateModified">
 																{items.UPDATE_DATE}
@@ -299,18 +299,20 @@
 											<div class="more">
 												# IF NOT C_MEMBER_ITEMS #
 													# IF C_AUTHOR_DISPLAYED #
-														<i class="far fa-user"></i>
-														# IF items.C_AUTHOR_CUSTOM_NAME #
-															<span aria-label="{@common.author}" itemprop="author" class="pinned">{items.AUTHOR_CUSTOM_NAME}</span>
-														# ELSE #
-															# IF items.C_AUTHOR_EXIST #
-																<a class="offload" aria-label="{@author}" itemprop="author" href="{items.U_AUTHOR}" class="pinned# IF C_AUTHOR_GROUP_COLOR # {items.AUTHOR_GROUP_COLOR}# ELSE # {items.AUTHOR_LEVEL_CLASS}# ENDIF #">
-																	{items.AUTHOR_DISPLAY_NAME}
-																</a>
+														<span class="pinned item-author">
+															<i class="far fa-user"></i>
+															# IF items.C_AUTHOR_CUSTOM_NAME #
+																<span aria-label="{@common.author}" itemprop="author" class="pinned">{items.AUTHOR_CUSTOM_NAME}</span>
 															# ELSE #
-																<span aria-label="{@common.author}" itemprop="author" class="pinned">{items.AUTHOR_DISPLAY_NAME}</span>
+																# IF items.C_AUTHOR_EXIST #
+																	<a class="offload" aria-label="{@author}" itemprop="author" href="{items.U_AUTHOR}" class="pinned# IF C_AUTHOR_GROUP_COLOR # {items.AUTHOR_GROUP_COLOR}# ELSE # {items.AUTHOR_LEVEL_CLASS}# ENDIF #">
+																		{items.AUTHOR_DISPLAY_NAME}
+																	</a>
+																# ELSE #
+																	<span aria-label="{@common.author}" itemprop="author" class="pinned">{items.AUTHOR_DISPLAY_NAME}</span>
+																# ENDIF #
 															# ENDIF #
-														# ENDIF #
+														</span>
 													# ENDIF #
 												# ENDIF #
 											</div>

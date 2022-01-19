@@ -70,7 +70,7 @@
 							<div class="{MODULE_NAME}-item several-items category-{items.CATEGORY_ID} cell" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
 								<div class="cell-primary">
 									<div class="cell-body">
-										<a class="cell-category offload" itemprop="about" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a>
+										<a class="item-category offload" itemprop="about" href="{items.U_CATEGORY}">{items.CATEGORY_NAME}</a>
 										<div class="cell-thumbnail cell-landscape cell-center">
 											# IF items.C_HAS_PARTNER_THUMBNAIL #
 												<img src="{items.U_PARTNER_THUMBNAIL}" alt="{items.TITLE}" />
@@ -84,7 +84,7 @@
 											<div class="cell-thumbnail-caption">
 												<div class="cell-list">
 													<ul>
-														<li><a class="offload" href="{items.U_ITEM}"># IF items.C_READ_MORE #[{@common.read.more}]# ELSE #<i class="fa fa-eye"></i># ENDIF #</a></li>
+														<li><a class="offload" href="{items.U_ITEM}"><i class="fa fa-share" aria-hidden="true"></i> {@common.see.details}</a></li>
 														# IF C_VIEWS_NUMBER #<li aria-label="{items.VIEWS_NUMBER} # IF items.C_SEVERAL_VIEWS #{@common.views}# ELSE #{@common.view}# ENDIF #"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> {items.VIEWS_NUMBER}# ENDIF #</li>
 														<li></li>
 														# IF items.C_CONTROLS #
