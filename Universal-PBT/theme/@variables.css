@@ -24,12 +24,12 @@
     --lighten:   255, 255, 255;
 
 /* .link-color */
-    --main-rgb-d: 66, 147, 199;
-    --main-dark:  #4293C7;
-    --main-rgb-t: 131, 204, 251;
-    --main-tone:  #83CCFB;
-    --main-rgb-l: 171, 217, 246;
-    --main-light: #ABD9F6;
+    --main-rgb-d: 26, 76, 130;
+    --main-dark:  #1A4C82;
+    --main-rgb-t: 35, 101, 173;
+    --main-tone:  #2365AD;
+    --main-rgb-l: 76, 141, 213;
+    --main-light: #4C8DD5;
 
 /* .logo-color */
     --logo-rgb-d: 1, 72, 119;
