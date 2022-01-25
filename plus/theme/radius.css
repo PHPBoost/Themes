@@ -8,6 +8,21 @@
     --radius : 0.618rem;
 }
 
+.content-container { border-radius: var(--radius); }
+
+#breadcrumb { border-radius: var(--radius); }
+
+#menu-left .cell-mini .cell,
+#menu-right .cell-mini .cell { border-radius: var(--radius); }
+
+#top-content { border-radius: var(--radius); }
+
+#bottom-content { border-radius: var(--radius); }
+
+#top-footer { border-radius: var(--radius); }
+
+#footer-content { border-radius: var(--radius); }
+
 .formatter-content { border-radius: var(--radius); }
 
 .formatter-hide-message { border-radius: var(--radius); }
@@ -160,6 +175,8 @@ textarea { border-radius: var(--radius); }
 .cell-tile [class*="cell-"] .grouped-inputs * { border-radius: 0 !important; }
 
 .cell-tile [class*="cell-"] table * { border-radius: 0 !important; }
+
+.cell-tile [class*="cell-"].bbcode-container { border-radius: 0 !important; }
 
 .cell-tile [class*="cell-"]:only-child { border-radius: var(--radius); }
 
