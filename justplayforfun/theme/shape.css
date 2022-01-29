@@ -72,6 +72,7 @@ body {
 #inner-header-container {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 #inner-header-content { flex: 1 1 auto; }
@@ -136,8 +137,6 @@ body {
 
 @media (min-width: 769px) {
 	#inner-header-container { flex-direction: row; }
-
-	#inner-header-container { align-self: flex-end; }
 
 	#site-logo {
 		width: 90px;

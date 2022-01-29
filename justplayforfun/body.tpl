@@ -31,13 +31,13 @@
 	</div>
 	<div id="slide-container">
 		<div id="slide-content">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/01.jpg" alt="Battelfield 3">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/02.jpg" alt="Dawn of War">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/03.jpg" alt="Ghost Recon">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/04.jpg" alt="Guild Wars 2">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/05.jpg" alt="Mass Effect">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/06.jpg" alt="Rainbow 6">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/07.jpg" alt="Splinter Cell">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/01.jpg" alt="slide 01">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/02.jpg" alt="slide 02">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/03.jpg" alt="slide 03">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/04.jpg" alt="slide 04">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/05.jpg" alt="slide 05">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/06.jpg" alt="slide 06">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/07.jpg" alt="slide 07">
 		</div>
 		<div id="slides-overlay"></div>
 	</div>
