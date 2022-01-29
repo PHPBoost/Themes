@@ -31,13 +31,13 @@
 	</div>
 	<div id="slide-container">
 		<div id="slide-content">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_BF3.jpg" alt="Battelfield 3">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_DoW.jpg" alt="Dawn of War">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_Ghost.jpg" alt="Ghost Recon">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_GW2.jpg" alt="Guild Wars 2">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_ME.jpg" alt="Mass Effect">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_R6.jpg" alt="Rainbow 6">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/pics/ban_SC.jpg" alt="Splinter Cell">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/01.jpg" alt="Battelfield 3">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/02.jpg" alt="Dawn of War">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/03.jpg" alt="Ghost Recon">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/04.jpg" alt="Guild Wars 2">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/05.jpg" alt="Mass Effect">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/06.jpg" alt="Rainbow 6">
+			<img src="{PATH_TO_ROOT}/templates/{THEME}/images/slide/07.jpg" alt="Splinter Cell">
 		</div>
 		<div id="slides-overlay"></div>
 	</div>
