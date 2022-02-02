@@ -33,6 +33,8 @@
 #top-header a:hover,
 .breadcrumb-container a:hover { color: var(--txt-main); }
 
+#sub-header-content { padding-bottom: 0.618em; }
+
 #sub-header-content .cssmenu-horizontal { margin: auto; }
 
 #sub-header-content .cssmenu-horizontal > ul > li > .cssmenu-title {
@@ -69,7 +71,7 @@
 
 .cell-tile .cell > [class*="cell-"] { border-color: transparent; }
 
-section header h1, article header h1 {
+.section-header h1 {
     border-top: 1px solid var(--bdr-main);
     text-align: center;
     text-transform: uppercase;
@@ -78,7 +80,7 @@ section header h1, article header h1 {
     margin-top: 28px;
 }
 
-section header h1::before, article header h1::before {
+.section-header h1::before {
     background-color: var(--main-tone);
     height: 5px;
     width: 100px;
@@ -100,6 +102,9 @@ section header h1::before, article header h1::before {
     box-shadow: 0 0 3px 2px rgba(var(--darken), 0.15);
     padding: 0.618em;
     margin-bottom: 1.618em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bgc-main);
 }
 
 .prime-item {
@@ -131,6 +136,11 @@ section header h1::before, article header h1::before {
 }
 
 .sticky-menu { top: 40px; }
+
+/* --- modules --- */
+#module-mini-calendar .grouped-inputs { margin: 0.456em 0 !important; }
+
+.cell-mini #shoutbox-bbcode-container { margin: 0.456em 0 !important; }
 
 .fwkboost-toggle {
     top: 60px !important;

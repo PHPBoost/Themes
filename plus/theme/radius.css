@@ -8,12 +8,16 @@
     --radius : 0.618rem;
 }
 
+.dashboard-item.cell > [class*="cell-"] { border-radius: var(--radius); }
+
 .content-container { border-radius: var(--radius); }
 
 #breadcrumb { border-radius: var(--radius); }
 
 #menu-left .cell-mini .cell,
 #menu-right .cell-mini .cell { border-radius: var(--radius); }
+
+#global-container { border-radius: var(--radius); }
 
 #top-content { border-radius: var(--radius); }
 
@@ -61,10 +65,9 @@ input { border-radius: var(--radius); }
 .wizard-container .wizard-header li:last-child .active-step,
 .wizard-container .wizard-header li:last-child .completed-step { border-radius: 0 var(--radius) var(--radius) 0; }
 
-
 .table,
 .table-no-header,
-.calendar-table:not(.mini-calendar) {
+.calendar-table {
     border-radius: var(--radius);
     border-collapse: separate;
 }
@@ -100,13 +103,15 @@ thead th:last-child,
     .grouped-inputs .calendar-container:last-child > a {
         border-radius: 0 var(--radius) var(--radius) 0;
     }
+
+    #module-mini-langsswitcher .grouped-element { border-radius: var(--radius); }
 }
 
 select { border-radius: var(--radius); }
 
 .cssmenu-select .has-sub > .cssmenu-title { border-radius: var(--radius); }
 
-.grouped-element .cssmenu-select .has-sub > .cssmenu-title { border-radius: 0; }
+.grouped-element .cssmenu-select .has-sub > .cssmenu-title { border-radius: var(--radius); }
 
 .multiple-select-list { border-radius: var(--radius); }
 
@@ -129,7 +134,7 @@ textarea { border-radius: var(--radius); }
 
 .pagination ul:not(.light-pagination) a { border-radius: var(--radius); }
 
-.message-helper { border-radius: var(--radius); }
+/* .message-helper { border-radius: var(--radius); } */
 
 .sortable-element { border-radius: var(--radius); }
 
@@ -137,7 +142,7 @@ textarea { border-radius: var(--radius); }
 
 .sticky-menu { border-radius: var(--radius); }
 
-/* .cssmenu.cssmenu-group li:first-child .cssmenu-title { border-radius: var(--radius) 0 0 var(--radius); }
+.cssmenu.cssmenu-group li:first-child .cssmenu-title { border-radius: var(--radius) 0 0 var(--radius); }
 
 .cssmenu.cssmenu-group li:last-child .cssmenu-title { border-radius: 0 var(--radius) var(--radius) 0; }
 
@@ -159,26 +164,33 @@ textarea { border-radius: var(--radius); }
 .cssmenu.cssmenu-horizontal ul ul > li.current:first-child > .cssmenu-title { border-radius: 0 var(--radius) 0 0; }
 
 .cssmenu.cssmenu-horizontal ul ul > li:last-child:hover > .cssmenu-title,
-.cssmenu.cssmenu-horizontal ul ul > li.current:last-child > .cssmenu-title { border-radius: 0 0 0 var(--radius); } */
+.cssmenu.cssmenu-horizontal ul ul > li.current:last-child > .cssmenu-title { border-radius: 0 0 0 var(--radius); }
 
 .message-container .message-header-container { border-radius: var(--radius) var(--radius) 0 0; }
 
 .message-container [class*="message-"]:last-child { border-radius: 0 0 var(--radius) var(--radius); }
 
 /* cell-tile */
-.cell-tile [class*="cell-"]:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+/* .cell-mini .cell > [class*="cell-"]:first-child { border-radius: var(--radius) var(--radius) 0 0; }
 
-.cell-tile [class*="cell-"]:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+.cell-mini .cell > [class*="cell-"]:last-child { border-radius: 0 0 var(--radius) var(--radius); }
 
-.cell-tile [class*="cell-"] textarea { border-radius: 0 !important; }
+.cell-mini .cell > [class*="cell-"] textarea { border-radius: 0 !important; }
 
-.cell-tile [class*="cell-"] .grouped-inputs * { border-radius: 0 !important; }
+.cell-mini .cell > [class*="cell-"] .grouped-inputs * { border-radius: 0 !important; }
 
-.cell-tile [class*="cell-"] table * { border-radius: 0 !important; }
+.cell-mini .cell > [class*="cell-"] table * { border-radius: 0 !important; }
 
-.cell-tile [class*="cell-"].bbcode-container { border-radius: 0 !important; }
+.cell-mini .cell > [class*="cell-"].bbcode-container { border-radius: 0 !important; }
 
-.cell-tile [class*="cell-"]:only-child { border-radius: var(--radius); }
+.cell-mini [class*="cell-"]:only-child,
+.cell-mini .cell > [class*="cell-"]:only-child, { border-radius: var(--radius); }
+
+.cell-mini .grouped-element:last-child:not(:only-child):not(select),
+.cell-mini .grouped-element:last-child:not(:only-child):not(select) input,
+.cell-mini .grouped-inputs .calendar-container:last-child > a {
+  border-radius: 0;
+} */
 
 /* modules */
 .wiki-summary { border-radius: var(--radius); }
