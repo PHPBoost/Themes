@@ -97,7 +97,7 @@ body {
 
 .content-container header h2 { padding-left: 0.309em; }
 
-article[id*="-panel"] { margin-bottom: 1.618em; }
+.content-container { margin-bottom: 1.618em; }
 
 .single-item { padding: 0 0.309em; }
 
