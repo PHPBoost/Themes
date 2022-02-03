@@ -34,6 +34,10 @@ body {
 
 .content-wrapper { margin: auto; }
 
+#header, #global, #footer {
+  padding: 0 0.309em;
+}
+
 @media (min-width: 769px)  {
 	#header {
 		padding: 0;
