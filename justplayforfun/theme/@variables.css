@@ -14,6 +14,8 @@
     --bgc-main:  #FFFFFF;
     --bgc-rgb-s: 238, 238, 238;
     --bgc-sub:   #EEEEEE;
+    --bgc-rgb-a: 77, 76, 80;
+    --bgc-alt:  #4D4C50;
 
     --bdr-rgb-m: 189, 194, 201;
     --bdr-main:  #AAAAAA;
@@ -48,11 +50,11 @@
     --black-light: #666666;
 
 /* .link-color */
-    --main-rgb-d: rgb(60, 60, 60);
+    --main-rgb-d: 60, 60, 60;
     --main-dark:  #3C3C3C;
-    --main-rgb-t: rgb(102, 102, 102);
+    --main-rgb-t: 102, 102, 102;
     --main-tone:  #666666;
-    --main-rgb-l: rgb(136, 136, 136);
+    --main-rgb-l: 136, 136, 136;
     --main-light: #898989;
 
 /* .logo-color */
