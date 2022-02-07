@@ -8,7 +8,7 @@
 /* --- shape ---------------------------------------------------------------- */
 
 ::selection {
-	background-color: var(--main-tone);
+	background-color: var(--bgc-alt);
 	color: var(--txt-alt);
 }
 
@@ -27,20 +27,20 @@ body {
 
 #sub-header {
 	background-image: linear-gradient(rgba(var(--darken), 0), rgba(var(--darken), 0.4));
-	border-color: var(--bdr-alt);
+	border-color: var(--bdr-sub);
 }
 
 #menu-left,
 #menu-right { border-color: var(--main-light); }
 
 .bgc-main	{ background-color: var(--bgc-main); }
-.bgc-sub    { background-color: var(--bgc-alt); }
+.bgc-sub    { background-color: var(--bgc-sub); }
 .bgc-title	{ background-color: var(--main-light); color: var(--txt-alt); }
 
 #footer       { border-color: var(--main-tone); }
 .footer-infos { border-color: var(--main-tone); }
 
-.scroll-to   	 { background-color: var(--main-tone); }
+.scroll-to   	 { background-color: var(--bgc-alt); }
 .scroll-to:hover { background-color: var(--main-light); }
 .scroll-to i 	 { color: var(--txt-alt); }
 
@@ -48,12 +48,12 @@ body {
 
 /* --- Content -------------------------------------------------------------- */
 /* --- Cookies --- */
-.cookiebar-container { background-color: var(--bgc-alt); }
+.cookiebar-container { background-color: var(--bgc-sub); }
 
 /* --- Prime item --- */
 table tbody tr.prime-item td,
 .prime-item {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
 	color: var(--txt-alt);
 }
 
@@ -66,7 +66,7 @@ table tbody tr.prime-item td,
 }
 
 .pagination-item a:active {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
 	border-color: var(--bdr-main);
 }
 
@@ -95,7 +95,7 @@ table tbody tr.prime-item td,
 
 
 /* --- Progress bar --- */
-.progressbar-container { background-color: var(--bgc-alt); }
+.progressbar-container { background-color: var(--bgc-sub); }
 
 .progressbar-container .progressbar { background-color: var(--success-tone); }
 
@@ -130,7 +130,7 @@ table tbody tr.prime-item td,
 .sharing-element > a { color: var(--txt-alt); }
 
 .sharing-element-comments > a { background-color: var(--notice-tone); }
-.sharing-element-mail > a     { background-color: var(--main-tone); }
+.sharing-element-mail > a     { background-color: var(--bgc-alt); }
 .sharing-element-print > a    { background-color: var(--notice-tone); }
 .sharing-element-sms > a      { background-color: var(--notice-tone); }
 
@@ -199,7 +199,7 @@ table tbody tr.prime-item td,
 
 .button.submit,
 .submit {
-    background-color: var(--main-tone);
+    background-color: var(--bgc-alt);
     border-color: var(--main-tone);
 	color: var(--txt-alt);
 }
@@ -211,7 +211,7 @@ table tbody tr.prime-item td,
 }
 
 .button.submit:active,
-.submit:active { background-color: var(--main-tone); }
+.submit:active { background-color: var(--bgc-alt); }
 
 .button.alt-submit,
 .alt-submit {
@@ -385,9 +385,9 @@ table caption { border-color: var(--bdr-main); }
 
 thead th,
 .formatter-table .formatter-table-head {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
 	color: var(--txt-alt);
-	border-color: var(--bdr-alt);
+	border-color: var(--bdr-sub);
 }
 
 thead th a,
@@ -415,7 +415,7 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 
 .calendar-table a:hover { background-color: rgba(var(--main-rgb-t), 0.1); }
 
-.calendar-container > a { background-color: var(--bgc-alt); }
+.calendar-container > a { background-color: var(--bgc-sub); }
 
 /* --- Font Awesome icons --------------------------------------------------- */
 .user-locked .fa-user-lock:before   { color: var(--error-tone); }
@@ -438,11 +438,11 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 }
 
 .formatter-content {
-	background-color: rgba(var(--bgc-rgb-a), 0.2);
+	background-color: rgba(var(--bgc-rgb-s), 0.2);
 	border-color: var(--bdr-main);
 }
 
-pre[style*="display:inline"] { background-color: var(--bgc-alt); }
+pre[style*="display:inline"] { background-color: var(--bgc-sub); }
 
 h2.formatter-title,
 h3.formatter-title { border-color: var(--main-tone); }
@@ -467,8 +467,8 @@ h3.formatter-title { border-color: var(--main-tone); }
 	background-color: var(--bgc-main);
 	box-shadow: 0 0 10px rgba(var(--main-rgb-t), 0.1);
 }
-#header .cssmenu.small-screen ul { background-color: var(--bgc-alt); color: var(--txt-alt); }
-#header .cssmenu ul ul { background-color: var(--bgc-alt); }
+#header .cssmenu.small-screen ul { background-color: var(--bgc-sub); color: var(--txt-alt); }
+#header .cssmenu ul ul { background-color: var(--bgc-sub); }
 #header a.cssmenu-title { color: var(--main-light); }
 #header a.cssmenu-title:hover { color: var(--main-tone); }
 
@@ -662,7 +662,7 @@ a[class*='lightcase-icon-']:hover {
 }
 
 /* sticky */
-#sub-header.sticking { background-color: var(--bgc-alt); }
+#sub-header.sticking { background-color: var(--bgc-sub); }
 
 /* -- global ---------------------------------------------------------------- */
 a,
@@ -674,7 +674,7 @@ a,
 .bgc.link-color { background-color: rgba(var(--main-rgb-t), 0.2);}
 
 .bgc-full.link-color {
-	background-color: var(--main-tone);
+	background-color: var(--bgc-alt);
 	color: var(--txt-alt)
 }
 
@@ -734,7 +734,7 @@ a.wikipedia-link { border-bottom-color: var(--main-tone); }
 
 /* --- cell --- */
 .cell-tile .cell .cell-header {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
 	border-color: var(--bdr-main);
 	color: var(--txt-alt);
 }
@@ -768,7 +768,7 @@ a.cell-thumbnail-caption {
 .cell-layout .cell-thumbnail-caption a:hover { color: var(--main-tone); }
 
 .item-category:not(.pinned-category) {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
 	color: var(--main-light);
 }
 

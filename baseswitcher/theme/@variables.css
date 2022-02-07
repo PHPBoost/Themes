@@ -20,13 +20,13 @@
 
     --bgc-rgb-m: 255, 255, 255;
     --bgc-main:  #FFFFFF;
-    --bgc-rgb-a: 236, 242, 249;
-    --bgc-alt:   #ECF2F8;
+    --bgc-rgb-s: 236, 242, 249;
+    --bgc-sub:   #ECF2F8;
 
     --bdr-rgb-m: 189, 194, 201;
     --bdr-main:  #BDC2C9;
-    --bdr-rgb-a: 187, 217, 245;
-    --bdr-alt:   #BCD9F5;
+    --bdr-rgb-s: 187, 217, 245;
+    --bdr-sub:   #BCD9F5;
 
     --darken :   0, 0, 0;
     --lighten:   255, 255, 255;
@@ -149,13 +149,13 @@
 
     --bgc-rgb-m: 32, 58, 84;
     --bgc-main:  #203A54;
-    --bgc-rgb-a: 54, 100, 147;
-    --bgc-alt:   #366493;
+    --bgc-rgb-s: 54, 100, 147;
+    --bgc-sub:   #366493;
 
     --bdr-rgb-m: 187, 217, 245;
     --bdr-main:  #BCD9F5;
-    --bdr-rgb-a: 1, 72, 119;
-    --bdr-alt:   #014877;
+    --bdr-rgb-s: 1, 72, 119;
+    --bdr-sub:   #014877;
 
 /* .main - .link-color */
     --main-rgb-d: 26, 46, 68;

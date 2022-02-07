@@ -7,7 +7,7 @@
 
  /* --- dashboard_shape.css --- */
 body {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
     color: var(--txt-main);
 }
 
@@ -23,7 +23,7 @@ a:hover, .link-color:hover {
 
  	#header-admin {
 		background-image: linear-gradient(to bottom, var(--main-darker) 0%, var(--main-dark) 100%);
-		background-color: var(--main-tone);
+		background-color: var(--bgc-alt);
 		color: var(--txt-alt);
  	}
 
@@ -57,7 +57,7 @@ a:hover, .link-color:hover {
 
 /* --- Table --- */
 table thead th {
-	background-color: var(--main-tone);
+	background-color: var(--bgc-alt);
 	color: var(--txt-alt);
 }
 
@@ -107,7 +107,7 @@ table thead th a { color: var(--txt-alt); }
 [type=password],
 [type=file],
 textarea,
-select { background-color: var(--bgc-alt); }
+select { background-color: var(--bgc-sub); }
 
 [type=text]:hover,
 [type=email]:hover,
@@ -136,13 +136,13 @@ select:focus { background-color: var(--bgc-main); }
 [disabled],
 [disabled]:hover,
 [readonly],
-[readonly]:hover { background-color: var(--bgc-alt); }
+[readonly]:hover { background-color: var(--bgc-sub); }
 
 /* --- Checkbox --- */
 .mini-checkbox .checkbox [type="checkbox"] + span::before {
 	background-color: var(--bgc-main);
 	box-shadow: 0 0 1px 2px rgba(var(--darken), 0.25);
-	border-color: var(--bdr-alt);
+	border-color: var(--bdr-sub);
 }
 
 .mini-checkbox .checkbox [type="checkbox"]:checked + span::after { color: var(--main-tone); }
@@ -169,19 +169,19 @@ select:focus { background-color: var(--bgc-main); }
 
 .custom-radio .radio [type="radio"]:not(:checked) + span:after,
 .custom-radio .radio [type="radio"]:checked + span:after {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-sub);
 	background-image: linear-gradient(to bottom, rgba(var(--lighten), 0.18) 0%, rgba(var(--darken), 0.1) 100%);
 }
 
 .custom-radio .radio [type="radio"]:checked + span:after {
-	background-color: var(--main-tone);
+	background-color: var(--bgc-alt);
 	background-image: linear-gradient(to bottom, rgba(var(--lighten), 0.18) 0%, rgba(var(--darken), 0.1) 100%);
 }
 
 /* --- Lined textarea --- */
-.linedtextarea { background-color: var(--bgc-alt); }
+.linedtextarea { background-color: var(--bgc-sub); }
 
-.linedwrap .lines { background-color: var(--bgc-alt); }
+.linedwrap .lines { background-color: var(--bgc-sub); }
 
 /* -- AdminMenu ModalMenu CssMenu ------------------------------------------- */
 

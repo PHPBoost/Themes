@@ -23,7 +23,7 @@
 
 #top-header,
 .breadcrumb-container {
-    background-color: var(--main-tone);
+    background-color: var(--bgc-alt);
     color: var(--txt-alt);
 }
 
@@ -81,7 +81,7 @@
 }
 
 .section-header h1::before {
-    background-color: var(--main-tone);
+    background-color: var(--bgc-alt);
     height: 5px;
     width: 100px;
     left: 50%;
