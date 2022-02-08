@@ -1,0 +1,39 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+#header [type="search"],
+#header [type="text"],
+#header [type="password"] {
+    border-width: 0 0 2px 0;
+    border-color: var(--main-tone);
+}
+
+#main {
+    background-color: var(--bgc-main);
+    color: var(--txt-main);
+    padding: 0 1.618em;
+}
+
+aside[id^="menu-"] {
+    background-color: var(--bgc-sub);
+    border: 1px solid rgba(var(--darken), 0.3);
+    margin: 0 !important;
+}
+
+#menu-left { border-width: 1px 0 1px 3px; }
+#menu-right { border-width: 1px 3px 1px 0; }
+
+/* --- cell --- */
+.cell-mini-vertical.cell-mini .cell { padding: 0.618em; }
+
+.cell-mini-vertical.cell-mini .cell > [class*="cell-"] { border-color: transparent; }
+
+.cell-mini-vertical.cell-mini .cell > [class*="cell-"]:last-child,
+.cell-mini-vertical.cell-mini .cell-name {
+    border-color: var(--bdr-main);
+    border-width: 0 0 1px;
+    border-style: solid;
+}
