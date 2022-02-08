@@ -2,9 +2,6 @@
 .several-items { margin-top: 1.618em; }
 .cell-mini .cell-header { text-transform: uppercase; }
 
-/* content */
-#visit-counter { top: 1.618em; }
-
 /* cssmenu */
 #sub-header .cssmenu { float: left; }
 #sub-header .cssmenu > ul > li > .cssmenu-title { line-height: 3.309rem; }

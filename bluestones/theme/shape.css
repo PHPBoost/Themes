@@ -41,7 +41,10 @@ body {
 .content-wrapper { margin: auto; }
 
 @media (min-width: 769px)  {
-	#header { padding: 0; }
+	#header {
+		padding: 0;
+		position: relative;
+	}
 
 	#top-header,
 	#inner-header,
@@ -80,7 +83,7 @@ body {
 #visit-counter {
 	position: absolute;
 	right: 1.618em;
-	top : 92.5%;
+	top : 90%;
 	font-size: 0.9em;
 	text-align: right;
 	min-width: 150px;
