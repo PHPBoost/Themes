@@ -1,0 +1,49 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+.component-mini-sandbox .stacked .stack-event.stack-sup { top: -0.456em; }
+
+.sandbox-mini-form fieldset,
+.sandbox-mini-form .fieldset-inset {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.sandbox-mini-form .button.submit,
+.sandbox-mini-form .button.submit:hover,
+.sandbox-mini-form .button.submit:active {
+    text-align: left;
+    width: 100%
+}
+
+.sandbox-mini-form { margin: -0.618em 0 -0.618em -1.618em;}
+
+.sandbox-mini-form span { display: inline-block; }
+
+/* --- Toggle button position --- */
+
+.fwkboost-toggle {
+    padding: 0.618em;
+    text-align: center;
+    z-index: 399;
+    cursor: pointer;
+    text-decoration: none;
+    position: fixed;
+    top: 5.228em;
+    right: 0;
+	opacity: 0.3;
+    border-radius: 50% 0 0 50%;
+}
+
+.fwkboost-toggle span { display: none; }
+
+.fwkboost-toggle:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.nav-item .mini-toolbox > .warning.blink { margin-right: 1.618em;}
