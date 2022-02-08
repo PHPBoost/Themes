@@ -1,0 +1,118 @@
+.unslider {
+	position: relative;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	max-height: 400px;
+	box-shadow: 0px 0px 4px 0px rgba(var(--darken), 1);
+}
+
+.unslider-wrap { position: relative }
+
+.unslider-wrap.unslider-carousel>li { float: left }
+
+.unslider-vertical>ul { height: 100% }
+
+.unslider-vertical li {
+	float: none;
+	width: 100%
+}
+
+.unslider-fade { position: relative }
+
+.unslider-fade .unslider-wrap li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 8;
+}
+
+.unslider-fade .unslider-wrap li.unslider-active{ z-index: 10 }
+
+.unslider li,
+.unslider ol,
+.unslider ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-shadow: 0px 0px 10px 1px rgba(var(--darken), 1) !important;
+}
+
+.unslider-arrow {
+	position: absolute;
+	left: 1.618em;
+	z-index: 2;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 25px;
+	color: rgba(var(--main-rgb-t), 0.4);
+}
+
+.unslider-arrow.unslider-next {
+	left: auto;
+	right: 1.618em;
+}
+
+.unslider .img-shadow {
+	position: relative;
+	max-width: 100%;
+	float: left;
+}
+
+.unslider .img-shadow::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: inset 0 0 8px rgba(0,0,0,.6);
+}
+
+.unslider .img-shadow img {
+	float: left;
+}
+
+.unslider li p {
+	font-size: 38px;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #000;
+}
+
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider-nav ol {
+	display: none;
+}
+
+.unslider-nav ol li {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 4px;
+	background: transparent;
+	border-radius: 5px;
+	overflow: hidden;
+	text-indent: -999em;
+	border: 2px solid var(--bdr-main);
+	cursor: pointer;
+}
+
+.unslider-nav ol li.unslider-active {
+	background-color: background-color: var(--bgc-main);
+	cursor: default;
+}
