@@ -43,6 +43,15 @@ body {
 	#footer { padding: 0 1.618em; }
 }
 
+/* --- Visits counter --- */
+#visit-counter {
+	position: absolute;
+	right: 1.618em;
+	top : 92.5%;
+	font-size: 0.9em;
+	text-align: right;
+	min-width: 150px;
+}
 
 /* --- Header --------------------------------------------------------------- */
 #header { position: relative; }

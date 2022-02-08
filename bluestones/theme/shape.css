@@ -76,6 +76,16 @@ body {
     clear: both;
 }
 
+/* --- Visits counter --- */
+#visit-counter {
+	position: absolute;
+	right: 1.618em;
+	top : 92.5%;
+	font-size: 0.9em;
+	text-align: right;
+	min-width: 150px;
+}
+
 /* --- Header --------------------------------------------------------------- */
 #header {
 	background-repeat: no-repeat;
