@@ -7,7 +7,7 @@
 @import url('../../__default__/theme/linedwrap.css') screen;
 @import url('../../__default__/theme/cookies.css') screen;
 
-@import url('../../alive/theme/shape.css') screen;
+@import url('../../gaming/theme/shape.css') screen;
 
 @import url('../../gaming-blue/theme/@variables.css') screen;
 @import url('../../__default__/theme/form.css') screen;
@@ -39,5 +39,5 @@
 
 @import url('../../__default__/theme/colors.css') screen;
 
-@import url('../../gaming-blue/theme/gaming-blue.css') screen;
-@import url('../../gaming-blue/theme/unslider.css') screen;
+@import url('../../gaming/theme/gaming.css') screen;
+@import url('../../gaming/theme/unslider.css') screen;
