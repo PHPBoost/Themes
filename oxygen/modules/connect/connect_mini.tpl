@@ -206,7 +206,7 @@
 						</li>
 						# START additional_menus #
 							# IF additional_menus.C_DISPLAY #
-								<li class="# IF C_VERTICAL #li-stretch # ELSE #li-spaced # ENDIF #connect-{additional_menus.MENU_NAME}">
+								<li class="li-stretch connect-{additional_menus.MENU_NAME}">
 									<a href="{additional_menus.URL}" class="offload# IF additional_menus.C_UNREAD_ELEMENTS # connect-alert blink# ENDIF #" aria-label="{additional_menus.LABEL}">
 										<span # IF additional_menus.C_UNREAD_ELEMENTS #class="stacked {additional_menus.LEVEL_CLASS}"# ENDIF #>
 											<i class="fa-fw# IF additional_menus.C_ICON # {additional_menus.ICON}# ELSE # far fa-file-alt# ENDIF #" aria-hidden="true"></i>
