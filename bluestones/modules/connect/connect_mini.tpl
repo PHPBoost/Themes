@@ -114,6 +114,16 @@
 								<span class="stack-event stack-circle stack-sup stack-right bgc moderator">{UNREAD_CONTRIBUTIONS_NUMBER}</span>
 							</span>
 						# ENDIF #
+						# START additional_menus #
+							# IF additional_menus.C_DISPLAY #
+								# IF additional_menus.C_UNREAD_ELEMENTS #
+									<span class="stacked {additional_menus.LEVEL_CLASS}">
+										<i class="fa-fw# IF additional_menus.C_ICON # {additional_menus.ICON}# ELSE # far fa-file-alt# ENDIF #" aria-hidden="true"></i>
+										<span class="stack-event stack-circle stack-sup stack-right bgc {additional_menus.LEVEL_CLASS} blink">{additional_menus.UNREAD_ELEMENTS_NUMBER}</span>
+									</span>
+								# ENDIF #
+							# ENDIF #
+						# END additional_menus #
 					</a>
 				<div class="cell-list connected-contents connect-container">
 			# ENDIF #
@@ -168,6 +178,19 @@
 									 <span>{@user.contribution.panel}</span>
 								</a>
 							</li>
+							# START additional_menus #
+								# IF additional_menus.C_DISPLAY #
+									<li class="li-stretch connect-{additional_menus.MENU_NAME}">
+										<span # IF additional_menus.C_UNREAD_ELEMENTS #class="stacked {additional_menus.LEVEL_CLASS}"# ENDIF #>
+											<i class="fa-fw# IF additional_menus.C_ICON # {additional_menus.ICON}# ELSE # far fa-file-alt# ENDIF #" aria-hidden="true"></i>
+											# IF additional_menus.C_UNREAD_ELEMENTS #<span class="stack-event stack-circle stack-sup stack-right bgc {additional_menus.LEVEL_CLASS} blink">{additional_menus.UNREAD_ELEMENTS_NUMBER}</span># ENDIF #
+										</span>
+										<a href="{additional_menus.URL}" class="offload">
+											<span>{additional_menus.LABEL}</span>
+										</a>
+									</li>
+								# ENDIF #
+							# END additional_menus #
 							<li class="li-stretch connect-disconnect">
 								<i class="fa fa-fw fa-sign-out-alt" aria-hidden="true"></i>
 								<a class="offload" href="${relative_url(UserUrlBuilder::disconnect())}">
