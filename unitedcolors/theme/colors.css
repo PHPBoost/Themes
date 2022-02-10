@@ -548,34 +548,34 @@ h3.formatter-title { border-color: rgba(var(--darken), 0.2); }
 
 .pushmenu .nav-container { background-color: var(--bgc-main); }
 
-.pushmenu .nav-item { border-color: rgba(var(--lighten), 0.2); }
+.pushmenu .nav-item-link { border-color: rgba(var(--lighten), 0.2); }
 
 .pushmenu.rtl a.nav-next,
 a.nav-next { border-color: rgba(var(--lighten), 0.2); }
 
-.pushmenu .nav-item .button.submit,
-.pushmenu .nav-item .button.submit:hover,
-.pushmenu .nav-item .button.submit:active {
+.pushmenu .nav-item-link .button.submit,
+.pushmenu .nav-item-link .button.submit:hover,
+.pushmenu .nav-item-link .button.submit:active {
     background-color: transparent;
     border-width: 0;
 	color: rgba(var(--lighten), 0.7);
 }
 
-.pushmenu .nav-item .button.submit:hover { color: rgba(var(--darken), 0.7); }
+.pushmenu .nav-item-link .button.submit:hover { color: rgba(var(--darken), 0.7); }
 
-.pushmenu:not(.touch-device) .nav-item:hover { background-color: rgba(var(--darken), 0.2); }
+.pushmenu:not(.touch-device) .nav-item-link:hover { background-color: rgba(var(--darken), 0.2); }
 
-.pushmenu li.nav-close a,
-.pushmenu li.nav-back a {
+.pushmenu .nav-close a,
+.pushmenu .nav-back a {
     background-color: rgba(var(--darken), 0.2);
 }
 
-.pushmenu li.nav-close span::before,
-.pushmenu li.nav-close span::after { border-color: rgba(var(--lighten), 0.4); }
+.pushmenu .nav-close span::before,
+.pushmenu .nav-close span::after { border-color: rgba(var(--lighten), 0.4); }
 
 .pushmenu a[href]:not([href="#"])>span.nav-next { border-color: rgba(var(--lighten), 0.4); }
 .pushmenu .nav-next span::before,
-.pushmenu li.nav-back span::before { border-color: rgba(var(--lighten), 0.4); }
+.pushmenu .nav-back span::before { border-color: rgba(var(--lighten), 0.4); }
 
 .nav-levels-overlap.nav-position-left.nav-open .nav-wrapper   { box-shadow: 1px 0 2px rgba(var(--darken), 0.2); }
 .nav-levels-overlap.nav-position-right.nav-open .nav-wrapper  { box-shadow: -1px 0 2px rgba(var(--darken), 0.2); }
@@ -593,14 +593,14 @@ a.nav-next { border-color: rgba(var(--lighten), 0.2); }
     background-color: transparent;
 }
 
-.pushmenu.nav-levels-expand .nav-container li.level-open > .nav-item,
-.pushmenu.nav-levels-none .nav-container li.level-open > .nav-item { background-color: rgba(var(--darken), 0.2); }
+.pushmenu.nav-levels-expand .nav-container .level-open > .nav-item-link,
+.pushmenu.nav-levels-none .nav-container .level-open > .nav-item-link { background-color: rgba(var(--darken), 0.2); }
 
-.pushmenu.nav-levels-expand .nav-container li.level-open .nav-item-wrapper > a,
-.pushmenu.nav-levels-none .nav-container li.level-open .nav-item-wrapper > a { border-color: rgba(var(--lighten), 0.2); }
+.pushmenu.nav-levels-expand .nav-container .level-open .nav-item-wrapper > a,
+.pushmenu.nav-levels-none .nav-container .level-open .nav-item-wrapper > a { border-color: rgba(var(--lighten), 0.2); }
 
-.pushmenu.nav-levels-expand .nav-container li.level-open .nav-item-wrapper > a:hover,
-.pushmenu.nav-levels-none .nav-container li.level-open .nav-item-wrapper > a:hover { background-color: rgba(var(--darken), 0.2); }
+.pushmenu.nav-levels-expand .nav-container .level-open .nav-item-wrapper > a:hover,
+.pushmenu.nav-levels-none .nav-container .level-open .nav-item-wrapper > a:hover { background-color: rgba(var(--darken), 0.2); }
 
 .nav-levels-overlap .nav-wrapper { background-color: var(--bgc-main); }
 
