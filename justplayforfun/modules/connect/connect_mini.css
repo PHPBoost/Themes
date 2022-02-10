@@ -64,12 +64,11 @@
 	top: 200%;
 	left: 0;
 	opacity: 0;
-	visibility: hidden;
 	width: 100%;
 	min-width: 200px;
-	z-index: 200;
+	z-index: -1;
 	background-color: var(--black-tone);
-	transition: top 0.5s;
+	transition: all 0.5s;
 }
 
 .connect-container-horizontal li:last-child {
@@ -78,8 +77,9 @@
 
 .active-connect .connect-container-horizontal {
 	opacity: 1;
-	visibility: visible;
 	top: 100%;
+	z-index: 200;
+	transition: all 0.5s;
 }
 
 .active-connect .js-menu-button,
