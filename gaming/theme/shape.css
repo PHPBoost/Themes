@@ -79,7 +79,7 @@ body {
     top: 200%;
     left: 0;
     right: 0;
-    pointer-events: none;
+	z-index: -1;
     padding: 0.618em 0;
     opacity: 0;
     transition: all 0.5s;
@@ -88,10 +88,9 @@ body {
 #menus-trigger { cursor: pointer; }
 
 #header-container.active-menus #menus-container {
-    opacity: 1;
     top: 100%;
     z-index: 500;
-    pointer-events: auto;
+    opacity: 1;
     transition: all 0.5s;
 }
 
@@ -194,11 +193,20 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
+    position: relative;
+    z-index: 2;
+}
+
+#gaming-carousel { max-height: 260px;}
+
+@media (min-width: 1025px) {
+    #gaming-carousel { max-height: 320px;}
 }
 
 #main {
 	width: 100%;
 	order : 1;
+	padding: 0 0.309em;
 }
 
 #menu-left,
@@ -210,25 +218,27 @@ body {
 	#global-container { flex-direction: row; }
 
 	#menu-left,
-	#menu-right { width: calc(100% / 13 * 3.5); }
-
+	#menu-right {
+		width: calc(100% / 13 * 3.5);
+	    border-width: 1px;
+		border-style: solid;
+	}
+	
 	#menu-left  {
-		margin-right: 1.618em;
 		order : 1;
+		border-width: 1px 0 1px 3px;
 	}
 
 	#menu-right {
-		margin-left: 1.618em;
 		order : 3;
+		border-width: 1px 3px 1px 0;
 	}
 
 	#menu-left.narrow-menu-left,
 	#menu-right.narrow-menu-right { width: calc(100% / 13 * 2.5); }
-	#menu-left.narrow-menu-left   { margin-right: 0.809em; }
-	#menu-right.narrow-menu-right { margin-left: 0.809em; }
 
 	#main {
-		padding: 0 0 1.618em;
+    	padding: 0 1.618em;
 		order : 2;
 		flex: 1 0 auto;
 	}

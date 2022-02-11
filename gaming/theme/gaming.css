@@ -4,13 +4,7 @@
  *
 */
 
-#header [type="search"],
-#header [type="text"],
-#header [type="password"] {
-    border-width: 0 0 2px 0;
-    border-color: var(--main-tone);
-}
-
+/* --- shape --- */
 #header-container { background-color: var(--bgc-main); }
 
 #menus-container {
@@ -20,30 +14,23 @@
 
 #menus-trigger:hover { color: var(--main-tone); }
 
-#gaming-carousel { max-height: 260px;}
-@media (min-width: 1025px) {
-    #gaming-carousel { max-height: 320px;}
-}
-
-#global-container {
-    position: relative;
-    z-index: 2;
+aside[id^="menu-"] {
+    background-color: var(--bgc-sub);
+    border-color: rgba(var(--darken), 0.3);
 }
 
 #main {
     background-color: var(--bgc-main);
     color: var(--txt-main);
-    padding: 0 1.618em;
 }
 
-aside[id^="menu-"] {
-    background-color: var(--bgc-sub);
-    border: 1px solid rgba(var(--darken), 0.3);
-    margin: 0 !important;
+/* --- inputs --- */
+#header [type="search"],
+#header [type="text"],
+#header [type="password"] {
+    border-width: 0 0 2px 0;
+    border-color: var(--main-tone);
 }
-
-#menu-left { border-width: 1px 0 1px 3px; }
-#menu-right { border-width: 1px 3px 1px 0; }
 
 /* --- cell --- */
 .cell-mini-vertical.cell-mini .cell { padding: 0.618em; }
