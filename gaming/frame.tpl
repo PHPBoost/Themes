@@ -52,8 +52,6 @@
 			# INCLUDE BODY #
 		</div>
 		# INCLUDE JS_BOTTOM #
-		<script src="{PATH_TO_ROOT}/templates/gaming/js/unslider# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
 		<script src="{PATH_TO_ROOT}/templates/gaming/js/gaming# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-		<script>jQuery('.unslider').unslider();</script>
 	</body>
 </html>
