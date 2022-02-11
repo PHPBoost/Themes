@@ -20,6 +20,16 @@
 
 #menus-trigger:hover { color: var(--main-tone); }
 
+#gaming-carousel { max-height: 260px;}
+@media (min-width: 1025px) {
+    #gaming-carousel { max-height: 320px;}
+}
+
+#global-container {
+    position: relative;
+    z-index: 2;
+}
+
 #main {
     background-color: var(--bgc-main);
     color: var(--txt-main);

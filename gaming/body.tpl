@@ -43,15 +43,13 @@
 		</div>
 	</div>
 </header>
-<div class="unslider">
-	<ul>
-		<li class="img-shadow"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/1.jpg"></li>
-		<li class="img-shadow"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/2.jpg"></li>
-		<li class="img-shadow"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/3.jpg"></li>
-		<li class="img-shadow"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/4.jpg"></li>
-	</ul>
-</div>
 <div id="global" class="content-preloader" role="main">
+	<div id="gaming-carousel">
+		<a href="{PATH_TO_ROOT}/"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/1.jpg"></a>
+		<a href="{PATH_TO_ROOT}/"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/2.jpg"></a>
+		<a href="{PATH_TO_ROOT}/"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/3.jpg"></a>
+		<a href="{PATH_TO_ROOT}/"><img src="{PATH_TO_ROOT}/templates/{THEME}/slider/4.jpg"></a>
+	</div>
 	<div id="global-container" class="content-wrapper">
 		# IF C_MENUS_LEFT_CONTENT #
 			<aside id="menu-left"# IF C_MENUS_RIGHT_CONTENT # class="narrow-menu-left"# ENDIF #>
