@@ -7,6 +7,8 @@
 :root {
     --txt-rgb-m: 187, 187, 187;
     --txt-main:  #BBBBBB;
+    --txt-rgb-: 187, 187, 187;
+    --txt-sub:  #BBBBBB;
     --txt-rgb-a: 255, 255, 255;
     --txt-alt:   #FFFFFF;
 
@@ -14,11 +16,15 @@
     --bgc-main:  #203A54;
     --bgc-rgb-s: 54, 100, 147;
     --bgc-sub:   #366493;
+    --bgc-rgb-a: 83, 145, 193;
+    --bgc-alt:   #5391C0;
 
     --bdr-rgb-m: 187, 217, 245;
     --bdr-main:  #BCD9F5;
     --bdr-rgb-s: 1, 72, 119;
     --bdr-sub:   #014877;
+    --bdr-rgb-a: 83, 145, 193;
+    --bdr-alt:   #5391C0;
 
     --darken :   0, 0, 0;
     --lighten:   255, 255, 255;

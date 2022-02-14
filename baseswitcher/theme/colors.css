@@ -21,8 +21,8 @@ body {
 .bgc-sub    { background-color: var(--bgc-sub); color: var(--ant-main); }
 .bgc-title	{ background-color: var(--main-light); color: var(--ant-main); }
 
-#footer       { border-color: var(--main-tone); }
-.footer-infos { border-color: var(--main-tone); }
+#footer       { border-color: var(--bdr-alt); }
+.footer-infos { border-color: var(--bdr-alt); }
 
 .scroll-to   	 { background-color: var(--bgc-alt); }
 .scroll-to:hover { background-color: var(--main-light); }
@@ -53,7 +53,7 @@ table tbody tr.prime-item td,
 }
 
 .pagination-item a.current-page {
-	border-color: var(--main-tone);
+	border-color: var(--bdr-alt);
 	background-color: rgba(var(--main-rgb-t), 0.3);
 }
 
@@ -116,7 +116,7 @@ table tbody tr.prime-item td,
 .sharing-element-sms > a      { background-color: var(--notice-tone); }
 
 .sharing-element-comments > a:hover { border-color: var(--notice-tone); color: var(--notice-tone); background-color: rgba(var(--notice-rgb-t), 0.4); }
-.sharing-element-mail > a:hover     { border-color: var(--main-tone); color: var(--main-tone); background-color: rgba(var(--main-rgb-t), 0.4); }
+.sharing-element-mail > a:hover     { border-color: var(--bdr-alt); color: var(--main-tone); background-color: rgba(var(--main-rgb-t), 0.4); }
 .sharing-element-print > a:hover    { border-color: var(--notice-tone); color: var(--notice-tone); background-color: rgba(var(--notice-rgb-t), 0.4); }
 .sharing-element-sms > a:hover      { border-color: var(--notice-tone); color: var(--notice-tone); background-color: rgba(var(--notice-rgb-t), 0.4); }
 
@@ -135,7 +135,7 @@ table tbody tr.prime-item td,
 /* --- Form ----------------------------------------------------------------- */
 .button {
 	background-color: var(--bgc-main);
-	border-color: var(--main-tone);
+	border-color: var(--bdr-alt);
 	color: var(--main-tone);
 }
 
@@ -181,7 +181,7 @@ table tbody tr.prime-item td,
 .button.submit,
 .submit {
     background-color: var(--bgc-alt);
-    border-color: var(--main-tone);
+    border-color: var(--bdr-alt);
 	color: var(--ant-alt);
 }
 
@@ -290,7 +290,7 @@ select:focus { background-color: var(--bgc-sub); }
 	background-color: var(--bgc-main);
 }
 
-.dnd-dropzone.dragover { border-color: var(--main-tone); }
+.dnd-dropzone.dragover { border-color: var(--bdr-alt); }
 
 .ulist li {
     background-color: var(--bgc-main);
@@ -368,7 +368,7 @@ thead th,
 .formatter-table .formatter-table-head {
 	background-color: var(--bgc-alt);
 	color: var(--ant-alt);
-	border-color: var(--main-tone);
+	border-color: var(--bdr-alt);
 }
 
 thead th a,
@@ -432,7 +432,7 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 pre[style*="display:inline"] { background-color: var(--bgc-sub); color: var(--txt-alt); }
 
 h2.formatter-title,
-h3.formatter-title { border-color: var(--main-tone); }
+h3.formatter-title { border-color: var(--bdr-alt); }
 
 .copy-code-content span[style*="color: #0000FF;"] {color: var(--notice-tone) !important;}
 .copy-code-content span[style*="color: #000080;"] {color: #91367a !important;}
@@ -459,7 +459,7 @@ h3.formatter-title { border-color: var(--main-tone); }
 	.cssmenu ul > li:hover > .cssmenu-title  { background-color: rgba(var(--main-rgb-t), 0.1); }
 	.cssmenu ul > li.current > .cssmenu-title  { background-color: rgba(var(--main-rgb-t), 0.1); }
 
-	.cssmenu-group .cssmenu-title { border-color: var(--main-tone); }
+	.cssmenu-group .cssmenu-title { border-color: var(--bdr-alt); }
 
 	.cssmenu-group .cssmenu-title:hover  { border-color: var(--main-light); }
 }
@@ -617,7 +617,7 @@ a[class*='lightcase-icon-']:hover {
 
 /* --- plugins --- */
 .accordion-container > .accordion-nav > ul > li > a {
-    border-color: var(--main-tone);
+    border-color: var(--bdr-alt);
     background-color: rgba(var(--main-rgb-t), 0.2);
 }
 
@@ -680,7 +680,7 @@ a[class*='lightcase-icon-']:hover {
 a,
 .link-color {
 	color: var(--main-tone);
-	border-color: var(--main-tone);
+	border-color: var(--bdr-alt);
 }
 
 .bgc.link-color { background-color: rgba(var(--main-rgb-t), 0.2);}
@@ -705,7 +705,7 @@ a,
 a:hover,
 .link-color:hover {
 	color: var(--main-light);
-	border-color: var(--main-tone);
+	border-color: var(--bdr-alt);
 }
 
 .link-color-alt {

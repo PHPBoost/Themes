@@ -7,6 +7,8 @@
 :root {
     --txt-rgb-m: 221, 221, 221;
     --txt-main:   #DDDDDD;
+    --txt-rgb-s: 221, 221, 221;
+    --txt-sub:   #DDDDDD;
     --txt-rgb-a: 230, 230, 230;
     --txt-alt:  #E6E6E6;
 
