@@ -183,7 +183,7 @@ textarea { border-radius: var(--radius); }
 .cell-mini .cell > [class*="cell-"].bbcode-container { border-radius: 0 !important; }
 
 .cell-mini [class*="cell-"]:only-child,
-.cell-mini .cell > [class*="cell-"]:only-child, { border-radius: var(--radius); }
+.cell-mini .cell > [class*="cell-"]:only-child { border-radius: var(--radius); }
 
 .cell-mini .grouped-element:last-child:not(:only-child):not(select),
 .cell-mini .grouped-element:last-child:not(:only-child):not(select) input,
