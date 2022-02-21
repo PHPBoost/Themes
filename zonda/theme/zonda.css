@@ -74,10 +74,6 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
     border-color: var(--bdr-sub);
 }
 
-.cell-mini select:not(.grouped-element) {
-    width: 100%;
-}
-
 /* Cssmenu */
 .cssmenu:not(.cssmenu-static) ul ul,
 .cssmenu-actionslinks > ul {

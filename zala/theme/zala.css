@@ -68,7 +68,3 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
     background-color: var(--bgc-sub);
     border-color: var(--bdr-sub);
 }
-
-.cell-mini select:not(.grouped-element) {
-    width: 100%;
-}
