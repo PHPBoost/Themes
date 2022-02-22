@@ -44,10 +44,10 @@
 	<div id="head-banner"></div>
 </header>
 
-<div id="global">
+<main id="global">
 	<div id="global-container" class="content-wrapper">
 		# IF C_MENUS_LEFT_CONTENT #
-			<aside id="menu-left"# IF C_MENUS_RIGHT_CONTENT # class="narrow-menu-left"# ENDIF #>
+			<aside id="menu-left" class="aside-menu# IF C_MENUS_RIGHT_CONTENT # narrow-menu narrow-menu-left# ENDIF #">
 				# START menus_left #
 				{menus_left.MENU}
 				# END menus_left #
@@ -80,7 +80,7 @@
 		</div>
 
 		# IF C_MENUS_RIGHT_CONTENT #
-		<aside id="menu-right"# IF C_MENUS_LEFT_CONTENT # class="narrow-menu-right"# ENDIF #>
+		<aside id="menu-right" class="aside-menu# IF C_MENUS_LEFT_CONTENT # narrow-menu narrow-menu-right# ENDIF #">
 			# START menus_right #
 			{menus_right.MENU}
 			# END menus_right #
@@ -90,7 +90,7 @@
 		<div class="spacer"></div>
 	</div>
 
-</div>
+</main>
 
 <div id="top-footer">
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
