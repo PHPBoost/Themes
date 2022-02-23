@@ -114,7 +114,7 @@
 <footer id="footer">
 
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
-		<div id="top-footer">
+		<div id="top-footer" class="content-wrapper">
 			# START menus_top_footer #
 			{menus_top_footer.MENU}
 			# END menus_top_footer #
@@ -136,7 +136,11 @@
 			<div class="flex-between">
 				<div>
 		# ENDIF #
-					<span class="footer-infos-powered-by">{@common.powered.by} <i class="fa iboost fa-iboost-logo" aria-hidden="true"></i> <a class="offload" href="https://www.phpboost.com" aria-label="{@common.phpboost.link}">PHPBoost</a></span> | <span aria-label="{@common.phpboost.right}"><i class="fab fa-osi" aria-hidden="true"></i></span>
+					<span class="footer-infos-powered-by">{@common.powered.by}
+						<i class="fa iboost fa-iboost-logo" aria-hidden="true"></i>
+						<a class="offload" href="https://www.phpboost.com" aria-label="{@common.phpboost.link}">PHPBoost</a>
+					</span>
+					<span aria-label="{@common.phpboost.right}"> | <i class="fab fa-osi" aria-hidden="true"></i></span>
 					# IF C_DISPLAY_BENCH #
 						<span class="footer-infos-benchmark">| {@common.achieved} {BENCH}{@date.unit.seconds} - {REQ} {@common.sql.request} - {MEMORY_USED}</span>
 					# ENDIF #

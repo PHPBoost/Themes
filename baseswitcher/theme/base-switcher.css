@@ -1,8 +1,8 @@
 .base-switcher {
-	position: absolute;
-	top: 0.618em;
-	right: 0.618em;
 	z-index: 200;
+	position: fixed;
+	bottom: 0.309em;
+	left: 0.309em
 }
 
 .base-switcher span {
@@ -11,6 +11,8 @@
     border-style: solid;
     border-color: var(--bdr-main);
 	cursor: pointer;
+    display: block;
+	margin-bottom: 0.228em;
 }
 
 span.base-switcher-light {
@@ -28,13 +30,8 @@ span.base-switcher-dark {
 		position: fixed;
 		top: 50%;
 		left: 0.618em;
-		right: auto;
+		bottom: auto;
 		transform: translateY(-50%);
-	}
-
-	.base-switcher span {
-	    display: block;
-		margin-bottom: 0.228em;
 	}
 }
 

@@ -17,8 +17,8 @@
     --bgc-dark:  #1D233D;
     --bgc-rgb-m: 57, 65, 101;
     --bgc-main:  #394165;
-    --bgc-rgb-l: rgb(89, 99, 144);
-    --bgc-light:  #596390;
+    --bgc-rgb-a: rgb(89, 99, 144);
+    --bgc-alt:  #596390;
 
     --darken :   0, 0, 0;
     --lighten:   255, 255, 255;

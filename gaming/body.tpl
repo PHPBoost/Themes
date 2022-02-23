@@ -9,7 +9,17 @@
 				<span id="site-slogan">{SITE_SLOGAN}</span>
 			</div>
 		</div>
-		<i id="menus-trigger" class="fa fa-bars fa-2x"></i>
+		<div id="inner-header-container">
+			# IF C_MENUS_HEADER_CONTENT #
+				<div id="inner-header-content">
+					# START menus_header #
+						{menus_header.MENU}
+					# END menus_header #
+				</div>
+			# ENDIF #
+			<i id="menus-trigger" class="fa fa-fw fa-bars fa-2x"></i>
+		</div>
+
 		<div id="menus-container">
 			<div class="content-wrapper">
 				<div id="menus-header">
@@ -22,22 +32,15 @@
 					# ELSE #
 						<div></div>
 					# ENDIF #
-					# IF C_MENUS_HEADER_CONTENT #
-						<div id="inner-header-content">
-							# START menus_header #
-								{menus_header.MENU}
-							# END menus_header #
-						</div>
-					# ENDIF #
-				</div>
-				<div id="sub-header">
-					# IF C_MENUS_SUB_HEADER_CONTENT #
-						<div id="sub-header-content">
-							# START menus_sub_header #
-								{menus_sub_header.MENU}
-							# END menus_sub_header #
-						</div>
-					# ENDIF #
+					<div id="sub-header">
+						# IF C_MENUS_SUB_HEADER_CONTENT #
+							<div id="sub-header-content">
+								# START menus_sub_header #
+									{menus_sub_header.MENU}
+								# END menus_sub_header #
+							</div>
+						# ENDIF #
+					</div>
 				</div>
 			</div>
 		</div>
@@ -118,7 +121,7 @@
 <footer id="footer">
 
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
-		<div id="top-footer">
+		<div id="top-footer" class="content-wrapper">
 			# START menus_top_footer #
 			{menus_top_footer.MENU}
 			# END menus_top_footer #

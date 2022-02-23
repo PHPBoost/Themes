@@ -19,7 +19,7 @@ body {
 }
 
 #top-header {
-	background-color: var(--bgc-alt);
+	background-color: var(--bgc-top);
 	color: var(--txt-alt);
 }
 

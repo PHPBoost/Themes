@@ -265,18 +265,11 @@ section {
 #bottom-content { margin: 1.618em 0 0; }
 
 /* --- Footer --------------------------------------------------------------- */
-#top-footer { padding: 0.809em; }
-
 #footer {
 	clear: both;
 	border-width: 4px 0 0 0;
 	border-style: solid;
 	border-color: transparent;
-}
-
-#footer-content {
-	margin: 0 auto 0 auto;
-	padding: 0.809em;
 }
 
 #footer-infos {
@@ -294,7 +287,5 @@ section {
 }
 
 @media (min-width: 769px) {
-	#footer-infos { padding: 0.618em 0 0; }
-
 	#footer-infos span { display: inline-block; }
 }

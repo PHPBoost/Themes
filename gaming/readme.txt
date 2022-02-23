@@ -1,9 +1,11 @@
-Les menus déclarés dans le bloc d'entête sont cachés par défaut et apparaissent sous le titre du site
+All menus declared in top-header & sub-header are hidden by default
+and are revealed under the website title by triggering the ham button
 
 --------------------------------------------------------------------------------
-| Logo + Titre du site                             Bouton d'affichage des menus|
+| Logo + website title                | inner-header | ham for hidden sub menus|
 --------------------------------------------------------------------------------
-| menus placés en sur-entête            |               menus placés en entête |
+hidden menus
+| top-header                                                         sub-header|
 --------------------------------------------------------------------------------
-|                        menus placés en sous-entête (centrés)                 |
---------------------------------------------------------------------------------
+
+Better to use connect in inner-header

@@ -201,7 +201,7 @@ table tbody tr.prime-item td,
 .button.alt-submit:active,
 .alt-submit:active { background-color: var(--moderator-tone); }
 
-optgroup { background-color: var(--bgc-light); }
+optgroup { background-color: var(--bgc-alt); }
 
 option { background-color: var(--bgc-main); }
 
@@ -790,7 +790,7 @@ figure { border-color: rgba(var(--lighten), 0.2); }
 abbr,
 a.wikipedia-link { border-bottom-color: rgba(var(--darken), 0.2); }
 
-.sticky-menu { background-color: rgba(var(--darken), 0.2); }
+.sticky-menu { background-color: var(--bgc-alt); }
 
 /* --- Colors classes --------------------------------------------------------------- */
 .floating-element,
