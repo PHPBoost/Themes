@@ -69,6 +69,7 @@
 	z-index: -1;
 	background-color: var(--black-tone);
 	transition: all 0.5s;
+	pointer-events: none;
 }
 
 .connect-container-horizontal li:last-child {
@@ -80,6 +81,7 @@
 	top: 100%;
 	z-index: 200;
 	transition: all 0.5s;
+	pointer-events: auto;
 }
 
 .active-connect .js-menu-button,

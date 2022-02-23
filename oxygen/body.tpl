@@ -26,9 +26,7 @@
 					<a class="offload" id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
 					<span id="site-slogan">{SITE_SLOGAN}</span>
 				</div>
-				<div id="site-logo">
-					<img src="# IF C_HEADER_LOGO #{U_HEADER_LOGO}# ELSE #{PATH_TO_ROOT}/templates/{THEME}/theme/images/logo.svg# ENDIF #" alt="" />
-				</div>
+				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({U_HEADER_LOGO});"# ENDIF #></div>
 			</div>
 
 			# IF C_VISIT_COUNTER #

@@ -52,51 +52,51 @@
 }
 
 /* cssmenu in sub-header */
-#sub-header-content .cssmenu > ul > li.has-sub > ul {
+#header .cssmenu > ul > li.has-sub > ul {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s;
 }
 
-#sub-header-content .cssmenu > ul > li.has-sub:hover > ul { max-height: 430px; }
+#header .cssmenu > ul > li.has-sub:hover > ul { max-height: 430px; }
 
-#sub-header-content .cssmenu { color: var(--txt-alt); }
+#header .cssmenu { color: var(--txt-alt); }
 
-#sub-header-content .cssmenu > ul > li > .cssmenu-title {
+#header .cssmenu > ul > li > .cssmenu-title {
     padding-top: 0.809em;
     padding-bottom: 0.809em;
     color: var(--txt-alt);
 }
 
-#sub-header-content .cssmenu ul ul .cssmenu-title {
+#header .cssmenu ul ul .cssmenu-title {
     background-color: var(--black-tone);
     color: var(--current-light);
 }
 
-#sub-header-content .cssmenu ul ul > li:hover > .cssmenu-title {
+#header .cssmenu ul ul > li:hover > .cssmenu-title {
     background-color: var(--current-tone);
     color: var(--txt-alt);
 }
 
-#sub-header-content .cssmenu > ul > li:not(.has-sub):hover > .cssmenu-title,
-#sub-header-content .cssmenu > ul > li.current > .cssmenu-title {
+#header .cssmenu > ul > li:not(.has-sub):hover > .cssmenu-title,
+#header .cssmenu > ul > li.current > .cssmenu-title {
     padding-top: 0.456em;
     padding-bottom: 0.456em;
     border-radius: 8px;
 }
 
-#sub-header-content .cssmenu > ul > li:hover > .cssmenu-title,
-#sub-header-content .cssmenu > ul > li.current:hover > .cssmenu-title { border-radius: 8px; }
+#header .cssmenu > ul > li:hover > .cssmenu-title,
+#header .cssmenu > ul > li.current:hover > .cssmenu-title { border-radius: 8px; }
 
 @media (min-width:759px) {
-    #sub-header-content .cssmenu > ul > li.has-sub:hover > .cssmenu-title,
-    #sub-header-content .cssmenu > ul > li.has-sub.current:hover > .cssmenu-title {
+    #header .cssmenu > ul > li.has-sub:hover > .cssmenu-title,
+    #header .cssmenu > ul > li.has-sub.current:hover > .cssmenu-title {
         padding-top: 0.456em;
         margin-top: 0.353em;
         border-radius: 8px 8px 0 0;
     }
 
-    #sub-header-content .cssmenu > ul > li.has-sub.current:hover > .cssmenu-title { padding-bottom: 0.809em; }
+    #header .cssmenu > ul > li.has-sub.current:hover > .cssmenu-title { padding-bottom: 0.809em; }
 }
 
 .cssmenu ul > li:hover > .cssmenu-title,
@@ -122,9 +122,9 @@
     flex-direction: column;
 }
 
-.several-items { position: relative; }
+.several-items .cell { position: relative; }
 
-.several-items .item-creation-date {
+.several-items .cell .item-creation-date {
     position: absolute;
     top: -0.309em;
     right: 1.809em;
@@ -153,7 +153,10 @@
     .several-items .item-creation-date::after { border-bottom: 15px solid var(--current-tone); }
 }
 
-.several-items .cell-header { background-image: linear-gradient(var(--grey-light), var(--grey-tone)); }
+.several-items .cell-header {
+    background-image: linear-gradient(var(--grey-light), var(--grey-tone));
+    padding-top: 0.809em; 
+}
 
 .several-items.cell > [class*="cell-"] { border-color: var(--black-light); }
 

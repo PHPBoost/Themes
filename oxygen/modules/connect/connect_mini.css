@@ -79,7 +79,7 @@
 	}
 
 	#header #module-connect.user-connected a {
-		padding: 1em 1.1618em;
+		padding: 0.456em;
 		background-color: var(--logo-tone);
 		border-radius: 50%;
 		color: var(--txt-alt);
@@ -99,9 +99,7 @@
 
 	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
 
-	#module-connect .cell-list .connect-container li { padding: 0.309em }
-
-	#module-connect.user-connected .connect-container-horizontal li { border-right: 2px solid var(--main-tone); }
+	#module-connect .cell-list .connect-container li { padding: 0.228em }
 
 	#module-connect.user-connected .connect-container-horizontal li:last-child { border-right: none; }
 }

@@ -10,12 +10,17 @@
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
+    background-image: url('images/logo.svg');
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (min-width: 769px) {
     #site-logo {
         width: 120px;
         height: 120px;
+        background-size: 80px;
     }
 }
 
@@ -37,7 +42,7 @@
 }
 
 /* --- content --- */
-.section-header h1::first-letter { 
+.section-header h1::first-letter {
     margin-right: 0.1618em;
 }
 

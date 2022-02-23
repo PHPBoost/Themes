@@ -33,12 +33,12 @@ body {
 }
 
 #global,
-#footer {
-	width: 100%;
+#footer { width: 100%; }
+
+.content-wrapper {
+	margin: auto;
 	padding: 0.809em;
 }
-
-.content-wrapper { margin: auto; }
 
 @media (min-width: 769px)  {
 	#header {
@@ -46,15 +46,10 @@ body {
 		position: relative;
 	}
 
-	#top-header,
-	#inner-header,
-	#sub-header-content,
-	#global,
-	#footer {
+	.content-wrapper {
+		width: 768px;
 		padding: 1.618em 0;
 	}
-
-	.content-wrapper { width: 768px; }
 }
 
 @media (min-width: 1025px) { .content-wrapper { width: 1024px; } }
@@ -81,11 +76,10 @@ body {
 
 /* --- Visits counter --- */
 #visit-counter {
-	position: absolute;
-	right: 1.618em;
-	top : 90%;
+	margin: auto;
 	font-size: 0.9em;
-	text-align: right;
+	text-align: center;
+	width: auto;
 	min-width: 150px;
 }
 

@@ -28,20 +28,6 @@
 					<div class="spacer"></div>
 				</div>
 			# ENDIF #
-
-			# IF C_VISIT_COUNTER #
-				<div id="visit-counter" class="hidden-small-screens">
-					<div class="visit-counter-total flex-between">
-						<span class="text-strong">{@user.guests} &nbsp;</span>
-						<span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span>
-					</div>
-					<div class="visit-counter-today flex-between">
-						<span class="text-strong">{@date.today}</span>
-						<span class="pinned visitor small">{VISIT_COUNTER_DAY}</span>
-					</div>
-				</div>
-			# ENDIF #
-
 		</div>
 	</div>
 	<div id="sub-header" class="sticky">
@@ -126,7 +112,7 @@
 <footer id="footer">
 
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
-		<div id="top-footer">
+		<div id="top-footer" class="content-wrapper">
 			# START menus_top_footer #
 			{menus_top_footer.MENU}
 			# END menus_top_footer #
@@ -151,6 +137,19 @@
 			<span class="footer-infos-template-author">| {@common.theme} {L_THEME_NAME} ${TextHelper::lcfirst(@common.by)} <a class="offload" href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 		# ENDIF #
 	</div>
+
+	# IF C_VISIT_COUNTER #
+		<div id="visit-counter" class="hidden-small-screens">
+			<div class="visit-counter-total">
+				<span class="text-strong">{@user.guests} &nbsp;</span>
+				<span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span>
+			</div>
+			<div class="visit-counter-today">
+				<span class="text-strong">{@date.today}</span>
+				<span class="pinned visitor small">{VISIT_COUNTER_DAY}</span>
+			</div>
+		</div>
+	# ENDIF #
 </footer>
 
 <span id="scroll-to-top" class="scroll-to" role="button" aria-label="{@common.scroll.to.top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>

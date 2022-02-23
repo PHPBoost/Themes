@@ -19,6 +19,9 @@
 textarea,
 select { border-width: 0 0 2px; }
 
+/* cookiebar */
+.cookiebar-container { color: var(--txt-alt); }
+
 /* message-helper */
 .message-helper { outline-style: double; }
 

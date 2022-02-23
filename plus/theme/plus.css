@@ -27,10 +27,12 @@
     color: var(--txt-alt);
 }
 
-#top-header a,
+#top-header a:not(.cssmenu-title),
+#top-header .cssmenu > ul > li > .cssmenu-title,
 .breadcrumb-container a { color: var(--txt-alt); }
 
-#top-header a:hover,
+#top-header a:not(.cssmenu-title):hover,
+#top-header .cssmenu > ul > li > .cssmenu-title:hover,
 .breadcrumb-container a:hover { color: var(--txt-main); }
 
 #sub-header-content { padding-bottom: 0.618em; }

@@ -22,7 +22,8 @@ body {
 	background-color: var(--bgc-alt);
 	color: var(--txt-alt);
 }
-#top-header a { color: var(--txt-alt); }
+
+#top-header a:not(.cssmenu-title) { color: var(--txt-alt); }
 
 #top-header .administrator { color: var(--logo-tone); }
 
