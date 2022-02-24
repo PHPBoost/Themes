@@ -1,18 +1,12 @@
-.fwkboost-toggle { top: 0 !important; }
-
-@media (min-width: 769px) {
-    .fwkboost-toggle { top: 3.618em !important; }
-}
-
-#top-header {
+#header {
     background-color: var(--black-tone);
     color: var(--grey-tone);
 }
 
-#top-header .administrator { color: var(--txt-alt); }
+#header .administrator { color: var(--txt-alt); }
 
-#top-header a { color: var(--grey-tone); }
-#top-header a:hover {
+#header a { color: var(--grey-tone); }
+#header a:hover {
     color: var(--txt-main);
     text-decoration: none;
 }
@@ -36,14 +30,10 @@
 #global-container { background-color: var(--bgc-main); }
 
 #breadcrumb {
-    padding: 4.309em 0.618em 0.618em;
+    padding: 2.228em 0.618em 0.618em;
     font-style: italic;
     background-color: var(--grey-tone);
     border: 1px solid var(--grey-dark);
-}
-
-@media (min-width: 769px) {
-    #breadcrumb {padding: 2.228em 1.618em 0.618em;}
 }
 
 #visit-counter {
@@ -155,7 +145,7 @@
 
 .several-items .cell-header {
     background-image: linear-gradient(var(--grey-light), var(--grey-tone));
-    padding-top: 0.809em; 
+    padding-top: 0.809em;
 }
 
 .several-items.cell > [class*="cell-"] { border-color: var(--black-light); }

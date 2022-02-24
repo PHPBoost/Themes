@@ -66,25 +66,30 @@ body {
 /* --- Header --------------------------------------------------------------- */
 #header { position: relative; }
 
+#top-header-container,
 #top-header-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 	align-items: center;
-	font-size: 0.809em;
 }
 
 @media (min-width: 769px) {
-    #top-header-content { flex-direction: row; }
+    #top-header-container,
+	#top-header-content { flex-direction: row; }
+}
+
+#inner-header-overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 #inner-header-container {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 }
-
-#inner-header-content { flex: 1 1 auto; }
 
 #inner-header,
 #sub-header {
@@ -92,30 +97,27 @@ body {
     padding: 0;
 }
 
-#inner-header-container,
 #sub-header-content {
-    padding: 0.618em 0;
-    position: absolute;
-    z-index: 100;
-}
-
-#sub-header-content {
-	top: 0.618em;
-    left: 0;
-    right: 0;
+	position: absolute;
+	top: -12px;
+	width: 100%;
 	border-radius: 12px 12px 0 0;
 	border-width: 1px;
 	border-style: solid;
 	padding: 0 0.618em;
-}
-
-@media (min-width: 769px) {
-	#sub-header-content { top: -28px; }
+	z-index: 50;
 }
 
 #site-infos {
 	display: flex;
 	flex: 1 1 auto;
+	padding-top: 0.309em;
+}
+
+@media (min-width: 768px) {
+	#sub-header-content { top: -24px; }
+
+	#site-infos { padding-top: 0.618em; }
 }
 
 #site-logo {

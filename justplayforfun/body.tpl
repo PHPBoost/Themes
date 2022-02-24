@@ -2,23 +2,14 @@
 <a href="#global" aria-label="{@common.go.to.content}"></a>
 <header id="header">
 	<div id="top-header">
-		# IF C_MENUS_TOP_HEADER_CONTENT #
-			<div id="top-header-content" class="content-wrapper">
-				# START menus_top_header #
-					{menus_top_header.MENU}
-				# END menus_top_header #
-			</div>
-		# ENDIF #
-	</div>
-	<div id="inner-header" class="content-wrapper">
-		<div id="inner-header-container">
-			<div id="site-infos" role="banner">
-				<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({U_HEADER_LOGO});"# ENDIF #></div>
-				<div id="site-name-container">
-					<a class="offload" id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
-					<span id="site-slogan">{SITE_SLOGAN}</span>
+		<div id="top-header-container" class="content-wrapper">
+			# IF C_MENUS_TOP_HEADER_CONTENT #
+				<div id="top-header-content">
+					# START menus_top_header #
+						{menus_top_header.MENU}
+					# END menus_top_header #
 				</div>
-			</div>
+			# ENDIF #
 			# IF C_MENUS_HEADER_CONTENT #
 				<div id="inner-header-content">
 					# START menus_header #
@@ -29,17 +20,30 @@
 			# ENDIF #
 		</div>
 	</div>
-	<div id="slide-container">
-		<div id="slide-content">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/01.jpg" alt="slide 01">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/02.jpg" alt="slide 02">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/03.jpg" alt="slide 03">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/04.jpg" alt="slide 04">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/05.jpg" alt="slide 05">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/06.jpg" alt="slide 06">
-			<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/07.jpg" alt="slide 07">
+	<div id="inner-header">
+		<div id="slide-container">
+			<div id="slide-content">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/01.jpg" alt="slide 01">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/02.jpg" alt="slide 02">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/03.jpg" alt="slide 03">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/04.jpg" alt="slide 04">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/05.jpg" alt="slide 05">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/06.jpg" alt="slide 06">
+				<img src="{PATH_TO_ROOT}/templates/{THEME}/theme/images/slide/07.jpg" alt="slide 07">
+			</div>
+			<div id="slides-overlay"></div>
 		</div>
-		<div id="slides-overlay"></div>
+		<div id="inner-header-overlay">
+			<div id="inner-header-container" class="content-wrapper">
+				<div id="site-infos" role="banner">
+					<div id="site-logo" # IF C_HEADER_LOGO #style="background-image: url({U_HEADER_LOGO});"# ENDIF #></div>
+					<div id="site-name-container">
+						<a class="offload" id="site-name" href="{PATH_TO_ROOT}/">{SITE_NAME}</a>
+						<span id="site-slogan">{SITE_SLOGAN}</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="sub-header" class="content-wrapper">
 		# IF C_MENUS_SUB_HEADER_CONTENT #
@@ -125,11 +129,10 @@
 <footer id="footer">
 
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
-		<div id="top-footer">
+		<div id="top-footer" class="content-wrapper">
 			# START menus_top_footer #
 			{menus_top_footer.MENU}
 			# END menus_top_footer #
-			<div class="spacer"></div>
 		</div>
 	# ENDIF #
 
