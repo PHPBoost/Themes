@@ -53,6 +53,7 @@
 			# INCLUDE BODY #
 		</div>
 		# INCLUDE JS_BOTTOM #
+		<script src="{PATH_TO_ROOT}/templates/baseswitcher/js/baseswitcher# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>		
 		<div class="base-switcher">
 			<span class="base-switcher-toggle base-switcher-light" aria-label="{@common.light.mode}"><i class="fa fa-fw fa-sun"></i></span>
 			<span class="base-switcher-toggle base-switcher-dark" aria-label="{@common.dark.mode}"><i class="fa fa-fw fa-moon"></i></span>
