@@ -33,14 +33,10 @@ body {
 	body { font-size: 1.618em; }
 }
 
-#header,
-#global,
-#footer { padding: 0 0.309em; }
+.content-wrapper { padding: 0.309em; }
 
 @media (min-width: 769px)  {
-	#inner-header,
-	#global,
-	#footer { padding: 0 1.618em; }
+	.content-wrapper { padding: 0 1.618em; }
 }
 
 /* --- Visits counter --- */
@@ -193,20 +189,12 @@ section {
 #bottom-content { padding: 0.618em; }
 
 /* --- Footer --------------------------------------------------------------- */
-#top-footer { padding: 0.618em 0; }
-
 #footer {
 	clear: both;
-}
-
-#footer-content {
-	margin: 0 auto 0 auto;
-	padding: 0.809em 0;
+	padding-top: 1.618em;
 }
 
 #footer-infos {
-	margin: auto;
-	padding: 0.618em;
 	min-height: 40px;
 	text-align: center;
 }
@@ -217,7 +205,6 @@ section {
 }
 
 @media (min-width: 769px) {
-	#footer-infos { padding: 0.618em 0 0; }
 
 	#footer-infos span { display: inline-block; }
 }

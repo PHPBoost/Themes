@@ -39,7 +39,7 @@ body {
 }
 
 /* --- Cookies --- */
-.cookiebar-container { background-color: rgba(var(--darken), 0.2); }
+.cookiebar-container { background-color: var(--bgc-alt); }
 
 /* --- Prime item --- */
 table tbody tr.prime-item td,

@@ -32,13 +32,13 @@
 						<li>
 							<form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
 								<ul>
-									<li>
+									<li class="align-center">
 										<label for="login">
 											<input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
 											<span class="sr-only">{@user.username}</span>
 										</label>
 									</li>
-									<li>
+									<li class="align-center">
 										<label for="password">
 											<input type="password" id="password" name="password" placeholder="{@user.password}">
 											<span class="sr-only">{@user.password}</span>

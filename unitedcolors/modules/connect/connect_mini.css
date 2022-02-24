@@ -64,14 +64,19 @@
 .connect-container-horizontal {
 	position: absolute;
 	top: 100%;
-	left: 100%;
-	opacity: 0;
-	visibility: hidden;
+	right: 0;
+	max-height: 0;
 	width: 100%;
 	min-width: 200px;
 	z-index: 200;
 	background-color: var(--black-tone);
-	transition: all 0.5s;
+	transition: max-height 0.5s 0.5s;
+	pointer-events: none;
+}
+
+.connect-container-horizontal * {
+	opacity: 0;
+	transition: opacity 0.8s;
 }
 
 .connect-container-horizontal li:last-child {
@@ -79,9 +84,14 @@
 }
 
 .active-connect .connect-container-horizontal {
+	max-height: 100vh;
+	transition:  max-height 0.8s;
+	pointer-events: auto;
+}
+
+.active-connect .connect-container-horizontal * {
 	opacity: 1;
-	visibility: visible;
-	left: 0;
+	transition: opacity 0.5s 0.5s;
 }
 
 .active-connect .js-menu-button,

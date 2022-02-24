@@ -46,7 +46,7 @@
 </header>
 
 <main id="global" class="content-preloader" role="main">
-	<nav id="breadcrumb" itemprop="breadcrumb">
+	<nav id="breadcrumb" itemprop="breadcrumb" class="content-wrapper">
 		<ol itemscope itemtype="https://schema.org/BreadcrumbList">
 			<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 				<a class="offload" href="{START_PAGE}" itemprop="item">
@@ -133,9 +133,9 @@
 	<div id="footer-infos" class="content-wrapper" role="contentinfo">
 
 		# IF C_VISIT_COUNTER #
-			<div class="flex-between">
-				<div>
+			<div class="flex-between content-wrapper">
 		# ENDIF #
+				<div id="footer-info"# IF NOT C_VISIT_COUNTER # class="content-wrapper"# ENDIF #>
 					<span class="footer-infos-powered-by">{@common.powered.by}
 						<i class="fa iboost fa-iboost-logo" aria-hidden="true"></i>
 						<a class="offload" href="https://www.phpboost.com" aria-label="{@common.phpboost.link}">PHPBoost</a>
@@ -147,9 +147,8 @@
 					# IF C_DISPLAY_AUTHOR_THEME #
 						<span class="footer-infos-template-author">| {@common.theme} {L_THEME_NAME} ${TextHelper::lcfirst(@common.by)} <a class="offload" href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 					# ENDIF #
-
-		# IF C_VISIT_COUNTER #
 				</div>
+		# IF C_VISIT_COUNTER #
 				<div id="visit-counter" class="hidden-small-screens">
 					<div class="visit-counter-total visit-counter">
 						<span class="text-strong">{@user.guests} &nbsp;</span>
