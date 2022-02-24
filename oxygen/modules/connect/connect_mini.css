@@ -69,8 +69,6 @@
 .active-connect .js-menu-button,
 .js-menu-button:hover { text-decoration: none; }
 
-#header #module-connect.user-not-connected .cell-list .connect-container li .button { background-color: transparent; }
-
 @media (min-width: 769px) {
 	#module-connect .connect-container-horizontal {
 		opacity: 1;
