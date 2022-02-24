@@ -38,3 +38,5 @@
 @import url('../../__default__/theme/content.css') screen;
 
 @import url('../../__default__/theme/colors.css') screen;
+
+@import url('../../alive/theme/alive.css') screen;

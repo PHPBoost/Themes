@@ -54,49 +54,53 @@ body {
 #visit-counter { min-width: 150px; }
 
 /* --- Header --------------------------------------------------------------- */
-.cookiebar-container {
-	position: fixed;
-	z-index: 501;
-}
-
 #header { position: relative; }
 
-#header-container {
-    background-color: var(--bgc-main);
-    transition: all 0.5s;
-}
+#header-container { transition: all 0.5s; }
 
 #header-container,
+#inner-header-container,
 #menus-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0.618em;
+    padding: 0.309em;
 }
 
-#menus-header { flex-direction: column; }
+#inner-header-container {
+	flex-direction: row;
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+	#header-container,
+	#menus-header {
+    	padding: 0.618em;
+		flex-direction: row;
+	}
+}
 
 #menus-container {
     position: absolute;
     top: 200%;
     left: 0;
     right: 0;
-    pointer-events: none;
+	z-index: -1;
     padding: 0.618em 0;
-    background-color: var(--bgc-main);
     opacity: 0;
     transition: all 0.5s;
-	box-shadow: 0 2px 2px 1px rgba(var(--darken), 0.15);
 }
 
-#menus-trigger { cursor: pointer; }
+#menus-trigger {
+	cursor: pointer;
+	margin-left: 0.618em;
+}
 
 #header-container.active-menus #menus-container {
-    opacity: 1;
     top: 100%;
     z-index: 500;
-    pointer-events: auto;
+    opacity: 1;
     transition: all 0.5s;
 }
 
@@ -173,8 +177,6 @@ body {
 }
 
 @media (min-width: 769px) {
-	#menus-header { flex-direction: row; }
-
 	#site-logo {
 		width: 90px;
 		height: 90px;

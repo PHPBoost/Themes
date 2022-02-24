@@ -9,8 +9,6 @@
 
 #module-connect  #login { cursor: help; }
 
-#module-connect  a.button { background-color: transparent; }
-
 #module-connect .social-connect { display: inline-block; }
 
 #module-connect .js-menu-button {

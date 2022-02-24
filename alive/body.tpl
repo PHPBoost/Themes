@@ -9,7 +9,16 @@
 				<span id="site-slogan">{SITE_SLOGAN}</span>
 			</div>
 		</div>
-		<i id="menus-trigger" class="fa fa-bars fa-2x"></i>
+		<div id="inner-header-container">
+			# IF C_MENUS_HEADER_CONTENT #
+				<div id="inner-header-content">
+					# START menus_header #
+						{menus_header.MENU}
+					# END menus_header #
+				</div>
+			# ENDIF #
+			<i id="menus-trigger" class="fa fa-fw fa-bars fa-2x"></i>
+		</div>
 		<div id="menus-container">
 			<div class="content-wrapper">
 				<div id="menus-header">
@@ -22,28 +31,20 @@
 					# ELSE #
 						<div></div>
 					# ENDIF #
-					# IF C_MENUS_HEADER_CONTENT #
-						<div id="inner-header-content">
-							# START menus_header #
-								{menus_header.MENU}
-							# END menus_header #
-						</div>
-					# ENDIF #
-				</div>
-				<div id="sub-header">
-					# IF C_MENUS_SUB_HEADER_CONTENT #
-						<div id="sub-header-content">
-							# START menus_sub_header #
-								{menus_sub_header.MENU}
-							# END menus_sub_header #
-						</div>
-					# ENDIF #
+					<div id="sub-header">
+						# IF C_MENUS_SUB_HEADER_CONTENT #
+							<div id="sub-header-content">
+								# START menus_sub_header #
+									{menus_sub_header.MENU}
+								# END menus_sub_header #
+							</div>
+						# ENDIF #
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
-<div id="extra"></div>
 <main id="global" class="content-preloader" role="main">
 	<div id="global-container" class="content-wrapper">
 		# IF C_MENUS_LEFT_CONTENT #
