@@ -47,7 +47,7 @@
 #module-connect .connect-contents,
 #module-connect .connected-contents { position: relative; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
 	#module-connect .cell-list-inline ul {
 		flex-direction: row;

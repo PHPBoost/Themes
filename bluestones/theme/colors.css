@@ -18,7 +18,7 @@ body {
 }
 
 #header {
-    background-image: linear-gradient(rgba(var(--darken), 0.3),rgba(var(--darken), 0.3)), url('images/header.jpg');
+    background-image: linear-gradient(rgba(var(--darken), 0.3),rgba(var(--darken), 0.3)), url('images/header.webp');
     color: var(--txt-alt);
 }
 
@@ -628,7 +628,7 @@ a[class*='lightcase-icon-']:hover {
 #lightcase-loading,
 #lightcase-loading:focus { color: var(--txt-alt); }
 
-#lightcase-overlay { background-color: var(--administrator-tone); }
+#lightcase-overlay { background-color: rgba(var(--darken), 0.7); }
 
 /* --- plugins --- */
 .accordion-container > .accordion-nav > ul > li > a {
