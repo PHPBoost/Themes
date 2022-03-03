@@ -8,8 +8,8 @@
 @import url('../../__default__/theme/cookies.css') screen;
 
 @import url('../../alive/theme/shape.css') screen;
-
 @import url('../../__default__/theme/@variables.css') screen;
+
 @import url('../../__default__/theme/form.css') screen;
 @import url('../../__default__/theme/fieldset.css') screen;
 @import url('../../__default__/theme/input.css') screen;
@@ -37,6 +37,7 @@
 @import url('../../__default__/theme/global.css') screen;
 @import url('../../__default__/theme/content.css') screen;
 
+@import url('../../__default__/theme/colors_code.css') screen;
 @import url('../../__default__/theme/colors.css') screen;
 
 @import url('../../alive/theme/alive.css') screen;
