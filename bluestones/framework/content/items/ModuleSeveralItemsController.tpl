@@ -31,7 +31,7 @@
 		# IF C_SUB_CATEGORIES #
 			<div class="sub-section">
 				<div class="content-container">
-					<div class="cell-flex cell-tile cell-columns-{CATEGORIES_PER_ROW}">
+					<div class="cell-flex cell-category cell-tile cell-columns-{CATEGORIES_PER_ROW}">
 						# START sub_categories_list #
 							<div class="cell category-{sub_categories_list.CATEGORY_ID}" itemscope>
 								<div class="cell-header">
@@ -215,7 +215,7 @@
 						</table>
 					</div>
 				# ELSE #
-					<div class="cell-layout # IF C_GRID_VIEW #cell-flex cell-columns-{ITEMS_PER_ROW}# ELSE #cell-row# ENDIF #">
+					<div class="cell-layout cell-flex # IF C_GRID_VIEW #cell-columns-{ITEMS_PER_ROW}# ELSE #cell-row# ENDIF #">
 						# START items #
 							<article id="{MODULE_ID}-item-{items.ID}" class="{MODULE_ID}-item several-items category-{items.CATEGORY_ID} cell# IF items.C_PRIME_ITEM # prime-item# ENDIF ## IF items.C_NEW_CONTENT # new-content# ENDIF#" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
 								<div class="cell-primary">

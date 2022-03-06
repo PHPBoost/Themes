@@ -1,5 +1,8 @@
 /* cell */
 .several-items { margin-top: 1.618em; }
+
+.several-items br { display: block;}
+
 .cell-mini .cell-header { text-transform: uppercase; }
 
 /* cssmenu */
