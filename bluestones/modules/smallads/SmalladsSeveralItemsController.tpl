@@ -471,7 +471,7 @@
 		jQuery('li:not([cat_id=0])').has('ul').addClass('has-sub');
 
 			// change root name
-		jQuery('.category-selected:contains("${LangLoader::get_message('root', 'main')}")').html('{@smallads.category.all} <i class="fa fa-fw fa-caret-down" aria-hidden="true"></i>');
+		jQuery('.category-selected:contains("{@common.root}")').html('{@smallads.category.all} <i class="fa fa-fw fa-caret-down" aria-hidden="true"></i>');
 
 			// toggle sub-menu (close on click outside)
 		jQuery('.category-selected').on('click', function(e){

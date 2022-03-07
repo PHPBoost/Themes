@@ -94,23 +94,14 @@
     clear: both;
 }
 
-.cell-row .cell-body {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-}
-
-.cell-row .cell-body .cell-content { width: 100%; }
-
 @media (min-width: 769px) {
-	.cell-row .cell-thumbnail { width: calc(100% / 3); }
-	.cell-row .cell-thumbnail.cell-avatar {
+	.cell-layout.cell-row .cell-thumbnail { width: calc(100% / 3); }
+	.cell-layout.cell-row .cell-thumbnail.cell-avatar {
 		width: auto;
 		margin: 0;
 	}
 
-	.cell-row .cell-thumbnail + .cell-content { width: 70%; }
+	.cell-layout.cell-row .cell-thumbnail + .cell-content { width: 70%; }
 }
 
 /* --- Modal ---------------------------------------------------------------- */

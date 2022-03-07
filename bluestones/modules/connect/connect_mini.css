@@ -4,6 +4,7 @@
 */
 
 #module-connect  #login { cursor: help; }
+#module-connect  .cell { display: inline-flex;  }
 
 #module-connect .social-connect { display: inline-block; }
 
@@ -21,14 +22,12 @@
 
 /* --- custom --- */
 .connect-button {
-	float: left;
 	display: inline-block;
 	padding: 0.309em 0.618em;
 	background-color: var(--bgc-sub);
 	color: var(--txt-alt);
 	font-size: 1.618em;
 }
-@media (min-width: 769px) { .connect-button { float: right; } }
 
 .connect-button:hover {
 	text-decoration: none;

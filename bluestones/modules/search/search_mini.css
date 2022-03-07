@@ -3,6 +3,8 @@
 * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
 */
 
+#module-mini-search .cell { display: inline-flex; }
+
 #module-mini-search .grouped-search { flex-direction: row; }
 
 #module-mini-search .grouped-search input { width: 100%; }

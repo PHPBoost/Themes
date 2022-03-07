@@ -7,7 +7,6 @@
 				# START menus_top_header #
 					{menus_top_header.MENU}
 				# END menus_top_header #
-				<div class="spacer"></div>
 			</div>
 		# ENDIF #
 	</div>
@@ -25,7 +24,6 @@
 					# START menus_header #
 						{menus_header.MENU}
 					# END menus_header #
-					<div class="spacer"></div>
 				</div>
 			# ENDIF #
 		</div>
@@ -36,11 +34,9 @@
 				# START menus_sub_header #
 					{menus_sub_header.MENU}
 				# END menus_sub_header #
-				<div class="spacer"></div>
 			</div>
 		# ENDIF #
 	</div>
-	<div class="spacer"></div>
 </header>
 
 <main id="global" class="content-preloader" role="main">

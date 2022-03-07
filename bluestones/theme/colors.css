@@ -53,7 +53,7 @@ body {
 /* --- Prime item --- */
 table tbody tr.prime-item td,
 .prime-item {
-	background-color: var(--bgc-sub);
+	background-color: rgba(var(--bgc-rgb-s), 0.6);
 	color: var(--txt-alt);
 }
 
