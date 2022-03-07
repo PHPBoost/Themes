@@ -429,6 +429,7 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 .fa-announce-new-hot:before 		{ color: var(--success-tone); }
 
 /* --- formatter & bbcode --------------------------------------------------- */
+.emoji-tag { text-shadow: 0 0 1px rgba(var(--darken), 1); }
 
 .bbcode-button { color: var(--main-tone); }
 
