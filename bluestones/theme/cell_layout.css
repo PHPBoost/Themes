@@ -17,7 +17,10 @@
 	content: "";
 }
 
-.cell-flex > * { width: 100%; }
+.cell-flex > * {
+	width: 100%;
+	margin: 0 0 var(--cell-gap);
+}
 
 @media (min-width: 769px) {
 	.cell-flex {
@@ -119,6 +122,8 @@
 }
 
 /* --- Inline --------------------------------------------------------------- */
+.cell-inline > * { width: auto; }
+
 @media (min-width: 769px) {
 	.cell-inline .cell { max-width: 234px; }
 }

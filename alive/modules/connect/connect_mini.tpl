@@ -111,21 +111,21 @@
 						# IF C_HAS_PM #
 							<span class="stacked member">
 								<i class="fa fa-fw fa-lg fa-people-arrows" aria-hidden="true"></i>
-								<span class="stack-event stack-circle stack-sup stack-right bgc member blink">{PM_NUMBER}</span>
+								<span class="stack-event stack-circle stack-top-right bgc member blink">{PM_NUMBER}</span>
 							</span>
 						# ENDIF #
 						# IF IS_ADMIN #
 							# IF C_UNREAD_ALERTS #
 								<span class="stacked administrator">
 									<i class="fa fa-fw fa-lg fa-wrench" aria-hidden="true"></i>
-									<span class="stack-event stack-circle stack-sup stack-right bgc administrator blink">{UNREAD_ALERTS_NUMBER}</span>
+									<span class="stack-event stack-circle stack-top-right bgc administrator blink">{UNREAD_ALERTS_NUMBER}</span>
 								</span>
 							# ENDIF #
 						# ENDIF #
 						# IF C_UNREAD_CONTRIBUTIONS #
 							<span class="stacked moderator">
 								<i class="fa fa-fw fa-lg fa-file-alt" aria-hidden="true"></i>
-								<span class="stack-event stack-circle stack-sup stack-right bgc moderator blink">{UNREAD_CONTRIBUTIONS_NUMBER}</span>
+								<span class="stack-event stack-circle stack-top-right bgc moderator blink">{UNREAD_CONTRIBUTIONS_NUMBER}</span>
 							</span>
 						# ENDIF #
 						# START additional_menus #
@@ -133,7 +133,7 @@
 								# IF additional_menus.C_UNREAD_ELEMENTS #
 									<span class="stacked {additional_menus.LEVEL_CLASS}">
 										<i class="fa-fw fa-lg# IF additional_menus.C_ICON # {additional_menus.ICON}# ELSE # far fa-file-alt# ENDIF #" aria-hidden="true"></i>
-										<span class="stack-event stack-circle stack-sup stack-right bgc {additional_menus.LEVEL_CLASS} blink">{additional_menus.UNREAD_ELEMENTS_NUMBER}</span>
+										<span class="stack-event stack-circle stack-top-right bgc {additional_menus.LEVEL_CLASS} blink">{additional_menus.UNREAD_ELEMENTS_NUMBER}</span>
 									</span>
 								# ENDIF #
 							# ENDIF #
@@ -169,7 +169,7 @@
 						<li class="li-stretch connect-pm">
 							<span # IF C_HAS_PM #class="stacked member"# ENDIF #>
 								<i class="fa fa-fw fa-lg fa-people-arrows" aria-hidden="true"></i>
-								# IF C_HAS_PM #<span class="stack-event stack-circle stack-sup stack-right bgc member blink">{PM_NUMBER}</span> # ENDIF #
+								# IF C_HAS_PM #<span class="stack-event stack-circle stack-top-right bgc member blink">{PM_NUMBER}</span> # ENDIF #
 							</span>
 							<a href="{U_USER_PM}" class="offload">
 								<span>{@user.private.messaging}</span>
@@ -179,7 +179,7 @@
 							<li class="li-stretch connect-admin">
 								<span # IF C_UNREAD_ALERTS #class="stacked administrator"# ENDIF #>
 									<i class="fa fa-fw fa-lg fa-wrench" aria-hidden="true"></i>
-									# IF C_UNREAD_ALERTS # <span class="stack-event stack-circle stack-sup stack-right bgc administrator blink">{UNREAD_ALERTS_NUMBER}</span> # ENDIF #
+									# IF C_UNREAD_ALERTS # <span class="stack-event stack-circle stack-top-right bgc administrator blink">{UNREAD_ALERTS_NUMBER}</span> # ENDIF #
 								</span>
 								<a href="${relative_url(UserUrlBuilder::administration())}" class="offload">
 									<span>{@user.admin.panel}</span>
@@ -197,7 +197,7 @@
 						<li class="li-stretch connect-contribution">
 							<span # IF C_UNREAD_CONTRIBUTIONS #class="stacked moderator"# ENDIF #>
 								<i class="fa fa-fw fa-lg fa-file-alt" aria-hidden="true"></i>
-								# IF C_UNREAD_CONTRIBUTIONS #<span class="stack-event stack-circle stack-sup stack-right bgc moderator blink">{UNREAD_CONTRIBUTIONS_NUMBER}</span># ENDIF #
+								# IF C_UNREAD_CONTRIBUTIONS #<span class="stack-event stack-circle stack-top-right bgc moderator blink">{UNREAD_CONTRIBUTIONS_NUMBER}</span># ENDIF #
 							</span>
 							<a href="${relative_url(UserUrlBuilder::contribution_panel())}" class="offload">
 								<span>{@user.contribution.panel}</span>
@@ -208,7 +208,7 @@
 								<li class="li-stretch connect-{additional_menus.MENU_NAME}">
 									<span # IF additional_menus.C_UNREAD_ELEMENTS #class="stacked {additional_menus.LEVEL_CLASS}"# ENDIF #>
 										<i class="fa-fw fa-lg# IF additional_menus.C_ICON # {additional_menus.ICON}# ELSE # far fa-file-alt# ENDIF #" aria-hidden="true"></i>
-										# IF additional_menus.C_UNREAD_ELEMENTS #<span class="stack-event stack-circle stack-sup stack-right bgc {additional_menus.LEVEL_CLASS} blink">{additional_menus.UNREAD_ELEMENTS_NUMBER}</span># ENDIF #
+										# IF additional_menus.C_UNREAD_ELEMENTS #<span class="stack-event stack-circle stack-top-right bgc {additional_menus.LEVEL_CLASS} blink">{additional_menus.UNREAD_ELEMENTS_NUMBER}</span># ENDIF #
 									</span>
 									<a href="{additional_menus.URL}" class="offload">
 										<span>{additional_menus.LABEL}</span>

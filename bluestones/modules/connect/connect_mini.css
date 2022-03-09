@@ -4,7 +4,8 @@
 */
 
 #module-connect  #login { cursor: help; }
-#module-connect  .cell { display: inline-flex;  }
+
+#header #module-connect .cell { display: inline-flex;  }
 
 #module-connect .social-connect { display: inline-block; }
 

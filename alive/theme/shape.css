@@ -90,6 +90,7 @@ body {
     padding: 0.618em 0;
     opacity: 0;
     transition: all 0.5s;
+	pointer-events: none;
 }
 
 #menus-trigger {
@@ -102,6 +103,7 @@ body {
     z-index: 500;
     opacity: 1;
     transition: all 0.5s;
+	pointer-events: all;
 }
 
 #sub-header-content > * {
