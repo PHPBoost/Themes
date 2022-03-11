@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE repository SYSTEM "http://www.phpboost.com/repository/repository.dtd">
+<repository>
+	<header />
+	<app id="sample" type="template">
+		<version num="VersMaj.VersMin" priority="low" security-update="false" pubdate="YYYY/MM/DD">
+			<compatibility min="PbtVersMaj.PbtVersMin" />
+			<download url="">sample</download>
+			<authors>
+				<author name="author" email="author@email.com" />
+			</authors>
+			<description language="french" localized_language="Francais">
+				<name>Exemple de thème</name>
+				<new type="improvement">Description d'amélioration</new>
+				<new type="new_feature">Description de fonctionnailté supplémentaire</new>
+				<new type="bug">Description de résolution de bug</new>
+				<new type="security">Description de résolution de bug de sécurité</new>
+			</description>
+			<description language="english" localized_language="English">
+				<name>Sample theme</name>
+				<new type="improvement">Improvement description</new>
+				<new type="new_feature">New feature description</new>
+				<new type="bug">Security bug fix description</new>
+				<new type="security">Bug fix description</new>
+			</description>
+		</version>
+	</app>
+</repository>
