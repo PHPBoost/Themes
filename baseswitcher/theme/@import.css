@@ -37,7 +37,7 @@
 @import url('../../__default__/theme/global.css') screen;
 @import url('../../__default__/theme/content.css') screen;
 
-@import url('../../baseswitcher/theme/colors_code.css') screen;
+@import url('../../__default__/theme/colors_code.css') screen;
 @import url('../../baseswitcher/theme/colors.css') screen;
 
 @import url('../../baseswitcher/theme/base-switcher.css') screen;

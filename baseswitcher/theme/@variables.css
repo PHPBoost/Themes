@@ -14,13 +14,8 @@
     --txt-main:  #555555;
     --txt-rgb-s: 85, 85, 85;
     --txt-sub:  #555555;
-    --txt-rgb-a: 255, 255, 255;
-    --txt-alt:   #313131;
-
-    --ant-rgb-m: 255, 255, 255;
-    --ant-main:  #FFFFFF;
-    --ant-rgb-a: 236, 242, 249;
-    --ant-alt:   #ECF2F8;
+    --txt-rgb-a: 236, 242, 249;
+    --txt-alt:   #ECF2F8;
 
     --button-rgb: 236, 242, 249;
     --button:     #ECF2F8;
@@ -150,23 +145,24 @@
 [data-theme="dark"] {
     --txt-rgb-m: 187, 187, 187;
     --txt-main:  #BBBBBB;
+    --txt-rgb-s: 187, 187, 187;
+    --txt-sub:  #BBBBBB;
     --txt-rgb-a: 255, 255, 255;
     --txt-alt:   #FFFFFF;
 
-    --ant-rgb-m: 255, 255, 255;
-    --ant-main:  #FFFFFF;
-    --ant-rgb-a: 32, 58, 84;
-    --ant-alt:   #203A54;
-
     --bgc-rgb-m: 32, 58, 84;
     --bgc-main:  #203A54;
-    --bgc-rgb-s: 54, 100, 147;
-    --bgc-sub:   #366493;
+    --bgc-rgb-s: 66, 96, 125;
+    --bgc-sub:   #42607D;
+    --bgc-rgb-a: 54, 100, 147;
+    --bgc-alt:   #366493;
 
     --bdr-rgb-m: 187, 217, 245;
     --bdr-main:  #BCD9F5;
     --bdr-rgb-s: 1, 72, 119;
     --bdr-sub:   #014877;
+    --bdr-rgb-a: 1, 72, 119;
+    --bdr-alt:   #014877;
 
 /* .main - .link-color */
     --main-rgb-d: 26, 46, 68;

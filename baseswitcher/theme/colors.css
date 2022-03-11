@@ -9,7 +9,7 @@
 
 ::selection {
 	background-color: var(--bgc-alt);
-	color: var(--ant-alt);
+	color: var(--txt-alt);
 }
 
 body {
@@ -26,29 +26,29 @@ body {
 
 .scroll-to   	 { background-color: var(--bgc-alt); }
 .scroll-to:hover { background-color: var(--main-light); }
-.scroll-to i 	 { color: var(--ant-alt); }
+.scroll-to i 	 { color: var(--txt-alt); }
 
 .robot { color: var(--warning-tone); }
 
 /* --- Content -------------------------------------------------------------- */
 /* --- Cookies --- */
-.cookiebar-container { background-color: var(--bgc-sub); color: var(--ant-main); }
+.cookiebar-container { background-color: var(--bgc-sub); color: var(--txt-main); }
 
 /* --- Prime item --- */
 table tbody tr.prime-item td,
-.prime-item { background-color: var(--bgc-sub); color: var(--ant-main);}
+.prime-item { background-color: var(--bgc-sub); color: var(--txt-main); }
 
 /* --- Pagination --- */
 .pagination-item a { border-color: var(--bdr-main); }
 
 .pagination-item a:hover:not(.current-page) {
 	background-color: var(--main-light);
-	color: var(--ant-main);
+	color: var(--txt-main);
 }
 
 .pagination-item a:active {
 	background-color: var(--bgc-sub);
-	color: var(--ant-main);
+	color: var(--txt-main);
 	border-color: var(--bdr-main);
 }
 
@@ -78,7 +78,7 @@ table tbody tr.prime-item td,
 
 
 /* --- Progress bar --- */
-.progressbar-container { background-color: var(--bgc-sub); color: var(--ant-main); }
+.progressbar-container { background-color: var(--bgc-sub); color: var(--txt-main); }
 
 .progressbar-container .progressbar { background-color: var(--success-tone); }
 
@@ -98,7 +98,7 @@ table tbody tr.prime-item td,
 .dropzone { border-color: rgba(var(--main-rgb-t), 0.5); }
 
 /* --- Messages --- */
-.message-header-container { background-color: var(--bgc-sub); color: var(--ant-main); }
+.message-header-container { background-color: var(--bgc-sub); color: var(--txt-main); }
 
 .message-header-container,
 .message-content,
@@ -182,13 +182,13 @@ table tbody tr.prime-item td,
 .submit {
     background-color: var(--bgc-alt);
     border-color: var(--bdr-alt);
-	color: var(--ant-alt);
+	color: var(--txt-alt);
 }
 
 .button.submit:hover,
 .submit:hover {
 	background-color: var(--main-light);
-	color: var(--ant-alt);
+	color: var(--txt-alt);
 }
 
 .button.submit:active,
@@ -212,7 +212,7 @@ optgroup { border-color: var(--bdr-main); }
 select[multiple] option:checked,
 .selected-option a {
 	background-image: linear-gradient(0deg, var(--main-tone) 0%, var(--main-tone) 100%);
-	color: var(--ant-alt);
+	color: var(--txt-alt);
 }
 
 select[multiple] option[disabled] { color: var(--error-tone); }
@@ -367,12 +367,12 @@ table caption { border-color: var(--bdr-main); }
 thead th,
 .formatter-table .formatter-table-head {
 	background-color: var(--bgc-alt);
-	color: var(--ant-alt);
+	color: var(--txt-alt);
 	border-color: var(--bdr-alt);
 }
 
 thead th a,
-.formatter-table .formatter-table-head a { color: var(--ant-alt); }
+.formatter-table .formatter-table-head a { color: var(--txt-alt); }
 
 td,
 .bordered-table td { border-color: var(--bdr-main); }
@@ -781,7 +781,7 @@ a.wikipedia-link { border-bottom-color: var(--main-tone); }
 .bgc-full:hover	{ color: var(--button) !important; }
 
 .bgc-full a,
-.bgc-full:hover a { color: rgba(var(--ant-rgb-m), 0.5) !important; }
+.bgc-full:hover a { color: rgba(var(--txt-rgb-m), 0.5) !important; }
 
 .bgc-full.notice        { background-color: var(--notice-tone); 	   border-color: var(--notice-tone);}
 .bgc-full.question      { background-color: var(--question-tone); 	   border-color: var(--question-tone);}
