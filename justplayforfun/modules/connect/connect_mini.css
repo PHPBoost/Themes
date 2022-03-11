@@ -91,6 +91,8 @@
 	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
 
 	#module-connect .cell-list .connect-container li { padding: 0.618em; }
+
+	.connect-container-horizontal { max-width: 300px; }
 }
 
 #module-connect input,

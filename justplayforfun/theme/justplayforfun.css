@@ -58,6 +58,8 @@
     color: var(--txt-alt);
 }
 
+#header .cssmenu ul ul { z-index: 1000; }
+
 #header .cssmenu ul ul .cssmenu-title {
     background-color: var(--black-tone);
     color: var(--current-light);
@@ -116,7 +118,7 @@
 
 .several-items .cell .item-creation-date {
     position: absolute;
-    top: -0.309em;
+    top: -1.1618em;
     right: 1.809em;
     padding: 0.618em;
     background-color: var(--current-tone) !important;
@@ -140,6 +142,7 @@
 }
 
 @media (min-width: 769px) {
+    .several-items { padding: 0 0.618em; }
     .several-items .item-creation-date::after { border-bottom: 15px solid var(--current-tone); }
 }
 
