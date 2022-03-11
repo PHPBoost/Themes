@@ -1,0 +1,45 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+/* --- shape --- */
+#header-container { background-color: var(--bgc-main); }
+
+#menus-container {
+    background-color: var(--bgc-main);
+    box-shadow: 0 2px 2px 1px rgba(var(--darken), 0.15);
+}
+
+#menus-trigger:hover { color: var(--main-tone); }
+
+aside[id^="menu-"] {
+    background-color: var(--bgc-sub);
+    border-color: rgba(var(--darken), 0.3);
+}
+
+#main {
+    background-color: var(--bgc-main);
+    color: var(--txt-main);
+}
+
+/* --- inputs --- */
+#header [type="search"],
+#header [type="text"],
+#header [type="password"] {
+    border-width: 0 0 2px 0;
+    border-color: var(--main-tone);
+}
+
+/* --- cell --- */
+.cell-mini-vertical.cell-mini .cell { padding: 0.618em; }
+
+.cell-mini-vertical.cell-mini .cell > [class*="cell-"] { border-color: transparent; }
+
+.cell-mini-vertical.cell-mini .cell > [class*="cell-"]:last-child,
+.cell-mini-vertical.cell-mini .cell-name {
+    border-color: var(--bdr-main);
+    border-width: 0 0 1px;
+    border-style: solid;
+}

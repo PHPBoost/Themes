@@ -5,7 +5,7 @@
 	<app id="sample" type="template">
 		<version num="VersMaj.VersMin" priority="low" security-update="false" pubdate="YYYY/MM/DD">
 			<compatibility min="PbtVersMaj.PbtVersMin" />
-			<download url="path/to/download/link">sample</download>
+			<download url="path/to/download/tpl/link/sample.zip">sample</download>
 			<authors>
 				<author name="author" email="author@email.com" />
 			</authors>

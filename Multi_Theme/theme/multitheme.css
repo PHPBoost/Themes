@@ -1,0 +1,145 @@
+#inner-header,
+#global-container,
+#footer > *:not(:last-child) { background-color: var(--bgc-content); }
+
+#sub-header {
+    background-color: var(--bgc-content);
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: var(--bdr-main);
+}
+
+@media (min-width: 769px) {
+    #sub-header {
+        background-image: linear-gradient(
+            rgba(var(--main-rgb-l), 0.05) 25%,
+            rgba(var(--main-rgb-l), 0.3) 49%,
+            rgba(var(--bgc-rgb-s), 0.5) 50%,
+            rgba(var(--main-rgb-l), 0.5) 51%,
+            rgba(var(--main-rgb-l), 0.05) 100%
+        );
+    }
+}
+
+#inner-header {
+    padding: 0 0.309em;
+    background-color: var(--bgc-content);
+    background-image: linear-gradient(
+        rgba(var(--main-rgb-l), 0) 50%,
+        rgba(var(--main-rgb-l), 0.3) 100%
+    );
+}
+
+#top-header {
+    background-color: var(--bgc-content);
+    border-bottom: 2px solid var(--bdr-main);
+    border-top: 2px solid var(--bdr-main);
+}
+
+#inner-header-container .cell { padding: 0.309em; }
+
+#top-header-content .cell { padding: 0; }
+
+#site-name { font-size: 1em; }
+
+#site-slogan { font-size: 0.809em; }
+
+#visit-countainer {
+    font-size: 0.809em;
+    text-align: right;
+    min-width: 150px;
+    margin: 0 0.618em;
+}
+
+@media (min-width: 769px) {
+    .content-wrapper::before { background-image: linear-gradient(270deg, rgba(var(--darken), 0.2) 0%, rgba(var(--lighten), 0) 50%); }
+
+    .content-wrapper::after {background-image: linear-gradient(90deg, rgba(var(--darken), 0.2) 0%, rgba(var(--lighten), 0) 50%);}
+}
+
+#footer > *:not(:last-child) {
+    background-color: var(--main-light);
+    color: var(--txt-alt);
+}
+
+#footer > * a:not(.button) { color: var(--txt-alt); }
+
+#footer > *:last-child { background-color: transparent; }
+
+/* --- cssmenu --- */
+#sub-header-content .level-0 > li > .cssmenu-title { color: rgba(var(--darken), 1); }
+
+@media (min-width: 769px) {
+    #sub-header-content .level-0 > li > .cssmenu-title { padding: 1.618em 0.809em; }
+}
+
+#sub-header-content .level-0 > li.has-sub > .cssmenu-title { padding-right: 1.809em; }
+
+/* --- content --- */
+.item-thumbnail { background-color: var(--bgc-content); }
+
+/* --- cell --- */
+.several-items.cell.prime-item { background-color: var(--bgc-alt); }
+
+.several-items.cell > [class*="cell-"],
+.several-items.cell  footer { background-color: var(--bgc-sub); }
+
+.several-items.cell .cell-name { border-bottom: 2px solid var(--bdr-main); }
+
+.several-items.cell  footer {
+    border-bottom: 1px solid var(--bdr-main);
+    padding: 0.618em;
+}
+
+.several-items.cell .cell-header { border-top: 2px solid var(--bdr-main); }
+
+#global .cell-mini.cell-tile:not(.cell-pushmenu) .cell > [class*="cell-"]:not(:first-child),
+#global .cell-mini.cell-tile:not(.cell-pushmenu) .cell > [class*="cell-"]:not(:last-child) {
+    border-width: 0 0.456em;
+    border-color: var(--bdr-sub);
+}
+
+#global .cell-mini.cell-tile:not(.cell-pushmenu) .cell > [class*="cell-"]:first-child:not(:only-child) {
+    border-width: 0.456em 0.456em 0 0.456em;
+    border-color: var(--bdr-main);
+}
+
+#global .cell-mini.cell-tile:not(.cell-pushmenu) .cell > [class*="cell-"]:last-child:not(:only-child) {
+    border-width: 0 0.456em 0.456em 0.456em;
+    border-color: var(--bdr-main);
+}
+
+#global .cell-mini.cell-tile { margin-bottom: 1.618em; }
+
+#global .cell-mini.cell-tile:not(.cell-pushmenu) .cell {
+    background-color: var(--bgc-sub);
+    box-shadow: 0 0 3px 2px rgba(var(--darken), 0.5);
+    padding: 0;
+}
+
+/* --- slider --- */
+#slider {
+    position: relative;
+    overflow: hidden;
+    max-height: 106px;
+}
+
+@media (min-width: 769px) { #slider { max-height: 174px; } }
+@media (min-width: 1025px) { #slider { max-height: 232px; } }
+@media (min-width: 1367px) { #slider { max-height: 290px; } }
+
+.slide-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slide-prev { left: 0.618em; }
+
+.slide-next { right: 0.618em; }
+
+.slide-item img { width: 100%; }
+
+/* --- modules --- */
+.bbcode-containers { background-color: rgba(var(--main-rgb-l), 0.2); }

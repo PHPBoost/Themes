@@ -1,0 +1,108 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#module-connect  #login { cursor: help; }
+
+#header #module-connect .cell { display: inline-flex;  }
+
+#module-connect .social-connect { display: inline-block; }
+
+#module-connect .cell-list ul {
+	flex-direction: column;
+}
+
+#module-connect .cell-list li:hover { background-color: transparent; }
+
+@media (min-width: 769px) {
+	#module-connect .cell-list .connect-container li { padding: 0.309em; }
+}
+
+/* --- custom --- */
+.connect-button {
+	display: inline-block;
+	padding: 0.309em 0.618em;
+	background-color: var(--bgc-alt);
+	color: var(--txt-alt);
+	font-size: 1.618em;
+}
+
+.connect-button:hover {
+	text-decoration: none;
+	background-image: linear-gradient(rgba(var(--darken), 0.3), rgba(var(--darken), 0.3));
+}
+
+.cell-list .connect-inner ul li.li-stretch { padding: 0.618em; }
+
+.connect-inner ul { flex: 1 1 auto; }
+
+#module-connect .administrator {
+	color: var(--star-tone);
+	border-color: var(--star-tone);
+}
+
+#module-connect .cell {
+	padding: 0;
+	border-width: 0;
+}
+
+#module-connect .cell input { color: var(--txt-alt); }
+
+#module-connect .connect-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	top: calc(100% + 1.618em);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 200;
+	transition: all 0.3s ease 0.3s;
+	background-color: var(--bgc-alt);
+	color: var(--txt-alt);
+	text-align: center;
+	padding: 1.618em 0.618em;
+}
+
+#module-connect .cell-list { margin: auto; }
+
+@media (min-width: 769px) {
+	#module-connect .connect-container { width: 400px; }
+
+	#module-connect .connect-container ul { width: 250px; }
+
+	#module-connect .connect-container .connect-inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+	}
+}
+
+#module-connect .connect-container a { color: var(--main-light); }
+
+#module-connect .connect-container a:hover { color: var(--main-tone); }
+
+#module-connect.opened .connect-container{
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease 0.3s;
+}
+
+#footer #module-connect .connect-container{
+	top: auto;
+	bottom: calc(100% + 1.618em);
+}
+
+#footer #module-connect.opened .connect-container{ bottom: 100%; }
+
+@media (min-width: 769px) { #module-connect.opened .connect-container { width: 500px; } }
+
+#module-connect .connect-container .close-connect {
+	position: absolute;
+	top: 0.228em;
+	right: 0.618em;
+	cursor: pointer;
+}

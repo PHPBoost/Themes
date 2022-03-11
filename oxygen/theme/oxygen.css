@@ -1,0 +1,75 @@
+/* --- shape --- */
+#site-infos { justify-content: space-between; }
+
+#site-name-container { margin: 0 0.618em 0 0; }
+
+#site-logo {
+    width: 90px;
+    height: 90px;
+    padding: 1.309em 1.618em 1.618em;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url('images/logo.svg');
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 769px) {
+    #site-logo {
+        width: 120px;
+        height: 120px;
+        background-size: 80px;
+    }
+}
+
+#inner-header .grouped-inputs { justify-content: flex-start !important; }
+
+#sub-header-content { padding: 0.456em 0;}
+
+#global-container { padding: 0 0.618em; }
+
+/* --- cell --- */
+.cell-mini-vertical .cell { margin-bottom: 1.618em; }
+
+.cell-mini .cell > [class*="cell-"] { border: none; }
+
+.cell-mini .cell-name {
+    border-bottom: 1px solid var(--bdr-main);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --- content --- */
+.section-header h1::first-letter {
+    margin-right: 0.1618em;
+}
+
+.section-header h1 {
+    position: relative;
+	padding-left: 0.809em;
+	letter-spacing: 0.1618em;
+    z-index: 1;
+}
+
+.section-header h1::after {
+    left: 5px;
+    top: -4px;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 1.618em;
+    height: 1.618em;
+    background-color: var(--logo-tone);
+    z-index: -1;
+}
+
+.formatter-title { text-decoration: none !important; }
+
+.message-helper { border-width: 0 0 0 3px; }
+
+/* --- modules --- */
+#module-mini-calendar .grouped-inputs { margin: 0.456em 0 !important; }
+
+.cell-mini #shoutbox-bbcode-container { margin: 0.456em 0 !important; }

@@ -1,0 +1,140 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+:root {
+    /* cell */
+    --cell-container-gap : -1.236em;
+    --cell-gap : 1.236em;
+
+    /* colors */
+    --txt-rgb-m: 187, 187, 187;
+    --txt-main:  #BBBBBB;
+    --txt-rgb-s: 187, 187, 187;
+    --txt-sub:  #BBBBBB;
+    --txt-rgb-a: 255, 255, 255;
+    --txt-alt:   #FFFFFF;
+
+    --bgc-rgb-m: 24, 24, 24;
+    --bgc-main:  #181818;
+    --bgc-rgb-s: 48, 48, 48;
+    --bgc-sub:   #313131;
+    --bgc-rgb-a: 45, 180, 218;
+    --bgc-alt:   #03ACDB;
+
+    --bdr-rgb-m: 83, 83, 83;
+    --bdr-main:  #535353;
+    --bdr-rgb-s: 9, 9, 9;
+    --bdr-sub:   #090909;
+    --bdr-rgb-a: 45, 180, 218;
+    --bdr-alt:   #03ACDB;
+
+    --darken :   0, 0, 0;
+    --lighten:   255, 255, 255;
+
+/* .main - .link-color */
+    --main-rgb-d: 5, 138, 175;
+    --main-dark:  #058AAF;
+    --main-rgb-t: 3, 172, 219;
+    --main-tone:  #03ACDB;
+    --main-rgb-l: 45, 180, 218;
+    --main-light: #2DB4DA;
+
+/* .logo */
+    --logo-rgb-d: 32, 58, 84;
+    --logo-dark:  #203A54;
+    --logo-rgb-t: 50, 100, 147;
+    --logo-tone:  #366493;
+    --logo-rgb-l: 83, 145, 193;
+    --logo-light: #5391C0;
+
+/* .notice */
+    --notice-rgb-d: 103, 81, 61;
+    --notice-dark:  #67513D;
+    --notice-rgb-t: 170, 142, 105;
+    --notice-tone:  #AA8E69;
+    --notice-rgb-l: 209, 188, 151;
+    --notice-light: #D1BC97;
+
+/* .question */
+    --question-rgb-d: 35, 108, 177;
+    --question-dark:  #236CB1;
+    --question-rgb-t: 59, 175, 218;
+    --question-tone:  #3BAFDA;
+    --question-rgb-l: 91, 213, 237;
+    --question-light: #5BD5ED;
+
+/* .success */
+    --success-rgb-d: 25, 122, 59;
+    --success-dark:  #197A3B;
+    --success-rgb-t: 42, 186, 102;
+    --success-tone:  #2ABA66;
+    --success-rgb-l: 66, 221, 148;
+    --success-light: #42DC94;
+
+/* .warning */
+    --warning-rgb-d: 218, 73, 23;
+    --warning-dark:  #DA4917;
+    --warning-rgb-t: 238, 128, 39;
+    --warning-tone:  #EE8027;
+    --warning-rgb-l: 247, 175, 61;
+    --warning-light: #F7AF3D;
+
+/* .error */
+    --error-rgb-d: 129, 23, 36;
+    --error-dark:  #811724;
+    --error-rgb-t: 191, 38, 60;
+    --error-tone:  #BF263C;
+    --error-rgb-l: 223, 59, 92;
+    --error-light: #DF3B5C;
+
+/* .star - .link-color-alt */
+    --star-rgb-d: 189, 135, 39;
+    --star-dark:  #BD8727;
+    --star-rgb-t: 224, 195, 65;
+    --star-tone:  #E0C341;
+    --star-rgb-l: 240, 225, 98;
+    --star-light: #F0E163;
+
+/* .visitor */
+    --visitor-rgb-d: 32, 80, 94;
+    --visitor-dark:  #20505E;
+    --visitor-rgb-t: 54, 140, 161;
+    --visitor-tone:  #368CA1;
+    --visitor-rgb-l: 83, 186, 203;
+    --visitor-light: #53BACB;
+
+/* .custom-author */
+    --custom-author-rgb-d: 74, 47, 40;
+    --custom-author-dark:  #4a2f28;
+    --custom-author-rgb-t: 128, 81, 69;
+    --custom-author-tone:  #805246;
+    --custom-author-rgb-l: 182, 116, 98;
+    --custom-author-light: #b67462;
+
+/* .member */
+    --member-rgb-d: 33, 125, 90;
+    --member-dark:  #217D5A;
+    --member-rgb-t: 72, 252, 173;
+    --member-tone:  #37BC9B;
+    --member-rgb-l: 85, 221, 199;
+    --member-light: #55DDC7;
+
+/* .moderator */
+    --moderator-rgb-d: 181, 6, 100;
+    --moderator-dark:  #B50664;
+    --moderator-rgb-t: 255, 0, 136;
+    --moderator-tone:  #FF0088;
+    --moderator-rgb-l: 245, 80, 168;
+    --moderator-light: #F550A8;
+
+/* .administrator */
+    --administrator-rgb-d: 86, 70, 181;
+    --administrator-dark:  #5646B5;
+    --administrator-rgb-t: 150, 122, 221;
+    --administrator-tone:  #967ADC;
+    --administrator-rgb-l: 195, 169, 238;
+    --administrator-light: #C3A9EE;
+}

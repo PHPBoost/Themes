@@ -1,0 +1,88 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#header #module-mini-search .cell { display: inline-flex; }
+
+#module-mini-search .grouped-search { flex-direction: row; }
+
+#module-mini-search .grouped-search input { width: 100%; }
+#module-mini-search .grouped-search button { width: auto; }
+
+#mini-search-form {
+	margin: 1em 1em 1em 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (min-width: 769px) {
+	#mini-search-form { margin: 0.618em 1.618em 0.618em 0; }
+	#module-mini-search .grouped-search input { width: auto; }
+}
+
+.search-button {
+	float: right;
+	display: inline-block;
+	padding: 0.309em 0.618em;
+	background-color: var(--bgc-alt);
+	color: var(--txt-alt);
+	font-size: 1.618em;
+}
+
+.search-button:hover {
+	text-decoration: none;
+	background-image: linear-gradient(rgba(var(--darken), 0.3), rgba(var(--darken), 0.3));
+}
+
+#module-mini-search .cell {
+	padding: 0;
+	border-width: 0;
+}
+
+#module-mini-search .search-container {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	top: calc(100% + 1.618em);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 200;
+	transition: all 0.3s ease 0.3s;
+	background-color: var(--bgc-alt);
+	color: var(--txt-alt);
+	text-align: center;
+	padding: 1.618em 0.618em;
+}
+
+@media (min-width: 769px) {
+	#module-mini-search .search-container { width: auto; }
+}
+
+#module-mini-search .search-container input { color: var(--txt-alt); }
+
+#module-mini-search.opened .search-container {
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease 0.3s;
+}
+
+#footer #module-mini-search .search-container {
+	top: auto;
+	bottom: calc(100% + 1.618em);
+}
+
+#footer #module-mini-search.opened .search-container { bottom: 100%; }
+
+#module-mini-search .search-container .close-search {
+	position: absolute;
+	top: 0.228em;
+	right: 0.618em;
+	cursor: pointer;
+}
+
+#module-mini-search .advanced-search {
+	margin: 0.618em 0 !important;
+	display: block;
+}

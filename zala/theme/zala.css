@@ -1,0 +1,70 @@
+.bbcode-bar { border-color: var(--bdr-sub) !important; }
+
+.progressbar-container { color: var(--txt-alt); }
+
+legend {
+    border-color: var(--bdr-sub);
+    border-bottom-width: 2px;
+}
+
+.formatter-content {
+    background-color: rgba(var(--darken), 0.1);
+    border-color: var(--main-light);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: 0 1px rgba(var(--lighten), 0);
+    color: var(--txt-alt);
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"],
+.token.operator,
+.token.entity,
+.token.url,
+.language-css
+.token.string,
+.style .token.string {
+    background-color: rgba(var(--lighten), 0);
+}
+
+.token.scope {
+    color: var(--txt-main);
+}
+
+.copy-code-content {
+    border-style: none;
+}
+
+thead th, .formatter-table .formatter-table-head {
+    background-color: var(--bgc-sub);
+    color: var(--txt-main);
+    border-color: var(--bdr-sub);
+}
+
+thead th a, .formatter-table .formatter-table-head a { color: var(--txt-alt); }
+
+select[multiple] option:checked, .selected-option a { background-image: linear-gradient(0deg, var(--bgc-main) 0%, var(--bgc-main) 100%); }
+
+.grouped-element { border-color: var(--bdr-sub); }
+
+.button.submit, .submit { color: var(--bgc-main); }
+
+.cell-tile .cell > [class*="cell-"] {
+    background-color: rgba(var(--darken), 0.2);
+    border-color: var(--bdr-sub);
+}
+
+.cell-mini .cell > [class*="cell-"] { background-color: transparent; }
+
+.cell-mini .cell > .cell-header {
+    background-color: rgba(var(--darken), 0.2);
+    border-color: var(--bdr-sub);
+}
+
+.cssmenu:not(.cssmenu-static) ul ul,
+.cssmenu-actionslinks > ul {
+    background-color: var(--bgc-sub);
+    border-color: var(--bdr-sub);
+}

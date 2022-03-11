@@ -1,0 +1,36 @@
+/* cell */
+.several-items { margin-top: 1.618em; }
+
+.several-items br { display: block;}
+
+.cell-mini .cell-header { text-transform: uppercase; }
+
+/* cssmenu */
+#sub-header .cssmenu { flex: 1 1 auto; }
+#sub-header .cssmenu > ul > li > .cssmenu-title { line-height: 3.309rem; }
+
+/* inputs */
+[type=text],
+[type=email],
+[type=url],
+[type=number],
+[type=color],
+[type=tel],
+[type=search],
+[type=password],
+[type=file],
+textarea,
+select { border-width: 0 0 2px; }
+
+/* cookiebar */
+.cookiebar-container { color: var(--txt-alt); }
+
+/* message-helper */
+.message-helper { outline-style: double; }
+
+/* sticky-menu */
+.sticky-menu { top: 50px; }
+
+/* modules */
+/* HomeLanding */
+#cssmenu-anchors { margin-bottom: 1.618em; }

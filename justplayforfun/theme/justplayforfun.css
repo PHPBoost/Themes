@@ -1,0 +1,188 @@
+#header {
+    background-color: var(--black-tone);
+    color: var(--grey-tone);
+}
+
+#header .administrator { color: var(--txt-alt); }
+
+#header a { color: var(--grey-tone); }
+#header a:hover {
+    color: var(--txt-main);
+    text-decoration: none;
+}
+
+#site-name,
+#site-slogan {
+    color: var(--txt-alt);
+    text-shadow: 0 0 2px rgba(var(--darken), 1);
+}
+
+#sub-header-content {
+    background-image: linear-gradient(var(--black-light) , var(--black-tone));
+    border-color: var(--black-dark);
+}
+
+#global {
+    background-image: url(images/wrapper.png);
+    background-repeat: repeat-x;
+}
+
+#global-container { background-color: var(--bgc-main); }
+
+#breadcrumb {
+    padding: 2.228em 0.618em 0.618em;
+    font-style: italic;
+    background-color: var(--grey-tone);
+    border: 1px solid var(--grey-dark);
+}
+
+#visit-counter {
+    top: auto;
+    bottom: 0.618em;
+}
+
+/* cssmenu in sub-header */
+#header .cssmenu > ul > li.has-sub > ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+
+#header .cssmenu > ul > li.has-sub:hover > ul { max-height: 430px; }
+
+#header .cssmenu { color: var(--txt-alt); }
+
+#header .cssmenu > ul > li > .cssmenu-title {
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
+    color: var(--txt-alt);
+}
+
+#header .cssmenu ul ul { z-index: 1000; }
+
+#header .cssmenu ul ul .cssmenu-title {
+    background-color: var(--black-tone);
+    color: var(--current-light);
+}
+
+#header .cssmenu ul ul > li:hover > .cssmenu-title {
+    background-color: var(--current-tone);
+    color: var(--txt-alt);
+}
+
+#header .cssmenu > ul > li:not(.has-sub):hover > .cssmenu-title,
+#header .cssmenu > ul > li.current > .cssmenu-title {
+    padding-top: 0.456em;
+    padding-bottom: 0.456em;
+    border-radius: 8px;
+}
+
+#header .cssmenu > ul > li:hover > .cssmenu-title,
+#header .cssmenu > ul > li.current:hover > .cssmenu-title { border-radius: 8px; }
+
+@media (min-width:759px) {
+    #header .cssmenu > ul > li.has-sub:hover > .cssmenu-title,
+    #header .cssmenu > ul > li.has-sub.current:hover > .cssmenu-title {
+        padding-top: 0.456em;
+        margin-top: 0.353em;
+        border-radius: 8px 8px 0 0;
+    }
+
+    #header .cssmenu > ul > li.has-sub.current:hover > .cssmenu-title { padding-bottom: 0.809em; }
+}
+
+.cssmenu ul > li:hover > .cssmenu-title,
+.cssmenu ul > li.current > .cssmenu-title {
+    background-color: var(--current-tone);
+    color: var(--txt-alt);
+}
+
+/* cell */
+#global .cell-mini .cell { margin-bottom: 1.618em; }
+
+#menu-left .cell-mini { padding-left: 0.618em; }
+
+#menu-right .cell-mini { padding-right: 0.618em; }
+
+#global .cell-tile .cell > [class*="cell-"] {
+	border: transparent;
+	box-shadow: inset 1px 0 rgba(var(--darken), 0.2);
+}
+
+.cell-flex .several-items .cell-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.several-items .cell { position: relative; }
+
+.several-items .cell .item-creation-date {
+    position: absolute;
+    top: -1.1618em;
+    right: 1.809em;
+    padding: 0.618em;
+    background-color: var(--current-tone) !important;
+    color: var(--txt-alt);
+    border-radius: 0;
+    border-right: 1px solid var(--black-light);
+    z-index: 2;
+}
+
+.several-items .item-creation-date::after {
+    position: absolute;
+    left: calc(100% + 1px);
+    top: 0%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 13px solid var(--current-tone);
+    content: '';
+    clear: both;
+}
+
+@media (min-width: 769px) {
+    .several-items { padding: 0 0.618em; }
+    .several-items .item-creation-date::after { border-bottom: 15px solid var(--current-tone); }
+}
+
+.several-items .cell-header {
+    background-image: linear-gradient(var(--grey-light), var(--grey-tone));
+    padding-top: 0.809em;
+}
+
+.several-items.cell > [class*="cell-"] { border-color: var(--black-light); }
+
+.several-items .cell-body .cell-infos {
+    order: 1;
+    border-top: 1px solid var(--black-light);
+}
+
+/* Slide header */
+.slidesjs-navigation, .slidesjs-pagination { display: none !important; }
+
+#slide-container { position: relative; }
+
+#slide-content {
+    overflow: hidden;
+    max-height: 90px;
+}
+
+@media (min-width: 769px) {
+    #slide-content { max-height: 290px; }
+}
+
+.slidesjs-container,
+.slidesjs-control img {
+    min-height: 90px;
+    max-height: 290px;
+}
+
+#slides-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(var(--darken), 0.5);
+}

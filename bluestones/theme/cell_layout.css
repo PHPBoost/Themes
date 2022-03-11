@@ -1,0 +1,167 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+.cell-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.cell-flex::before,
+.cell-flex::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.cell-flex > * {
+	width: 100%;
+	margin: 0 0 var(--cell-gap);
+}
+
+@media (min-width: 769px) {
+	.cell-flex {
+		flex-direction: row;
+		margin: 0 var(--cell-container-gap) var(--cell-container-gap) 0;
+	}
+
+	.cell-flex > * { margin: 0 var(--cell-gap) var(--cell-gap) 0; }
+
+	.cell-columns-2 > * { width: calc(100% / 2 - var(--cell-gap)); }
+	.cell-columns-3 > * { width: calc(100% / 2 - var(--cell-gap)); }
+	.cell-columns-4 > * { width: calc(100% / 2 - var(--cell-gap)); }
+
+	.cell-flex > *.cell-100 { width: 100% !important; }
+	.cell-flex > *.cell-1-4,
+	.cell-flex > *.cell-1-3,
+	.cell-flex > *.cell-1-2,
+	.cell-flex > *.cell-2-3,
+	.cell-flex > *.cell-3-4 { width: calc(100% / 2 - var(--cell-gap)) !important; }
+}
+
+@media (min-width: 1025px) {
+	.cell-columns-2 > * { width: calc(100% / 2 - var(--cell-gap)); }
+	.cell-columns-3 > * { width: calc(100% / 3 - var(--cell-gap)); }
+	.cell-columns-4 > * { width: calc(100% / 4 - var(--cell-gap)); }
+
+	.cell-flex > *.cell-100 { width: 100% !important; }
+	.cell-flex > *.cell-1-4 { width: calc(100% / 4 - var(--cell-gap)) !important; }
+	.cell-flex > *.cell-1-3 { width: calc(100% / 3 - var(--cell-gap)) !important; }
+	.cell-flex > *.cell-1-2 { width: calc(100% / 2 - var(--cell-gap)) !important; }
+	.cell-flex > *.cell-2-3 { width: calc(100% * 2 / 3 - var(--cell-gap)) !important; }
+	.cell-flex > *.cell-3-4 { width: calc(100% * 3 / 4 - var(--cell-gap)) !important; }
+}
+
+.cell-flex .cell {
+	display: flex;
+	flex-direction: column;
+}
+
+.cell-flex .cell-body,
+.cell-flex .cell-list,
+.cell-flex .cell-table,
+.cell-flex .cell-textarea,
+.flex-wide { flex: 1 1 auto; }
+
+.cell-flex .cell-list-inline ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cell-flex .cell-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.cell-flex .cell-form.grouped-inputs { flex-direction: row; }
+
+@media (min-width: 769px) {
+	.cell-flex .cell-form { flex-direction: row; }
+
+	.cell-flex .cell-form .cell-label { width: 40%; }
+
+	.cell-flex .cell-form .cell-label + .cell-input { width: 60%; }
+}
+
+.cell-flex .cell-footer { flex: 0 1 auto; }
+
+/* --- List layout ---------------------------------------------------------- */
+.cell-row::after,
+.cell-row::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media (min-width: 769px) {
+	.cell-layout.cell-row .cell-thumbnail { width: calc(100% / 3); }
+	.cell-layout.cell-row .cell-thumbnail.cell-avatar {
+		width: auto;
+		margin: 0;
+	}
+
+	.cell-layout.cell-row .cell-thumbnail + .cell-content { width: 70%; }
+}
+
+/* --- Modal ---------------------------------------------------------------- */
+.cell-modal .cell {
+	max-width: 512px;
+}
+
+/* --- Options -------------------------------------------------------------- */
+@media (min-width:769px) {
+	.cell-options {
+		float: right;
+		min-width: 235px;
+		max-width: 50%;
+	}
+}
+
+/* --- Inline --------------------------------------------------------------- */
+.cell-inline > * { width: auto; }
+
+@media (min-width: 769px) {
+	.cell-inline .cell { max-width: 234px; }
+}
+
+/* --- Mini module ---------------------------------------------------------- */
+.cell-mini-vertical .cell { padding:  0.618em 0 0; }
+
+.cell-mini .cell-form .cell-label,
+.cell-mini .cell-form .cell-input { padding: 0; }
+
+.cell-mini fieldset { margin: 0; }
+
+/* --- custom --- */
+.cell-layout.cell-row .cell {
+	display: flex;
+	flex-direction: column;
+}
+
+.cell-layout .cell-primary { position: relative; }
+
+.item-category {
+	position: absolute;
+	left: 0.618em;
+	transform: translateY(-30%);
+	z-index: 2;
+	padding: 0.309em 0.618em;
+}
+
+.cell-row .item-category { top: -0.618em; }
+
+@media (min-width: 769px) {
+	.cell-layout.cell-row .cell { flex-direction: row; }
+	.cell-layout.cell-row .cell-thumbnail { width: 100%; }
+	.cell-layout.cell-row .cell-primary { width: calc(100% / 3); }
+	.cell-layout.cell-row .cell-secondary { width: 100%; }
+	.cell-layout.cell-row .cell-primary + .cell-secondary { width: calc(100% / 3 * 2); }
+}
+
+.cell-layout :is(
+	.tags-container,
+	.sources-container) { padding: 0.618em; }

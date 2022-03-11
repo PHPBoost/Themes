@@ -1,0 +1,41 @@
+.base-switcher {
+	z-index: 200;
+	position: fixed;
+	bottom: 0.309em;
+	left: 0.309em
+}
+
+.base-switcher span {
+    padding: 0.309em 0.456em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+	cursor: pointer;
+    display: block;
+	margin-bottom: 0.228em;
+}
+
+span.base-switcher-light {
+    background-color:var(--visitor-tone);
+    color: var(--star-light);
+}
+
+span.base-switcher-dark {
+    background-color: rgba(var(--darken), 1);
+    color: rgba(var(--lighten), 1);
+}
+
+@media (min-width: 769px) {
+	.base-switcher {
+		position: fixed;
+		top: 50%;
+		left: 0.618em;
+		bottom: auto;
+		transform: translateY(-50%);
+	}
+}
+
+/* Content */
+.bgc-full { font-weight: 500; }
+
+/* --- Dark theme --- */
