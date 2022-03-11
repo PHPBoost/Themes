@@ -12,18 +12,24 @@
     /* colors */
     --txt-rgb-m: 183, 193, 203;
     --txt-main:  #B8C1CB;
-    --txt-rgb-a: 187, 217, 245;
-    --txt-alt:   #BCD9F5;
+    --txt-rgb-s: 187, 217, 245;
+    --txt-sub:   #BCD9F5;
+    --txt-rgb-a: 242, 242, 242;
+    --txt-alt:   #F2F2F2;
 
     --bgc-rgb-m: 14, 33, 52;
     --bgc-main:  #0E2134;
     --bgc-rgb-s: 47, 65, 84;
     --bgc-sub:   #2F4154;
+    --bgc-rgb-a: 47, 65, 84;
+    --bgc-alt:   #2F4154;
 
     --bdr-rgb-m: 54, 100, 147;
     --bdr-main:  #366493;
     --bdr-rgb-s: 20, 48, 75;
     --bdr-sub:   #14304B;
+    --bdr-rgb-a: 20, 48, 75;
+    --bdr-alt:   #14304B;
 
     --darken :   0, 0, 0;
     --lighten:   255, 255, 255;

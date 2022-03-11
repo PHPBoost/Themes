@@ -126,9 +126,6 @@ body {
 
 #sub-header {
 	padding: 0;
-	border-width: 0 0 2px;
-	border-style: solid;
-	border-color: transparent;
 }
 
 @media (min-width: 769px) {

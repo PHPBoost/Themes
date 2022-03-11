@@ -33,9 +33,9 @@ body {
 #menu-left,
 #menu-right { border-color: var(--main-light); }
 
-.bgc-main	{ background-color: var(--bgc-main); }
-.bgc-sub    { background-color: var(--bgc-sub); }
-.bgc-title	{ background-color: var(--main-light); color: var(--txt-alt); }
+.bgc-main	{ background-color: var(--bgc-main); color: var(--txt-main); }
+.bgc-sub    { background-color: var(--bgc-sub); color: var(--txt-sub); }
+.bgc-alt	{ background-color: var(--main-alt); color: var(--txt-alt); }
 
 #footer       { border-color: var(--bdr-alt); }
 .footer-infos { border-color: var(--bdr-alt); }
@@ -53,8 +53,8 @@ body {
 /* --- Prime item --- */
 table tbody tr.prime-item td,
 .prime-item {
-	background-color: rgba(var(--bgc-rgb-s), 0.6);
-	color: var(--txt-alt);
+	background-color: var(--bgc-sub);
+	color: var(--txt-sub);
 }
 
 /* --- Pagination --- */
@@ -385,9 +385,9 @@ table caption { border-color: var(--bdr-main); }
 
 thead th,
 .formatter-table .formatter-table-head {
-	background-color: var(--bgc-sub);
+	background-color: var(--bgc-alt);
 	color: var(--txt-alt);
-	border-color: var(--bdr-sub);
+	border-color: var(--bdr-alt);
 }
 
 thead th a,
@@ -448,12 +448,6 @@ pre[style*="display:inline"] { background-color: var(--bgc-sub); }
 h2.formatter-title,
 h3.formatter-title { border-color: var(--bdr-alt); }
 
-.copy-code-content span[style*="color: #0000FF;"] {color: var(--notice-tone) !important;}
-.copy-code-content span[style*="color: #000080;"] {color: #91367a !important;}
-.copy-code-content span[style*="color: #8000FF;"] {color: #917a36 !important;}
-.copy-code-content span[style*="color: #808080;"] {color: #369163 !important;}
-.copy-code-content span[style*="color: #008000;"] {color: var(--success-tone) !important;}
-
 .formatter-hide .formatter-hide-message {
 	background-color: rgba(var(--main-rgb-t), 0.15);
 	border-color: rgba(var(--main-rgb-t), 0.4);
@@ -468,8 +462,9 @@ h3.formatter-title { border-color: var(--bdr-alt); }
 	background-color: var(--bgc-main);
 	box-shadow: 0 0 10px rgba(var(--main-rgb-t), 0.1);
 }
-#header .cssmenu.small-screen ul { background-color: var(--bgc-sub); color: var(--txt-alt); }
-#header .cssmenu ul ul { background-color: var(--bgc-sub); }
+
+#header .cssmenu.small-screen ul { background-color: var(--bgc-alt); color: var(--txt-alt); }
+#header .cssmenu ul ul { background-color: var(--bgc-alt); }
 #header a.cssmenu-title { color: var(--main-light); }
 #header a.cssmenu-title:hover { color: var(--main-tone); }
 
@@ -663,7 +658,7 @@ a[class*='lightcase-icon-']:hover {
 }
 
 /* sticky */
-#sub-header.sticking { background-color: var(--bgc-sub); }
+#sub-header.sticking { background-color: var(--bgc-alt); }
 
 /* -- global ---------------------------------------------------------------- */
 a,
@@ -735,7 +730,7 @@ a.wikipedia-link { border-bottom-color: var(--main-tone); }
 
 /* --- cell --- */
 .cell-tile .cell .cell-header {
-	background-color: var(--bgc-sub);
+	background-color: var(--bgc-alt);
 	border-color: var(--bdr-main);
 	color: var(--txt-alt);
 }
@@ -769,7 +764,7 @@ a.cell-thumbnail-caption {
 .cell-layout .cell-thumbnail-caption a:hover { color: var(--main-tone); }
 
 .item-category:not(.pinned-category) {
-	background-color: var(--bgc-sub);
+	background-color: var(--bgc-alt);
 	color: var(--main-light);
 }
 

@@ -23,7 +23,7 @@
 .connect-button {
 	display: inline-block;
 	padding: 0.309em 0.618em;
-	background-color: var(--bgc-sub);
+	background-color: var(--bgc-alt);
 	color: var(--txt-alt);
 	font-size: 1.618em;
 }
@@ -59,7 +59,7 @@
 	visibility: hidden;
 	z-index: 200;
 	transition: all 0.3s ease 0.3s;
-	background-color: var(--bgc-sub);
+	background-color: var(--bgc-alt);
 	color: var(--txt-alt);
 	text-align: center;
 	padding: 1.618em 0.618em;
