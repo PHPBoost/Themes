@@ -56,6 +56,9 @@
 		flex-wrap: wrap;
 	}
 
+	#module-connect [type="text"],
+	#module-connect [type="password"] { width: 100%; }
+
 	#module-connect .li-spaced { width: auto; }
 }
 

@@ -30,6 +30,7 @@
 #module-connect .cell-list-inline ul {
 	flex-direction: column;
 	flex-wrap: nowrap;
+	align-items: center;
 }
 
 #module-connect .cell-list .li-spaced a { padding-right: 0.618em; }
@@ -94,4 +95,9 @@
 	#module-connect.user-connected .connect-container-horizontal li { border-right: 2px solid var(--main-tone); }
 
 	#module-connect.user-connected .connect-container-horizontal li:last-child { border-right: none; }
+
+	#module-connect .cell-list .connect-container .autoconnect {
+		padding: 0.618em 0;
+		display: inline-block;
+	}
 }

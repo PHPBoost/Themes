@@ -33,35 +33,31 @@
 					<div class="connect-container">
 						<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('common.close', 'common-lang')}</span>
 						<ul class="cell-list">
-							<li>
-								<form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
-									<ul>
-										<li>
-											<label for="login">
-												<input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
-												<span class="sr-only">{@user.username}</span>
-											</label>
-										</li>
-										<li>
-											<label for="password">
-												<input type="password" id="password" name="password" placeholder="{@user.password}">
-												<span class="sr-only">{@user.password}</span>
-											</label>
-										</li>
-										<li class="align-center">
-											<label class="checkbox" for="autoconnect">
-												<span>{@user.auto.connect}</span>
-												<input checked="checked" type="checkbox" id="autoconnect" name="autoconnect" aria-label="{@user.auto.connect}">
-											</label>
-										</li>
-										<li class="align-center">
-											<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
-											<input type="hidden" name="token" value="{TOKEN}">
-											<button type="submit" name="authenticate" value="internal" class="button bgc-full success small">{@user.sign.in}</button>
-										</li>
-									</ul>
-								</form>
-							</li>
+							<form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
+								<li>
+									<label for="login">
+										<input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
+										<span class="sr-only">{@user.username}</span>
+									</label>
+								</li>
+								<li>
+									<label for="password">
+										<input type="password" id="password" name="password" placeholder="{@user.password}">
+										<span class="sr-only">{@user.password}</span>
+									</label>
+								</li>
+								<li class="align-center">
+									<label class="checkbox autoconnect small" for="autoconnect">
+										<span>{@user.auto.connect}</span>
+										<input checked="checked" type="checkbox" id="autoconnect" name="autoconnect" aria-label="{@user.auto.connect}">
+									</label>
+								</li>
+								<li class="align-center">
+									<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
+									<input type="hidden" name="token" value="{TOKEN}">
+									<button type="submit" name="authenticate" value="internal" class="button bgc-full success small">{@user.sign.in}</button>
+								</li>
+							</form>
 
 							# IF C_REGISTRATION_DISPLAYED #
 								# IF C_REGISTRATION_ENABLED #
