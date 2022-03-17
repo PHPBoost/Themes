@@ -40,6 +40,7 @@
 	</head>
 
 	<body itemscope="itemscope" itemtype="http://schema.org/WebPage">
+		<a href="#global" aria-label="{@common.go.to.content}"></a>
 		# INCLUDE BODY #
 		# INCLUDE JS_BOTTOM #
 		<script>
