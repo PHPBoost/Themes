@@ -436,6 +436,9 @@ a.bbcode-button:hover,
 
 pre[style*="display:inline"] { background-color: rgba(var(--darken), 0.2); }
 
+pre.precode { background-color: var(--bgc-sub); }
+pre.precode .line-number { border-color: var(--bdr-sub); }
+
 h2.formatter-title,
 h3.formatter-title { border-color: rgba(var(--darken), 0.2); }
 
