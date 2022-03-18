@@ -53,7 +53,7 @@
 			# INCLUDE BODY #
 		</div>
 		# INCLUDE JS_BOTTOM #
-		<script src="{PATH_TO_ROOT}/templates/{THEME}/js/sticky-header.js"></script>
+		<script src="{PATH_TO_ROOT}/templates/{THEME}/js/sticky-header# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('.sticky').stickMe();
