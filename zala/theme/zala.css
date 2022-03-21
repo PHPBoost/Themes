@@ -12,27 +12,6 @@ legend {
     border-color: var(--main-light);
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
-    text-shadow: 0 1px rgba(var(--lighten), 0);
-    color: var(--txt-alt);
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"],
-.token.operator,
-.token.entity,
-.token.url,
-.language-css
-.token.string,
-.style .token.string {
-    background-color: rgba(var(--lighten), 0);
-}
-
-.token.scope {
-    color: var(--txt-main);
-}
-
 .copy-code-content {
     border-style: none;
 }
@@ -55,6 +34,8 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
     background-color: rgba(var(--darken), 0.2);
     border-color: var(--bdr-sub);
 }
+
+.cell-modal .content-panel.cell { background-color: var(--bgc-main); }
 
 .cell-mini .cell > [class*="cell-"] { background-color: transparent; }
 

@@ -23,21 +23,6 @@ legend {
     border-color: var(--main-light);
 }
 
-/* Prism */
-code[class*="language-"],
-pre[class*="language-"],
-:not(pre) > code[class*="language-"],
-.token.operator,
-.token.entity,
-.token.url,
-.language-css
-.token.string,
-.style .token.string {
-    text-shadow: 0 1px rgba(var(--lighten), 0);
-    background-color: rgba(var(--lighten), 0);
-	color: var(--txt-alt);
-}
-
 .copy-code-content {
     border-style: none;
 }
@@ -68,6 +53,8 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
 }
 
 .cell-mini .cell > [class*="cell-"] { background-color: transparent; }
+
+.cell-modal .content-panel.cell { background-color: var(--bgc-main); }
 
 .cell-mini .cell > .cell-header {
     background-color: rgba(var(--darken), 0.2);
