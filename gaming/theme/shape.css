@@ -217,7 +217,11 @@ body {
 	padding: 0 0.309em;
 }
 
-.aside-menu { width: 100%; }
+.aside-menu {
+	width: 100%;
+	margin-bottom: 0.618em;
+}
+
 #menu-left  { order : 2; }
 #menu-right { order : 3; }
 
