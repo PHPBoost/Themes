@@ -664,7 +664,10 @@ a[class*='lightcase-icon-']:hover {
 .cell-list li:hover,
 .cell-list .current { background-color: rgba(var(--main-rgb-t), 0.1); }
 
-.cell-mini .cell > [class*="cell-"] { background-color: transparent; }
+.cell-mini .cell > [class*="cell-"] {
+	background-color: transparent;
+	border-color: transparent;
+}
 
 .no-style {
 	background-color: transparent !important;
