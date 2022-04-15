@@ -171,3 +171,4 @@
 
 <span id="scroll-to-top" class="scroll-to" role="button" aria-label="{@common.scroll.to.top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
 <span id="scroll-to-bottom" class="scroll-to" role="button" aria-label="{@common.scroll.to.bottom}"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+<script src="{PATH_TO_ROOT}/templates/{THEME}/js/slide-show# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>

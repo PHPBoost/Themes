@@ -155,3 +155,31 @@
 	</div>
 
 </footer>
+<script>
+	jQuery(document).ready(function(){
+		jQuery(window).scroll(function () {
+		  var rupture = jQuery('#header').outerHeight() ;
+		  if( jQuery(window).scrollTop() > rupture ) {
+			   jQuery('#sub-header-content .cssmenu').addClass('fixed-top');
+			   jQuery('#go-top').slideDown();
+		  } else {
+			   jQuery('#sub-header-content .cssmenu').removeClass('fixed-top');
+			   jQuery('#go-top').slideUp();
+		  }
+		});
+	});
+
+	jQuery(function() {
+		jQuery('a[href*="#"]:not([href="#"], [href*="?edit_comment="], [href*="?delete_comment="])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = jQuery(this.hash);
+				target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+
+				if (target.length) {
+					jQuery('html, body').animate({scrollTop: target.offset().top - 74}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+</script>

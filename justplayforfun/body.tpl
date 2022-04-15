@@ -168,3 +168,23 @@
 # ENDIF #
 
 <span id="scroll-to-top" class="scroll-to" role="button" aria-label="{@common.scroll.to.top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+
+<script src="{PATH_TO_ROOT}/templates/{THEME}/js/jquery.slides# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
+<script>
+	$(function() {
+		$('#slide-content').slidesjs({
+			width: 1650,
+			height: 305,
+			play: {
+				active: true,
+				auto: true,
+				interval: 10000,
+				swap: true,
+				effect: "fade",
+			},
+			navigation: { active: false, effect: "fade" },
+			pagination: { active: false, effect: "fade" },
+			effect: { fade: { speed: 400 } }
+		});
+	});
+</script>
