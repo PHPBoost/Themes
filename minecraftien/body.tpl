@@ -27,20 +27,6 @@
 					<div class="spacer"></div>
 				</div>
 			# ENDIF #
-
-			# IF C_VISIT_COUNTER #
-				<div id="visit-counter" class="hidden-small-screens">
-					<div class="visit-counter-total flex-between">
-						<span class="text-strong">{@user.guests} &nbsp;</span>
-						<span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span>
-					</div>
-					<div class="visit-counter-today flex-between">
-						<span class="text-strong">{@date.today}</span>
-						<span class="pinned visitor small">{VISIT_COUNTER_DAY}</span>
-					</div>
-				</div>
-			# ENDIF #
-
 		</div>
 	</div>
 </header>
@@ -150,9 +136,23 @@
 		# IF C_DISPLAY_AUTHOR_THEME #
 			<span class="footer-infos-template-author">| {@common.theme} {L_THEME_NAME} ${TextHelper::lcfirst(@common.by)} <a class="offload" href="{U_THEME_AUTHOR_LINK}">{L_THEME_AUTHOR}</a></span>
 		# ENDIF #
+
+		# IF C_VISIT_COUNTER #
+			<div id="visit-counter" class="hidden-small-screens">
+				<span class="visit-counter-total">
+					<span class="text-strong">{@user.guests}</span>
+					<span class="pinned visitor">{VISIT_COUNTER_TOTAL}</span>
+				</span>
+				&nbsp;
+				<span class="visit-counter-today">
+					<span class="text-strong">{@date.today}</span>
+					<span class="pinned visitor">{VISIT_COUNTER_DAY}</span>
+				</span>
+			</div>
+		# ENDIF #
 	</div>
 </footer>
 
 <span id="scroll-to-top" class="scroll-to" role="button" aria-label="{@common.scroll.to.top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
 
-<script src="{PATH_TO_ROOT}/templates/{THEME}/js/PHPBoostCMS# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
+<script src="{PATH_TO_ROOT}/templates/minecraftien/js/minecraftien# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>

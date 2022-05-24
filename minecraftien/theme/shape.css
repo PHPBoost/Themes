@@ -34,7 +34,6 @@ body {
 
 #top-header,
 #inner-header,
-#global,
 #footer { padding: 0.309em; }
 
 .content-wrapper { margin: auto; }
@@ -52,18 +51,15 @@ body {
 @media (min-width: 1367px) { .content-wrapper { width: 1280px; } }
 
 /* --- Visits counter --- */
-#visit-counter {
-	position: absolute;
-	right: 1.618em;
-	top : 100%;
-	transform: translateY(-50%);
-	font-size: 0.9em;
-	text-align: right;
-	min-width: 150px;
-}
+#visit-counter { text-align: right; }
 
 /* --- Header --------------------------------------------------------------- */
-#header { position: relative; }
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+    transition: 0.3s;
+}
 
 #inner-header-container {
 	display: flex;
@@ -112,7 +108,7 @@ body {
 	#site-name-container { margin: 0 0 0 1.618em; }
 
 	#site-name {
-		font-size: 3.236em;
+		font-size: 2em;
 		line-height: 1.2em;
 	}
 
@@ -143,17 +139,20 @@ body {
 #menu-right { order : 3; }
 
 @media (min-width: 769px) {
-	#global-container { flex-direction: row; }
+	#global-container {
+		flex-direction: row;
+		padding: 1.236em;
+	}
 
 	.aside-menu { width: calc(100% / 13 * 3); }
 
 	#menu-left  {
-		margin-right: 1.618em;
+		margin-right: 1.236em;
 		order : 1;
 	}
 
 	#menu-right {
-		margin-left: 1.618em;
+		margin-left: 1.236em;
 		order : 3;
 	}
 
@@ -194,9 +193,10 @@ section {
 
 #footer {
 	clear: both;
-	border-width: 4px 0 0 0;
+	border-width: 0;
 	border-style: solid;
 	border-color: transparent;
+    padding: 0;
 }
 
 #footer-infos {
@@ -205,6 +205,7 @@ section {
 	border-style: solid;
 	border-color: transparent;
 	text-align: center;
+	padding: 1.618em 0.618em 3.618em;
 }
 
 #footer-infos span {
