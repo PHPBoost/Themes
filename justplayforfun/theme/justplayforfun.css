@@ -104,7 +104,9 @@
 
 #menu-right .cell-mini { padding-right: 0.618em; }
 
-#global .cell-tile .cell > [class*="cell-"] {
+.cell-header { border-color: 0; }
+
+#global .cell-tile .cell {
 	border: transparent;
 	box-shadow: inset 1px 0 rgba(var(--darken), 0.2);
 }

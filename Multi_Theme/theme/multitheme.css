@@ -102,11 +102,13 @@
 #global .cell-mini.cell-tile:not(.cell-pushmenu) .cell > [class*="cell-"]:first-child:not(:only-child) {
     border-width: 0.456em 0.456em 0 0.456em;
     border-color: var(--bdr-main);
+    border-style: solid;
 }
 
 #global .cell-mini.cell-tile:not(.cell-pushmenu) .cell > [class*="cell-"]:last-child:not(:only-child) {
     border-width: 0 0.456em 0.456em 0.456em;
     border-color: var(--bdr-main);
+    border-style: solid;
 }
 
 #global .cell-mini.cell-tile { margin-bottom: 1.618em; }

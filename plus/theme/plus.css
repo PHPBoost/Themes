@@ -71,7 +71,8 @@
 
 .cell-tile .cell { margin-bottom: 1.618em; }
 
-.cell-tile .cell > [class*="cell-"] { border-color: transparent; }
+.cell-tile .cell { border-color: transparent; }
+.cell-header { border-width: 0; }
 
 .section-header h1 {
     border-top: 1px solid var(--bdr-main);

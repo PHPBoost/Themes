@@ -1,3 +1,5 @@
+.cell-header { border-width: 0;}
+
 .base-switcher {
 	z-index: 200;
 	position: fixed;

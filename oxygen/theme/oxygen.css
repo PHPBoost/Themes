@@ -33,7 +33,8 @@
 /* --- cell --- */
 .cell-mini-vertical .cell { margin-bottom: 1.618em; }
 
-.cell-mini .cell > [class*="cell-"] { border: none; }
+.cell-mini .cell { border: none; }
+.cell-header { border: none; }
 
 .cell-mini .cell-name {
     border-bottom: 1px solid var(--bdr-main);
