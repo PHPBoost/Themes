@@ -12,8 +12,7 @@
 
 #breadcrumb { border-radius: var(--radius); }
 
-#menu-left .cell-mini .cell,
-#menu-right .cell-mini .cell { border-radius: var(--radius); }
+.aside-menu .cell-mini .cell { border-radius: var(--radius); }
 
 #top-content { border-radius: var(--radius); }
 
