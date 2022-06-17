@@ -45,7 +45,7 @@ body {
 .bgc-alt	{ background-color: var(--bgc-alt); color: var(--txt-alt); }
 
 #footer       { border-color: var(--bdr-alt); }
-.footer-infos { border-color: var(--bdr-alt); }
+#footer-infos { border-color: var(--bdr-alt); }
 
 .scroll-to   	 { background-color: var(--bgc-alt); }
 .scroll-to:hover { background-color: var(--main-light); }
@@ -59,9 +59,7 @@ body {
 	.item-thumbnail { background-color: var(--bgc-main); }
 }
 
-.section-header h1::first-letter {
-    color: var(--txt-alt);
-}
+.section-header h1::first-letter { color: var(--txt-alt); }
 
 /* --- Cookies --- */
 .cookiebar-container { background-color: var(--bgc-sub); }
@@ -707,10 +705,6 @@ a[class*='lightcase-icon-']:hover {
 .cell-thumbnail-caption { background-color: rgba(var(--darken), 0.5); }
 
 .cell-thumbnail-caption:hover { color: var(--txt-alt); }
-
-.cell-modal .content-panel.cell { background-color: transparent; }
-
-.message-container .content-panel.cell { background-color: var(--bgc-main); }
 
 a,
 .link-color {

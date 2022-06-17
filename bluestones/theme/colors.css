@@ -38,7 +38,7 @@ body {
 .bgc-alt	{ background-color: var(--main-alt); color: var(--txt-alt); }
 
 #footer       { border-color: var(--bdr-alt); }
-.footer-infos { border-color: var(--bdr-alt); }
+#footer-infos { border-color: var(--bdr-alt); }
 
 .scroll-to   	 { background-color: var(--bgc-alt); }
 .scroll-to:hover { background-color: var(--main-light); }
@@ -776,7 +776,7 @@ a.cell-thumbnail-caption {
 	color: var(--main-tone);
 }
 
-.item-category:hover { var(--main-tone); }
+.item-category:hover { color: var(--main-tone); }
 
 .message-container .content-panel.cell { background-color: var(--bgc-main); }
 
