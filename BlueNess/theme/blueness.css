@@ -1,0 +1,95 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+#header {
+    background-image: url('images/header-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#site-infos {
+    display: table;
+    padding: 1.618em 0.618em;
+    margin: auto;
+
+    /* height: 8.809em;
+    width: 100%;
+    background-image: url('images/title.webp');
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+#site-logo,
+#site-name-container {
+    display: inline-block;
+
+    /* position: absolute;
+    top: -5000px; */
+}
+
+#site-name {
+    color: rgba(var(--lighten),0.2);
+    -webkit-text-stroke: 1px rgba(var(--lighten), 1);
+    text-stroke: 1px rgba(var(--darken), 0.6);
+    text-shadow: none;
+}
+
+#inner-header {
+    padding: 0.618em;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: var(--bdr-main) transparent transparent;
+    background-image: linear-gradient(rgba(var(--bgc-rgb-m), 1), rgba(var(--bgc-rgb-s), 1));
+}
+
+#inner-header .cell {margin: 0;}
+
+#sub-header { padding: 0.618em ; }
+
+#global {
+    padding: 0 0 1.618em;
+    background-image: linear-gradient(rgba(var(--bgc-rgb-s), 1), rgba(var(--bgc-rgb-m), 1) 80px);
+}
+
+/* --- cssmenu --- */
+#sub-header .cssmenu {
+    display: table;
+    margin: auto;
+}
+
+#sub-header .cssmenu-horizontal > ul > li > .cssmenu-title {
+    border-radius: var(--radius);
+    background-color: var(--bgc-sub);
+    box-shadow: 0 0 1px 2px rgba(var(--darken), 0.05);
+}
+
+#sub-header .cssmenu-horizontal > ul > li.has-sub:hover > .cssmenu-title { border-radius: var(--radius) var(--radius) 0 0; }
+
+#sub-header .cssmenu-horizontal > ul > li:not(:last-child) > .cssmenu-title { margin-right: 1.618em;}
+
+#sub-header .cssmenu > ul > li.has-sub:not(:last-child) > .cssmenu-title::after { right: 3.228em; }
+
+#sub-header .cssmenu-horizontal > ul > li:hover > ul { left: 1.618em; }
+
+#sub-header .cssmenu-horizontal ul > li:hover > .cssmenu-title { background-color: rgba(var(--main-rgb-t), 0.1); }
+
+/* --- cell --- */
+.cell-mini .cell { border-width: 2px; }
+.cell-mini .cell-header { border-width: 0 0 2px; }
+
+.cell-mini .cell > .cell-header {
+    background-image: linear-gradient(rgba(var(--bgc-rgb-m), 1), rgba(var(--bgc-rgb-s), 1));
+    padding: 0.309em 0.618em 0;
+}
+
+.cell-mini .cell .cell-name {
+    border-radius: var(--radius-large) var(--radius-large) 0 0;
+    background-image: linear-gradient(rgba(var(--bgc-rgb-s), 1), rgba(var(--bgc-rgb-m), 0.2) 45%);
+    text-align: center;
+    padding: 0.309em;
+
+    /* background: url('images/cell-name.webp') no-repeat center top, linear-gradient(rgba(var(--bgc-rgb-s), 1), rgba(var(--bgc-rgb-m), 0.2) 45%); */
+}
