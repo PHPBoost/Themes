@@ -1,19 +1,25 @@
 // Sticky header
 jQuery(document).ready( () => {
     jQuery(window).scroll( () => {
-      let rupture = jQuery('#header').outerHeight() ;
-      if( jQuery(window).scrollTop() > rupture ) {
-           jQuery('#header-container').addClass('fixed-header');
-      } else {
-           jQuery('#header-container').removeClass('fixed-header');
-      }
+		let rupture = jQuery('#header').outerHeight() ;
+		if( jQuery(window).scrollTop() > rupture ) {
+			jQuery('#header-container').addClass('fixed-header');
+		} else {
+			jQuery('#header-container').removeClass('fixed-header');
+		}
     });
 });
 
 // change header menu icon
 jQuery('#menus-trigger').on('click', () => {
-    jQuery('#header-container').toggleClass('active-menus');
     jQuery('#menus-trigger').toggleClass('fa-times error');
+});
+
+// animate menus
+jQuery('#menus-trigger').opensubmenu({
+	osmTarget: '#header-container',
+	osmCloseExcept: '#header-container *',
+	osmClass: 'active-menus'
 });
 
 // top for sicky menu on scroll
