@@ -71,14 +71,14 @@
 						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 							<a class="offload" href="{START_PAGE}" itemprop="item">
 								<span itemprop="name">{@common.home}</span>
-	    						<meta itemprop="position" content="1" />
+								<meta itemprop="position" content="1" />
 							</a>
 						</li>
 						# START link_bread_crumb #
 							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
 								<a class="offload" href="{link_bread_crumb.URL}" itemprop="item">
 									<span itemprop="name">{link_bread_crumb.TITLE}</span>
-		    						<meta itemprop="position" content="{link_bread_crumb.POSITION}" />
+									<meta itemprop="position" content="{link_bread_crumb.POSITION}" />
 								</a>
 							</li>
 						# END link_bread_crumb #
@@ -104,8 +104,6 @@
 				# END menus_right #
 			</aside>
 		# ENDIF #
-
-		<div class="spacer"></div>
 	</div>
 
 </main>
@@ -115,7 +113,7 @@
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
 		<div id="top-footer" class="content-wrapper">
 			# START menus_top_footer #
-			{menus_top_footer.MENU}
+				{menus_top_footer.MENU}
 			# END menus_top_footer #
 			<div class="spacer"></div>
 		</div>
@@ -124,7 +122,7 @@
 	# IF C_MENUS_FOOTER_CONTENT #
 		<div id="footer-content" class="content-wrapper">
 			# START menus_footer #
-			{menus_footer.MENU}
+				{menus_footer.MENU}
 			# END menus_footer #
 		</div>
 	# ENDIF #

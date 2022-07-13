@@ -22,7 +22,7 @@ body {
 .bgc-alt	{ background-color: var(--bgc-alt); color: var(--txt-alt); }
 
 #footer       { border-color: var(--bdr-alt); }
-.footer-infos { border-color: var(--bdr-alt); }
+#footer-infos { border-color: var(--bdr-alt); }
 
 .scroll-to   	 { background-color: var(--bgc-alt); }
 .scroll-to:hover { background-color: var(--main-light); }

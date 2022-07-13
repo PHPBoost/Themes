@@ -48,7 +48,7 @@
 		# IF C_MENUS_LEFT_CONTENT #
 			<aside id="menu-left" class="aside-menu# IF C_MENUS_RIGHT_CONTENT # narrow-menu narrow-menu-left# ENDIF #">
 				# START menus_left #
-				{menus_left.MENU}
+					{menus_left.MENU}
 				# END menus_left #
 			</aside>
 		# ENDIF #
@@ -57,7 +57,7 @@
 			# IF C_MENUS_TOPCENTRAL_CONTENT #
 				<div id="top-content">
 					# START menus_top_central #
-					{menus_top_central.MENU}
+						{menus_top_central.MENU}
 					# END menus_top_central #
 				</div>
 				<div class="spacer"></div>
@@ -72,7 +72,7 @@
 			# IF C_MENUS_BOTTOM_CENTRAL_CONTENT #
 				<div id="bottom-content">
 					# START menus_bottom_central #
-					{menus_bottom_central.MENU}
+						{menus_bottom_central.MENU}
 					# END menus_bottom_central #
 				</div>
 			# ENDIF #
@@ -81,12 +81,10 @@
 		# IF C_MENUS_RIGHT_CONTENT #
 		<aside id="menu-right" class="aside-menu# IF C_MENUS_LEFT_CONTENT # narrow-menu narrow-menu-right# ENDIF #">
 			# START menus_right #
-			{menus_right.MENU}
+				{menus_right.MENU}
 			# END menus_right #
 		</aside>
 		# ENDIF #
-
-		<div class="spacer"></div>
 	</div>
 
 </main>
@@ -95,7 +93,7 @@
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
 		<div id="top-footer-content" class="content-wrapper">
 			# START menus_top_footer #
-			{menus_top_footer.MENU}
+				{menus_top_footer.MENU}
 			# END menus_top_footer #
 			<div class="spacer"></div>
 		</div>
@@ -128,7 +126,7 @@
 	# IF C_MENUS_FOOTER_CONTENT #
 		<div id="footer-content" class="content-wrapper">
 			# START menus_footer #
-			{menus_footer.MENU}
+				{menus_footer.MENU}
 			# END menus_footer #
 		</div>
 	# ENDIF #
@@ -158,14 +156,14 @@
 <script>
 	jQuery(document).ready(function(){
 		jQuery(window).scroll(function () {
-		  var rupture = jQuery('#header').outerHeight() ;
-		  if( jQuery(window).scrollTop() > rupture ) {
-			   jQuery('#sub-header-content .cssmenu').addClass('fixed-top');
-			   jQuery('#go-top').slideDown();
-		  } else {
-			   jQuery('#sub-header-content .cssmenu').removeClass('fixed-top');
-			   jQuery('#go-top').slideUp();
-		  }
+			var rupture = jQuery('#header').outerHeight() ;
+			if( jQuery(window).scrollTop() > rupture ) {
+				jQuery('#sub-header-content .cssmenu').addClass('fixed-top');
+				jQuery('#go-top').slideDown();
+			} else {
+				jQuery('#sub-header-content .cssmenu').removeClass('fixed-top');
+				jQuery('#go-top').slideUp();
+			}
 		});
 	});
 

@@ -12,10 +12,8 @@
 			# IF C_VISIT_COUNTER #
 				<div id="visit-countainer" class="hidden-small-screens">
 					<div class="visit-counter-total">
-						<span>{@user.guests} :
-						<span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span></span>
-						 &nbsp;<span>{@date.today} :
-						<span class="pinned visitor small">{VISIT_COUNTER_DAY}</span></span>
+						<span>{@user.guests} : <span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span></span>
+						&nbsp;<span>{@date.today} : <span class="pinned visitor small">{VISIT_COUNTER_DAY}</span></span>
 					</div>
 				</div>
 			# ENDIF #
@@ -91,14 +89,14 @@
 						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 							<a class="offload" href="{START_PAGE}" itemprop="item">
 								<span itemprop="name">{@common.home}</span>
-	    						<meta itemprop="position" content="1" />
+								<meta itemprop="position" content="1" />
 							</a>
 						</li>
 						# START link_bread_crumb #
 							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
 								<a class="offload" href="{link_bread_crumb.URL}" itemprop="item">
 									<span itemprop="name">{link_bread_crumb.TITLE}</span>
-		    						<meta itemprop="position" content="{link_bread_crumb.POSITION}" />
+									<meta itemprop="position" content="{link_bread_crumb.POSITION}" />
 								</a>
 							</li>
 						# END link_bread_crumb #
@@ -124,8 +122,6 @@
 				# END menus_right #
 			</aside>
 		# ENDIF #
-
-		<div class="spacer"></div>
 	</div>
 
 </main>
@@ -135,7 +131,7 @@
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
 		<div id="top-footer">
 			# START menus_top_footer #
-			{menus_top_footer.MENU}
+				{menus_top_footer.MENU}
 			# END menus_top_footer #
 			<div class="spacer"></div>
 		</div>
@@ -144,7 +140,7 @@
 	# IF C_MENUS_FOOTER_CONTENT #
 		<div id="footer-content">
 			# START menus_footer #
-			{menus_footer.MENU}
+				{menus_footer.MENU}
 			# END menus_footer #
 		</div>
 	# ENDIF #
@@ -160,12 +156,12 @@
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225">
 		<defs>
-    		<linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
-      			<stop offset="0%" style="stop-color:var(--main-light);stop-opacity:1" />
-      			<stop offset="100%" style="stop-color:var(--main-dark);stop-opacity:1" />
-    		</linearGradient>
-  		</defs>
-	  	<path fill="url(#grad1)" fill-opacity="1" d="M0,224L80,202.7C160,181,320,139,480,128C640,117,800,139,960,154.7C1120,171,1280,181,1360,186.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+			<linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset="0%" style="stop-color:var(--main-light);stop-opacity:1" />
+				<stop offset="100%" style="stop-color:var(--main-dark);stop-opacity:1" />
+			</linearGradient>
+		</defs>
+		<path fill="url(#grad1)" fill-opacity="1" d="M0,224L80,202.7C160,181,320,139,480,128C640,117,800,139,960,154.7C1120,171,1280,181,1360,186.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
 	</svg>
 </footer>
 

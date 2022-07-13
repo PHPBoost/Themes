@@ -119,8 +119,6 @@
 				# END menus_right #
 			</aside>
 		# ENDIF #
-
-		<div class="spacer"></div>
 	</div>
 
 </main>
@@ -130,7 +128,7 @@
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
 		<div id="top-footer" class="content-wrapper">
 			# START menus_top_footer #
-			{menus_top_footer.MENU}
+				{menus_top_footer.MENU}
 			# END menus_top_footer #
 		</div>
 	# ENDIF #
@@ -138,7 +136,7 @@
 	# IF C_MENUS_FOOTER_CONTENT #
 		<div id="footer-content" class="content-wrapper">
 			# START menus_footer #
-			{menus_footer.MENU}
+				{menus_footer.MENU}
 			# END menus_footer #
 		</div>
 	# ENDIF #
