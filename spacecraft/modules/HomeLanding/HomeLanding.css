@@ -1,0 +1,126 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+nav#module-HomeLanding li:nth-child(4),
+#homelanding-module-position,
+#homelanding-module-position li,
+#AdminHomeLandingConfigController_anchors_menu_enabled_field { background-color: rgba(var(--error-rgb-t),0.5); }
+
+.section-header {
+    top: -5000px;
+    position: absolute;
+}
+
+.pinned-item { margin: 0 0 2.618em; }
+
+/* --- cell --- */
+.cell .message-header-container,
+.cell .message-content,
+.cell .message-footer-container,
+.cell .message-user-sign {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.cell .message-user-avatar { max-height: 40px; }
+
+.cell .message-header-container { padding: 0 0.618em; }
+
+.cell .message-header-container a { margin: auto; }
+
+.cell.message-container .cell-footer {
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: var(--bdr-main);
+}
+
+/* --- General design ------------------------------------------------------- */
+#module-homelanding {
+    display: flex;
+    flex-direction: column;
+}
+
+#module-homelanding h1,
+#module-homelanding .item-content{ margin: 0 0 1em; }
+
+/* --- Anchors Menu --------------------------------------------------------- */
+#cssmenu-anchors ul {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+#cssmenu-anchors.small-screen ul { flex-direction: column; }
+
+[data-tabs] img { vertical-align: bottom; }
+
+/* --- Carousel ------------------------------------------------------------- */
+.owl-item figure { display: block; }
+
+.owl-item figure img { border-radius: var(--radius);}
+
+/* --- Edito ---------------------------------------------------------------- */
+#edito-panel {
+    margin: 0 0 2.618em;
+    background-color: rgba(var(--bgc-rgb-m), 0.5);
+    border-radius: var(--radius);
+}
+
+/* --- last comments -------------------------------------------------------- */
+
+/* --- Last articles -------------------------------------------------------- */
+
+/* --- Last articles from categories ---------------------------------------- */
+
+/* --- Last calendar events ------------------------------------------------- */
+
+/* --- Contact -------------------------------------------------------------- */
+
+/* --- Last downloads ------------------------------------------------------- */
+
+/* --- Last downloads from categories --------------------------------------- */
+
+/* --- Last fedd items ---------------------------------------------------- */
+.last-feeds {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feed-title {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 769px) {
+    .feed-title {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* --- Last forum topics ---------------------------------------------------- */
+.message-user-avatar {
+    border-radius: var(--radius);
+}
+
+/* --- Last pictures from Gallery ------------------------------------------- */
+#gallery-panel .cell-tile .cell > [class*="cell-"] { padding: 0; }
+
+/* --- Last messages from Guestbook ----------------------------------------- */
+
+/* --- Last media ----------------------------------------------------------- */
+
+/* --- Last news ------------------------------------------------------------ */
+
+/* --- Last news from categories -------------------------------------------- */
+
+/* --- External Rss --------------------------------------------------------- */
+
+/* --- Last partners links -------------------------------------------------- */
+
+/* --- Last partners links from categories ---------------------------------- */
+
+/* --- Configuration -------------------------------------------------------- */

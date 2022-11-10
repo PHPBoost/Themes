@@ -1,0 +1,51 @@
+
+.cell-hover-container {
+    padding: 0.809em 0 1.309em;
+}
+
+.cell-hover-trigger { padding: 1.228em 0.809em; }
+
+.cell-hover-content {
+	background-color: var(--bgc-main);
+	position: absolute;
+	top: 80%;
+	right: 0;
+	opacity: 0;
+	width: 100%;
+	transition: all 0.5s;
+	box-shadow: 0 7px 10px rgba(var(--main-rgb-t), 0.15);
+	border-radius: var(--radius);
+    visibility: hidden;
+    width: auto;
+}
+
+@media (min-width: 769px) {
+	.cell-hover-content {
+	    min-width: 280px;
+		right: 50%;
+		transform:  translateX(50%);
+	}
+}
+
+@media (min-width: 1025px) {
+	.cell-hover-content {
+		right: 0;
+		transform:  translateX(0);
+	}
+}
+
+.cell-hover-container:hover .cell-hover-content {
+	z-index: 200;
+	opacity: 1;
+	top: 100%;
+	transition: all 0.5s;
+    visibility: visible;
+}
+
+.cell-hover-content input,
+.cell-hover-content input.grouped-element {
+	border-width: 0 0 1px;
+	background-color: transparent;
+}
+
+.cell-hover-content .button { border-radius: var(--radius); }

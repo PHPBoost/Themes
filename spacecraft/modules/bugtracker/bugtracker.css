@@ -1,0 +1,80 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#cssmenu-bugtrackerpageslist { margin-bottom: 0.809em; }
+
+.cssmenu-group .cssmenu-title-icon {
+	border-width: 1px 0 1px 0;
+}
+
+.legend-line { padding: 0 0 0.618em 0; }
+
+.legend-color {
+	font-size: 2em;
+	vertical-align: -1px;
+}
+
+.legend { padding-right: 1.309em; }
+
+.bugtracker-actions a { padding: 0.228em; }
+
+@media (max-width: 768px) {
+	.bugtracker-actions a {
+		display: inline-block;
+		padding: 1em;
+	}
+}
+
+.bugtracker-filter { text-align: left; }
+
+.table-form .fieldset-content,
+.table-form .horizontal-fieldset,
+.table-form .horizontal-fieldset-element,
+.table-form .form-element {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.table-form select { width : 100%; }
+
+table.bt .bt-content { width: 65% !important; }
+
+.cell-progressbar { width: 50%; }
+
+/*  */
+
+#module-bugtracker .bug-list .cell {
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--bdr-main);
+}
+
+#module-bugtracker .bugtracker-filters .cell-header { cursor: pointer; }
+
+#module-bugtracker .horizontal-fieldset {
+	display: block;
+	margin: 0;
+}
+
+#module-bugtracker .horizontal-fieldset .form-element {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#version .horizontal-fieldset .form-element label {
+	font-weight: 400;
+	width: 40%;
+	display: inline-block;
+}
+
+#version .horizontal-fieldset .form-field {
+	display: inline-block;
+	width: 58%;
+	padding: 0.309em 0;
+}
+
+#version .horizontal-fieldset .form-field select { width: 100%; }

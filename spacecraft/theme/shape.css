@@ -1,0 +1,277 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+ * Layout
+*/
+
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	font-size: 1.618em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+body::before {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.body-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.content-preloader { opacity: 0; }
+
+.content-wrapper {
+	transition: all 0.5s;
+	margin: auto;
+	padding: 0 0.618em;
+	width: 100%;
+}
+
+@media (min-width: 481px)  {
+	.content-wrapper { padding: 0 1.618em; }
+}
+
+@media (min-width: 769px)  {
+	.content-wrapper { padding: 0 3.236em; }
+}
+
+/* --- Visits counter --- */
+#visit-counter {
+	position: absolute;
+	right: 1.618em;
+	top : 92.5%;
+	font-size: 0.9em;
+	text-align: right;
+	min-width: 150px;
+}
+
+/* --- Header --------------------------------------------------------------- */
+#header {
+	padding: 0.618em 0;
+	position: relative;
+	transition: all 0.5s;
+}
+
+#header.sticked-header {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    z-index : 99998;
+    transition: top 0.5s;
+	padding: 0.618em 0;
+	transition: all 0.5s;
+}
+
+#inner-header-container,
+#inner-header,
+#top-header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-header,
+#top-header-content {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#inner-header { align-items: flex-start; }
+
+#inner-header-content { flex: 1 1 auto; }
+
+#inner-header-content,
+#top-header-content,
+#sub-header-content {
+	position: relative;
+}
+
+#site-logo {
+    width: 2.809em;
+    height: 2.809em;
+    margin-right: 0.809em;
+    background-image: url(images/logo.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex: 0 0 auto;
+}
+
+#site-name {
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1.236em;
+	line-height: 0.809em;
+	padding: 0 1.236rem;
+	display: block;
+	text-align: right;
+}
+
+#site-slogan {
+	display: none;
+	font-size: 0.809em;
+}
+
+@media (min-width: 769px) {
+	#header { padding: 1.618em 0; }
+
+    #inner-header,
+    #top-header-content {
+        width: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+	#top-header-content { padding-top: 1.618em; }
+
+	#site-logo {
+	    width: 3.809em;
+	    height: 3.809em;
+	}
+}
+
+@media (min-width: 1025px) {
+	#site-logo {
+	    width: 3.618em;
+	    height: 3.618em;
+	}
+
+	#site-name { font-size: 1.809em; }
+
+	#site-name,
+	#site-slogan {
+		display: inline-block;
+	}
+
+	#inner-header-container {
+        width: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #top-header-content { padding-top: 0; }
+}
+
+/* --- Global --------------------------------------------------------------- */
+#global { padding-top: 1.228em; }
+
+#global-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#main {
+	order : 1;
+	margin-bottom: 1.228em;
+    padding: 0.618em;
+	width: 100%;
+}
+
+.aside-menu { padding: 0 1.618; }
+
+#menu-left  { order : 2;}
+#menu-right { order : 3; }
+
+@media (min-width: 1025px) {
+	#global { padding-top: 3.228em; }
+
+	#global-container { flex-direction: row; }
+
+	#main {  padding: 0; }
+
+	.aside-menu {
+		width: 360px;
+		flex: 0 0 auto;
+	}
+	.narrow-menu { width: 230px; }
+
+	#menu-left  {
+		margin-right: 40px;
+		order : 1;
+	}
+
+	#menu-right {
+		margin-left: 40px;
+		order : 3;
+	}
+
+	#menu-left.narrow-menu-left   { margin-right: 1.618em; }
+	#menu-right.narrow-menu-right { margin-left: 1.618em; }
+
+	#main {
+		order : 2;
+		flex: 1 1 0;
+	}
+
+	#main.main-with-left,
+	#main.main-with-right { width: calc(100% - 400px)}
+	#main.main-with-left.main-with-right { width: calc(100% - 460px - 3.236em)}
+}
+
+section {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 0 0.809em;
+}
+
+@media (min-width: 769px) {
+	section { margin: 0 auto 0.809em; }
+}
+
+/* --- Up and under main content --- */
+#top-content { margin: 0 0 1.618em 0; }
+
+#bottom-content { margin: 1.618em 0 0; }
+
+/* --- Footer --------------------------------------------------------------- */
+
+#footer {
+	clear: both;
+	border-width: 4px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+}
+
+#footer-infos {
+	margin: auto;
+	min-height: 40px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+	text-align: center;
+	padding: 0.618em 0;
+}
+
+#footer-infos span {
+	font-size: 0.809em;
+	display: block;
+}
+
+@media (min-width: 769px) {
+	#footer-infos span { display: inline-block; }
+}

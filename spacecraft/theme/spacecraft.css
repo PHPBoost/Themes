@@ -1,0 +1,259 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+ * extra
+*/
+
+/* debugger */
+.debugger {
+    position: relative;
+    z-index: 2;
+    color: var(--txt-main);
+    background-color: var(--bgc-main);
+}
+
+.has-thumbnail {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* --- background --- */
+.cookiebar-container {
+    position: relative;
+    background-color: transparent;
+    color: var(--txt-alt);
+}
+
+body::before {
+	/* background-image: linear-gradient(135deg, #124874 0%, #027DB8 50%, #00AADE 100%); */
+	/* background-image: linear-gradient(135deg, #5433FF 0%, #20BDFF 30%, #A5FECB 100%); */
+	/* background-image: linear-gradient(135deg, #6D327C 0%, #2082B1 30%, #30B37C 100%); */
+	/* background-image: linear-gradient(135deg, #124874 0%, #6D327C 50%, #00AADE 100%); */
+	/* background-image: linear-gradient(135deg, #203377 0%, #4262b7 30%, #6990df 60%, #7dafee 100%); */
+	background-image: linear-gradient(135deg, #152055 0%, #1A2561 50%, #6D3DAF 100%);
+}
+
+/* --- header --- */
+#header.sticked-header {
+	/* background-image: linear-gradient(90deg, #124874 0%, #08699E 50%, #018AC3 100%); */
+	background-image: linear-gradient(90deg, #152056 0%, #18235c 50%, #29296f 100%);
+}
+
+#top-header-content .fa-lg { line-height: 1; }
+
+/* --- cssmenu --- */
+#header .cssmenu.small-screen .menu-button {
+    text-align: right;
+    padding: 0.809em 2.456em 0.809em 0.618em;
+}
+
+.small-screen .menu-button::after {
+    padding: 0.809em 0.618em;
+}
+
+@media (min-width: 769px) {
+    #header .cssmenu > ul > li > .cssmenu-title {
+        padding: 1em 1em 1.456em;
+        font-size: 1.809rem;
+        font-weight: 700;
+        border-radius: 0;
+    }
+
+    #header .cssmenu > ul > li > .cssmenu-title > span {
+        position: relative;
+    }
+
+    #header .cssmenu > ul > li > .cssmenu-title > span::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 0;
+        background-color: var(--bgc-alt);
+        top: 110%;
+        left: 0;
+        transition: width 0.3s;
+    }
+
+    #header .cssmenu > ul > li.current > .cssmenu-title > span::after,
+    #header .cssmenu > ul > li:hover > .cssmenu-title > span::after {
+        width: 100%;
+        transition: width 0.3s;
+    }
+
+    #header .cssmenu-horizontal > ul > li.current > .cssmenu-title,
+    #header .cssmenu > ul > li > .cssmenu-title {
+        color: var(--txt-alt);
+    }
+
+    #header .cssmenu-horizontal > ul > li.current:hover > .cssmenu-title,
+    #header .cssmenu > ul > li:hover > .cssmenu-title {
+        color: rgba(var(--txt-rgb-a), 0.7);
+        background-color: transparent;
+    }
+
+    #header .cssmenu-horizontal > ul > li > ul {
+        border-radius: var(--radius-menu);
+        min-width: 150px;
+    }
+
+    #header .cell-list > ul > li:first-child,
+    #header .cssmenu-horizontal > ul > li > ul > li:first-child > .cssmenu-title { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
+    #header .cell-list > ul > li:last-child,
+    #header .cssmenu-horizontal > ul > li > ul > li:last-child > .cssmenu-title  { border-radius: 0 0 var(--radius-menu) var(--radius-menu); }
+
+    #header .cssmenu-horizontal > ul > li > .cssmenu-title { padding: 1.228rem; }
+
+    #header .cssmenu-horizontal > ul > li.has-sub > .cssmenu-title { padding-right: 1.228em; }
+
+    #header .cssmenu-horizontal > ul > li.has-sub > .cssmenu-title::after { color: var(--txt-alt); }
+
+    #header .cssmenu-horizontal ul ul .cssmenu-title { padding: 0.618em 1.228em; }
+
+    #header .cssmenu-horizontal > ul > li.has-sub > ul {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        top: 80%;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #header .cssmenu > ul > li.has-sub:hover > ul {
+        opacity: 1;
+        z-index: 10;
+        top: 100%;
+        visibility: visible;
+        transition: all 0.5s;
+    }
+
+    #header .cssmenu-horizontal > ul > li.current > .cssmenu-title { background-color: transparent; }
+
+    #header .actionslinks-toggle { color: var(--txt-alt); }
+
+    #sub-header-content .cssmenu { margin: auto; }
+}
+
+.cssmenu-select.cssmenu-open ul li.has-sub ul {
+  left: 0;
+  top: calc(100% + 0.228rem);
+}
+
+/* --- form --- */
+.form-field-thumbnail-choice + .form-field-thumbnail-preview .form-field-preview img {
+    border-radius: var(--radius)
+}
+
+/* --- inputs --- */
+[type="number"] { padding-right: 0.809em; }
+
+/* content */
+#breadcrumb {
+    padding: 0 1.618em 1.618em;
+    text-align: right;
+}
+@media (min-width: 769px) {
+    #breadcrumb { padding: 0 3.236em 1.618em; }
+}
+
+.item-thumbnail { padding: 0.309em; }
+
+/* --- global --- */
+.single-item .section-header {
+    background-color: rgba(var(--bgc-rgb-m), 0.5);
+    border-radius: var(--radius);
+    padding: var(--pdg-large);
+    margin-bottom: var(--pdg-large);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 769px) {
+    .single-item:not(.item-form) .section-header { min-height: 350px; }
+}
+
+.single-item .section-header > .controls { flex: 1 1 auto; }
+
+.single-item .section-header > .item-modified-date { border-width: 0; }
+
+.several-items br { display: block; }
+
+.stacked .stack-event { padding: 0 0.456em; }
+
+table tbody tr.prime-item td,
+.prime-item {
+    background-color: rgba(var(--bgc-rgb-s), 0.5);
+}
+
+.single-item .content.prime-item {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+}
+
+ul, ol { line-height: 1.6; }
+
+.modal .content-panel {
+    top: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.controls > * {
+	display: inline-block;
+	padding: 0.456em;
+}
+
+a:not(.cssmenu-title):not(.button):not(.leaflet-control-layers-toggle):not([data-target]) {
+	background-image: linear-gradient(to right, var(--main-tone) 0%, var(--main-tone) 100%);
+	background-size: 0px 2px;
+	background-repeat: no-repeat;
+	background-position: left 100%;
+	transition: all 0.3s;
+}
+
+a:not(.cssmenu-title):not(.button):not(.leaflet-control-layers-toggle):not([data-target]):hover {
+    text-decoration: none;
+	background-size: 100% 2px;
+	transition: all 0.3s;
+}
+
+.content-friends {
+    border-width: 1px;
+    border-color: var(--bdr-main);
+}
+
+.colored-category .cell-name { padding-left: 0.618em; }
+
+/* --- messages --- */
+.message-user-avatar {
+    max-height: 80px;
+    border-radius: var(--radius) 0 0 0;
+}
+
+/* --- cell --- */
+.suggested-links .cell-thumbnail,
+.related-links img {
+    padding: 0 !important;
+    margin: 0.618em 0;
+}
+
+.related-links img { margin: 0.618em; }
+
+/* --- module --- */
+#calendar .mini-calendar {margin-top: var(--pdg-thin);}
+
+#module-forum .forum-details h5 { display: inline-block; }
+
+#footer #module-mini-newsletter .grouped-auto input { width: 100% !important; }
+
+#module-homelanding .media-content { display: none; }
+
+
+/* forum */
+.forum-detail {
+    display: inline-block;
+    padding: 0.618em 1.228em;
+}
+
+#module-forum .cell-tile .cell > .cell-list  { padding: var(--pdg-large) 0 !important; }
