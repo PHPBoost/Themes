@@ -1,0 +1,220 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+ * Layout
+*/
+
+html {
+	font-size: 100%;
+	font-size: 10px;
+}
+
+body {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+	font-size: 1.456em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.body-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media (min-width: 769px) {
+	body { font-size: 1.618em; }
+	.body-wrapper { flex-direction: row; }
+}
+
+.content-preloader { opacity: 0; }
+
+/* --- Visits counter --- */
+#visit-counter {
+	position: absolute;
+	right: 1.618em;
+	top : 92.5%;
+	font-size: 0.9em;
+	text-align: right;
+	min-width: 150px;
+}
+
+/* --- Header --------------------------------------------------------------- */
+#header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#top-header-content,
+#inner-header-content,
+#sub-header-content { padding: 0 0.309em; }
+
+@media (min-width: 769px)  {
+	#header {
+		position: fixed;
+		width: 260px;
+		overflow: hidden;
+		height: 100vh;
+		z-index: 2;
+	}
+
+	#header-overlay {
+		position: absolute;
+		overflow-y: scroll;
+		padding: 0.618em;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: -17px;
+	}
+}
+
+@media (min-width: 1025px) {
+	#header {
+		width: 320px;
+	}
+}
+
+#site-infos {
+	text-align: center;
+	padding: 1.618em 0;
+}
+
+#site-logo {
+	width: 40px;
+	height: 40px;
+	background-image: url(images/logo.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex: 0 0 auto;
+}
+
+#site-name-container {
+	display: flex;
+	justify-content: center;
+}
+
+#site-name {
+	font-size: 1.618em;
+	display: block;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#site-slogan {
+	display: block;
+	padding: 0.3236em 0 0 0.1618em;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+}
+
+/* --- Global --------------------------------------------------------------- */
+#global {
+	padding: 0.309em;
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+}
+
+@media (min-width: 769px) {
+	#global  {
+		width: calc(100% - 260px);
+		margin-left: 260px;
+	}
+}
+
+@media (min-width: 1025px) {
+	#global  {
+		width: calc(100% - 320px);
+		padding: 0.618em 1.228em;
+		margin-left: 320px;
+	}
+}
+
+#global-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#main,
+.aside-menu { width: 100%; }
+
+#main { order : 1; }
+#menu-left { order : 2; }
+#menu-right { order : 3; }
+
+@media (min-width: 769px) {
+	#menu-left {order : 5; }
+	#menu-right { order : 2; }
+
+	#main {
+		padding: 0 0 1.618em;
+		order : 1;
+	}
+}
+
+@media (min-width: 1367px) {
+	#global-container { flex-direction: row; }
+	#menu-right {
+		margin-left: 1.228em;
+		width: 320px;
+	}
+	.main-with-right { width: calc(100% - 320px - 0.618em)}
+}
+
+section {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 0 0.809em;
+}
+
+@media (min-width: 769px) {
+	section { margin: 0.809em auto; }
+}
+
+/* --- Up and under main content --- */
+#top-content { margin: 0 0 1.618em 0; }
+
+#bottom-content { margin: 1.618em 0 0; }
+
+/* --- Footer --------------------------------------------------------------- */
+#top-footer { padding: 0.809em; }
+
+#footer {
+	clear: both;
+	border-width: 4px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+}
+
+#footer-content {
+	margin: 0 auto 0 auto;
+	padding: 0.809em;
+}
+
+#footer-infos {
+	margin: auto;
+	padding: 0.809em;
+	min-height: 40px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+	text-align: center;
+}
+
+#footer-infos span {
+	font-size: 0.8em;
+	display: block;
+}
+
+@media (min-width: 769px) {
+	#footer-infos { padding: 0.618em 0 0; }
+
+	#footer-infos span { display: inline-block; }
+}
