@@ -1,0 +1,16 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#module-mini-search .grouped-search { flex-direction: row; }
+
+#module-mini-search .grouped-search input { width: 100%; }
+
+#module-mini-search .grouped-search button { width: auto; }
+
+#search-button { padding: 0.618em 1em; }
+
+#module-mini-search.modal .content-panel { width: 95%; }
+
+@media (min-width: 769px) { #module-mini-search.modal .content-panel { width: auto; } }
