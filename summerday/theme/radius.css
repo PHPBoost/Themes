@@ -45,6 +45,10 @@ audio { border-radius: var(--radius); }
 
 input { border-radius: var(--radius-large); }
 
+.grouped-inputs .input-hours,
+.grouped-inputs .input-minutes,
+[type="color"] { border-radius: 0; }
+
 .button { border-radius: var(--radius); }
 
 .sharing-element a { border-radius: var(--radius); }

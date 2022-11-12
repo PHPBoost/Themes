@@ -41,6 +41,7 @@
     background-color: var(--bgc-main);
 }
 
+/* --- Cell --- */
 #top-header .cell { margin: 0; }
 
 #global .cell-mini .cell {  background-color: var(--bgc-main);  }
@@ -53,3 +54,5 @@
 .cell-mini .cell > * { padding: 0.309em;  }
 
 .cell-mini .cell-table table { padding-top: 0.456em; }
+
+[type="number"] { padding-right: 0.809em; }
