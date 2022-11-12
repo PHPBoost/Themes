@@ -42,6 +42,7 @@
 }
 
 /* --- Cell --- */
+#sub-header .cell,
 #top-header .cell { margin: 0; }
 
 #global .cell-mini .cell {  background-color: var(--bgc-main);  }
