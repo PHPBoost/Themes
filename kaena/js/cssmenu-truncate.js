@@ -1,7 +1,7 @@
 /**
  * Truncate cssmenu horizontal menu
  * based on jquery.cut-list.js
- * @copyright   &copy; 2005-2022 PHPBoost - 2020 Vladimir Ivanin from insales.com
+ * @copyright   &copy; 2005-2023 PHPBoost - 2020 Vladimir Ivanin from insales.com
  * @license     https://www.opensource.org/licenses/mit-license.php
  * @author      Vladimir Ivanin
  * @link        https://github.com/insales/jquery.cut-list
