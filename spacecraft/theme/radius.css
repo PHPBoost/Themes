@@ -46,6 +46,7 @@ video { border-radius: var(--radius); }
 audio { border-radius: var(--radius); }
 
 input { border-radius: var(--radius); }
+.grouped-element input { border-radius: 0; }
 
 .button { border-radius: var(--radius); }
 
@@ -140,27 +141,61 @@ textarea { border-radius: var(--radius); }
 
 .sticky-menu { border-radius: var(--radius); }
 
-.cssmenu.cssmenu-group li:first-child .cssmenu-title { border-radius: var(--radius) 0 0 var(--radius); }
+.cssmenu ul ul { border-radius: var(--radius-menu); }
+.cssmenu ul ul li:first-child:not(:only-child) { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
+.cssmenu ul ul li { border-radius: 0; }
+.cssmenu ul ul li:last-child:not(:only-child) { border-radius: 0 0 var(--radius-menu) var(--radius-menu); }
+.cssmenu ul ul li:only-child { border-radius: var(--radius-menu); }
 
-.cssmenu.cssmenu-group li:last-child .cssmenu-title { border-radius: 0 var(--radius) var(--radius) 0; }
+.cssmenu.cssmenu-right ul ul li:first-child:not(:only-child) { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
 
-.cssmenu-static li:hover .cssmenu-title,
-.cssmenu-static li.current .cssmenu-title { border-radius: var(--radius); }
+.cssmenu > ul > li:hover .cssmenu-title,
+.cssmenu > ul > li.current .cssmenu-title { border-radius: var(--radius-menu); }
 
-.cssmenu.cssmenu-horizontal > ul > li:hover .cssmenu-title,
-.cssmenu.cssmenu-horizontal > ul > li.current .cssmenu-title { border-radius: var(--radius); }
+.cssmenu > ul > li.has-sub:hover > .cssmenu-title { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
 
-.cssmenu.cssmenu-horizontal > ul > li.has-sub:hover > .cssmenu-title { border-radius: var(--radius) var(--radius) 0 0; }
+.cssmenu > ul > li.has-sub:hover:first-child:not(:only-child) > .cssmenu-title { border-radius: 0 var(--radius-menu) 0 0; }
+
+.cssmenu.cssmenu-left > ul > li.has-sub:hover > .cssmenu-title { border-radius: var(--radius-menu) 0 0 var(--radius-menu); }
+.cssmenu.cssmenu-right > ul > li.has-sub:hover > .cssmenu-title { border-radius: 0 var(--radius-menu) var(--radius-menu) 0; }
+
 .cssmenu.cssmenu-select > ul > li.has-sub:hover > .cssmenu-title { border-radius: 0; }
 
-.cssmenu.cssmenu-horizontal ul ul { border-radius: 0 var(--radius) var(--radius) var(--radius); }
+.cssmenu ul ul li:hover > .cssmenu-title,
+.cssmenu ul ul li.current > .cssmenu-title,
+.cssmenu ul ul li.has-sub:hover > .cssmenu-title { border-radius: 0; }
 
-.cssmenu.cssmenu-horizontal ul ul > li:hover > .cssmenu-title,
-.cssmenu.cssmenu-horizontal ul ul > li.current > .cssmenu-title,
-.cssmenu.cssmenu-horizontal ul ul > li.has-sub:hover > .cssmenu-title { border-radius: 0; }
+.cssmenu ul ul li:first-child:not(:only-child):hover > .cssmenu-title,
+.cssmenu ul ul li.current:first-child:not(:only-child) > .cssmenu-title,
+.cssmenu ul ul li.has-sub:hover:first-child:not(:only-child) > .cssmenu-title { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
 
-.cssmenu.cssmenu-horizontal ul ul > li:last-child:hover > .cssmenu-title,
-.cssmenu.cssmenu-horizontal ul ul > li.current:last-child > .cssmenu-title { border-radius: 0 0 0 var(--radius); }
+.cssmenu ul ul li:last-child:not(:only-child):hover > .cssmenu-title,
+.cssmenu ul ul li.current:last-child:not(:only-child) > .cssmenu-title,
+.cssmenu ul ul li.has-sub:hover:last-child:not(:only-child) > .cssmenu-title { border-radius: 0 0 var(--radius-menu) var(--radius-menu); }
+
+.cssmenu ul ul li.has-sub:hover:only-child > .cssmenu-title { border-radius: var(--radius-menu); }
+
+.cssmenu ul ul li:last-child:not(:only-child):hover > .cssmenu-title,
+.cssmenu ul ul li.current:last-child:not(:only-child) > .cssmenu-title { border-radius: 0 0 0 var(--radius-menu); }
+
+#header .cell-list > ul > li:first-child:not(:only-child),
+#header .cssmenu-horizontal > ul > li > ul > li:first-child:not(:only-child) > .cssmenu-title { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
+#header .cell-list > ul > li:last-child:not(:only-child),
+#header .cssmenu-horizontal > ul > li > ul > li:last-child:not(:only-child) > .cssmenu-title  { border-radius: 0 0 var(--radius-menu) var(--radius-menu); }
+
+.cssmenu.cssmenu-group li.current .cssmenu-title,
+.cssmenu.cssmenu-group li:hover .cssmenu-title { border-radius: 0; }
+
+.cssmenu.cssmenu-group li.current:first-child:not(:only-child) .cssmenu-title,
+.cssmenu.cssmenu-group li:hover:first-child:not(:only-child) .cssmenu-title,
+.cssmenu.cssmenu-group li:first-child:not(:only-child) .cssmenu-title { border-radius: var(--radius) 0 0 var(--radius); }
+
+.cssmenu.cssmenu-group li.current:last-child:not(:only-child) .cssmenu-title,
+.cssmenu.cssmenu-group li:hover:last-child:not(:only-child) .cssmenu-title,
+.cssmenu.cssmenu-group li:last-child:not(:only-child) .cssmenu-title { border-radius: 0 var(--radius) var(--radius) 0; }
+
+.cssmenu-static li:hover .cssmenu-title,
+.cssmenu-static li.current .cssmenu-title { border-radius: var(--radius) !important; }
 
 .message-container .message-header-container { border-radius: var(--radius) var(--radius) 0 0; }
 

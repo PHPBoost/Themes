@@ -76,7 +76,10 @@ body {
 }
 
 @media (min-width: 769px) {
-    #top-header-content { flex-direction: row; }
+    #top-header-content {
+        flex-direction: row;
+        padding: 0.618em 0.618em 0.228em;
+    }
 }
 
 #inner-header {

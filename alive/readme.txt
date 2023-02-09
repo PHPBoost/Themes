@@ -10,5 +10,5 @@ hidden menus
 
 Best practice for menus in header
 top header : main menu
-inner header : connect
-sub header : search
+inner header : search
+sub header : connect

@@ -60,7 +60,7 @@ body::before {
 #visit-counter {
 	position: absolute;
 	right: 1.618em;
-	top : 92.5%;
+	bottom : 1.618em;
 	font-size: 0.9em;
 	text-align: right;
 	min-width: 150px;

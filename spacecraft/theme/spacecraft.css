@@ -93,15 +93,7 @@ body::before {
         background-color: transparent;
     }
 
-    #header .cssmenu-horizontal > ul > li > ul {
-        border-radius: var(--radius-menu);
-        min-width: 150px;
-    }
-
-    #header .cell-list > ul > li:first-child,
-    #header .cssmenu-horizontal > ul > li > ul > li:first-child > .cssmenu-title { border-radius: var(--radius-menu) var(--radius-menu) 0 0; }
-    #header .cell-list > ul > li:last-child,
-    #header .cssmenu-horizontal > ul > li > ul > li:last-child > .cssmenu-title  { border-radius: 0 0 var(--radius-menu) var(--radius-menu); }
+    #header .cssmenu-horizontal > ul > li > ul { min-width: 150px; }
 
     #header .cssmenu-horizontal > ul > li > .cssmenu-title { padding: 1.228rem; }
 
@@ -111,7 +103,7 @@ body::before {
 
     #header .cssmenu-horizontal ul ul .cssmenu-title { padding: 0.618em 1.228em; }
 
-    #header .cssmenu-horizontal > ul > li.has-sub > ul {
+    .cssmenu:not(.cssmenu-static) li.has-sub > ul {
         opacity: 0;
         visibility: hidden;
         z-index: -1;
@@ -120,12 +112,58 @@ body::before {
         transition: all 0.5s;
     }
 
-    #header .cssmenu > ul > li.has-sub:hover > ul {
+    .cssmenu:not(.cssmenu-select) li.has-sub:hover > ul {
         opacity: 1;
-        z-index: 10;
+        z-index: 10000;
         top: 100%;
+        left: 0;
         visibility: visible;
         transition: all 0.5s;
+    }
+
+    .cssmenu-left:not(.cssmenu-static):not(.cssmenu-select) li.has-sub > ul,
+    .cssmenu:not(.cssmenu-static):not(.cssmenu-select) ul ul li.has-sub > ul {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        top: -20%;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    .cssmenu-left:not(.cssmenu-static):not(.cssmenu-select) li.has-sub:hover > ul,
+    .cssmenu:not(.cssmenu-static):not(.cssmenu-select) ul ul li.has-sub:hover > ul {
+        opacity: 1;
+        z-index: 10000;
+        top: 0;
+        visibility: visible;
+        transition: all 0.5s;
+    }
+
+    .cssmenu-right:not(.cssmenu-static):not(.cssmenu-select) li.has-sub > ul,
+    .cssmenu-right:not(.cssmenu-static):not(.cssmenu-select) ul ul li.has-sub > ul {
+        top: -20%;
+        left: auto;
+        right: 100%;
+    }
+
+    .cssmenu-select ul li.has-sub:hover ul {
+        left: 0;
+    }
+
+    .cssmenu-select.cssmenu-open ul li.has-sub ul {
+        opacity: 0;
+        visibility: hidden;
+        left: 0;
+        top: calc(100% + 0.228rem);
+    }
+
+    .cssmenu-select.cssmenu-open ul li.has-sub ul {
+        opacity: 1;
+        z-index: 10000;
+        visibility: visible;
+        left: 0;
+        top: calc(100% - 0.1618rem);
     }
 
     #header .cssmenu-horizontal > ul > li.current > .cssmenu-title { background-color: transparent; }
@@ -136,14 +174,12 @@ body::before {
 }
 
 .cssmenu-select.cssmenu-open ul li.has-sub ul {
-  left: 0;
-  top: calc(100% + 0.228rem);
+    left: 0;
+    top: calc(100% + 0.228rem);
 }
 
 /* --- form --- */
-.form-field-thumbnail-choice + .form-field-thumbnail-preview .form-field-preview img {
-    border-radius: var(--radius)
-}
+.form-field-thumbnail-choice + .form-field-thumbnail-preview .form-field-preview img { border-radius: var(--radius); }
 
 /* --- inputs --- */
 [type="number"] { padding-right: 0.809em; }

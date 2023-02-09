@@ -442,7 +442,7 @@ h3.formatter-title { border-color: var(--bdr-alt); }
 .highlight-search-word { background-color: var(--star-tone); }
 
 /* -- cssmenu.css ----------------------------------------------------------- */
-.cssmenu ul ul,
+.cssmenu ul ul li,
 .cssmenu-actionslinks > ul  {
 	background-color: var(--bgc-main);
 }
@@ -465,7 +465,7 @@ h3.formatter-title { border-color: var(--bdr-alt); }
 	.cssmenu-group .cssmenu-title:hover  { border-color: var(--main-light); }
 }
 
-.cssmenu-static ul ul {
+.cssmenu-static ul ul li {
 	background-color: transparent ;
     box-shadow: 0 0 0 transparent;
 }
