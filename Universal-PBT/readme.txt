@@ -1,4 +1,4 @@
-Authors: Sakura - EDN | Swan - PHPBoost
+Authors: EDN | Swan - PHPBoost
 
 Best practice for menus in header
 top header   : connect

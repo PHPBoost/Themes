@@ -1,3 +1,5 @@
+Authors: babsolune - PHPBoost
+
 header structure
 ------------------------------
 | site infos
@@ -6,9 +8,10 @@ header structure
 | sub header
 -----------------------------
 
-the best arrangement of the mini modules
-inner header: main nav menu
-top header: connect | search
+Best practice for menus in header
+top header   : connect | search
+inner header : main nav menu
+sub header   :
 
 The header is hidden on scrolldown and shown on scrollup
 

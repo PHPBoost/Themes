@@ -1,3 +1,5 @@
+Authors: babsolune - PHPBoost
+
 All menus declared in top-header & sub-header are hidden by default
 and are revealed under the website title by triggering the ham button
 
@@ -9,6 +11,6 @@ hidden menus
 --------------------------------------------------------------------------------
 
 Best practice for menus in header
-top header : main menu
+top header   : main menu
 inner header : search
-sub header : connect
+sub header   : connect

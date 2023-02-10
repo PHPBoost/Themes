@@ -1,3 +1,5 @@
+Authors: ElenWii - PHPBoost
+
 header structure
 -----------------------------------------
 | top-header        |      inner-header |

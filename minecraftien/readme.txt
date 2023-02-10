@@ -1,4 +1,6 @@
+Authors: Bell Cranel - PHPBoost
+
 Best practice for menus in header
-top header : main menu
+top header   : main menu
 inner header : search
-sub header : connect
+sub header   : connect

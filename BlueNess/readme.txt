@@ -1,3 +1,5 @@
+Authors: EDN | Swan - PHPBoost
+
 Replace the site title with an image by uncommenting the following properties of the blueness.css file
 
 #site-infos {
@@ -26,6 +28,6 @@ Add a background picture in side menus header by uncommenting the following prop
 }
 
 Best practice for menus in header
-top header : search
+top header   : search
 inner header : connect
-sub header : main menu
+sub header   : main menu
