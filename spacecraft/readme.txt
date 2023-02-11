@@ -15,8 +15,6 @@ sub header   :
 
 The header is hidden on scrolldown and shown on scrollup
 
-Sidebars are sticky
-
 HomeLanding
 Element positioning and the onepage menu are accessible but disabled
 Element positioning can be modified in templates/spacecraft/modules/HomeLanding/home.tpl
@@ -33,8 +31,6 @@ default order
 4 All the items of the following modules are classified by date independently of the modules
 lastcoms | articles | articles category | calendar | download | download category |
 flux | forum | media | news | news category | smallads | smallads category | web | web category
-
-change the number of columns depending of presence of sidebars or not by modifying the js script down the templates/spacecraft/modules/HomeLanding/home.tpl
 
 5 contact
 
