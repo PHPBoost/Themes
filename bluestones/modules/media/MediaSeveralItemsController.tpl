@@ -140,7 +140,7 @@
 												# IF items.C_AUTHOR_EXISTS #
 													<a itemprop="author" class="offload" class="{items.AUTHOR_LEVEL_CLASS}"# IF items.C_AUTHOR_GROUP_COLOR # style="color:{items.AUTHOR_GROUP_COLOR}"# ENDIF # href="{items.U_AUTHOR_PROFILE}">{items.AUTHOR_DISPLAY_NAME}</a>
 												# ELSE #
-													<span class="visitor">${LangLoader::get_message('user.guest', 'user-lang')}</span>
+													<span class="visitor">{@user.guest}</span>
 												# ENDIF #
 											</span>
 										</div>

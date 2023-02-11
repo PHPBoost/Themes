@@ -36,9 +36,9 @@
 # ELSE #
 	<div role="search" id="module-mini-search" class="cell-mini# IF C_HIDDEN_WITH_SMALL_SCREENS # hidden-small-screens# ENDIF #">
 		<div class="cell">
-			<a href="" class="search-button" aria-label="{@form.search}"><i class="fa fa-search" aria-hidden="true"></i></a>
+			<a href="" class="search-button" aria-label="{@form.search}"><span class="hidden-large-screens">{@form.search}</span> <i class="fa fa-search" aria-hidden="true"></i></a>
 			<div class="search-container">
-				<i class="close-search fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('common.close', 'common-lang')}</span>
+				<i class="close-search fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">{@common.close}</span>
 				<form role="search" action="{U_FORM_VALID}" onsubmit="return check_search_mini_form_post();" method="post">
 					<fieldset>
 						<legend class="sr-only">{@search.module.title}</legend>

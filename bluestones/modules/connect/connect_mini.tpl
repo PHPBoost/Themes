@@ -4,12 +4,12 @@
 		{
 			if( document.getElementById('login').value == "" )
 			{
-				alert("${LangLoader::get_message('warning.username', 'warning-lang')}");
+				alert("{@warning.username}");
 				return false;
 			}
 			if( document.getElementById('password').value == "" )
 			{
-				alert("${LangLoader::get_message('warning.password', 'warning-lang')}");
+				alert("{@warning.password}");
 				return false;
 			}
 		}
@@ -31,7 +31,7 @@
 					</a>
 			# ENDIF #
 					<div class="connect-container">
-						<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('common.close', 'common-lang')}</span>
+						<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">{@common.close}</span>
 						<ul class="cell-list">
 							<form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
 								<li>
@@ -89,6 +89,7 @@
 				<div class="cell-list connected-contents">
 			# ELSE #
 					<a href="#" class="connect-button" aria-label="{@user.my.profile}">
+                        <span class="hidden-large-screens">{USER_DISPLAYED_NAME}</span>
 						<i class="fa fa-fw fa-user# IF IS_ADMIN #-tie# ENDIF # # IF NUMBER_TOTAL_ALERT # warning# ENDIF #" aria-hidden="true"></i>
 						# IF C_HAS_PM #
 							<span class="stacked blink member smaller">
@@ -123,7 +124,7 @@
 					</a>
 				<div class="cell-list connected-contents connect-container">
 			# ENDIF #
-					# IF C_HORIZONTAL #<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">${LangLoader::get_message('common.close', 'common-lang')}</span># ENDIF #
+					# IF C_HORIZONTAL #<i class="close-connect fa fa-window-close" aria-hidden="true"></i> <span class="sr-only">{@common.close}</span># ENDIF #
 					<div class="connect-inner">
 						# IF C_HORIZONTAL #
 							<div class="connect-avatar hidden-small-screens">
@@ -134,7 +135,7 @@
 							<li class="li-stretch connect-profil">
 								<i class="fa fa-fw fa-tachometer-alt" aria-hidden="true"></i>
 								<a class="offload" href="${relative_url(UserUrlBuilder::home_profile())}">
-									 <span class="pbt-small-screen">{@user.my.account}</span>
+									<span class="pbt-small-screen">{@user.my.account}</span>
 								</a>
 							</li>
 							<li class="li-stretch connect-pm">
@@ -143,7 +144,7 @@
 									# IF C_HAS_PM #<span class="stack-event stack-circle stack-top-right bgc member">{PM_NUMBER}</span> # ENDIF #
 								</span>
 								<a class="offload" href="{U_USER_PM}">
-									 <span>{@user.private.messaging}</span>
+									<span>{@user.private.messaging}</span>
 								</a>
 							</li>
 							# IF IS_ADMIN #
@@ -153,7 +154,7 @@
 										# IF C_UNREAD_ALERTS # <span class="stack-event stack-circle stack-top-right bgc administrator">{UNREAD_ALERTS_NUMBER}</span> # ENDIF #
 									</span>
 									<a class="offload" href="${relative_url(UserUrlBuilder::administration())}">
-										 <span>{@user.admin.panel}</span>
+										<span>{@user.admin.panel}</span>
 									</a>
 								</li>
 							# ENDIF #
@@ -161,7 +162,7 @@
 								<li class="li-stretch connect-moderation">
 									<i class="fa fa-fw fa-gavel" aria-hidden="true"></i>
 									<a class="offload" href="${relative_url(UserUrlBuilder::moderation_panel())}">
-										 <span>{@user.moderation.panel}</span>
+										<span>{@user.moderation.panel}</span>
 									</a>
 								</li>
 							# ENDIF #
@@ -171,7 +172,7 @@
 									# IF C_UNREAD_CONTRIBUTIONS #<span class="stack-event stack-circle stack-top-right bgc moderator">{UNREAD_CONTRIBUTIONS_NUMBER}</span># ENDIF #
 								</span>
 								<a class="offload" href="${relative_url(UserUrlBuilder::contribution_panel())}">
-									 <span>{@user.contribution.panel}</span>
+									<span>{@user.contribution.panel}</span>
 								</a>
 							</li>
 							# START additional_menus #
@@ -190,7 +191,7 @@
 							<li class="li-stretch connect-disconnect">
 								<i class="fa fa-fw fa-sign-out-alt" aria-hidden="true"></i>
 								<a class="offload" href="${relative_url(UserUrlBuilder::disconnect())}">
-									 <span>{@user.sign.out}</span>
+									<span>{@user.sign.out}</span>
 								</a>
 							</li>
 						</ul>

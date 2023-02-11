@@ -5,7 +5,9 @@
 
 #module-connect  #login { cursor: help; }
 
-#header #module-connect .cell { display: inline-flex;  }
+@media (min-width: 769px) {
+    #header #module-connect .cell { display: inline-flex; }
+}
 
 #module-connect .social-connect { display: inline-block; }
 
