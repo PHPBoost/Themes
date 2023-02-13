@@ -40,7 +40,7 @@ body {
 #visit-counter {
 	position: absolute;
 	right: 1.618em;
-	top : 100%;
+	bottom: 100%;
 	transform: translateY(-50%);
 	font-size: 0.9em;
 	text-align: right;

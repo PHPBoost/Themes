@@ -59,19 +59,6 @@
 		</div>
 		<div class="spacer"></div>
 	# ENDIF #
-
-	# IF C_VISIT_COUNTER #
-		<div id="visit-counter" class="hidden-small-screens">
-			<div class="visit-counter-total flex-between">
-				<span class="text-strong">{@user.guests} &nbsp;</span>
-				<span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span>
-			</div>
-			<div class="visit-counter-today flex-between">
-				<span class="text-strong">{@date.today}</span>
-				<span class="pinned visitor small">{VISIT_COUNTER_DAY}</span>
-			</div>
-		</div>
-	# ENDIF #
 </div>
 
 <main id="global" class="content-preloader" role="main">
@@ -130,6 +117,19 @@
 </main>
 
 <footer id="footer">
+
+    # IF C_VISIT_COUNTER #
+        <div id="visit-counter" class="hidden-small-screens">
+            <div class="visit-counter-total flex-between">
+                <span class="text-strong">{@user.guests} &nbsp;</span>
+                <span class="pinned visitor small">{VISIT_COUNTER_TOTAL}</span>
+            </div>
+            <div class="visit-counter-today flex-between">
+                <span class="text-strong">{@date.today}</span>
+                <span class="pinned visitor small">{VISIT_COUNTER_DAY}</span>
+            </div>
+        </div>
+    # ENDIF #
 
 	# IF C_MENUS_TOP_FOOTER_CONTENT #
 		<div id="top-footer-container">
