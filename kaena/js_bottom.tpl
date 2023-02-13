@@ -143,7 +143,7 @@
 	});
 
 // Sidebar behaviour - needed to fix the BBCode troubles on long texts
-jQuery('#menu-left, #menu-right, #main-inner-content').theiaStickySidebar();
+jQuery('#main-inner-content').theiaStickySidebar();
 
 // Add outline on element if only Tab key is pressed
 jQuery('*').on('focus', function(e) {
