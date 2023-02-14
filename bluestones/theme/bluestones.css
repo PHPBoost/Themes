@@ -1,4 +1,6 @@
 /* cell */
+.cell-primary .cell-thumbnail-caption a { color: var(--txt-alt); }
+
 .several-items { margin-top: 1.618em; }
 
 .several-items br { display: block;}
