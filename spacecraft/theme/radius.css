@@ -118,6 +118,9 @@ select { border-radius: var(--radius); }
 form.options { border-radius: var(--radius); }
 
 textarea { border-radius: var(--radius); }
+textarea.grouped-area { border-radius: var(--radius) var(--radius) 0 0; }
+textarea.grouped-area + .grouped-inputs .grouped-element:first-child:not(:only-child) { border-radius: 0 0 0 var(--radius); }
+textarea.grouped-area + .grouped-inputs .grouped-element:last-child:not(:only-child) { border-radius: 0 0 var(--radius) 0; }
 
 .bbcode-bar { border-radius: var(--radius) var(--radius) 0 0; }
 

@@ -172,7 +172,12 @@
 				# ELSE #
 					<div class="cell-flex cell-columns-{ITEMS_PER_ROW}">
 						# START items #
-							<article id="article-flux-{items.ID}" class="flux-item cell# IF items.C_IS_PARTNER # content-friends# ENDIF ## IF items.C_IS_PRIVILEGED_PARTNER # content-privileged-friends# ENDIF ## IF items.C_NEW_CONTENT # new-content# ENDIF#" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+							<article 
+                                    itemscope="itemscope"
+                                    itemtype="https://schema.org/CreativeWork"
+                                    id="article-flux-{items.ID}"
+                                    class="flux-item cell# IF items.C_IS_PARTNER # content-friends# ENDIF ## IF items.C_IS_PRIVILEGED_PARTNER # content-privileged-friends# ENDIF ## IF items.C_NEW_CONTENT # new-content# ENDIF# has-thumbnail"
+                                    style="background-image: linear-gradient(to bottom, rgba(var(--bgc-rgb-m), 0.8), rgba(var(--bgc-rgb-m), 0.8)), url(# IF items.C_HAS_THUMBNAIL #{items.U_THUMBNAIL}# ENDIF #)">
 								<header class="cell-header">
 									<h2>
 										<a class="offload" href="{items.U_ITEM}" itemprop="name">{items.TITLE}</a>
@@ -191,14 +196,6 @@
 										</div>
 									# ENDIF #
 								</div>
-								# IF items.C_HAS_THUMBNAIL #
-									<div class="cell-thumbnail cell-landscape cell-center">
-										<img src="{items.U_THUMBNAIL}" alt="{items.TITLE}" itemprop="image" />
-										<a href="{items.U_ITEM}" class="cell-thumbnail-caption offload">
-											{@common.see.details}
-										</a>
-									</div>
-								# ENDIF #
 								<div class="cell-body">
 									<div class="cell-content">
 										<div itemprop="text">{items.CONTENT}</div>

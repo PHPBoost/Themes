@@ -22,7 +22,6 @@
 			# ENDIF #
 			<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork" id="download-item-{ID}" class="download-item# IF C_NEW_CONTENT # new-content# ENDIF #">
 
-
 				<div class="content cell-tile">
 					<div class="cell cell-options">
 						<div class="cell-header">

@@ -1,18 +1,18 @@
-<section id="module-download" class="several-items">
+<section id="module-recipe" class="several-items">
 	<header class="section-header">
 		<div class="controls align-right">
-			<a class="offload" href="${relative_url(SyndicationUrlBuilder::rss('download', CATEGORY_ID))}" aria-label="{@common.syndication}"><i class="fa fa-rss warning" aria-hidden="true"></i></a>
-			# IF NOT C_ROOT_CATEGORY #{@download.module.title}# ENDIF #
+			<a class="offload" href="${relative_url(SyndicationUrlBuilder::rss('recipe', CATEGORY_ID))}" aria-label="{@common.syndication}"><i class="fa fa-rss warning" aria-hidden="true"></i></a>
+			# IF NOT C_ROOT_CATEGORY #{@recipe.module.title}# ENDIF #
 			# IF C_CATEGORY ## IF IS_ADMIN #<a class="offload" href="{U_EDIT_CATEGORY}" aria-label="{@common.edit}"><i class="far fa-edit" aria-hidden="true"></i></a># ENDIF ## ENDIF #
 		</div>
 		<h1>
 			# IF C_PENDING #
-				{@download.pending.items}
+				{@recipe.pending.items}
 			# ELSE #
 				# IF C_MEMBER_ITEMS #
-					# IF C_MY_ITEMS #{@download.my.items}# ELSE #{@download.member.items} {MEMBER_NAME}# ENDIF #
+					# IF C_MY_ITEMS #{@recipe.my.items}# ELSE #{@recipe.member.items} {MEMBER_NAME}# ENDIF #
 				# ELSE #
-					# IF C_ROOT_CATEGORY #{@download.module.title}# ELSE ## IF C_TAG_ITEMS #<span class="smaller">{@common.keyword}: </span># ENDIF #{CATEGORY_NAME}# ENDIF #
+					# IF C_ROOT_CATEGORY #{@recipe.module.title}# ELSE ## IF C_TAG_ITEMS #<span class="smaller">{@common.keyword}: </span># ENDIF #{CATEGORY_NAME}# ENDIF #
 				# ENDIF #
 			# ENDIF #
 		</h1>
@@ -20,8 +20,10 @@
 
 	# IF C_CATEGORY_DESCRIPTION #
 		<div class="sub-section">
-			<div class="cat-description">
-				{CATEGORY_DESCRIPTION}
+			<div class="content-container">
+				<div class="cat-description">
+					{CATEGORY_DESCRIPTION}
+				</div>
 			</div>
 		</div>
 	# ENDIF #
@@ -63,14 +65,6 @@
 							<thead>
 								<tr>
 									<th>{@common.title}</th>
-									<th class="col-small" aria-label="{@common.creation.date}">
-										<i class="far fa-fw fa-calendar-plus hidden-small-screens" aria-hidden="true"></i>
-										<span class="hidden-large-screens">{@common.creation.date}</span>
-									</th>
-									<th class="col-small" aria-label="{@download.downloads.number}">
-										<i class="fa fa-fw fa-download hidden-small-screens" aria-hidden="true"></i>
-										<span class="hidden-large-screens">{@download.downloads.number}</span>
-									</th>
 									# IF C_ENABLED_VIEWS_NUMBER #
 										<th class="col-small" aria-label="{@common.views.number}">
 											<i class="fa fa-fw fa-eye hidden-small-screens" aria-hidden="true"></i>
@@ -102,17 +96,6 @@
 									<tr class="category-{items.CATEGORY_ID}">
 										<td>
 											<a href="{items.U_ITEM}" itemprop="name" class="offload# IF items.C_NEW_CONTENT # new-content# ENDIF #">{items.TITLE}</a>
-										</td>
-										<td>
-											<time datetime="# IF NOT items.C_DIFFERED #{items.DATE_ISO8601}# ELSE #{items.DIFFERED_START_DATE_ISO8601}# ENDIF #" itemprop="datePublished">
-												# IF NOT items.C_DIFFERED #{items.DATE}# ELSE #{items.DIFFERED_START_DATE}# ENDIF #
-											</time>
-											# IF items.C_HAS_UPDATE_DATE #
-												<time class="pinned notice small text-italic" aria-label="{@common.last.update}" datetime="{items.UPDATE_DATE_ISO8601}" itemprop="datePublished">{items.UPDATE_DATE}</time>
-											# ENDIF #
-										</td>
-										<td>
-											{items.DOWNLOADS_NUMBER}
 										</td>
 										# IF C_ENABLED_VIEWS_NUMBER #
 											<td>
@@ -147,12 +130,12 @@
 				# ELSE #
 					<div class="cell-flex # IF C_GRID_VIEW #cell-columns-{ITEMS_PER_ROW}# ELSE #cell-row# ENDIF #">
 						# START items #
-							<article
-									itemscope="itemscope"
-									itemtype="https://schema.org/CreativeWork"
-									id="download-item-{items.ID}"
-									class="download-item category-{items.CATEGORY_ID} cell# IF items.C_NEW_CONTENT # new-content# ENDIF # has-thumbnail"
-									style="background-image: linear-gradient(to bottom, rgba(var(--bgc-rgb-m), 0.8), rgba(var(--bgc-rgb-m), 0.8)), url(# IF items.C_HAS_THUMBNAIL #{items.U_THUMBNAIL}# ENDIF #)">
+							<article  
+                                    itemscope="itemscope" 
+                                    itemtype="https://schema.org/CreativeWork"
+                                    id="recipe-item-{items.ID}" 
+                                    class="recipe-item category-{items.CATEGORY_ID} cell# IF items.C_NEW_CONTENT # new-content# ENDIF # has-thumbnail"
+                                    style="background-image: linear-gradient(to bottom, rgba(var(--bgc-rgb-m), 0.8), rgba(var(--bgc-rgb-m), 0.8)), url(# IF items.C_HAS_THUMBNAIL #{items.U_THUMBNAIL}# ENDIF #)">
 								<header class="cell-header">
 									<h2 class="cell-name"><a class="offload" href="{items.U_ITEM}" itemprop="name">{items.TITLE}</a></h2>
 								</header>
@@ -169,20 +152,6 @@
 												# ENDIF #
 											</span>
 										# ENDIF #
-										<span class="pinned item-creation-date" aria-label="{@common.creation.date}">
-											<i class="far fa-calendar-alt" aria-hidden="true"></i>
-											<time datetime="# IF items.C_DEFFERED_PUBLISHING #{items.DEFFERED_PUBLISHING_START_DATE_ISO8601}# ELSE #{items.DATE_ISO8601}# ENDIF #" itemprop="datePublished">
-												# IF items.C_DEFFERED_PUBLISHING #{items.DEFFERED_PUBLISHING_START_DATE}# ELSE #{items.DATE}# ENDIF #
-											</time>
-										</span>
-										# IF items.C_HAS_UPDATE_DATE #
-											<span class="pinned item-modified-date" aria-label="{@common.last.update}">
-												<i class="far fa-calendar-plus" aria-hidden="true"></i>
-												<time datetime="{items.UPDATE_DATE_ISO8601}" itemprop="dateModified">{items.UPDATE_DATE}</time>
-											</span>
-										# ENDIF #
-										<span class="pinned" role="contentinfo" aria-label="{@download.downloads.number}"><i class="fa fa-download" aria-hidden="true"></i> {items.DOWNLOADS_NUMBER}</span>
-										# IF C_ENABLED_VIEWS_NUMBER #<span class="pinned item-views-number" role="contentinfo" aria-label="{items.VIEWS_NUMBER} {@common.views.number}"><i class="fa fa-eye" aria-hidden="true"></i> {items.VIEWS_NUMBER}</span># ENDIF #
 										# IF C_ENABLED_COMMENTS #
 											<span class="pinned item-comments">
 												<i class="fa fa-comments" aria-hidden="true"></i>
@@ -201,29 +170,9 @@
 									# ENDIF #
 								</div>
 								<div class="cell-body">
-									<div class="cell-list">
-										<ul>
-											<li class="li-stretch">
-												<a href="{items.U_DOWNLOAD}" class="button submit small offload">
-													<i class="fa fa-download" aria-hidden="true"></i> {@download.download}
-												</a>
-												# IF items.C_VISIBLE #
-													# IF IS_USER_CONNECTED #
-														<a href="{items.U_DEADLINK}" data-confirmation="{@contribution.dead.link.confirmation}" class="button bgc-full warning small" aria-label="{@contribution.report.dead.link}">
-															<i class="fa fa-unlink" aria-hidden="true"></i>
-														</a>
-													# ENDIF #
-												# ENDIF #
-											</li>
-										</ul>
-									</div>
 									<div class="cell-content">
 										<div itemprop="text">
-											# IF C_FULL_ITEM_DISPLAY #
-												{items.CONTENT}
-											# ELSE #
-												{items.SUMMARY}# IF items.C_READ_MORE # <a href="{items.U_ITEM}" class="read-more offload">[{@common.read.more}]</a># ENDIF #
-											# ENDIF #
+											{items.SUMMARY}# IF items.C_READ_MORE # <a href="{items.U_ITEM}" class="read-more offload">[{@common.read.more}]</a># ENDIF #
 										</div>
 									</div>
 								</div>
