@@ -45,11 +45,11 @@
 						<div class="cell-form grouped-inputs grouped-auto grouped-search grouped-right">
 							<input class="grouped-element" type="search" id="search-text" name="q" value="{SEARCH_TEXT}" placeholder="{@search.text}..." aria-labelledby="search-button">
 							<input type="hidden" id="search-token" name="token" value="{TOKEN}">
-							<button id="search-button" class="button submit" type="submit" name="search_submit" aria-label="{@form.search}"><i class="fa fa-search" aria-hidden="true"></i></button>
+							<button id="search-button" class="button submit grouped-element" type="submit" name="search_submit" aria-label="{@form.search}"><i class="fa fa-search" aria-hidden="true"></i></button>
 						</div>
 					</fieldset>
 				</form>
-				<a class="offload" href="{U_ADVANCED_SEARCH}" class="button small bgc-full visitor advanced-search">{@search.advanced}</a>
+				<a href="{U_ADVANCED_SEARCH}" class="offload button small bgc-full visitor advanced-search">{@search.advanced}</a>
 			</div>
 
 		</div>
@@ -57,7 +57,7 @@
 	<script>
 		jQuery('.search-button').opensubmenu({
 			osmTarget: '#module-mini-search',
-			osmCloseExcept: '#module-mini-search .cell form',
+			osmCloseExcept: '#module-mini-search .cell form *',
 			osmCloseButton: '.close-search',
 		}).closest('#module-mini-search').parent().css('position', 'relative');
 	</script>
