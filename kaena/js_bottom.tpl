@@ -124,8 +124,8 @@
 	jQuery('[data-color-surround]').colorSurround();
 
 // Owl Carousel
-	jQuery('[id*="slideboost"] > br').remove();
-	jQuery('[id*="slideboost"]')
+jQuery('[id*="slideboost-"] > br').remove();
+	jQuery('[id*="slideboost-4-"]')
 		.addClass('owl-carousel')
 		.owlCarousel({
 			autoplay: true,
@@ -139,6 +139,48 @@
 				769: { items: 2},
 				1025: { items: 3},
 				1367: { items: 4}
+			}
+	});
+	jQuery('[id*="slideboost-3-"]')
+		.addClass('owl-carousel')
+		.owlCarousel({
+			autoplay: true,
+			autoplayTimeout: 3500,
+			loop: true,
+			margin: 15,
+			smartSpeed: 1000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: { items: 1},
+				769: { items: 2},
+				1025: { items: 3}
+			}
+	});
+	jQuery('[id*="slideboost-2-"]')
+		.addClass('owl-carousel')
+		.owlCarousel({
+			autoplay: true,
+			autoplayTimeout: 3500,
+			loop: true,
+			margin: 15,
+			smartSpeed: 1000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: { items: 1},
+				769: { items: 2}
+			}
+	});
+	jQuery('[id*="slideboost-1-"]')
+		.addClass('owl-carousel')
+		.owlCarousel({
+			autoplay: true,
+			autoplayTimeout: 3500,
+			loop: true,
+			margin: 15,
+			smartSpeed: 1000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: { items: 1}
 			}
 	});
 
