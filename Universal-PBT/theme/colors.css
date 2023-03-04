@@ -422,6 +422,8 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 	border-color: var(--bdr-main);
 }
 
+pre span { color: var(--txt-main) !important; }
+
 pre[style*="display:inline"] { background-color: rgba(var(--bgc-rgb-s), 0.6); }
 
 pre.precode { background-color: var(--bgc-sub); }

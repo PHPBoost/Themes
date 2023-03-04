@@ -16,9 +16,7 @@
 	<div class="sub-section">
 		<div class="content-container">
 			# IF NOT C_VISIBLE #
-				<div class="content">
-					# INCLUDE NOT_VISIBLE_MESSAGE #
-				</div>
+				<div class="content"># INCLUDE NOT_VISIBLE_MESSAGE #</div>
 			# ENDIF #
 			<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork" id="download-item-{ID}" class="download-item# IF C_NEW_CONTENT # new-content# ENDIF #">
 

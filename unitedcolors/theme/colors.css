@@ -424,6 +424,8 @@ a.bbcode-button:hover,
 	border-color: rgba(var(--lighten), 0.2);
 }
 
+pre span { color: var(--txt-main) !important; }
+
 pre[style*="display:inline"] { background-color: rgba(var(--darken), 0.2); }
 
 pre.precode { background-color: var(--bgc-sub); }
