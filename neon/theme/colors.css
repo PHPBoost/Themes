@@ -36,17 +36,31 @@ body {
 .robot { color: var(--warning-tone); }
 
 /* --- Content -------------------------------------------------------------- */
+
+/* --- Content -------------------------------------------------------------- */
+/* Item thumbnail */
+@media (min-width: 769px) {
+	.item-thumbnail 			{ background-color: var(--bgc-main); }
+	.prime-item .item-thumbnail { background-color: var(--bgc-sub); }
+}
+
 /* Item thumbnail */
 @media (min-width: 769px) {
 	.item-thumbnail { background-color: var(--bgc-main); }
 }
 
 /* --- Cookies --- */
-.cookiebar-container { background-color: var(--bgc-sub); }
+.cookiebar-container {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 /* --- Prime item --- */
 table tbody tr.prime-item td,
-.prime-item { background-color: var(--bgc-sub);}
+.prime-item {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 /* --- Pagination --- */
 .pagination-item a { border-color: var(--bdr-main); }
@@ -58,6 +72,7 @@ table tbody tr.prime-item td,
 
 .pagination-item a:active {
 	background-color: var(--bgc-sub);
+    color: var(--txt-sub);
 	border-color: var(--bdr-main);
 }
 
@@ -76,6 +91,7 @@ table tbody tr.prime-item td,
 /* --- Options --- */
 .options {
 	background-color: var(--bgc-sub);
+    color: var(--txt-sub);
 	border-color: var(--bdr-main);
 }
 
@@ -86,7 +102,10 @@ table tbody tr.prime-item td,
 
 
 /* --- Progress bar --- */
-.progressbar-container { background-color: var(--bgc-sub); }
+.progressbar-container {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .progressbar-container .progressbar { background-color: var(--success-tone); }
 
@@ -106,7 +125,10 @@ table tbody tr.prime-item td,
 .dropzone { border-color: rgba(var(--main-rgb-t), 0.5); }
 
 /* --- Messages --- */
-.message-header-container { background-color: var(--bgc-sub); }
+.message-header-container {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .message-header-container,
 .message-content,
@@ -373,7 +395,10 @@ thead th a,
 td,
 .bordered-table td { border-color: var(--bdr-main); }
 
-.alternated-table tbody tr:nth-of-type(2n+1) { background-color: var(--bgc-sub); }
+.alternated-table tbody tr:nth-of-type(2n+1) {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .html-table-header-sortable:hover a {
 	background-color: var(--bgc-main);
@@ -394,7 +419,10 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 
 .calendar-table a:hover { background-color: rgba(var(--main-rgb-t), 0.1); }
 
-.calendar-container > a { background-color: var(--bgc-sub); }
+.calendar-container > a {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 /* --- Font Awesome icons --------------------------------------------------- */
 .user-locked .fa-user-lock:before   { color: var(--error-tone); }
@@ -412,6 +440,7 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 
 .bbcode-bar {
 	background-color: var(--bgc-sub);
+    color: var(--txt-sub);
 	border-color: var(--bdr-main) !important;
 }
 
@@ -429,9 +458,15 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 
 pre span { color: var(--txt-main) !important; }
 
-pre[style*="display:inline"] { background-color: var(--bgc-sub); }
+pre[style*="display:inline"] {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
-pre.precode { background-color: var(--bgc-sub); }
+pre.precode {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 pre.precode .line-number { border-color: var(--bdr-sub); }
 
 h2.formatter-title,
@@ -480,7 +515,10 @@ h3.formatter-title { border-color: var(--bdr-alt); }
 	color: var(--txt-main);
 }
 
-.cssmenu-select .has-sub:hover > .cssmenu-title { background-color: var(--bgc-sub); }
+.cssmenu-select .has-sub:hover > .cssmenu-title {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .small-screen.cssmenu ul ul,
 .small-screen.cssmenu-actionslinks ul { box-shadow: 0 0 0 transparent; }
@@ -739,7 +777,10 @@ figure { border-color: var(--bdr-main); }
 abbr,
 a.wikipedia-link { border-bottom-color: var(--main-tone); }
 
-.sticky-menu { background-color: var(--bgc-sub); }
+.sticky-menu {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 /* --- Colors classes --------------------------------------------------------------- */
 .floating-element,

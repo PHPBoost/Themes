@@ -47,8 +47,17 @@ body {
 .robot { color: var(--warning-tone); }
 
 /* --- Content -------------------------------------------------------------- */
+/* Item thumbnail */
+@media (min-width: 769px) {
+	.item-thumbnail 			{ background-color: var(--bgc-main); }
+	.prime-item .item-thumbnail { background-color: var(--bgc-sub); }
+}
+
 /* --- Cookies --- */
-.cookiebar-container { background-color: var(--bgc-sub); }
+.cookiebar-container {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 /* --- Prime item --- */
 table tbody tr.prime-item td,
@@ -67,6 +76,7 @@ table tbody tr.prime-item td,
 
 .pagination-item a:active {
 	background-color: var(--bgc-sub);
+    color: var(--txt-sub);
 	border-color: var(--bdr-main);
 }
 
@@ -95,7 +105,10 @@ table tbody tr.prime-item td,
 
 
 /* --- Progress bar --- */
-.progressbar-container { background-color: var(--bgc-sub); }
+.progressbar-container {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .progressbar-container .progressbar { background-color: var(--success-tone); }
 
@@ -384,7 +397,10 @@ thead th a,
 td,
 .bordered-table td { border-color: var(--bdr-main); }
 
-.alternated-table tbody tr:nth-of-type(2n+1) { background-color: var(--bgc-sub); }
+.alternated-table tbody tr:nth-of-type(2n+1) {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .html-table-header-sortable:hover a {
 	background-color: var(--bgc-main);
@@ -405,7 +421,10 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 
 .calendar-table a:hover { background-color: rgba(var(--main-rgb-t), 0.1); }
 
-.calendar-container > a { background-color: var(--bgc-sub); }
+.calendar-container > a {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 /* --- Font Awesome icons --------------------------------------------------- */
 .user-locked .fa-user-lock:before   { color: var(--error-tone); }
@@ -435,9 +454,16 @@ td.calendar-weekend { background-color: rgba(var(--main-rgb-t), 0.1); }
 
 pre span { color: var(--txt-main) !important; }
 
-pre[style*="display:inline"] { background-color: var(--bgc-sub); }
+pre[style*="display:inline"] {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
-pre.precode { background-color: var(--bgc-sub); }
+pre.precode {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
+
 pre.precode .line-number { border-color: var(--bdr-sub); }
 
 h2.formatter-title,
@@ -642,7 +668,7 @@ a[class*='lightcase-icon-']:hover {
 }
 
 .wizard-container .wizard-header li .completed-step {
-  	background-color: var(--success-tone);
+    background-color: var(--success-tone);
 	color: var(--txt-alt);
 }
 

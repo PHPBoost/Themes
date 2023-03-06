@@ -34,6 +34,7 @@ body {
 /* Item thumbnail */
 @media (min-width: 769px) {
 	.item-thumbnail { background-color: var(--bgc-main); }
+	.prime-item .item-thumbnail { background-color: var(--bgc-sub); }
 }
 
 /* --- Cookies --- */
@@ -368,7 +369,10 @@ thead th a,
 td,
 .bordered-table td { border-color: var(--bdr-main); }
 
-.alternated-table tbody tr:nth-of-type(2n+1) { background-color: var(--bgc-sub); }
+.alternated-table tbody tr:nth-of-type(2n+1) {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
 
 .html-table-header-sortable:hover a {
 	background-color: var(--bgc-main);
@@ -426,7 +430,11 @@ pre span { color: var(--txt-main) !important; }
 
 pre[style*="display:inline"] { background-color: rgba(var(--bgc-rgb-s), 0.6); }
 
-pre.precode { background-color: var(--bgc-sub); }
+pre.precode {
+    background-color: var(--bgc-sub);
+    color: var(--txt-sub);
+}
+
 pre.precode .line-number { border-color: var(--bdr-sub); }
 
 h2.formatter-title,
