@@ -1,0 +1,59 @@
+@media (min-width: 769px) {
+    #top-header-content,
+    #inner-header-container,
+    #sub-header-content { 
+        background-image: linear-gradient(
+            to right, 
+            var(--bgc-main) 30px, 
+            var(--main-tone) 30px, 
+            var(--main-tone) 55px,  
+            var(--bgc-main) 55px, 
+            var(--bgc-main) 65px,
+            var(--main-tone) 65px, 
+            var(--main-tone) 77px, 
+            var(--bgc-main) 77px, 
+            var(--bgc-main) 87px,
+            var(--main-tone) 87px, 
+            var(--main-tone) 93px,
+            var(--bgc-main) 93px,
+            var(--bgc-main) 103px,
+            var(--main-tone) 103px, 
+            var(--main-tone) 106px,
+            var(--bgc-main) 106px
+        ); 
+        padding-left: 116px;
+    }
+
+    #inner-header,
+    #global { padding: 0; }    
+}
+
+#global { background-image: linear-gradient(to bottom, var(--bgc-main) 50px, var(--main-dark) 50px, var(--main-light) 350px, var(--bgc-main) 350px); }
+
+#global-container { 
+    background-color: var(--bgc-alt); 
+    padding: 0.618em;
+    box-shadow: 0 0 2px 3px rgba(var(--darken), 0.3);
+}
+
+#main { 
+    padding: 0.618em; 
+    background-color: var(--bgc-main);
+}
+
+/* --- Cell --- */
+#sub-header .cell,
+#top-header .cell { margin: 0; }
+
+#global .cell-mini .cell {  background-color: var(--bgc-main);  }
+
+.cell-mini .cell-header { 
+    text-align: center; 
+    border-width: 0;
+}
+
+.cell-mini .cell > * { padding: 0.309em;  }
+
+.cell-mini .cell-table table { padding-top: 0.456em; }
+
+[type="number"] { padding-right: 0.809em; }

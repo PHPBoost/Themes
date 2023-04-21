@@ -1,0 +1,70 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#module-connect .user-avatar {
+	max-width: 30px;
+	max-height: 30px;
+	transform: scale(1.3);
+}
+
+#header #module-connect .cell { display: inline-flex;  }
+
+@media (min-width: 769px) { #module-connect { width: auto; } }
+
+#module-connect .user-avatar {
+	transform: scale(1.4);
+	border-radius: var(--radius);
+}
+
+#module-connect #login { cursor: help; }
+
+#module-connect .social-connect { display: inline-block; }
+
+#module-connect .cell { padding: 0; }
+
+#module-connect .cell-list-inline ul {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#module-connect .cell-list .li-spaced a { padding-right: 0.618em; }
+
+#module-connect .li-spaced {
+	padding: 0.456em;
+	width: 100%;
+}
+
+#module-connect .content-panel { background-color: var(--bgc-main); }
+
+@media (min-width: 769px) {
+	#module-connect .cell-list-inline ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#module-connect .li-spaced { width: auto; }
+}
+
+#module-connect .avatar-picto {
+	border-radius: var(--radius);
+}
+
+#module-connect .module-content { padding: 1em 0; }
+
+#module-connect .module-menu-button { padding: 1.228em; }
+
+#module-connect .module-menu-button .stacked .stack-event.stack-sup { top: -0.456em; }
+#module-connect .module-menu-button .stacked .stack-event.stack-right { left: calc(100% - 1.228em); }
+
+#module-connect .cell-list .connect-container li { padding: 0.618em 1.618em; }
+
+@media (min-width: 769px) {
+	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
+}
+
+#module-connect .cell-hover-content .user-profile {
+	background-color: rgba(var(--darken), 0.2);
+	border-radius: var(--radius) var(--radius) 0 0;
+}

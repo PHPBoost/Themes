@@ -1,0 +1,234 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+.cell header,
+.cell footer,
+.cell form,
+.cell-header button,
+.cell input,
+.cell label,
+.cell button,
+.cell .button,
+.cell select,
+.cell textarea,
+.cell .grouped-inputs,
+.cell .formatter-title { margin: 0 !important; }
+
+.cell {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 0 0 var(--cell-gap);
+}
+
+.cell,
+.cell > [class*="cell-"] {
+	border-style: solid;
+	border-width: 0;
+	border-color: transparent;
+}
+
+.cell.prime-item {
+	border-width: 2px;
+	border-color: var(--bdr-main);
+}
+
+.cell-header {
+	display: flex;
+	align-items: center;
+	padding: 0.309em;
+	white-space: normal;
+}
+
+.cell-name {
+	flex: 1 1 auto;
+	min-width: 0;
+	padding: 0 0.309em 0 0;
+	margin: 0;
+}
+
+.cell-name span { display: block; }
+
+.cell-body { flex: 1 1 auto; }
+
+.several-items .cell-body { padding: 0 0 1.618em; }
+
+.cell .cell-infos {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.618em;
+    padding: 0.618em;
+    border-width: 1px 0 0;
+	border-style: solid;
+	border-color: var(--bdr-main);
+}
+
+#module-homelanding .cell-body { padding: 0 0 1.618em; }
+
+#module-homelanding .cell-infos {
+}
+
+.cell-content {
+    padding: 0.618em;
+	max-width: 100%;
+}
+
+.cell-alert .message-helper { margin: -1px; }
+
+.cell-thumbnail {
+    position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.cell-thumbnail-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-thumbnail-caption:hover {
+    opacity: 1;
+	text-decoration: none;
+}
+
+.cell-thumbnail iframe,
+.cell-thumbnail video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.several-items .cell [class*="cell-"] { text-shadow: 0 0 5px rgba(var(--darken), 1); }
+
+.cell .cell-module {
+	min-width: 0;
+	padding: 0.309em 0.618em;
+	margin: -0.456em auto 0;
+	border-radius: var(--radius) !important;
+	background-color: var(--main-dark);
+	text-align: center;
+	white-space: nowrap;
+}
+
+.cell-module a { color: rgba(var(--lighten), 1); }
+.cell-module a:hover { color: var(--main-light); }
+
+.cell h3.cell-name { font-size: 1.228em; }
+
+.cell .cell-date {
+    font-size: 0.809em;
+    font-style: italic;
+}
+
+/* --- Position --- */
+.cell-start {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.cell-center {
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.cell-end {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+/* size */
+.cell-overflow-x {
+	max-width: 500px;
+	overflow-x: auto;
+}
+
+.cell-overflow-y {
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+/* --- list --- */
+.cell-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+.cell-list ul li {
+	list-style-type: none;
+	padding: 0.228em 0.809em;
+}
+
+.cell-list ul li:first-child { padding: 0.456em 0.809em 0.228em; }
+.cell-list ul li:last-child  { padding: 0.228em 0.809em 0.456em; }
+
+.cell-list ul li.li-stretch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cell-list ul li.li-stretch.li-stretch-large { flex-direction: column;}
+
+@media (min-width: 769px) {
+	.cell-list ul li.li-stretch.li-stretch-large { flex-direction: row;}
+}
+
+.cell-list .button { width: auto; }
+
+.cell-list-inline ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.cell-list-inline ul li:first-child,
+.cell-list-inline ul li:last-child { padding: 0.228em 0.809em; }
+
+/* --- table --- */
+.cell-table { overflow: auto; }
+
+.cell-table table { margin: 0; }
+
+.cell-table td 			  { border-width: 0 0 1px 0; }
+.cell-table td:last-child { border-width: 0; }
+
+@media (min-width: 769px) {
+	.cell-table td:last-child 	 { border-width: 0 0 1px 0; }
+	.cell-table tr:last-child td { border-width: 0; }
+}
+
+/* --- form --- */
+.cell-textarea textarea { border-width: 0; }
+
+.cell-form .cell-label,
+.cell-form .cell-input { padding: 0.456em 0.618em; }
+
+.cell-form .grouped-inputs { width: 100%; }
+
+.cell-input:not(.grouped-inputs):not(.input-element-date),
+.cell-input:not(.grouped-inputs):not(.input-element-date) input:not([type="checkbox"]):not([type="radio"]),
+.cell-input select { width: 100%; }
+
+.cell .formatter-title { display: block; }
+
+.cell-footer {
+	padding: 0.618em;
+	text-align: right;
+}

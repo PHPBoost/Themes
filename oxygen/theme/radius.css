@@ -1,0 +1,194 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+:root {
+    --radius : 0.618rem;
+    --radius-large : 1.618rem;
+}
+
+.content-container { border-radius: var(--radius); }
+
+#breadcrumb { border-radius: var(--radius); }
+
+.aside-menu .cell-mini .cell { border-radius: var(--radius); }
+
+#global-container { border-radius: var(--radius); }
+
+#top-content { border-radius: var(--radius); }
+
+#bottom-content { border-radius: var(--radius); }
+
+#top-footer { border-radius: var(--radius); }
+
+#footer-content { border-radius: var(--radius); }
+
+.formatter-content { border-radius: var(--radius); }
+
+.formatter-hide-message { border-radius: var(--radius); }
+
+.formatter-fieldset legend { border: none; }
+
+figure { border-radius: var(--radius); }
+
+#lightcase-content { border-radius: var(--radius); }
+
+iframe { border-radius: var(--radius); }
+
+video { border-radius: var(--radius); }
+
+audio { border-radius: var(--radius); }
+
+input { border-radius: var(--radius-large); }
+
+.button { border-radius: var(--radius); }
+
+.sharing-element a { border-radius: var(--radius); }
+
+.modal .content-panel { border-radius: var(--radius); }
+
+.tabs-nav .active-tab { border-radius: var(--radius); }
+
+.accordion-container > .accordion-nav > ul > li:first-child > a { border-radius: var(--radius) var(--radius) 0 0; }
+
+.accordion-container > .accordion-nav > ul > li:last-child > a { border-radius: 0 0 var(--radius) var(--radius); }
+
+.wizard-container .wizard-header .progress { border-radius: var(--radius); }
+
+.wizard-container .wizard-header li:first-child .active-step,
+.wizard-container .wizard-header li:first-child .completed-step { border-radius: var(--radius) 0 0 var(--radius); }
+
+.wizard-container .wizard-header li:last-child .active-step,
+.wizard-container .wizard-header li:last-child .completed-step { border-radius: 0 var(--radius) var(--radius) 0; }
+
+.table,
+.table-no-header,
+.calendar-table {
+    border-radius: var(--radius);
+    border-collapse: separate;
+}
+
+tfoot td:first-child { border-radius: var(--radius) 0 0 0; }
+
+tfoot td:last-child { border-radius: 0 var(--radius) 0 0; }
+
+tfoot td:only-child { border-radius: 0 0 var(--radius) var(--radius); }
+
+thead th:first-child,
+.formatter-table-head:first-child { border-radius: var(--radius) 0 0 0; }
+thead th:last-child,
+.formatter-table-head:last-child { border-radius: 0 var(--radius) 0 0; }
+
+.formatter-table-head:only-child { border-radius: var(--radius) var(--radius) 0 0; }
+
+.grouped-inputs .button:first-child:not(:only-child) { border-radius: var(--radius-large) 0 0 var(--radius-large); }
+
+.grouped-inputs .button:last-child:not(:only-child)  { border-radius: 0 var(--radius-large) var(--radius-large) 0; }
+
+.grouped-element { border-radius: 0; }
+
+@media (min-width: 769px) {
+    .grouped-element:first-child:not(:only-child),
+    .form-field-date > .input-date,
+    .form-field-datetime > .input-date {
+        border-radius: var(--radius-large) 0 0 var(--radius-large);
+    }
+
+    .grouped-element:last-child:not(:only-child):not(select),
+    .grouped-element:last-child:not(:only-child):not(select) input,
+    .grouped-inputs .calendar-container:last-child > a {
+        border-radius: 0 var(--radius-large) var(--radius-large) 0;
+    }
+
+    #module-mini-langsswitcher .grouped-element { border-radius: var(--radius); }
+}
+
+select { border-radius: var(--radius); }
+
+.cssmenu-select .has-sub > .cssmenu-title { border-radius: var(--radius); }
+
+.grouped-element .cssmenu-select .has-sub > .cssmenu-title { border-radius: var(--radius); }
+
+.multiple-select-list { border-radius: var(--radius); }
+
+.multiple-select-list li:first-child .cssmenu-title { border-radius: var(--radius) var(--radius) 0 0; }
+
+.multiple-select-list li:last-child .cssmenu-title { border-radius: 0 0 var(--radius) var(--radius); }
+
+textarea { border-radius: var(--radius); }
+
+.bbcode-bar { border-radius: var(--radius) var(--radius) 0 0; }
+
+.bbcode-bar + script + .form-field-textarea textarea,
+.bbcode-bar + .form-field-textarea textarea { border-radius: 0 0 var(--radius) var(--radius); }
+
+.progressbar-container { border-radius: var(--radius); }
+
+.progressbar { border-radius: var(--radius); }
+
+.explorer .content { border-radius: var(--radius); }
+
+.pagination ul:not(.light-pagination) a { border-radius: var(--radius); }
+
+/* .message-helper { border-radius: var(--radius); } */
+
+.sortable-element { border-radius: var(--radius); }
+
+.sortable-element .sortable-element { border-radius: var(--radius) 0 0 var(--radius); }
+
+.sticky-menu { border-radius: var(--radius); }
+
+.cssmenu.cssmenu-group li:first-child .cssmenu-title { border-radius: var(--radius) 0 0 var(--radius); }
+
+.cssmenu.cssmenu-group li:last-child .cssmenu-title { border-radius: 0 var(--radius) var(--radius) 0; }
+
+.cssmenu-static li:hover .cssmenu-title,
+.cssmenu-static li.current .cssmenu-title { border-radius: var(--radius); }
+
+.cssmenu.cssmenu-horizontal > ul > li:hover .cssmenu-title,
+.cssmenu.cssmenu-horizontal > ul > li.current .cssmenu-title { border-radius: var(--radius); }
+
+.cssmenu.cssmenu-horizontal > ul > li.has-sub:hover > .cssmenu-title { border-radius: var(--radius) var(--radius) 0 0; }
+
+.cssmenu.cssmenu-horizontal ul ul { border-radius: 0 var(--radius) var(--radius) var(--radius); }
+
+.cssmenu.cssmenu-horizontal ul ul > li:hover > .cssmenu-title,
+.cssmenu.cssmenu-horizontal ul ul > li.current > .cssmenu-title,
+.cssmenu.cssmenu-horizontal ul ul > li.has-sub:hover > .cssmenu-title { border-radius: 0; }
+
+.cssmenu.cssmenu-horizontal ul ul > li:first-child:hover > .cssmenu-title,
+.cssmenu.cssmenu-horizontal ul ul > li.current:first-child > .cssmenu-title { border-radius: 0 var(--radius) 0 0; }
+
+.cssmenu.cssmenu-horizontal ul ul > li:last-child:hover > .cssmenu-title,
+.cssmenu.cssmenu-horizontal ul ul > li.current:last-child > .cssmenu-title { border-radius: 0 0 0 var(--radius); }
+
+.message-container .message-header-container { border-radius: var(--radius) var(--radius) 0 0; }
+
+.message-container [class*="message-"]:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+
+/* cell-tile */
+/* .cell-mini .cell > [class*="cell-"]:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+
+.cell-mini .cell > [class*="cell-"]:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+
+.cell-mini .cell > [class*="cell-"] textarea { border-radius: 0 !important; }
+
+.cell-mini .cell > [class*="cell-"] .grouped-inputs * { border-radius: 0 !important; }
+
+.cell-mini .cell > [class*="cell-"] table * { border-radius: 0 !important; }
+
+.cell-mini .cell > [class*="cell-"].bbcode-container { border-radius: 0 !important; }
+
+.cell-mini [class*="cell-"]:only-child,
+.cell-mini .cell > [class*="cell-"]:only-child { border-radius: var(--radius); }
+
+.cell-mini .grouped-element:last-child:not(:only-child):not(select),
+.cell-mini .grouped-element:last-child:not(:only-child):not(select) input,
+.cell-mini .grouped-inputs .calendar-container:last-child > a {
+  border-radius: 0;
+} */
+
+/* modules */
+.wiki-summary { border-radius: var(--radius); }

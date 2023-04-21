@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(
+        rgba(var(--lighten), 0.4) 230px,
+        rgba(var(--lighten), 0.6) 230px,
+        rgba(var(--lighten), 0.6) 232px,
+        rgba(var(--lighten), 0.2) 232px
+    ), url('images/main-bg.webp');
+    background-attachment: fixed;
+}
+
+#body-container {
+    background-color: rgba(var(--lighten), 0.4);
+    margin: 0.309em;
+    padding: 0.309em;
+    border-radius: var(--radius);
+    box-shadow: 0 0 2px 3px rgba(var(--darken), 0.5);
+}
+
+#body-inner-container {
+    background-color: rgba(var(--lighten), 0.8);
+    border-radius: var(--radius);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+    box-shadow: inset 0 0 2px 3px rgba(var(--bdr-rgb-m), 0.3)
+}
+
+#header {
+    background-image: url('images/header-bg.webp');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
+#header,
+#global { padding: 0.309em; }
+
+#visit-counter {
+    top: 0;
+    transform: translateY(-100%);
+    color: var(--txt-alt);
+}
+
+#site-name {
+    background-image: url('images/main-bg.webp');
+    font-weight: 700;
+    background-clip: text;
+    color: transparent;
+}
+
+#visit-counter > * {
+    display: inline-block;
+    padding: 0.809em;
+}
+
+#global { background-image: linear-gradient(var(--bgc-sub) 0, var(--bgc-main) 250px);}
+
+@media (min-width: 769px) {
+    body {
+        background-image: linear-gradient(
+            rgba(var(--lighten), 0.4) 350px,
+            rgba(var(--lighten), 0.6) 350px,
+            rgba(var(--lighten), 0.6) 352px,
+            rgba(var(--lighten), 0.2) 352px
+        ), url('images/main-bg.webp');
+    }
+
+    #body-container {
+        margin: 1.618em auto;
+        padding: 0.618em;
+    }
+
+    #header,
+    #global { padding: 0.618em; }
+}
+
+.cell-tile .cell { border-width: 0; }
+
+.cell-tile .cell > .cell-header {
+    background-color: var(--bgc-sub);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+    border-radius: var(--radius);
+    margin-bottom: 0.618em;
+    text-align: center;
+}
+
+.cell-mini:not(:first-child) .cell { padding: 1.618em 0 0; }
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="number"],
+[type="color"],
+[type="tel"],
+[type="search"],
+[type="password"],
+[type="file"],
+textarea,
+select { background-color: var(--bgc-main); }
+
+thead th,
+.formatter-table .formatter-table-head { border-color: transparent; }
