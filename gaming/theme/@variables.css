@@ -142,6 +142,8 @@
 #main {
     --txt-rgb-m: 85, 85, 85;
     --txt-main:  #555555;
+    --txt-rgb-s: 68, 68, 68;
+    --txt-sub:   #444444;
     --txt-rgb-a: 255, 255, 255;
     --txt-alt:   #FFFFFF;
 

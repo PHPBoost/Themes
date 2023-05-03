@@ -76,7 +76,7 @@ body {
 @media (min-width: 769px) {
 	#header-container,
 	#menus-header {
-    	padding: 0.618em;
+        padding: 0.618em;
 		flex-direction: row;
 	}
 }
@@ -89,6 +89,7 @@ body {
 	z-index: -1;
     padding: 0.618em 0;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.5s;
 }
 
@@ -101,6 +102,7 @@ body {
     top: 100%;
     z-index: 500;
     opacity: 1;
+    visibility: visible;
     transition: all 0.5s;
 }
 
