@@ -1,0 +1,61 @@
+@font-face {
+    font-family : 'Ephesis';
+    src : url('fonts/Ephesis-Regular.woff') format('woff'),
+        url('fonts/Ephesis-Regular.ttf') format('truetype');
+    font-weight : normal;
+    font-style : normal;
+}
+
+.duotone {
+    background-color: var(--bgc-alt);
+    background-image: linear-gradient( to bottom, rgba(var(--lighten), 0.04) 35%, rgba(var(--darken), 0.1) 65%);
+}
+
+.diagonal {
+    background-image: repeating-linear-gradient( -45deg, var(--bgc-alt), var(--bgc-alt) 5px, rgba(var(--lighten), 0) 5px, rgba(var(--lighten), 0) 25px );
+    padding: 0.618em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diagonal  nav > ul > li > .cssmenu-title,
+.diagonal  nav > ul > li > .cssmenu-title::after,
+.diagonal .cell a,
+.diagonal .cell { color: var(--txt-alt) !important; }
+
+#site-name { font-family: 'Ephesis'; }
+
+#top-header .cell,
+#sub-header .cell { margin: 0; }
+
+#main-content { padding: 0 0.618em;}
+
+#main-content,
+.aside-menu .cell { background-color: var(--bgc-sub); }
+
+button,
+.button { background-image: linear-gradient(to bottom, rgba(var(--lighten), 0.18), rgba(var(--darken), 0.18)); }
+button:hover,
+.button:hover { background-image: linear-gradient(to bottom, rgba(var(--darken), 0.18), rgba(var(--lighten), 0.18)); }
+
+.cell-mini.cell-tile .cell,
+.cell-mini.cell-tile .cell > * { border: none; }
+
+.cell-mini.cell-tile .cell > .cell-header .cell-name { 
+    position: relative;
+    padding-left: 1.618em;
+}
+
+.cell-mini.cell-tile .cell > .cell-header .cell-name:before { 
+    position: absolute;
+    content: '';
+    left: 0.309em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.809em;
+    height: 0.809em;
+    background-color: var(--bgc-alt);
+    background-image: linear-gradient(to bottom, rgba(var(--lighten), 0.04) 50%, rgba(var(--darken), 0.04) 50%);
+    border-radius: 4px;
+}
