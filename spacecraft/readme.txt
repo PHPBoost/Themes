@@ -1,6 +1,7 @@
-Authors: babsolune - PHPBoost
+# Authors 
+babsolune - PHPBoost
 
-header structure
+# header structure
 ------------------------------
 | site infos
 | inner header                          top header
@@ -8,14 +9,14 @@ header structure
 | sub header
 -----------------------------
 
-Best practice for menus in header
+# Best practice for menus in header
 top header   : connect | search
 inner header : main nav menu
 sub header   :
 
 The header is hidden on scrolldown and shown on scrollup
 
-HomeLanding
+# HomeLanding
 Element positioning and the onepage menu are accessible but disabled
 Element positioning can be modified in templates/spacecraft/modules/HomeLanding/home.tpl
 

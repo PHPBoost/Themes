@@ -39,7 +39,9 @@ figure { border-radius: var(--radius); }
 
 #lightcase-content { border-radius: var(--radius); }
 
-iframe { border-radius: var(--radius); }
+embed,
+object,
+iframe:not(.tox-edit-area__iframe) { border-radius: var(--radius); }
 
 video { border-radius: var(--radius); }
 
