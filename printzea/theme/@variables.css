@@ -142,6 +142,8 @@
 #header {
     --txt-rgb-m: 255, 255, 255;
     --txt-main:   #FFFFFF;
+    --txt-rgb-s: 255, 255, 255;
+    --txt-sub:   #FFFFFF;
     --txt-rgb-a: 187, 187, 187;
     --txt-alt:  #BBBBBB;
 
@@ -149,6 +151,8 @@
     --bgc-main:  #203A54;
     --bgc-rgb-s: 54, 100, 147;
     --bgc-sub:   #366493;
+    --bgc-rgb-a: 188, 217, 245 ;
+    --bgc-alt:   #BCD9F5;
 
     --bdr-rgb-m: 187, 217, 245;
     --bdr-main:  #BCD9F5;
@@ -159,8 +163,8 @@
     --main-rgb-d: 32, 58, 84;
     --main-dark:  #203A54;
     --main-rgb-t: 83, 145, 193;
-    --main-tone: #5391C0;
-    --main-rgb-l: 50, 100, 147;
+    --main-tone: #5391c0;
+    --main-rgb-l: 188, 217, 245;
     --main-light:  #BCD9F5;
 
 /* .administrator */
