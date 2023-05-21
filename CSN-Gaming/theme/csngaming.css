@@ -1,26 +1,26 @@
 #header { padding-bottom: 250px; }
 #global { margin-top: -250px; }
 
-#menu-left,
-#menu-right,
-#header {
-    position: relative;
-    z-index: 1;
-}
-
 #main-content {
-    padding-top: 0;
     border-width: 1px;
     border-style: solid;
     border-color: var(--administrator-tone) var(--bdr-main) var(--bdr-main) var(--bdr-main);
 }
 
-#main-inner-content {
-    padding: 0.618em;
+#breadcrumb {
     border-width: 3px 0 0 0;
     border-style: solid;
     border-color: var(--administrator-dark);
-    box-shadow: 0 2px 200px 200px rgba(var(--darken), 1);
+}
+
+@media (min-width: 769px) {
+    #menu-left,
+    #menu-right{
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+    }
+    #main-content { box-shadow: 0 120px 200px 200px rgba(var(--darken), 1); }
 }
 
 .bbcode-bar { border-color: var(--bdr-sub) !important; }
@@ -57,7 +57,7 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
 
 .cell-tile .cell {
     background-color: var(--bgc-sub);
-    border-width: 1px;
+    border-width: 2px 1px 1px;
     border-style: solid;
     border-color: var(--administrator-tone) var(--bdr-main) var(--bdr-main) var(--bdr-main);
     box-shadow: 0 7px 8px 3px rgba(var(--darken), 0.8);
@@ -75,7 +75,7 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
         linear-gradient(rgba(var(--lighten), 0.05) 50%, rgba(var(--darken), 0.05) 50%);
     border-color: var(--bdr-alt);
     text-align: center;
-    border-width: 3px 0 0 0;
+    border-width: 4px 0 0 0;
     border-style: solid;
     border-color: var(--administrator-dark);
 }
@@ -110,6 +110,9 @@ select[multiple] option:checked, .selected-option a { background-image: linear-g
 }
 
 #inner-footer {
+    position: relative;
+    z-index: 1;
+    border-color: var(--bgc-sub);
     border-width: 5px 0 0 0;
     border-style: solid;
     padding: 1.618em 0;

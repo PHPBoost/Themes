@@ -18,11 +18,10 @@ body {
     color: var(--txt-main);
 }
 
-/* #push-container {
-	background-image: linear-gradient(to left, transparent, rgba(var(--darken), 0.8) 10%, rgba(var(--darken), 0.8) 90%, transparent);
-} */
-
-#header { background-image: linear-gradient(to bottom, var(--bgc-sub-light) 40%, transparent 80%);}
+#header { background-image: 
+        radial-gradient(var(--bgc-sub-light) 40%, transparent 60%),
+        linear-gradient(to bottom, var(--bgc-sub-light) 40%, transparent 80%);
+}
 
 #main-content { background-color: var(--bgc-sub); color: var(--txt-sub);}
 
