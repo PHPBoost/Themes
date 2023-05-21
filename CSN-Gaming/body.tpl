@@ -63,29 +63,27 @@
 			# ENDIF #
 
 			<div id="main-content" itemprop="mainContentOfPage">
-                <div id="main-inner-content">
-                    # INCLUDE ACTIONS_MENU #
-                    <nav id="breadcrumb" itemprop="breadcrumb">
-                        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                <a class="offload" href="{START_PAGE}" itemprop="item">
-                                    <span itemprop="name">{@common.home}</span>
-                                    <meta itemprop="position" content="1" />
+                # INCLUDE ACTIONS_MENU #
+                <nav id="breadcrumb" itemprop="breadcrumb">
+                    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a class="offload" href="{START_PAGE}" itemprop="item">
+                                <span itemprop="name">{@common.home}</span>
+                                <meta itemprop="position" content="1" />
+                            </a>
+                        </li>
+                        # START link_bread_crumb #
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
+                                <a class="offload" href="{link_bread_crumb.URL}" itemprop="item">
+                                    <span itemprop="name">{link_bread_crumb.TITLE}</span>
+                                    <meta itemprop="position" content="{link_bread_crumb.POSITION}" />
                                 </a>
                             </li>
-                            # START link_bread_crumb #
-                                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" # IF link_bread_crumb.C_CURRENT # class="current" # ENDIF #>
-                                    <a class="offload" href="{link_bread_crumb.URL}" itemprop="item">
-                                        <span itemprop="name">{link_bread_crumb.TITLE}</span>
-                                        <meta itemprop="position" content="{link_bread_crumb.POSITION}" />
-                                    </a>
-                                </li>
-                            # END link_bread_crumb #
-                        </ol>
-                    </nav>
-                    # INCLUDE KERNEL_MESSAGE #
-                    {CONTENT}
-                </div>
+                        # END link_bread_crumb #
+                    </ol>
+                </nav>
+                # INCLUDE KERNEL_MESSAGE #
+                {CONTENT}
 			</div>
 
 			# IF C_MENUS_BOTTOM_CENTRAL_CONTENT #
