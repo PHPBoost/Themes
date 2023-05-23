@@ -1,0 +1,106 @@
+body { 
+    background-color: var(--bgc-bottom);
+    background-image: linear-gradient(to bottom, var(--bgc-top), var(--bgc-main) 40%, var(--bgc-main) 70%, var(--bgc-bottom) 100%);
+    background-repeat: no-repeat;
+}
+
+#push-container {
+    background-image: 
+        url('images/birds.webp'),
+        url('images/cloud-left.webp'),
+        url('images/cloud-right.webp');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right top, left top, right top;
+}
+
+#header,
+#sub-header-content,
+#global-container,
+#main,
+#footer-content,
+#footer-infos { border-color: var(--bdr-alt); }
+
+#sub-header-content { background-color: rgba(var(--bgc-rgb-b), 0.5); }
+
+#sub-header-content .cell {
+    margin: 0 auto;
+    display: table;
+}
+
+#global-container,
+#footer > *:not(:last-child) { background-color: var(--bgc-main); }
+
+#visit-countainer {
+    font-size: 0.809em;
+    text-align: right;
+    min-width: 150px;
+    margin: 0 0.618em;
+}
+
+#footer-svg { filter: drop-shadow(0 5px 2px rgba(var(--darken), 0.4)); }
+
+/* --- content --- */
+.item-thumbnail { background-color: var(--bgc-content); }
+
+#global .cell-mini.cell-tile { margin-bottom: 1.618em; }
+
+.single-item .section-header h1,
+.several-items header h2 {
+    background-image:
+        url('images/cloud-left.webp'),
+        url('images/cloud-right.webp');
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    background-color: rgba(var(--bgc-rgb-top), 0.5);
+    background-size: contain;
+    padding: 0.309em;
+    border-radius: 0.309em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-alt);
+}
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="number"],
+[type="color"],
+[type="tel"],
+[type="search"],
+[type="password"],
+[type="file"],
+textarea,
+select {
+    background-color: var(--bgc-main);
+    border-color: var(--bdr-main);
+    color: var(--txt-main);
+    border-radius: 0.309em;
+}
+
+/* --- modules --- */
+.bbcode-containers { background-color: rgba(var(--main-rgb-l), 0.2); }
+
+/* --- Cell --- */
+.cell-tile .cell {
+    border-style: none;
+    border-width: 0;
+}
+
+.cell-tile > .cell > .cell-header {
+    margin-bottom: 0.309em;
+    padding: 0 0.309em;
+    border-style: none;
+    border-width: 0;
+}
+
+.cell-tile > .cell > .cell-header .cell-name {
+    background-color: rgba(var(--bgc-rgb-b), 0.5);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-alt);
+    border-radius: 0.309em;
+    text-align: center;
+    color: var(--main-tone);
+    font-size: 1em;
+    font-weight: bold;
+}
