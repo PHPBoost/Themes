@@ -1,4 +1,4 @@
-body { 
+body:not(#tinymce) { 
     background-color: var(--bgc-bottom);
     background-image: linear-gradient(to bottom, var(--bgc-top), var(--bgc-main) 40%, var(--bgc-main) 70%, var(--bgc-bottom) 100%);
     background-repeat: no-repeat;
