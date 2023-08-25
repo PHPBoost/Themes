@@ -1,0 +1,107 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+ * extra
+*/
+
+#header { color: var(--txt-main); }
+
+#top-header { background-color: var(--bgc-main); }
+
+#inner-header {
+    background-image: linear-gradient(rgba(var(--bgc-rgb-m), 1), rgba(var(--bgc-rgb-s), 1));
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: rgba(var(--lighten), 0.3);
+}
+
+#inner-header-container { position: relative; }
+
+#sub-header { 
+    background-color: var(--bgc-alt);
+    border-width: 1px 0 2px;
+    border-style: solid;
+    border-color: rgba(var(--darken), 0.5) transparent var(--bdr-sub);
+}
+
+#sub-header-content > * { margin: auto; }
+
+#global { background-color: var(--bgc-under); }
+
+#main {
+    background-color: var(--bgc-main);
+    background-image: linear-gradient(var(--bgc-sub), var(--bgc-main) 50px);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+    border-radius: var(--radius);
+}
+
+.smallest { font-size: 0.618em;  }
+.smaller  { font-size: 0.809em;  }
+.small    { font-size: 1.000em;  }
+.normal   { font-size: 1.228em;  }
+.big      { font-size: 1.456em;  }
+.bigger   { font-size: 1.618em;  }
+.biggest  { font-size: 1.809em; }
+
+/* --- table --- */
+table {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bdr-main);
+}
+
+tfoot td[colspan] { border-width: 0; }
+
+/* --- cell --- */
+.cell-tile .cell-header:not(:only-child) {
+    border-bottom-color: transparent;
+}
+
+.cell-tile .cell {
+    background-image: linear-gradient(rgba(var(--bgc-rgb-s), 1), rgba(var(--bgc-rgb-m), 1) 50px);
+    padding: 0.309em;
+    color: var(--txt-main);
+}
+
+aside .cell-tile .cell { margin-bottom: 1.618em; }
+
+.cell-mini .cell-header { text-align: center; }
+
+/* --- fieldset --- */
+#main fieldset,
+#main .fieldset {
+	background-color: var(--bgc-under);
+    border: 1px solid var(--bgc-sub);
+    margin: 1.618em 0;
+    padding: 0;
+}
+
+#main legend,
+#main .legend {
+    font-size: 0.809em;
+    width: auto;
+    font-weight: bold;
+    background-color: var(--bgc-sub);
+    border: 1px solid var(--bdr-sub);
+    padding: 0.309em 0.809em;
+    margin-left: 1.618em;
+    color: var(--txt-sub);
+    text-transform: uppercase;
+}
+
+#main fieldset .formatter-content {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#main .bbcode-bar { right: -0.309em; }
+#main .editor-bbcode textarea { width: calc(100% - 0.809em); }
+
+/* --- mini calendar */
+#date-select-form { margin-bottom: 0.309em; }
+
+/* ---mini shoutbox */
+#module-mini-shoutbox nav ul { margin-bottom: 0.309em; }
