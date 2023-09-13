@@ -1,0 +1,71 @@
+:root {
+    --txt-rgb-m: 233, 233, 233;
+    --txt-main:  #e9e9e9;
+    --txt-rgb-s: 233, 233, 233;
+    --txt-sub:  #e9e9e9;
+    --txt-rgb-a: 85, 85, 85;
+    --txt-alt:   #555555;
+
+    --bgc-rgb-m: 0, 0, 0;
+    --bgc-main:  #000000;
+    --bgc-rgb-s: 49, 49, 49;
+    --bgc-sub:   #101010;
+    --bgc-rgb-a: 204, 204, 204;
+    --bgc-alt:   #CCCCCC;
+    --bgc-rgb-t: 0, 0, 0;
+    --bgc-transparent:  #000000;
+    --bgc-rgb-ta: 255, 255, 255;
+    --bgc-transparent-alt:  #FFFFFF;
+
+    --bdr-rgb-m: 255, 255, 255;
+    --bdr-main:  #FFFFFF;
+    --bdr-rgb-s: 233, 233, 233;
+    --bdr-sub:   #e9e9e9;
+    --bdr-rgb-a: 85, 85, 85;
+    --bdr-alt:   #555555;
+
+    --main-rgb-d: 233, 233, 233;
+    --main-dark:  #e9e9e9;
+    --main-rgb-t: 17, 17, 17;
+    --main-tone:  #FFFFFF;
+    --main-rgb-l: 233, 233, 233;
+    --main-light: #e9e9e9;
+    
+    /* .administrator */
+    --administrator-rgb-d: 170;
+    --administrator-dark:  #AAAAAA;
+    --administrator-rgb-t: 50, 49, 51;
+    --administrator-tone:  #CCCCCC;
+    --administrator-rgb-l: 233, 233, 233;
+    --administrator-light: #e9e9e9;
+}
+
+#top-header-content,
+#inner-header-content,
+#sub-header-content,
+#footer-content,
+#footer-infos{
+    background-color: rgba(var(--bgc-rgb-t), 0.8);
+    color: var(--txt-main);
+}
+
+.aside-menu .cell-mini .cell-header {
+    background-color: rgba(var(--bgc-rgb-ta), 0.1);
+    color: var(--txt-main);
+}
+
+#top-header-content .cssmenu ul ul,
+#inner-header-content .cssmenu ul ul,
+#sub-header-content .cssmenu ul ul { background-color: var(--bgc-transparent); }
+
+#top-header-content a,
+#inner-header-content a,
+#sub-header-content a,
+#footer-content a,
+#footer-infos a,
+.aside-menu .cell-mini .cell-header a { color: var(--txt-main); }
+
+#global-container {
+    padding: 0.618em;
+    background-color: rgba(var(--bgc-rgb-t), 0.8);
+}
