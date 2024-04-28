@@ -1,0 +1,180 @@
+body {
+    font-weight: unset;
+    background-image: linear-gradient(
+        to bottom,
+        var(--fu-green), var(--fu-green-grad) 350px,
+        var(--fu-orange) 350px, var(--fu-orange) 357px,
+        var(--fu-white) 357px, var(--fu-white) 360px,
+        var(--fu-litegreen) 360px, var(--fu-litegreen) 367px,
+        var(--fu-white) 367px, var(--fu-white) 370px,
+        var(--fu-darkgreen) 370px, var(--fu-darkgreen) 377px,
+        var(--fu-white) 377px
+    );
+    background-repeat: no-repeat;
+    background-color: #EFEFEF;
+}
+
+@media (max-width: 769px) {
+    .content-wrapper { width: 100%; }
+}
+
+#header {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-image: url('images/header.webp');
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width: 769px) {
+    #header {
+        height: 480px;
+        margin-top: 10px;
+    }
+}
+
+#inner-header {
+    flex: 1 1 auto;
+}
+
+#inner-header-container {
+    flex-direction: column;
+    position: relative;
+}
+
+#site-logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background-image: url('images/logo.webp');
+}
+
+#site-name-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+#sub-header-content {
+    background-color: rgba(var(--lighten), 0.5);
+    border-radius: 5px;
+}
+
+#neck {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-color: var(--fu-orange);
+}
+
+.toggle-menu {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--bgc-main);
+}
+
+#breadcrumb {
+    color: var(--txt-alt);
+    flex: 1 1 auto;
+}
+#breadcrumb a {
+    color: var(--txt-alt);
+}
+
+#breadcrumb li:not(.current)::after {
+    content: '::';
+}
+
+#global {
+    padding: 0 0 1.618em 0;
+}
+
+#global-container {
+    padding: 0.618em 0.618em;
+    box-shadow: 0px 5px 5px 3px rgba(var(--darken), 0.2);
+    background-color: var(--bgc-main);
+}
+
+.content-container { 
+    box-shadow: 0px 5px 5px 3px rgba(var(--darken), 0.2); 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.aside-menu .cell-mini .cell-header,
+.aside-menu .cell-mini .cell {
+    border: none;
+}
+
+.aside-menu .cell-mini .cell-header {
+    text-align: center;
+    color: var(--txt-alt);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.aside-menu .cell-mini:nth-child(n) .cell-header { background-color: var(--fu-litegreen); }
+.aside-menu .cell-mini:nth-child(2n) .cell-header { background-color: var(--fu-blue); }
+.aside-menu .cell-mini:nth-child(3n) .cell-header { background-color: var(--fu-darkpink); }
+.aside-menu .cell-mini:nth-child(4n) .cell-header { background-color: var(--fu-burgundy); }
+.aside-menu .cell-mini:nth-child(5n) .cell-header { background-color: var(--fu-darkorange); }
+.aside-menu .cell-mini:nth-child(6n) .cell-header { background-color: var(--fu-purple); }
+
+.button {
+    border: none;
+    padding: 0.309em 0.618em;
+    border-radius: 5px;
+    background-color: var(--fu-green);
+    color: var(--txt-main);
+}
+.button:hover {
+    background-color: var(--fu-litegreen);
+    color: var(--txt-alt);
+}
+
+.button.submit {
+    background-color: var(--fu-orange);
+}
+.button.submit:hover {
+    background-color: var(--fu-darkorange);
+    color: var(--txt-alt);
+}
+
+.grouped-inputs .button {
+    border-radius: 0;
+}
+
+.bbcode-bar ul {
+    background-color: var(--fu-green) !important;
+}
+
+.bbcode-button {
+    color: rgb(var(--lighten));
+}
+.bbcode-button:hover {
+    background-color: var(--fu-darkgreen);
+    color: rgb(var(--lighten));
+}
+
+thead th, .formatter-table .formatter-table-head {
+    background-color: var(--fu-black);
+    color: var(--txt-alt);
+    border-color: var(--fu-black);
+}
+
+[type="text"], [type="email"], [type="url"], [type="number"], [type="color"], [type="tel"], [type="search"], [type="password"], [type="file"], textarea, select {
+    background-color: var(--bgc-main);
+    border-color: var(--bdr-main);
+    color: var(--txt-main);
+}
+
+.cssmenu-actionslinks {
+    float: none;
+    margin: 0.809rem 0 3.809rem 3.618rem;
+}
