@@ -66,10 +66,7 @@ body {
 		position: absolute;
 		overflow-y: scroll;
 		padding: 0.618em;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: -17px;
+        inset: 0;
 	}
 }
 

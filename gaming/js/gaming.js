@@ -16,7 +16,7 @@ jQuery('#menus-trigger').on('click', () => {
 });
 
 // animate menus
-jQuery('#menus-trigger').opensubmenu({
+opensubmenu('#menus-trigger', {
 	osmTarget: '#header-container',
 	osmCloseExcept: '#header-container *',
 	osmClass: 'active-menus'

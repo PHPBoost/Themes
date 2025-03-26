@@ -167,7 +167,7 @@
 
 <span id="scroll-to-top" class="scroll-to" role="button" aria-label="{@common.scroll.to.top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
 
-<script src="{PATH_TO_ROOT}/templates/{THEME}/js/jquery.slides# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
+<script src="{PATH_TO_ROOT}/templates/{THEME}/js/jquery.slides.js"></script>
 <script>
 	$(function() {
 		$('#slide-content').slidesjs({

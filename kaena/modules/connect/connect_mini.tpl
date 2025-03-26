@@ -26,58 +26,61 @@
 				<div class="cell-list connect-contents">
 			# ELSE #
 				<div class="cell-list connect-contents modal-container">
-					<a class="blink pinned" data-modal data-target="user-not-connected" aria-label="{@user.sign.in}">
+					<a class="blink pinned modal-button --user-not-connected" aria-label="{@user.sign.in}">
 						<i class="fa fa-sign-in-alt" aria-hidden="true"></i>
 					</a>
 			# ENDIF #
-					<div id="user-not-connected" class="modal modal-animation">
-						<div class="close-modal error" role="button" aria-label="Fermer le menu"></div>
-						<ul class="content-panel">
-							<form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
-								<li>
-									<label for="login">
-										<input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
-										<span class="sr-only">{@user.username}</span>
-									</label>
-								</li>
-								<li>
-									<label for="password">
-										<input type="password" id="password" name="password" placeholder="{@user.password}">
-										<span class="sr-only">{@user.password}</span>
-									</label>
-								</li>
-								<li class="align-center">
-									<label class="checkbox" for="autoconnect">
-										<span>{@user.auto.connect}</span>
-										<input checked="checked" type="checkbox" id="autoconnect" name="autoconnect" aria-label="{@user.auto.connect}">
-									</label>
-								</li>
-								<li class="align-center">
-									<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
-									<input type="hidden" name="token" value="{TOKEN}">
-									<button type="submit" name="authenticate" value="internal" class="button bgc-full success">{@user.sign.in}</button>
-								</li>
-							</form>
+					<div id="user-not-connected" class="modal modal-auto">
+						<div class="modal-overlay close-modal" role="button" aria-label="{@common.close}"></div>
+                        <div class="modal-content cell-list">
+                            <span class="error hide-modal close-modal close-bbcode-sub" aria-label="{@common.close}"><i class="far fa-circle-xmark" aria-hidden="true"></i></span>
+                            <ul>
+                                <form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
+                                    <li>
+                                        <label for="login">
+                                            <input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
+                                            <span class="sr-only">{@user.username}</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="password">
+                                            <input type="password" id="password" name="password" placeholder="{@user.password}">
+                                            <span class="sr-only">{@user.password}</span>
+                                        </label>
+                                    </li>
+                                    <li class="align-center">
+                                        <label class="checkbox" for="autoconnect">
+                                            <span>{@user.auto.connect}</span>
+                                            <input checked="checked" type="checkbox" id="autoconnect" name="autoconnect" aria-label="{@user.auto.connect}">
+                                        </label>
+                                    </li>
+                                    <li class="align-center">
+                                        <input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
+                                        <input type="hidden" name="token" value="{TOKEN}">
+                                        <button type="submit" name="authenticate" value="internal" class="button bgc-full success">{@user.sign.in}</button>
+                                    </li>
+                                </form>
 
-							# IF C_REGISTRATION_DISPLAYED #
-								# IF C_REGISTRATION_ENABLED #
-									<li>
-										<a href="${relative_url(UserUrlBuilder::registration())}" class="button bgc-full moderator small offload">{@user.sign.up}</a>
-									</li>
-								# ENDIF #
-								<li# IF C_VERTICAL # class="li-stretch"# ENDIF #>
-									# START external_auth #
-										<a class="{external_auth.CSS_CLASS} offload external-auth" href="{external_auth.U_SIGN_IN}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML} {external_auth.NAME}</a>
-									# END external_auth #
-								</li>
-							# ENDIF #
-							<li class="align-center">
-								<a class="button small offload" href="${relative_url(UserUrlBuilder::forget_password())}">
-									<i class="fa fa-question-circle" aria-hidden="true"></i> <span>{@user.forgotten.password}</span>
-								</a>
-							</li>
+                                # IF C_REGISTRATION_DISPLAYED #
+                                    # IF C_REGISTRATION_ENABLED #
+                                        <li>
+                                            <a href="${relative_url(UserUrlBuilder::registration())}" class="button bgc-full moderator small offload">{@user.sign.up}</a>
+                                        </li>
+                                    # ENDIF #
+                                    <li# IF C_VERTICAL # class="li-stretch"# ENDIF #>
+                                        # START external_auth #
+                                            <a class="{external_auth.CSS_CLASS} offload external-auth" href="{external_auth.U_SIGN_IN}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML} {external_auth.NAME}</a>
+                                        # END external_auth #
+                                    </li>
+                                # ENDIF #
+                                <li class="align-center">
+                                    <a class="button small offload" href="${relative_url(UserUrlBuilder::forget_password())}">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i> <span>{@user.forgotten.password}</span>
+                                    </a>
+                                </li>
 
-						</ul>
+                            </ul>
+                        </div>
 					</div>
 				</div>
 
@@ -99,7 +102,7 @@
 				<div class="cell-list connected-contents">
 			# ELSE #
 				<div class="cell-list connected-contents modal-container">
-					<a data-modal data-target="user-connected" aria-label="{@user.dashboard}" class="pinned">
+					<a class="pinned modal-button --user-connected" aria-label="{@user.dashboard}">
 						<i class="fa fa-fw fa-user# IF IS_ADMIN #-tie# ENDIF #" aria-hidden="true"></i>
 						# IF C_HAS_PM #
 							<i class="fa fa-fw fa-people-arrows blink member" aria-hidden="true"></i>
@@ -114,9 +117,10 @@
 						# ENDIF #
 					</a>
 			# ENDIF #
-					<div id="user-connected" class="modal modal-animation">
-						<div class="close-modal error" role="button" aria-label="Fermer le menu"></div>
-						<div class="content-panel">
+					<div id="user-connected" class="modal modal-auto">
+						<div class="modal-overlay close-modal error" role="button" aria-label="{@common.close}"></div>
+						<div class="modal-content cell-list">
+                            <span class="error hide-modal close-modal close-bbcode-sub" aria-label="{@common.close}"><i class="far fa-circle-xmark" aria-hidden="true"></i></span>
 							<ul>
 								<li class="li-stretch li-spaced connect-profil">
 									<a href="${relative_url(UserUrlBuilder::home_profile())}">

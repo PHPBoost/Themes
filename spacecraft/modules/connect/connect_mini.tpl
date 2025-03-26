@@ -26,12 +26,12 @@
 					</div>
 					<div class="cell-list connect-contents">
 		# ELSE #
-			<div class="modal-container cell-modal connect-contents">
+			<div class="modal-container connect-contents">
 				<span class="cell-hover-trigger" data-tooltip-pos="left" aria-label="{@user.sign.in}"><i class="fa fa-sign-in-alt" aria-hidden="true"></i></span>
 				<div class="cell-list connect-container# IF C_HORIZONTAL # connect-container-horizontal cell-hover-content# ENDIF #">
 					<ul>
 						<li class="align-center">{@user.welcome} {@user.rank.visitor}</li>
-						<li class="align-center"><button class="button submit" data-modal data-target="connect-modal">{@user.sign.in}</button></li>
+						<li class="align-center"><button class="button submit modal-button --connect-modal">{@user.sign.in}</button></li>
 						# IF C_REGISTRATION_DISPLAYED #
 							# IF C_REGISTRATION_ENABLED #
 								<li class="align-center">
@@ -41,54 +41,52 @@
 						# ENDIF #
 					</ul>
 				</div>
-				<div id="connect-modal" class="modal modal-animation">
-					<div class="close-modal">{@common.close}</div>
-					<div class="content-panel cell">
-						<div class="cell-list">
+				<div id="connect-modal" class="modal modal-auto">
+					<div class="modal-overlay close-modal">{@common.close}</div>
+					<div class="modal-content cell-list">
 		# ENDIF #
-							<form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
-								<ul>
-									<li class="align-center">
-										<label for="login">
-											<input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
-											<span class="sr-only">{@user.username}</span>
-										</label>
-									</li>
-									<li class="align-center">
-										<label for="password">
-											<input type="password" id="password" name="password" placeholder="{@user.password}">
-											<span class="sr-only">{@user.password}</span>
-										</label>
-									</li>
-									<li class="align-center">
-										<label class="checkbox" for="autoconnect">
-											<span>{@user.auto.connect}</span>
-											<input checked="checked" type="checkbox" id="autoconnect" name="autoconnect" aria-label="{@user.auto.connect}">
-										</label>
-									</li>
-									<li class="align-center">
-										<input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
-										<input type="hidden" name="token" value="{TOKEN}">
-										<button type="submit" name="authenticate" value="internal" class="button submit small">{@user.sign.in}</button>
-									</li>
-								</ul>
-							</form>
-							<ul>
-								# IF C_REGISTRATION_DISPLAYED #
-									<li>
-										# START external_auth #
-											<a class="{external_auth.CSS_CLASS} offload" href="{external_auth.U_SIGN_IN}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
-										# END external_auth #
-									</li>
-								# ENDIF #
-								<li class="align-center">
-									<a class="button smaller offload" href="${relative_url(UserUrlBuilder::forget_password())}">
-										<i class="fa fa-question-circle" aria-hidden="true"></i> <span>{@user.forgotten.password}</span>
-									</a>
-								</li>
-							</ul>
+                        <form action="{U_SIGN_IN}" method="post" onsubmit="return check_connect();">
+                            <ul>
+                                <li class="align-center">
+                                    <label for="login">
+                                        <input type="text" id="login" name="login" aria-label="{@user.username.tooltip}" placeholder="{@user.username}">
+                                        <span class="sr-only">{@user.username}</span>
+                                    </label>
+                                </li>
+                                <li class="align-center">
+                                    <label for="password">
+                                        <input type="password" id="password" name="password" placeholder="{@user.password}">
+                                        <span class="sr-only">{@user.password}</span>
+                                    </label>
+                                </li>
+                                <li class="align-center">
+                                    <label class="checkbox" for="autoconnect">
+                                        <span>{@user.auto.connect}</span>
+                                        <input checked="checked" type="checkbox" id="autoconnect" name="autoconnect" aria-label="{@user.auto.connect}">
+                                    </label>
+                                </li>
+                                <li class="align-center">
+                                    <input type="hidden" name="redirect" value="{SITE_REWRITED_SCRIPT}">
+                                    <input type="hidden" name="token" value="{TOKEN}">
+                                    <button type="submit" name="authenticate" value="internal" class="button submit small">{@user.sign.in}</button>
+                                </li>
+                            </ul>
+                        </form>
+                        <ul>
+                            # IF C_REGISTRATION_DISPLAYED #
+                                <li>
+                                    # START external_auth #
+                                        <a class="{external_auth.CSS_CLASS} offload" href="{external_auth.U_SIGN_IN}" aria-label="{external_auth.NAME}">{external_auth.IMAGE_HTML}</a>
+                                    # END external_auth #
+                                </li>
+                            # ENDIF #
+                            <li class="align-center">
+                                <a class="button smaller offload" href="${relative_url(UserUrlBuilder::forget_password())}">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i> <span>{@user.forgotten.password}</span>
+                                </a>
+                            </li>
+                        </ul>
 		# IF C_VERTICAL #
-						</div>
 					</div>
 				</div>
 		# ELSE #

@@ -182,11 +182,11 @@
 # IF C_GMAP_ENABLED #
 	<script src="{PATH_TO_ROOT}/spots/templates/js/leaflet.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key={GMAP_API_KEY}"></script>
-	<script src="{PATH_TO_ROOT}/spots/templates/js/leaflet.google# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
+	<script src="{PATH_TO_ROOT}/spots/templates/js/leaflet.google.js"></script>
 
 	<script>
 		var map = new L.Map('map', {
-    		# IF C_ROOT_CATEGORY #
+            # IF C_ROOT_CATEGORY #
 				center: new L.LatLng({DEFAULT_LAT}, {DEFAULT_LNG}),
 			# ELSE #
 				center: new L.LatLng({CATEGORY_LATITUDE}, {CATEGORY_LONGITUDE}),
@@ -222,13 +222,13 @@
 			# START items #
 				[
                     # IF items.C_HAS_THUMBNAIL #'<div class="align-center marker-logo"><a class="offload" href="${items.U_ITEM}" aria-label="{@common.see.details}"><img src="{items.U_THUMBNAIL}" alt="{items.TITLE}" /></a></div>'
-	               	+# ENDIF # '<h4><a class="offload" href="${items.U_ITEM}" aria-label="{@common.see.details}">${items.TITLE}</a></h4>'
-	                + '<div class="cell cell-list gm-location-location">'
-	                    + '<ul>'
-	                        + '<li class="li-stretch"><span class="text-strong">{@common.category}:</span> <span class="d-block">{items.CATEGORY_NAME}</span></li>'
-	                        + '<li class="spacer"><span class="text-strong">{@spots.address}:</span> <span class="d-block align-right">${items.V_LOCATION}</span></li>'
-	                    + '</ul>'
-	                + '</div>',
+                    +# ENDIF # '<h4><a class="offload" href="${items.U_ITEM}" aria-label="{@common.see.details}">${items.TITLE}</a></h4>'
+                    + '<div class="cell cell-list gm-location-location">'
+                        + '<ul>'
+                            + '<li class="li-stretch"><span class="text-strong">{@common.category}:</span> <span class="d-block">{items.CATEGORY_NAME}</span></li>'
+                            + '<li class="spacer"><span class="text-strong">{@spots.address}:</span> <span class="d-block align-right">${items.V_LOCATION}</span></li>'
+                        + '</ul>'
+                    + '</div>',
 					{items.LATITUDE},
 					{items.LONGITUDE},
 					L.divIcon({
@@ -238,7 +238,7 @@
 									<path
 										stroke-width="1"
 										fill="{items.CATEGORY_COLOR}"
-									 	d="M-0.000,11.790 C-0.000,5.273 5.373,-0.008 12.000,-0.008 C18.627,-0.008 24.000,5.273 24.000,11.790 C24.000,18.305 12.000,38.008 12.000,38.008 C12.000,38.008 -0.000,18.305 -0.000,11.790 Z"/>
+                                        d="M-0.000,11.790 C-0.000,5.273 5.373,-0.008 12.000,-0.008 C18.627,-0.008 24.000,5.273 24.000,11.790 C24.000,18.305 12.000,38.008 12.000,38.008 C12.000,38.008 -0.000,18.305 -0.000,11.790 Z"/>
 								</svg>
 								<i class="inner-marker fa-fw {items.CATEGORY_INNER_ICON}"></i>
 							</div>
@@ -246,7 +246,7 @@
 						className: 'icon-cat-{items.CATEGORY_ID}',
 						iconSize: [24, 38],
 						iconAnchor: [12, 38],
-				  		popupAnchor: [0, -38],
+                        popupAnchor: [0, -38],
 					})
 				],
 			# END items #
@@ -262,7 +262,7 @@
 
 				marker = L.marker([lat,lng], {icon: icon})
 				.bindPopup(popup, {
-				  	width: "auto"
+                    width: "auto"
 				});
 				markers.addLayer(marker);
 			}

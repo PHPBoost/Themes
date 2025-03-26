@@ -1,19 +1,4 @@
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/accordion# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/autocomplete# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/basictable# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/lightcase# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/linedtextarea# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/list_order# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/multitabs# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/precode# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/selectimg# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/selectimg.multi# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/sortable# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/theia-sticky-sidebar# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/tooltip# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/wizard# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/__default__/plugins/bbcode-sidebar# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-
+{JS_BOTTOM}
 <script>
 // Delete confirmation
 	function update_data_confirmations() {
@@ -72,11 +57,8 @@
 	if(jQuery('.captcha-element .form-element').length == 0)
 		jQuery('.captcha-element').removeClass('wizard-step');
 
-// Multitabs
-    jQuery('.modal-container [data-modal]').multiTabs({ pluginType: 'modal' });
-    jQuery('.tabs-container [data-tabs]').multiTabs({ pluginType: 'tabs' });
-	
-	jQuery('.multiple-accordion').accordion({});
+// Accordion
+    jQuery('.multiple-accordion').accordion();
 	jQuery('.single-accordion').accordion({
 		openSingle: true
 	});
@@ -121,10 +103,10 @@
 	});
 
 // Add a colored square to the element and color its borders if it has
-	jQuery('[data-color-surround]').colorSurround();
+    colorSurround('[data-color-surround]');
 
 // Owl Carousel
-jQuery('[id*="slideboost-"] > br').remove();
+    jQuery('[id*="slideboost-"] > br').remove();
 	jQuery('[id*="slideboost-4-"]')
 		.addClass('owl-carousel')
 		.owlCarousel({
@@ -185,30 +167,40 @@ jQuery('[id*="slideboost-"] > br').remove();
 	});
 
 // Sidebar behaviour - needed to fix the BBCode troubles on long texts
-jQuery('#main-inner-content').theiaStickySidebar();
+// jQuery('#main-inner-content').theiaStickySidebar();
 
 // Add outline on element if only Tab key is pressed
-jQuery('*').on('focus', function(e) {
-	$this = jQuery(this);
-    jQuery(window).keyup(function (e) {
-        var code = (e.keyCode ? e.keyCode : e.which);
-        if (code == 9) {
-			$this.addClass('focus-on-tab');
-        }
-		else {
-			$this.removeClass('focus-on-tab');
-		}
+    jQuery('*').on('focus', function(e) {
+        $this = jQuery(this);
+        jQuery(window).keyup(function (e) {
+            var code = (e.keyCode ? e.keyCode : e.which);
+            if (code == 9) {
+                $this.addClass('focus-on-tab');
+            }
+        });
+    }).on('click', function(e) {
+        jQuery(this).removeClass('focus-on-tab');
     });
-}).on('click', function(e) {
-	jQuery(this).removeClass('focus-on-tab');
-});
 
 // Display the page only when it's loaded
 	jQuery(window).ready(function() {
 		jQuery('.content-preloader').animate({opacity: 1}, 300);
 	});
+
+// Construct list item for file path - Use + symbol to indent list items
+    document.querySelectorAll('.file-path > br').forEach(br => br.remove());
+    document.querySelectorAll('.file-path li').forEach(el => {
+        const span = document.createElement('span');
+        span.innerHTML = '&vdash;&nbsp;';
+        el.prepend(span);
+
+        let str = el.innerHTML;
+        const hyphenNb = (str.match(/\+/g) || []).length;
+        el.style.paddingLeft = hyphenNb * 1.1618 + 'em';
+        const newstr = str.replace(/\+/g, '');
+        el.innerHTML = newstr;
+    });
+
 </script>
 
-# IF C_COOKIEBAR_ENABLED #
-	<script src="{PATH_TO_ROOT}/user/templates/js/cookiebar# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-# ENDIF #
+

@@ -102,7 +102,7 @@
 
 	<footer style="order: 9999;"></footer>
 </section>
-<script src="{PATH_TO_ROOT}/templates/spacecraft/js/animate# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
+<script src="{PATH_TO_ROOT}/templates/spacecraft/js/animate.js"></script>
 <script>
 	jQuery('document').ready(function(jQuery){
 		listorder.init();

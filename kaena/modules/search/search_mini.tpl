@@ -35,11 +35,12 @@
 	</div>
 # ELSE #
 	<div class="header-mini-menu modal-container">
-		<a data-modal data-target="module-mini-search" aria-label="{@search.module.title}" class="pinned"><i class="fa fa-search fa-fw" aria-hidden="true"></i></a>
-		<div role="search" id="module-mini-search" class="modal modal-animation">
-			<div class="close-modal error" role="button" aria-label="@common.close"></div>
-			<div class="content-panel">
-				<form role="search" action="{U_FORM_VALID}" onsubmit="return check_search_mini_form_post();" method="post">
+		<a class="pinned modal-button --module-mini-search" aria-label="{@search.module.title}"><i class="fa fa-search fa-fw" aria-hidden="true"></i></a>
+		<div role="search" id="module-mini-search" class="modal modal-auto">
+			<div class="modal-overlay close-modal" role="button" aria-label="@common.close"></div>
+			<div class="modal-content">
+                <span class="error hide-modal close-modal close-bbcode-sub" aria-label="{@common.close}"><i class="far fa-circle-xmark" aria-hidden="true"></i></span>
+                <form role="search" action="{U_FORM_VALID}" onsubmit="return check_search_mini_form_post();" method="post">
 					<fieldset>
 						<legend class="sr-only">{@search.module.title}</legend>
 						<div class="cell-form grouped-inputs grouped-auto grouped-search grouped-right">

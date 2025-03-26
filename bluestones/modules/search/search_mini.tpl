@@ -55,10 +55,14 @@
 		</div>
 	</div>
 	<script>
-		jQuery('.search-button').opensubmenu({
+		opensubmenu('.search-button', {
 			osmTarget: '#module-mini-search',
 			osmCloseExcept: '#module-mini-search .cell form *',
 			osmCloseButton: '.close-search',
-		}).closest('#module-mini-search').parent().css('position', 'relative');
+		});
+        document.querySelector('.search-button')
+            .closest('#module-mini-search')
+            .parentElement
+            .style.position = 'relative';
 	</script>
 # ENDIF #

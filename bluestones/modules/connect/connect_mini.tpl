@@ -202,10 +202,14 @@
 </div>
 # IF C_HORIZONTAL #
 	<script>
-		jQuery('.connect-button').opensubmenu({
+		opensubmenu('.connect-button', {
 			osmTarget: '#module-connect',
 			osmCloseExcept: '.connect-container *',
 			osmCloseButton: '.close-connect',
-		}).closest('#module-connect').parent().css('position', 'relative');
+		});
+        document.querySelector('.connect-button')
+            .closest('#module-connect')
+            .parentElement
+            .style.position = 'relative';
 	</script>
 # ENDIF #

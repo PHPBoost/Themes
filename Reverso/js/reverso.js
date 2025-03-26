@@ -31,7 +31,7 @@
     checkWidth();
     jQuery(window).resize(checkWidth);
 
- // Random background
+// Random background
     let image = new Array ();
     image[0] = "000.jpg";
     image[1] = "001.jpg";

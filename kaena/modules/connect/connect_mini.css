@@ -88,9 +88,3 @@
 }
 
 .connected-contents > a:hover { text-decoration: none; }
-
-@media (min-width: 769px) {
-    #module-connect .modal .content-panel {
-        width: 25%;
-    }
-}

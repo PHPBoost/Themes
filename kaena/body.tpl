@@ -167,8 +167,8 @@
 </footer>
 
 <span id="scroll-to-top" class="scroll-to" role="button" aria-label="{@common.scroll.to.top}"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-<script src="{PATH_TO_ROOT}/templates/kaena/js/kaena# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
-<script src="{PATH_TO_ROOT}/templates/{THEME}/js/cssmenu-truncate# IF C_CSS_CACHE_ENABLED #.min# ENDIF #.js"></script>
+<script src="{PATH_TO_ROOT}/templates/kaena/js/kaena.js"></script>
+<script src="{PATH_TO_ROOT}/templates/{THEME}/js/cssmenu-truncate.js"></script>
 <script>
 	jQuery('.cssmenu-horizontal > ul').truncateList({
 		truncatedTitle: '{@theme.more}'

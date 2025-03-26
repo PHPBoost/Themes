@@ -13,7 +13,7 @@ jQuery('#menus-trigger').on('click', () => {
 	jQuery('#menus-trigger').toggleClass('fa-times error');
 });
 
-jQuery('#menus-trigger').opensubmenu({
+opensubmenu('#menus-trigger', {
 	osmTarget: '#header-container',
 	osmCloseExcept: '#header-container *',
 	osmClass: 'active-menus'
