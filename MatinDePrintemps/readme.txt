@@ -1,1 +1,0 @@
-Authors: EDN | Swan - PHPBoost
