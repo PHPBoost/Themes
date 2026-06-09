@@ -1,0 +1,893 @@
+[
+    {
+        "id": "alive",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Alive",
+            "french": "Alive"
+        },
+        "description": {
+            "english": "The PHPBoost official theme.",
+            "french": "Le thème officiel de PHPBoost."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "around_the_world",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "Grenouille",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2017/03/15",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Around the world",
+            "french": "Around the world"
+        },
+        "description": {
+            "english": "A template that makes traveling.",
+            "french": "Un thème qui fait voyager."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "Bamboo",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "EDN | Swan",
+        "author_mail": "contact@easy-design.com",
+        "author_website": "",
+        "creation_date": "2019/02/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Bamboo",
+            "french": "Bamboo"
+        },
+        "description": {
+            "english": "A zen and refreshing template.",
+            "french": "Un thème zen et rafraichissant."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "base",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2023/01/26",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Base",
+            "french": "Base"
+        },
+        "description": {
+            "english": "The PHPBoost official theme.",
+            "french": "Le thème officiel de PHPBoost."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "baseroot",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2023/08/25",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1024px",
+        "parent_theme": "",
+        "name": {
+            "english": "Baseroot",
+            "french": "Baseroot"
+        },
+        "description": {
+            "english": "The PHPBoost 3 official theme.",
+            "french": "Le thème officiel de PHPBoost 3."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "baseswitcher",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2021/07/12",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Base Switcher",
+            "french": "Base Switcher"
+        },
+        "description": {
+            "english": "Dual theme with button to toggle between light theme and dark theme.",
+            "french": "Thème double avec bouton pour basculer entre un thème clair et un thème sombre."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "basewide",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2023/01/11",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "100%",
+        "parent_theme": "",
+        "name": {
+            "english": "Base wide",
+            "french": "Base large"
+        },
+        "description": {
+            "english": "The PHPBoost wide official theme.",
+            "french": "Le thème officiel large de PHPBoost."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "BlueNess",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "EDN | Swan",
+        "author_mail": "contact@easy-design.net",
+        "author_website": "",
+        "creation_date": "2019/01/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "BlueNess",
+            "french": "BlueNess"
+        },
+        "description": {
+            "english": "A soft shade of blue.",
+            "french": "Une douceur de nuances de bleus."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "bluestones",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2016/12/08",
+        "last_update": "2026/05/19",
+        "html_version": "5.0 Strict",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Bluestones",
+            "french": "Bluestones"
+        },
+        "description": {
+            "english": "A mineral theme, or may be... a musical one",
+            "french": "Un thème minéral, ou peut-être... musical"
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "chameleon",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost | EDN | EnimSay",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/01/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Chameleon",
+            "french": "Caméléon"
+        },
+        "description": {
+            "english": "Simply adaptable for everyone.",
+            "french": "Adaptable simplement pour tous."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "CSN-Gaming",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "pegasetkc",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2017/03/15",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "CSN Gaming",
+            "french": "CSN Gaming"
+        },
+        "description": {
+            "english": "The gaming theme.",
+            "french": "Thème orienté Gamer"
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "FreshUp",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "FreshUp",
+            "french": "FreshUp"
+        },
+        "description": {
+            "english": "A fresh theme like a fruit salad!",
+            "french": "Un thème frais comme une salade de fruit !"
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "gaming",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2016/06/27",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Gaming",
+            "french": "Gaming"
+        },
+        "description": {
+            "english": "A gaming theme.",
+            "french": "Un thème jeux vidéos."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "gaming-blue",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2016/06/27",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "gaming",
+        "name": {
+            "english": "Gaming Blue",
+            "french": "Gaming Blue"
+        },
+        "description": {
+            "english": "A gaming theme.",
+            "french": "Un thème jeux vidéos"
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "justplayforfun",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "ElenWii",
+        "author_mail": "elenwe@gmail.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "JustPlayForFun",
+            "french": "JustPlayForFun"
+        },
+        "description": {
+            "english": "A video game theme.",
+            "french": "Un thème jeu vidéo."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "kaena",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Kaena",
+            "french": "Kaena"
+        },
+        "description": {
+            "english": "Base theme with options.",
+            "french": "Le thème base avec options."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "MatinDePrintemps",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "EDN | Swan",
+        "author_mail": "contact@easy-design.net",
+        "author_website": "",
+        "creation_date": "2016/07/30",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Spring morning",
+            "french": "Matin de Printemps"
+        },
+        "description": {
+            "english": "A template on spring subject.",
+            "french": "Un thème sur le Printemps."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "minecraftien",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Minecraftian",
+            "french": "Minecraftien"
+        },
+        "description": {
+            "english": "A theme about minecraft.",
+            "french": "Un thème sur minecraft."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "Multi_Theme",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/01/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Multi_Theme",
+            "french": "Multi_Theme"
+        },
+        "description": {
+            "english": "A template for multiple possibilities.",
+            "french": "Un thème pour de multiples possibilités."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "neon",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2022/02/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Zala",
+            "french": "Neon"
+        },
+        "description": {
+            "english": "An illuminated theme.",
+            "french": "Un thème enluminé."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "nyma",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Nyma",
+            "french": "Nyma"
+        },
+        "description": {
+            "english": "An islandis theme.",
+            "french": "Un thème insulaire"
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "oxygen",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/01/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Oxygen",
+            "french": "Oxygen"
+        },
+        "description": {
+            "english": "Blog style theme for PHPBoost.",
+            "french": "Theme style blog pour PHPBoost."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "plus",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/01/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0 Strict",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1200px",
+        "parent_theme": "",
+        "name": {
+            "english": "Plus",
+            "french": "Plus"
+        },
+        "description": {
+            "english": "Blog theme",
+            "french": "Thème orienté blog"
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "printzea",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Printzea",
+            "french": "Printzea"
+        },
+        "description": {
+            "english": "A princely theme.",
+            "french": "Un thème princier."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "Reverso",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/05/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Reverso",
+            "french": "Reverso"
+        },
+        "description": {
+            "english": "Theme adaptative to background.",
+            "french": "Thème adaptatif à l’arrière-plan."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "ReversoNight",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2019/05/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "Reverso",
+        "name": {
+            "english": "Reverso Night",
+            "french": "Reverso Night"
+        },
+        "description": {
+            "english": "Theme adaptative to background.",
+            "french": "Thème adaptatif à l’arrière-plan."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "sidebyside",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2005/07/03",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Side by side",
+            "french": "Side by side"
+        },
+        "description": {
+            "english": "A vertical theme.",
+            "french": "Un thème vertical."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "spacecraft",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2022/02/12",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Space craft",
+            "french": "Space craft"
+        },
+        "description": {
+            "english": "A space theme inspired by <a href='https://estudiopatagon.com/themes/wordpress/breek/'>Breek</a> from Estudio Patagon.",
+            "french": "Un theme spatial inspiré de <a href='https://estudiopatagon.com/themes/wordpress/breek/'>Breek</a> par Estudio Patagon."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "summerday",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_website": "",
+        "creation_date": "2016/04/28",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Summerday",
+            "french": "Summerday"
+        },
+        "description": {
+            "english": "Halloween template.",
+            "french": "Un thème halloween."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "unitedcolors",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2015/05/10",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "United Colors",
+            "french": "United Colors"
+        },
+        "description": {
+            "english": "Theme full of colors.",
+            "french": "Thème tout en couleur."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "Universal-PBT",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "EDN",
+        "author_mail": "contact@easy-design.net",
+        "author_website": "",
+        "creation_date": "2019/01/01",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Universal PBT",
+            "french": "Universal PBT"
+        },
+        "description": {
+            "english": "Simply adaptable for everyone.",
+            "french": "Adaptable simplement pour tous."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "zala",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2020/11/09",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Zala",
+            "french": "Zala"
+        },
+        "description": {
+            "english": "A dark PHPBoost theme.",
+            "french": "Un thème sombre de PHPBoost."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    },
+    {
+        "id": "zonda",
+        "addon_type": "theme",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "babsolune",
+        "author_mail": "babsolune@phpboost.com",
+        "author_website": "",
+        "creation_date": "2020/11/07",
+        "last_update": "2026/05/19",
+        "html_version": "5.0",
+        "css_version": "4.0",
+        "main_color": "",
+        "width": "1280px",
+        "parent_theme": "",
+        "name": {
+            "english": "Zonda",
+            "french": "Zonda"
+        },
+        "description": {
+            "english": "The dark PHPBoost official theme.",
+            "french": "Le thème officiel sombre de PHPBoost."
+        },
+        "thumbnail": [
+            "theme/images/theme.webp"
+        ]
+    }
+]
