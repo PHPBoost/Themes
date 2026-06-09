@@ -1,0 +1,61 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+/* freshup */
+#module-mini-shoutbox .cell {
+    background-image: url('images/bg.webp');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#shout-content {
+    margin: 0 auto 10px !important;
+    width: 80%;
+    box-shadow: 0px 5px 5px 3px rgba(var(--darken), 0.2);
+}
+
+#shoutbox-bbcode-container [class*="cell-"] .bbcode-button {
+    color: var(--main-tone);
+}
+#shoutbox-bbcode-container [class*="cell-"] .bbcode-button:hover {
+    color: var(--txt-main);
+    background-color: transparent;
+}
+/* /freshup */
+
+#shoutbox-messages-container {
+	margin: 5px; /* freshup */
+    border-radius: 5px; /* freshup */
+    background-color: rgba(var(--lighten), 0.4); /* freshup */
+	height: 250px; /* freshup */
+	overflow: auto;
+	text-align: left;
+	word-wrap: break-word;
+	line-height: 1;
+}
+
+.shout-horizontal { padding-left: 1.5em; }
+
+.bbcode-elements.bbcode-block-shoutbox { position: static !important; }
+
+.bbcode-block-container::after { border-color: transparent; }
+
+.shout-form-container { text-align: center; }
+
+.shout-form-container label { display: block; }
+
+#shoutbox-bbcode-container ul {
+	margin: 0;
+	padding: 0;
+}
+
+.shoutbox-message {
+	font-size: 0.809em;
+	margin-bottom: 0.618em;
+}
+
+#shoutbox-messages-container .emoji-tag { font-size: 120%; }

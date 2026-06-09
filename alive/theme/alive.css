@@ -1,0 +1,11 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+/* --- shape --- */
+#header-container,
+#menus-container { background-color: var(--bgc-main); }
+
+#menus-container { box-shadow: 0 2px 2px 1px rgba(var(--darken), 0.15); }

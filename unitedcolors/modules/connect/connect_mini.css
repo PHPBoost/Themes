@@ -1,0 +1,107 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#module-connect { width: 100%; }
+
+@media (min-width: 769px) { #module-connect { width: auto; } }
+
+#module-connect  #login { cursor: help; }
+
+#module-connect  a.button { background-color: transparent; }
+
+#module-connect .social-connect { display: inline-block; }
+
+#module-connect .js-menu-button {
+	display: block;
+	padding: 1.228em 2.618em 0.809em 0.618em;
+}
+
+#module-connect .js-menu-button .stacked { margin: 0 0 0 0.809em; }
+
+#module-connect .js-menu-button::after {
+	position: absolute;
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
+	content: '\f0d7';
+	right: 0.309em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#module-connect.active-connect .js-menu-button::after { content: '\f0d8'; }
+
+#module-connect .cell-list-inline ul {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#module-connect .cell-list .li-spaced a { padding-right: 0.618em; }
+
+#module-connect .cell-list li:hover { background-color: transparent; }
+
+#module-connect .li-spaced {
+	padding: 0.456em;
+	width: 100%;
+}
+
+#module-connect .connect-container-horizontal { background-color: var(--bgc-main); }
+
+#module-connect .connect-contents,
+#module-connect .connected-contents { position: relative; }
+
+@media (min-width: 769px) {
+
+	#module-connect .cell-list-inline ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#module-connect .li-spaced { width: auto; }
+}
+
+.connect-container-horizontal {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	max-height: 0;
+	width: 100%;
+	min-width: 200px;
+	z-index: 200;
+	background-color: var(--black-tone);
+	transition: max-height 0.5s 0.5s;
+	pointer-events: none;
+}
+
+.connect-container-horizontal * {
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+
+.connect-container-horizontal li:last-child {
+	border-top: 1px solid var(--txt-alt);
+}
+
+.active-connect .connect-container-horizontal {
+	max-height: 100vh;
+	transition:  max-height 0.8s;
+	pointer-events: auto;
+}
+
+.active-connect .connect-container-horizontal * {
+	opacity: 1;
+	transition: opacity 0.5s 0.5s;
+}
+
+.active-connect .js-menu-button,
+.js-menu-button:hover { text-decoration: none; }
+
+@media (min-width: 769px) {
+	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
+
+	#module-connect .cell-list .connect-container li { padding: 0.618em; }
+}
+
+#module-connect input,
+#module-connect .button { border-radius: 8px; }

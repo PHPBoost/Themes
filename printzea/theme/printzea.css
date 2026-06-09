@@ -1,0 +1,13 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+ * Layout
+*/
+
+#header {
+	background-color: var(--bgc-main);
+	color: var(--txt-main);
+}
+
+.cssmenu-actionslinks {  margin: 0rem 0.809rem 2.809rem 3.618rem; }

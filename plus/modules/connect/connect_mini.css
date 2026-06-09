@@ -1,0 +1,103 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#module-connect  #login { cursor: help; }
+
+#module-connect  .stacked { text-shadow: 0 0 2px rgba(var(--darken), 0.5)}
+
+#module-connect .social-connect { display: inline-block; }
+
+#module-connect .js-menu-button {
+	display: block;
+	padding: 0.309em 0.809em;
+	position: relative;
+}
+
+#module-connect .js-menu-button .stacked { margin: 0 0 0 0.809em; }
+
+#module-connect .js-menu-button::after {
+	position: absolute;
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
+	content: '\f0d7';
+	right: 0.809em;
+}
+
+#module-connect.active-connect .js-menu-button::after { content: '\f0d8'; }
+
+#module-connect .cell-list-inline ul {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#module-connect .cell-list .li-spaced a { padding-right: 0.618em; }
+
+#module-connect .cell-list li:hover { background-color: transparent; }
+
+#module-connect .li-spaced {
+	padding: 0.456em;
+	width: 100%;
+}
+
+@media (min-width: 769px) {
+	#module-connect .js-menu-button { display: none; }
+
+	#module-connect .cell-list-inline ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#module-connect .li-spaced { width: auto; }
+}
+
+.connect-container-horizontal {
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	z-index: 200;
+	height: 0;
+}
+
+.active-connect .connect-container-horizontal {
+	opacity: 1;
+	visibility: visible;
+	height: auto;
+}
+
+.active-connect .js-menu-button,
+.js-menu-button:hover { text-decoration: none; }
+
+@media (min-width: 769px) {
+	#module-connect .connect-container-horizontal {
+		opacity: 1;
+		visibility: visible;
+		height: auto;
+	}
+
+	#top-header #module-connect {
+		width: auto;
+		display: inline-block;
+	}
+
+	#top-header #module-connect.user-not-connected .cell-list .connect-container li { padding: 0; }
+
+	#top-header #module-connect.user-not-connected .cell-list .connect-container li .button { background-color: transparent; }
+
+	#top-header #module-connect .cell-list-inline ul { justify-content: flex-start; }
+
+	#module-connect .cell-list-inline .connect-container form { display: inline-flex; }
+
+	#module-connect .cell-list .connect-container li { padding: 0.309em 0.809em; }
+
+	#module-connect.user-connected .connect-container-horizontal li { border-right: 2px solid var(--main-tone); }
+
+	#module-connect.user-connected .connect-container-horizontal li:last-child { border-right: none; }
+
+	#module-connect .cell-list .connect-container .autoconnect {
+		padding: 0.618em 0;
+		display: inline-block;
+	}
+}

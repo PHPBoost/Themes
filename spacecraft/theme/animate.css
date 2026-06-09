@@ -1,0 +1,52 @@
+.animate.fadeIn {
+  opacity: 0;
+  transition: all 800ms linear 500ms;
+}
+
+.animate.fadeIn.in-view {
+  opacity: 1;
+}
+
+.animate.fadeInToRight {
+  opacity: 0;
+  transition: all 800ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animate.fadeInToRight.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animate.fadeInToLeft {
+  opacity: 0;
+  transition: all 800ms linear;
+  transform: translate3d(100px, 0px, 0px);
+}
+
+.animate.fadeInToLeft.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animate.fadeInToTop {
+  opacity: 0;
+  transition: all 800ms linear;
+  transform: translate3d(0px, 100px, 0px);
+}
+
+.animate.fadeInToTop.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animate.fadeInToBottom {
+  opacity: 0;
+  transition: all 800ms linear;
+  transform: translate3d(0px, -100px, 0px);
+}
+
+.animate.fadeInToBottom.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}

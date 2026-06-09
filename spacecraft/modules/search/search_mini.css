@@ -1,0 +1,39 @@
+/*
+* Copy this file into your theme to customize the module.
+* https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-modules
+*/
+
+#header #module-mini-search .cell { display: inline-flex; }
+
+#horizontal-search-form  {
+	padding: var(--pdg-large);
+}
+
+#vertical-search-form { padding: var(--pdg-large) var(--pdg-thin); }
+
+#module-mini-search input {
+	width: 100%;
+	border-radius: 0;
+}
+
+#module-mini-search button {
+	width: auto;
+	border-radius: var(--radius);
+}
+
+#mini-search-form {
+	margin: 1em 1em 1em 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+@media (min-width: 769px) {
+	#mini-search-form { margin: 0.618em 1.618em 0.618em 0; }
+}
+
+#module-mini-search .cell-hover-container #search-text { width: 100%; }
+
+#module-mini-search .cell-hover-container #search-button {
+	padding: 0.309em 0.809em;
+	width: auto;
+}

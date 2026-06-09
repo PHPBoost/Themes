@@ -1,0 +1,96 @@
+.section-header { padding: 0.309em; }
+
+@media (min-width: 769px) {
+    .section-header { padding: 0.618em; }
+}
+
+#breadcrumb { padding: 0.456em 1.809em; }
+
+#visit-counter {
+    position: relative;
+    top: auto;
+    right: 0;
+}
+
+.visit-counter {
+    display: inline-block;
+    padding-left: 0.309em;
+}
+
+#main-content .cell { padding: 0; }
+.cell-mini .cell {
+    padding: 0;
+    margin: 0 0 0.618em;
+}
+
+
+.cell-mini .cell-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.cssmenu-actionslinks .menu-button::after {
+    position: absolute;
+    display: block;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 1.482rem;
+    content: "\f013";
+    top: 0;
+    right: 0;
+    padding: 0.228em 0.618em;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+@media (min-width: 769px) {
+    .cssmenu-actionslinks {
+        float: none;
+        margin: 0;
+        position: absolute;
+        bottom: calc(100% + 25px);
+        right: 0;
+    }
+}
+
+.modal .content-panel { top: 50%; }
+
+#header .cssmenu > ul > li > .cssmenu-title {
+    text-transform: uppercase;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+#header .cssmenu-horizontal > ul > li:hover > ul {
+	left: auto;
+	right: 0;
+}
+
+#header .cssmenu-horizontal > ul > li:hover > ul li:hover > ul {
+	left: auto;
+	right: 100%;
+}
+
+.cssmenu-left > ul > li:hover > ul,
+.cssmenu-left > ul > li:hover > ul li:hover > ul {
+	left: auto;
+	right: 100%;
+}
+
+/* --- table --- */
+th, .table-head {
+  font-size: 1.209em;
+  border-width: 0 0 1px;
+}
+
+tfoot td[colspan] {
+  border-width: 1px 0 0;
+}
+
+/* --- modules --- */
+.module-header {
+    padding: 0 1.618em;
+    background-color: rgba(var(--darken), 0.2);
+}

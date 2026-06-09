@@ -1,0 +1,24 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+*/
+
+body {
+    background-image: url('images/body-bg.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: cover;
+}
+
+.several-items .cell-infos,
+.several-items:not(#module-smallads) .cell-content { display: none; }
+
+.several-items .cell-name { font-size: 1.228em; }
+
+.aside-menu .cell-mini .cell,
+#footer .cell-mini .cell {
+    margin: 0 0 1.618em;
+    padding: 0 !important;
+    background-image: linear-gradient(45deg, rgba(var(--lighten), 0.1) 20%, rgba(var(--lighten), 0) 30%, rgba(var(--lighten), 0.1) 60%, rgba(var(--lighten), 0.1) 100%);
+}

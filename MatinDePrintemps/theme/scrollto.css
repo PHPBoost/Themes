@@ -1,0 +1,29 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+.scroll-to {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+    right: 0;
+    opacity: 0.5;
+    border-radius: 8px 0 0 8px;
+    padding: 1.618em 0.618em 1.618em;
+    top: 1.618em;
+}
+
+.scroll-to:hover { opacity: 1; }
+
+.scroll-to,
+.scroll-to i { transition: 0.2s; }
+
+.scroll-to:hover,
+.scroll-to:hover i  { transition: 0.3s; }
+
+@media (min-width: 769px) {
+    .scroll-to i { font-size: 1.618em; }
+}

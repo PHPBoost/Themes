@@ -1,0 +1,16 @@
+/*
+ * Copy this file into your theme to customize it.
+ * https://www.phpboost.com/wiki/structure-d-un-theme#paragraph-le-repertoire-theme
+ *
+*/
+
+.aside-menu,
+#footer {
+    background-color: var(--bgc-main);
+    color: var(--txt-main);
+}
+
+.aside-menu .cell,
+.aside-menu .cell > [class*="cell-"] { border-width: 0; }
+
+.aside-menu .cell-header { background-color: var(--bgc-sub) !important; }
