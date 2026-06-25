@@ -117,8 +117,7 @@
 }
 
 #breadcrumb > ol::before {
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
+	font: var(--fa-font-solid);
     content: "\f041";
     color: var(--txt-alt);
 }
