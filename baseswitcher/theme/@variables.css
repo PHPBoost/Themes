@@ -104,9 +104,9 @@
 /* .visitor */
     --visitor-dark-rgb: 32, 80, 94;
     --visitor-dark:  #20505E;
-    --visitor-rgb-t: 54, 140, 161;
+    --visitor-tone-rgb: 54, 140, 161;
     --visitor-tone:  #368CA1;
-    --visitor-rgb-l: 83, 186, 203;
+    --visitor-lite-rgb: 83, 186, 203;
     --visitor-lite: #53BACB;
 
 /* .custom-author */
@@ -134,9 +134,9 @@
     --moderator-lite: #C3A9EE;
 
 /* .administrator */
-    --administrator-rgb-d: 31, 30, 31;
+    --administrator-dark-rgb: 31, 30, 31;
     --administrator-dark:  #1E1D1E;
-    --administrator-rgb-t: 50, 49, 51;
+    --administrator-tone-rgb: 50, 49, 51;
     --administrator-tone:  #323133;
     --administrator-lite-rgb: 78, 76, 79;
     --administrator-lite: #4E4C4F;
@@ -181,9 +181,9 @@
     --author-lite: #D67134;
 
 /* .administrator */
-    --administrator-rgb-d: 207, 167, 8;
+    --administrator-dark-rgb: 207, 167, 8;
     --administrator-dark:  #CFA708;
-    --administrator-rgb-t: 255, 204, 0;
+    --administrator-tone-rgb: 255, 204, 0;
     --administrator-tone:  #FFCC00;
     --administrator-lite-rgb: 245, 212, 82;
     --administrator-lite: #F5D452;

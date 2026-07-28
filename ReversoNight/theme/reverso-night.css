@@ -32,9 +32,9 @@
     --main-lite: #e9e9e9;
     
     /* .administrator */
-    --administrator-rgb-d: 170;
+    --administrator-dark-rgb: 170;
     --administrator-dark:  #AAAAAA;
-    --administrator-rgb-t: 50, 49, 51;
+    --administrator-tone-rgb: 50, 49, 51;
     --administrator-tone:  #CCCCCC;
     --administrator-lite-rgb: 233, 233, 233;
     --administrator-lite: #e9e9e9;

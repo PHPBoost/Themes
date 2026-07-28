@@ -116,9 +116,9 @@
 /* .visitor */
     --visitor-dark-rgb: 32, 80, 94;
     --visitor-dark:  #20505E;
-    --visitor-rgb-t: 54, 140, 161;
+    --visitor-tone-rgb: 54, 140, 161;
     --visitor-tone:  #368CA1;
-    --visitor-rgb-l: 83, 186, 203;
+    --visitor-lite-rgb: 83, 186, 203;
     --visitor-lite: #53BACB;
 
 /* .custom-author */
@@ -146,9 +146,9 @@
     --moderator-lite: #F550A8;
 
 /* .administrator */
-    --administrator-rgb-d: 86, 70, 181;
+    --administrator-dark-rgb: 86, 70, 181;
     --administrator-dark:  #5646B5;
-    --administrator-rgb-t: 150, 122, 221;
+    --administrator-tone-rgb: 150, 122, 221;
     --administrator-tone:  #967ADC;
     --administrator-lite-rgb: 195, 169, 238;
     --administrator-lite: #C3A9EE;

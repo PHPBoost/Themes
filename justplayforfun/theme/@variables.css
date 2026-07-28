@@ -35,27 +35,27 @@
     --lighten:   255, 255, 255;
 
 /* -blue- */
-    --current-rgb-d: 5, 97, 159;
+    --current-dark-rgb: 5, 97, 159;
     --current-dark:  #05619F;
-    --current-rgb-t: 0, 153, 255;
+    --current-tone-rgb: 0, 153, 255;
     --current-tone:  #0099FF;
-    --current-rgb-l: 86, 179, 241;
+    --current-lite-rgb: 86, 179, 241;
     --current-lite: #56B3F1;
 
 /* -grey- */
-    --grey-rgb-d: 170, 170, 170;
+    --grey-dark-rgb: 170, 170, 170;
     --grey-dark:  #AAAAAA;
-    --grey-rgb-t: 204, 204, 204;
+    --grey-tone-rgb: 204, 204, 204;
     --grey-tone:  #CCCCCC;
-    --grey-rgb-l: 238, 238, 238;
+    --grey-lite-rgb: 238, 238, 238;
     --grey-lite: #EEEEEE;
 
 /* -black- */
-    --black-rgb-d: 17, 17, 17;
+    --black-dark-rgb: 17, 17, 17;
     --black-dark:  #101010;
-    --black-rgb-t: 34, 34, 34;
+    --black-tone-rgb: 34, 34, 34;
     --black-tone:  #222222;
-    --black-rgb-l: 102, 102, 102;
+    --black-lite-rgb: 102, 102, 102;
     --black-lite: #666666;
 
 /* .link-color */
@@ -125,9 +125,9 @@
 /* .visitor */
     --visitor-dark-rgb: 32, 80, 94;
     --visitor-dark:  #20505E;
-    --visitor-rgb-t: 54, 140, 161;
+    --visitor-tone-rgb: 54, 140, 161;
     --visitor-tone:  #368CA1;
-    --visitor-rgb-l: 83, 186, 203;
+    --visitor-lite-rgb: 83, 186, 203;
     --visitor-lite: #53BACB;
 
 /* .custom-author */
@@ -155,9 +155,9 @@
     --moderator-lite: #C3A9EE;
 
 /* .administrator */
-    --administrator-rgb-d: 31, 30, 31;
+    --administrator-dark-rgb: 31, 30, 31;
     --administrator-dark:  #1E1D1E;
-    --administrator-rgb-t: 50, 49, 51;
+    --administrator-tone-rgb: 50, 49, 51;
     --administrator-tone:  #323133;
     --administrator-lite-rgb: 78, 76, 79;
     --administrator-lite: #4E4C4F;
