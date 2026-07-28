@@ -1,7 +1,7 @@
 /* Zala is a Base theme child */
 
 @import url('../../__default__/theme/default.css') screen, print;
-@import url('../../__default__/theme/font-awesome/css/all.css');
+@import url('../../../kernel/lib/css/font-awesome/css/all.css');
 @import url('../../__default__/theme/font-awesome-animation.css');
 @import url('../../__default__/theme/lightcase.css') screen;
 @import url('../../__default__/theme/icoboost/icoboost.css') screen;
