@@ -133,6 +133,15 @@
 			<div class="flex-between content-wrapper">
 		# ENDIF #
 				<div id="footer-info"# IF NOT C_VISIT_COUNTER # class="content-wrapper"# ENDIF #>
+                    # IF C_DISPLAY_COPYRIGHT #
+                        <span>&copy;{COPYRIGHT} <span>
+                        # IF C_COPYRIGHT_LINK #
+                            <a href="{U_COPYRIGHT}" target="_blank" rel="noopener">{COPYRIGHT_NAME}</a>
+                        # ELSE #
+                            {COPYRIGHT_NAME}
+                        # ENDIF #
+                        |
+                    # ENDIF #
 					<span class="footer-infos-powered-by">{@common.powered.by}
 						<i class="fa iboost fa-iboost-logo" aria-hidden="true"></i>
 						<a class="offload" href="https://www.phpboost.com" aria-label="{@common.phpboost.link}">PHPBoost</a>

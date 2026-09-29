@@ -132,6 +132,15 @@
 	# ENDIF #
 
 	<div id="footer-infos" class="content-wrapper">
+        # IF C_DISPLAY_COPYRIGHT #
+            <span>&copy;{COPYRIGHT} <span>
+            # IF C_COPYRIGHT_LINK #
+                <a href="{U_COPYRIGHT}" target="_blank" rel="noopener">{COPYRIGHT_NAME}</a>
+            # ELSE #
+                {COPYRIGHT_NAME}
+            # ENDIF #
+            |
+        # ENDIF #
 		<span>
 			{@common.powered.by} <a href="https://www.phpboost.com" title="{L_PHPBOOST_LINK}">PHPBoost</a>
 		</span>

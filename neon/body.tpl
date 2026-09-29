@@ -129,6 +129,15 @@
 	# ENDIF #
 
 	<div id="footer-infos" class="content-wrapper" role="contentinfo">
+        # IF C_DISPLAY_COPYRIGHT #
+            <span>&copy;{COPYRIGHT} <span>
+            # IF C_COPYRIGHT_LINK #
+                <a href="{U_COPYRIGHT}" target="_blank" rel="noopener">{COPYRIGHT_NAME}</a>
+            # ELSE #
+                {COPYRIGHT_NAME}
+            # ENDIF #
+            |
+        # ENDIF #
 		# IF C_VISIT_COUNTER #
 			<div id="visit-counter" class="hidden-small-screens">
 				<div class="visit-counter-total flex-between">
